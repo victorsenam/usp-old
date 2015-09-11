@@ -77,8 +77,13 @@ int main (int argc, char ** argv) {
         // Descobre y : G.y = b
         // Backwards Substitution
         // Descobre x : Gt.x = y
-        testfail(forwcol(n, A, b), 2);
-        testfail(backcol(n, A, b, 1), 2);
+        if (!(mode&2)) {
+            testfail(forwcol(n, A, b), 2);
+            testfail(backcol(n, A, b, 1), 2);
+        } else {
+            testfail(forwrow(n, A, b), 2);
+            testfail(backrow(n, A, b, 1), 2);
+        }
 
         // Imprime a solução do sistema
         if (!(mode&16)) {

@@ -1,13 +1,13 @@
-DEPS := cholcol.h cholrow.h aux.h headers.h
+DEPS := cholcol.cpp cholrow.cpp aux.cpp headers.cpp
 GCC := g++ -std=c++11
 FLAGS := -Wall -pedantic
 
 default: main.o
 
-cholcol.h: cholcol.cpp
-cholrow.h: cholrow.cpp
-aux.h: aux.cpp
-headers.h: headers.cpp
+cholcol.cpp: cholcol.h
+cholrow.cpp: cholrow.h
+aux.cpp: aux.h
+headers.cpp: headers.h
 
 main.o: main.cpp $(DEPS)
 	$(GCC) $< -o $@
