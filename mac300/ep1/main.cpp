@@ -2,9 +2,7 @@
 #include "aux.h"
 #include "cholcol.h"
 #include "cholrow.h"
-
-int lucol (int n, double A[][nmax], int p[]);
-int sscol (int n, double A[][nmax], int p[], double b[]);
+#include "lucol.h"
 
 int lurow (int n, double A[][nmax], int p[]);
 int ssrow (int n, double A[][nmax], int p[], double b[]);
@@ -14,7 +12,7 @@ int main (int argc, char ** argv) {
     int x, y;
     double A[nmax][nmax];
     double b[nmax];
-    double p[nmax];
+    int p[nmax];
     int mode = 0;
 
     /* mode é uma flag
@@ -69,7 +67,7 @@ int main (int argc, char ** argv) {
 
         // Imprime decomposição
         if (!(mode&8)) {
-            printf("Matriz de Saída: \n");
+            printf("Matriz G: \n");
             printmat(n, A, ([](int i, int j, double A[][nmax]) -> double { return (i >= j)?A[i][j]:0.0; }));
         }
         
@@ -92,5 +90,25 @@ int main (int argc, char ** argv) {
         }
     } else {
         // LU
+        // Decompoe PA = LU
+        if (!(mode&2)) {
+            testfail(lucol(n, A, p), 2);
+            testfail(sscol(n, A, p, b), 2);
+        } else;
+
+        // Imprime a Decomposicao
+        if (!(mode&8)) {
+            printf("Matriz L: \n");
+            printmat(n, A, ([](int i, int j, double A[][nmax]) -> double { return (i < j)?A[i][j]:(i==j)?1.0:0.0; }));
+
+            printf("Matriz U: \n");
+            printmat(n, A, ([](int i, int j, double A[][nmax]) -> double { return (i > j)?A[i][j]:0.0; }));
+        }
+
+        // Imprime a solução do sistema
+        if (!(mode&16)) {
+            printf("Vetor de Saída: \n");
+            printvect(n, b, ([](int i, double b[]) -> double { return b[i]; }));
+        }
     }
 }
