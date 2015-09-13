@@ -1,5 +1,5 @@
 DEPS := cholcol.cpp cholrow.cpp lucol.cpp aux.cpp headers.cpp
-GCC := g++ -std=c++11 -g
+GCC := g++ -std=c++11
 FLAGS := -Wall -pedantic
 
 default: main.o
