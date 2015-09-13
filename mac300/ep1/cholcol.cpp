@@ -39,7 +39,7 @@ int backcol (int n, double A[][nmax], double b[], int trans) {
     for (int i = n-1; i >= 0; i--) {
 		if (!trans) {
 			for (int j = i+1; j < n; j++)
-				b[i] -= A[i][j];
+				b[i] -= A[i][j]*b[j];
 		}
 
         if (A[i][i] == 0)
@@ -49,7 +49,7 @@ int backcol (int n, double A[][nmax], double b[], int trans) {
 
 		if (trans) {
 			for (int j = i-1; j >= 0; j--)
-				b[j] -= A[i][j];
+				b[j] -= A[i][j]*b[i];
 		}
     }
     return 0;

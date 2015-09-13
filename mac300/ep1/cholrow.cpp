@@ -36,7 +36,7 @@ int backrow (int n, double A[][nmax], double b[], int trans) {
     for (int j = n-1; j >= 0; j--) {
         if (trans) {
             for (int i = j+1; i < n; i++)
-                b[j] -= A[i][j];
+                b[j] -= A[i][j]*b[i];
         }
 
         if (A[j][j] == 0)
@@ -46,7 +46,7 @@ int backrow (int n, double A[][nmax], double b[], int trans) {
 
         if (!trans) {
             for (int i = j-1; i >= 0; i--)
-                b[i] -= A[i][j];
+                b[i] -= A[i][j]*b[j];
         }
     }
 }

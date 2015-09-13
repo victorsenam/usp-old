@@ -28,23 +28,25 @@ int main (int argc, char ** argv) {
     scanf("%d", &n);
     for (int i = 0; i < n*n; i++) {
         scanf("%d %d", &x, &y);
-        scanf("%lf", &A[x-1][y-1]);
+        scanf("%lf", &A[x][y]);
     }
     for (int i = 0; i < n; i++)
         scanf("%lf", b+i);
     
     // Define mode à partir dos argumentos inseridos
     for (int i = 1; i < argc; i++) {
-        if (strcmp(argv[i], "d") == 0)
-            mode |= 1;
-        else if (strcmp(argv[i], "row") == 0)
+        if (strcmp(argv[i], "row") == 0)
             mode |= 2;
         else if (strcmp(argv[i], "lu") == 0)
             mode |= 4;
-        else if (strcmp(argv[i], "hidedec") == 0)
-            mode |= 8;
-        else if (strcmp(argv[i], "hideres") == 0)
-            mode |= 16;
+        else if (argv[i][0] == 'h') {
+            if (strcmp(argv[i]+1, "inp") == 0)
+                mode |= 1;
+            else if (strcmp(argv[i]+1, "dec") == 0)
+                mode |= 8;
+            else if (strcmp(argv[i]+1, "res") == 0)
+                mode |= 16;
+        }
     }
     
     // Imprime a entrada
@@ -99,10 +101,10 @@ int main (int argc, char ** argv) {
         // Imprime a Decomposicao
         if (!(mode&8)) {
             printf("Matriz L: \n");
-            printmat(n, A, ([](int i, int j, double A[][nmax]) -> double { return (i < j)?A[i][j]:(i==j)?1.0:0.0; }));
+            printmat(n, A, ([](int i, int j, double A[][nmax]) -> double { return (i > j)?A[i][j]:(i==j)?1.0:0.0; }));
 
             printf("Matriz U: \n");
-            printmat(n, A, ([](int i, int j, double A[][nmax]) -> double { return (i > j)?A[i][j]:0.0; }));
+            printmat(n, A, ([](int i, int j, double A[][nmax]) -> double { return (i <= j)?A[i][j]:0.0; }));
         }
 
         // Imprime a solução do sistema
