@@ -3,9 +3,7 @@
 #include "cholcol.h"
 #include "cholrow.h"
 #include "lucol.h"
-
-int lurow (int n, double A[][nmax], int p[]);
-int ssrow (int n, double A[][nmax], int p[], double b[]);
+#include "lurow.h"
 
 int main (int argc, char ** argv) {
     int n;
@@ -96,7 +94,10 @@ int main (int argc, char ** argv) {
         if (!(mode&2)) {
             testfail(lucol(n, A, p), 2);
             testfail(sscol(n, A, p, b), 2);
-        } else;
+        } else {
+            testfail(lurow(n, A, p), 2);
+            testfail(ssrow(n, A, p, b), 2);
+        }
 
         // Imprime a Decomposicao
         if (!(mode&8)) {
