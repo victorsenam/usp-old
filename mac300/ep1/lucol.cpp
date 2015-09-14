@@ -4,6 +4,7 @@
 #include "lucol.h"
 
 int lucol (int n, double A[][nmax], int p[]) {
+    clock_t beg = clock();
     for (int i = 0; i < n; i++)
         p[i] = i;
 
@@ -27,10 +28,12 @@ int lucol (int n, double A[][nmax], int p[]) {
                 A[i][j] -= A[i][k]*A[k][j];
         }
     }
+    printf("%.2f\n", (double)((clock()-beg))/(double)(CLOCKS_PER_SEC));
     return 0;
 }
 
 int sscol (int n, double A[][nmax], int p[], double b[]) {
+    clock_t beg = clock();
     // b = Pb       
     for (int i = 0; i < n; i++)
         std::swap(b[i], b[p[i]]);
@@ -50,8 +53,7 @@ int sscol (int n, double A[][nmax], int p[], double b[]) {
 
         b[i] /= A[i][i];
     }
-
-    
+    printf("%.2f\n", (double)((clock()-beg))/(double)(CLOCKS_PER_SEC));
     return 0;
 }
 

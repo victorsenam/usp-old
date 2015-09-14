@@ -4,6 +4,7 @@
 #include "cholcol.h"
 
 int cholcol (int n, double A[][nmax]) {
+    clock_t beg = clock();
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < i; j++) {
             for (int k = 0; k < j; k++)
@@ -19,10 +20,13 @@ int cholcol (int n, double A[][nmax]) {
         A[i][i] = sqrt(A[i][i]);
 
     }
+
+    printf("%.2f\n", (double)((clock()-beg))/(double)(CLOCKS_PER_SEC));
     return 0;
 }
 
 int forwcol (int n, double A[][nmax], double b[]) {
+    clock_t beg = clock();
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < i; j++)
             b[i] -= A[i][j]*b[j];
@@ -32,10 +36,12 @@ int forwcol (int n, double A[][nmax], double b[]) {
 
         b[i] /= A[i][i];
     }
+    printf("%.2f\n", (double)((clock()-beg))/(double)(CLOCKS_PER_SEC));
     return 0;
 }
 
 int backcol (int n, double A[][nmax], double b[], int trans) {
+    clock_t beg = clock();
     for (int i = n-1; i >= 0; i--) {
 		if (!trans) {
 			for (int j = i+1; j < n; j++)
@@ -52,6 +58,7 @@ int backcol (int n, double A[][nmax], double b[], int trans) {
 				b[j] -= A[i][j]*b[i];
 		}
     }
+    printf("%.2f\n", (double)((clock()-beg))/(double)(CLOCKS_PER_SEC));
     return 0;
 }
 
