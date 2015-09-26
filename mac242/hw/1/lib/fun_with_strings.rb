@@ -1,3 +1,5 @@
+require 'pp'
+
 module FunWithStrings
   def palindrome?
     if ( self.length <= 1)
@@ -12,13 +14,16 @@ module FunWithStrings
       return self[1..-2].palindrome?
     end
   end
-  def count_words
+  def count_words (clear = false)
     ret = {}
     ret.default = 0
-    str = self.gsub(/[^a-zA-Z ]/, '')
-    str = str.gsub(/ {2,}/, ' ')
-    str = str.gsub(/^ +/, '')
-    str.downcase!
+    str = self
+    if (!clear)
+      str = self.gsub(/[^a-zA-Z ]/, '')
+      str = str.gsub(/ {2,}/, ' ')
+      str = str.gsub(/^ +/, '')
+      str.downcase!
+    end
 
     str.split(' ').each do |pre|
       ret[pre]
@@ -28,33 +33,27 @@ module FunWithStrings
     return ret
   end
   def anagram_groups
-  # Aparentemente o erro está no teste, ele nao consegue dar sort no vetor ou algo do tipo
-    ret = []
-    hash = {}
+    counted = {}
     str = self.gsub(/[^a-zA-Z ]/, '')
     str = str.gsub(/ {2,}/, ' ')
     str = str.gsub(/^ +/, '')
     str.downcase!
+    
+    words = str.split(' ')
 
-    str.split(' ').each do |pre|
-      aux = pre.split('').sort.join
-      if (hash.has_key?(aux))
-        hash[aux].push(pre)
+    words.each do |it|
+      chars = it.split('').sort.join('')
+      if counted.has_key? chars
+        counted[chars].push(it)
       else
-        hash[aux] = [pre]
+        counted[chars] = [it]
       end
     end
 
-    puts " =a= "
-    hash.each do |arr|
-      puts arr
-      ret.push(arr)
+    ret = []
+    counted.each do |it|
+      ret.push(it[1])
     end
-    puts " =b= "
-    puts hash
-    puts " =c= "
-    puts ret
-    puts " =d= "
 
     return ret
   end
