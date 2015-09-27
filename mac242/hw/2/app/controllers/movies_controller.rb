@@ -10,27 +10,37 @@ class MoviesController < ApplicationController
     query = Movie
     
     # defining order
+    if params.has_key?:sort
+      session[:sort] = params[:sort]
+    elsif session.has_key?:sort
+      params[:sort] = session[:sort]
+    else
+      params[:sort] = []
+    end
     @sorting = params[:sort]
+      
     if (['title','release_date'].include?@sorting)
       query = query.order(@sorting)
     end
 
     # defining ratings
     if params.has_key?:ratings
-      @ratings = params[:ratings].keys
-      query = query.where({ rating: @ratings })
+      session[:ratings] = params[:ratings]
+    elsif session.has_key?:ratings
+      params[:ratings] = session[:ratings]
     else
-      @ratings = []
-      query = query.all
+      params[:ratings] = {}
+    end
+    @ratings = params[:ratings].keys
+    if (@ratings != [])
+      query = query.where({ rating: @ratings })
     end
     
     # concluding
-    @movies = query
+    @movies = query.all
     @all_ratings = []
-    @movies.each do |ret|
-      if (!@all_ratings.include?ret.rating)
-        @all_ratings.push(ret.rating)
-      end
+    Movie.select('rating').uniq.each do |ret|
+      @all_ratings.push(ret.rating)
     end
   end
 
