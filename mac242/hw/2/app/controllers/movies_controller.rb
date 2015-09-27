@@ -7,14 +7,30 @@ class MoviesController < ApplicationController
   end
 
   def index
+    query = Movie
+    
+    ## GETTING MOVIES
+    # defining the order to print
     if (params[:sorting] == 'title')
-      @movies = Movie.order("title").all
+      query = query.order("title")
     elsif (params[:sorting] == 'release_date')
-      @movies = Movie.order("release_date").all
-    else
-      @movies = Movie.all
+      query = query.order("release_date")
     end
+
+    # defining wheres
+    if params.has_key?:ratings
+      query = query.where({ rating: (params[:ratings].keys) })
+    else
+      query = query.all
+    end
+    
+    ## TEMPLATE INFOS
+    @movies = query
     @sorting = params[:sorting]
+    @all_ratings = []
+    Movie.select(:rating).uniq.each do |ret|
+      @all_ratings.push(ret.rating)
+    end
   end
 
   def new
