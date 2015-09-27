@@ -9,27 +9,28 @@ class MoviesController < ApplicationController
   def index
     query = Movie
     
-    ## GETTING MOVIES
-    # defining the order to print
-    if (params[:sorting] == 'title')
-      query = query.order("title")
-    elsif (params[:sorting] == 'release_date')
-      query = query.order("release_date")
+    # defining order
+    @sorting = params[:sort]
+    if (['title','release_date'].include?@sorting)
+      query = query.order(@sorting)
     end
 
-    # defining wheres
+    # defining ratings
     if params.has_key?:ratings
-      query = query.where({ rating: (params[:ratings].keys) })
+      @ratings = params[:ratings].keys
+      query = query.where({ rating: @ratings })
     else
+      @ratings = []
       query = query.all
     end
     
-    ## TEMPLATE INFOS
+    # concluding
     @movies = query
-    @sorting = params[:sorting]
     @all_ratings = []
-    Movie.select(:rating).uniq.each do |ret|
-      @all_ratings.push(ret.rating)
+    @movies.each do |ret|
+      if (!@all_ratings.include?ret.rating)
+        @all_ratings.push(ret.rating)
+      end
     end
   end
 
