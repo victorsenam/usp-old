@@ -1,0 +1,3 @@
+[submodule "mac242/claudia"]
+	path = mac242/claudia
+	url = https://github.com/victorsenam/claudia.git
