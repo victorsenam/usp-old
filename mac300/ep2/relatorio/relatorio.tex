@@ -115,10 +115,49 @@ Como dito acima, este método garante que nenhum as direções de cada passo sej
 Para isso, as direções geradas são \textit{A-ortogonais} entre si, ou seja, são tais que 
 $$ \forall i,j \text{ t.q. } i \neq j\text{, } d_i^{T}Ad_j = 0 $$
 Isso faz com que nenhum passo seja dado na mesma direção, já que elas são todas diferentes, e também faz com que as direções $d_0, d_1, \dots, d_i$ gerem um espaço vetorial de dimensão $i$, que chamaremos $\mathcal{D}_i$, como em \cite{shewchuk1994introduction}. Logo, se $x$ tem dimensão $n$, $x \in \mathcal{D}_n$. E já que $f'(x)$ é minimizado a cada iteração, $x_i$ é tal que $\forall p \in \mathcal{D}_i f(x_i) \leq f(p)$, ou seja, $x_i$ é o ponto mínimo de $f$ para o subespaço $\mathcal{D}_i$. \\
-Agora falta conseguirmos $n$ direções de busca ${d_i}$ que são \textit{A-ortogonais} (ou seja, conjugadas) entre si. Para isso, o método de Conjugate Directions usa o processo de \textit{Gram-Schmidt} \cite[p.~25]{shewchuck1994introduction}. O problema é que, para aplicar esse método, todos os vetores já gerados devem ser guardados e percorridos completamente para gerar o próximo vetor, assim, naturalmente, o processo custa, em quantidade de operações $O(n^3)$ e $O(n^2)$ em espaço. \\
+Agora falta conseguirmos $n$ direções de busca ${d_i}$ que são \textit{A-ortogonais} (ou seja, conjugadas) entre si. Para isso, o método de Conjugate Directions usa o processo de \textit{Gram-Schmidt} \cite[p.~25]{shewchuk1994introduction}. O problema é que, para aplicar esse método, todos os vetores já gerados devem ser guardados e percorridos completamente para gerar o próximo vetor, assim, naturalmente, o processo custa, em quantidade de operações $O(n^3)$ e $O(n^2)$ em espaço. \\
 
-\subsection{O método dos Gradientes Conjugados}
-Felizmente, existe uma maneira mais eficiente de gerar as direções de busca ${d_i}$. É isso que o método dos gradientes conjugados apresenta com os espaços de Krylov. 
+\subsection{Espaços de Krylov e o Método dos Gradientes Conjugados}
+Felizmente, existe uma maneira mais eficiente de gerar as direções de busca ${d_i}$. É isso que o método dos gradientes conjugados apresenta com os espaços de Krylov. Denotaremos por $\mathcal{K}_i$ um subespaço de Krylov de dimensão $i$. \\
+A facilidade para se calcular $\mathcal{K}_{i+1}$ dado $\mathcal{K}_{i}$ fez com que estes subespaços sejam a base pra vários algoritmos iterativos para resolução de sistemas lineares e para o cálculo de autovalores, como mostrado em \cite{trefethen1997numerical}. Dados uma matriz $A$ e um vetor $b$, o espaço de $\mathcal{K}_i$ tem como base $[b, Ab, A^2b, \dots, A^{i-1}b]$ ~\cite[p.~245]{trefethen1997numerical}. \\
+Assim, o método dos Gradientes Conjugados é exatamente o \textit{Conjugate Directions} que usa o subespaço de Krylov para gerar direções de busca ortogonais entre si. \\
+
+\subsection{O Algoritmo}
+Agora temos tudo o que precisamos para derivar o algoritmo. Primeiro, vamos definir quais são as informações que precisamos ter em cada passo e o que elas significam. \\
+\begin{description}
+    \item[$A$] \hfill \\
+    Entrada do Problema. $A \in \mathbb{R}^{n \times n}$ é simétrica, positiva definida e tem $m$ elementos não-nulos (esparsa).
+    \item[$b$] \hfill \\
+    Entrada do Problema. $A \in \mathbb{R}^{n}$.
+    \item[$x_i$] \hfill \\
+    Aproximação atual do valor de $x$ tal que $Ax = b$.
+    \item[$r_i$] \hfill \\
+    Residual de $b$, é usado para gerar a direção de Busca.
+    \item[$d_i$] \hfill \\
+    Direção de Busca. Onde serão gerados, indiretamente dos espaços $\mathcal{K}_i$.
+    \item[$\beta_i$] \hfill \\
+    Razão entre a norma do residual no passo $i$ e $i-1$, mostra o quão mais próximo da resposta $x$ $x_i$ está em relação a $x_{i-1}$.
+\end{description}
+O algoritmo, então, é o seguinte: ~\cite[p.~294]{trefethen1997numerical}
+\begin{algorithm}[]
+    $x_0 = 0, r_0 = b, d_0 = r_0$ \\
+    \For{$i = 1,2,\dots,n$}{
+        $\alpha_i = (r_{i-1}^Tr_{i-1})/(d_{i-1}^T A d_{i-1})$ \\
+        $x_i = x_{i-1} + \alpha_i d_{i-1} $ \\
+        $r_i = r_{i-1} - \alpha_i A d_{i-1} $ \\
+        $\beta_i = (r_{i-1}^Tr_{i-1})/(r_{i}^Tr_{i})$ \\
+        $d_i = r_i + \beta_i d_{i-1}$
+    }
+\end{algorithm}
+
+\subsection{Observações}
+Algumas observações interesantes podem ser feitas sobre o algoritmo. \\
+Os espaços $\mathcal{K}_i$ não são explícitamente calculados. Mas eles são deles que partem as direções de busca. É fácil ver que, de fato, a direção de busca é uma combinação linear de $b, Ab, A(Ab), \dots, A^{i-1}$ em todo passo $i$. Inicialmente $d_0$ = $b$, ou seja, $d_0 \in \mathcal{K}_0$, como esperado. No passo $i$, calculamos $r_i$ e, com ele, calculamos $d_i$. É fácil ver que, no primeiro passo:
+$$ d_1 = b - \alpha_1 Ab + \beta_1 b = (1+\beta_1)b - \alpha_1 Ab $$
+Logo, $d_1$ é uma combinação linear de $Ab$ e $b$, pertencendo a $\mathcal{K}_1$. Isso continua por toda a execução do algoritmo. \\
+Poderíamos escolher qualquer valor para $x_0$, e algumas escolhas poderiam fazer a convergência para $x$ ser ainda mais rápida, porém, a condição inicial para $r_0$ e $d_0$ é $d_0 = r_0 = b - Ax_0$, o que faz bastante sentido, já que inicialmente ambos se referem à distância de $x_0$ para $x$. Porém, se escolhermos $x_0 = 0$, trivialmente, $b - Ax_0 = b$, já que $A$ é positiva definida. \\
+
+\section{Matrizes Esparsas}
 
 % Caso A = I
 
@@ -126,9 +165,9 @@ Felizmente, existe uma maneira mais eficiente de gerar as direções de busca ${
 %   BIBLIOGRAFIA
 %----------------------------------------------------------------------------------------
 
+\renewcommand{\refname}{\spacedlowsmallcaps{Bibliografia}} % For modifying the bibliography heading
 \bibliography{relatorio.bib} % The file containing the bibliography
 \bibliographystyle{unsrt}
-\renewcommand{\refname}{\spacedlowsmallcaps{Bibliografia}} % For modifying the bibliography heading
 
 %----------------------------------------------------------------------------------------
 
