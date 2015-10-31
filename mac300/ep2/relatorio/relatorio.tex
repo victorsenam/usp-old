@@ -74,7 +74,7 @@ BCOR5mm, % Binding correction
 
 \section*{Abstract} % This section will not appear in the table of contents due to the star (\section*)
 
-Este é um relatório sobre a implementação do método dos Gradientes Conjugados para encontrar um $x \in \mathbb{R}^n$ tal que $Ax = b$ onde $A \in \mathbb{R}^{n \times n}$ é esparsa, positiva definida e conhecida e $b \in \mathbb{R}^n$.
+Este é um relatório sobre a implementação do método dos Gradientes Conjugados para encontrar um $x \in \mathbb{R}^n$ tal que $Ax = b$ onde $A \in \mathbb{R}^{n \times n}$ é esparsa, positiva definida e conhecida e $b \in \mathbb{R}^n$ é conhecida.
 
 %----------------------------------------------------------------------------------------
 
@@ -87,158 +87,48 @@ Este é um relatório sobre a implementação do método dos Gradientes Conjugad
 \section{Introdução}
 Durante o semestre foram estudadas várias formas de se resolver sistemas da forma $Ax = b$, é fácil perceber que, com hipóteses mais fortes, esse tipo de cálculo se torna mais fácil. Por exemplo, se $A$ for positiva definida, podemos aplicar a decomposição de Cholesky e evitar o cálculo da decomposição LU, que funciona, também, no caso onde $A$ é positiva definida. \\
 O método dos Gradientes Conjugados tem, também, como hipótese, uma $A$ positiva definida. Porém, esse método permite que propriedades da matriz $A$, como, por exemplo, a esparsidade, sejam aproveitados. \\
-O objetivo desse relatório é, então, explicitar o que foi entendido sobre o método em questão, mostrar uma forma de aproveitar a esparsidade da matriz no método dos Gradientes Conjugados e discutir a complexidade desse método, comparando o com a decomposição de Cholesky, já que esta é derivada das mesmas hipóteses que o método dos Gradientes conjugados.
+O objetivo desse relatório é, então, explicitar o que foi entendido sobre o método em questão, mostrar uma forma de aproveitar a esparsidade da matriz no método dos Gradientes Conjugados e discutir a complexidade desse método, comparando o com a decomposição de Cholesky, já que esta é derivada das mesmas hipóteses que o método dos Gradientes conjugados. Além disso, pretendo explicar o que foi feito em outras partes do desenvolvimento, como, por exemplo, o método para gerar matrizes positivas definidas esparsas. \\
+Para tentar entender o método, foram estudados dois textos, o livro \textit{Numerical Linear Algebra}\cite{trefethen1997numerical}, como indicado no enunciado do EP e um paper intitulado \textit{Painless Conjugate Gradient}\cite{shewchuk1994introduction}.
  
 %----------------------------------------------------------------------------------------
-%	MATRIZES ESPARSAS
+%   GRADIENTES CONJUGADOS
 %----------------------------------------------------------------------------------------
 
-\section{Matrizes Esparsas}
+\section{Gradientes Conjugados}
+O método dos Gradientes Conjugados, em \cite{shewchuk1994introduction} é apresentado como uma derivação dos métodos \textit{Steepest Descent} e \textit{Conjugate Directions}. Vou introduzir ambos brevemente aqui, para mostrar como eu entendi o método dos Gradientes Conjugados.
 
+\subsection{Steepest Descent}
+O método do \textit{Steepest Descent} busca encontrar o $x$ que tem a forma quadrática mínima com a matriz $A$ e o vetor $b$ dados no problema. \\
+A forma quadrática de um vetor é uma função escalar e quadrática de um vetor da forma ~\cite[p.~2]{shewchuk1994introduction}
+$$ f(x) = \frac{1}{2}x^{T}Ax - b^{T}x + c $$ 
+E o gradiente da forma quadrática é simplesmente ~\cite[p.~3]{shewchuk1994introduction}
+$$ f'(x) = Ax - b $$ 
+Assim, é fácil ver que se $ f'(x) = 0 $ então
+$$ Ax = b $$
+resolvendo o problema. \\
+Para uma $A$ positiva definida, é possível mostrar que só existe um mínimo para a forma quadrática ~\cite[p.~5]{shewchuk1994introduction} e não existe máximo, assim, calcular $f'(x) = 0$ é simplesmente minimizar a função $f(x)$ no seu único ponto de mínimo. Assim, seguir o gradiente maximiza a função, se seguirmos a direção oposta ao gradiente, estaremos nos aproximando cada vez mais do mínimo da função. E é nisso que o método se baseia. \\
+Assim, o método chuta um ponto $x_0$ e, para calcular $x_{i+1}$, para todo $i$, vai na direção oposta à função $f'(x_i)$ o que garante que, com o tamanho certo do passo nessa direção, $\lim_{i \to \infty} f'(x_i) = 0$. \\
+O problema é que este método pode dar passos na mesma direção que métodos anteriores, pois a direção dos passos é definida pelo gradiente de $f$. De fato, isso acontece na prática. O método de \textit{Conjugate Directions} impede que isso aconteça.
 
-%----------------------------------------------------------------------------------------
-%	METHODS
-%----------------------------------------------------------------------------------------
+\subsection{Conjugate Directions}
+Como dito acima, este método garante que nenhum as direções de cada passo sejam diferentes entre si. Para fazer isso, é introduzida a ideia de direção de busca. O método usa direções de busca $d_i$ diferentes entre si e sempre minimiza $f'(x_{i+1})$ com alterações do tipo $x_{i+1} = x_i + \alpha_i d_i$ para cada passo $i$. \\
+Para isso, as direções geradas são \textit{A-ortogonais} entre si, ou seja, são tais que 
+$$ \forall i,j \text{ t.q. } i \neq j\text{, } d_i^{T}Ad_j = 0 $$
+Isso faz com que nenhum passo seja dado na mesma direção, já que elas são todas diferentes, e também faz com que as direções $d_0, d_1, \dots, d_i$ gerem um espaço vetorial de dimensão $i$, que chamaremos $\mathcal{D}_i$, como em \cite{shewchuk1994introduction}. Logo, se $x$ tem dimensão $n$, $x \in \mathcal{D}_n$. E já que $f'(x)$ é minimizado a cada iteração, $x_i$ é tal que $\forall p \in \mathcal{D}_i f(x_i) \leq f(p)$, ou seja, $x_i$ é o ponto mínimo de $f$ para o subespaço $\mathcal{D}_i$. \\
+Agora falta conseguirmos $n$ direções de busca ${d_i}$ que são \textit{A-ortogonais} (ou seja, conjugadas) entre si. Para isso, o método de Conjugate Directions usa o processo de \textit{Gram-Schmidt} \cite[p.~25]{shewchuck1994introduction}. O problema é que, para aplicar esse método, todos os vetores já gerados devem ser guardados e percorridos completamente para gerar o próximo vetor, assim, naturalmente, o processo custa, em quantidade de operações $O(n^3)$ e $O(n^2)$ em espaço. \\
 
-\section{Methods}
+\subsection{O método dos Gradientes Conjugados}
+Felizmente, existe uma maneira mais eficiente de gerar as direções de busca ${d_i}$. É isso que o método dos gradientes conjugados apresenta com os espaços de Krylov. 
 
-Reference to Figure~\vref{fig:gallery}. % The \vref command specifies the location of the reference
-
-\begin{figure}[tb]
-\centering 
-\includegraphics[width=0.5\columnwidth]{GalleriaStampe} 
-\caption[An example of a floating figure]{An example of a floating figure (a reproduction from the \emph{Gallery of prints}, M.~Escher,\index{Escher, M.~C.} from \url{http://www.mcescher.com/}).} % The text in the square bracket is the caption for the list of figures while the text in the curly brackets is the figure caption
-\label{fig:gallery} 
-\end{figure}
-
-\lipsum[5] % Dummy text
-
-\begin{enumerate}[noitemsep] % [noitemsep] removes whitespace between the items for a compact look
-\item First item in a list
-\item Second item in a list
-\item Third item in a list
-\end{enumerate}
-
-%------------------------------------------------
-
-\subsection{Paragraphs}
-
-\lipsum[6] % Dummy text
-
-\paragraph{Paragraph Description} \lipsum[7] % Dummy text
-
-\paragraph{Different Paragraph Description} \lipsum[8] % Dummy text
-
-%------------------------------------------------
-
-\subsection{Math}
-
-\lipsum[4] % Dummy text
-
-\begin{equation}
-\cos^3 \theta =\frac{1}{4}\cos\theta+\frac{3}{4}\cos 3\theta
-\label{eq:refname2}
-\end{equation}
-
-\lipsum[5] % Dummy text
-
-\begin{definition}[Gauss] 
-To a mathematician it is obvious that
-$\int_{-\infty}^{+\infty}
-e^{-x^2}\,dx=\sqrt{\pi}$. 
-\end{definition} 
-
-\begin{theorem}[Pythagoras]
-The square of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the other two sides.
-\end{theorem}
-
-\begin{proof} 
-We have that $\log(1)^2 = 2\log(1)$.
-But we also have that $\log(-1)^2=\log(1)=0$.
-Then $2\log(-1)=0$, from which the proof.
-\end{proof}
+% Caso A = I
 
 %----------------------------------------------------------------------------------------
-%	RESULTS AND DISCUSSION
+%   BIBLIOGRAFIA
 %----------------------------------------------------------------------------------------
 
-\section{Results and Discussion}
-
-\lipsum[10] % Dummy text
-
-%------------------------------------------------
-
-\subsection{Subsection}
-
-\lipsum[11] % Dummy text
-
-\subsubsection{Subsubsection}
-
-\lipsum[12] % Dummy text
-
-\begin{description}
-\item[Word] Definition
-\item[Concept] Explanation
-\item[Idea] Text
-\end{description}
-
-\lipsum[12] % Dummy text
-
-\begin{itemize}[noitemsep] % [noitemsep] removes whitespace between the items for a compact look
-\item First item in a list
-\item Second item in a list
-\item Third item in a list
-\end{itemize}
-
-\subsubsection{Table}
-
-\lipsum[13] % Dummy text
-
-\begin{table}[hbt]
-\caption{Table of Grades}
-\centering
-\begin{tabular}{llr}
-\toprule
-\multicolumn{2}{c}{Name} \\
-\cmidrule(r){1-2}
-First name & Last Name & Grade \\
-\midrule
-John & Doe & $7.5$ \\
-Richard & Miles & $2$ \\
-\bottomrule
-\end{tabular}
-\label{tab:label}
-\end{table}
-
-Reference to Table~\vref{tab:label}. % The \vref command specifies the location of the reference
-
-%------------------------------------------------
-
-\subsection{Figure Composed of Subfigures}
-
-Reference the figure composed of multiple subfigures as Figure~\vref{fig:esempio}. Reference one of the subfigures as Figure~\vref{fig:ipsum}. % The \vref command specifies the location of the reference
-
-\lipsum[15-18] % Dummy text
-
-\begin{figure}[tb]
-\centering
-\subfloat[A city market.]{\includegraphics[width=.45\columnwidth]{Lorem}} \quad
-\subfloat[Forest landscape.]{\includegraphics[width=.45\columnwidth]{Ipsum}\label{fig:ipsum}} \\
-\subfloat[Mountain landscape.]{\includegraphics[width=.45\columnwidth]{Dolor}} \quad
-\subfloat[A tile decoration.]{\includegraphics[width=.45\columnwidth]{Sit}}
-\caption[A number of pictures.]{A number of pictures with no common theme.} % The text in the square bracket is the caption for the list of figures while the text in the curly brackets is the figure caption
-\label{fig:esempio}
-\end{figure}
-
-%----------------------------------------------------------------------------------------
-%	BIBLIOGRAPHY
-%----------------------------------------------------------------------------------------
-
-\renewcommand{\refname}{\spacedlowsmallcaps{References}} % For modifying the bibliography heading
-
+\bibliography{relatorio.bib} % The file containing the bibliography
 \bibliographystyle{unsrt}
-
-\bibliography{sample.bib} % The file containing the bibliography
+\renewcommand{\refname}{\spacedlowsmallcaps{Bibliografia}} % For modifying the bibliography heading
 
 %----------------------------------------------------------------------------------------
 
