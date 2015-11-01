@@ -9,6 +9,8 @@
 #include <algorithm>
 #include <cassert>
 
+const double eps = 1e-9;
+
 // ==== CLASSES ======
 /* Linked List for Sparse Matrix Representation */
 class linked_list {
@@ -63,10 +65,11 @@ public:
         printf("\n");
     }
 
-    double operator * (const vector & other) const {
+    double operator * (vector & other) {
         double res = 0.0;
         for (int i = 0; i < size; i++)
             res += vals[i] * other[i];
+        return res;
     }
 };
 
@@ -145,31 +148,44 @@ void getInput(matrix * & A, vector * & b) {
     }
 }
 
+double absolute (double x) {
+    if (-x > x)
+        return -x;
+    return x;
+}
+
 // ==== MAIN =========
 void conjugateGradients(matrix & A, vector & r) {
-    vector x(r->size);
-    vector d(r->size);
-    vector g(r->size);
+    vector x(r.size);
+    vector d(r.size);
+    vector g(r.size);
     double lastNorm = (r*r);
 
-    for (int i = 0; i < r->size; i++) {
+    for (int i = 0; i < r.size; i++) {
         x[i] = 0;
         d[i] = r[i];
     }
 
-    for (int k = 0; k < r->size; k++) {
-        A->product(g, d);
+    int cnt = 0;
+ //   for (int k = 0; k < r.size; k++) {
+    while (absolute(lastNorm) > eps) {
+        A.product(g, d);
         double alpha = lastNorm/(d*g);
-        for (int i = 0; i < r->size; i++) {
+        for (int i = 0; i < r.size; i++) {
             x[i] += alpha*d[i];
             r[i] -= alpha*g[i];
         }
-        double beta = lastNorm;
-        lastNorm = r*r;
-        beta /= lastNorm;
-        for (int i = 0; i < r->size; i++)
+        double attNorm = r*r;
+        double beta = attNorm/lastNorm;
+        lastNorm = attNorm;
+        for (int i = 0; i < r.size; i++)
             d[i] = r[i] + beta*d[i];
+        cnt++;
     }
+    printf("%d\n", cnt);
+
+    for (int i = 0; i < r.size; i++)
+        r[i] = x[i];
 }
 
 int main () {
