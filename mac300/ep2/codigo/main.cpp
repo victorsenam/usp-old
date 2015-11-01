@@ -27,12 +27,23 @@ public:
     }
 };
 
-int get_input (linked_list ** mat) {
+void matrix_vector_product (const linked_list ** & A, const double * & b, double * & res, int n) {
+    for (int i = 0; i < n; i++) {
+        res[i] = 0.0;
+
+        linked_list * el = A[i];
+        while (el != NULL)
+            res[i] += (el->val)*b[el->col];
+    }
+}
+
+int get_input (linked_list ** & mat, int * & b) {
     int n, m;             // dimensões da matriz
     input_els * input;    // elementos da entrada
     scanf("%d %d", &n, &m);
 
     mat = (linked_list **) malloc(n*sizeof(linked_list *));
+    vet = (int *) malloc(n*sizeof(int));
     input = (input_els *) malloc(m*sizeof(input_els));
 
     for (int i = 0; i < n; i++)
@@ -42,7 +53,7 @@ int get_input (linked_list ** mat) {
         scanf("%d %d %lf", &input[i].lin, &input[i].col, &input[i].val);
 
     std::sort(input, input+m);
-    
+
     for (int i = 0; i < m; i++) {
         linked_list * aux = (linked_list *) malloc(sizeof(linked_list));
         aux->col = input[i].col;
@@ -51,23 +62,33 @@ int get_input (linked_list ** mat) {
         mat[input[i].lin] = aux;
     }
 
+    for (int i = 0; i < n; i++)
+        scanf("lf", b+i);
+
     free(input);
+    return n;
+}
+
+void conjugate_gradients (const linked_list ** & A, double * & r, const int n) {
+    double * x = (double *) malloc(n*sizeof(double));
+    double * d = (double *) malloc(n*sizeof(double));
+
+    for (int i = 0; i < n; i++) {
+        x[i] = 0;
+        d[i] = r[i];
+    }
+
+    
 }
 
 int main () {
-    int n;                                      // dimensões da matriz
-    linked_list ** mat;                         // quantidade de elementos não nulos da matriz
+    int n;                   // n
+    linked_list ** A;        // matriz de entrada A
+    double * b;              // vetor de entrada b
 
-    n = get_input(mat);
+    // recebe a entrada
+    n = get_input(A, b);
 
-    for (int i = 0; i < n; i++) {
-        linked_list * el = mat[i];
-        while (el != (linked_list *) NULL) {
-            printf("(%d -> %.7lf) ", el->col, el->val);
-            linked_list * prev = el;
-            el = el->next;
-            free(prev);
-        }
-        printf("fim linha %d\n", i);
-    }
+    // calcula x em b
+    
 }
