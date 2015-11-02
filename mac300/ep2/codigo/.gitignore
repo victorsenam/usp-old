@@ -2,3 +2,5 @@ main
 log
 out
 inp
+sol
+testes/**/*
