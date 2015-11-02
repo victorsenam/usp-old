@@ -9,6 +9,7 @@ int main () {
     int n;
     double tau;
     scanf("%d %lf", &n, &tau);
+    printf("%d\n", n);
 
     for (int i = 0; i < n; i++)
         printf("%d %d %.7f\n", i, i, 1.0);
