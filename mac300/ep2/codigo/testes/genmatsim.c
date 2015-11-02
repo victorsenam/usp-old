@@ -39,12 +39,10 @@ int main()
 
   // Dimensao.
 
-  printf("\nn= ");
   scanf("%d",&n);
 
   // Arquivo de saida.
 
-  printf("\nOutput file name= ");
   scanf("%s", filename);
 
   // Gera matriz aleatoria M com elementos entre -5 e 5.
