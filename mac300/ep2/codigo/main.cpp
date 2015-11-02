@@ -1,7 +1,3 @@
-// TODO: Tirar funções de print
-
-
-
 // Victor Sena Molero - 8941317
 
 #include <cstdio>
