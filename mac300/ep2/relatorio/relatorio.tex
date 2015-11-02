@@ -171,16 +171,57 @@ Já que, como foi dito nas observações, na prática é impossível garantir co
 
 \section{Testes e Comparação com Cholesky}
 Agora é hora de testar o método com alguns casos. Também é muito importante comparar a realização desse método com o outro que conhecemos para matrizes positivas definidas, a decomposição de Cholesky. \\
+É imporatnte notar que as comparações foram feitas com a implementação de Cholesky orientada a linhas, a mais eficiente para C e C++.
 
 \subsection{Comparação à Priori}
 É importante notar que o método iterativo não diz se a matriz de entrada é positiva definida. Diferente da decomposição de Cholesky que consegue garantir que a matriz de entrada é positiva definida e interromper a execução caso ela não seja, o método GC não verifica isso. \\
 Além disso, se tivermos vários sistemas do tipo $Ax = b$ com uma $A$ única porém vários vetores $b$ diferentes a decomposição de Cholesky só precisa ser realizada uma vez e todas os $b$ são descobertos, a partir dai, com $O(n^2)$ operações. Os métodos iterativos não podem reaproveitar a resposta anterior desta maneira, gerando mais uma disvantagem em realção aos métodos diretos. \\
 
+\subsection{Comparação à Posteriori}
+Dado o $x$ calculado pelo GC eu tentei comparar o resultado de $Ax$ com $b$ mas a comparação sempre retornava $0$, mesmo com respostas que ficavam diferentes das dadas pela decomposição de Cholesky, então eu provavelmente fiz mais alguma coisa errada e, infelizmente, não consegui arrumar. Assim, ficou faltando uma análise do erro cometido pela minha implementação da GC, o que seria interessante.
+
+\subsection{Gerando os Testes}
+Para criar os testes eu usei o \textit{genmatsim.c} do ep1 e criei alguns programas novos que geram matrizes esparsas segundo o exemplo do livro e de uma outra maneira diferente (que será explicada). \\
+Para rodar todos esses programas foi criado um pequeno script em bash, para usá-lo entre na pasta \textit{codigo/testes} e execute o arquivo \textit{generateTestes.sh}. É importante que você esteja dentro da pasta onde está este arquivo para que ele funcione. Também é interessante notar que ele vai gerar matrizes grandes que vão ocupar algum espaço, porém nenhum dos arquivos gerados é absurdamente grande nem demora muito tempo.
+
 \subsection{Matrizes Pequenas}
+Primeiro foram usadas algumas matrizes pequenas para testar meu programa. Elas estão disponíveis em \textit{codigo/testes/pequenas} e não é necessáiro usar o gerador para isso. \\
+\begin{tabular}{| l | l | l | l | l | l | l |}
+    \hline
+    Entrada & $n$a & $m$ & Iterações GC & Tempo GC & Tempo Cholesky \\ \hline
+    \textit{2.in} & $2$ & $4$ & $2$ & $0.007$s & $0.006$s \\ \hline
+    \textit{3.in} & $3$ & $9$ & $3$ & $0.008$s & $0.005$s \\ \hline
+    \textit{id.in} & $10$ & $10$ & $1$ & $0.005$s & $0.006$s \\ \hline
+\end{tabular} \\
+Mesmo com matrizes pequenas é possível ver a diferença entra GC e Cholesky. As duas primeiras matrizes são completas de tamanho muito pequeno, para elas, a GC converge em $n$ passos e é consistentemente menos eficiente do que Cholesky com diferenças na ordem de $0.001$s. Isto ocorre provavelmente por causa da estrutura de lista ligada e claramente não é relacionado à complexidade do algoritmo. \\
+O terceiro exemplo é uma matriz identidade de tamanho $10$. Nessa matriz, o GC acha a resposta em $1$ passo e, por isso, é mais rápida que Cholesky. De fato, a GC encontra a resposta em uma iteração sempre que $b$ é um autovetor de $A$ ou quando os autovetores de $A$ são todos iguais ~\cite[p.~33]{shewchuk1994introduction}. \\
+Esses testes servem apenas para mostrar casos genéricos e o caso específico explicado acima exemplificado pela matriz identidade.
+
 \subsection{Exemplo do Livro}
+O livro \cite{trefethen1997numerical} mostra uma maneira de gerar matrizes esparsas de forma aleatória. Este método foi implementado em \textit{codigo/testes/exemplo.cpp} e 3 casos foram testados aqui. Eles são interessantes pois é possível compará-los com Cholesky, já que as matrizes não são tão grandes. \\
+\begin{tabular}{| l | l | l | l | l | l | l |}
+    \hline
+    Entrada & $\lambda$ & $n$ & $m$ & Iterações GC & Tempo GC & Tempo Cholesky \\ \hline
+    \textit{01.in} & $0.01$ & $500$ & $2585$ & $6$ & $0.01$s & $0.38$s \\ \hline
+    \textit{02.in} & $0.02$ & $500$ & $5089$ & $9$ & $0.02$s & $0.39$s \\ \hline
+    \textit{1.in} & $0.1$ & $500$ & $25177$ & $\infty$ & $\infty$ & $0.42$s \\ \hline
+\end{tabular} \\
+Os testes acima receberam um parâmetro $\lambda$ como sugerido no livro. É possível com um $\lambda$ pequeno, o tempo da GC é muito melhor do que o da decomposição de Cholesky. Apesar disso, com $\lambda = 0.1$, o método divergiu e isso, provavelmente, ocorre por causa da propagação do erro nas contas.
+
 \subsection{Matrizes Densas}
+Estas matrizes são geradas pelo \textit{genmatsim.c}, o mesmo que gerou os exemplos de teste para o EP1. É interessante comparar elas com a decomposição de Cholesky pois foi com elas que testamos os métodos diretos pela primeira vez. \\
+\begin{tabular}{| l | l | l | l | l | l | l |}
+    \hline
+    Entrada & $n$ & $m$ & Iterações GC & Tempo GC & Tempo Cholesky \\ \hline
+    \textit{100.in} & $100$ & $n^2$ & $155$ & $0.08$s & $0.04$s \\ \hline
+    \textit{500.in} & $500$ & $n^2$ & $971$ & $9.92$s & $1.03$s \\ \hline
+    \textit{700.in} & $1309$ & $n^2$ & $971$ & $25.36$s & $2.31$s \\ \hline
+\end{tabular} \\
+É fácil ver que o comportamento da GC para matrizes densas é catastrófico. Já que o método de GC usa estruturas de dados mais complexas e tem muito mais processamento por iteração, ela é uma péssima escolha para os casos em que a decomposição de Cholesky é utilizável, perdendo em tempo, espaço e precisão.
+
 \subsection{Matrizes Esparsas}
-% Caso A = I
+
+
 
 %----------------------------------------------------------------------------------------
 %   BIBLIOGRAFIA
