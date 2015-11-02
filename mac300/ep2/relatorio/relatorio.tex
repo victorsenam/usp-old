@@ -156,9 +156,30 @@ Os espaços $\mathcal{K}_i$ não são explícitamente calculados. Mas eles são 
 $$ d_1 = b - \alpha_1 Ab + \beta_1 b = (1+\beta_1)b - \alpha_1 Ab $$
 Logo, $d_1$ é uma combinação linear de $Ab$ e $b$, pertencendo a $\mathcal{K}_1$. Isso continua por toda a execução do algoritmo. \\
 Poderíamos escolher qualquer valor para $x_0$, e algumas escolhas poderiam fazer a convergência para $x$ ser ainda mais rápida, porém, a condição inicial para $r_0$ e $d_0$ é $d_0 = r_0 = b - Ax_0$, o que faz bastante sentido, já que inicialmente ambos se referem à distância de $x_0$ para $x$. Porém, se escolhermos $x_0 = 0$, trivialmente, $b - Ax_0 = b$, já que $A$ é positiva definida. \\
+A convergência em $n$ passos é teórica. Os erros de precisão de ponto flutuante fazem com que os espaços $\mathcal{K}_i$ não sejam necessáriamente ortogonais. Com o acúmulo de operações isso faz com que o método de Gradientes Convergences sofra, mesmo que numa escala bem menor, do mesmo mal que o método \textit{Steepest Descent}.
 
-\section{Matrizes Esparsas}
+\section{Implementação}
+\subsection{Matrizes Esparsas}
+Grande parte do objetivo de usar usar métodos iterativos para resolver sistemas lineares é poder tomar vantagem de propriedades específicas delas, como, por exemplo, a esparsidade. \\
+Neste caso, podemos diminuir a complexidade do que, num caso normal, seria o gargalo do nosso algoritmo. A multiplicação $Ad_{i-1}$ a toda iteração do método GC. Para isso, basta lembrar da definição de multiplicação de uma matriz por um vetor:
+$$ Ad = g \implies g_i = \sum\limits_{j=1}^n A_{i,j}d_j $$
+Ou seja, toda linha de $g$ é uma combinação linear de $d$ onde os coeficientes são dados por elementos de $A$. Assim, se conseguirmos evitar processar os elementos nulos de $A$ e percorrermos só os elementos não nulos teremos uma melhoria razoável na performance. Para isso, basta representar a matriz como $n$ listas ligadas, representando as linhas, que tem como valor em cada nó a coluna e o valor de cada item não nulo. \\
+Além da melhoria no tempo, essa representação otimiza também o espaço, já que não precisa guardar todos os elementos não nulos da matriz. Assim, o custo de cada multiplicação da uma matriz esparsa por um vetor bem como o espaço usado pela matriz é precisamente $n+m$ onde $n$ é a quantidade de linhas da matriz e $m$ é a quantidade de elementos não-nulos de $A$. \\
 
+\subsection{Convergência}
+Já que, como foi dito nas observações, na prática é impossível garantir convergência em $n$ passos, foi definido um $\epsilon$ de $10^{-9}$ e, na implementação, é considerado que o método convergiu quando $r^Tr \leq \epsilon$. Ou seja, quando a norma 2 de $r$ for suficientemente pequena. \\
+
+\section{Testes e Comparação com Cholesky}
+Agora é hora de testar o método com alguns casos. Também é muito importante comparar a realização desse método com o outro que conhecemos para matrizes positivas definidas, a decomposição de Cholesky. \\
+
+\subsection{Comparação à Priori}
+É importante notar que o método iterativo não diz se a matriz de entrada é positiva definida. Diferente da decomposição de Cholesky que consegue garantir que a matriz de entrada é positiva definida e interromper a execução caso ela não seja, o método GC não verifica isso. \\
+Além disso, se tivermos vários sistemas do tipo $Ax = b$ com uma $A$ única porém vários vetores $b$ diferentes a decomposição de Cholesky só precisa ser realizada uma vez e todas os $b$ são descobertos, a partir dai, com $O(n^2)$ operações. Os métodos iterativos não podem reaproveitar a resposta anterior desta maneira, gerando mais uma disvantagem em realção aos métodos diretos. \\
+
+\subsection{Matrizes Pequenas}
+\subsection{Exemplo do Livro}
+\subsection{Matrizes Densas}
+\subsection{Matrizes Esparsas}
 % Caso A = I
 
 %----------------------------------------------------------------------------------------
