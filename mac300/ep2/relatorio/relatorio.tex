@@ -220,7 +220,23 @@ Estas matrizes são geradas pelo \textit{genmatsim.c}, o mesmo que gerou os exem
 É fácil ver que o comportamento da GC para matrizes densas é catastrófico. Já que o método de GC usa estruturas de dados mais complexas e tem muito mais processamento por iteração, ela é uma péssima escolha para os casos em que a decomposição de Cholesky é utilizável, perdendo em tempo, espaço e precisão.
 
 \subsection{Matrizes Esparsas}
-
+Como pedido no enunciado do EP, eu tenho que criar um gerador de matrizes positivas definidas esparsas. Com alguma busca eu encontrei a discussão \cite{darylmathexchange} que dá um método bem parecido com o fornecido pelo livro \cite{trefethen1997numerical} para gerar esse tipo de matriz. \\
+Eu tentei, então, replicar o método apresentado em \cite{darylmathexchange} de forma mais rápida e que não gastasse memória. Para isso, eu gerei $n$ reais da forma $n+\alpha$ onde é aleatório e uniforme entre $0$ e $1$ que são os elementos inseridos nas diagonais. \\
+Depois disso, eu gerei trincas de elementos $x, y, \alpha$ tais que $x$ e $y$ são inteiros uniformemente distribuídos entre $0$ e $n-1$ e $\alpha$ é um real uniformemente distribuído entre $-1$ e $1$. Com as trincas geradas, eu inseri na matriz nas posições $x,y$ e $y,x$ o valor $\alpha$. \\
+Existem alguns problemas com este método. Eu não sei garantir (e provavelmente não é possível) que a matriz gerada seja positiva definida, apenas existe a garantia de que ela é simétrica, esparsa e muito parecida com um multiplo da matriz identidade. É razoável de que isso funcione bem para matrizes esparsas e terrívelmente mal para matrizes densas. \\
+Além disso, é possível gerar duas vezes a mesma dupla $x,y$, ou até mesmo gerar duas duplas da forma $x,y$ e $y,x$ em momentos diferentes, obtendo o mesmo efeito. Com isso, a minha implementação de GC vai se comportar como se os valores gerados em cada uma das vezes fossem somados à posição, o que difícilmente é um problema. \\
+\begin{tabular}{| l | l | l | l | l | l | l |}
+    \hline
+    Entrada & $n$ & $m$ & Iterações GC & Tempo GC \\ \hline
+    \textit{1e1\_7.in} & $10$ & $24$ & $7$ & $0.006$s \\ \hline
+    \textit{1e2\_10.in} & $100$ & $120$ & $4$ & $0.016$s \\ \hline
+    \textit{1e5\_200.in} & $10^5$ & $10^5+400$ & $2$ & $0.873$s \\ \hline
+    \textit{1e6\_307.in} & $10^6$ & $10^6+614$ & $2$ & $6.283$s \\ \hline
+\end{tabular} \\
+Não vale a pena comparar a performance dos resultados acima com Cholesky, pois para as matrizes pequenas já fizemos comparações suficientes e para as duas ultimas, as matrizes grandes, é inviável realizar a decomposição. \\
+Esses exemplos mostram a potência dos métodos iterativos para a resolução de sistemas desse tipo. As matrizes de entrada têm densidade baixíssima e o método dos Gradientes Conjugados conseguiu tirar muito proveito disso, resolvendo os dois ultimos sistemas em duas iterações cada. É fácil ver nesses exemplos que a quantidade de iterações foi inversamente proporcional à densidade da matriz, quanto maior a proporção $m/n$, maior a quantidade de iterações feitas. \\
+Não foi possível executar um exemplo com uma matriz de $n$ da ordem de $10^7$ pois isso gasta uma quantidade muito grande de memória e as operações de alocação dinâmica e leitura da entrada ficam bastante custosas, mas o desempenho para $10^6$ mostra uma realidade feliz quanto ao funcionamento do método. \\
+Tamanhos matrizes de dimensão $10^4$ são quase intratáveis, tanto pela memória quanto pelo tempo, para algoritmos diretos, mas, com uma matriz devidamente esparsa, o método dos GC conseguiu resolver com facilidade o sistema para uma matriz de dimensão $10^7$, mostrando uma grande vantagem em relação aos métodos anteriormente conhecidos.
 
 
 %----------------------------------------------------------------------------------------
