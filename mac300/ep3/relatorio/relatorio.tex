@@ -1,0 +1,124 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Arsclassica Article
+% LaTeX Template
+% Version 1.1 (10/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Lorenzo Pantieri (http://www.lorenzopantieri.net) with extensive modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+10pt, % Main document font size
+a4paper, % Paper type, use 'letterpaper' for US Letter paper
+oneside, % One page layout (no page indentation)
+%twoside, % Two page layout (page indentation for binding and different headers)
+headinclude,footinclude, % Extra spacing for the header and footer
+BCOR5mm, % Binding correction
+]{scrartcl}
+
+\input{structure.tex} % Include the structure.tex file which specified the document structure and layout
+
+\hyphenation{Fortran hy-phen-ation} % Specify custom hyphenation points in words with dashes where you would like hyphenation to occur, or alternatively, don't put any dashes in a word to stop hyphenation altogether
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND AUTHOR(S)
+%----------------------------------------------------------------------------------------
+
+\title{\normalfont\spacedallcaps{Decomposição QR}} % The article title
+\subtitle{\normalfont\spacedallcaps{EP3 - MAC0300}}
+
+\author{\spacedlowsmallcaps{Victor Sena Molero (8941317)}} % The article author(s) - author affiliations need to be specified in the AUTHOR AFFILIATIONS block
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	HEADERS
+%----------------------------------------------------------------------------------------
+
+\renewcommand{\sectionmark}[1]{\markright{\spacedlowsmallcaps{#1}}} % The header for all pages (oneside) or for even pages (twoside)
+%\renewcommand{\subsectionmark}[1]{\markright{\thesubsection~#1}} % Uncomment when using the twoside option - this modifies the header on odd pages
+\lehead{\mbox{\llap{\small\thepage\kern1em\color{halfgray} \vline}\color{halfgray}\hspace{0.5em}\rightmark\hfil}} % The header style
+
+\pagestyle{scrheadings} % Enable the headers specified in this block
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS & LISTS OF FIGURES AND TABLES
+%----------------------------------------------------------------------------------------
+
+\maketitle % Print the title/author/date block
+
+\setcounter{tocdepth}{2} % Set the depth of the table of contents to show sections and subsections only
+
+\tableofcontents % Print the table of contents
+
+%\listoffigures % Print the list of figures
+%\listoftables % Print the list of tables
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT
+%----------------------------------------------------------------------------------------
+
+\section*{Abstract} % This section will not appear in the table of contents due to the star (\section*)
+
+Esse é o relatório sobre o terceiro EP de MAC0300, que tem como objetivo a implementação da Decomposição QR e a resolução do problema dos quadrados mínimos. Os dois conceitos serão revisados brevemente e os principais problemas sobre a implementação serão discutidos com mais cuidado.
+
+%----------------------------------------------------------------------------------------
+
+\newpage % Start the article content on the second page, remove this if you have a longer abstract that goes onto the second page
+
+\section{Introdução}
+Além das explicações sobre os tópicos abordados naturalmente pelo EP, este relatório justifica as decisões feitas durante a implementação do algoritmo e mostra como foram criados os métodos para geração de testes para o programa.
+
+\section{O problema dos Quadrados Mínimos}
+Com $n \leq m$, ada uma matriz $A \in \mathbb{R}^{n \times m}$ e um vetor $b \in \mathbb{R}^{m}$ encontrar $x \in \mathbb{R}^{n}$ que minimize $||b-Ax||_2$. \\
+Isto é equivalente a dizer que dado um sistema sobredeterminado, de $m$ equações com $n$ variáveis onde $n \leq m$, deseja-se encontrar os valores das $n$ variáveis que minimizem o erro entre aplicar as equações a essas variáveis e os resultados dados pelo problema. \\
+Uma aplicação clara disso é, dada uma base de polinômios de dimensão $n$, interpolar o polinômio que melhor aproxima alguns pontos dados da função. \\
+O problema pode ter uma única ou infinitas soluções. Dependendo da singularidade de $A$. Nosso objetivo será encontrar uma.
+
+\subsection{Decomposição QR}
+A decomposição QR encontra, para uma matriz $A \in \mathbb{R}^{n \times m}$, duas matrizes, uma $Q \in \mathbb{R}^{n \times m}$ e uma $R \in \mathbb{R}^{m \times m}$ tais que $A = QR$, $Q$ é ortogonal e $R$ é triangular superior. \\
+Para isso, basta escolher inteligentemente uma série de refletores (ou rotatores) $Q^T_i$ na matriz $A$ de forma a transformá-la em uma $R$ triangular superior. Assim, teremos que, se $Q^T$ é o produto de todas as $Q^T_i$ aplicadas, $Q^TA = R$. Já que $Q^T$ é produto de refletores, que são ortogonais, é ortogonal, logo $Q^{-T} = Q$ e $A = QR$, assim obtemos a decomposição QR. \\
+
+\subsection{Usando a Decomposição}
+Para resolver o problema dos quadrados mínimos usando QR lembramos que devemos achar $x$ tal que $b-Ax$ tem norma 2 mínima. Porém, se premultiplicarmos a expressão por $Q^T$ teremos: \\
+$$ Q^T(b-Ax) = Q^Tb - Q^TAx = Q^Tb - Q^TQRx = Q^Tb - Rx$$ \\
+Nós conseguimos encontrar $x$ tal que $Q^Tb = Rx$ com substituição para trás, já que $R$ é triangular superior, assim, nós temos uma solução para um problema dos quadrados mínimos de $\hat{A}$ e $\hat{b}$ onde $\hat{A} = Q^TA$ e $\hat{b} = Q^Tb$. Mas já que $Q$ é ortogonal, $||b-Ax||_2 = ||Q^T(b-Ax)||_2$. Ou seja, ao resolver este problema, resolvemos nosso problema inicial, já que o $x$ que minimiza um tambeḿ minimiza o outro.
+
+\section{Implementação e problemas}
+Em sala de aula foram discutidas algumas dúvidas quanto à implementação e sobre práticas que minimizariam a quantidade de operações ou espaço ou que maximizariam a precisão da solução. O fato é que se $A$ tem sempre posto completo, só existe uma opção a ser feita quando a memória ou tempo. Já se $A$ tem posto incompleto, devemos aplicar o pivoteamento de colunas e existe mais uma forma de implementar isso e de calcular qual coluna deve ser pivotada. Vamos discutir um problema por vez.
+
+\subsection{Aplicando a Reflexão}
+
+\subsection{Pivoteamento}
+
+\subsection{Escalamento}
+
+\subsection{Resolução Final}
+
+\section{Testes}
+
+%----------------------------------------------------------------------------------------
+%   BIBLIOGRAFIA
+%----------------------------------------------------------------------------------------
+
+\renewcommand{\refname}{\spacedlowsmallcaps{Bibliografia}} % For modifying the bibliography heading
+\bibliography{relatorio.bib} % The file containing the bibliography
+\bibliographystyle{unsrt}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
