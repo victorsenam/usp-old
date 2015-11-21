@@ -46,10 +46,6 @@ double pre_processa (int n, int m, double ** A, int * p, double * norma) {
         for (int j = 0; j < m; j++)
             escala = std::max(escala, std::abs(A[i][j]));
 
-    //TODO: REMOVER ESTE TRECHO --------------------------------------------------------------------------- INICIO --
-    escala = 1.0;
-    //TODO: REMOVER ESTE TRECHO --------------------------------------------------------------------------- FIM -----
-
     // re-escalando as colunas enquanto calcula norma dois ao quadrado
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < m; j++) {
@@ -71,11 +67,6 @@ int decompoe_qr (int n, int m, double ** A, int * p, double * norma, double * ga
         if (norma[maxi] < eps)
             return k;
         
-        
-        //TODO: REMOVER ESTE TRECHO --------------------------------------------------------------------------- INICIO --
-        maxi = k;
-        //TODO: REMOVER ESTE TRECHO --------------------------------------------------------------------------- FIM -----
-
         if (maxi != k) {
             for (int i = 0; i < n; i++)
                 std::swap(A[i][k], A[i][maxi]);
@@ -120,31 +111,33 @@ int decompoe_qr (int n, int m, double ** A, int * p, double * norma, double * ga
 void aplica_decomposicao(int n, int m, int posto, double ** A, double * b, int * p, double * gamma, double escala) {
     // aplica Q^T em b
     for (int k = 0; k < posto; k++) {
-        double val = b[k];
-        for (int i = k+1; i < posto; i++)
+        double val = b[k]*gamma[k];
+        for (int i = k+1; i < n; i++) {
             val += gamma[k]*A[i][k]*b[i];
+        }
 
         b[k] -= val;
-        for (int i = k+1; i < posto; i++)
+        for (int i = k+1; i < n; i++)
             b[i] -= A[i][k]*val;
     }
     
-    for (int i = 0; i < posto; i++)
-        printf("%f ", b[i]);
-    printf("\n");
 
     // calcula x tal que Rx = Q^Tb
     for (int k = posto-1; k >= 0; k--) {
-        for (int j = k-1; j >= 0; j--)
-            b[j] -= A[j][k]*b[k];
+        for (int j = k+1; j < posto; j++)
+            b[k] -= A[k][j]*b[j];
+
+        b[k] /= A[k][k];
     }
 
+    // divide x pelo escalar definido no começo
+    for (int i = 0; i < posto; i++)
+        b[i] /= escala;
+    for (int i = posto; i < m; i++)
+        b[i] = 0;
     // permuta x de acordo
     for (int i = posto-1; i >= 0; i--)
         std::swap(b[i], b[p[i]]);
-    // multiplica x pelo escalar definido no começo
-    for (int i = 0; i < posto; i++)
-        b[i] *= escala;
 }
 
 void imprime_resposta(int n, double * x) {
@@ -176,15 +169,7 @@ int main () {
     aloca_auxiliares(m, p, norma, gamma);
     escala = pre_processa(n, m, A, p, norma);
     posto = decompoe_qr(n, m, A, p, norma, gamma);
-    
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < m; j++) {
-            printf("%f ", (i>j)?0:A[i][j]);
-        }
-        printf("\n");
-    }
-
     aplica_decomposicao(n, m, posto, A, b, p, gamma, escala);
-    imprime_resposta(posto, b);
+    imprime_resposta(m, b);
     libera_memoria(n, A, b, norma, gamma, p);
 }
