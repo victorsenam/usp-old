@@ -1,8 +1,11 @@
 #include <cstdio>
+#include <cstdlib>
+#include <algorithm>
+#include <cmath>
 
 const double eps = 1e-9;
 
-void recebe_entrada (int * n, int * m, double ** A, double * b) {
+void recebe_entrada (int * n, int * m, double ** & A, double * & b) {
     int i;              // iterador
     int x, y;           // posicoes da entrada
     scanf("%d %d", n, m);
@@ -15,7 +18,7 @@ void recebe_entrada (int * n, int * m, double ** A, double * b) {
 
     // A
     for (i = 0; i < (*n)*(*m); i++) {
-        scanf("%d %d", x, y);
+        scanf("%d %d", &x, &y);
         scanf("%lf", &A[x][y]);
     }
 
@@ -24,10 +27,10 @@ void recebe_entrada (int * n, int * m, double ** A, double * b) {
         scanf("%lf", b+i);
 }
 
-void aloca_auxiliares (int m, int * p, double * norma, double * gamma) {
-    p = (int *) malloc(sizeof(int *)*(*m));   
-    norma = (double *) malloc(sizeof(double *)*(*m));   
-    gamma = (double *) malloc(sizeof(double *)*(*m));   
+void aloca_auxiliares (int m, int * & p, double * & norma, double * & gamma) {
+    p = (int *) malloc(sizeof(int)*(m));   
+    norma = (double *) malloc(sizeof(double)*(m));
+    gamma = (double *) malloc(sizeof(double)*(m));   
 }
 
 double pre_processa (int n, int m, double ** A, int * p, double * norma) {
@@ -43,6 +46,10 @@ double pre_processa (int n, int m, double ** A, int * p, double * norma) {
         for (int j = 0; j < m; j++)
             escala = std::max(escala, std::abs(A[i][j]));
 
+    //TODO: REMOVER ESTE TRECHO --------------------------------------------------------------------------- INICIO --
+    escala = 1.0;
+    //TODO: REMOVER ESTE TRECHO --------------------------------------------------------------------------- FIM -----
+
     // re-escalando as colunas enquanto calcula norma dois ao quadrado
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < m; j++) {
@@ -50,49 +57,104 @@ double pre_processa (int n, int m, double ** A, int * p, double * norma) {
             norma[j] += A[i][j]*A[i][j];
         }
     }
+    return escala;
 }
 
 int decompoe_qr (int n, int m, double ** A, int * p, double * norma, double * gamma) {
-    double aux = (double *) malloc(sizeof(double)*n);
-
     for (int k = 0; k < m; k++) {
-        // buscando a coluna de maior norma
+        // pivoteamento de colunas
         int maxi = k;
         for (int i = k; i < m; i++)
-            if (norma[p[i]] > norma[p[maxi]])
+            if (norma[i] > norma[maxi])
                 maxi = i;
 
         if (norma[maxi] < eps)
             return k;
         
-        for (int i = 0; i < n; i++)
-            swap(A[i][k], A[i][maxi]);
-        swap(norma[k], norma[maxi]);
+        
+        //TODO: REMOVER ESTE TRECHO --------------------------------------------------------------------------- INICIO --
+        maxi = k;
+        //TODO: REMOVER ESTE TRECHO --------------------------------------------------------------------------- FIM -----
+
+        if (maxi != k) {
+            for (int i = 0; i < n; i++)
+                std::swap(A[i][k], A[i][maxi]);
+            std::swap(norma[k], norma[maxi]);
+        }
         p[k] = maxi;
         
-        double tau = norma[k];
+        // define o sinal de tau
+        double tau = sqrt(norma[k]);
         if (A[k][k] < 0)
             tau = -tau;
 
-        gamma[k] = (A[k][k] + tau)/tau;
+        // calcula u
+        A[k][k] += tau;
+        gamma[k] = A[k][k]/tau;
+        for (int i = k+1; i < n; i++)
+            A[i][k] /= A[k][k];
+        A[k][k] = 1.0;
+
+        // atualiza o restante de A usando gamma como vetor auxiliar
+        for (int j = k+1; j < m; j++)
+            gamma[j] = 0;
+
         for (int i = k; i < n; i++)
-            A[i][k] /= A[k][k]+tau;
-
-        for (int i = k+1; i < m; i++)
-            gamma[i] = 0;
-
-        for (int i = k+1; i < n; i++)
             for (int j = k+1; j < m; j++)
-                gamma[j] += aux[i]*gamma[k]*A[i][j];
-
-        for (int i = k+1; i < n; i++)
+                gamma[j] += gamma[k]*A[i][k]*A[i][j];
+        
+        for (int i = k; i < n; i++)
             for (int j = k+1; j < m; j++)
                 A[i][j] -= A[i][k]*gamma[j];
 
+        // atualiza o vetor de normas para a proxima iteração
+        for (int j = k+1; j < m; j++)
+            norma[j] -= A[k][j]*A[k][j];
+        
+        // coloca o -tau na posiçao certa
         A[k][k] = -tau;
     }
-
     return m;
+}
+
+void aplica_decomposicao(int n, int m, int posto, double ** A, double * b, int * p, double * gamma, double escala) {
+    // aplica Q^T em b
+    for (int k = 0; k < posto; k++) {
+        double val = b[k];
+        for (int i = k+1; i < n; i++)
+            val += A[i][k]*b[i]*gamma[k];
+        b[k] -= val;
+        for (int i = k+1; i < n; i++)
+            b[i] -= A[i][k]*val;
+    }
+
+    // calcula x tal que Rx = Q^Tb
+    for (int k = posto-1; k >= 0; k--) {
+        for (int j = k-1; j >= 0; j--)
+            b[j] -= A[j][k]*b[k];
+    }
+
+    // permuta x de acordo
+    for (int i = posto-1; i >= 0; i--)
+        std::swap(b[i], b[p[i]]);
+    // multiplica x pelo escalar definido no começo
+    for (int i = 0; i < posto; i++)
+        b[i] *= escala;
+}
+
+void imprime_resposta(int n, double * x) {
+    for (int i = 0; i < n; i++)
+        printf("%f\n", x[i]);
+}
+
+void libera_memoria(int n, double ** A, double * b, double * norma, double * gamma, int * p) {
+    for (int i = 0; i < n; i++)
+        free(A[i]);
+    free(A);
+    free(b);
+    free(norma);
+    free(gamma);
+    free(p);
 }
 
 int main () {
@@ -104,11 +166,16 @@ int main () {
     double * gamma;     // gammas (m)
     int posto;          // posto de A
     double escala;      // escalamento inicial do problema
+    double X[100][100];
 
     recebe_entrada(&n, &m, A, b);
+    for (int i = 0; i < n; i++)
+        for (int j = 0; j < m; j++)
+            X[i][j] = A[i][j];
     aloca_auxiliares(m, p, norma, gamma);
     escala = pre_processa(n, m, A, p, norma);
-    posto = decompoe_qr(n, m, A, b, p, norma, gamma);
-
-    printf("%lf %d\n", escala, posto);
+    posto = decompoe_qr(n, m, A, p, norma, gamma);
+    aplica_decomposicao(n, m, posto, A, b, p, gamma, escala);
+    imprime_resposta(posto, b);
+    libera_memoria(n, A, b, norma, gamma, p);
 }

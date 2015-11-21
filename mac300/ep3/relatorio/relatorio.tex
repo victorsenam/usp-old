@@ -102,14 +102,18 @@ Nós conseguimos encontrar $x$ tal que $Q^Tb = Rx$ com substituição para trás
 Em sala de aula foram discutidas algumas dúvidas quanto à implementação e sobre práticas que minimizariam a quantidade de operações ou espaço ou que maximizariam a precisão da solução. O fato é que se $A$ tem sempre posto completo, só existe uma opção a ser feita quando a memória ou tempo. Já se $A$ tem posto incompleto, devemos aplicar o pivoteamento de colunas e existe mais uma forma de implementar isso e de calcular qual coluna deve ser pivotada. Vamos discutir um problema por vez.
 
 \subsection{Aplicando a Reflexão}
-
-\subsection{Pivoteamento}
-
+É comentado no livro o fato de que existem várias maneiras de aplicar a reflexão, mas o custo de aplicar muda drásticamente. Além disso, se formos aplicar a reflexão orientada a linhas, devemos usar um vetor auxiliar. \\
+No meu EP, eu aproveitei o espaço ainda livre no vetor $\gamma$ para realizar os calculos necessários. O vetor em questão, no passo $k$, tem $k$ posições calculadas (incluindo a que é calculada no passo atual). Já que o vetor é inicializado com $m$ espaços, ele tem, no passo $k$, $m-k$ espaços livres. Esta quantidade é exatamente a usada pelo vetor auxiliar mencionado no livro.
+ 
 \subsection{Escalamento}
-
-\subsection{Resolução Final}
+Para evitar overflows nos cálculos das normas das colunas, é necessário normaliza-las de alguma maneira. Existem alguns jeitos de fazer isso e o livro menciona dois. \\
+Inicialmente, falando de problemas com posto completo, o livro fala sobre dividir cada coluna pelo seu máximo elemento, evitando overflow. Depois, para resolver problemas de posto incompleto, é comentado o método de dividir, à priori, a matriz inteira pelo maior elemento da matriz. \\
+Eu resolvi utilizar o segundo método. Ele tem vantagens e desvantagens. Além de me parecer mais elegante do que as maneiras que consegui pensar em implementar o outro método, gasta menos memória do que os métodos que eu pensei e os que foram discutidos em aula. \\
+Dividir a matriz toda por um só escalar funciona pois minimizar $b-A\alpha * (1/\alpha) * x$ é minimizar $b-Ax$, ou seja, se resolvermos um problema onde dividimos $A$ por $\aplha$, a solução do problema original será o vetor $x$ obtido no modificado com todos os seus elementos multiplicados por $\alpha$.
 
 \section{Testes}
+Os testes estão todos na pasta \textit{codigo/testes}.
+
 
 %----------------------------------------------------------------------------------------
 %   BIBLIOGRAFIA
