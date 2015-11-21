@@ -121,12 +121,17 @@ void aplica_decomposicao(int n, int m, int posto, double ** A, double * b, int *
     // aplica Q^T em b
     for (int k = 0; k < posto; k++) {
         double val = b[k];
-        for (int i = k+1; i < n; i++)
-            val += A[i][k]*b[i]*gamma[k];
+        for (int i = k+1; i < posto; i++)
+            val += gamma[k]*A[i][k]*b[i];
+
         b[k] -= val;
-        for (int i = k+1; i < n; i++)
+        for (int i = k+1; i < posto; i++)
             b[i] -= A[i][k]*val;
     }
+    
+    for (int i = 0; i < posto; i++)
+        printf("%f ", b[i]);
+    printf("\n");
 
     // calcula x tal que Rx = Q^Tb
     for (int k = posto-1; k >= 0; k--) {
@@ -166,15 +171,19 @@ int main () {
     double * gamma;     // gammas (m)
     int posto;          // posto de A
     double escala;      // escalamento inicial do problema
-    double X[100][100];
 
     recebe_entrada(&n, &m, A, b);
-    for (int i = 0; i < n; i++)
-        for (int j = 0; j < m; j++)
-            X[i][j] = A[i][j];
     aloca_auxiliares(m, p, norma, gamma);
     escala = pre_processa(n, m, A, p, norma);
     posto = decompoe_qr(n, m, A, p, norma, gamma);
+    
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            printf("%f ", (i>j)?0:A[i][j]);
+        }
+        printf("\n");
+    }
+
     aplica_decomposicao(n, m, posto, A, b, p, gamma, escala);
     imprime_resposta(posto, b);
     libera_memoria(n, A, b, norma, gamma, p);
