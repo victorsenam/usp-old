@@ -1,0 +1,8 @@
+\contentsline {section}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{2}{section.1}
+\contentsline {section}{\numberline {2}O problema dos Quadrados M\IeC {\'\i }nimos}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}Decomposi\IeC {\c c}\IeC {\~a}o QR}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Usando a Decomposi\IeC {\c c}\IeC {\~a}o}{2}{subsection.2.2}
+\contentsline {section}{\numberline {3}Implementa\IeC {\c c}\IeC {\~a}o e problemas}{3}{section.3}
+\contentsline {subsection}{\numberline {3.1}Aplicando a Reflex\IeC {\~a}o}{3}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Escalamento}{3}{subsection.3.2}
+\contentsline {section}{\numberline {4}Testes}{3}{section.4}

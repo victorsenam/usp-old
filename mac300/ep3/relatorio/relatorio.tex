@@ -96,7 +96,7 @@ Para isso, basta escolher inteligentemente uma série de refletores (ou rotatore
 \subsection{Usando a Decomposição}
 Para resolver o problema dos quadrados mínimos usando QR lembramos que devemos achar $x$ tal que $b-Ax$ tem norma 2 mínima. Porém, se premultiplicarmos a expressão por $Q^T$ teremos: \\
 $$ Q^T(b-Ax) = Q^Tb - Q^TAx = Q^Tb - Q^TQRx = Q^Tb - Rx$$ \\
-Nós conseguimos encontrar $x$ tal que $Q^Tb = Rx$ com substituição para trás, já que $R$ é triangular superior, assim, nós temos uma solução para um problema dos quadrados mínimos de $\hat{A}$ e $\hat{b}$ onde $\hat{A} = Q^TA$ e $\hat{b} = Q^Tb$. Mas já que $Q$ é ortogonal, $||b-Ax||_2 = ||Q^T(b-Ax)||_2$. Ou seja, ao resolver este problema, resolvemos nosso problema inicial, já que o $x$ que minimiza um tambeḿ minimiza o outro.
+Nós conseguimos encontrar $x$ tal que $Q^Tb = Rx$ com substituição para trás, já que $R$ é triangular superior, assim, nós temos uma solução para um problema dos quadrados mínimos de $\hat{A}$ e $\hat{b}$ onde $\hat{A} = Q^TA$ e $\hat{b} = Q^Tb$. Mas já que $Q$ é ortogonal, $||b-Ax||_2 = ||Q^T(b-Ax)||_2$. Ou seja, ao resolver este problema, resolvemos nosso problema inicial, já que o $x$ que minimiza um também minimiza o outro.
 
 \section{Implementação e problemas}
 Em sala de aula foram discutidas algumas dúvidas quanto à implementação e sobre práticas que minimizariam a quantidade de operações ou espaço ou que maximizariam a precisão da solução. O fato é que se $A$ tem sempre posto completo, só existe uma opção a ser feita quando a memória ou tempo. Já se $A$ tem posto incompleto, devemos aplicar o pivoteamento de colunas e existe mais uma forma de implementar isso e de calcular qual coluna deve ser pivotada. Vamos discutir um problema por vez.
@@ -109,19 +109,14 @@ No meu EP, eu aproveitei o espaço ainda livre no vetor $\gamma$ para realizar o
 Para evitar overflows nos cálculos das normas das colunas, é necessário normaliza-las de alguma maneira. Existem alguns jeitos de fazer isso e o livro menciona dois. \\
 Inicialmente, falando de problemas com posto completo, o livro fala sobre dividir cada coluna pelo seu máximo elemento, evitando overflow. Depois, para resolver problemas de posto incompleto, é comentado o método de dividir, à priori, a matriz inteira pelo maior elemento da matriz. \\
 Eu resolvi utilizar o segundo método. Ele tem vantagens e desvantagens. Além de me parecer mais elegante do que as maneiras que consegui pensar em implementar o outro método, gasta menos memória do que os métodos que eu pensei e os que foram discutidos em aula. \\
-Dividir a matriz toda por um só escalar funciona pois minimizar $b-A\alpha * (1/\alpha) * x$ é minimizar $b-Ax$, ou seja, se resolvermos um problema onde dividimos $A$ por $\aplha$, a solução do problema original será o vetor $x$ obtido no modificado com todos os seus elementos multiplicados por $\alpha$.
+Dividir a matriz toda por um só escalar funciona pois minimizar $b-A\alpha * (1/\alpha) * x$ é minimizar $b-Ax$, ou seja, se resolvermos um problema onde dividimos $A$ por $\alpha$, a solução do problema original será o vetor $x$ obtido no modificado com todos os seus elementos multiplicados por $\alpha$.
 
 \section{Testes}
-Os testes estão todos na pasta \textit{codigo/testes}.
+Os testes estão todos na pasta \textit{codigo/exemplos}. \\
+Como no EP passado, eu criei geradores que estão em \textit{codigo/exemplos/geradores}. Por enquanto não consegui criar um script para rodar todos, mas acho que vai dar tempo e eu faço (caso contrário, este é um pedido de desculpas). \\
+De qualquer maneira, o código do gerador \textit{polynomial} está bem explicado e tem entradas já feitas na pasta dele, é só rodar o programa com essa entrada e mandar para a entrada do \textit{main} que a saída está conforme o esperado. \\
+Este gerador, o \textit{polynomial}, testa a interpolação de polinômios com a decomposição qr, recebendo polinômios numa base arbritária e pontos a serem avaliados com um erro aleatório. É esperado que a saída do programa seja parecida com o vetor $t$ de entrada.
 
-
-%----------------------------------------------------------------------------------------
-%   BIBLIOGRAFIA
-%----------------------------------------------------------------------------------------
-
-\renewcommand{\refname}{\spacedlowsmallcaps{Bibliografia}} % For modifying the bibliography heading
-\bibliography{relatorio.bib} % The file containing the bibliography
-\bibliographystyle{unsrt}
 
 %----------------------------------------------------------------------------------------
 
