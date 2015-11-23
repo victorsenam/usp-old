@@ -44,10 +44,7 @@ double aval(int i, double x) {
 }
 
 int main (int argc, char * argv[]) {
-    FILE * baseout = fopen(argv[1], "w");
-    FILE * pointsout = fopen(argv[2], "w");
     scanf("%d %d", &n, &m);
-    fprintf(baseout, "%d\n", m);
 
     y = (double *) malloc(sizeof(double)*n);
     p = (double *) malloc(sizeof(double)*m);
@@ -60,9 +57,7 @@ int main (int argc, char * argv[]) {
     for (int i = 0; i < m; i++) {
         for (int j = 0; j < m; j++) {
             scanf("%lf", &q[i][j]);
-            fprintf(baseout, "%f ", q[i][j]);
         }
-        fprintf(baseout, "\n");
     }
 
     for (int i = 0; i < m; i++) {
@@ -73,16 +68,9 @@ int main (int argc, char * argv[]) {
     normal_distribution<double> normal(0.0, sigma);
     
     printf("%d %d\n", n, m);
-    double mini, maxi;
     for (int i = 0; i < n; i++) {
         double t;
         scanf("%lf", &t);
-        if (i) {
-            mini = min(mini, t);
-            maxi = max(maxi, t);
-        } else {
-            mini = maxi = t;
-        }
         y[i] = 0.0;
 
         for (int j = 0; j < m; j++) {
@@ -92,10 +80,7 @@ int main (int argc, char * argv[]) {
         }
 
         y[i] += normal(gerador);
-        fprintf(pointsout, "%f,%f\n", t, y[i]);
     }
-
-    fprintf(baseout, "%f %f %d\n", mini-((maxi-mini)/10.0), maxi+((maxi-mini)/10.0), 1000);
 
     for (int i = 0; i < n; i++)
         printf("%f ", y[i]);
