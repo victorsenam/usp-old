@@ -6,3 +6,4 @@
 \contentsline {subsection}{\numberline {3.1}Aplicando a Reflex\IeC {\~a}o}{3}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Escalamento}{3}{subsection.3.2}
 \contentsline {section}{\numberline {4}Testes}{3}{section.4}
+\contentsline {subsection}{\numberline {4.1}Formato de entrada}{4}{subsection.4.1}

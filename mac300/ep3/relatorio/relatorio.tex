@@ -109,14 +109,14 @@ No meu EP, eu aproveitei o espaço ainda livre no vetor $\gamma$ para realizar o
 Para evitar overflows nos cálculos das normas das colunas, é necessário normaliza-las de alguma maneira. Existem alguns jeitos de fazer isso e o livro menciona dois. \\
 Inicialmente, falando de problemas com posto completo, o livro fala sobre dividir cada coluna pelo seu máximo elemento, evitando overflow. Depois, para resolver problemas de posto incompleto, é comentado o método de dividir, à priori, a matriz inteira pelo maior elemento da matriz. \\
 Eu resolvi utilizar o segundo método. Ele tem vantagens e desvantagens. Além de me parecer mais elegante do que as maneiras que consegui pensar em implementar o outro método, gasta menos memória do que os métodos que eu pensei e os que foram discutidos em aula. \\
-Dividir a matriz toda por um só escalar funciona pois minimizar $b-A\alpha * (1/\alpha) * x$ é minimizar $b-Ax$, ou seja, se resolvermos um problema onde dividimos $A$ por $\alpha$, a solução do problema original será o vetor $x$ obtido no modificado com todos os seus elementos multiplicados por $\alpha$.
+Dividir a matriz toda por um só escalar funciona pois minimizar $b-A\alpha * (1/\alpha) * x$ é minimizar $b-Ax$, ou seja, se resolvermos um problema onde dividimos $A$ por $\alpha$, basta multiplicar todos os elementos da $R$ obtida por $\alpha$ novamente e teremos a decomposição do problema original.
 
 \section{Testes}
-Os testes estão todos na pasta \textit{codigo/exemplos}. \\
-Como no EP passado, eu criei geradores que estão em \textit{codigo/exemplos/geradores}. Por enquanto não consegui criar um script para rodar todos, mas acho que vai dar tempo e eu faço (caso contrário, este é um pedido de desculpas). \\
-De qualquer maneira, o código do gerador \textit{polynomial} está bem explicado e tem entradas já feitas na pasta dele, é só rodar o programa com essa entrada e mandar para a entrada do \textit{main} que a saída está conforme o esperado. \\
-Este gerador, o \textit{polynomial}, testa a interpolação de polinômios com a decomposição qr, recebendo polinômios numa base arbritária e pontos a serem avaliados com um erro aleatório. É esperado que a saída do programa seja parecida com o vetor $t$ de entrada.
+Para testar o ep, eu criei exemplos de polinomios em bases arbritárias para testar a interpolção feita pela decomposição QR. Para gerar os testes que eu usei basta acessar a pasta \textit{exemplos} e rodar \textit{sh criaTestes.sh}, assim, os arquivos de teste serão criados na pasta \textit{exemplos/gerador} e podem ser usados diretamente no programa main. \\
+A imagem \textit{exemplos/plots/poly3.png} é uma saída gráfica para o exemplo que é gerado em \textit{exemplos/testes/poly3.dat}. Eu queria criar mais desses, mas tive trabalho para gerar as imagens e meu tempo está acabando.
 
+\subsection{Formato de entrada}
+Acho pertinente colocar um comentário sobre o formato de entrada de dados adotado no ep. São dados inicialmente os dois inteiros $n$ e $m$, depois, $n*m$ linhas que representam a matriz de forma exatamente igual à adotada nos eps 1 e 2. Depois, ainda são inseridos os $n$ elementos do vetor $b$. \\
 
 %----------------------------------------------------------------------------------------
 
