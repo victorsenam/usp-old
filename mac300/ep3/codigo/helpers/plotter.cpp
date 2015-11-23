@@ -35,6 +35,10 @@ int main () {
     for (int i = 0; i < m; i++)
         q[i] = (double *) malloc(sizeof(double)*m);
 
+    for (int i = 0; i < m; i++)
+        for (int j = 0; j < m; j++)
+            scanf("%lf", &q[i][j]);
+
     scanf("%lf %lf %d", &lx, &rx, &qt);
     delta = (rx-lx)/qt;
 

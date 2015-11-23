@@ -44,8 +44,8 @@ double aval(int i, double x) {
 }
 
 int main (int argc, char * argv[]) {
-    FILE * baseout = fopen(argv[0], "w");
-    FILE * pointsout = fopen(argv[1], "w");
+    FILE * baseout = fopen(argv[1], "w");
+    FILE * pointsout = fopen(argv[2], "w");
     scanf("%d %d", &n, &m);
     fprintf(baseout, "%d\n", m);
 
@@ -77,11 +77,11 @@ int main (int argc, char * argv[]) {
     for (int i = 0; i < n; i++) {
         double t;
         scanf("%lf", &t);
-        if (i)
-            mini = maxi = t;
-        else {
+        if (i) {
             mini = min(mini, t);
             maxi = max(maxi, t);
+        } else {
+            mini = maxi = t;
         }
         y[i] = 0.0;
 
