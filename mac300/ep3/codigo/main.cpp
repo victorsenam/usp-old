@@ -56,7 +56,7 @@ double pre_processa (int n, int m, double ** A, int * p, double * norma) {
     return escala;
 }
 
-int decompoe_qr (int n, int m, double ** A, int * p, double * norma, double * gamma) {
+int decompoe_qr (int n, int m, double ** A, int * p, double * norma, double * gamma, double escala) {
     for (int k = 0; k < m; k++) {
         // pivoteamento de colunas
         int maxi = k;
@@ -105,10 +105,16 @@ int decompoe_qr (int n, int m, double ** A, int * p, double * norma, double * ga
         // coloca o -tau na posiçao certa
         A[k][k] = -tau;
     }
+
+    // reescala o resultado
+    for (int i = 0; i < n; i++)
+        for (int j = i; j < m; j++)
+            A[i][j] *= escala;
+
     return m;
 }
 
-void aplica_decomposicao(int n, int m, int posto, double ** A, double * b, int * p, double * gamma, double escala) {
+void aplica_decomposicao(int n, int m, int posto, double ** A, double * b, int * p, double * gamma) {
     // aplica Q^T em b
     for (int k = 0; k < posto; k++) {
         double val = b[k]*gamma[k];
@@ -129,12 +135,9 @@ void aplica_decomposicao(int n, int m, int posto, double ** A, double * b, int *
 
         b[k] /= A[k][k];
     }
-
-    // divide x pelo escalar definido no começo
-    for (int i = 0; i < posto; i++)
-        b[i] /= escala;
     for (int i = posto; i < m; i++)
         b[i] = 0;
+
     // permuta x de acordo
     for (int i = posto-1; i >= 0; i--)
         std::swap(b[i], b[p[i]]);
@@ -168,8 +171,8 @@ int main () {
     recebe_entrada(&n, &m, A, b);
     aloca_auxiliares(m, p, norma, gamma);
     escala = pre_processa(n, m, A, p, norma);
-    posto = decompoe_qr(n, m, A, p, norma, gamma);
-    aplica_decomposicao(n, m, posto, A, b, p, gamma, escala);
+    posto = decompoe_qr(n, m, A, p, norma, gamma, escala);
+    aplica_decomposicao(n, m, posto, A, b, p, gamma);
     imprime_resposta(m, b);
     libera_memoria(n, A, b, norma, gamma, p);
 }
