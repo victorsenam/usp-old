@@ -7,7 +7,7 @@
 * Gera uma matriz A nxm tal que a_{i,j} = f_j(t_i)
 * Gera um vetor b nxm b_{i} = g(t_i) + e, onde e é um erro gerado com desvio de acordo com a normal padrao sigma
 *
-* A ideia é que A*t = b-e, o programa deve calcular uma resposta próxima de t
+* A ideia é que A*p = b-e, o programa deve calcular uma resposta próxima de p
 */
 
 /* ENTRADA:
@@ -43,8 +43,11 @@ double aval(int i, double x) {
     return val;
 }
 
-int main () {
+int main (int argc, char * argv[]) {
+    FILE * baseout = fopen(argv[0], "w");
+    FILE * pointsout = fopen(argv[1], "w");
     scanf("%d %d", &n, &m);
+    fprintf(baseout, "%d\n", m);
 
     y = (double *) malloc(sizeof(double)*n);
     p = (double *) malloc(sizeof(double)*m);
@@ -54,19 +57,32 @@ int main () {
 
     scanf("%lf", &sigma);
 
-    for (int i = 0; i < m; i++)
+    for (int i = 0; i < m; i++) {
         for (int j = 0; j < m; j++) {
             scanf("%lf", &q[i][j]);
+            fprintf(baseout, "%f ", q[i][j]);
         }
+        fprintf(baseout, "\n");
+    }
 
     for (int i = 0; i < m; i++) {
         scanf("%lf", p+i);
     }
+
+    default_random_engine gerador;
+    normal_distribution<double> normal(0.0, sigma);
     
     printf("%d %d\n", n, m);
+    double mini, maxi;
     for (int i = 0; i < n; i++) {
         double t;
         scanf("%lf", &t);
+        if (i)
+            mini = maxi = t;
+        else {
+            mini = min(mini, t);
+            maxi = max(maxi, t);
+        }
         y[i] = 0.0;
 
         for (int j = 0; j < m; j++) {
@@ -74,12 +90,20 @@ int main () {
             printf("%d %d %f\n", i, j, val);
             y[i] += p[j]*val;
         }
+
+        y[i] += normal(gerador);
+        fprintf(pointsout, "%f,%f\n", t, y[i]);
     }
 
-    default_random_engine gerador;
-    normal_distribution<double> normal(0.0, sigma);
+    fprintf(baseout, "%f %f %d\n", mini-((maxi-mini)/10.0), maxi+((maxi-mini)/10.0), 1000);
 
     for (int i = 0; i < n; i++)
-        printf("%f ", y[i]+normal(gerador));
+        printf("%f ", y[i]);
     printf("\n");
+
+    free(y);
+    free(p);
+    for (int i = 0; i < m; i++)
+        free(q[i]);
+    free(q);
 }
