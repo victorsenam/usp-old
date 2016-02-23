@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb,amsfonts}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+ 
+\newenvironment{problem}[2][Ex]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+%If you want to title your bold things something different just make another thing exactly like this but replace "problem" with the name of the thing you want, like theorem or lemma or whatever
+ 
+\begin{document}
+ 
+%\renewcommand{\qedsymbol}{\filledbox}
+%Good resources for looking up how to do stuff:
+%Binary operators: http://www.access2science.com/latex/Binary.html
+%General help: http://en.wikibooks.org/wiki/LaTeX/Mathematics
+%Or just google stuff
+ 
+\title{Lista 1}
+\author{Victor Sena Molero - 8941317}
+\maketitle
+ 
+\begin{problem}{1.a}
+$3^n \neq O(2^n)$
+\end{problem}
+ 
+\begin{proof}
+Suponha que $3^n$ é $O(2^n)$, logo, \\
+$$ \exists c, n_0 : 3^n \leq c2^n \forall n \in \N, n \geq n_0 $$
+mas, já que $(3/2)^n$ é estritamente crescente e bem definida para todo $n$ natural, temos que
+$$ \exists m \in \N, m \geq n_0 : (3/2)^m > c $$
+logo,
+$$ \exists m \in \N, m \geq n_0 : 3^m > c2^m $$
+um absurdo, ou seja,
+$3^n$ não é $O(2^n)$
+\end{proof}
+
+\begin{problem}{1.b}
+$\log_{10} n = O(\lg n)$
+\end{problem}
+
+\begin{proof}
+$$ \log_{10} n / \log_{10} 2 = \lg n $$
+$$ \log_{10} n = \log_{10} 2 * \lg n $$
+logo, com $c = \log_{10} 2$ e $n_0 = 1$ temos
+$$ \log_{10} n \leq c\lg{n} \forall n \geq n_0 $$
+\end{proof}
+
+\begin{problem}{1.c}
+$\lg n = O(\log_{10} n)$
+\end{problem}
+
+\begin{proof}
+$$ \lg n / \lg 10 = \log_{10} n $$
+$$ \lg n = \lg 10 * \log_{10} n $$
+logo, com $c = \lg 10$ e $n_0 = 1$ temos
+$$ \lg n \leq c \log_{10} n \forall n \geq n_0 $$
+\end{proof}
+
+\end{document}
+              
