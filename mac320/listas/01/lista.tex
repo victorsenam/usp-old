@@ -1,0 +1,40 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb,amsfonts}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+ 
+\newenvironment{problem}[2][Ex]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\linespread{2}
+%If you want to title your bold things something different just make another thing exactly like this but replace "problem" with the name of the thing you want, like theorem or lemma or whatever
+ 
+\begin{document}
+ 
+%\renewcommand{\qedsymbol}{\filledbox}
+%Good resources for looking up how to do stuff:
+%Binary operators: http://www.access2science.com/latex/Binary.html
+%General help: http://en.wikibooks.org/wiki/LaTeX/Mathematics
+%Or just google stuff
+ 
+\title{Lista 1}
+\author{Victor Sena Molero - 8941317}
+\maketitle
+ 
+\begin{problem}{E3}
+Um grafo simples é auto-complementar se é isomorfo ao seu complemento. É possível que um grafo auto-complementar de ordem 100 tenha exatamente um vértice de grau 50? Justifique.
+\end{problem}
+ 
+\begin{proof}
+O grafo $G$ tem ordem $100$ e um vértice $u$ de grau $50$. Não existe nenhum outro vértice em $G$ com grau $50$. Existe um grafo $\bar{G}$ que é complementar a $G$. \\
+Já que $\bar{G}$ é complementar a $G$, existe um vértice $v \in \bar{G}$ tal que $g_{\bar{G}}(v) = 49$. Além disso, não existe nenhum outro vértice $v' \in \bar{G}$ tal que $g_{\bar{G}}(v) = 49$ pois, se houvesse, haveria um outro vértice $u' \in G$ tal que $g_{G}(u) = 50$. \\
+Agora, vamos assumir, por absurdo, que $G \cong \bar{G}$. Temos que existe um, e somente um, vértice $u$ de grau $50$ em $G$ (e em $\bar{G}$) e, também, que existe um, e somente um, vértice $v$ de grau $49$ em $G$ (e em $\bar{G}$). \\
+Temos dois casos: $u$ é adjacente a $v$ em $G$ ou não. \\
+No primeiro caso, $G$ tem seu único vértice de grau $50$ adjacente ao seu único vértice de grau $49$ e $\bar{G}$ não tem nenhum vértice de grau $50$ adjacente a um vértice de grau $49$, logo, eles não são isomorfos, um absurdo. \\
+No segundo caso, $G$ tem não tem nenhum vértice de grau $50$ adjacente a um vértice de grau $49$, enquanto $\bar{G}$ tem uma aresta entre um vértice de grau $50$ e um vértice de grau $49$. Assim, eles não são isomorfos, um absurdo. \\
+Já que não existe nenhum caso onde não atingimos um absurdo, a hipótese inicial é falsa e podemos afirmar que não é possível que um grafo auto-complementar de ordem 100 tenha exatamente um vértice de grau 50.
+\end{proof}
+
+\end{document}
