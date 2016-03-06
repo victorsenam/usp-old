@@ -22,7 +22,51 @@
 \title{Lista 1}
 \author{Victor Sena Molero - 8941317}
 \maketitle
+
+\begin{problem}{E1}
+Nos dois items deste problema vamos assumir que o grafo $G$ é bipartido em $G_1$ e $G_2$. Também vamos assumir s.p.g. que $|V(G_1)| \leq |V(G_2)|$ e definir $n = |V(G)|$ e $a = |V(G_1)|$. É fácil ver que $|V(G_2)| = n - a$. Sabemos também que o máximo de arestas que este grafo pode ter é $a(n-a)$. \\
+\end{problem}
+
+\begin{problem}{E1 (a)}
+Prove que um grafo simples de ordem $n$ com mais do que $n^2/4$ arestas não é bipartido.
+\end{problem}
+
+\begin{proof}
+Sabemos que $a \leq n/2$, já que $|V(G_1)| \leq |V(G_2)|$. \\
+Se $a < n/2$, existe um $k$ tal que $n/2 \geq k > 0$ e $a = n/2-k$. Temos que $|A(G)| \leq a(n-a) = (n/2-k)(n-n/2+k) = n^2/4 - k^2 < n^2/4$.
+E, também, se $a = n/2$, temos que $|A(G)| \leq a(n-a) = (n/2)^2 = n^2/4$. \\
+Logo, é impossível que $|A(G)| > n^2/4$.
+\end{proof}
+
+\begin{problem}{E1 (b)}
+Encontre todos (diga como são) os grafos bipartidos de ordem $n$ com $\lfloor n^2/4 \rfloor$ arestas. Justifique. \\
+\end{problem}
+
+\begin{proof}
+Estes grafos tem lados de grau $\lfloor n/2 \rfloor$ e $\lceil n/2 \rceil$ e são completos. \\
+Sabemos que $a \leq \lfloor n/2 \rfloor$, já que $|V(G_1)| \leq |V(G_2)|$. \\
+Se $n$ é ímpar e $a < \lfloor n/2 \rfloor$, temos que existe um $k$ tal que $\lfloor n/2 \rfloor \geq k > 0$ e $a = \lfloor n/2 \rfloor -k$. Temos, também que $\lfloor n/2 \rfloor = (n-1)/2$. Assim:
+$$ a(n-a) = ((n-1)/2 - k)(n - (n-1)/2 + k) = ((n-1)/2 - k)((n+1)/2 + k) = $$
+$$ = (n/2 - (1+2k)/2)(n/2 + (1+2k)/2) = n^2/4 - ((1+2k)/2)^2 = n^2/4 - (k+1)^2 \leq $$
+$$ \leq n^2/4 - 1 < \lfloor n^2/4 \rfloor $$ \\
+Se $n$ é par, temos que $\lfloor n/2 \rfloor = n/2$ e $\lfloor n^2/4 \rfloor$ e já provamos no item a que $a < n/2 \implies a(n-a) < n^2/4 = \lfloor n^2/4 \rfloor$. \\
+Agora, se $n = \lfloor n/2 \rfloor$ com um $n$ par, temos que $a(n-a) = n^2/4 = \lfloor n^2/4 \rfloor$. Mas com um $n$ ímpar temos $a(n-a) = (n-1)/2 (n+1)/2 = (n^2-1)/4$, por outro lado, $n^2$ é impar e
+$$ \lfloor n^2/4 \rfloor = (n^2 - 1)/4 \quad \text{ ou } \quad \lfloor n^2/4 \rfloor = (n^2-3)/4 $$ \\
+já que $n^2/4 - \lfloor n^2/4 \rfloor < 1$. E sabemos que $(n^2-1)/4 = (n-1)/2 (n+1)/2$, logo, é inteiro, por ser produto de dois inteiros, ou seja, $(n^2-3)/4$ não é inteiro. Portanto, $ \lfloor n^2/4 \rfloor = (n^2-1)/4 $. \\
+Ou seja, os únicos grafos bipartidos de ordem $n$ que conseguem ter $\lfloor n^2/4 \rfloor$ arestas tem $a = \lfloor n/2 \rfloor$. E, já que, como vimos acima, $\lfloor n/2 \rfloor \lceil n/2 \rceil = \lfloor n^2/4 \rfloor$ estes grafos devem ser completos.
+\end{proof}
  
+\begin{problem}{E2}
+Existe um grafo bipartido simples $G$ tal que $\delta(G) + \Delta(G) = |V(G)|$? Justifique.
+\end{problem}
+
+\begin{proof}
+Não. \\
+Assuma que o grafo $G$ é bipartido em $G_1$ e $G_2$. Assumimos também, s.p.g., que $|V(G_1)| \leq |V(G_2)|$. \\
+Assim, o grau máximo possível para um nó no grafo é $|V(G_2)|$ e o grau máximo possível para um nó em $G_2$ é $|V(G_1)|$, ou seja, $\Delta(G) \leq |V(G_2)| \text{ e } \delta(G) \leq |V(G_1)|$, logo:
+$$ \delta(G) + \Delta(G) \leq |V(G_1)| + |V(G_2)| = |V(G)| $$
+\end{proof}
+
 \begin{problem}{E3}
 Um grafo simples é auto-complementar se é isomorfo ao seu complemento. É possível que um grafo auto-complementar de ordem 100 tenha exatamente um vértice de grau 50? Justifique.
 \end{problem}
@@ -35,6 +79,34 @@ Temos dois casos: $u$ é adjacente a $v$ em $G$ ou não. \\
 No primeiro caso, $G$ tem seu único vértice de grau $50$ adjacente ao seu único vértice de grau $49$ e $\bar{G}$ não tem nenhum vértice de grau $50$ adjacente a um vértice de grau $49$, logo, eles não são isomorfos, um absurdo. \\
 No segundo caso, $G$ tem não tem nenhum vértice de grau $50$ adjacente a um vértice de grau $49$, enquanto $\bar{G}$ tem uma aresta entre um vértice de grau $50$ e um vértice de grau $49$. Assim, eles não são isomorfos, um absurdo. \\
 Já que não existe nenhum caso onde não atingimos um absurdo, a hipótese inicial é falsa e podemos afirmar que não é possível que um grafo auto-complementar de ordem 100 tenha exatamente um vértice de grau 50.
+\end{proof}
+
+\begin{problem}{E4}
+Prove se um grafo $G$ tem exatamente dois vértices de grau ímpar, então $G$ tem um caminho cuja origem e cujo término são precisamente esses vértices.
+\end{problem}
+
+\begin{proof}
+Por definição, em uma componente conexa, existe um caminho entre cada par de vértices. \\
+Vamos provar que, se um grafo $G$ contém exatemente 2 vértices de grau ímpar, ambos pertencem à mesma componente. \\
+Primeiro, assumimos, por absurdo que existe uma componente de $G$ com um só vértice $v$ de grau ímpar. Esta componente forma um subgrafo induzido $G'$ onde $g_{G'}(v) = g_G(v) \quad \forall v \in G'$. \\
+E sabemos que, para todo grafo $H$, vale $\sum_{v \in H} g_H(v) = 2|V(H)|$, logo
+$$ \sum_{v \in G'} g_{G'}(v) = 2|V(G')| $$, \\
+porém, o primeiro lado da equação soma apenas um valor ímpar com outros pares, logo é ímpar, e o lado direito é o produto de 2 com um natural, portanto é par. Ou seja, a equação não vale em $G'$, um absurdo. \\
+Assim, é impossível que uma componente conexa contenha exatamente um vértice de grau ímpar, logo, os dois devem estar na mesma componente, ou seja, há um caminho entre os dois.
+\end{proof}
+
+\begin{problem}{E5}
+Seja $G$ um grafo simples. É possível que $G$ e $\bar{G}$ sejam desconexos? Justifique.
+\end{problem}
+
+\begin{proof}
+Vamos provar que, para todo grafo $G$ de grau $n \geq 1$, $G$ é conexo ou $\bar{G}$ é conexo. \\
+Se $n = 1$, $G$ é conexo. \\
+Vamos assumir que para um $n \geq 1$, $G$ é conexo ou $\bar{G}$ é conexo e provar que para $n+1$, o mesmo vale. \\
+Temos um grafo $H$ de grau $n+1$, removemos um vértice arbritário $v$ de $H$ formando um grafo $G$ de grau $n$. Pela hipótese de indução, $G$ é conexo ou $\bar{G}$ é conexo. Vamos assumir s.p.g. que $G$ é conexo. \\
+Assim, se $g_H(v) \neq 0$, $H$ é conexo, pois vai existir um caminho entre $v$ e pelo menos um vértice de $G$ e, já que existe um caminho entre todo par de vértices de $G$, existe um caminho entre $v$ e qualquer vértice de $G$. Logo, existe um caminho entre todo par de vértices de $H$ e, então, $H$ é conexo. \\
+Por outro lado, se $g_H(v) = 0$, $\bar{H}$ é conexo, pois, $v$ será adjacente a todo vértice de $\bar{G}$ em $\bar{H}$, ou seja, vai haver um caminho entre todo par de vértices de $\bar{H}$. \\
+Logo, $H$ é conexo ou $\bar{H}$ é conexo e, portanto, vale a indução.
 \end{proof}
 
 \end{document}
