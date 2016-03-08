@@ -19,8 +19,10 @@ public class RandomSurfer {
         // Read transition matrix.
         double[][] p = new double[N][N];     // p[i][j] = prob. that surfer moves from page i to page j
         for (int i = 0; i < N; i++)
-            for (int j = 0; j < N; j++) 
+            for (int j = 0; j < N; j++)  {
                 p[i][j] = StdIn.readDouble(); 
+            }
+
 
 
         int[] freq = new int[N];            // freq[i] = # times surfer hits page i

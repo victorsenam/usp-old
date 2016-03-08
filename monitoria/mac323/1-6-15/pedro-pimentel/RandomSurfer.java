@@ -1,0 +1,55 @@
+/******************************************************************************
+ *  Compilation:  javac RandomSurfer.java
+ *  Execution:    java RandomSurfer T
+ *  Data files:   http://introcs.cs.princeton.edu/16pagerank/tiny.txt
+ *                http://introcs.cs.princeton.edu/16pagerank/medium.txt
+
+ *  Pedro Sola Pimentel RM 9298079
+ *  % java generator 10 10 1 2 | java Transition | java RandomSurfer 1000000
+ *
+ ******************************************************************************/
+
+public class RandomSurfer {
+    public static void main(String[] args) {
+        int T = Integer.parseInt(args[0]);    // number of moves
+        int M = StdIn.readInt();              // number of pages  - ignore since M = N
+        int N = StdIn.readInt();              // number of pages
+        if (M != N) throw new RuntimeException ("M does not equal N");
+
+        // Read transition matrix.
+        double[][] p = new double[N][N];     // p[i][j] = prob. that surfer moves from page i to page j
+        for (int i = 0; i < N; i++)
+            for (int j = 0; j < N; j++) 
+                p[i][j] = StdIn.readDouble(); 
+
+
+        int[] freq = new int[N];            // freq[i] = # times surfer hits page i
+ 
+        // Start at page 0. 
+        int page = 0;
+
+        for (int t = 0; t < T; t++) {
+
+            // Make one random move. 
+            double r = Math.random(); 
+            double sum = 0.0; 
+            for (int j = 0; j < N; j++) {
+                // Find interval containing r. 
+                sum += p[page][j]; 
+                if (r < sum) {
+                    page = j;
+                    break;
+                } 
+            } 
+            freq[page]++; 
+        } 
+
+
+        // Print page ranks. 
+        for (int i = 0; i < N; i++) {
+            StdOut.printf("%8.5f", (double) freq[i] / T); 
+        }
+        StdOut.println(); 
+    }  
+} 
+

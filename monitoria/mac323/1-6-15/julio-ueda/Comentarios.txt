@@ -1,0 +1,106 @@
+/*******************************************************************************
+ *
+ * Nome:   JULIO KENJI UEDA
+ *
+ * No.USP: 9298281
+ *
+ *******************************************************************************
+ *
+ * Respondendo à pergunta do Exercício 1.6.15 (Hubs and Authorities):
+ *
+ * Depende. Hubs possuem Page Hank maior nos casos em que os números de links
+ * são escassos e os Authorities não recebem (ou recebem pouco) links de outras
+ * páginas. Por exemplo:
+ *
+ * Ao escolher 20 páginas e 10 links, com 5 Hubs e 5 Authorities:
+ *
+ * % java-introcs Generator 20 10 5 5 > matriz.txt
+ * % more matriz.txt
+ *  20
+ *  1 4  1 10 
+ *  3 5  3 10 
+ *  8 4  8 16
+ *  10 5  10 17 
+ *  12 16  12 17
+ *
+ * % java-introcs Transition2 < matriz.txt > prob.txt
+ * % java-introcs RandomSurfer < prob.txt 1000000
+ * 0.03973 0.03954 0.03942 0.03950 0.07501
+ * 0.09079 0.03920 0.03950 0.03987 0.03941 
+ * 0.07492 0.03971 0.03960 0.03941 0.03926 
+ * 0.03931 0.07498 0.09177 0.03943 0.03966
+ *
+ * Os Hubs são:
+ *  4 (0.07501)
+ *  5 (0.09079)
+ * 10 (0.07492) -> também é Authority
+ * 16 (0.07498)
+ * 17 (0+09177)
+ * Contra Authorities:
+ *  1 (0.03973)
+ *  3 (0.03973)
+ *  8 (0.03973)
+ * 10 (0.07492) -> também é Hub
+ * 12 (0.03971)
+ *
+ * A página 10 é tanto Hub quanto Authority, pois recebe links de 10% das 
+ * páginas (dois) e envia links para 10% das páginas (dois).
+ *
+ * Agora, ao escolher 20 páginas e 20 links, com 10 Hubs e 10 Authorities:
+ *
+ * % java-introcs Generator 20 20 10 10 > matriz.txt
+ * % more matriz.txt
+ *  20
+ *  0 8  0 13  
+ *  1 2  1 16  
+ *  2 9  2 12  
+ *  3 5  3 17  
+ *  4 1  
+ *  5 19  
+ *  6 8  6 10  
+ *  7 3  
+ *  8 14  
+ *  11 15  
+ *  12 4  12 5  
+ *  13 2  13 9  13 10  13 11  
+ *  14 3  14 18  
+ *  15 6  15 17  
+ *  16 13  
+ *  18 15  18 17  
+ *  19 4  19 14
+ *
+ * % java-introcs Transition2 < matriz > prob.txt
+ * % java-introcs RandomSurfer < prob.txt 1000000
+ * 0.01305 0.06729 0.05643 0.05947 0.06026 
+ * 0.05748 0.03925 0.01326 0.03704 0.05192 
+ * 0.04398 0.02644 0.03855 0.05863 0.07548 
+ * 0.05811 0.04384 0.08740 0.04711 0.06502
+ *
+ * Os Hubs são:
+ *  2 (0.05643) -> também é Authority
+ *  3 (0.05947) -> também é Authority
+ *  4 (0.06026)
+ *  5 (0.05748)
+ *  8 (0.03704)
+ *  9 (0.05192)
+ * 10 (0.04398)
+ * 13 (0.05863)
+ * 14 (0.07548) -> também é Authority
+ * 15 (0.05811) -> também é Authority
+ * Contra Authorities:
+ *  0 (0.01305)
+ *  1 (0.06729)
+ *  2 (0.05643) -> também é Hub
+ *  3 (0.05947) -> também é Hub
+ *  6 (0.03925)
+ * 12 (0.03855)
+ * 14 (0.07548) -> também é Hub
+ * 15 (0.05811) -> também é Hub
+ * 18 (0.04711)
+ * 19 (0.06502)
+ *
+ * Verifica-se que há Hubs com Page Hank baixo (8) e Authorities com Page Hank 
+ * alto (1, 19) e baixo (0, 6, 12). Assim, pode-se dizer que o Page Hank entre
+ * Hubs e Authorities variam de acordo com o número de links.
+ *
+ ******************************************************************************/
