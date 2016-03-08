@@ -28,8 +28,8 @@ $3^n \neq O(2^n)$
  
 \begin{proof}
 Suponha que $3^n$ é $O(2^n)$, logo, \\
-$$ \exists c, n_0 : 3^n \leq c2^n \forall n \in \N, n \geq n_0 $$
-mas, já que $(3/2)^n$ é estritamente crescente e bem definida para todo $n$ natural, temos que
+$$ \exists c, n_0 : 3^n \leq c2^n \quad \forall n \in \N, n \geq n_0 $$
+mas, já que $\lim_{n \rightarrow \infty}(3/2)^n$ para todo $n$ natural, temos que
 $$ \exists m \in \N, m \geq n_0 : (3/2)^m > c $$
 logo,
 $$ \exists m \in \N, m \geq n_0 : 3^m > c2^m $$
@@ -59,5 +59,30 @@ logo, com $c = \lg 10$ e $n_0 = 1$ temos
 $$ \lg n \leq c \log_{10} n \forall n \geq n_0 $$
 \end{proof}
 
+\begin{problem}{4.a}
+$$\sum_{i=1}^{n} i^k = \Theta(n^{k+1})$$
+\end{problem}
+
+\begin{proof}
+$ f(n) = \Theta(g(n)) $ se e somente se $ f(n) = O(g(n)) $ e $ f(n) = \Omega(g(n)) $ \\
+Vamos provar, primeiramente $ f(n) = O(g(n)) $
+$$ \sum_{i=1}^{n} i^k \leq \sum_{i=1}^{n} n^k = n*n^k = n^{k+1} $$
+agora, $ f(n) = \Omega(g(n)) $
+$$ \sum_{i=1}^{n} i^k \geq \sum_{i=\lceil n/2 \rceil}^{n} i^k \geq \sum_{i=\lceil n/2 \rceil}^{n} (n/2)^k \geq \lfloor n/2 \rfloor (n/2)^k \geq (n/2 - 1)(n/2)^k $$
+para um $ n \geq 4 $, temos que $n/2 - 1 \geq n/4$, então
+$$ (n/2 - 1)(n/2)^k  \geq (n/4)(n/2)^k = n^{k+1}/2^{k+2} $$
+\end{proof}
+
+\begin{problem}{4.b}
+$$\sum_{i=1}^{n} i/2^i \leq 2$$
+\end{problem}
+
+\begin{proof}
+$$ \sum_{i=1}^{n} i/2^i = \sum_{k=1}^n \sum_{i=k}^n 1/2^i $$
+Já que $\sum_{i=k}^n 1/2^i$ é uma soma de P.G. com razão $1/2$ e início em $1/2^k$
+$$ \sum_{i=k}^n 1/2^i = 1/2^k(1-1/2^n)/(1/2) = 1/2^{k-1} (1-1/2^n) = 1/2^{k-1} - 1/2^{n+k-1} \leq 1/2^{k-1} $$
+Logo,
+$$ \sum_{k=1}^n \sum_{i=k}^n 1/2^i \leq \sum_{k=1}^n 1/2^{k-1} = \sum_{k=0}^{n-1} 1/2^{k} \leq 1/2^{-1} = 2 $$
+\end{proof}
+
 \end{document}
-              
