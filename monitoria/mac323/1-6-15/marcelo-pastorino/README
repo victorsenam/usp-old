@@ -1,0 +1,30 @@
+/******************************************************************************
+ *  Nome: Marcelo Baiano Pastorino Trylesinski  
+ *  Número USP: 9297996
+ *
+ ******************************************************************************/
+
+**************************** Tutorial Rápido ************************************
+ O programa Generator gera o número de links.
+ O programa Transition cria a matriz de transição de acordo com os links do Generator.
+ O programa RandomSurfer cria o page rank.
+
+ * * * * * * * * * * * * * * * * Como Usar * * * * * * * * * * * * * * * * * 
+ Utilize o comando: 
+
+ java-algs4 Generator N M H A | java-algs4 Transition | java-algs 4 RandomSurfer T
+
+ N: número de páginas
+ M: número de links
+ H: número de hubs
+ A: número de authorities
+ T: número de movimentos
+
+
+***********************************************************************************
+***********************************************************************************
+
+* Resposta à pergunta do exercício:
+Entre os hubs e os authorities, os hubs estiveram melhor no page rank. Visto que, 
+se uma página tem links apontadas para ela, maior é a probabilidade do RandomSurfer
+passar sobre ela.

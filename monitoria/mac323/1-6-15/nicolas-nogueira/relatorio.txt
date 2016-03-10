@@ -1,0 +1,9 @@
+ Nome: Nícolas Nogueira Lopes da Silva
+ Nº USP: 9277541
+
+ Relatório sobre exercício 1.6.15
+
+ Nos testes realizados, oa valores de pagerank dos hubs sao bem 
+ maiores que os dos vertices aleatorios e os valores dos authorities
+ sao menores que os vertices aleatorios em geral. Esses valores
+ ganham destaque quando aumentamos os valores de N.

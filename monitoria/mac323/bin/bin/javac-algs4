@@ -7,10 +7,7 @@
 # Wrapper for javac that includes algs4.jar.
 # *************************************************
 
-# This must match the install directory
-INSTALL=~/Documentos/usp/monitoria/mac323/bin/
-
 # Sets the path to the classpath libraries
-jars=(.:${INSTALL}/algs4.jar:${INSTALL}/stdlib.jar)
+jars=(.:${MAC323_INSTALL}/algs4.jar:${MAC_323INSTALL}/stdlib.jar)
 
 javac -cp "$jars" -g -encoding UTF-8 "$@"

@@ -1,0 +1,42 @@
+    Optei por contruir o gerador de forma que os hubs e os authorities fizessem
+parte do conjunto geral de páginas, a fim de obter uma simulação mais próxima
+da real, onde authorities também possuem páginas apontadas para elas e hubs
+também possuem páginas para as quais apontam. Em detrimento dessa decisão,
+as páginas "comuns" acabam perdendo parte de suas interconexões as quais acabam
+sendo intermediadas por essas páginas especiais. (Entende-se por páginas
+especiais hubs e authorities que possuem uma lei de conexão não-totalmente
+aleatória)
+
+Utilizei as entradas N,M,H e A, onde:
+    - N representa o número de páginas normais (sem necessariamente possuir
+      características de hub ou authority);
+
+    - M representa o número de links aleatórios dentro de todo o conjunto de
+      páginas;
+
+    - H é o número de páginas com característica de hub (possuem ao menos
+      10% do conjunto total de páginas apontando para cada uma delas);
+
+    - A é o número de páginas com característica de authority (apontam para
+      ao menos 10% do conjunto total de páginas).
+
+    Com essa configuração, se observou um decréscimo na importância das páginas
+especiais dado o aumento no número de conexões aleatórias, assim como uma
+menor importância das páginas comuns condicionada pelo aumento no número de hubs.
+
+    Como as authorities estão englobadas no conjunto geral das páginas, observou-se
+pouca diferença entre seus ranks e os ranks de páginas normais. O que não pode ser
+dito dos hubs que concentram em si 50%+ do rank para casos de baixo/médio número de
+conexões aleatórias (M).
+
+    No final, pôde se notar que, quando se incorpora as páginas especiais ao
+grupo geral de páginas e faz com que suas conexões sejam em função deste, há
+um processo muito mais entrópico na geração de conexões e na previsão do
+cáculo dos pageranks, o que significa que, se o pressuposto de que essa
+configuração torna a simulação mais próxima da real for correto, então,
+a estrutura hierárquica da web só é condicionada pela ausência de conexões
+aleatórias na mesma (M), e não, necessariamente, pela centralização de
+conexões em páginas específicas.
+
+(OBS: Não usar a segunda versão do RandomSurfer para casos pouco entrópicos,
+devido à problemas de arredondamento no método StdRandom.discrete())

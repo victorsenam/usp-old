@@ -1,0 +1,8 @@
+Ludmila Ferreira Vicente e Silva    NUSP 7557136
+mac0323 - miniep_1_6_15 
+
+
+O enunciado deste EP está muito confuso então tentei seguir o que estava num tópico do PACA.
+Não consegui saber se os nós que fossem hubs ou authorities eram nós a mais ou faziam parte dos M nós (primeiro argumento na linha de comando).
+Sobre a correção de quando um nó não tem arestas saindo dele, alterei a classe Transition para, caso o grau de saída do nó fosse 0, ela tornasse a probabilidade de sair do nó atual e ir para qualquer outro nó equiprovável. Acredito que alterando essa função a matriz de transição já é gerada de forma que a RandomSurfer não esbarra com o problema de não poder sair do nó.
+
