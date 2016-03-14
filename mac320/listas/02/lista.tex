@@ -1,0 +1,94 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb,amsfonts}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+ 
+\newenvironment{problem}[2][Ex]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\linespread{2}
+%If you want to title your bold things something different just make another thing exactly like this but replace "problem" with the name of the thing you want, like theorem or lemma or whatever
+ 
+\begin{document}
+ 
+%\renewcommand{\qedsymbol}{\filledbox}
+%Good resources for looking up how to do stuff:
+%Binary operators: http://www.access2science.com/latex/Binary.html
+%General help: http://en.wikibooks.org/wiki/LaTeX/Mathematics
+%Or just google stuff
+ 
+\title{Lista 2}
+\author{Victor Sena Molero - 8941317}
+\maketitle
+
+\begin{problem}{E6}
+Prove que quaisquer dois caminhos mais longos em um grafo conexto possuem (pelo menos) um vértice em comum.
+\end{problem}
+
+\begin{proof}
+Dado um grafo $G$ conexo. Queremos provar que quaisquer dois caminhos mais longos em $G$ têm pelo menos um vértice em comum. \\ 
+Sejam $S$ e $T$ dois caminhos mais longos em $G$. \\
+Vamos supor, por absurdo, que $S$ e $T$ não têm nenhum vértice em comum. \\
+Agora vamos definir um menor camino entre $S$ e $T$ como um dos caminhos de menor comprimento que levam um vértice $u \in S$ qualquer a um vértice $v \in T$ qualquer. Seja $K$ um menor caminho entre $S$ e $T$. $K$ existe, pois se $S,T \in G$ e $G$ é conexo, $\forall u \in S \text{ e } v \in T$ existe um caminho em $G$, logo, existe um caminho mínimo. \\
+Vamos provar que só há um vértice $u : u \in S \cap K$ e um vértice $v : v \in T  \cap K$. Já que $K$ leva de $S$ a $T$, existe pelo menos um $u$ e um $v$. Devemos provar que são únicos. Primeiro, vou provar que $u$ é único. \\
+Assumindo, por absurdo, que existe um $u': u \in S \cap K \text{ e } u \neq u'$, temos que $K$ é um caminho de $u$ a $v$ que contém $u'$, ou seja, contém propriamente (já que $u \neq u'$) um caminho entre $u'$ e $v$, logo, $K$ não é um caminho mínimo. \\
+Analogamente, $v$ também é único dado um $K$. \\
+Se temos, então $K$ caminho mínimo entre $S$ e $T$ e dois vértices $u$ e $v$ únicos. Seja $l = |S|$, já que $|S| = |T|$, $l = |T|$. E seja $S'$ o caminho mais longo em $S$ entre uma ponta de $S$ e $u$, temos que $|S'| \geq \lceil l/2 \rceil$. Por outro lado, se $T'$ for o caminho mais longo em $T$ entre uma ponta de $T$ e $v$, temos que $|T'| \geq \lceil l/2 \rceil$. $K$ conecta $S'$ a $T'$ pois, contém $u$ e $v$ e $K$ tem tamanho pelo menos $1$, pois contém uma aresta (já que tem 2 vértices diferentes). \\
+Então, se escolhermos $P = S' \cdot K \cdot T'$ temos um caminho, pois o final de $S'$ coincide com o começo de $K$ e o final de $K$ coincide com o começo de $T'$, além disso, $S' \cap K$ e $T' \cap K$ têm apenas um vértice e $S' \cap T'$ é nulo, logo, de fato, $P$ é um caminho e $|P| = |S'| + |K| + |T'| \geq 2 \times \lceil l/2 \rceil + 1 \geq l + 1 > l$, logo, $P$ é um caminho em $G$ maior do que $S$, então $S$ não é um caminho máximo, um absurdo. Assim, todo par de caminhos máximos em $G$ deve compartilhar pelo menos um vértice.
+\end{proof}
+
+\begin{problem}{E7}
+Prove por indução em $k$ que o conjunto das arestas de um grafo conexo simples com $2k$ arestas, $k \geq 2$, pode ser particionado em caminhos de comprimento $2$. A afirmação continuaria válida se omitíssemos a hipótese de conexidade? Justifique.
+\end{problem}
+
+\begin{proof}
+Seja $G$ um grafo simples conexo com $2k$ arestas. Vamos provar que as arestas de $G$ podem ser particionadas em caminhos de comprimento $2$. \\
+Se $k = 0$, pode-se particionar as arestas em caminhos de comprimento $2$ escolhendo um conjunto vazio como particionamento. Todas as arestas do grafo (nenhuma) estão em um conjunto e todos os conjuntos da partição (nenhum) são formam, em $G$, caminhos de tamanho $2$. \\
+Se $k = 1$, basta escolher as duas arestas do grafo como uma partição, já que $G$ é conexo, elas formam um caminho de tamanho $2$. \\
+Assumindo que vale para $k - 1 \geq 0$ vamos provar que vale para $k$. \\
+Seja $S$ um camiho mais longo no grafo e $u$ uma aresta de $G$ que tem grau $1$ em $S$, $u$ tem grau pelo menos $1$ em $G$, já que $S$ está contido em $G$. Vou provar que é possível remover duas arestas de $G$ e gerar um grafo $G'$ conexo com duas arestas a menos. Existem duas possibilidades: \\
+$g_G(u) > 1 \text{ ou } g_G(u) = 1$ \\
+Se $g_G(u) > 1$, temos que $u$ é adjacente apenas a vértices pertencentes a $S$, se não, seria possível adicionar, a $S$, mais um vértice e $S$ não seria um caminho mais longo. Assim, se removermos duas arestas quaisquer de $u$, não desconectaremos $G$, já que todos os vértices afetados são parte do caminho e são alcançados pelos outros sem depender de $u$. \\
+Se $g_G(u) = 1$, temos que $u$ é adjacente a um único vértice $v$. Se $g_G(v) = 1$ teríamos um absurdo, pois o grafo seria desconexo, já que a aresta que conecta $u$ a $v$ é única e $G$ tem mais de uma aresta. Logo, $g_G(u) \geq 2$. Separamos novamente em dois casos, $g_G(v) = 2 \text{ ou } g_G(v) > 2$. \\
+Se $g_G(v) = 2$, podemos retirar as duas arestas de $v$, isso deixa os vértices $u$ e $v$ isolados, já que a única aresta de $u$ e as duas arestas de $v$ foram removidas, mas, então, basta remover $u$ e $v$ do grafo, gerando um $G'$ conexo com duas arestas a menos que $G$. \\
+Se $g_G(v) > 2$, $v$ existe pelo menos uma aresta que sai de $v$ e não pertence a $S$, já que $v$ só pode ter duas arestas em $S$. Escolhendo qualquer uma das arestas que saem de $v$ e não pertencem a $S$, considere que ela leve a um vértice $w$. Sabemos que $u \neq w$, já que o grafo é simples. Se $w$ pode ser adjacente a um vértice fora de $S$, seria possível criar um caminho maior do que $S$ ignorando a aresta que vai até $u$ adicionando $w$ e este outro vértice fora de $S$ ao caminho $S$. Logo, $w$ é adjacente apenas a vértices em $S$. Assim, $w$ não desconecta o grafo, se removido. Assim, podemos remover a aresta de $v$ até $w$ (se isso deixar $w$ com grau $0$, removemos $w$ também) e, além disso, remover a aresta de $v$ até $u$ e $u$, assim, o grafo terá duas arestas a menos e será conexo. Servindo como nosso grafo $G'$ desejado. \\
+Já que $G'$ é um grafo conexo com $2(k-1)$ arestas, vale a hipótese indutiva e existe um particionamento desejado. E, já que em todos os casos, removemos duas arestas adjacentes, podemos inserir este conjunto com essas duas arestas, que formam um caminho de tamanho $2$, formando um particionamento de $G$. \\
+Ou seja, $\forall k \geq 0$, é possível particionar um grafo $G$ com $2k$ arestas em conjuntos de caminhos de tamanho $2$. \\
+A afirmaçao não seria valida se omitíssemos a hipótese da conexidade, basta escolher um contra exemplo onde temos $4k$ vértices de grau $1$ e usamos cada aresta para conectar dois vértices distintos. Este grafo é desconexo e não contém nenhum caminho de tamanho $2$, logo, não podemos particioná-los em caminhos de tamanho $2$.
+\end{proof}
+
+\begin{problem}{E8}
+Prove que todo grafo simples $G$ pode ser representado como a união de dois grafos disjuntos nas arestas $G_1$ e $G_2$, tais que $G_1$ é acíclico e $G_2$ é um grafo cujos vértices são todos de grau par. \\
+\end{problem}
+
+\begin{proof}
+Todo grafo $G$ pode ser representado como $G_1 \cup G_2$ onde $G_1$ é acíclico e $G_2$ contém só arestas de grau par e $A(G_1) \cap A(G_2) = \emptyset$. Seja $G$ um grafo simples, vamos provar a proposição por indução em $n$ onde $n$ é a quantidade de ciclos em $G$. \\
+Se $n = 0$. $G$ é acíclico, então podemos escolher $G_1 = G$ e $G_2 = \emptyset$, assim, $G_1$ é acíclio e todo vértice de $G_2$ tem grau par. \\
+Supondo que vale para $n - 1 \geq 0$, temos um grafo $G$ com $n > 0$. \\
+Podemos escolher um ciclo $C$ de $G$, ou seja, um caminho fechado entre um vértice $u$ e ele mesmo. Todo vértice deste ciclo tem grau $2$. Agora, removemos as arestas de $C$ de $G$ formando o grafo $G'$, temos que o grafo $G'$ tem uma quantidade exclusivamente menor de ciclos que $G$, valendo a hipótese de indução. Logo, existem $G_1'$ acíclico e $G_2'$ onde todo vértice tem grau par e que unidos formam $G'$. Podemos unir o ciclo $C$ a $G_2'$ formando $G_2$, assim, $G_2$ ainda tem grau par em toda aresta, pois o grau de toda aresta foi acrescido em $0$ ou em $2$. Podemos também escolher $G_1 = G_1'$ e temos então que $G_1 \cup G_2 = G$ e as outras restrições são atendidads. \\
+\end{proof}
+
+\begin{problem}{E9}
+Seja $G$ um grafo conexo cujos vértices têm grau par, e que possui um número par de arestas. Prove que as arestas de $G$ podem ser coloridas com as cores azul e vermelha, de forma que em cada vértice incida o mesmo número de arestas azuis e vermelhas.
+\end{problem}
+
+\begin{proof}
+Seja $G$ um grafo conexo cujos vértices têm grau par. Por definição, $G$ é euleriano. Logo, existe uma trilha euleriana fechada. Nesta trilha, podemos pintar todas as arestas que aparecem em posições ímpares de vermelhas e o restante de azul. Assim, temos que cada vértice interno da trilha é adjacente à mesma quantidade de arstas vermelhas e azuis, já que cada aresta só aparece uma vez no grafo e quando uma aresta adjacente a um vértice qualquer aparece, outra adjacente ao mesmo vértice aparece logo depois (logo tem uma cor diferente). \\
+O que falta e mostrar que o primeiro vértice é adjacente a tantos vermelhos quanto azuis, porém, a primeira aresta da trilha é vermelha, então a ultima é azul, já que tem índice par ($2k$). Logo, o primeiro vértice também é adjacente à mesma quantidade de vermelhos que azuis.
+\end{proof}
+
+\begin{problem}{E10}
+Prove que um grafo conexo $G$ é euleriano se e só se $G$ contém circuitos $C_1, C_2, \dots, C_k$, dois a dois disjuntos nas arestas, tais que $A(G) = C_1 \cup C_2 \cup \dots \cup c_k$. (Exercício 21 do Capítulo 2.)
+\end{problem}
+
+\begin{proof}
+Seja $G$ um grafo euleriano com $n$ ciclos. \\
+Se o grafo é euleriano, ele deve ter pelo menos um ciclo, pois é sempre possível derivar um ciclo de uma trilha euleriana, basta pegar escolher um vértice $u$ e outro $v$ e escolher dois caminhos disjuntos de $u$ até $v$ e concatená-los. \\
+Então podemos considerar um grafo $G$ com $n = 1$. Este grafo é exatamente um ciclo, logo, sua decomposição em ciclos pode ser $G$. \\
+Considerando que vale $\forall n - 1 \geq 1$, temos um grafo $G$ com $n$ ciclos. \\
+Basta escolhermos um ciclo qualquer de $G$ e chamá-lo de $C_{k+1}$, agora removemos todas as arestas de $C_k$ em $G$ e atingimos um outro grafo $G'$ com uma quantidade estritamente menor de ciclos do que $G$. Pela hipótese de indução, $G'$ pode ser decomposto em $k$ ciclos. Já que $G' = C_1 \cup \dots \cup C_k$ e $G = G' \cup C_{k+1}$, logo, $G = C_1 \cup \dots \cup C_{k+1}$. Ou seja, a propriedade vale para $G$.
+\end{proof}
+
+\end{document}
