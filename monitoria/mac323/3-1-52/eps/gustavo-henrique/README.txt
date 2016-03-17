@@ -1,0 +1,3 @@
+-Programa deve ser compilado com o javac-introcs ou com o Makefile que foi junto.
+-Classe principal: WordCounter.java
+-A parte de contar palavras e ordenar foi um saco. Tive que pensar em uma solução que não fosse muito cheater e usasse mil EDs mas também não fosse muito longa e trabalhosa. Por isso criei o objeto WordEntry e preparei uma lista deles. Depois disso passei as palavras por um loop pouco otimizado que distribui elas na lista de acordo com o número de vezes que aparecem. Por fim, criei o comparador WordComparator pra ordenar as WordEntry por ordem decrescente de número de aparições e ordenei a lista com base nesse comparador em Collections.sort().

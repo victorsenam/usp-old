@@ -1,0 +1,8816 @@
+53d52
+< others 276
+54a54
+> others 276
+78d77
+< most 190
+79a79
+> most 190
+93d92
+< either 157
+95c94
+< its 155
+---
+> either 157
+96a96
+> its 155
+107d106
+< proper 133
+108a108
+> proper 133
+110d109
+< two 132
+111a111
+> two 132
+117d116
+< say 124
+118a118
+> say 124
+121d120
+< person 120
+123c122
+< without 119
+---
+> person 120
+126c125
+< rich 116
+---
+> without 119
+127a127
+> rich 116
+145d144
+< means 97
+146a146
+> means 97
+147a148
+> between 95
+150,151d150
+< between 95
+< governments 92
+153c152
+< though 91
+---
+> governments 92
+154a154
+> though 91
+158d157
+< made 88
+160c159
+< project 87
+---
+> made 88
+161a161
+> project 87
+163d162
+< property 86
+165c164
+< indeed 85
+---
+> property 86
+166a166
+> indeed 85
+168d167
+< nothing 84
+171,172c170
+< war 82
+< respect 82
+---
+> nothing 84
+173a172,173
+> respect 82
+> war 82
+176d175
+< use 80
+177a177
+> use 80
+181d180
+< yet 77
+182a182
+> yet 77
+186d185
+< slave 74
+189c188
+< work 73
+---
+> slave 74
+190a190
+> work 73
+194a195
+> aristocracy 69
+197d197
+< aristocracy 69
+199,200d198
+< together 68
+< money 68
+201a200,201
+> money 68
+> together 68
+204d203
+< called 65
+205a205
+> called 65
+209a210
+> arise 63
+212d212
+< arise 63
+214a215
+> cause 61
+217d217
+< cause 61
+219d218
+< us 60
+220a220
+> us 60
+222d221
+< up 59
+224c223
+< besides 58
+---
+> up 59
+225a225
+> besides 58
+228d227
+< happen 57
+230d228
+< sort 57
+232,233c230,231
+< true 56
+< master 56
+---
+> happen 57
+> sort 57
+236,237c234,235
+< little 55
+< instance 55
+---
+> master 56
+> true 56
+239,243c237,238
+< particulars 54
+< even 54
+< rather 54
+< large 54
+< itself 54
+---
+> instance 55
+> little 55
+245d239
+< everything 54
+247c241,246
+< three 54
+---
+> even 54
+> everything 54
+> itself 54
+> large 54
+> particulars 54
+> rather 54
+248a248
+> three 54
+251d250
+< neither 52
+253a253
+> neither 52
+255c255,256
+< greater 51
+---
+> after 51
+> before 51
+258,259c259
+< before 51
+< rest 51
+---
+> greater 51
+261,262c261
+< after 51
+< object 50
+---
+> rest 51
+263a263,264
+> object 50
+> could 49
+267c268
+< could 49
+---
+> composed 48
+268a270
+> know 48
+269a272
+> something 48
+272,274d274
+< know 48
+< composed 48
+< something 48
+277a278
+> might 46
+280,283d280
+< might 46
+< small 45
+< concerning 45
+< often 45
+284a282
+> concerning 45
+285a284,285
+> often 45
+> small 45
+287d286
+< principle 44
+289d287
+< soul 44
+291a290
+> principle 44
+292a292
+> soul 44
+294d293
+< subject 43
+296,297c295
+< impossible 42
+< honours 42
+---
+> subject 43
+299a298,301
+> honours 42
+> impossible 42
+> consequence 41
+> constitution 41
+302,303d303
+< consequence 41
+< vote 41
+305,306d304
+< constitution 41
+< perfect 41
+308c306,307
+< want 40
+---
+> perfect 41
+> vote 41
+310,311d308
+< individual 40
+< whose 40
+312a310
+> individual 40
+314c312,314
+< enjoy 39
+---
+> want 40
+> whose 40
+> about 39
+315a316
+> enjoy 39
+318d318
+< about 39
+321d320
+< labour 37
+322a322,325
+> employed 37
+> husbandmen 37
+> king 37
+> labour 37
+325,327d327
+< king 37
+< husbandmen 37
+< employed 37
+328a329
+> bad 36
+332,335d332
+< bad 36
+< separate 35
+< next 35
+< natural 35
+337d333
+< whatsoever 35
+339a336,337
+> natural 35
+> next 35
+340a339,342
+> separate 35
+> whatsoever 35
+> desire 34
+> exercises 34
+342,343d343
+< taken 34
+< tyrant 34
+345,346d344
+< exercises 34
+< desire 34
+348,354c346,347
+< pleasure 33
+< probably 33
+< mind 33
+< still 33
+< third 33
+< present 33
+< census 33
+---
+> taken 34
+> tyrant 34
+357d349
+< judge 33
+358a351,354
+> census 33
+> judge 33
+> mind 33
+> pleasure 33
+360c356,357
+< speak 33
+---
+> present 33
+> probably 33
+362,365c359,361
+< follow 32
+< find 32
+< principles 32
+< easily 32
+---
+> speak 33
+> still 33
+> third 33
+366a363,365
+> easily 32
+> find 32
+> follow 32
+368a368
+> principles 32
+370,371d369
+< makes 31
+< sake 31
+372a371,372
+> considered 31
+> freemen 31
+373a374,375
+> magistrate 31
+> makes 31
+375a378,379
+> regulated 31
+> sake 31
+377d380
+< considered 31
+379,381c382
+< magistrate 31
+< freemen 31
+< regulated 31
+---
+> arts 30
+384,386d384
+< partake 30
+< method 30
+< manners 30
+387a386,388
+> manners 30
+> method 30
+> partake 30
+389d389
+< arts 30
+391c391
+< father 29
+---
+> among 29
+392a393
+> disposition 29
+395,397c396
+< show 29
+< among 29
+< nobles 29
+---
+> father 29
+399c398,399
+< disposition 29
+---
+> nobles 29
+> show 29
+401,402d400
+< management 28
+< terms 28
+404c402
+< difficult 28
+---
+> allowed 28
+406c404
+< last 28
+---
+> difficult 28
+408,411d405
+< view 28
+< allowed 28
+< worth 28
+< learn 28
+412a407,410
+> last 28
+> learn 28
+> management 28
+> terms 28
+414c412,414
+< why 27
+---
+> view 28
+> worth 28
+> afterwards 27
+416,417c416,417
+< ever 27
+< used 27
+---
+> desirous 27
+> electronic 27
+418a419,420
+> ever 27
+> foundation 27
+421a424
+> ones 27
+423,424d425
+< electronic 27
+< desirous 27
+425a427,428
+> used 27
+> why 27
+427,436d429
+< afterwards 27
+< ones 27
+< foundation 27
+< given 26
+< forms 26
+< play 26
+< doubt 26
+< seditions 26
+< greatest 26
+< ways 26
+439,442d431
+< question 26
+< second 26
+< practice 26
+< noble 26
+443a433,441
+> doubt 26
+> forms 26
+> given 26
+> greatest 26
+> noble 26
+> numbers 26
+> play 26
+> practice 26
+> question 26
+444a443,444
+> second 26
+> seditions 26
+446,449c446,447
+< numbers 26
+< therein 25
+< wrong 25
+< submit 25
+---
+> ways 26
+> agreement 25
+451,457c449
+< strength 25
+< situation 25
+< powerful 25
+< politics 25
+< suppose 25
+< proposed 25
+< plato 25
+---
+> employment 25
+460,461d451
+< order 25
+< sedition 25
+463d452
+< employment 25
+465c454,467
+< agreement 25
+---
+> order 25
+> plato 25
+> politics 25
+> powerful 25
+> proposed 25
+> sedition 25
+> situation 25
+> strength 25
+> submit 25
+> suppose 25
+> therein 25
+> wrong 25
+> ancient 24
+> animals 24
+467,469d468
+< courage 24
+< powers 24
+< near 24
+471,475d469
+< employ 24
+< multitude 24
+< animals 24
+< ancient 24
+< set 24
+476a471,473
+> continue 24
+> courage 24
+> employ 24
+479,480c476,481
+< continue 24
+< none 23
+---
+> multitude 24
+> near 24
+> powers 24
+> set 24
+> advantage 23
+> custom 23
+482d482
+< leisure 23
+484,485d483
+< senate 23
+< inquire 23
+487d484
+< mans 23
+489,490d485
+< places 23
+< regard 23
+492,494d486
+< point 23
+< advantage 23
+< new 23
+496c488,501
+< custom 23
+---
+> inquire 23
+> leisure 23
+> mans 23
+> new 23
+> none 23
+> places 23
+> point 23
+> regard 23
+> senate 23
+> abilities 22
+> act 22
+> almost 22
+> arms 22
+> circumstances 22
+497a503,504
+> five 22
+> force 22
+499,501d505
+< wives 22
+< arms 22
+< socrates 22
+504,505d507
+< force 22
+< five 22
+507,508d508
+< circumstances 22
+< worthy 22
+511d510
+< almost 22
+513,514d511
+< requires 22
+< tyrannies 22
+517d513
+< act 22
+518a515,516
+> requires 22
+> socrates 22
+520,521c518,525
+< abilities 22
+< principal 21
+---
+> tyrannies 22
+> wives 22
+> worthy 22
+> age 21
+> allotted 21
+> alone 21
+> alter 21
+> athens 21
+526,528d529
+< son 21
+< within 21
+< soldiers 21
+530d530
+< woman 21
+532d531
+< athens 21
+538,539d536
+< alter 21
+< alone 21
+541d537
+< allotted 21
+544d539
+< age 21
+546d540
+< turn 21
+548,549c542,550
+< your 20
+< objects 20
+---
+> principal 21
+> soldiers 21
+> son 21
+> turn 21
+> within 21
+> woman 21
+> absurd 20
+> appear 20
+> beginning 20
+551,557d551
+< disputes 20
+< determined 20
+< land 20
+< once 20
+< revolutions 20
+< here 20
+< friends 20
+559,560d552
+< appear 20
+< formed 20
+562d553
+< intended 20
+564,566d554
+< beginning 20
+< supposed 20
+< course 20
+568c556,562
+< absurd 20
+---
+> course 20
+> determined 20
+> disputes 20
+> formed 20
+> friends 20
+> here 20
+> intended 20
+570c564,566
+< procure 20
+---
+> land 20
+> objects 20
+> once 20
+572,575c568,572
+< wealth 19
+< treat 19
+< preservation 19
+< produce 19
+---
+> procure 20
+> revolutions 20
+> supposed 20
+> your 20
+> certainly 19
+577,580d573
+< j 19
+< except 19
+< quantity 19
+< fear 19
+583,587d575
+< permitted 19
+< certainly 19
+< peace 19
+< paid 19
+< remains 19
+588a577,580
+> elected 19
+> except 19
+> fear 19
+> full 19
+589a582
+> j 19
+591c584,590
+< elected 19
+---
+> paid 19
+> peace 19
+> permitted 19
+> preservation 19
+> produce 19
+> quantity 19
+> remains 19
+593,595c592,594
+< full 19
+< times 18
+< change 18
+---
+> treat 19
+> wealth 19
+> again 18
+597,602c596
+< honourable 18
+< gave 18
+< treatise 18
+< necessity 18
+< boys 18
+< slavery 18
+---
+> assemblies 18
+604,605c598,599
+< till 18
+< again 18
+---
+> boys 18
+> change 18
+607,609c601,602
+< love 18
+< fourth 18
+< several 18
+---
+> eligible 18
+> fit 18
+610a604,607
+> fourth 18
+> gave 18
+> honourable 18
+> hundred 18
+612,615c609,610
+< eligible 18
+< safety 18
+< assemblies 18
+< propose 18
+---
+> love 18
+> necessity 18
+616a612
+> propose 18
+618,619c614,619
+< hundred 18
+< fit 18
+---
+> safety 18
+> several 18
+> slavery 18
+> till 18
+> times 18
+> treatise 18
+621,626d620
+< placed 17
+< individuals 17
+< instruments 17
+< evidently 17
+< benefit 17
+< thereof 17
+629d622
+< worst 17
+631,633c624,625
+< inquiry 17
+< latter 17
+< taught 17
+---
+> benefit 17
+> compose 17
+634a627,628
+> evidently 17
+> gives 17
+635a630,635
+> individuals 17
+> inquiry 17
+> instruments 17
+> judgment 17
+> latter 17
+> placed 17
+637c637,638
+< gives 17
+---
+> taught 17
+> thereof 17
+639,640c640,652
+< judgment 17
+< compose 17
+---
+> worst 17
+> arose 16
+> belongs 16
+> bring 16
+> chief 16
+> contempt 16
+> council 16
+> customs 16
+> difficulty 16
+> distinction 16
+> election 16
+> harmony 16
+> influence 16
+642d653
+< member 16
+644,646c655,656
+< proof 16
+< sea 16
+< mechanics 16
+---
+> lacedaemonian 16
+> liable 16
+648,651c658,659
+< pay 16
+< whenever 16
+< influence 16
+< usually 16
+---
+> mechanics 16
+> member 16
+653,659d660
+< customs 16
+< lacedaemonian 16
+< whatever 16
+< harmony 16
+< thousand 16
+< election 16
+< shown 16
+661,672d661
+< bring 16
+< difficulty 16
+< arose 16
+< chief 16
+< possessions 16
+< distinction 16
+< popular 16
+< contempt 16
+< liable 16
+< servants 16
+< council 16
+< belongs 16
+673a663
+> pay 16
+675,678c665,674
+< bodies 15
+< license 15
+< lives 15
+< animal 15
+---
+> popular 16
+> possessions 16
+> proof 16
+> sea 16
+> servants 16
+> shown 16
+> thousand 16
+> usually 16
+> whatever 16
+> whenever 16
+680,684c676
+< longer 15
+< nay 15
+< ill 15
+< exist 15
+< away 15
+---
+> animal 15
+686,687c678,684
+< nations 15
+< permit 15
+---
+> away 15
+> barbarians 15
+> bodies 15
+> cases 15
+> democratic 15
+> despotic 15
+> destruction 15
+689c686,687
+< supply 15
+---
+> donations 15
+> exist 15
+690a689
+> f 15
+693,695d691
+< parties 15
+< donations 15
+< barbarians 15
+696a693,696
+> ill 15
+> license 15
+> lives 15
+> longer 15
+698,699d697
+< destruction 15
+< superiority 15
+701c699,704
+< cases 15
+---
+> nations 15
+> nay 15
+> parties 15
+> permit 15
+> superiority 15
+> supply 15
+703,713d705
+< despotic 15
+< f 15
+< democratic 15
+< plan 14
+< choice 14
+< her 14
+< hurtful 14
+< economy 14
+< qualified 14
+< aim 14
+< monarchies 14
+714a707,709
+> aim 14
+> bear 14
+> choice 14
+716,718c711
+< fortunes 14
+< extent 14
+< extensive 14
+---
+> conspire 14
+720,726c713
+< bear 14
+< united 14
+< however 14
+< perceive 14
+< greek 14
+< horse 14
+< require 14
+---
+> economy 14
+728c715,717
+< conspire 14
+---
+> extensive 14
+> extent 14
+> fortunes 14
+730,732c719,723
+< value 14
+< observed 14
+< rights 14
+---
+> greek 14
+> her 14
+> horse 14
+> however 14
+> hurtful 14
+733a725
+> monarchies 14
+735,739c727,736
+< archive 13
+< copy 13
+< food 13
+< instructed 13
+< respects 13
+---
+> observed 14
+> perceive 14
+> plan 14
+> qualified 14
+> require 14
+> rights 14
+> united 14
+> value 14
+> adapted 13
+> add 13
+741,745c738,739
+< unequal 13
+< clear 13
+< revolution 13
+< moderate 13
+< put 13
+---
+> alike 13
+> archive 13
+747,748c741,743
+< simply 13
+< v 13
+---
+> attending 13
+> belong 13
+> clear 13
+750,751c745,753
+< improper 13
+< tables 13
+---
+> consideration 13
+> copy 13
+> copyright 13
+> correspondent 13
+> endeavoured 13
+> enemy 13
+> enter 13
+> evil 13
+> food 13
+754c756,760
+< wise 13
+---
+> guards 13
+> house 13
+> human 13
+> improper 13
+> instructed 13
+757,760c763,765
+< adapted 13
+< endeavoured 13
+< add 13
+< attending 13
+---
+> legislators 13
+> literary 13
+> moderate 13
+762,764d766
+< consideration 13
+< enemy 13
+< alike 13
+766,772d767
+< belong 13
+< human 13
+< guards 13
+< service 13
+< legislators 13
+< thinks 13
+< enter 13
+774,776c769,771
+< house 13
+< evil 13
+< correspondent 13
+---
+> put 13
+> respects 13
+> revolution 13
+777a773,778
+> service 13
+> simply 13
+> tables 13
+> thinks 13
+> unequal 13
+> v 13
+779,781c780,781
+< copyright 13
+< literary 13
+< carthage 12
+---
+> wise 13
+> - 12
+783c783,784
+< likely 12
+---
+> altered 12
+> answer 12
+785,787c786,793
+< took 12
+< theirs 12
+< senators 12
+---
+> c 12
+> carthage 12
+> constitutions 12
+> destroy 12
+> dionysius 12
+> engage 12
+> engaged 12
+> entrusted 12
+789d794
+< lodged 12
+791,792d795
+< entrusted 12
+< altered 12
+794,800d796
+< constitutions 12
+< unless 12
+< unjust 12
+< engaged 12
+< science 12
+< practical 12
+< engage 12
+802,807c798,812
+< servile 12
+< partly 12
+< hold 12
+< prevails 12
+< husbandman 12
+< various 12
+---
+> flute 12
+> foreigners 12
+> friend 12
+> friendship 12
+> gain 12
+> gained 12
+> hatred 12
+> higher 12
+> hold 12
+> husbandman 12
+> instruction 12
+> introduced 12
+> iv 12
+> likely 12
+> lodged 12
+809d813
+< wish 12
+812,815c816
+< gained 12
+< gain 12
+< short 12
+< t 12
+---
+> moral 12
+817,819c818,820
+< higher 12
+< iv 12
+< subjects 12
+---
+> partly 12
+> practical 12
+> prevails 12
+820a822,828
+> really 12
+> reasoning 12
+> received 12
+> science 12
+> senators 12
+> servile 12
+> short 12
+822a831,832
+> subjects 12
+> t 12
+824,827d833
+< destroy 12
+< friendship 12
+< introduced 12
+< moral 12
+829,831c835,836
+< really 12
+< reasoning 12
+< received 12
+---
+> theirs 12
+> took 12
+833,834c838,840
+< friend 12
+< c 12
+---
+> unjust 12
+> unless 12
+> various 12
+836,842c842,859
+< instruction 12
+< hatred 12
+< answer 12
+< flute 12
+< dionysius 12
+< foreigners 12
+< neighbours 11
+---
+> wish 12
+> accustomed 11
+> alteration 11
+> appears 11
+> claim 11
+> confidence 11
+> correct 11
+> cretans 11
+> depend 11
+> ebook 11
+> edition 11
+> electing 11
+> enemies 11
+> exchange 11
+> extend 11
+> eye 11
+> fault 11
+> final 11
+844d860
+< worse 11
+846,847c862,869
+< regulate 11
+< final 11
+---
+> governors 11
+> governs 11
+> half 11
+> hear 11
+> held 11
+> hereafter 11
+> hired 11
+> iii 11
+849d870
+< accustomed 11
+851,856d871
+< claim 11
+< quarrels 11
+< fault 11
+< proportion 11
+< eye 11
+< extend 11
+858,859d872
+< procured 11
+< iii 11
+862,864d874
+< vii 11
+< confidence 11
+< victory 11
+866,874c876,885
+< appears 11
+< governors 11
+< exchange 11
+< governs 11
+< poverty 11
+< possession 11
+< youth 11
+< alteration 11
+< pleasures 11
+---
+> library 11
+> merely 11
+> neglect 11
+> neighbours 11
+> opportunity 11
+> original 11
+> paragraph 11
+> pass 11
+> perfection 11
+> physician 11
+875a887,893
+> pleasures 11
+> possession 11
+> poverty 11
+> procured 11
+> proportion 11
+> quarrels 11
+> regulate 11
+877d894
+< library 11
+879,883d895
+< physician 11
+< strangers 11
+< correct 11
+< cretans 11
+< perfection 11
+885,889c897
+< enemies 11
+< pass 11
+< paragraph 11
+< merely 11
+< hired 11
+---
+> strangers 11
+891,902c899,903
+< depend 11
+< original 11
+< half 11
+< electing 11
+< hereafter 11
+< edition 11
+< opportunity 11
+< held 11
+< ebook 11
+< neglect 11
+< hear 11
+< health 10
+---
+> victory 11
+> vii 11
+> worse 11
+> youth 11
+> absolutely 10
+904,913c905,907
+< pure 10
+< ten 10
+< obtain 10
+< settled 10
+< subsistence 10
+< walls 10
+< holds 10
+< trademark 10
+< character 10
+< judicial 10
+---
+> alterations 10
+> artificers 10
+> assigned 10
+915,924c909,910
+< left 10
+< possessed 10
+< position 10
+< fathers 10
+< foreign 10
+< mankind 10
+< open 10
+< inequality 10
+< mixed 10
+< habit 10
+---
+> blended 10
+> born 10
+926,929c912
+< ready 10
+< marriage 10
+< vested 10
+< assigned 10
+---
+> character 10
+931,933c914,920
+< born 10
+< high 10
+< absolutely 10
+---
+> comes 10
+> continued 10
+> continues 10
+> contracts 10
+> contribute 10
+> contrived 10
+> democratical 10
+935,938d921
+< fixed 10
+< alterations 10
+< meet 10
+< excess 10
+940,942c923,925
+< protection 10
+< money-getting 10
+< kosmoi 10
+---
+> division 10
+> excess 10
+> fathers 10
+944,945c927,928
+< word 10
+< contrived 10
+---
+> fixed 10
+> foreign 10
+946a930,949
+> habit 10
+> health 10
+> high 10
+> holds 10
+> inequality 10
+> instead 10
+> judicial 10
+> kosmoi 10
+> left 10
+> mankind 10
+> marriage 10
+> meet 10
+> mixed 10
+> money-getting 10
+> obtain 10
+> open 10
+> platos 10
+> position 10
+> possessed 10
+> protection 10
+948,949d950
+< truth 10
+< size 10
+951,953c952
+< render 10
+< contribute 10
+< quality 10
+---
+> pure 10
+955,964c954,955
+< democratical 10
+< understanding 10
+< comes 10
+< artificers 10
+< platos 10
+< division 10
+< contracts 10
+< continues 10
+< continued 10
+< blended 10
+---
+> quality 10
+> ready 10
+966,977c957,978
+< instead 10
+< information 9
+< army 9
+< admits 9
+< remain 9
+< seen 9
+< spirit 9
+< similar 9
+< fine 9
+< such-like 9
+< succeed 9
+< relation 9
+---
+> render 10
+> settled 10
+> size 10
+> subsistence 10
+> ten 10
+> trademark 10
+> truth 10
+> understanding 10
+> vested 10
+> walls 10
+> word 10
+> accomplished 9
+> action 9
+> admits 9
+> affection 9
+> anger 9
+> approaches 9
+> approve 9
+> approved 9
+> army 9
+> associated 9
+> assume 9
+978a980,992
+> bounds 9
+> buildings 9
+> calculated 9
+> came 9
+> charge 9
+> connected 9
+> connection 9
+> contain 9
+> contains 9
+> control 9
+> days 9
+> decide 9
+> desirable 9
+980,982d993
+< seek 9
+< inspire 9
+< quite 9
+984,990d994
+< decide 9
+< control 9
+< provided 9
+< points 9
+< sufficiently 9
+< help 9
+< expense 9
+992,993c996
+< including 9
+< regarded 9
+---
+> entrust 9
+995c998,1000
+< philosophy 9
+---
+> expense 9
+> express 9
+> female 9
+997,999c1002,1010
+< came 9
+< contains 9
+< thereunto 9
+---
+> fine 9
+> forbid 9
+> getting 9
+> help 9
+> homer 9
+> incline 9
+> inclines 9
+> including 9
+> information 9
+1001,1002c1012,1017
+< calculated 9
+< refund 9
+---
+> inspire 9
+> join 9
+> mention 9
+> off 9
+> opposite 9
+> perform 9
+1004c1019,1020
+< female 9
+---
+> philosophy 9
+> points 9
+1006,1018c1022
+< associated 9
+< inclines 9
+< contain 9
+< rise 9
+< anger 9
+< express 9
+< assume 9
+< incline 9
+< desirable 9
+< action 9
+< requisite 9
+< opposite 9
+< accomplished 9
+---
+> prefer 9
+1020c1024,1036
+< bounds 9
+---
+> provided 9
+> quite 9
+> refund 9
+> regarded 9
+> relation 9
+> remain 9
+> requisite 9
+> respective 9
+> revenue 9
+> rightly 9
+> rise 9
+> seek 9
+> seen 9
+1022c1038,1046
+< days 9
+---
+> services 9
+> similar 9
+> spirit 9
+> succeed 9
+> such-like 9
+> sufficiently 9
+> syracuse 9
+> taxes 9
+> thereunto 9
+1024,1025d1047
+< mention 9
+< rightly 9
+1027,1037d1048
+< buildings 9
+< wars 9
+< respective 9
+< approved 9
+< perform 9
+< charge 9
+< syracuse 9
+< approve 9
+< forbid 9
+< connected 9
+< homer 9
+1039,1049c1050,1053
+< entrust 9
+< affection 9
+< connection 9
+< getting 9
+< join 9
+< services 9
+< prefer 9
+< revenue 9
+< taxes 9
+< approaches 9
+< off 9
+---
+> wars 9
+> above 8
+> active 8
+> actual 8
+1051,1052c1055
+< furnish 8
+< guard 8
+---
+> affirm 8
+1054,1055c1057,1064
+< direct 8
+< treating 8
+---
+> aristotles 8
+> begin 8
+> beyond 8
+> brothers 8
+> censure 8
+> classes 8
+> collected 8
+> commotions 8
+1056a1066,1097
+> convenient 8
+> copies 8
+> corruption 8
+> cultivate 8
+> danger 8
+> defects 8
+> defence 8
+> definition 8
+> deliberative 8
+> depends 8
+> description 8
+> direct 8
+> distinguished 8
+> distributing 8
+> domain 8
+> doric 8
+> doubts 8
+> editions 8
+> effect 8
+> english 8
+> ethics 8
+> excel 8
+> expression 8
+> fall 8
+> fee 8
+> furnish 8
+> got 8
+> governing 8
+> governor 8
+> greece 8
+> greeks 8
+> guard 8
+1058c1099,1101
+< serve 8
+---
+> happiest 8
+> highest 8
+> immediately 8
+1060,1062c1103,1109
+< brothers 8
+< prevents 8
+< priests 8
+---
+> inhabit 8
+> instances 8
+> introduction 8
+> kind 8
+> lands 8
+> light 8
+> limited 8
+1064,1070c1111,1114
+< trade 8
+< above 8
+< wants 8
+< fall 8
+< expression 8
+< taking 8
+< she 8
+---
+> masters 8
+> mechanic 8
+> mine 8
+> modes 8
+1072,1077d1115
+< thebes 8
+< produced 8
+< productive 8
+< english 8
+< description 8
+< turns 8
+1080,1081d1117
+< fee 8
+< introduction 8
+1082a1119,1125
+> permission 8
+> phrygian 8
+> plenty 8
+> prevents 8
+> priests 8
+> produced 8
+> productive 8
+1084,1095d1126
+< greeks 8
+< republic 8
+< tribes 8
+< distinguished 8
+< highest 8
+< active 8
+< depends 8
+< wild 8
+< commotions 8
+< greece 8
+< distributing 8
+< ethics 8
+1097,1098d1127
+< masters 8
+< limited 8
+1100,1104c1129,1131
+< wisdom 8
+< light 8
+< deliberative 8
+< immediately 8
+< seldom 8
+---
+> raise 8
+> reduced 8
+> regulation 8
+1106,1134c1133,1139
+< valuable 8
+< kind 8
+< happiest 8
+< aristotles 8
+< instances 8
+< plenty 8
+< definition 8
+< domain 8
+< doric 8
+< doubts 8
+< beyond 8
+< governor 8
+< worship 8
+< using 8
+< defence 8
+< defects 8
+< collected 8
+< regulation 8
+< governing 8
+< got 8
+< excel 8
+< mechanic 8
+< raise 8
+< convenient 8
+< affirm 8
+< actual 8
+< copies 8
+< phrygian 8
+< censure 8
+---
+> republic 8
+> seldom 8
+> serve 8
+> she 8
+> taking 8
+> teach 8
+> thebes 8
+1136,1137c1141,1147
+< classes 8
+< modes 8
+---
+> trade 8
+> treating 8
+> tribes 8
+> turns 8
+> using 8
+> valuable 8
+> wants 8
+1139,1156c1149,1153
+< corruption 8
+< lands 8
+< teach 8
+< editions 8
+< effect 8
+< permission 8
+< reduced 8
+< danger 8
+< inhabit 8
+< begin 8
+< cultivate 8
+< mine 8
+< foot 7
+< becomes 7
+< executed 7
+< return 7
+< egypt 7
+< charondas 7
+---
+> wild 8
+> wisdom 8
+> worship 8
+> accomplish 7
+> advice 7
+1158,1168c1155
+< paying 7
+< sojourners 7
+< periander 7
+< lawgiver 7
+< crimes 7
+< reduce 7
+< sparta 7
+< educated 7
+< suited 7
+< lately 7
+< ebooks 7
+---
+> applicable 7
+1169a1157,1178
+> artisans 7
+> assistance 7
+> avoid 7
+> badly 7
+> barter 7
+> becomes 7
+> birth 7
+> bodily 7
+> calls 7
+> charondas 7
+> collective 7
+> collectively 7
+> commands 7
+> completely 7
+> conclude 7
+> conducted 7
+> confined 7
+> consequences 7
+> considerable 7
+> conspiracy 7
+> constitute 7
+> conversant 7
+1171,1175c1180
+< larger 7
+< existence 7
+< mixture 7
+< head 7
+< readily 7
+---
+> crimes 7
+1177c1182,1191
+< world 7
+---
+> death 7
+> degrees 7
+> deprived 7
+> dignity 7
+> dispositions 7
+> distinct 7
+> distinguish 7
+> distribute 7
+> divisions 7
+> due 7
+1179,1186c1193,1195
+< speaking 7
+< heraclea 7
+< passed 7
+< skilful 7
+< hard 7
+< r 7
+< collective 7
+< collectively 7
+---
+> ebooks 7
+> educated 7
+> egypt 7
+1188,1204c1197,1205
+< due 7
+< meanest 7
+< qualifications 7
+< death 7
+< conversant 7
+< section 7
+< me 7
+< happily 7
+< s 7
+< barter 7
+< nation 7
+< uses 7
+< increasing 7
+< understood 7
+< parents 7
+< simple 7
+< warlike 7
+---
+> enrolled 7
+> entertain 7
+> esteem 7
+> executed 7
+> existence 7
+> external 7
+> fair 7
+> favour 7
+> foot 7
+1206,1208c1207,1217
+< commands 7
+< divisions 7
+< usual 7
+---
+> g 7
+> grow 7
+> h 7
+> happily 7
+> hard 7
+> head 7
+> heraclea 7
+> hereditary 7
+> incapable 7
+> included 7
+> inconvenience 7
+1209a1219,1223
+> increasing 7
+> island 7
+> larger 7
+> lately 7
+> lawgiver 7
+1211,1217d1224
+< birth 7
+< inconvenience 7
+< thales 7
+< remedy 7
+< hereditary 7
+< study 7
+< degrees 7
+1218a1226,1233
+> male 7
+> me 7
+> meanest 7
+> mixture 7
+> nation 7
+> necessaries 7
+> oppose 7
+> ostracism 7
+1219a1235,1238
+> parents 7
+> passed 7
+> paying 7
+> periander 7
+1221,1226c1240,1243
+< artisans 7
+< bodily 7
+< badly 7
+< necessaries 7
+< universally 7
+< advice 7
+---
+> practised 7
+> preferable 7
+> prevented 7
+> promote 7
+1228c1245,1252
+< avoid 7
+---
+> qualifications 7
+> r 7
+> readily 7
+> reduce 7
+> remedy 7
+> return 7
+> s 7
+> section 7
+1230d1253
+< distribute 7
+1232,1243c1255,1261
+< ostracism 7
+< deprived 7
+< esteem 7
+< calls 7
+< completely 7
+< included 7
+< promote 7
+< oppose 7
+< applicable 7
+< grow 7
+< assistance 7
+< tend 7
+---
+> simple 7
+> skilful 7
+> sojourners 7
+> sparta 7
+> speaking 7
+> study 7
+> suited 7
+1245,1248c1263
+< distinguish 7
+< distinct 7
+< dispositions 7
+< g 7
+---
+> system 7
+1250,1252c1265,1269
+< favour 7
+< h 7
+< constitute 7
+---
+> temples 7
+> tend 7
+> thales 7
+> understood 7
+> universally 7
+1254,1258c1271,1272
+< conclude 7
+< conspiracy 7
+< practised 7
+< enrolled 7
+< fair 7
+---
+> uses 7
+> usual 7
+1260,1280c1274,1292
+< incapable 7
+< considerable 7
+< male 7
+< external 7
+< consequences 7
+< dignity 7
+< accomplish 7
+< conducted 7
+< preferable 7
+< system 7
+< entertain 7
+< confined 7
+< prevented 7
+< island 7
+< temples 7
+< cultivated 6
+< prevail 6
+< wanting 6
+< fact 6
+< entire 6
+< facts 6
+---
+> warlike 7
+> world 7
+> abolish 6
+> accept 6
+> acquiring 6
+> additional 6
+> advance 6
+> alliance 6
+> allot 6
+> ancients 6
+> appointment 6
+> asked 6
+> athenians 6
+> battle 6
+> beauty 6
+> belief 6
+> blend 6
+> bohns 6
+> boundary 6
+1281a1294,1322
+> built 6
+> calling 6
+> carry 6
+> carthaginians 6
+> cattle 6
+> chance 6
+> chooses 6
+> choosing 6
+> circumstance 6
+> classical 6
+> cognisance 6
+> cold 6
+> collection 6
+> colony 6
+> commonalty 6
+> comparison 6
+> comply 6
+> conducive 6
+> considers 6
+> constituted 6
+> content 6
+> corinth 6
+> credit 6
+> cultivated 6
+> d 6
+> defend 6
+> deficient 6
+> desires 6
+> determining 6
+1283c1324,1325
+< preserving 6
+---
+> distance 6
+> doubtful 6
+1285,1290c1327,1341
+< magistracy 6
+< obedience 6
+< station 6
+< ix 6
+< observe 6
+< frequently 6
+---
+> entire 6
+> especially 6
+> etc 6
+> euripides 6
+> everywhere 6
+> evils 6
+> execution 6
+> explained 6
+> fact 6
+> facts 6
+> faults 6
+> filled 6
+> flatter 6
+> followed 6
+> following 6
+1292,1295c1343,1347
+< advance 6
+< conducive 6
+< acquiring 6
+< occasions 6
+---
+> frequently 6
+> generals 6
+> giving 6
+> god 6
+> gone 6
+1296a1349,1359
+> hate 6
+> heavy-armed 6
+> herile 6
+> husbandry 6
+> increased 6
+> injury 6
+> innovations 6
+> instruct 6
+> ix 6
+> kingdoms 6
+> look 6
+1298,1301c1361
+< considers 6
+< built 6
+< supported 6
+< votes 6
+---
+> magistracy 6
+1303,1319d1362
+< tyrannical 6
+< statesman 6
+< athenians 6
+< determining 6
+< abolish 6
+< faults 6
+< note 6
+< rhetorica 6
+< willingly 6
+< constituted 6
+< production 6
+< rhythm 6
+< especially 6
+< ship 6
+< uncertain 6
+< distance 6
+< web 6
+1321,1325c1364,1369
+< look 6
+< submitted 6
+< comply 6
+< desires 6
+< volunteers 6
+---
+> matters 6
+> mere 6
+> modesty 6
+> monarch 6
+> mothers 6
+> murder 6
+1327c1371,1374
+< boundary 6
+---
+> note 6
+> obedience 6
+> observe 6
+> occasions 6
+1328a1376,1383
+> passions 6
+> perpetually 6
+> philolaus 6
+> physicians 6
+> poets 6
+> preserving 6
+> prevail 6
+> production 6
+1330,1343d1384
+< calling 6
+< subjection 6
+< comparison 6
+< xii 6
+< etc 6
+< filled 6
+< euripides 6
+< appointment 6
+< everywhere 6
+< asked 6
+< content 6
+< commonalty 6
+< sicily 6
+< bohns 6
+1345,1347d1385
+< x 6
+< herile 6
+< words 6
+1350,1351c1388,1395
+< instruct 6
+< poets 6
+---
+> pursue 6
+> ranks 6
+> reasons 6
+> reckoned 6
+> relaxation 6
+> religious 6
+> rhetorica 6
+> rhythm 6
+1353,1359d1396
+< carry 6
+< blend 6
+< explained 6
+< kingdoms 6
+< deficient 6
+< evils 6
+< defend 6
+1361,1365d1397
+< generals 6
+< text 6
+< carthaginians 6
+< religious 6
+< increased 6
+1367,1370d1398
+< matters 6
+< relaxation 6
+< trifling 6
+< single 6
+1372,1382d1399
+< pursue 6
+< truly 6
+< doubtful 6
+< murder 6
+< battle 6
+< gone 6
+< physicians 6
+< colony 6
+< cattle 6
+< useless 6
+< stranger 6
+1384,1391c1401,1406
+< collection 6
+< mothers 6
+< corinth 6
+< husbandry 6
+< god 6
+< cold 6
+< thrasybulus 6
+< additional 6
+---
+> ship 6
+> sicily 6
+> single 6
+> soil 6
+> soldier 6
+> solon 6
+1393,1395c1408,1417
+< cognisance 6
+< weak 6
+< monarch 6
+---
+> stability 6
+> stable 6
+> statesman 6
+> station 6
+> stranger 6
+> subjection 6
+> submitted 6
+> supported 6
+> tax 6
+> text 6
+1397,1398c1419,1436
+< ranks 6
+< flatter 6
+---
+> thrasybulus 6
+> trifling 6
+> troops 6
+> truly 6
+> tyrannical 6
+> uncertain 6
+> useless 6
+> volunteers 6
+> votes 6
+> wanting 6
+> weak 6
+> web 6
+> whosoever 6
+> willingly 6
+> words 6
+> x 6
+> xi 6
+> xii 6
+1400,1438c1438,1453
+< ancients 6
+< innovations 6
+< classical 6
+< modesty 6
+< hate 6
+< heavy-armed 6
+< philolaus 6
+< injury 6
+< belief 6
+< chance 6
+< passions 6
+< allot 6
+< circumstance 6
+< perpetually 6
+< alliance 6
+< stable 6
+< xi 6
+< reasons 6
+< stability 6
+< choosing 6
+< chooses 6
+< giving 6
+< whosoever 6
+< accept 6
+< soil 6
+< credit 6
+< beauty 6
+< tax 6
+< mere 6
+< reckoned 6
+< followed 6
+< soldier 6
+< troops 6
+< d 6
+< following 6
+< execution 6
+< solon 6
+< elder 5
+< iron 5
+---
+> accidents 5
+> acquainted 5
+> acts 5
+> actually 5
+> administered 5
+> advantages 5
+> ages 5
+> aimed 5
+> alliances 5
+> am 5
+> amusement 5
+> analogy 5
+> animated 5
+> anyone 5
+> appointing 5
+> appointments 5
+1440,1444d1454
+< wicked 5
+< minos 5
+< elective 5
+< soldiery 5
+< merchants 5
+1446,1449d1455
+< merchandise 5
+< square 5
+< inferiors 5
+< forces 5
+1451,1456c1457,1471
+< receiving 5
+< refer 5
+< reference 5
+< infamous 5
+< hearing 5
+< suitable 5
+---
+> aristocratical 5
+> associate 5
+> attain 5
+> attendance 5
+> back 5
+> beast 5
+> beautiful 5
+> became 5
+> becoming 5
+> below 5
+> blows 5
+> bound 5
+> buying 5
+> carried 5
+> cease 5
+1458,1461c1473,1499
+< referred 5
+< moderation 5
+< modern 5
+< megara 5
+---
+> collect 5
+> commanded 5
+> compliance 5
+> conception 5
+> concerns 5
+> consent 5
+> considering 5
+> consisted 5
+> conspiracies 5
+> contract 5
+> corrupt 5
+> courageous 5
+> creating 5
+> creation 5
+> cruel 5
+> damages 5
+> day 5
+> defective 5
+> define 5
+> departments 5
+> descendants 5
+> describe 5
+> differences 5
+> direction 5
+> distinctions 5
+> distributed 5
+> drew 5
+1462a1501,1524
+> elder 5
+> elective 5
+> eminent 5
+> enjoying 5
+> enjoys 5
+> esteemed 5
+> exceed 5
+> existing 5
+> exists 5
+> expected 5
+> expelled 5
+> exposed 5
+> extended 5
+> extreme 5
+> fell 5
+> fight 5
+> flesh 5
+> forces 5
+> founders 5
+> fruits 5
+> future 5
+> greatness 5
+> guardian 5
+> hearing 5
+1463a1526,1529
+> houses 5
+> importance 5
+> include 5
+> induce 5
+1465,1468c1531,1556
+< flesh 5
+< monarchical 5
+< eminent 5
+< median 5
+---
+> infamous 5
+> inferiors 5
+> insist 5
+> institutions 5
+> iron 5
+> italy 5
+> keeping 5
+> knowing 5
+> later 5
+> lay 5
+> learning 5
+> leave 5
+> legal 5
+> level 5
+> likeness 5
+> limits 5
+> lived 5
+> locrians 5
+> low 5
+> m 5
+> manage 5
+> maritime 5
+> marked 5
+> market 5
+> marry 5
+> maxim 5
+1470c1558,1565
+< six 5
+---
+> median 5
+> megara 5
+> merchandise 5
+> merchants 5
+> minos 5
+> moderation 5
+> modern 5
+> monarchical 5
+1472d1566
+< drew 5
+1474,1477d1567
+< read 5
+< whoever 5
+< aristocratical 5
+< maxim 5
+1479,1481d1568
+< appointments 5
+< younger 5
+< shows 5
+1483,1498d1569
+< distributed 5
+< advantages 5
+< voice 5
+< regards 5
+< appointing 5
+< induce 5
+< vary 5
+< marry 5
+< sons 5
+< associate 5
+< distinctions 5
+< shoe 5
+< market 5
+< marked 5
+< maritime 5
+< raised 5
+1500,1504d1570
+< regulating 5
+< collect 5
+< enjoying 5
+< shepherds 5
+< cease 5
+1506,1517d1571
+< enjoys 5
+< manage 5
+< attain 5
+< guardian 5
+< direction 5
+< attendance 5
+< ages 5
+< m 5
+< insist 5
+< differences 5
+< variety 5
+< served 5
+1519,1520d1572
+< servant 5
+< low 5
+1522d1573
+< quarrel 5
+1524d1574
+< souls 5
+1527,1529d1576
+< supposing 5
+< locrians 5
+< describe 5
+1531d1577
+< esteemed 5
+1533,1549d1578
+< descendants 5
+< tools 5
+< lived 5
+< houses 5
+< pursued 5
+< relations 5
+< try 5
+< founders 5
+< departments 5
+< commanded 5
+< weight 5
+< animated 5
+< limits 5
+< purchase 5
+< back 5
+< likeness 5
+< greatness 5
+1552,1560d1580
+< administered 5
+< institutions 5
+< define 5
+< seeking 5
+< seeing 5
+< level 5
+< seditious 5
+< tame 5
+< defective 5
+1562,1567d1581
+< removed 5
+< carried 5
+< exceed 5
+< aimed 5
+< legal 5
+< beast 5
+1569,1581d1582
+< day 5
+< leave 5
+< learning 5
+< proverb 5
+< beautiful 5
+< prove 5
+< damages 5
+< violent 5
+< became 5
+< sciences 5
+< protect 5
+< lay 5
+< becoming 5
+1583,1586d1583
+< cruel 5
+< later 5
+< saying 5
+< propriety 5
+1588,1591d1584
+< creation 5
+< creating 5
+< replacement 5
+< existing 5
+1593,1596d1585
+< exists 5
+< fight 5
+< alliances 5
+< courageous 5
+1598,1607d1586
+< analogy 5
+< expected 5
+< corrupt 5
+< represent 5
+< expelled 5
+< below 5
+< sailors 5
+< actually 5
+< writing 5
+< amusement 5
+1609,1614d1587
+< compliance 5
+< sacrifices 5
+< include 5
+< acts 5
+< knowing 5
+< ruin 5
+1617,1622d1589
+< contract 5
+< blows 5
+< fell 5
+< bound 5
+< exposed 5
+< keeping 5
+1624,1627d1590
+< usury 5
+< ridiculous 5
+< extended 5
+< professors 5
+1630,1637d1592
+< spent 5
+< rhodes 5
+< future 5
+< steersman 5
+< accidents 5
+< conspiracies 5
+< went 5
+< am 5
+1639,1646d1593
+< consisted 5
+< anyone 5
+< considering 5
+< resentment 5
+< syracusians 5
+< conception 5
+< importance 5
+< extreme 5
+1649,1651c1596,1638
+< consent 5
+< fruits 5
+< buying 5
+---
+> professors 5
+> propriety 5
+> protect 5
+> prove 5
+> proverb 5
+> purchase 5
+> pursued 5
+> quarrel 5
+> raised 5
+> read 5
+> receiving 5
+> refer 5
+> reference 5
+> referred 5
+> regards 5
+> regulating 5
+> relations 5
+> removed 5
+> replacement 5
+> represent 5
+> resentment 5
+> restrain 5
+> rhodes 5
+> ridiculous 5
+> ruin 5
+> sacrifices 5
+> sailors 5
+> saying 5
+> sciences 5
+> seditious 5
+> seeing 5
+> seeking 5
+> servant 5
+> served 5
+> shepherds 5
+> shoe 5
+> shows 5
+> six 5
+> soldiery 5
+> sons 5
+> souls 5
+> spent 5
+> square 5
+1653,1655c1640,1644
+< concerns 5
+< acquainted 5
+< italy 5
+---
+> steersman 5
+> suitable 5
+> supposing 5
+> syracusians 5
+> tame 5
+1656a1646,1656
+> tools 5
+> try 5
+> usury 5
+> variety 5
+> vary 5
+> violent 5
+> voice 5
+> weight 5
+> went 5
+> whoever 5
+> wicked 5
+1657a1658,1659
+> writing 5
+> younger 5
+1659,1686c1661,1662
+< restrain 5
+< check 4
+< privilege 4
+< pausanias 4
+< translation 4
+< prisoners 4
+< false 4
+< miletus 4
+< unfit 4
+< solicit 4
+< respectable 4
+< unhonoured 4
+< chattel 4
+< condition 4
+< freely 4
+< childs 4
+< taylor 4
+< effects 4
+< chios 4
+< confederacy 4
+< thereon 4
+< characters 4
+< probable 4
+< tells 4
+< confine 4
+< fraud 4
+< vols 4
+< mission 4
+---
+> absent 4
+> accident 4
+1688,1702c1664,1673
+< reducing 4
+< mistaken 4
+< mistakes 4
+< speech 4
+< confusion 4
+< thirty 4
+< edited 4
+< membership 4
+< mitylene 4
+< pretences 4
+< briefly 4
+< connections 4
+< inhabited 4
+< preside 4
+< social 4
+---
+> accordance 4
+> accustom 4
+> activity 4
+> aesumnetes 4
+> affair 4
+> analysis 4
+> appeal 4
+> appetite 4
+> application 4
+> appoints 4
+1704,1706d1674
+< statue 4
+< suit 4
+< melody 4
+1708,1710d1675
+< easier 4
+< moment 4
+< tablet 4
+1712,1724d1676
+< ears 4
+< conquerors 4
+< affair 4
+< flatterers 4
+< medicine 4
+< proceeding 4
+< real 4
+< medes 4
+< workmen 4
+< suffer 4
+< revenge 4
+< aesumnetes 4
+< hardly 4
+1726,1729d1677
+< brave 4
+< mother 4
+< duration 4
+< situations 4
+1731,1749d1678
+< status 4
+< pre-advisers 4
+< preadvisers 4
+< driven 4
+< situated 4
+< draw 4
+< site 4
+< joining 4
+< encourage 4
+< version 4
+< sing 4
+< universal 4
+< materials 4
+< consisting 4
+< requirements 4
+< appoints 4
+< rd 4
+< dividing 4
+< required 4
+1751,1755d1679
+< nearest 4
+< sick 4
+< need 4
+< utility 4
+< hiero 4
+1757,1782d1680
+< rational 4
+< regal 4
+< induced 4
+< format 4
+< constitutes 4
+< clisthenes 4
+< richer 4
+< republics 4
+< censured 4
+< jupiter 4
+< inquired 4
+< possesses 4
+< profitable 4
+< habits 4
+< clubs 4
+< nicomachean 4
+< dissolve 4
+< accordance 4
+< disproportionate 4
+< consult 4
+< gainful 4
+< consulted 4
+< fees 4
+< hippodamus 4
+< boundless 4
+< profits 4
+1783a1682,1693
+> attempt 4
+> attends 4
+> attributed 4
+> authority 4
+> banish 4
+> based 4
+> bears 4
+> beasts 4
+> behaviour 4
+> beings 4
+> belonged 4
+> bought 4
+1785,1788c1695,1712
+< wards 4
+< wear 4
+< disposed 4
+< contact 4
+---
+> boundless 4
+> brave 4
+> briefly 4
+> capacity 4
+> careful 4
+> censured 4
+> characters 4
+> chattel 4
+> check 4
+> childs 4
+> chios 4
+> clisthenes 4
+> clubs 4
+> colonies 4
+> combinations 4
+> commerce 4
+> compared 4
+> composition 4
+1790,1800c1714,1724
+< bought 4
+< winter 4
+< enjoyed 4
+< displaying 4
+< games 4
+< regulations 4
+< north 4
+< explanation 4
+< enjoyment 4
+< xiii 4
+< inquiring 4
+---
+> condition 4
+> confederacy 4
+> confine 4
+> confusion 4
+> connections 4
+> conquerors 4
+> consisting 4
+> constitutes 4
+> consult 4
+> consulted 4
+> contact 4
+1802,1826d1725
+< notion 4
+< notions 4
+< poetry 4
+< discourses 4
+< composition 4
+< fitted 4
+< history 4
+< told 4
+< guided 4
+< well-regulated 4
+< accident 4
+< kinds 4
+< imitations 4
+< holder 4
+< entered 4
+< activity 4
+< imitation 4
+< maintain 4
+< absent 4
+< severe 4
+< fellow-citizens 4
+< reign 4
+< home 4
+< seven 4
+< objection 4
+1828,1834d1726
+< objections 4
+< explain 4
+< directs 4
+< settle 4
+< attempt 4
+< guarded 4
+< subsist 4
+1836d1727
+< plants 4
+1838,1841d1728
+< dion 4
+< difficulties 4
+< appeal 4
+< differs 4
+1843,1865d1729
+< writers 4
+< diet 4
+< attends 4
+< lydian 4
+< offer 4
+< colonies 4
+< forward 4
+< luxury 4
+< erect 4
+< pittacus 4
+< includes 4
+< firm 4
+< imaginable 4
+< destructive 4
+< looks 4
+< application 4
+< subordinate 4
+< twice 4
+< labours 4
+< pieces 4
+< twenty 4
+< pictures 4
+< fewer 4
+1867,1881d1730
+< gentle 4
+< wishes 4
+< online 4
+< special 4
+< physic 4
+< separated 4
+< essential 4
+< sent 4
+< phrase 4
+< wall 4
+< attributed 4
+< sensible 4
+< inspectors 4
+< oracle 4
+< related 4
+1883,1888d1731
+< belonged 4
+< ordering 4
+< illiberal 4
+< authority 4
+< illegally 4
+< grounds 4
+1890,1926d1732
+< located 4
+< illegal 4
+< compared 4
+< grief 4
+< grew 4
+< landed 4
+< fifth 4
+< combinations 4
+< valour 4
+< xiv 4
+< senator 4
+< deprive 4
+< perverted 4
+< perversions 4
+< finished 4
+< turned 4
+< depended 4
+< accustom 4
+< outward 4
+< foundations 4
+< appetite 4
+< self-defence 4
+< persians 4
+< line 4
+< fined 4
+< likes 4
+< owe 4
+< light-armed 4
+< surrounded 4
+< liberties 4
+< liberality 4
+< banish 4
+< exactly 4
+< beings 4
+< finds 4
+< ignorance 4
+< perjury 4
+1928,1951d1733
+< tarentum 4
+< commerce 4
+< periods 4
+< defect 4
+< period 4
+< decrees 4
+< susemihl 4
+< examining 4
+< behaviour 4
+< exceeds 4
+< performing 4
+< territory 4
+< performed 4
+< troublesome 4
+< excepting 4
+< based 4
+< idealism 4
+< executive 4
+< village 4
+< scholar 4
+< perception 4
+< womans 4
+< insurrections 4
+< protagoras 4
+1953,1955d1734
+< deal 4
+< laying 4
+< bears 4
+1957,1960d1735
+< strong 4
+< spartans 4
+< careful 4
+< struggle 4
+1962,1967c1737
+< province 4
+< gillies 4
+< beasts 4
+< capacity 4
+< analysis 4
+< learnt 4
+---
+> dangerous 4
+1968a1739,1772
+> deal 4
+> decrees 4
+> defect 4
+> depended 4
+> deprive 4
+> destructive 4
+> diet 4
+> differs 4
+> difficulties 4
+> dion 4
+> directs 4
+> discourses 4
+> displaying 4
+> disposed 4
+> disproportionate 4
+> dissolve 4
+> dividing 4
+> draw 4
+> driven 4
+> duration 4
+> ears 4
+> easier 4
+> edited 4
+> effects 4
+> encourage 4
+> enjoyed 4
+> enjoyment 4
+> entered 4
+> erect 4
+> essential 4
+> exactly 4
+> examining 4
+> exceeds 4
+> excepting 4
+1970,1977c1774,1989
+< proves 4
+< dangerous 4
+< fallacious 3
+< capacities 3
+< excluded 3
+< learned 3
+< repair 3
+< daily 3
+---
+> executive 4
+> explain 4
+> explanation 4
+> false 4
+> fees 4
+> fellow-citizens 4
+> fewer 4
+> fifth 4
+> finds 4
+> fined 4
+> finished 4
+> firm 4
+> fitted 4
+> flatterers 4
+> format 4
+> forward 4
+> foundations 4
+> fraud 4
+> freely 4
+> gainful 4
+> games 4
+> gentle 4
+> gillies 4
+> grew 4
+> grief 4
+> grounds 4
+> guarded 4
+> guided 4
+> habits 4
+> hardly 4
+> hiero 4
+> hippodamus 4
+> history 4
+> holder 4
+> home 4
+> idealism 4
+> ignorance 4
+> illegal 4
+> illegally 4
+> illiberal 4
+> imaginable 4
+> imitation 4
+> imitations 4
+> includes 4
+> induced 4
+> inhabited 4
+> inquired 4
+> inquiring 4
+> inspectors 4
+> insurrections 4
+> joining 4
+> jupiter 4
+> kinds 4
+> labours 4
+> landed 4
+> laying 4
+> learnt 4
+> liberality 4
+> liberties 4
+> light-armed 4
+> likes 4
+> line 4
+> located 4
+> looks 4
+> luxury 4
+> lydian 4
+> maintain 4
+> materials 4
+> medes 4
+> medicine 4
+> melody 4
+> membership 4
+> miletus 4
+> mission 4
+> mistaken 4
+> mistakes 4
+> mitylene 4
+> moment 4
+> mother 4
+> nearest 4
+> need 4
+> nicomachean 4
+> north 4
+> notion 4
+> notions 4
+> objection 4
+> objections 4
+> offer 4
+> online 4
+> oracle 4
+> ordering 4
+> outward 4
+> owe 4
+> pausanias 4
+> perception 4
+> performed 4
+> performing 4
+> period 4
+> periods 4
+> perjury 4
+> persians 4
+> perversions 4
+> perverted 4
+> phrase 4
+> physic 4
+> pictures 4
+> pieces 4
+> pittacus 4
+> plants 4
+> poetry 4
+> possesses 4
+> pre-advisers 4
+> preadvisers 4
+> preside 4
+> pretences 4
+> prisoners 4
+> privilege 4
+> probable 4
+> proceeding 4
+> profitable 4
+> profits 4
+> protagoras 4
+> proves 4
+> province 4
+> rational 4
+> rd 4
+> real 4
+> reducing 4
+> regal 4
+> regulations 4
+> reign 4
+> related 4
+> republics 4
+> required 4
+> requirements 4
+> respectable 4
+> revenge 4
+> richer 4
+> scholar 4
+> self-defence 4
+> senator 4
+> sensible 4
+> sent 4
+> separated 4
+> settle 4
+> seven 4
+> severe 4
+> sick 4
+> sing 4
+> site 4
+> situated 4
+> situations 4
+> social 4
+> solicit 4
+> spartans 4
+> special 4
+> speech 4
+> statue 4
+> status 4
+> strong 4
+> struggle 4
+> subordinate 4
+> subsist 4
+> suffer 4
+> suit 4
+> surrounded 4
+> susemihl 4
+> tablet 4
+> tarentum 4
+> taylor 4
+> tells 4
+> territory 4
+> thereon 4
+> thirty 4
+> told 4
+> translation 4
+> troublesome 4
+> turned 4
+> twenty 4
+> twice 4
+> unfit 4
+> unhonoured 4
+> universal 4
+> utility 4
+> valour 4
+> version 4
+> village 4
+> vols 4
+> wall 4
+> wards 4
+> wear 4
+> well-regulated 4
+> winter 4
+> wishes 4
+> womans 4
+> workmen 4
+> writers 4
+> xiii 4
+> xiv 4
+> abide 3
+> abstain 3
+> accepting 3
+> accidentally 3
+> accommodated 3
+> accord 3
+> accounts 3
+> accuse 3
+> acknowledged 3
+> admitting 3
+> adopted 3
+> advised 3
+> aenotrians 3
+> affect 3
+> affirmed 3
+> agreeably 3
+> agreed 3
+1979,1981d1990
+< insult 3
+< payments 3
+< pays 3
+1983,2000c1992,1999
+< stronger 3
+< exchange-men 3
+< scythians 3
+< peculiarly 3
+< incomplete 3
+< excused 3
+< insulting 3
+< cypselus 3
+< season 3
+< welldon 3
+< bearing 3
+< trouble 3
+< legally 3
+< excessive 3
+< prosperity 3
+< goes 3
+< throughout 3
+< exception 3
+---
+> alive 3
+> alternately 3
+> altogether 3
+> ambitious 3
+> ambracia 3
+> ancestors 3
+> anima 3
+> animalium 3
+2002,2010c2001,2015
+< carefully 3
+< excels 3
+< law-making 3
+< critical 3
+< secure 3
+< trust 3
+< criterion 3
+< committed 3
+< example 3
+---
+> arcadians 3
+> argument 3
+> arrived 3
+> artist 3
+> artists 3
+> aspirations 3
+> assist 3
+> assumes 3
+> attainment 3
+> attempts 3
+> attentive 3
+> author 3
+> avarice 3
+> balance 3
+> banished 3
+2011a2017
+> bearing 3
+2013c2019,2047
+< exercised 3
+---
+> bekker 3
+> belonging 3
+> besiege 3
+> bestowed 3
+> birds 3
+> blame 3
+> borders 3
+> boy 3
+> brass 3
+> bravery 3
+> brings 3
+> brute 3
+> buy 3
+> bywater 3
+> calcidians 3
+> candidates 3
+> capacities 3
+> carefully 3
+> carthaginian 3
+> ceased 3
+> chalcidians 3
+> citadel 3
+> claims 3
+> clearly 3
+> collecting 3
+> combination 3
+> coming 3
+> commanding 3
+> commend 3
+2015,2026c2049,2080
+< ignoble 3
+< examination 3
+< touched 3
+< latin 3
+< well-established 3
+< hunting 3
+< alive 3
+< totally 3
+< intelligence 3
+< pardoning 3
+< remove 3
+< start 3
+---
+> committed 3
+> compel 3
+> complying 3
+> composes 3
+> comprehends 3
+> concern 3
+> concerned 3
+> concert 3
+> condemning 3
+> confer 3
+> confiscations 3
+> conquer 3
+> conquest 3
+> consistent 3
+> consonant 3
+> constructed 3
+> continual 3
+> continuance 3
+> continuing 3
+> contributions 3
+> contrivance 3
+> conversation 3
+> convinced 3
+> corn 3
+> corresponds 3
+> cost 3
+> countries 3
+> coward 3
+> criterion 3
+> critical 3
+> cypselus 3
+> daily 3
+2028,2045d2081
+< paragraphs 3
+< exact 3
+< commend 3
+< banished 3
+< published 3
+< th 3
+< liability 3
+< institution 3
+< exigencies 3
+< towers 3
+< instituted 3
+< accuse 3
+< xvi 3
+< painful 3
+< remote 3
+< grant 3
+< granted 3
+< xv 3
+2047,2048d2082
+< gratify 3
+< perpetual 3
+2050,2056d2083
+< seized 3
+< surplus 3
+< balance 3
+< thirdly 3
+< abstain 3
+< saved 3
+< fountain 3
+2058d2084
+< fills 3
+2060,2062d2085
+< carthaginian 3
+< intends 3
+< limitation 3
+2064d2086
+< commanding 3
+2066,2081d2087
+< save 3
+< purely 3
+< europe 3
+< satisfy 3
+< largeness 3
+< grecians 3
+< accepting 3
+< avarice 3
+< purifying 3
+< coward 3
+< replied 3
+< outside 3
+< links 3
+< language 3
+< ethica 3
+< ourselves 3
+2083,2089d2088
+< coming 3
+< theban 3
+< candidates 3
+< fines 3
+< interest 3
+< bekker 3
+< fifty 3
+2093,2097d2091
+< countries 3
+< sandys 3
+< wherever 3
+< expect 3
+< cost 3
+2099,2113d2092
+< sending 3
+< expectations 3
+< combination 3
+< estates 3
+< relates 3
+< expeditions 3
+< submission 3
+< reported 3
+< admitting 3
+< philosopher 3
+< corresponds 3
+< author 3
+< horses 3
+< senses 3
+< belonging 3
+2115,2117d2093
+< compel 3
+< speaks 3
+< expenses 3
+2119d2094
+< horsemen 3
+2121d2095
+< oppressed 3
+2123,2131d2096
+< opposition 3
+< expensive 3
+< streets 3
+< qualify 3
+< corn 3
+< agreed 3
+< opportunities 3
+< relate 3
+< agreeably 3
+2133,2136d2097
+< fifteen 3
+< hope 3
+< internal 3
+< onomacritus 3
+2138d2098
+< fidelity 3
+2140,2149d2099
+< besiege 3
+< submitting 3
+< safer 3
+< user 3
+< unnecessary 3
+< convinced 3
+< attentive 3
+< safe 3
+< conversation 3
+< lord 3
+2151,2176d2100
+< olympic 3
+< lose 3
+< twofold 3
+< rejoice 3
+< grown 3
+< ancestors 3
+< knows 3
+< honoured 3
+< adopted 3
+< err 3
+< inspect 3
+< represents 3
+< insolence 3
+< equipment 3
+< imaginary 3
+< sought 3
+< bestowed 3
+< trained 3
+< official 3
+< tyrannic 3
+< thinking 3
+< epidamnus 3
+< tyrannise 3
+< calcidians 3
+< genius 3
+< imitate 3
+2178,2179d2101
+< offended 3
+< envy 3
+2181,2182d2102
+< accord 3
+< youths 3
+2184,2188d2103
+< plainly 3
+< lyre 3
+< lysander 3
+< questions 3
+< indeterminate 3
+2191,2207d2105
+< contrivance 3
+< occupations 3
+< soothe 3
+< enumerated 3
+< machinery 3
+< expert 3
+< index 3
+< accounts 3
+< machines 3
+< obtained 3
+< attempts 3
+< contributions 3
+< enumerate 3
+< rulers 3
+< ruined 3
+< knew 3
+< setting 3
+2209,2234d2106
+< magistracies 3
+< fortitude 3
+< played 3
+< quit 3
+< obliges 3
+< player 3
+< oblige 3
+< attainment 3
+< complying 3
+< pleasant 3
+< birds 3
+< entity 3
+< obeys 3
+< pleased 3
+< stated 3
+< composes 3
+< entertainment 3
+< royalty 3
+< continuing 3
+< severity 3
+< o 3
+< entering 3
+< plots 3
+< blame 3
+< explains 3
+< continuance 3
+2236d2107
+< poet 3
+2238,2253d2108
+< immediate 3
+< vices 3
+< managing 3
+< continual 3
+< tends 3
+< immutable 3
+< sharing 3
+< fittest 3
+< vice 3
+< thence 3
+< unacquainted 3
+< borders 3
+< collecting 3
+< rivers 3
+< policy 3
+< nose 3
+2255,2256d2109
+< politica 3
+< villages 3
+2259,2270d2111
+< stock 3
+< politicians 3
+< comprehends 3
+< pontus 3
+< feet 3
+< assumes 3
+< poorest 3
+< expresses 3
+< ceased 3
+< portion 3
+< substance 3
+< jurymen 3
+2273,2277d2113
+< accidentally 3
+< constructed 3
+< teachers 3
+< alternately 3
+< jurisdiction 3
+2279,2332d2114
+< possessing 3
+< shoemaker 3
+< wwwgutenbergorg 3
+< altogether 3
+< widest 3
+< marks 3
+< assist 3
+< marriages 3
+< possibility 3
+< feel 3
+< neighbour 3
+< clearly 3
+< poste 3
+< profession 3
+< aspirations 3
+< claims 3
+< introductory 3
+< rattle 3
+< inclined 3
+< boy 3
+< heroic 3
+< reward 3
+< subverted 3
+< endowed 3
+< animalium 3
+< endeavours 3
+< bywater 3
+< refuse 3
+< joy 3
+< artists 3
+< sight 3
+< artist 3
+< acknowledged 3
+< endeavouring 3
+< consonant 3
+< arrived 3
+< extends 3
+< advised 3
+< abide 3
+< understandings 3
+< wealthy 3
+< favourable 3
+< stealing 3
+< herdsmen 3
+< matrimony 3
+< consistent 3
+< inclination 3
+< maturity 3
+< succeeds 3
+< injured 3
+< furnished 3
+< names 3
+< verse 3
+< thracian 3
+2335,2342d2116
+< sister 3
+< injure 3
+< sit 3
+< aenotrians 3
+< flattered 3
+< resemblance 3
+< resenting 3
+< harbours 3
+2344,2345d2117
+< procures 3
+< musicians 3
+2347d2118
+< citadel 3
+2349,2350d2119
+< chalcidians 3
+< invested 3
+2352d2120
+< implied 3
+2354,2366d2121
+< enact 3
+< brass 3
+< enables 3
+< revised 3
+< reading 3
+< preceptors 3
+< motive 3
+< meantime 3
+< spring 3
+< tie 3
+< concern 3
+< fully 3
+< skilled 3
+2368,2378d2122
+< concerned 3
+< extremes 3
+< bravery 3
+< process 3
+< affirmed 3
+< warranties 3
+< argument 3
+< proceeds 3
+< months 3
+< proceedings 3
+< monopoly 3
+2381,2404d2124
+< prepare 3
+< prepared 3
+< conquest 3
+< harmless 3
+< table 3
+< sufficiency 3
+< monarchs 3
+< imposed 3
+< anima 3
+< wholly 3
+< accommodated 3
+< traffic 3
+< harmonies 3
+< eyes 3
+< email 3
+< reasonable 3
+< smaller 3
+< presents 3
+< reasonably 3
+< reflection 3
+< moderately 3
+< superiors 3
+< heart 3
+< model 3
+2406,2439d2125
+< ambracia 3
+< concert 3
+< sober 3
+< preserves 3
+< impracticable 3
+< societies 3
+< conquer 3
+< fruit 3
+< problem 3
+< face 3
+< arcadians 3
+< vain 3
+< mistress 3
+< brings 3
+< men-at-arms 3
+< confiscations 3
+< mistake 3
+< improvement 3
+< framing 3
+< heard 3
+< mentions 3
+< restraint 3
+< failed 3
+< confer 3
+< priesthood 3
+< buy 3
+< sold 3
+< affect 3
+< brute 3
+< merits 3
+< ambitious 3
+< healthy 3
+< principally 3
+< failure 3
+2441,2445d2126
+< sum 3
+< condemning 3
+< minds 3
+< wickedness 3
+< minae 3
+2447,2449d2127
+< suits 3
+< winds 3
+< prior 3
+2451,2491c2129,2477
+< milesian 3
+< solons 2
+< elapsed 2
+< mild 2
+< unfortunate 2
+< eldred 2
+< middling 2
+< milk 2
+< minerva 2
+< affections 2
+< michael 2
+< affectionate 2
+< minority 2
+< metaphysica 2
+< minute 2
+< elections 2
+< superficial 2
+< messenians 2
+< minutely 2
+< messenger 2
+< mischief 2
+< meritorious 2
+< effort 2
+< efficient 2
+< effeminate 2
+< effected 2
+< misfortune 2
+< educators 2
+< mercenary 2
+< mercenaries 2
+< educational 2
+< electronically 2
+< elegance 2
+< watch 2
+< mens 2
+< educate 2
+< elegant 2
+< edifices 2
+< elements 2
+< economic 2
+< mnasis 2
+---
+> email 3
+> enables 3
+> enact 3
+> endeavouring 3
+> endeavours 3
+> endowed 3
+> entering 3
+> entertainment 3
+> entity 3
+> enumerate 3
+> enumerated 3
+> envy 3
+> epidamnus 3
+> equipment 3
+> err 3
+> estates 3
+> ethica 3
+> europe 3
+> exact 3
+> examination 3
+> example 3
+> excels 3
+> exception 3
+> excessive 3
+> exchange-men 3
+> excluded 3
+> excused 3
+> exercised 3
+> exigencies 3
+> expect 3
+> expectations 3
+> expeditions 3
+> expenses 3
+> expensive 3
+> expert 3
+> explains 3
+> expresses 3
+> extends 3
+> extremes 3
+> eyes 3
+> face 3
+> failed 3
+> failure 3
+> fallacious 3
+> favourable 3
+> feel 3
+> feet 3
+> fidelity 3
+> fifteen 3
+> fifty 3
+> fills 3
+> fines 3
+> fittest 3
+> flattered 3
+> fortitude 3
+> fountain 3
+> framing 3
+> fruit 3
+> fully 3
+> furnished 3
+> genius 3
+> goes 3
+> grant 3
+> granted 3
+> gratify 3
+> grecians 3
+> grown 3
+> harbours 3
+> harmless 3
+> harmonies 3
+> healthy 3
+> heard 3
+> heart 3
+> herdsmen 3
+> heroic 3
+> honoured 3
+> hope 3
+> horsemen 3
+> horses 3
+> hunting 3
+> ignoble 3
+> imaginary 3
+> imitate 3
+> immediate 3
+> immutable 3
+> implied 3
+> imposed 3
+> impracticable 3
+> improvement 3
+> inclination 3
+> inclined 3
+> incomplete 3
+> indeterminate 3
+> index 3
+> injure 3
+> injured 3
+> insolence 3
+> inspect 3
+> instituted 3
+> institution 3
+> insult 3
+> insulting 3
+> intelligence 3
+> intends 3
+> interest 3
+> internal 3
+> introductory 3
+> invested 3
+> joy 3
+> jurisdiction 3
+> jurymen 3
+> knew 3
+> knows 3
+> language 3
+> largeness 3
+> latin 3
+> law-making 3
+> learned 3
+> legally 3
+> liability 3
+> limitation 3
+> links 3
+> lord 3
+> lose 3
+> lyre 3
+> lysander 3
+> machinery 3
+> machines 3
+> magistracies 3
+> managing 3
+> marks 3
+> marriages 3
+> matrimony 3
+> maturity 3
+> meantime 3
+> men-at-arms 3
+> mentions 3
+> merits 3
+> milesian 3
+> minae 3
+> minds 3
+> mistake 3
+> mistress 3
+> model 3
+> moderately 3
+> monarchs 3
+> monopoly 3
+> months 3
+> motive 3
+> musicians 3
+> names 3
+> neighbour 3
+> nose 3
+> o 3
+> obeys 3
+> oblige 3
+> obliges 3
+> obtained 3
+> occupations 3
+> offended 3
+> official 3
+> olympic 3
+> onomacritus 3
+> opportunities 3
+> opposition 3
+> oppressed 3
+> ourselves 3
+> outside 3
+> painful 3
+> paragraphs 3
+> pardoning 3
+> payments 3
+> pays 3
+> peculiarly 3
+> perpetual 3
+> philosopher 3
+> plainly 3
+> played 3
+> player 3
+> pleasant 3
+> pleased 3
+> plots 3
+> poet 3
+> policy 3
+> politica 3
+> politicians 3
+> pontus 3
+> poorest 3
+> portion 3
+> possessing 3
+> possibility 3
+> poste 3
+> preceptors 3
+> prepare 3
+> prepared 3
+> presents 3
+> preserves 3
+> priesthood 3
+> principally 3
+> prior 3
+> problem 3
+> proceedings 3
+> proceeds 3
+> process 3
+> procures 3
+> profession 3
+> prosperity 3
+> published 3
+> purely 3
+> purifying 3
+> qualify 3
+> questions 3
+> quit 3
+> rattle 3
+> reading 3
+> reasonable 3
+> reasonably 3
+> reflection 3
+> refuse 3
+> rejoice 3
+> relate 3
+> relates 3
+> remote 3
+> remove 3
+> repair 3
+> replied 3
+> reported 3
+> represents 3
+> resemblance 3
+> resenting 3
+> restraint 3
+> revised 3
+> reward 3
+> rivers 3
+> royalty 3
+> ruined 3
+> rulers 3
+> safe 3
+> safer 3
+> sandys 3
+> satisfy 3
+> save 3
+> saved 3
+> scythians 3
+> season 3
+> secure 3
+> seized 3
+> sending 3
+> senses 3
+> setting 3
+> severity 3
+> sharing 3
+> shoemaker 3
+> sight 3
+> sister 3
+> sit 3
+> skilled 3
+> smaller 3
+> sober 3
+> societies 3
+> sold 3
+> soothe 3
+> sought 3
+> speaks 3
+> spring 3
+> start 3
+> stated 3
+> stealing 3
+> stock 3
+> streets 3
+> stronger 3
+> submission 3
+> submitting 3
+> substance 3
+> subverted 3
+> succeeds 3
+> sufficiency 3
+> suits 3
+> sum 3
+> superiors 3
+> surplus 3
+> table 3
+> teachers 3
+> tends 3
+> th 3
+> theban 3
+> thence 3
+> thinking 3
+> thirdly 3
+> thracian 3
+> throughout 3
+> tie 3
+> totally 3
+> touched 3
+> towers 3
+> traffic 3
+> trained 3
+> trouble 3
+> trust 3
+> twofold 3
+> tyrannic 3
+> tyrannise 3
+> unacquainted 3
+> understandings 3
+> unnecessary 3
+> user 3
+> vain 3
+> verse 3
+> vice 3
+> vices 3
+> villages 3
+> warranties 3
+> wealthy 3
+> well-established 3
+> welldon 3
+> wherever 3
+> wholly 3
+> wickedness 3
+> widest 3
+> winds 3
+> wwwgutenbergorg 3
+> xv 3
+> xvi 3
+> youths 3
+> ability 2
+> abject 2
+> abound 2
+> abundance 2
+> abuses 2
+> abydos 2
+> academy 2
+> accepted 2
+> accidental 2
+> accuracy 2
+> accurately 2
+> accusing 2
+> achaeans 2
+> achilles 2
+> acquits 2
+> acted 2
+> actor 2
+> adapt 2
+> adapting 2
+> addition 2
+> adjudged 2
+> advanced 2
+> aegina 2
+> affectionate 2
+> affections 2
+2492a2479,2703
+> affront 2
+> affronted 2
+> agamemnons 2
+> agrees 2
+> agriculture 2
+> allotment 2
+> allowing 2
+> allows 2
+> alternate 2
+> alters 2
+> ambition 2
+> amount 2
+> amphipolis 2
+> amuse 2
+> analogous 2
+> anarchy 2
+> andromadas 2
+> anon 2
+> answered 2
+> antiquity 2
+> anywhere 2
+> apart 2
+> apollonia 2
+> apparent 2
+> appearance 2
+> appearing 2
+> appellation 2
+> appellations 2
+> appertain 2
+> appetites 2
+> apprehension 2
+> approves 2
+> arbitrarily 2
+> archon 2
+> areopagites 2
+> argives 2
+> argonauts 2
+> arisen 2
+> armed 2
+> arrive 2
+> ascii 2
+> ascribed 2
+> assign 2
+> assigns 2
+> assuming 2
+> assured 2
+> attached 2
+> attacked 2
+> attained 2
+> attains 2
+> attitude 2
+> audience 2
+> autophradatus 2
+> available 2
+> avails 2
+> avaricious 2
+> band 2
+> banishing 2
+> banishment 2
+> barbarous 2
+> beauties 2
+> bees 2
+> beliefs 2
+> bestow 2
+> blending 2
+> bourchier 2
+> branches 2
+> breach 2
+> breaking 2
+> bringing 2
+> broken 2
+> brook 2
+> brutes 2
+> builder 2
+> builders 2
+> building 2
+> buyers 2
+> byzantium 2
+> calamities 2
+> calamity 2
+> calculate 2
+> carrying 2
+> cast 2
+> caution 2
+> cautious 2
+> celts 2
+> centres 2
+> century 2
+> changing 2
+> chap 2
+> chares 2
+> charges 2
+> childrens 2
+> chones 2
+> choregus 2
+> christ 2
+> citizenship 2
+> classics 2
+> clerk 2
+> clothes 2
+> cnidus 2
+> commander-in-chief 2
+> commenced 2
+> commendable 2
+> commendation 2
+> commons 2
+> commonwealth 2
+> commotion 2
+> communicate 2
+> compact 2
+> companies 2
+> companion 2
+> company 2
+> compare 2
+> compelled 2
+> complaints 2
+> compounded 2
+> comprehensive 2
+> compulsion 2
+> computer 2
+> computers 2
+> concealed 2
+> conceive 2
+> conceived 2
+> concept 2
+> conclusion 2
+> condemned 2
+> condemns 2
+> conferred 2
+> confirmed 2
+> conflicting 2
+> confuted 2
+> conquered 2
+> conscious 2
+> considerations 2
+> constant 2
+> constitutional 2
+> consume 2
+> contemplation 2
+> contraries 2
+> convince 2
+> cookery 2
+> copied 2
+> corrected 2
+> correction 2
+> correctly 2
+> corruptions 2
+> cos 2
+> costs 2
+> counsellors 2
+> covet 2
+> craftsman 2
+> create 2
+> creatures 2
+> crew 2
+> criticism 2
+> curing 2
+> cyrus 2
+> damage 2
+> dangers 2
+> daughter 2
+> dealing 2
+> debated 2
+> deceitful 2
+> deceive 2
+> deceived 2
+> decency 2
+> decides 2
+> decline 2
+> defenders 2
+> deficiency 2
+> defrayed 2
+> degeneracies 2
+> degenerate 2
+> degenerating 2
+> delegating 2
+> delicate 2
+> delicately 2
+> delphos 2
+> demand 2
+> democrats 2
+> departed 2
+> deposited 2
+> descended 2
+> describing 2
+> deserve 2
+> designs 2
+> despised 2
+> destroys 2
+> detected 2
+> determinations 2
+> detestation 2
+> detested 2
+> detrimental 2
+> dictates 2
+> directions 2
+> disadvantageous 2
+> disagree 2
+> disagreement 2
+> disapprove 2
+> discerned 2
+> disciplined 2
+> discourse 2
+> discovered 2
+> discretion 2
+> disengaged 2
+> disgraceful 2
+> displeased 2
+> dissensions 2
+> dissolved 2
+> disturbance 2
+> dithyrambic 2
+> doctor 2
+> dogs 2
+> double 2
+> doubted 2
+> drunkard 2
+> drunkenness 2
+> dwell 2
+> dyrrachium 2
+> eager 2
+> eagerly 2
+> earnest 2
+> earnestly 2
+> ease 2
+2493a2705,2720
+> economic 2
+> edifices 2
+> educate 2
+> educational 2
+> educators 2
+> effected 2
+> effeminate 2
+> efficient 2
+> effort 2
+> elapsed 2
+> eldred 2
+> elections 2
+> electronically 2
+> elegance 2
+> elegant 2
+> elements 2
+2495c2722,2955
+< waters 2
+---
+> embrace 2
+> eminence 2
+> eminently 2
+> employees 2
+> employs 2
+> enabled 2
+> encroaching 2
+> encroachments 2
+> endure 2
+> engrossing 2
+> enlarged 2
+> enmity 2
+> ensure 2
+> ensuring 2
+> entertained 2
+> entertainments 2
+> enure 2
+> ephialtes 2
+> erected 2
+> eric 2
+> essay 2
+> essence 2
+> estate 2
+> ethic 2
+> event 2
+> events 2
+> exceeded 2
+> exchanged 2
+> excited 2
+> exempt 2
+> exercising 2
+> exhibit 2
+> expel 2
+> experts 2
+> explicit 2
+> exporting 2
+> expressed 2
+> expressly 2
+> expulsion 2
+> extremely 2
+> fable 2
+> faculty 2
+> falling 2
+> farther 2
+> favourers 2
+> fears 2
+> federal 2
+> females 2
+> field 2
+> fierce 2
+> file 2
+> files 2
+> finally 2
+> finances 2
+> fining 2
+> fishermen 2
+> fishing 2
+> fitly 2
+> flatterer 2
+> flies 2
+> flow 2
+> flowing 2
+> forbade 2
+> forbidden 2
+> forbids 2
+> forced 2
+> forefathers 2
+> forethought 2
+> forfeitures 2
+> formation 2
+> formats 2
+> formidable 2
+> fortified 2
+> free-woman 2
+> french 2
+> gaining 2
+> gelo 2
+> gelon 2
+> generations 2
+> generous 2
+> gentlemen 2
+> genus 2
+> georgias 2
+> german 2
+> gift 2
+> glory 2
+> going 2
+> gold 2
+> goodness 2
+> ground 2
+> grows 2
+> guardianship 2
+> habitations 2
+> hammond 2
+> harmodius 2
+> hart 2
+> hatch 2
+> haughtiness 2
+> healing 2
+> height 2
+> heir 2
+> hercules 2
+> herein 2
+> herodotus 2
+> heroes 2
+> herself 2
+> hesiod 2
+> hicks 2
+> high-spirited 2
+> highly 2
+> highways 2
+> hinder 2
+> hinders 2
+> historia 2
+> hoarded 2
+> hobbes 2
+> holy 2
+> hours 2
+> household 2
+> httppglaforg 2
+> httpwwwgutenbergorg 2
+> hunger 2
+> hunters 2
+> husband 2
+> husbands 2
+> hypothesis 2
+> iberians 2
+> ideals 2
+> idle 2
+> idleness 2
+> ill-used 2
+> imagined 2
+> imagining 2
+> immeasurable 2
+> immortal 2
+> impart 2
+> impatient 2
+> impending 2
+> imperfection 2
+> impious 2
+> import 2
+> imports 2
+> improperly 2
+> improving 2
+> inconsistent 2
+> increases 2
+> independency 2
+> independent 2
+> indifferent 2
+> induces 2
+> indulge 2
+> indulged 2
+> indulgent 2
+> indulging 2
+> industry 2
+> infantry 2
+> infinite 2
+> influenced 2
+> inform 2
+> informed 2
+> injuries 2
+> injuring 2
+> injurious 2
+> innovation 2
+> inquiries 2
+> inroads 2
+> insatiable 2
+> inseparable 2
+> insists 2
+> insolent 2
+> insulted 2
+> insurrection 2
+> intellectual 2
+> intelligible 2
+> intemperate 2
+> interests 2
+> interfere 2
+> introduce 2
+> introducing 2
+> invade 2
+> invent 2
+> invented 2
+> involuntary 2
+> ionia 2
+> issue 2
+> ister 2
+> italus 2
+> jointly 2
+> journey 2
+> judged 2
+> judgments 2
+> jurisdictions 2
+> juryman 2
+> kenyon 2
+> kill 2
+> laborious 2
+> lacedemonians 2
+> languid 2
+> larissa 2
+> lasting 2
+> lawful 2
+> lawgivers 2
+> lazy 2
+> leaving 2
+> led 2
+> length 2
+> leontium 2
+> lest 2
+> liberally 2
+> licentiousness 2
+> lie 2
+> lieu 2
+> limit 2
+> lions 2
+> list 2
+> locations 2
+> loose 2
+> loss 2
+> lots 2
+> loves 2
+> loving 2
+> lower 2
+> lowest 2
+> lubbocks 2
+> luxuries 2
+> machine 2
+> mainly 2
+> malienses 2
+> mantinea 2
+> manual 2
+> mark 2
+> marrying 2
+> martial 2
+> meant 2
+2497,2502c2957,2974
+< ease 2
+< embrace 2
+< earnestly 2
+< eminence 2
+< earnest 2
+< eminently 2
+---
+> mens 2
+> mercenaries 2
+> mercenary 2
+> meritorious 2
+> messenger 2
+> messenians 2
+> metaphysica 2
+> michael 2
+> middling 2
+> mild 2
+> milk 2
+> minerva 2
+> minority 2
+> minute 2
+> minutely 2
+> mischief 2
+> misfortune 2
+> mnasis 2
+2504,2505d2975
+< warranty 2
+< eagerly 2
+2507,2512d2976
+< eager 2
+< dyrrachium 2
+< employees 2
+< dwell 2
+< employs 2
+< affront 2
+2514d2977
+< meant 2
+2516,2527d2978
+< enabled 2
+< drunkenness 2
+< uneasiness 2
+< drunkard 2
+< doubted 2
+< unite 2
+< affronted 2
+< encroaching 2
+< double 2
+< aegina 2
+< encroachments 2
+< succession 2
+2529,2531d2979
+< dogs 2
+< succeeded 2
+< doctor 2
+2535d2982
+< weapon 2
+2537,2538d2983
+< dithyrambic 2
+< disturbance 2
+2541,2543d2985
+< endure 2
+< martial 2
+< subversive 2
+2546d2987
+< marrying 2
+2548,2550d2988
+< supplying 2
+< agamemnons 2
+< undergo 2
+2553,2556d2990
+< uncommon 2
+< dissolved 2
+< mark 2
+< dissensions 2
+2558d2991
+< engrossing 2
+2560,2570d2992
+< universe 2
+< displeased 2
+< manual 2
+< disgraceful 2
+< unaltered 2
+< mantinea 2
+< disengaged 2
+< discretion 2
+< noticed 2
+< enlarged 2
+< discovered 2
+2572,2573c2994
+< enmity 2
+< discourse 2
+---
+> noticed 2
+2575,2585d2995
+< disciplined 2
+< malienses 2
+< discerned 2
+< disapprove 2
+< disagreement 2
+< ensure 2
+< unlikely 2
+< unlimited 2
+< ensuring 2
+< advanced 2
+< subsisting 2
+2589,2590d2998
+< mainly 2
+< entertained 2
+2592,2593d2999
+< entertainments 2
+< disagree 2
+2596d3001
+< disadvantageous 2
+2598d3002
+< directions 2
+2600d3003
+< subsisted 2
+2604d3006
+< machine 2
+2606d3007
+< enure 2
+2608d3008
+< weavers 2
+2610,2611d3009
+< dictates 2
+< ephialtes 2
+2613d3010
+< supports 2
+2616,2617d3012
+< detrimental 2
+< detested 2
+2619,2622d3013
+< wallace 2
+< luxuries 2
+< detestation 2
+< lubbocks 2
+2624,2626d3014
+< erected 2
+< lowest 2
+< lower 2
+2628,2631d3015
+< loving 2
+< loves 2
+< eric 2
+< type 2
+2633,2635d3016
+< subservient 2
+< lots 2
+< unnatural 2
+2637,2641d3017
+< loss 2
+< essay 2
+< determinations 2
+< detected 2
+< loose 2
+2643d3018
+< essence 2
+2645,2646d3019
+< subordination 2
+< destroys 2
+2648,2653d3020
+< despised 2
+< designs 2
+< deserve 2
+< describing 2
+< estate 2
+< locations 2
+2657d3023
+< descended 2
+2659,2668d3024
+< deposited 2
+< agrees 2
+< ethic 2
+< thirty-three 2
+< trying 2
+< list 2
+< lions 2
+< subdued 2
+< departed 2
+< democrats 2
+2670,2672d3025
+< agriculture 2
+< welfare 2
+< demand 2
+2674,2676d3026
+< limit 2
+< event 2
+< events 2
+2678,2683d3027
+< delphos 2
+< surely 2
+< wages 2
+< delicately 2
+< delicate 2
+< subdivided 2
+2685d3028
+< lieu 2
+2687,2689d3029
+< lie 2
+< licentiousness 2
+< delegating 2
+2692d3031
+< degenerating 2
+2694d3032
+< liberally 2
+2696,2701d3033
+< degenerate 2
+< degeneracies 2
+< defrayed 2
+< deficiency 2
+< studies 2
+< defenders 2
+2703,2710d3034
+< trusted 2
+< decline 2
+< decides 2
+< until 2
+< lest 2
+< decency 2
+< deceived 2
+< exceeded 2
+2712,2723d3035
+< deceive 2
+< leontium 2
+< suspecting 2
+< deceitful 2
+< length 2
+< suspects 2
+< unwilling 2
+< struggling 2
+< debated 2
+< adjudged 2
+< troubled 2
+< dealing 2
+2725d3036
+< struggles 2
+2729,2731d3039
+< exchanged 2
+< led 2
+< leaving 2
+2734,2735d3041
+< unworthy 2
+< daughter 2
+2737d3042
+< dangers 2
+2739,2742d3043
+< excited 2
+< damage 2
+< cyrus 2
+< addition 2
+2744d3044
+< lazy 2
+2746,2747d3045
+< curing 2
+< stripes 2
+2749,2753d3046
+< striking 2
+< criticism 2
+< exempt 2
+< lawgivers 2
+< swear 2
+2755,2756d3047
+< lawful 2
+< updated 2
+2758,2765d3048
+< sweet 2
+< crew 2
+< creatures 2
+< strictly 2
+< vulgar 2
+< exercising 2
+< lasting 2
+< exhibit 2
+2767,2768d3049
+< adapting 2
+< larissa 2
+2770,2771d3050
+< create 2
+< craftsman 2
+2773,2781d3051
+< languid 2
+< covet 2
+< strict 2
+< counsellors 2
+< strengthen 2
+< costs 2
+< adapt 2
+< cos 2
+< corruptions 2
+2783,2786d3052
+< swords 2
+< lacedemonians 2
+< expel 2
+< correctly 2
+2788,2789d3053
+< correction 2
+< corrected 2
+2791,2793d3054
+< allotment 2
+< copied 2
+< cookery 2
+2795,2796d3055
+< laborious 2
+< convince 2
+2798d3056
+< story 2
+2800d3057
+< stories 2
+2803,2804d3059
+< experts 2
+< contraries 2
+2806,2808d3060
+< allowing 2
+< actor 2
+< allows 2
+2813,2822d3064
+< wretches 2
+< contemplation 2
+< explicit 2
+< tribunals 2
+< kill 2
+< xvii 2
+< exporting 2
+< kenyon 2
+< consume 2
+< tribe 2
+2824,2826d3065
+< alternate 2
+< expressed 2
+< acted 2
+2830,2831d3068
+< expressly 2
+< expulsion 2
+2833,2838d3069
+< acquits 2
+< juryman 2
+< jurisdictions 2
+< constitutional 2
+< alters 2
+< well-tempered 2
+2840,2841d3070
+< judgments 2
+< constant 2
+2843,2851c3072
+< judged 2
+< utmost 2
+< steering 2
+< treatment 2
+< journey 2
+< jointly 2
+< steal 2
+< west 2
+< considerations 2
+---
+> pre-eminence 2
+2854,2858d3074
+< western 2
+< pre-eminence 2
+< extremely 2
+< wharton 2
+< conscious 2
+2861d3076
+< conquered 2
+2863,2866d3077
+< treaties 2
+< fable 2
+< confuted 2
+< italus 2
+2869,2875d3079
+< ister 2
+< issue 2
+< conflicting 2
+< ambition 2
+< faculty 2
+< confirmed 2
+< conferred 2
+2877,2878d3080
+< condemns 2
+< translations 2
+2880d3081
+< condemned 2
+2882,2883d3082
+< falling 2
+< ionia 2
+2885,2887d3083
+< votive 2
+< involuntary 2
+< farther 2
+2889,2894d3084
+< conclusion 2
+< worthless 2
+< amount 2
+< amphipolis 2
+< invented 2
+< invent 2
+2896,2912d3085
+< concept 2
+< favourers 2
+< conceived 2
+< fears 2
+< invade 2
+< federal 2
+< conceive 2
+< concealed 2
+< computers 2
+< introducing 2
+< computer 2
+< achilles 2
+< introduce 2
+< compulsion 2
+< comprehensive 2
+< compounded 2
+< amuse 2
+2914d3086
+< females 2
+2916d3087
+< analogous 2
+2918,2924d3088
+< complaints 2
+< field 2
+< fierce 2
+< compelled 2
+< interfere 2
+< interests 2
+< compare 2
+2926d3089
+< company 2
+2928,2948d3090
+< achaeans 2
+< file 2
+< files 2
+< companion 2
+< starting-point 2
+< tranquillity 2
+< companies 2
+< compact 2
+< accusing 2
+< intemperate 2
+< intelligible 2
+< wherefore 2
+< communicate 2
+< intellectual 2
+< finally 2
+< commotion 2
+< insurrection 2
+< commonwealth 2
+< insulted 2
+< commons 2
+< commendation 2
+2950,2953d3091
+< finances 2
+< commendable 2
+< accurately 2
+< accuracy 2
+2957d3094
+< commenced 2
+2959,2961d3095
+< commander-in-chief 2
+< wheresoever 2
+< anarchy 2
+2963,2964d3096
+< fining 2
+< standard 2
+2966d3097
+< stand 2
+2969,2973d3099
+< insolent 2
+< stamp 2
+< insists 2
+< voluntary 2
+< fishermen 2
+2975d3100
+< fishing 2
+2977,2978d3101
+< inseparable 2
+< fitly 2
+2980,2981d3102
+< insatiable 2
+< inroads 2
+2983,2984d3103
+< voluntarily 2
+< taste 2
+2986,2998c3105
+< inquiries 2
+< cnidus 2
+< tragic 2
+< clothes 2
+< clerk 2
+< classics 2
+< innovation 2
+< andromadas 2
+< whichever 2
+< injurious 2
+< injuring 2
+< injuries 2
+< citizenship 2
+---
+> re-use 2
+3001,3004d3107
+< flatterer 2
+< wholesome 2
+< christ 2
+< flies 2
+3006,3009d3108
+< choregus 2
+< chones 2
+< flow 2
+< flowing 2
+3013,3016d3111
+< childrens 2
+< wide 2
+< sprung 2
+< informed 2
+3018,3026d3112
+< inform 2
+< forbade 2
+< charges 2
+< influenced 2
+< chares 2
+< forbidden 2
+< forbids 2
+< forced 2
+< infinite 2
+3029,3030d3114
+< forefathers 2
+< infantry 2
+3032d3115
+< chap 2
+3035,3044d3117
+< forethought 2
+< forfeitures 2
+< industry 2
+< indulging 2
+< indulgent 2
+< changing 2
+< indulged 2
+< indulge 2
+< traezenians 2
+< induces 2
+3046,3047d3118
+< century 2
+< centres 2
+3049,3050d3119
+< formation 2
+< formats 2
+3052,3055d3120
+< celts 2
+< indifferent 2
+< formidable 2
+< visit 2
+3057d3121
+< fortified 2
+3059,3063d3122
+< cautious 2
+< caution 2
+< independent 2
+< independency 2
+< teaching 2
+3066d3124
+< cast 2
+3068,3069d3125
+< anon 2
+< increases 2
+3072,3073d3127
+< spirits 2
+< carrying 2
+3075d3128
+< inconsistent 2
+3081,3085d3133
+< answered 2
+< calculate 2
+< calamity 2
+< calamities 2
+< byzantium 2
+3087d3134
+< antiquity 2
+3090d3136
+< buyers 2
+3092d3137
+< building 2
+3094,3099d3138
+< spend 2
+< builders 2
+< free-woman 2
+< french 2
+< builder 2
+< brutes 2
+3101d3139
+< improving 2
+3104,3107d3141
+< brook 2
+< broken 2
+< improperly 2
+< bringing 2
+3109,3111d3142
+< breaking 2
+< re-use 2
+< breach 2
+3114d3144
+< imports 2
+3117d3146
+< import 2
+3119,3123d3147
+< branches 2
+< speculation 2
+< anywhere 2
+< impious 2
+< bourchier 2
+3125d3148
+< imperfection 2
+3127,3131d3149
+< tended 2
+< impending 2
+< traces 2
+< apart 2
+< gaining 2
+3133,3136d3150
+< accidental 2
+< impatient 2
+< gelo 2
+< gelon 2
+3138,3142d3151
+< impart 2
+< apollonia 2
+< immortal 2
+< apparent 2
+< blending 2
+3144d3152
+< immeasurable 2
+3149,3163d3156
+< generations 2
+< specified 2
+< imagining 2
+< imagined 2
+< generous 2
+< wisely 2
+< bestow 2
+< appearance 2
+< appearing 2
+< ill-used 2
+< gentlemen 2
+< genus 2
+< town 2
+< beliefs 2
+< georgias 2
+3166d3158
+< accepted 2
+3168d3159
+< witnesses 2
+3170,3175d3160
+< german 2
+< bees 2
+< appellation 2
+< idleness 2
+< idle 2
+< gift 2
+3177,3179d3161
+< beauties 2
+< academy 2
+< ideals 2
+3182,3185d3163
+< vanilla 2
+< iberians 2
+< glory 2
+< abydos 2
+3187d3164
+< variance 2
+3189,3193d3165
+< hypothesis 2
+< going 2
+< gold 2
+< husbands 2
+< appellations 2
+3195,3196d3166
+< views 2
+< goodness 2
+3198,3206d3167
+< barbarous 2
+< husband 2
+< victuallers 2
+< abuses 2
+< appertain 2
+< touch 2
+< hunters 2
+< banishment 2
+< banishing 2
+3208d3168
+< hunger 2
+3210,3211d3169
+< band 2
+< abundance 2
+3214d3171
+< vicious 2
+3217d3173
+< httpwwwgutenbergorg 2
+3219,3225d3174
+< wonderful 2
+< httppglaforg 2
+< avaricious 2
+< theatre 2
+< avails 2
+< available 2
+< household 2
+3227,3228d3175
+< hours 2
+< appetites 2
+3231,3235d3177
+< ground 2
+< autophradatus 2
+< south 2
+< audience 2
+< attitude 2
+3237d3178
+< source 2
+3240,3243d3180
+< grows 2
+< thrown 2
+< sordid 2
+< sophists 2
+3246,3248d3182
+< attains 2
+< attained 2
+< guardianship 2
+3251,3259d3184
+< holy 2
+< sooner 2
+< attacked 2
+< attached 2
+< tomb 2
+< hobbes 2
+< hoarded 2
+< woods 2
+< yield 2
+3263,3265d3187
+< historia 2
+< abound 2
+< assured 2
+3267d3188
+< assuming 2
+3270,3271d3190
+< habitations 2
+< hinders 2
+3273,3280d3191
+< hinder 2
+< assigns 2
+< assign 2
+< highways 2
+< high-spirited 2
+< highly 2
+< wool 2
+< abject 2
+3282,3288d3192
+< ascribed 2
+< hicks 2
+< ability 2
+< hesiod 2
+< hammond 2
+< herself 2
+< vest 2
+3290,3292d3193
+< heroes 2
+< herodotus 2
+< ascii 2
+3294d3194
+< herein 2
+3296,3299d3195
+< theory 2
+< arrive 2
+< thurium 2
+< armed 2
+3301d3196
+< hercules 2
+3305,3307d3199
+< arisen 2
+< solved 2
+< thessalians 2
+3309d3200
+< solve 2
+3312,3318d3202
+< harmodius 2
+< argonauts 2
+< argives 2
+< timophanes 2
+< hart 2
+< hatch 2
+< heir 2
+3320,3321d3203
+< height 2
+< areopagites 2
+3323,3330d3204
+< haughtiness 2
+< venal 2
+< archon 2
+< apprehension 2
+< healing 2
+< tiller 2
+< arbitrarily 2
+< approves 2
+3332c3206,4358
+< thereto 1
+---
+> solons 2
+> solve 2
+> solved 2
+> sooner 2
+> sophists 2
+> sordid 2
+> source 2
+> south 2
+> specified 2
+> speculation 2
+> spend 2
+> spirits 2
+> sprung 2
+> stamp 2
+> stand 2
+> standard 2
+> starting-point 2
+> steal 2
+> steering 2
+> stories 2
+> story 2
+> strengthen 2
+> strict 2
+> strictly 2
+> striking 2
+> stripes 2
+> struggles 2
+> struggling 2
+> studies 2
+> subdivided 2
+> subdued 2
+> subordination 2
+> subservient 2
+> subsisted 2
+> subsisting 2
+> subversive 2
+> succeeded 2
+> succession 2
+> superficial 2
+> supplying 2
+> supports 2
+> surely 2
+> suspecting 2
+> suspects 2
+> swear 2
+> sweet 2
+> swords 2
+> taste 2
+> teaching 2
+> tended 2
+> theatre 2
+> theory 2
+> thessalians 2
+> thirty-three 2
+> thrown 2
+> thurium 2
+> tiller 2
+> timophanes 2
+> tomb 2
+> touch 2
+> town 2
+> traces 2
+> traezenians 2
+> tragic 2
+> tranquillity 2
+> translations 2
+> treaties 2
+> treatment 2
+> tribe 2
+> tribunals 2
+> troubled 2
+> trusted 2
+> trying 2
+> type 2
+> unaltered 2
+> uncommon 2
+> undergo 2
+> uneasiness 2
+> unfortunate 2
+> unite 2
+> universe 2
+> unlikely 2
+> unlimited 2
+> unnatural 2
+> until 2
+> unwilling 2
+> unworthy 2
+> updated 2
+> utmost 2
+> vanilla 2
+> variance 2
+> venal 2
+> vest 2
+> vicious 2
+> victuallers 2
+> views 2
+> visit 2
+> voluntarily 2
+> voluntary 2
+> votive 2
+> vulgar 2
+> wages 2
+> wallace 2
+> warranty 2
+> watch 2
+> waters 2
+> weapon 2
+> weavers 2
+> welfare 2
+> well-tempered 2
+> west 2
+> western 2
+> wharton 2
+> wherefore 2
+> wheresoever 2
+> whichever 2
+> wholesome 2
+> wide 2
+> wisely 2
+> witnesses 2
+> wonderful 2
+> woods 2
+> wool 2
+> worthless 2
+> wretches 2
+> xvii 2
+> yield 2
+> abettors 1
+> aborigines 1
+> abounds 1
+> abridged 1
+> abridges 1
+> abroad 1
+> abstract 1
+> abundantly 1
+> abusive 1
+> accessed 1
+> accessible 1
+> accommodate 1
+> accomplishing 1
+> accountable 1
+> accounted 1
+> accurate 1
+> accusations 1
+> accused 1
+> accustoming 1
+> acheans 1
+> achieving 1
+> acknowledge 1
+> acquaintance 1
+> acquitted 1
+> acting 1
+> addicted 1
+> additions 1
+> address 1
+> addressed 1
+> addresses 1
+> addressing 1
+> adds 1
+> adjoining 1
+> adjust 1
+> adjusted 1
+> adjustment 1
+> administer 1
+> administering 1
+> admirably 1
+> admire 1
+> admission 1
+> adopt 1
+> adoption 1
+> adoptive 1
+> adorn 1
+> adultery 1
+> advancement 1
+> adversaries 1
+> adverse 1
+> advisable 1
+> advise 1
+> adviser 1
+> aeconomics 1
+> aenotria 1
+> aesumnetic 1
+> aethiopia 1
+> affectation 1
+> affects 1
+> affirms 1
+> afflicted 1
+> affords 1
+> afraid 1
+> afresh 1
+> africa 1
+> after-times 1
+> afterward 1
+> agamemnon 1
+> agent 1
+> agesilaus 1
+> aggregations 1
+> agitates 1
+> agreements 1
+> ailing 1
+> airs 1
+> ak 1
+> alacrity 1
+> alarmed 1
+> alcaeus 1
+> aldus 1
+> aleuadae 1
+> alithoe 1
+> allotments 1
+> allotting 1
+> allowable 1
+> allowance 1
+> alloy 1
+> along 1
+> alongside 1
+> altering 1
+> alternative 1
+> amadocus 1
+> amasis 1
+> ambassadors 1
+> ambractia 1
+> amend 1
+> amends 1
+> amintas 1
+> amiss 1
+> amity 1
+> amusements 1
+> analogically 1
+> analytics 1
+> anaxilaus 1
+> andpia 1
+> andronicus 1
+> andros 1
+> anew 1
+> angry 1
+> annexed 1
+> annihilate 1
+> annos 1
+> answerable 1
+> answers 1
+> antileos 1
+> antimenides 1
+> antisseans 1
+> antisthenes 1
+> apelt 1
+> aphutaeans 1
+> apollodorus 1
+> appearances 1
+> appeared 1
+> appendix 1
+> appertains 1
+> appolloniats 1
+> appreciate 1
+> appreciation 1
+> approbation 1
+> appropriate 1
+> approving 1
+> approximate 1
+> approximations 1
+> arable 1
+> arbiter 1
+> arbitration 1
+> archelaus 1
+> archias 1
+> archilaus 1
+> architas 1
+> archons 1
+> archytas 1
+> ardent 1
+> argo 1
+> arid 1
+> ariobarzanes 1
+> aristogiton 1
+> aristophanes 1
+> armies 1
+> around 1
+> array 1
+> arriving 1
+> artabanes 1
+> articles 1
+> artificial 1
+> artisan 1
+> as-is 1
+> ashamed 1
+> asiatics 1
+> aside 1
+> ask 1
+> asks 1
+> aspire 1
+> aspires 1
+> aspiring 1
+> assault 1
+> assessed 1
+> assigning 1
+> assistant 1
+> assisted 1
+> assists 1
+> associates 1
+> association 1
+> astrology 1
+> astyages 1
+> atarneus 1
+> athenian 1
+> atheniensium 1
+> athenientium 1
+> attach 1
+> attachment 1
+> attacking 1
+> attainable 1
+> attaining 1
+> attempted 1
+> attempting 1
+> attendant 1
+> attentions 1
+> attribute 1
+> attributes 1
+> aubert 1
+> ausonians 1
+> authorise 1
+> authorised 1
+> avoided 1
+> avoiding 1
+> awaken 1
+> away--you 1
+> babylon 1
+> babylonia 1
+> babylonians 1
+> bacchanal 1
+> bacchanals 1
+> bacchiades 1
+> backward 1
+> bain 1
+> ballot 1
+> bands 1
+> bane 1
+> banishes 1
+> bard 1
+> barren 1
+> barrier 1
+> basilides 1
+> basis 1
+> battles 1
+> be-these 1
+> beat 1
+> bed 1
+> befallen 1
+> befalling 1
+> befalls 1
+> beforehand 1
+> began 1
+> begets 1
+> beginnings 1
+> begins 1
+> begun 1
+> behaved 1
+> behaving 1
+> bekkers 1
+> believe 1
+> believes 1
+> bellies 1
+> belly 1
+> bench 1
+> bend 1
+> benefactors 1
+> beneficent 1
+> benefits 1
+> benevolence 1
+> bequeath 1
+> beside 1
+> best-formed 1
+> best-framed 1
+> best-governed 1
+> bestowing 1
+> bestows 1
+> betrothed 1
+> bibliography 1
+> bid 1
+> biehl 1
+> big 1
+> bigger 1
+> bill 1
+> bills 1
+> binary 1
+> blackie 1
+> blakesley 1
+> blamable 1
+> blass 1
+> blessing 1
+> blood 1
+> blow 1
+> blush 1
+> board 1
+> boast 1
+> boatswain 1
+> bold 1
+> boldness 1
+> bolland 1
+> bond 1
+> bonitz 1
+> borne 1
+> bounded 1
+> bowmen 1
+> branch 1
+> brandis 1
+> bravely 1
+> bread 1
+> breaks 1
+> breath 1
+> breathe 1
+> bred 1
+> breed 1
+> breeding 1
+> brewer 1
+> bribed 1
+> bribery 1
+> bribes 1
+> bride 1
+> bridegroom 1
+> bridgman 1
+> brief 1
+> brightness 1
+> brooked 1
+> brutal 1
+> buffoon 1
+> builds 1
+> bulk 1
+> bulwarks 1
+> burgh 1
+> burnet 1
+> busied 1
+> businesspglaforg 1
+> butcher 1
+> calchis 1
+> calld 1
+> camelot 1
+> camicus 1
+> campaigns 1
+> canvassed 1
+> capital 1
+> capricious 1
+> card 1
+> careless 1
+> cares 1
+> carpenter 1
+> carpenters 1
+> carriage 1
+> catanean 1
+> caused 1
+> celebrated 1
+> censurable 1
+> censures 1
+> censuring 1
+> centre 1
+> certainty 1
+> chalcas 1
+> chalcedonian 1
+> chalcis 1
+> chance-medley 1
+> chapters 1
+> characterises 1
+> characteristic 1
+> characteristics 1
+> charicles 1
+> charilauss 1
+> charilles 1
+> charitable 1
+> charities 1
+> chase 1
+> chattels 1
+> checks 1
+> chians 1
+> child-birth 1
+> childish 1
+> childless 1
+> children--reading 1
+> choregi 1
+> chorus 1
+> chronology 1
+> chytrum 1
+> cinadon 1
+> circle 1
+> circumvented 1
+> cisterns 1
+> citizen-maker 1
+> citizens--who 1
+> city-for 1
+> city-gate 1
+> city-guard 1
+> city-slaves 1
+> clash 1
+> clazomene 1
+> cleander 1
+> clearer 1
+> cleomenes 1
+> cleotimus 1
+> cloth 1
+> cloth-making 1
+> clothe 1
+> clothing 1
+> co 1
+> co-operation 1
+> coarse 1
+> coat 1
+> codes 1
+> codrus 1
+> coffers 1
+> colophon 1
+> colophonians 1
+> columns 1
+> combine 1
+> combined 1
+> comedies 1
+> comforts 1
+> comic 1
+> comitia 1
+> commander 1
+> commanders 1
+> commences 1
+> commended 1
+> commends 1
+> commission 1
+> commissioners 1
+> commit 1
+> commodious 1
+> commodities 1
+> commodity 1
+> communication 1
+> communion 1
+> communitys 1
+> companions 1
+> comparative 1
+> compassionate 1
+> compatible 1
+> compelling 1
+> compels 1
+> compilation 1
+> complain 1
+> complains 1
+> complaint 1
+> complement 1
+> completed 1
+> completion 1
+> complex 1
+> complexion 1
+> component 1
+> composing 1
+> comprehended 1
+> compressed 1
+> compression 1
+> compromises 1
+> conceives 1
+> concord 1
+> concrete 1
+> concurs 1
+> condemn 1
+> conditions 1
+> conduce 1
+> conduces 1
+> conducting 1
+> confessedly 1
+> confirmation 1
+> confirming 1
+> confiscate 1
+> confiscating 1
+> confiscation 1
+> conformity 1
+> conjectures 1
+> conjunct 1
+> conjunction 1
+> conjuncture 1
+> connecting 1
+> conquests 1
+> consanguinity 1
+> consentaneous 1
+> consequential 1
+> considerably 1
+> conspicuous 1
+> constitution-it 1
+> construction 1
+> consummated 1
+> contained 1
+> containing 1
+> contented 1
+> contention 1
+> contiguous 1
+> continent 1
+> continuation 1
+> continuity 1
+> contradictory 1
+> contrariwise 1
+> contrivances 1
+> conveniences 1
+> converse 1
+> convert 1
+> convey 1
+> conveyance 1
+> conveyed 1
+> convinces 1
+> cook 1
+> cope 1
+> corinthian 1
+> corn-meters 1
+> corporal 1
+> corporation 1
+> corporeal 1
+> corrections 1
+> corresponding 1
+> corrupting 1
+> counsel 1
+> counselors 1
+> counsels 1
+> countenance 1
+> counterpart 1
+> couple 1
+> covenant 1
+> cows 1
+> craftily 1
+> creates 1
+> creditable 1
+> creswell 1
+> crichton 1
+> crime 1
+> criminal 1
+> crimmin 1
+> criticises 1
+> criticisms 1
+> crooked 1
+> crop 1
+> crown 1
+> cubits 1
+> cultivating 1
+> cuma 1
+> cume 1
+> cup 1
+> cups 1
+> curiously 1
+> current 1
+> curry 1
+> custody 1
+> cyposelidse 1
+> cyprian 1
+> cypselidse 1
+> dacier 1
+> dadaluss 1
+> daedalus 1
+> damaged 1
+> damagesexcept 1
+> dancers 1
+> dancing 1
+> daphnseus 1
+> darda 1
+> dare 1
+> dares 1
+> darius 1
+> data 1
+> daughters 1
+> davidson 1
+> davis 1
+> dead 1
+> dealers 1
+> dealings 1
+> dear 1
+> dearest 1
+> debasing 1
+> debate 1
+> debating 1
+> decamnichus 1
+> decay 1
+> deceiving 1
+> december 1
+> declaration 1
+> declarations 1
+> declared 1
+> declaring 1
+> declinations 1
+> declined 1
+> decorum 1
+> decrease 1
+> decreases 1
+> decreasing 1
+> dedicated 1
+> deductible 1
+> deeds 1
+> deemed 1
+> deep-seated 1
+> defended 1
+> defensive 1
+> defined 1
+> defines 1
+> deform 1
+> deforming 1
+> defrauded 1
+> degenerated 1
+> deity 1
+> deletions 1
+> deliberately 1
+> deliberation 1
+> delphi 1
+> delphic 1
+> demanded 1
+> demonax 1
+> denies 1
+> dent 1
+> depart 1
+> dependence 1
+> depending 1
+> deprave 1
+> depraved 1
+> deputing 1
+> derive 1
+> derives 1
+> descending 1
+> describes 1
+> deserts 1
+> deserved 1
+> deserves 1
+> deserving 1
+> despair 1
+> despicable 1
+> despite 1
+> despotical 1
+> destroying 1
+> detach 1
+> detached 1
+> details 1
+> detect 1
+> detection 1
+> determination 1
+> determines 1
+> dethrone 1
+> dethroned 1
+> deviations 1
+> device 1
+> devolved 1
+> devolves 1
+> devoted 1
+> devotions 1
+> devour 1
+> devoured 1
+> diagoras 1
+> diametrically 1
+> didot 1
+> dies 1
+> differed 1
+> digression 1
+> diminish 1
+> diminutive 1
+> diocles 1
+> diodes 1
+> diophantus 1
+> dip 1
+> director 1
+> disadvantage 1
+> disagreeable 1
+> disapproved 1
+> discarded 1
+> discern 1
+> discharge 1
+> disclaim 1
+> disclaimers 1
+> discommends 1
+> discontinue 1
+> discord 1
+> discords 1
+> discover 1
+> discretionary 1
+> discusses 1
+> disdain 1
+> disease 1
+> diseased 1
+> disgraced 1
+> disgracing 1
+> disgust 1
+> dishonesty 1
+> dishonour 1
+> dishonourable 1
+> disk 1
+> disliked 1
+> disobeying 1
+> disorderly 1
+> disorders 1
+> dispassionate 1
+> dispirited 1
+> display 1
+> displayed 1
+> disposal 1
+> dispose 1
+> disproportionally 1
+> disputed 1
+> disquisition 1
+> disregard 1
+> disregarded 1
+> disreputable 1
+> disserviceable 1
+> dissimilar 1
+> dissimilarity 1
+> distances 1
+> distempers 1
+> distinctly 1
+> distorted 1
+> distributive 1
+> distributively 1
+> distributor 1
+> distrust 1
+> distrusts 1
+> disturb 1
+> disturbances 1
+> disturbs 1
+> dittmeyer 1
+> divides 1
+> divine 1
+> docks 1
+> doctrine 1
+> donation 1
+> donors 1
+> dont 1
+> downloading 1
+> doxander 1
+> drachmas 1
+> draco 1
+> dracos 1
+> dragging 1
+> dreaded 1
+> drives 1
+> drop 1
+> dropped 1
+> drove 1
+> drunken 1
+> dry 1
+> ductility 1
+> dug 1
+> dulcimer 1
+> duly 1
+> durable 1
+> duties 1
+> dutton 1
+> dying 1
+> dymes 1
+> dynastic 1
+> e-mail 1
+> earlier 1
+> earn 1
+> eases 1
+> easiest 1
+> eatable 1
+> eating 1
+> ed 1
+> edicts 1
+> editorship 1
+> educating 1
+> education--for 1
+> eets 1
+> effeminacy 1
+> efficients 1
+> eight 1
+> ein 1
+> elders 1
+> eldest 1
+> elegancies 1
+> elegantly 1
+> element 1
+> elementary 1
+> elevated 1
+> eleven 1
+> eleventh 1
+> elis 1
+> eloquence 1
+> elsewhere 1
+> embassy 1
+> embellished 1
+> embody 1
+> eminences 1
+> emolument 1
+> emotions 1
+> empire 1
+> empiricism 1
+> employee 1
+> employing 1
+> enacted 1
+> encircles 1
+> enclose 1
+> encroach 1
+> encroaches 1
+> endowments 1
+> energic 1
+> energies 1
+> energy 1
+> enforce 1
+> engagement 1
+> engagements 1
+> engages 1
+> enjoined 1
+> enjoyments 1
+> enlarge 1
+> enlarged--others 1
+> enlisted 1
+> enmities 1
+> enormity 1
+> enquire 1
+> enroll 1
+> enslave 1
+> ensues 1
+> ensured 1
+> entertaining 1
+> enthusiastic 1
+> entrance 1
+> entrusts 1
+> enuring 1
+> environment 1
+> epidamnum 1
+> epimenides 1
+> equalities 1
+> equivocation 1
+> erasmus 1
+> eretria 1
+> eretrians 1
+> erithria 1
+> erotics 1
+> erroneous 1
+> error 1
+> errors 1
+> escape 1
+> escaped 1
+> essentially 1
+> establishes 1
+> establishing 1
+> estimate 1
+> estimated 1
+> estimation 1
+> et 1
+> eternal 1
+> ethiopia 1
+> eubulus 1
+> eunomia 1
+> eunuch 1
+> euruphon 1
+> eurytion 1
+> euthucrates 1
+> euxine 1
+> evagoras 1
+> everymans 1
+> evinces 1
+> exactness 1
+> exalted 1
+> examples 1
+> excelled 1
+> excellences 1
+> excellencies 1
+> excellently 1
+> excelling 1
+> exceptions 1
+> exchange-mob 1
+> exchanges 1
+> exchanging 1
+> exchequer 1
+> exclude 1
+> exclusion 1
+> exclusive 1
+> excuse 1
+> exempted 1
+> exercise-and 1
+> exertion 1
+> exhibited 1
+> exhortations 1
+> exiles 1
+> existed 1
+> exoteric 1
+> expects 1
+> expend 1
+> expenditures 1
+> expiation 1
+> exploited 1
+> export 1
+> exports 1
+> exposing 1
+> expressing 1
+> expressions 1
+> extant 1
+> extol 1
+> extolling 1
+> extremities 1
+> extremity 1
+> exuberance 1
+> fabric 1
+> fabulous 1
+> facility 1
+> facsimile 1
+> factions 1
+> factious 1
+> fairbanks 1
+> fairly 1
+> faithful 1
+> fallacies 1
+> fallen 1
+> falsity 1
+> familiar 1
+> familiarity 1
+> family-meetings 1
+> farm 1
+> farthing 1
+> fascinate 1
+> fashion 1
+> fatal 1
+> faulty 1
+> favourably 1
+> favouring 1
+> favours 1
+> feared 1
+> fearful 1
+> feast 1
+> feature 1
+> feed 1
+> felicity 1
+> fellow 1
+> fellow-magistrates 1
+> festal 1
+> festival 1
+> fiddlers 1
+> fields 1
+> fifthly 1
+> fifty-eight 1
+> filling 1
+> financial 1
+> finer 1
+> finger 1
+> firmly 1
+> firmness 1
+> fish 1
+> fitness 1
+> fitting 1
+> fivefold 1
+> fixing 1
+> flagitious 1
+> flat 1
+> flattering 1
+> fleet 1
+> flew 1
+> flocks 1
+> flourish 1
+> flourished 1
+> fluctuate 1
+> flute-makers 1
+> flutes 1
+> fond 1
+> footing 1
+> forbearance 1
+> forbidding 1
+> forgot 1
+> forgotten 1
+> formect 1
+> forming 1
+> forsakes 1
+> fortifications 1
+> forty-four 1
+> forum 1
+> foul 1
+> foulness 1
+> fountains 1
+> four-fold 1
+> fourthly 1
+> fowlers 1
+> framers 1
+> frames 1
+> framework 1
+> fraternities 1
+> free-born 1
+> freeborn 1
+> freed 1
+> freedmen 1
+> freight 1
+> fresh 1
+> friendships 1
+> fronts 1
+> fulfil 1
+> fund 1
+> furlongs 1
+> furnishing 1
+> galleys 1
+> gaster 1
+> gates 1
+> gathering 1
+> gauls 1
+> gbnewbypglaforg 1
+> gela 1
+> gelons 1
+> gelos 1
+> generalship 1
+> generosity 1
+> geometricians 1
+> geometry 1
+> gifts 1
+> glad 1
+> gladly 1
+> glorious 1
+> gluttonous 1
+> goals 1
+> goddess 1
+> golden 1
+> gorgias 1
+> gortyna 1
+> government--for 1
+> graceful 1
+> gradually 1
+> grandfather 1
+> granting 1
+> grasp 1
+> gratefully 1
+> great-grandfather 1
+> grecian 1
+> greedy 1
+> gregory 1
+> grievously 1
+> gross 1
+> grote 1
+> group 1
+> growing 1
+> growth--as 1
+> grynaeus 1
+> guide 1
+> guides 1
+> guilt 1
+> gulf 1
+> gutenberg-tms 1
+> habitable 1
+> habitation 1
+> hall 1
+> halter 1
+> hamilton 1
+> handbook 1
+> handicraftsmen 1
+> handle 1
+> handsome 1
+> handsomer 1
+> hanged 1
+> haphazard 1
+> harassed 1
+> harder 1
+> hardships 1
+> hardy 1
+> hares 1
+> harmodiuss 1
+> harmonious 1
+> harp 1
+> harsh 1
+> hastily 1
+> hath 1
+> hating 1
+> haughtily 1
+> haughty 1
+> hazard 1
+> hazardous 1
+> headed 1
+> headstrong 1
+3335,3336d4360
+< headstrong 1
+< headed 1
+3339,3343d4362
+< hazardous 1
+< hazard 1
+< venality 1
+< veneration 1
+< haughty 1
+3345d4363
+< haughtily 1
+3347,3348d4364
+< hating 1
+< hath 1
+3351,3352d4366
+< hastily 1
+< venice 1
+3354,3355d4367
+< harsh 1
+< harp 1
+3357d4368
+< harmonious 1
+3359d4369
+< harmodiuss 1
+3361,3364d4370
+< vases 1
+< hares 1
+< hardy 1
+< hardships 1
+3366d4371
+< harder 1
+3369,3370d4373
+< harassed 1
+< venus 1
+3376,3384d4378
+< very-useful 1
+< haphazard 1
+< hanged 1
+< handsomer 1
+< handsome 1
+< vessel 1
+< handle 1
+< handicraftsmen 1
+< handbook 1
+3387,3389d4380
+< hamilton 1
+< halter 1
+< hall 1
+3391d4381
+< variously 1
+3394,3395d4383
+< habitation 1
+< habitable 1
+3399d4386
+< gutenberg-tms 1
+3402d4388
+< gulf 1
+3404,3405d4389
+< guilt 1
+< guides 1
+3407d4390
+< guide 1
+3414,3415d4396
+< grynaeus 1
+< growth--as 1
+3418,3419d4398
+< varieties 1
+< growing 1
+3421d4399
+< group 1
+3424,3426d4401
+< grote 1
+< gross 1
+< grievously 1
+3429d4403
+< gregory 1
+3431,3432d4404
+< varies 1
+< greedy 1
+3435d4406
+< grecian 1
+3438d4408
+< great-grandfather 1
+3440,3441d4409
+< victims 1
+< victor 1
+3443,3445d4410
+< gratefully 1
+< grasp 1
+< granting 1
+3448,3450d4412
+< grandfather 1
+< gradually 1
+< graceful 1
+3454,3455d4415
+< victories 1
+< government--for 1
+3459d4418
+< viewed 1
+3461,3465d4419
+< gortyna 1
+< gorgias 1
+< viewing 1
+< husbandmans 1
+< variation 1
+3467c4421
+< golden 1
+---
+> husbandmans 1
+3471,3472d4424
+< vigorous 1
+< goddess 1
+3474d4425
+< goals 1
+3476d4426
+< gluttonous 1
+3478,3480d4427
+< glorious 1
+< gladly 1
+< glad 1
+3484d4430
+< vile 1
+3486d4431
+< gifts 1
+3490c4435
+< van 1
+---
+> ill-treatment 1
+3492,3493d4436
+< geometry 1
+< geometricians 1
+3495d4437
+< ill-treatment 1
+3499d4440
+< generosity 1
+3501d4441
+< generalship 1
+3506,3507d4445
+< gelos 1
+< gelons 1
+3510,3511d4447
+< gela 1
+< gbnewbypglaforg 1
+3513,3516d4448
+< gauls 1
+< gathering 1
+< gates 1
+< gaster 1
+3518d4449
+< galleys 1
+3526d4456
+< furnishing 1
+3529,3530d4458
+< furlongs 1
+< fund 1
+3533d4460
+< fulfil 1
+3536,3538d4462
+< fronts 1
+< villains 1
+< friendships 1
+3542d4465
+< fresh 1
+3544d4466
+< zancleans 1
+3546d4467
+< freight 1
+3548d4468
+< vines 1
+3551,3555d4470
+< violates 1
+< freedmen 1
+< freed 1
+< free-born 1
+< freeborn 1
+3558d4472
+< fraternities 1
+3560,3562d4473
+< framework 1
+< frames 1
+< framers 1
+3565,3566d4475
+< fowlers 1
+< fourthly 1
+3568d4476
+< four-fold 1
+3570d4477
+< fountains 1
+3574d4480
+< violently 1
+3576,3579d4481
+< virtuously 1
+< virtutibus 1
+< foulness 1
+< foul 1
+3581,3582d4482
+< forum 1
+< forty-four 1
+3584d4483
+< virus 1
+3587d4485
+< fortifications 1
+3589d4486
+< forsakes 1
+3591d4487
+< forming 1
+3593d4488
+< vitiis 1
+3596d4490
+< formect 1
+3599d4492
+< valid 1
+3601,3602d4493
+< forgotten 1
+< forgot 1
+3608d4498
+< valiant 1
+3610d4499
+< voices 1
+3612d4500
+< forbidding 1
+3615d4502
+< forbearance 1
+3617,3618d4503
+< void 1
+< footing 1
+3621,3622d4505
+< fond 1
+< vol 1
+3626,3627d4508
+< flutes 1
+< flute-makers 1
+3629d4509
+< fluctuate 1
+3632,3634d4511
+< flourished 1
+< flourish 1
+< flocks 1
+3636d4512
+< flew 1
+3638,3639d4513
+< fleet 1
+< flattering 1
+3644,3647d4517
+< flat 1
+< flagitious 1
+< fixing 1
+< vahlen 1
+3649d4518
+< fivefold 1
+3651d4519
+< fitting 1
+3654d4521
+< fitness 1
+3659d4525
+< fish 1
+3661,3662d4526
+< firmness 1
+< firmly 1
+3666,3668d4529
+< finger 1
+< vacant 1
+< finer 1
+3672,3673d4532
+< volunteer 1
+< financial 1
+3678d4536
+< filling 1
+3684,3686d4541
+< fifty-eight 1
+< interesting 1
+< fifthly 1
+3687a4543
+> interesting 1
+3690d4545
+< fields 1
+3693d4547
+< fiddlers 1
+3696,3697d4549
+< festival 1
+< festal 1
+3700d4551
+< fellow-magistrates 1
+3702,3704d4552
+< fellow 1
+< vacancy 1
+< felicity 1
+3708d4555
+< feed 1
+3711,3712d4557
+< feature 1
+< feast 1
+3714,3715d4558
+< fearful 1
+< feared 1
+3717,3718d4559
+< favours 1
+< favouring 1
+3720d4560
+< favourably 1
+3723d4562
+< faulty 1
+3728,3731d4566
+< fatal 1
+< fashion 1
+< fascinate 1
+< farthing 1
+3733,3735d4567
+< farm 1
+< voting 1
+< family-meetings 1
+3737,3740d4568
+< vulcan 1
+< familiarity 1
+< familiar 1
+< falsity 1
+3743d4570
+< fallen 1
+3745d4571
+< fallacies 1
+3747,3749d4572
+< faithful 1
+< fairly 1
+< fairbanks 1
+3755,3756d4577
+< factious 1
+< factions 1
+3758,3762d4578
+< facsimile 1
+< facility 1
+< italians 1
+< fabulous 1
+< fabric 1
+3764,3765c4580
+< utter 1
+< utopia 1
+---
+> italians 1
+3767,3769d4581
+< exuberance 1
+< extremity 1
+< extremities 1
+3773,3774d4584
+< extolling 1
+< extol 1
+3781,3782d4590
+< extant 1
+< ut 1
+3784d4591
+< expressions 1
+3786d4592
+< expressing 1
+3790d4595
+< exposing 1
+3792d4596
+< exports 1
+3794,3795d4597
+< export 1
+< exploited 1
+3799d4600
+< usufruct 1
+3801d4601
+< expiation 1
+3805d4604
+< urged 1
+3808,3809d4606
+< expenditures 1
+< expend 1
+3813d4609
+< expects 1
+3817d4612
+< exoteric 1
+3820,3821d4614
+< urge 1
+< existed 1
+3823d4615
+< exiles 1
+3825,3828d4616
+< exhortations 1
+< exhibited 1
+< upper 1
+< exertion 1
+3832d4619
+< exercise-and 1
+3834,3836d4620
+< exempted 1
+< lawless 1
+< upbraids 1
+3837a4622
+> lawless 1
+3841,3843d4625
+< excuse 1
+< exclusive 1
+< exclusion 1
+3845,3846d4626
+< exclude 1
+< unwritten 1
+3848,3851d4627
+< exchequer 1
+< exchanging 1
+< exchanges 1
+< exchange-mob 1
+3857,3858d4632
+< unworthily 1
+< exceptions 1
+3863,3867d4636
+< excelling 1
+< excellently 1
+< vultures 1
+< excellencies 1
+< excellences 1
+3869d4637
+< excelled 1
+3871d4638
+< unwieldy 1
+3874d4640
+< examples 1
+3879,3880d4644
+< exalted 1
+< exactness 1
+3883d4646
+< evinces 1
+3885d4647
+< unspeakable 1
+3887d4648
+< unsolicited 1
+3889,3892d4649
+< unredeemed 1
+< everymans 1
+< waiting 1
+< waitz 1
+3895,3900d4651
+< walford 1
+< evagoras 1
+< euxine 1
+< euthucrates 1
+< eurytion 1
+< euruphon 1
+3903,3906d4653
+< eunuch 1
+< eunomia 1
+< eubulus 1
+< ethiopia 1
+3909,3916d4655
+< unqualified 1
+< eternal 1
+< unprovided 1
+< et 1
+< estimation 1
+< estimated 1
+< estimate 1
+< unperceivably 1
+3921,3923d4659
+< establishing 1
+< establishes 1
+< walks 1
+3925d4660
+< essentially 1
+3930,3934d4664
+< escaped 1
+< escape 1
+< errors 1
+< error 1
+< erroneous 1
+3936,3937d4665
+< erotics 1
+< erithria 1
+3939,3940d4666
+< eretrians 1
+< eretria 1
+3943,3944d4668
+< erasmus 1
+< equivocation 1
+3948,3949d4671
+< walls--but 1
+< equalities 1
+3951d4672
+< epimenides 1
+3953d4673
+< epidamnum 1
+3957,3958d4676
+< environment 1
+< enuring 1
+3961,3962d4678
+< unmodified 1
+< entrusts 1
+3964,3966d4679
+< unmixed 1
+< entrance 1
+< unlucky 1
+3969d4681
+< enthusiastic 1
+3973d4684
+< entertaining 1
+3979,3983d4689
+< unlink 1
+< ensured 1
+< unlike 1
+< ensues 1
+< enslave 1
+3985,3986d4690
+< enroll 1
+< enquire 1
+3988,3992d4691
+< enormity 1
+< unlawful 1
+< enmities 1
+< enlisted 1
+< enlarged--others 1
+3994,3996d4692
+< enlarge 1
+< unknown 1
+< enjoyments 1
+4001d4696
+< enjoined 1
+4004,4006d4698
+< engages 1
+< engagements 1
+< engagement 1
+4009,4012d4700
+< enforce 1
+< energy 1
+< energies 1
+< energic 1
+4017d4704
+< endowments 1
+4023d4709
+< war-like 1
+4026,4027d4711
+< encroaches 1
+< encroach 1
+4029,4031d4712
+< enclose 1
+< encircles 1
+< enacted 1
+4035d4715
+< uninterrupted 1
+4037,4039d4716
+< warm 1
+< warp 1
+< employing 1
+4041d4717
+< employee 1
+4044,4047d4719
+< empiricism 1
+< empire 1
+< emotions 1
+< emolument 1
+4050d4721
+< eminences 1
+4053,4056d4723
+< embody 1
+< embellished 1
+< embassy 1
+< e-mail 1
+4058,4060d4724
+< elsewhere 1
+< warriors 1
+< eloquence 1
+4062d4725
+< elis 1
+4064,4073d4726
+< eleventh 1
+< eleven 1
+< elevated 1
+< unintelligible 1
+< elementary 1
+< element 1
+< elegantly 1
+< uniformly 1
+< elegancies 1
+< uniform 1
+4081d4733
+< washes 1
+4083,4084d4734
+< eldest 1
+< elders 1
+4087,4088d4736
+< waste 1
+< ein 1
+4091,4092d4738
+< eight 1
+< unfair 1
+4095d4740
+< efficients 1
+4098d4742
+< effeminacy 1
+4102d4745
+< eets 1
+4104d4746
+< education--for 1
+4107d4748
+< educating 1
+4110d4750
+< editorship 1
+4115,4116d4754
+< edicts 1
+< ed 1
+4121,4123d4758
+< eating 1
+< eatable 1
+< unexpected 1
+4127d4761
+< easiest 1
+4129d4762
+< eases 1
+4132d4764
+< unequals 1
+4135d4766
+< earn 1
+4137d4767
+< earlier 1
+4141,4142d4770
+< waver 1
+< unequally 1
+4146,4149d4773
+< dynastic 1
+< dymes 1
+< dying 1
+< unenforceability 1
+4151,4152d4774
+< dutton 1
+< duties 1
+4155,4158d4776
+< durable 1
+< duly 1
+< dulcimer 1
+< dug 1
+4160,4161d4777
+< ductility 1
+< dry 1
+4163d4778
+< drunken 1
+4166,4169d4780
+< drove 1
+< dropped 1
+< drop 1
+< drives 1
+4171d4781
+< unduly 1
+4173,4174d4782
+< undue 1
+< dreaded 1
+4177,4180d4784
+< dragging 1
+< dracos 1
+< draco 1
+< drachmas 1
+4182,4185d4785
+< doxander 1
+< downloading 1
+< weaken 1
+< undistinguishable 1
+4187,4188d4786
+< undertakes 1
+< weakened 1
+4191,4193d4788
+< dont 1
+< donors 1
+< weakness 1
+4195d4789
+< donation 1
+4197d4790
+< undertaken 1
+4199d4791
+< undertake 1
+4203d4794
+< doctrine 1
+4205,4206d4795
+< docks 1
+< understands 1
+4209d4797
+< divine 1
+4211d4798
+< divides 1
+4214,4224d4800
+< dittmeyer 1
+< undermined 1
+< disturbs 1
+< disturbances 1
+< undermine 1
+< disturb 1
+< distrusts 1
+< distrust 1
+< distributor 1
+< distributively 1
+< distributive 1
+4229d4804
+< distorted 1
+4232,4233d4806
+< distinctly 1
+< uncorrupt 1
+4235,4236d4807
+< unconsidered 1
+< distempers 1
+4238d4808
+< distances 1
+4243,4245d4812
+< dissimilarity 1
+< dissimilar 1
+< disserviceable 1
+4248,4251d4814
+< disreputable 1
+< disregarded 1
+< disregard 1
+< disquisition 1
+4253,4257d4815
+< disputed 1
+< weapons 1
+< unchanging 1
+< disproportionally 1
+< unblemished 1
+4260,4261d4817
+< dispose 1
+< disposal 1
+4263,4266d4818
+< unbecoming 1
+< displayed 1
+< display 1
+< dispirited 1
+4268,4279d4819
+< dispassionate 1
+< disorders 1
+< disorderly 1
+< unanimous 1
+< disobeying 1
+< disliked 1
+< disk 1
+< dishonourable 1
+< dishonour 1
+< dishonesty 1
+< disgust 1
+< disgracing 1
+4281d4820
+< disgraced 1
+4283,4288c4822
+< notaries 1
+< diseased 1
+< disease 1
+< disdain 1
+< discusses 1
+< discretionary 1
+---
+> notaries 1
+4291d4824
+< discover 1
+4294,4298d4826
+< discords 1
+< discord 1
+< discontinue 1
+< discommends 1
+< disclaimers 1
+4300,4307d4827
+< disclaim 1
+< ulysses 1
+< ultimately 1
+< discharge 1
+< ultimate 1
+< discern 1
+< discarded 1
+< disapproved 1
+4310,4315d4829
+< disagreeable 1
+< uberweg 1
+< tyrtaeus 1
+< disadvantage 1
+< tyrrhenians 1
+< director 1
+4321,4322d4834
+< dip 1
+< diophantus 1
+4325,4329d4836
+< diodes 1
+< diocles 1
+< diminutive 1
+< diminish 1
+< digression 1
+4332,4333d4838
+< tyrrhenian 1
+< weather 1
+4337d4841
+< weave 1
+4339,4340d4842
+< weaver 1
+< differed 1
+4343d4844
+< dies 1
+4346,4347d4846
+< didot 1
+< weaving 1
+4349d4847
+< diametrically 1
+4351,4359d4848
+< diagoras 1
+< devoured 1
+< devour 1
+< devotions 1
+< devoted 1
+< devolves 1
+< devolved 1
+< device 1
+< deviations 1
+4361,4363d4849
+< dethroned 1
+< dethrone 1
+< types 1
+4366d4851
+< determines 1
+4368d4852
+< txt 1
+4370d4853
+< determination 1
+4372d4854
+< detection 1
+4374,4377d4855
+< detect 1
+< details 1
+< detached 1
+< detach 1
+4380,4383d4857
+< twining 1
+< destroying 1
+< wedding 1
+< one-and-twenty 1
+4385,4386c4859
+< twelve 1
+< despotical 1
+---
+> one-and-twenty 1
+4388d4860
+< despite 1
+4392,4394d4863
+< despicable 1
+< despair 1
+< weighed 1
+4398d4866
+< weighing 1
+4400d4867
+< tutelar 1
+4402,4404d4868
+< deserving 1
+< deserves 1
+< deserved 1
+4406d4869
+< deserts 1
+4409d4871
+< describes 1
+4413d4874
+< descending 1
+4416d4876
+< derives 1
+4418d4877
+< derive 1
+4420d4878
+< deputing 1
+4424,4430d4881
+< depraved 1
+< deprave 1
+< turning 1
+< tunes 1
+< depending 1
+< tucker 1
+< dependence 1
+4432a4884
+> over-greedy 1
+4436,4439d4887
+< depart 1
+< dent 1
+< denies 1
+< demonax 1
+4441d4888
+< over-greedy 1
+4446d4892
+< demanded 1
+4448d4893
+< well-being 1
+4451,4452d4895
+< delphic 1
+< delphi 1
+4457,4459d4899
+< truths 1
+< deliberation 1
+< deliberately 1
+4461d4900
+< deletions 1
+4464d4902
+< deity 1
+4466d4903
+< well-constituted 1
+4468d4904
+< degenerated 1
+4472,4474d4907
+< defrauded 1
+< deforming 1
+< deform 1
+4476,4477d4908
+< defines 1
+< defined 1
+4482d4912
+< defensive 1
+4484d4913
+< defended 1
+4490,4494d4918
+< deep-seated 1
+< deemed 1
+< deeds 1
+< deductible 1
+< dedicated 1
+4496,4500d4919
+< decreasing 1
+< decreases 1
+< decrease 1
+< decorum 1
+< declined 1
+4502,4506d4920
+< declinations 1
+< declaring 1
+< declared 1
+< declarations 1
+< declaration 1
+4510,4511d4923
+< december 1
+< deceiving 1
+4515,4517d4926
+< decay 1
+< decamnichus 1
+< debating 1
+4519,4524d4927
+< debate 1
+< debasing 1
+< troubles 1
+< dearest 1
+< dear 1
+< dealings 1
+4526d4928
+< dealers 1
+4528d4929
+< dead 1
+4532,4534d4932
+< davis 1
+< davidson 1
+< daughters 1
+4537,4542d4934
+< data 1
+< darius 1
+< dares 1
+< dare 1
+< darda 1
+< daphnseus 1
+4546,4548d4937
+< dancing 1
+< dancers 1
+< damagesexcept 1
+4550d4938
+< damaged 1
+4553,4555d4940
+< daedalus 1
+< dadaluss 1
+< dacier 1
+4560,4562d4944
+< cypselidse 1
+< cyprian 1
+< cyposelidse 1
+4566,4569d4947
+< custody 1
+< curry 1
+< current 1
+< curiously 1
+4572,4576d4949
+< cups 1
+< cup 1
+< cume 1
+< cuma 1
+< cultivating 1
+4579d4951
+< cubits 1
+4581,4584d4952
+< crown 1
+< crop 1
+< crooked 1
+< criticisms 1
+4586d4953
+< criticises 1
+4589,4590d4955
+< crimmin 1
+< criminal 1
+4592,4593d4956
+< crime 1
+< crichton 1
+4598,4599d4960
+< creswell 1
+< creditable 1
+4604d4964
+< creates 1
+4606d4965
+< triremes 1
+4608,4610d4966
+< craftily 1
+< cows 1
+< tripods 1
+4612d4967
+< covenant 1
+4617,4619d4971
+< well-formed 1
+< couple 1
+< well-governed 1
+4621,4624d4972
+< counterpart 1
+< countenance 1
+< counsels 1
+< counselors 1
+4626d4973
+< counsel 1
+4628d4974
+< well-governing 1
+4634d4979
+< corrupting 1
+4638d4982
+< corresponding 1
+4642d4985
+< corrections 1
+4646,4649d4988
+< corporeal 1
+< corporation 1
+< corporal 1
+< corn-meters 1
+4651d4989
+< corinthian 1
+4658,4659d4995
+< cope 1
+< co-operation 1
+4661,4662d4996
+< cook 1
+< convinces 1
+4665,4669d4998
+< conveyed 1
+< conveyance 1
+< convey 1
+< convert 1
+< converse 1
+4673d5001
+< conveniences 1
+4675d5002
+< triopium 1
+4677d5003
+< contrivances 1
+4681d5006
+< trifles 1
+4683,4686d5007
+< well-instructed 1
+< contrariwise 1
+< trierarchs 1
+< contradictory 1
+4689,4690d5009
+< tried 1
+< continuity 1
+4695d5013
+< continuation 1
+4699,4703d5016
+< continent 1
+< contiguous 1
+< contention 1
+< contented 1
+< tribute 1
+4708,4709d5020
+< containing 1
+< contained 1
+4712d5022
+< consummated 1
+4716d5025
+< construction 1
+4719,4720d5027
+< constitution-it 1
+< trial 1
+4722d5028
+< trespasses 1
+4727,4728d5032
+< trendelenburg 1
+< treats 1
+4730d5033
+< conspicuous 1
+4742d5044
+< considerably 1
+4745d5046
+< consequential 1
+4748d5048
+< consentaneous 1
+4751,4752d5050
+< consanguinity 1
+< conquests 1
+4759d5056
+< connecting 1
+4761,4764d5057
+< conjuncture 1
+< conjunction 1
+< conjunct 1
+< conjectures 1
+4766,4775c5059,5061
+< pretext 1
+< conformity 1
+< prevailed 1
+< prevailing 1
+< confiscation 1
+< confiscating 1
+< confiscate 1
+< confirming 1
+< treasury 1
+< confirmation 1
+---
+> pretext 1
+> prevailed 1
+> prevailing 1
+4779d5064
+< confessedly 1
+4783d5067
+< conducting 1
+4787,4791d5070
+< conduces 1
+< conduce 1
+< conditions 1
+< treasurers 1
+< translators 1
+4794,4798d5072
+< condemn 1
+< concurs 1
+< concrete 1
+< concord 1
+< translated 1
+4807d5080
+< conceives 1
+4814,4816d5086
+< compromises 1
+< compression 1
+< compressed 1
+4819d5088
+< comprehended 1
+4823d5091
+< composing 1
+4826,4827d5093
+< transcription 1
+< component 1
+4831,4833d5096
+< complexion 1
+< complex 1
+< completion 1
+4835d5097
+< completed 1
+4837d5098
+< complement 1
+4839,4849d5099
+< complaint 1
+< complains 1
+< complain 1
+< compilation 1
+< compels 1
+< compelling 1
+< transcribe 1
+< transcendent 1
+< compatible 1
+< compassionate 1
+< transcended 1
+4852d5101
+< comparative 1
+4854d5102
+< companions 1
+4858d5105
+< communitys 1
+4861,4862d5107
+< communion 1
+< communication 1
+4869,4872d5113
+< whereon 1
+< commodity 1
+< commodities 1
+< commodious 1
+4874,4876d5114
+< commit 1
+< commissioners 1
+< commission 1
+4879,4880d5116
+< commends 1
+< commended 1
+4882d5117
+< tranquil 1
+4884d5118
+< commences 1
+4888d5121
+< commanders 1
+4890d5122
+< commander 1
+4892,4893d5123
+< training 1
+< comitia 1
+4895,4896d5124
+< comic 1
+< comforts 1
+4898d5125
+< comedies 1
+4900,4901d5126
+< combined 1
+< combine 1
+4904,4906d5128
+< columns 1
+< colophonians 1
+< colophon 1
+4917,4922d5138
+< coffers 1
+< codrus 1
+< codes 1
+< coat 1
+< coarse 1
+< co 1
+4925,4926d5140
+< cloth-making 1
+< clothing 1
+4928,4929d5141
+< clothe 1
+< cloth 1
+4932,4933d5143
+< cleotimus 1
+< cleomenes 1
+4935d5144
+< clearer 1
+4937,4938d5145
+< cleander 1
+< clazomene 1
+4943,4944d5149
+< clash 1
+< trafficking 1
+4947,4952c5152,5153
+< city-slaves 1
+< city-guard 1
+< city-gate 1
+< city-for 1
+< whipping 1
+< citizens--who 1
+---
+> re-edited 1
+> re-impression 1
+4954,4955d5154
+< whoeer 1
+< citizen-maker 1
+4957d5155
+< wholes 1
+4959,4960d5156
+< cisterns 1
+< circumvented 1
+4963,4966d5158
+< circle 1
+< cinadon 1
+< chytrum 1
+< chronology 1
+4970,4972d5161
+< chorus 1
+< traezenium 1
+< choregi 1
+4981d5169
+< children--reading 1
+4983,4985d5170
+< childless 1
+< childish 1
+< child-birth 1
+4989,4990d5173
+< chians 1
+< checks 1
+4992d5174
+< chattels 1
+4994d5175
+< chase 1
+4996,5000d5176
+< charities 1
+< charitable 1
+< charilles 1
+< charilauss 1
+< charicles 1
+5005,5007d5180
+< characteristics 1
+< characteristic 1
+< characterises 1
+5009,5011d5181
+< chapters 1
+< widely 1
+< re-edited 1
+5016d5185
+< chance-medley 1
+5018d5186
+< chalcis 1
+5020,5022d5187
+< chalcedonian 1
+< chalcas 1
+< certainty 1
+5024d5188
+< wider 1
+5027d5190
+< centre 1
+5029,5030d5191
+< censuring 1
+< censures 1
+5033d5193
+< censurable 1
+5035,5036d5194
+< celebrated 1
+< tradesmen 1
+5039d5196
+< re-impression 1
+5041,5042d5197
+< caused 1
+< wife--property 1
+5044d5198
+< catanean 1
+5054,5058d5207
+< carriage 1
+< carpenters 1
+< carpenter 1
+< cares 1
+< careless 1
+5061,5064d5209
+< wilamowitz--moel-lendorf 1
+< card 1
+< capricious 1
+< capital 1
+5068d5212
+< canvassed 1
+5071,5074d5214
+< william 1
+< campaigns 1
+< camicus 1
+< camelot 1
+5078,5079d5217
+< williams 1
+< calld 1
+5084d5221
+< calchis 1
+5090d5226
+< trades 1
+5094,5096d5229
+< butcher 1
+< wimmer 1
+< businesspglaforg 1
+5098,5102d5230
+< busied 1
+< burnet 1
+< burgh 1
+< bulwarks 1
+< bulk 1
+5104,5105d5231
+< builds 1
+< traders 1
+5108,5109d5233
+< trademarkcopyright 1
+< buffoon 1
+5112d5235
+< brutal 1
+5116d5238
+< brooked 1
+5122d5243
+< brightness 1
+5124,5137d5244
+< brief 1
+< bridgman 1
+< bridegroom 1
+< bride 1
+< bribes 1
+< bribery 1
+< bribed 1
+< brewer 1
+< breeding 1
+< breed 1
+< bred 1
+< breathe 1
+< breath 1
+< breaks 1
+5139d5245
+< bread 1
+5142d5247
+< bravely 1
+5145d5249
+< brandis 1
+5147d5250
+< branch 1
+5150d5252
+< bowmen 1
+5154d5255
+< bounded 1
+5160d5260
+< borne 1
+5165,5169d5264
+< bonitz 1
+< bond 1
+< bolland 1
+< boldness 1
+< bold 1
+5174,5177d5268
+< boatswain 1
+< boast 1
+< board 1
+< blush 1
+5179,5181d5269
+< blow 1
+< blood 1
+< blessing 1
+5185d5272
+< blass 1
+5187,5189d5273
+< blamable 1
+< blakesley 1
+< blackie 1
+5192,5200d5275
+< binary 1
+< bills 1
+< bill 1
+< bigger 1
+< big 1
+< biehl 1
+< bid 1
+< bibliography 1
+< tr 1
+5203,5206d5277
+< betrothed 1
+< be-these 1
+< bestows 1
+< bestowing 1
+5209,5211d5279
+< best-governed 1
+< best-framed 1
+< best-formed 1
+5214,5218d5281
+< towns 1
+< beside 1
+< bequeath 1
+< benevolence 1
+< benefits 1
+5220,5224d5282
+< beneficent 1
+< benefactors 1
+< bend 1
+< bench 1
+< town-planning 1
+5229,5232d5286
+< belly 1
+< bellies 1
+< believes 1
+< believe 1
+5235d5288
+< bekkers 1
+5241,5245d5293
+< behaving 1
+< behaved 1
+< begun 1
+< begins 1
+< beginnings 1
+5248,5254d5295
+< begets 1
+< began 1
+< beforehand 1
+< wolf 1
+< befalls 1
+< befalling 1
+< befallen 1
+5257d5297
+< bed 1
+5261d5300
+< womb 1
+5266d5304
+< beat 1
+5270d5307
+< toward 1
+5272,5273d5308
+< wonder 1
+< battles 1
+5275,5276d5309
+< basis 1
+< basilides 1
+5279,5281d5311
+< barrier 1
+< barren 1
+< bard 1
+5287,5288d5316
+< banishes 1
+< torstrik 1
+5290,5293d5317
+< bane 1
+< bands 1
+< toronto 1
+< ballot 1
+5295d5318
+< bain 1
+5297,5298d5319
+< wondered 1
+< backward 1
+5300,5305d5320
+< bacchiades 1
+< bacchanals 1
+< bacchanal 1
+< babylonians 1
+< babylonia 1
+< babylon 1
+5307d5321
+< away--you 1
+5309,5311d5322
+< awaken 1
+< avoiding 1
+< avoided 1
+5314d5324
+< selfsame 1
+5316a5327
+> selfsame 1
+5319,5320d5329
+< authorised 1
+< authorise 1
+5322d5330
+< ausonians 1
+5324,5325d5331
+< aubert 1
+< attributes 1
+5327d5332
+< attribute 1
+5330d5334
+< attentions 1
+5335d5338
+< attendant 1
+5337,5340d5339
+< wood 1
+< tombs 1
+< attempting 1
+< attempted 1
+5344d5342
+< attaining 1
+5346d5343
+< attainable 1
+5348d5344
+< attacking 1
+5351d5346
+< attachment 1
+5353d5347
+< attach 1
+5355,5356d5348
+< athenientium 1
+< atheniensium 1
+5358,5362d5349
+< athenian 1
+< atarneus 1
+< woof 1
+< astyages 1
+< astrology 1
+5368,5369d5354
+< association 1
+< associates 1
+5371,5374d5355
+< shoemakers 1
+< assists 1
+< assisted 1
+< assistant 1
+5375a5357
+> shoemakers 1
+5378d5359
+< assigning 1
+5381d5361
+< assessed 1
+5383,5389d5362
+< tokos 1
+< assault 1
+< aspiring 1
+< aspires 1
+< aspire 1
+< token 1
+< asks 1
+5391,5394d5363
+< ask 1
+< as-is 1
+< aside 1
+< asiatics 1
+5396d5364
+< ashamed 1
+5404,5405d5371
+< artisan 1
+< artificial 1
+5408,5411d5373
+< articles 1
+< artabanes 1
+< wore 1
+< arriving 1
+5414,5415d5375
+< array 1
+< around 1
+5417,5419d5376
+< yourself 1
+< worked 1
+< armies 1
+5422,5424d5378
+< working 1
+< aristophanes 1
+< aristogiton 1
+5426,5427d5379
+< title 1
+< workings 1
+5430d5381
+< workman 1
+5433,5436d5383
+< ariobarzanes 1
+< arid 1
+< tis 1
+< tiresome 1
+5438d5384
+< argo 1
+5443,5445d5388
+< ardent 1
+< archytas 1
+< archons 1
+5449,5453d5391
+< architas 1
+< archilaus 1
+< archias 1
+< archelaus 1
+< timber 1
+5455d5392
+< arbitration 1
+5457,5458d5393
+< arbiter 1
+< arable 1
+5460,5462d5394
+< approximations 1
+< approximate 1
+< approving 1
+5465d5396
+< tillage 1
+5467,5468d5397
+< appropriate 1
+< approbation 1
+5472,5474d5400
+< appreciation 1
+< appreciate 1
+< appolloniats 1
+5476d5401
+< thurii 1
+5481,5482d5405
+< thurians 1
+< throw 1
+5487d5409
+< appertains 1
+5489d5410
+< appendix 1
+5493,5495d5413
+< throne 1
+< appeared 1
+< appearances 1
+5501,5503d5418
+< apollodorus 1
+< aphutaeans 1
+< apelt 1
+5506d5420
+< worms 1
+5508,5510d5421
+< worn 1
+< antisthenes 1
+< antisseans 1
+5512,5514d5422
+< antimenides 1
+< antileos 1
+< answers 1
+5516d5423
+< answerable 1
+5521,5523d5427
+< annos 1
+< annihilate 1
+< annexed 1
+5529d5432
+< angry 1
+5531,5533d5433
+< anew 1
+< andros 1
+< andronicus 1
+5535,5536d5434
+< andpia 1
+< zip 1
+5540d5437
+< anaxilaus 1
+5542d5438
+< analytics 1
+5545,5548d5440
+< threw 1
+< analogically 1
+< worst-established 1
+< amusements 1
+5552d5443
+< thrasymachus 1
+5554,5560d5444
+< wrestler 1
+< amity 1
+< amiss 1
+< amintas 1
+< amends 1
+< amend 1
+< ambractia 1
+5564,5566d5447
+< ambassadors 1
+< amasis 1
+< amadocus 1
+5568d5448
+< wrestlers 1
+5570d5449
+< wrestling 1
+5572d5450
+< alternative 1
+5574,5575d5451
+< thrasy-bulus 1
+< altering 1
+5579,5580d5454
+< wretched 1
+< wretchedness 1
+5582,5586d5455
+< alongside 1
+< along 1
+< writ 1
+< write 1
+< alloy 1
+5590,5591d5458
+< allowance 1
+< allowable 1
+5593d5459
+< allotting 1
+5595d5460
+< allotments 1
+5600d5464
+< writings 1
+5602d5465
+< alithoe 1
+5604,5610d5466
+< aleuadae 1
+< aldus 1
+< alcaeus 1
+< alarmed 1
+< alacrity 1
+< ak 1
+< airs 1
+5615d5470
+< ailing 1
+5617,5618d5471
+< thrasippus 1
+< agreements 1
+5620d5472
+< thracians 1
+5623,5626d5474
+< wrongfully 1
+< agitates 1
+< aggregations 1
+< agesilaus 1
+5628d5475
+< agent 1
+5631d5477
+< agamemnon 1
+5634,5640d5479
+< xerxes 1
+< afterward 1
+< after-times 1
+< xeugitai 1
+< africa 1
+< afresh 1
+< afraid 1
+5643,5645d5481
+< affords 1
+< afflicted 1
+< affirms 1
+5649d5484
+< affects 1
+5654d5488
+< affectation 1
+5656d5489
+< thoughts 1
+5658,5659d5490
+< aethiopia 1
+< aesumnetic 1
+5662,5665d5492
+< aenotria 1
+< suppers 1
+< aeconomics 1
+< adviser 1
+5667,5668c5494
+< advise 1
+< advisable 1
+---
+> suppers 1
+5670,5671d5495
+< adverse 1
+< adversaries 1
+5674,5675d5497
+< thoroughly 1
+< advancement 1
+5678,5683d5499
+< adultery 1
+< adorn 1
+< adoptive 1
+< adoption 1
+< thorough 1
+< adopt 1
+5688,5690d5503
+< admission 1
+< admire 1
+< admirably 1
+5692d5504
+< administering 1
+5694,5697d5505
+< administer 1
+< adjustment 1
+< adjusted 1
+< adjust 1
+5699,5705d5506
+< adjoining 1
+< adds 1
+< addressing 1
+< addresses 1
+< addressed 1
+< address 1
+< additions 1
+5708d5508
+< addicted 1
+5722d5521
+< acting 1
+5724,5725d5522
+< xviii 1
+< acquitted 1
+5730,5732d5526
+< yarn 1
+< thirty-seven 1
+< acquaintance 1
+5734d5527
+< acknowledge 1
+5736,5737d5528
+< achieving 1
+< acheans 1
+5739d5529
+< accustoming 1
+5743d5532
+< accused 1
+5745d5533
+< accusations 1
+5747d5534
+< accurate 1
+5750,5751d5536
+< accounted 1
+< accountable 1
+5753d5537
+< yearly 1
+5756d5539
+< accomplishing 1
+5761d5543
+< accommodate 1
+5766,5767d5547
+< accessible 1
+< accessed 1
+5771d5550
+< thirteen 1
+5774d5552
+< abusive 1
+5776d5553
+< abundantly 1
+5779d5555
+< abstract 1
+5783,5786d5558
+< thief 1
+< abroad 1
+< abridges 1
+< abridged 1
+5788,5791d5559
+< thibron 1
+< abounds 1
+< thessaly 1
+< aborigines 1
+5793d5560
+< york 1
+5798c5565,5799
+< abettors 1
+---
+> thereto 1
+> thessaly 1
+> thibron 1
+> thief 1
+> thirteen 1
+> thirty-seven 1
+> thorough 1
+> thoroughly 1
+> thoughts 1
+> thracians 1
+> thrasippus 1
+> thrasy-bulus 1
+> thrasymachus 1
+> threw 1
+> throne 1
+> throw 1
+> thurians 1
+> thurii 1
+> tillage 1
+> timber 1
+> tiresome 1
+> tis 1
+> title 1
+> token 1
+> tokos 1
+> tombs 1
+> toronto 1
+> torstrik 1
+> toward 1
+> town-planning 1
+> towns 1
+> tr 1
+> trademarkcopyright 1
+> traders 1
+> trades 1
+> tradesmen 1
+> traezenium 1
+> trafficking 1
+> training 1
+> tranquil 1
+> transcended 1
+> transcendent 1
+> transcribe 1
+> transcription 1
+> translated 1
+> translators 1
+> treasurers 1
+> treasury 1
+> treats 1
+> trendelenburg 1
+> trespasses 1
+> trial 1
+> tribute 1
+> tried 1
+> trierarchs 1
+> trifles 1
+> triopium 1
+> tripods 1
+> triremes 1
+> troubles 1
+> truths 1
+> tucker 1
+> tunes 1
+> turning 1
+> tutelar 1
+> twelve 1
+> twining 1
+> txt 1
+> types 1
+> tyrrhenian 1
+> tyrrhenians 1
+> tyrtaeus 1
+> uberweg 1
+> ultimate 1
+> ultimately 1
+> ulysses 1
+> unanimous 1
+> unbecoming 1
+> unblemished 1
+> unchanging 1
+> unconsidered 1
+> uncorrupt 1
+> undermine 1
+> undermined 1
+> understands 1
+> undertake 1
+> undertaken 1
+> undertakes 1
+> undistinguishable 1
+> undue 1
+> unduly 1
+> unenforceability 1
+> unequally 1
+> unequals 1
+> unexpected 1
+> unfair 1
+> uniform 1
+> uniformly 1
+> unintelligible 1
+> uninterrupted 1
+> unknown 1
+> unlawful 1
+> unlike 1
+> unlink 1
+> unlucky 1
+> unmixed 1
+> unmodified 1
+> unperceivably 1
+> unprovided 1
+> unqualified 1
+> unredeemed 1
+> unsolicited 1
+> unspeakable 1
+> unwieldy 1
+> unworthily 1
+> unwritten 1
+> upbraids 1
+> upper 1
+> urge 1
+> urged 1
+> usufruct 1
+> ut 1
+> utopia 1
+> utter 1
+> vacancy 1
+> vacant 1
+> vahlen 1
+> valiant 1
+> valid 1
+> van 1
+> variation 1
+> varies 1
+> varieties 1
+> variously 1
+> vases 1
+> venality 1
+> veneration 1
+> venice 1
+> venus 1
+> very-useful 1
+> vessel 1
+> victims 1
+> victor 1
+> victories 1
+> viewed 1
+> viewing 1
+> vigorous 1
+> vile 1
+> villains 1
+> vines 1
+> violates 1
+> violently 1
+> virtuously 1
+> virtutibus 1
+> virus 1
+> vitiis 1
+> voices 1
+> void 1
+> vol 1
+> volunteer 1
+> voting 1
+> vulcan 1
+> vultures 1
+> waiting 1
+> waitz 1
+> walford 1
+> walks 1
+> walls--but 1
+> war-like 1
+> warm 1
+> warp 1
+> warriors 1
+> washes 1
+> waste 1
+> waver 1
+> weaken 1
+> weakened 1
+> weakness 1
+> weapons 1
+> weather 1
+> weave 1
+> weaver 1
+> weaving 1
+> wedding 1
+> weighed 1
+> weighing 1
+> well-being 1
+> well-constituted 1
+> well-formed 1
+> well-governed 1
+> well-governing 1
+> well-instructed 1
+> whereon 1
+> whipping 1
+> whoeer 1
+> wholes 1
+> widely 1
+> wider 1
+> wife--property 1
+> wilamowitz--moel-lendorf 1
+> william 1
+> williams 1
+> wimmer 1
+> wolf 1
+> womb 1
+> wonder 1
+> wondered 1
+> wood 1
+> woof 1
+> wore 1
+> worked 1
+> working 1
+> workings 1
+> workman 1
+> worms 1
+> worn 1
+> worst-established 1
+> wrestler 1
+> wrestlers 1
+> wrestling 1
+> wretched 1
+> wretchedness 1
+> writ 1
+> write 1
+> writings 1
+> wrongfully 1
+> xerxes 1
+> xeugitai 1
+> xviii 1
+> yarn 1
+> yearly 1
+> york 1
+> yourself 1
+> zancleans 1
+> zip 1

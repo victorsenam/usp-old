@@ -1,0 +1,22 @@
+Para que o trabalho fique melhor e mais compativel com o exigido na saida, e necessario fazer o seguinte comando
+
+sed 's/[1234567890!@#$%&*();.+,:-?_]//g' arquivo_generico.txt > TEXTO.TXT
+
+coloquei o ultimo em caixa alta para destaca-lo e dizer que sera ele a passar no WordFrequencies entao a linha de comando na hora da execucao e 
+
+$ java-algs4 WordFrequencies < TEXT.TXT | sort -rn 
+sort -rn  eh o comando para classificar as pelavras segundo as frequencias
+
+claro que o TEXTO.TXT nao vai pra linha de comando em caixa alta, e ele pode ter o tamanho e o nome que quiser, so quis mesmo foi frisar que eh o resultado do sed 
+que vai fazer parte da entrada padrao do WordFrequencies
+
+alem disso, quero frisar tambem que estou mandando dois arquivos: sendo um deles o WordFrequencies e uma classe criada para implementar arvores de buscabinaria 
+MyTree.java  e que e fundamental pra o arquivo do problema resolvido
+
+uma sugestao para compilar os dois eh fazer 
+
+$ javac-algs4 *.java
+
+como exemplo eu tenho os arquivos magna-carta.txt e carta.txt (carta.txt ~TEXTO.TXT -- arquivos para a saida padrao)
+
+That's All, Folks
