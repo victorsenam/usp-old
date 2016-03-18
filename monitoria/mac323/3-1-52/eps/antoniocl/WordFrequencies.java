@@ -1,4 +1,6 @@
 
+import java.util.*;
+import edu.princeton.cs.algs4.*;
 public class WordFrequencies 
 {   
     public static void verifyWords (String[] array)
@@ -72,7 +74,13 @@ public class WordFrequencies
     
     public static void main(String[] args) 
     { 
-        for (int i = 0; i < lengthArgs; i++) w[i] = StdIn.readNext();
+        int lengthArgs = 1000000;
+        String[] aux = new String[lengthArgs];
+        Scanner in = new Scanner(System.in);
+        int len = 0;
+        while( in.hasNext() ) aux[len++] = in.next();
+        String[] w = new String[len];
+        for (int i = 0; i < len; i++) w[i] = aux[i];
         
         verifyWords (w);
         int[] frequencyW = countFrequency (w);
