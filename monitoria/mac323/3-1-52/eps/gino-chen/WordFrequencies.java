@@ -65,16 +65,16 @@ class WordCount {
 	// Comparação entre dois objetos WordCount, como o exercício pede ordenação por ocorrências
 	// está sendo comparado, em ordem reversa, apenas o contador
 	public int compareTo(WordCount w) {
-		return w.count - count;
-		/*
-		 * // Caso queiramos ordernar as palavras se o contador for igual, descontar esse código.
-		 * int n = w.count - count;
-		 * 
-		 * if (n == 0)
-		 * 	return word.compareTo(w.word);
-		 * 
-		 * return n;
-		 */
+		//return w.count - count;
+		
+		 // Caso queiramos ordernar as palavras se o contador for igual, descontar esse código.
+		 int n = w.count - count;
+		 
+		 if (n == 0)
+		 	return word.compareTo(w.word);
+		 
+		 return n;
+		
 	}
 }
 
