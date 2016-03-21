@@ -1,0 +1,176 @@
+33c33
+< gutenbergtm 56
+---
+> gutenberg-tm 56
+179d178
+< m 9
+194d192
+< b 8
+206a205
+> m 8
+223a223
+> b 7
+431d430
+< email 4
+534c533
+< billiardtable 3
+---
+> billiard-table 3
+576a576
+> email 3
+822c822
+< englishreading 2
+---
+> english-reading 2
+991c991
+< psychoanalysis 2
+---
+> psycho-analysis 2
+995a996
+> re-use 2
+1016d1016
+< reuse 2
+1051c1051
+< streetcar 2
+---
+> street-car 2
+1124c1124
+< actionin 1
+---
+> action--in 1
+1186a1187
+> as-is 1
+1188d1188
+< asis 1
+1218c1218
+< autoobservations 1
+---
+> auto-observations 1
+1220c1220
+< awakefor 1
+---
+> awake--for 1
+1223c1223,1224
+< awayyou 1
+---
+> away--you 1
+> b---- 1
+1332c1333
+< colordust 1
+---
+> color-dust 1
+1371c1372
+< constitutesi 1
+---
+> constitutes--i 1
+1421a1423
+> deep-seated 1
+1424d1425
+< deepseated 1
+1455c1456
+< developmentand 1
+---
+> development--and 1
+1503a1505
+> dream-self 1
+1505d1506
+< dreamself 1
+1511a1513
+> e-mail 1
+1532c1534
+< endymionendymion 1
+---
+> endymion--endymion 1
+1549a1552
+> ever-varying 1
+1551d1553
+< evervarying 1
+1650c1652
+< fortdefrance 1
+---
+> fort-de-france 1
+1697c1699
+< grownnothing 1
+---
+> grown--nothing 1
+1699c1701
+< gutenbergtms 1
+---
+> gutenberg-tms 1
+1708c1710
+< happenedas 1
+---
+> happened--as 1
+1855c1857
+< lecturerooms 1
+---
+> lecture-rooms 1
+1889a1892
+> m---- 1
+1917c1920
+< menand 1
+---
+> men--and 1
+1925c1928
+< middleaged 1
+---
+> middle-aged 1
+2000c2003,2004
+< oncethe 1
+---
+> once--the 1
+> one--the 1
+2002d2005
+< onethe 1
+2035c2038
+< passersby 1
+---
+> passers-by 1
+2041c2044
+< perceptionis 1
+---
+> perception--is 1
+2174c2177
+< remarkedto 1
+---
+> remarked--to 1
+2247c2250
+< searound 1
+---
+> sea--round 1
+2250a2254
+> see--the 1
+2256d2259
+< seethe 1
+2265c2268
+< semiconsciousness 1
+---
+> semi-consciousness 1
+2386c2389
+< tensiona 1
+---
+> tension--a 1
+2400a2404
+> to-day 1
+2402d2405
+< today 1
+2440c2443
+< twentyfive 1
+---
+> twenty-five 1
+2494c2497
+< violinistcomposer 1
+---
+> violinist-composer 1
+2515,2517c2518,2520
+< welldefined 1
+< welldetermined 1
+< wellknown 1
+---
+> well-defined 1
+> well-determined 1
+> well-known 1
+2535c2538
+< wowwows 1
+---
+> wow-wows 1
