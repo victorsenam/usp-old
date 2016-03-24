@@ -1,0 +1,19 @@
+[-10] : Lento demais (20s+)
+[-10] : Sem main no RandomWalker
+[-15] : Runtime Error
+[-10] : Desenho Errado
+[-15] : Desenho Não Faz sentido
+[-20] : Jeito ruim de desenhar
+[-5] : Inverteu a ordem dos argumentos
+
+[+5] : Código Bom
+[+5] : Solução Ótima
+[+10] : Rápido
+
+=======
+
+sh ../../run.sh
+
+-- Macro em u --
+import java.util.*;
+import edu.princeton.cs.algs4.*;
