@@ -23,30 +23,60 @@
 \author{Victor Sena Molero - 8941317}
 \maketitle
 
-\begin{problem}{Bônus-1}
-Prove que toda árvore equi-bicolorida tem pelo menos uma folha de cada cor.
+\begin{problem}{11}
+Prove que se G é uma árvore tal que $\Delta(G) \geq k$, então $G$ tem pelo menos $k$ folhas.
 \end{problem}
 
-\begin{proof}
-Dada uma árvore $G$ equi-bicolorida com as cores azul e vermelha. Sabemos que $G$ tem pelo menos duas folhas, pois é uma árvore. Seja $u$ uma folha de $G$, podemos assumir, sem perda de generalidade, que $u$ é vermelha. \\
-Vamos definir uma função $p : V(G) \setminus u \to V(G)$ na árvore $G$. Esta função vai denotar o pai de um vértice da árvore em relação ao vértice $u$ da seguinte maneira: Se temos dois vértices, $v$ e $w$ tais que $p(v) = w$, então, $w$ é vértice que antecede $v$ no caminho de $u$ até $v$. Natualmente, esta definição é inválida para o vértice $u$, já que não há um antecessor de $u$ no caminho de $u$ para $u$. A definição é única para todo vértice, pois, já que $G$ é uma árvore, os caminhos de $u$ para qualquer vértice $v$ são únicos. \\
-Além disso, se dois vértices $v$ e $w$ quaisquer são adjacentes, $p(v) = w$ ou $p(w) = v$. Vou provar isto agora. Primeiro, se $v$ é adjacente a $w$, $v \neq w$, pois o grafo é simples. Agora podemos separar o problema em dois casos: \\
-\begin{enumerate}
-\item Se $v = u$ ou $w = u$, vamos assumir, s.p.g. que $v = u$, logo, $w \neq u$, mas, se $w$ é adjacente a $u$, existe um caminho que vai de $u$ até $w$ composto por apenas uma aresta, entre $u$ e $w$. Logo, $u$ é o antecessor de $w$ no caminho, então $p(w) = u = v$. Se $w = u$, com o mesmo argumento, temos $p(v) = u = w$. \\
-\item Se $v \neq u$ e $w \neq u$, e podemos separar em mais dois casos
-\begin{enumerate}
-\item Se $v$ aparece no caminho $S$ entre $u$ e $w$. Então existe um caminho de $u$ até $v$ que não passa por $w$ (basta pegar um prefixo de $S$) e se concatenarmos este caminho à aresta que vai de $v$ a $w$ temos um caminho até $w$ onde $v$ é o antecessor de $w$, logo, $p(w) = v$.
-\item Se $v$ não aparece no caminho $S$ entre $u$ e $w$. Então temos um caminho de $u$ até $w$ que não passa por $v$ e podemos concantenar a aresta de $v$ para $w$ a este caminho e obter um caminho entre $u$ e $v$ onde $w$ é antecessor de $v$, logo, $p(v) = w$.
-\end{enumerate}
-\end{enumerate}
-Assim, temos que, em todo caso possível, ou $p(v) = w$ ou $p(w) = v$. \\
-Agora, vou provar que se $v$ não é uma folha, existe algum vértice $w$ tal que $p(w) = v$. Isto é verdade pois, já que $v$ é uma folha, existem dois vértices distintos adjacentes a $v$, pelo menos, já que só um deles pode ser $p(v)$, todos os que não forem $p(v)$ devem ser $w$ tais que $p(w) = v$. Já que existe mais de um adjacente, existe pelo menos um $w$. Ou seja, $\forall v \in V(G)$, ou $v$ é folha ou $\exists w \in V(G) : p(w) = v$. \\
-Se definirmos o conjunto de vértices azuis como $C_A$ e o de vermelhos como $C_V$, a função $p$ está bem definida para todo $v \in C_V \setminus u$. Além disso, já que $\forall v$, $p(v)$ é adjacente a $v$, temos que, se $v \in C_V$, $p(v) \in C_A$. Logo, podemos definir uma restrição da função $p$ sobre o conjunto $C_V \setminus u$ e chamá-la $q$. Assim, a função $q : C_V \setminus u \to C_A$ se comporta exatamente igual à $p$ em todo seu domínio. \\
-Agora, vamos assumir, por absurdo, que não existem folhas azuis. Então, temos que, $\forall v \in C_A, \exists w \in V(G) : p(w) = v$. Além disso, sabemos que se $p(w) \in C_A, w \in C_V \setminus u$ e que se $w \in C_V \setminus u, p(w) = q(w)$. Logo, podemos reescrever a afirmação acima como
-$$\forall v \in C_A, \exists w \in C_V \setminus u : q(w) = v$$
-O que quer dizer, exatamente, que $q$ é uma sobrejeção de $C_V \setminus u$ em $C_A$, ou seja, $|C_V \setminus u| \geq |C_A|$ e já que $u \in C_V$, $C_V \setminus u \subset C_V$, logo $|C_V| > |C_V \setminus u| \geq |C_A|$. Ou seja, $|C_V| > |C_A|$ e, já que $G$ é equibicolorido, $|C_V| = |C_A|$, um absurdo. \\
-Assim, existe pelo menos uma folha azul em $G$.
+\begin{proof}[Prova]
+Seja $G$ uma árvore tal que $\Delta(G) \geq k$ e seja $u$ um vértice de grau máximo em $G$. Definimos $h = g_G(u) = \Delta(G) \geq k$. \\
+Se $h = 0$, $k = 0$. Já que toda árvore tem pelo menos uma folha, toda árvore tem pelo menos zero folhas. \\
+Se $h > 0$, temos que $u$ tem $h$ vizinhos. Seja $x$ um vizinho de $u$. Vou provar que existe um caminho $S_u$ de $u$ para uma folha $x'$ qualquer que tem como primeira aresta a $\{u, x\}$. Para encontrar este caminho basta pegar o maior caminho que começa em $S_x$ e tem como primeira aresta $\{u, x\}$, agora, se o caminho não termina em uma folha, é possível extendê-lo, pois o ultimo vértice tem mais de uma aresta e só uma delas pertence ao caminho (já que ele é uma folha), portanto, só um dos vértices vizinhos pertencem ao caminho, se não, seria possível achar um ciclo em $G$. Ou seja, o maior caminho que começa em $u$ e tem como primeira aresta $\{u, x\}$ termina em uma folha. \\
+Agora escolhemos dois vértices $x$ e $y$ vizinhos de $u$, vamos provar que se os caminhos $S_x$ e $S_y$ têm mais de um vértice em comum, então $x = y$. Basta assumir que $S_x$ e $S_y$ têm mais de um vértice em comum e, agora, assumir, por absurdo que $x$ e $y$ são distintos. $S_x$ e $S_y$ começam em $u$ e tem mais um vértice $z$ em comum. Sabemos que a primeira aresta de $S_x$ é $\{u,x\}$ e a primeira de $S_y$ é $\{u,y\}$. Logo, $z$ não vem está entre $u$ e $x$ no caminho $S_x$ e nem entre $u$ e $y$ no caminho $S_y$. Assim, existe um caminho de $u$ para $z$ que tem como primeira aresta $\{u,x\}$ e um caminho de $u$ para $z$ que tem como primeira aresta $\{u,y\}$, logo, existem dois caminhos distintos de $u$ para $z$, um absurdo. \\
+Logo, cada vizinho de $u$ gera um caminho para uma folha distinta. Já que existem $h$ vizinhos de $u$, encontramos $h$ folhas distintas em $G$. Então, $G$ tem pelo menos $h$ folhas, e $h \geq k$, logo, $G$ tem pelo menos $k$ folhas.
+\end{proof}
 
+\begin{problem}{12}
+Prove que um grafo conexo $G$ possui pelo menos $|A(G)| - |V(G)| + 1$ circuitos.
+\end{problem}
+
+\begin{proof}[Prova]
+Seja $G$ um grafo conexo com $|V(G)|$ vértices. E seja $|C(G)|$ a quantidade de ciclos de $G$.\\
+Se $|A(G)| = |V(G)| - 1$, então $G$ é uma árvore. Logo, $|C(G)| = 0$, ou seja, $|C(G)| \geq |A(G)| - |V(G)| + 1 = 0$. \\
+Assuma que, com $|A(G)| = k \geq |V(G)| - 1$, $|C(G)| \geq |A(G)| - |V(G)| + 1$.
+Se $|A(G)| = k + 1$, então, $G$ é conexo e não é uma árvore. Logo, existe pelo menos uma aresta de $G$ que não é uma ponte. Se removermos uma aresta $a$ qualquer de $G$ que não seja uma ponte, geramos o grafo $G'$. Já que $a$ não é uma ponte em $G$, existe um ciclo em $G$ que passa por $a$ e, já que $a$ não está em $G'$ este ciclo não existe em $G'$, além disso, $G' \subseteq G$, logo, todo ciclo de $G'$ é também um ciclo de $G$, portanto, $|C(G')| < |C(G)|$. \\
+Além disso, $G'$ é um grafo conexo com $k$ arestas, portanto, vale a hipótese indutiva e $|C(G')| \geq |A(G')| - |V(G')| + 1 = |A(G)| - |V(G)|$. Ou seja $|C(G)| > |C(G')| \geq |A(G)| - |V(G)|$, logo, $|C(G)| \geq |A(G)| - |V(G)| + 1$. \\
+Ou seja, por indução, $\forall G$ conexo, $|C(G)| \geq |A(G)| - |V(G)| + 1$.
+\end{proof}
+
+\begin{problem}{13}
+Existem grafos simples com exatamente duas árvores geradoras distintas? Justifique.
+\end{problem}
+
+\begin{proof}[Resposta]
+Não existem. \\
+Seja $G$ um grafo simples. Vamos separar em três casos. \\
+Se $|A(G)| < |V(G)| - 1$ o grafo é desconexo e não possui nenhuma árvore geradora. \\
+Se $|A(G)| = |V(G)| - 1$ o grafo é uma árvore, logo, possui apenas uma árvore geradora. \\
+Se $|A(G)| > |V(G)| - 1$ o grafo possúi pelo menos um ciclo. Vou provar, por indução, que é possível remover arestas de $G$ mantendo ele conexo até que ele tenha exatamente $|V(G)|$. \\
+Se $|A(G)| = |V(G)|$, então basta não remover nenhuma aresta. \\
+Assumindo que vale se $|A(G)| = k \geq |V(G)|$, se $|A(G)| = k + 1$, $G$ tem pelo menos um ciclo, logo, tem pelo menos uma aresta que não é ponte, basta remover ela, o grafo continuará conexo e terá $k$ arestas, vale a hipótese de indução, logo é possível continuar removendo arestas até que $|A(G)| = |V(G)|$. \\
+Agora, aplicamos o que acabamos de provar para obter um grafo $G'$ com os mesmos vértices de $G$, mas com exatamente $|V(G)|$ arestas tais que $A(G') \subseteq A(G)$. Uma árvore geradora de $G'$ é uma árvore geradora de $G$, pois é um conjunto de arestas que pertencem a $G$, tornam $G$ conexo e formam uma árvore. \\
+Porém, $G'$ tem um ciclo, já que todo ciclo tem pelo menos 3 arestas, existem pelo menos 3 arestas que podemos remover de $G'$ para criar uma árvore, logo, $G'$ tem pelo menos 3 árvores geradoras, portanto $G$ tem pelo menos 3 árvores geradoras. \\
+Assim, se conclui que nenhum grafo $G$ simples tem exatamente 2 árvores geradoras.
+\end{proof}
+
+\begin{problem}{14}
+Prove que todo grafo conexo $G$, simples e não-trivial, tem uma árvore geradora $T$ tal que $G - A(T)$ é desconexo.
+\end{problem}
+
+\begin{proof}[Prova]
+Vou primeiro provar que, seja $G$ um grafo conexo, simples e não-trivial, se existe um particionamento em vértices de $G$ com uma partição $H$ tal que, para toda outra partição $P$ existe uma aresta entre $H$ e $P$ e tal que cada partição possui uma árvore geradora, então existe uma árvore geradora de $G$ que contém as árvores geradoras de cada uma das partições. Vou provar com indução na quantidade de partições. É fácil ver que existe pelo menos uma partição, já que é necessário que exista a partição $H$ em questão. Logo, seja $n$ é a quantidade de partições: \\
+Se $n = 1$ temos apenas uma partição, logo, ela possui todos os vértices de $G$ e já ela tem uma árvore geradora, $G$ tem uma árvore geradora que contém as árvores geradoras de todas as partições. \\
+Suponha que com $n = k \geq 1$ a afirmação seja verdadeira. Se $n = k+1$, podemos escolher uma partição $P$ qualquer do grafo que não seja $H$ e remover todos vértices dela do grafo, gerando assim um grafo $G'$ com um particionamento em vértices de $k$ partições tal que cada uma delas possui uma árvore geradora e existe uma partição $H$ tal que exista, em $G'$, uma aresta entre $H$ e cada uma das partições restantes. Vale, então, a hipótese de indução e $G'$ tem uma árvore geradora que contém as árvores geradoras de cada uma das suas partições. Agora, basta adicionar a esta árvore a árvore geradora e $P$ e uma aresta entre $P$ e $H$ para formar uma árvore geradora de $G$ que contém as árvores de cada uma das partições. \\
+Agora, vamos à prova principal. Seja $G$ um grafo conexo, simples e não-trivial. Seja $u$ um vértice qualquer de $G$. Se $G$ é não trivial, $g_G(u) > 0$. Assim, $u$ tem pelo menos um vizinho. \\
+Podemos escolher o subgrafo induzido de $H$ de $G$ que contém somente $u$ e todos os vizinhos de $u$. O conjunto de todas as arestas de $u$ forma uma árvore geradora $T_H$ de $H$. \\
+Seja $G' = G \setminus H$, $G'$ não é necessáriamente conexo. Cada uma das componentes de $G'$ possui uma árvore geradora. Cada uma das componentes $K$ de $G'$ possui uma árvore geradora e existe, em $G$, pelo menos uma aresta que leva de $H$ em $K$. Ou seja, temos um particionamento em vértices de $G$ onde cada partição tem uma árvore geradora e onde temos uma partição $H$ tal que existe, em $G$, pelo menos uma aresta entre cada um das outras partições e $H$. \\
+Ou seja, como provamos anteriormente, $G$ tem uma árvore geradora $T$ que contém a árvore geradora $T_H$ de $H$. Já que $T_H$ contém todas as arestas de $u$, remover as arestas dela desconecta o grafo, pois isola o vértice $u$. Então remover as arestas de $T$ de $G$ desconecta $G$, logo, $G - A(T)$ é desconexo. Então, qualquer grafo $G$ conexo, simples e não-trivial tem uma árvore geradora $T$ tal que $G - A(T)$ é desconexo.
 \end{proof}
 
 \end{document}
