@@ -79,4 +79,14 @@ Seja $G' = G \setminus H$, $G'$ não é necessáriamente conexo. Cada uma das co
 Ou seja, como provamos anteriormente, $G$ tem uma árvore geradora $T$ que contém a árvore geradora $T_H$ de $H$. Já que $T_H$ contém todas as arestas de $u$, remover as arestas dela desconecta o grafo, pois isola o vértice $u$. Então remover as arestas de $T$ de $G$ desconecta $G$, logo, $G - A(T)$ é desconexo. Então, qualquer grafo $G$ conexo, simples e não-trivial tem uma árvore geradora $T$ tal que $G - A(T)$ é desconexo.
 \end{proof}
 
+\begin{problem}{15}
+Seja $G$ um grafo conexo, $T_1$ e $T_2$ árvores geradoras distintas de $G$, seja $\alpha$ uma aresta de $T_1$. Prove que existe uma aresta $\beta$ em $T_2$ tal que $T_1 - \alpha + \beta$ é uma árvore geradora de $G$.
+\end{problem}
+
+\begin{proof}[Prova]
+Seja $G$ um grafo conexo e $T_1$ uma árvore geradora de $G$. Seja também $\alpha$ uma aresta qualquer de $T_1$. \\
+Se removermos $\alpha$ de $T_1$ temos duas árvores disjuntas $P$ e $Q$. Agora tomamos $T_2$ uma árvore geradora de $G$ distinta de $T_1$. Já que $T_2$ é uma árvore geradora de $G$ existe um caminho entre todo par de vértices de $G$ em $T_2$. Podemos então escolher um caminho $S$ em $T_2$ entre um vértice qualquer de $P$ e um vértice qualquer de $Q$. \\
+Escolhemos, então, o ultimo vértice em $S$ que pertence a $P$ sabemos que o vértice seguinte pertence a $Q$, pois todo vértice do caminho pertence ou a $P$ ou a $Q$. Logo, temos uma aresta em $T_2$ que leva um vértice de $P$ a um vértice de $Q$. Basta chamá-la de $\beta$ e adicionar a $T_1 - \alpha$ que teremos uma árvore que contém todos os vértices de $G$, ou seja, $T_1 - \alpha + \beta$ é uma árvore geradora de $G$.
+\end{proof}
+
 \end{document}
