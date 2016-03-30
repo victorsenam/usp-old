@@ -1,96 +1,129 @@
-/***************************************************************
-* Nome: Lucas Stefan Abe
-* Nº USP: 8531612
-*
-* Compilação: javac-algs4 WordFrequencies.java
-* Execução: java-algs4 WordFrequencies
-* 
-* Descrição do programa: 
-* Entrada: Recebe texto da entrada padrão, podendo conter várias
-* linhas.
-* Saida: Mostra na saida padrão as palavras que apareceram no texto 
-* e a frequencia delas. Letras maiusculas e minusculas são 
-* consideradas iguais, e as palavras são impressas com
-* letras minusculas minuscula. 
-*
-* Obs: são consideradas palavras sequencias de caracteres contendo 
-* a-z, A-Z, hifen.
-****************************************************************/
-
+/*
+ * Nome: Mathias Van Sluys Menck
+ * NumUSP: 4343470
+*/
 import java.util.*;
 import edu.princeton.cs.algs4.*;
 
-class Word implements Comparable<Word>{
+public class WordFrequencies
+{
 
-	private String wordString;
-	private int freq;
+  public static int N = 20;
 
-	public Word (String wordString ) {
-		this.wordString = wordString;
-		freq = 1;
-	}
+/*Checa se a palavra atual é igual a uma já lida*/
+  public static boolean compara(String[] tex, int[][] repet, String s, int n)
+  {
+    for(int i=0; i<n; i++)
+      if(tex[i].compareTo(s) == 0)/*ocorre se forem iguais*/
+      {
+        repet[i][1] = repet[i][1]+1; 
+        return true;
+      }
+    return false;
+  }
 
-	public String getWord () {
-		return wordString;
-	}
+/*Imprime as palavras lidas e suas frequencias*/
+  public static void imprime(int[] array, int[][] repet, String[] texto, int n)
+  {
+    for(int i=n-1; i>=0; i--)
+    {
+      for(int j=0; j<n; j++)
+        if(repet[j][1] == array[i])
+        {
+          StdOut.printf("%s  %d\n", texto[repet[j][0]], repet[j][1]);
+          repet[j][1] = 0;
+        }
+    }
+  }
 
-	public int getFreq () {
-		return freq;
-	}
+/*Usado com o mergesort para ordenar o vetor*/
+  public static void intercala(int[] v, int l, int q, int r) 
+  {
+    int i, j, k;                     
+    int [] w = new int[r-l];    
+    i = l; j = q;                          
+    k = 0;                                 
+    while (i < q && j < r) {               
+      if (v[i] <= v[j])  w[k++] = v[i++]; 
+      else  w[k++] = v[j++];              
+    }                                      
+    while (i < q)  w[k++] = v[i++];        
+    while (j < r)  w[k++] = v[j++];        
+    for (i = l; i < r; ++i)  v[i] = w[i-l];
+  }
+/*Ordena o vetor a*/
+  public static void merge(int[] a, int l, int r)
+  {
+    if(l < r-1)
+    {
+      int q = (l+r)/2;
+      merge(a, l, q);
+      merge(a, q, r);
+      intercala(a, l, q, r);
+    }
+  }
 
-	public void incrementFreq () {
-		freq++;
-	}
+/*Expande o tamanho do vetor de strings caso necessario*/
+  public static String[] expande1(String[] orig)
+  {
+    String[] temp = new String[N*2];
+    for(int i=0; i<N; i++)
+      temp[i] = orig[i];
+    return temp;
+  }
 
-	public String toString () {
-		return this.getWord () + " " + this.getFreq ();
-	}
+/*Expande o tamanho do vetor de pares caso necessario*/
+  public static int[][] expande2(int[][] orig)
+  {
+    int[][] temp = new int[N*2][2];
+    for(int i=0; i<N; i++)
+    {
+      temp[i][0] = orig[i][0];
+      temp[i][1] = orig[i][1];
+    }
+    N = 2*N;
+    return temp;
+  }
 
-	/* Definindo método de comparação para usar o método
-	   sort de Collections*/
-	public int compareTo(Word anotherWord) {
-		if (this.freq < anotherWord.freq) {
-			return 1;
-		}
-		if (this.freq > anotherWord.freq) {
-			return -1;
-		}
-		if (this.wordString.compareTo (anotherWord.getWord()) < 0)
-			return -1;
-		return 0;
-	}
+  public static void main(String[] args)
+  {
+    String[] texto = new String[N]; /* contém o texto */
+    int[][] repet = new int[N][2]; /* contém o indice de uma palavra em texto e em seguida sua frequencia */
+    int i; 
 
+/*le o texto*/
+    for(i=0; !StdIn.isEmpty(); i++)
+    {
+      String s = StdIn.readString();
+      s = s.toLowerCase();
+      int l = s.length();
+      for(int j=0; j<l; j++)
+      {
+        char c = s.charAt(j);
+        if(!((c>='a' && c<='z') ||(c<='9' && c>='0') || (c>=191)/*acentos*/))
+        {
+          s = s.replace(String.valueOf(c), "");
+          l--; j--;
+        }
+      }
+      if(!compara(texto, repet, s, i))
+      {
+        texto[i] = s;
+        repet[i][0] = i;
+        repet[i][1] = 1;
+      }else {i--; }
+      if(i+1 == N) /*expande o tamanho de texto e repet para N*2*/
+      {
+        texto = expande1(texto);
+        repet = expande2(repet);
+      }
+    }
+
+
+    int[] array = new int[i];
+    for(int j=0; j<i; j++) array[j] = repet[j][1];
+    merge(array, 0, i);
+    imprime(array, repet, texto, i);
+  }
 }
 
-public class WordFrequencies {
-
-	public static void main (String args[]) {
-		Scanner input = new Scanner (System.in);
-		input.useDelimiter ("[^a-zA-Z\\-]+");
-		ArrayList<Word> dic = new ArrayList<Word>();
-		Word currentWord;
-		int i; 
-
-		/* Lendo as palavras */
-		while (input.hasNext ()) {
-			String nextWord = input.next ();
-			for (i = 0; i < dic.size (); i++) {
-				if (dic.get (i).getWord ().compareTo (nextWord.toLowerCase ()) == 0) {
-					dic.get (i).incrementFreq ();
-					break;
-				}
-			}
-			if (i == dic.size ()) {
-				currentWord = new Word (nextWord.toLowerCase ());
-				dic.add (currentWord);
-			}
-		}
-
-		/* Ordenando por ordem de frequencia, e por ordem lexicografica,
-		   no caso de mesma frequencia*/
-		Collections.sort (dic);
-
-		for (i = 0; i < dic.size (); i++)
-			StdOut.println (dic.get (i));
-	}
-}
