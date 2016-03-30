@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb,amsfonts}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+ 
+\newenvironment{problem}[2][Ex]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\linespread{2}
+%If you want to title your bold things something different just make another thing exactly like this but replace "problem" with the name of the thing you want, like theorem or lemma or whatever
+ 
+\begin{document}
+ 
+%\renewcommand{\qedsymbol}{\filledbox}
+%Good resources for looking up how to do stuff:
+%Binary operators: http://www.access2science.com/latex/Binary.html
+%General help: http://en.wikibooks.org/wiki/LaTeX/Mathematics
+%Or just google stuff
+ 
+\title{Lista 4}
+\author{Victor Sena Molero - 8941317}
+\maketitle
+
+\begin{problem}{16}
+Provar (nos moldes da prova vista em aula para o algoritmo de Kruskal) que o algoritmo descrito a seguir constói uma árvore geradora de custo mínimo.
+\end{problem}
+
+\begin{proof}[Prova]
+Seja $G$ um grafo conexo, com custos $c_a$ em cada aresta $a \in A(G)$. Seja também a função custo $c$ de um grafo $H$ definida como a soma dos custos de todas as arestas de $H$, ou seja, $c(H) = \sum_{a \in A(H)} c_a$. Queremos provar que o algoritmo $\textsc{Desapegado}$ devolve uma árvore geradora mínima $T$ do grafo $G$. Além disso, $m = |A(G)|$ e $n = |V(G)|$. \\
+O algoritmo opera removendo as arestas $G$ que não desconectam o grafo atual em ordem não-crescente de custo. Vamos indexar as arestas em ordem não-crescente também, ou seja, $c_i \geq c_{i+1}$. Podemos definir então o conjunto $R_i$ que define todas as arestas que foram removidas até o momento em que a $i$-ésima aresta é processada pelo algoritmo (incluindo a própria aresta $i$, se ela for removida). Ou seja, $T = G \setminus R_m$. \\
+Queremos provar que o algoritmo, de fato, retoran uma árvore geradora mínima $T$ de $G$. Para isso, escolhemos uma árvore geradora mínima $T^*$ de $G$ tal que para qualquer $S$ árvore geradora mínima de $G$, $|A(T) \cap A(T^*)| \geq |A(T) \cap A(S)|$. Seja $R^*$ o conjunto de arestas que foram removidas de $T^*$, ou seja $R^* = G \setminus T^*$. Vamos supor, por absurdo, que $T^* \neq T$. \\
+Então existe pelo menos uma aresta que foi removida de $T$ e não foi removida de $T^*$, ou seja, uma aresta $\alpha$ tal que $\alpha \in R_m$ e $\alpha \notin R^*$. Escolhemos $\alpha$ como a de índice mínimo (uma das de custo máximo) que respeita esta restrição. Agora escolhemos a aresta $\beta$ análoga em $R^*$, ou seja, a aresta de índice mínimo que foi removida de $T^*$, mas não de $T$. Vamos provar que $\alpha$ (portando $\beta$) não existe, atingindo um absurdo. Primeiro, sabemos que $G \setminus R_{i-1} - \beta$ é conexo, já que $R_i + \beta \subseteq R^*$ e $G \setminus R^*$ é conexo. Portanto $c_\beta \leq c_\alpha$ ($\beta > \alpha$), se não fosse, $\beta$ seria escolhido, não $\alpha$.
+Podemos definir dois conjuntos de vértices, o $J$ com os vértices alcançáveis, em $T^*$, por uma das pontas de $\alpha$ sem passar por $\alpha$ e o $K$ com os vértices alcançáveis, em $T^*$, pela outra ponta de $\alpha$ sem passar por $\alpha$. Em $T$, $\alpha$ é a única conexão entre $J$ e $K$, já que $T^*$ é uma árvore. Remover $\alpha$ de $T^*$ desconecta o grafo, mas existe uma outra aresta $\gamma$ em $T$ e não em $T^*$ que conecta $K$ e $J$, essa aresta tem custo menor ou igual a $\alpha$, pois ela pertence a $R^*$, mas não pertence a $R_i$ (está no final de $R^*$). Se removessemos $\alpha$ e adicionassemos $\gamma$ a $T^*$ geraríamos uma árvore $S$ de custo menor ou igual ao de $T^*$ que é geradora e tal que $|A(T) \cap A(T^*)| < |A(T) \cap A(S)|$, por definição de $T^*$, isso é um absurdo. \\
+Logo, $T^* = T$, então $T$ é uma árvore geradora mínima.
+\end{proof}
+\end{document}

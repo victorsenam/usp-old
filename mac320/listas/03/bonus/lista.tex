@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb,amsfonts}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+ 
+\newenvironment{problem}[2][Ex]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\linespread{2}
+%If you want to title your bold things something different just make another thing exactly like this but replace "problem" with the name of the thing you want, like theorem or lemma or whatever
+ 
+\begin{document}
+ 
+%\renewcommand{\qedsymbol}{\filledbox}
+%Good resources for looking up how to do stuff:
+%Binary operators: http://www.access2science.com/latex/Binary.html
+%General help: http://en.wikibooks.org/wiki/LaTeX/Mathematics
+%Or just google stuff
+ 
+\title{Lista 3}
+\author{Victor Sena Molero - 8941317}
+\maketitle
+
+\begin{problem}{Bônus-1}
+Prove que toda árvore equi-bicolorida tem pelo menos uma folha de cada cor.
+\end{problem}
+
+\begin{proof}
+Dada uma árvore $G$ equi-bicolorida com as cores azul e vermelha. Sabemos que $G$ tem pelo menos duas folhas, pois é uma árvore. Seja $u$ uma folha de $G$, podemos assumir, sem perda de generalidade, que $u$ é vermelha. \\
+Vamos definir uma função $p : V(G) \setminus u \to V(G)$ na árvore $G$. Esta função vai denotar o pai de um vértice da árvore em relação ao vértice $u$ da seguinte maneira: Se temos dois vértices, $v$ e $w$ tais que $p(v) = w$, então, $w$ é vértice que antecede $v$ no caminho de $u$ até $v$. Natualmente, esta definição é inválida para o vértice $u$, já que não há um antecessor de $u$ no caminho de $u$ para $u$. A definição é única para todo vértice, pois, já que $G$ é uma árvore, os caminhos de $u$ para qualquer vértice $v$ são únicos. \\
+Além disso, se dois vértices $v$ e $w$ quaisquer são adjacentes, $p(v) = w$ ou $p(w) = v$. Vou provar isto agora. Primeiro, se $v$ é adjacente a $w$, $v \neq w$, pois o grafo é simples. Agora podemos separar o problema em dois casos: \\
+\begin{enumerate}
+\item Se $v = u$ ou $w = u$, vamos assumir, s.p.g. que $v = u$, logo, $w \neq u$, mas, se $w$ é adjacente a $u$, existe um caminho que vai de $u$ até $w$ composto por apenas uma aresta, entre $u$ e $w$. Logo, $u$ é o antecessor de $w$ no caminho, então $p(w) = u = v$. Se $w = u$, com o mesmo argumento, temos $p(v) = u = w$. \\
+\item Se $v \neq u$ e $w \neq u$, e podemos separar em mais dois casos
+\begin{enumerate}
+\item Se $v$ aparece no caminho $S$ entre $u$ e $w$. Então existe um caminho de $u$ até $v$ que não passa por $w$ (basta pegar um prefixo de $S$) e se concatenarmos este caminho à aresta que vai de $v$ a $w$ temos um caminho até $w$ onde $v$ é o antecessor de $w$, logo, $p(w) = v$.
+\item Se $v$ não aparece no caminho $S$ entre $u$ e $w$. Então temos um caminho de $u$ até $w$ que não passa por $v$ e podemos concantenar a aresta de $v$ para $w$ a este caminho e obter um caminho entre $u$ e $v$ onde $w$ é antecessor de $v$, logo, $p(v) = w$.
+\end{enumerate}
+\end{enumerate}
+Assim, temos que, em todo caso possível, ou $p(v) = w$ ou $p(w) = v$. \\
+Agora, vou provar que se $v$ não é uma folha, existe algum vértice $w$ tal que $p(w) = v$. Isto é verdade pois, já que $v$ é uma folha, existem dois vértices distintos adjacentes a $v$, pelo menos, já que só um deles pode ser $p(v)$, todos os que não forem $p(v)$ devem ser $w$ tais que $p(w) = v$. Já que existe mais de um adjacente, existe pelo menos um $w$. Ou seja, $\forall v \in V(G)$, ou $v$ é folha ou $\exists w \in V(G) : p(w) = v$. \\
+Se definirmos o conjunto de vértices azuis como $C_A$ e o de vermelhos como $C_V$, a função $p$ está bem definida para todo $v \in C_V \setminus u$. Além disso, já que $\forall v$, $p(v)$ é adjacente a $v$, temos que, se $v \in C_V$, $p(v) \in C_A$. Logo, podemos definir uma restrição da função $p$ sobre o conjunto $C_V \setminus u$ e chamá-la $q$. Assim, a função $q : C_V \setminus u \to C_A$ se comporta exatamente igual à $p$ em todo seu domínio. \\
+Agora, vamos assumir, por absurdo, que não existem folhas azuis. Então, temos que, $\forall v \in C_A, \exists w \in V(G) : p(w) = v$. Além disso, sabemos que se $p(w) \in C_A, w \in C_V \setminus u$ e que se $w \in C_V \setminus u, p(w) = q(w)$. Logo, podemos reescrever a afirmação acima como
+$$\forall v \in C_A, \exists w \in C_V \setminus u : q(w) = v$$
+O que quer dizer, exatamente, que $q$ é uma sobrejeção de $C_V \setminus u$ em $C_A$, ou seja, $|C_V \setminus u| \geq |C_A|$ e já que $u \in C_V$, $C_V \setminus u \subset C_V$, logo $|C_V| > |C_V \setminus u| \geq |C_A|$. Ou seja, $|C_V| > |C_A|$ e, já que $G$ é equibicolorido, $|C_V| = |C_A|$, um absurdo. \\
+Assim, existe pelo menos uma folha azul em $G$.
+
+\end{proof}
+
+\end{document}

@@ -1,5 +1,0 @@
-nUSP: 7158472	
-Nome: Claudio Ferndes da silva filho	
-
-$ java WordFrequencies < teste.txt 
-saida ordenada: {b=7, a=8} 
