@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb,amsfonts}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+ 
+\newenvironment{problem}[2][Ex]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\linespread{2}
+%If you want to title your bold things something different just make another thing exactly like this but replace "problem" with the name of the thing you want, like theorem or lemma or whatever
+ 
+\begin{document}
+ 
+%\renewcommand{\qedsymbol}{\filledbox}
+%Good resources for looking up how to do stuff:
+%Binary operators: http://www.access2science.com/latex/Binary.html
+%General help: http://en.wikibooks.org/wiki/LaTeX/Mathematics
+%Or just google stuff
+ 
+\title{Lista 4}
+\author{Victor Sena Molero - 8941317}
+\maketitle
+
+\begin{problem}{17}
+Seja $(T,C)$ um par, onde $T$ é uma árvore e $C = \{T_1, T_2, \dots, T_k\}$ é uma coleção de subárvores de $T$ tal que quaisquer duas delas têm pelo menos um vértice em comum. Prove que existe um vértice que pertence a todas as árvores da coleção $C$. Provar por indução em $|V(T)|$.
+\end{problem}
+
+\begin{proof}[Prova]
+Seja $T$ uma árvore e $C$ uma coleção não vazia de subárvores de $T$ tal que cada par de elementos de $C$ tem pelo menos um vértice em comum. \\
+Vamos provar, por indução em $|V(T)|$ que existe um vértice que pertence a todas as árvores da coleção. \\
+Se $|V(T)| = 1$, a única subárvore possível é $T$, logo, o único vértice de $T$ pertence a toda subárvore da única coleção possível. Seja $k > 1$ e suponha que vale com $|V(T)| < k$. \\
+Se $|V(T)| = k$ escolhemos um vértice $u$ qualquer de $T$. Seja $C^*$ o conjunto de todas as subárvores em $C$ que não contém o vértice $u$ e $G = T - u$ a floresta que é obtida ao se remover $u$ de $T$. Se $C^* = \emptyset$ todas as árvores de $C$ compartilham o vértice $u$, ou seja, vale a hipótese proposta. Agora basta provarmos que vale com $C^* \neq \emptyset$. \\
+Já que $|V(T)| > 1$, $|V(G)| \geq 1$, logo, $G$ possui uma ou mais componentes conexas. Cada uma dessas componentes é uma árvore, pois são conexas e não possuem ciclos (foi apenas removido um vértice, é impossível formar um ciclo novo assim). Queremos encontrar uma componente $T'$ de $G$ que contenha uma coleção $C'$ de subárvores de $T'$ onde cada elemento de $C'$ é uma subárvore de um elemento distinto de $C$ e onde cada par de elementos possui um vértice em comum. Ou seja, procuramos por uma subárvore de $T$ onde podemos aplicar a hipótese de indução. \\
+Já que $C^* \neq \emptyset$ existe pelo menos um elemento de $C$ que não contém o vértice $u$, escolhemos este elemento $R$. Já que $R$ não contém $u$, $R$ só possui vértices em uma componente de $G$. Se $R$ tivesse vértices em mais de uma componente, por ser uma árvore, formaria um caminho entre dois vértices de componentes distintas de $G$ usando apenas vértices de $G$, um absurdo. Podemos escolher então $T'$ como a componente onde $R$ está inteiramente contida. \\
+Todo elemento de $C$ possui pelo menos um vértice em $T'$, já que possui uma intersecção com $R$. Agora, podemos escolher a coleção $C'$ de subárvores de $T'$ onde cada elemento de $C'$ é a intersecção de um elemento de $C$ com a componente $T'$, ou seja, $C' = \{c \cap T' : c \in C\}$. Para cada elemento $c$ de $C'$ podemos associar um elemento $p(c) \in C$ tal que $c = p(c) \cap T'$. Vamos provar que os elementos de $C'$ são, de fato, árvores. \\
+Para isso basta observar que cada elemento $c$ de $C'$ é formado da intersecção de uma subárvore $T'$ de $T$ e outra subárvore $p(c)$ de $T'$. Se houver um ciclo em $c$, há um ciclo tanto em $T'$ quanto em $p(c)$, o que é impossível. Se $c$ for desconexo, então existe um par de vértices $u, v \in T' \cap p(c)$ com um caminho, em $T'$ distinto do caminho em $p(c)$. Já que $T', p(c) \subseteq T$, $T' \cup p(c) \subseteq T$ e se existe um caminho distinto entre um par de vértices para cada uma das árvores, existem dois caminhos distintos na união, ou seja, a união não é uma árvore, ou seja $T$ não é uma árvore, o que é impossível. Logo, todo elemento de $c$ é acícilo e conexo, ou seja, é uma árvore. \\
+Agora, vamos provar que todo par de elementos de $C'$ possui interssecção em $T'$.\\
+Seja $(a,b)$ um par qualquer de elementos de $T'$. Se $a = p(a)$ e $b = p(b)$ então, por definição de $C$, existe intersecção entre $a$ e $b$. Se $a \neq p(a)$ e $b \neq p(b)$ sabemos que $p(a)$ e $p(b)$ contém o vértice $u$, já que contém vértices fora da componente $T'$, além disso, eles contém vértices dentro da componente $T'$. Ou seja, existe uma aresta entre $u$ e $T'$ em $p(a)$ e em $p(b)$, porém, só existe uma aresta em $T$ que vai de $u$ a um vértice de $T'$. Logo, $a$ e $b$ possuem um vértice em comum, que é o vértice de $T'$ adjacente, em $T$, a $u$. \\
+Caso contrário, podemos assumir s.p.g. que $a = p(a)$ e $b \neq p(b)$, logo $p(a)$ está inteiramente contida em $T'$ e existe uma intersecção entre $p(a)$ e $p(b)$ (pela definição de $C$) que está contida em $T'$ (pois $p(a)$ está em $T'$). Assim, $a$ e $b$ têm uma intersecção. Portanto, todo par de elementos em $C'$ possui uma intersecção. \\
+Assim, obtemos uma árvore $T'$ tal que $|V(T')| < k$ e uma coleção $C'$ de subárvores de $T'$ onde cada par de elementos se intersecta. Podemos aplicar a hipótese de indução e concluir que existe um vértice $v$ em $T'$ que pertence a todas as árvores de $C'$, logo, este elemento pertence a todas as árvores de $C$, já que as árvores de $C'$ estão contidas nas árvores de $C$. E já que $v \in T'$, $v \in T$, ou seja, existe um elemento em $T$ que pertence a todas as árvores de $C$.
+
+
+\end{proof}
+
+\end{document}
