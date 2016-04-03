@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb,amsfonts}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+ 
+\newenvironment{problem}[2][Ex]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\linespread{2}
+%If you want to title your bold things something different just make another thing exactly like this but replace "problem" with the name of the thing you want, like theorem or lemma or whatever
+ 
+\begin{document}
+ 
+%\renewcommand{\qedsymbol}{\filledbox}
+%Good resources for looking up how to do stuff:
+%Binary operators: http://www.access2science.com/latex/Binary.html
+%General help: http://en.wikibooks.org/wiki/LaTeX/Mathematics
+%Or just google stuff
+ 
+\title{Lista 4}
+\author{Victor Sena Molero - 8941317}
+\maketitle
+
+\begin{problem}{16}
+Provar (nos moldes da prova vista em aula para o algoritmo de Kruskal) que o algoritmo descrito a seguir constói uma árvore geradora de custo mínimo.
+\end{problem}
+
+\begin{proof}[Prova]
+Seja $G = (V, A)$ um grafo conexo, com custos $c_a$ em cada aresta $a \in A$. Seja também a função $c(H)$, com $H$ sendo um grafo qualquer, o custo deste grafo, ou seja $c(H) = \sum_{a \in A(H)} c_a$. Queremos provar que o algorimo $\textsc{Desapegado}$ devolve uma árvore geradora mínima $T$ do grafo $G$. \\
+O algoritmo opera removendo as arestas de $G$ que não desconectam o grafo atual em ordem não-crescente de custo. Seja $R$ o conjunto das arestas removidas de $G$ pelo algorimo, ou seja, o algoritmo retorna a árvore $T = G \setminus R$. Seja, também, $T^*$ uma árvore geradora mínima do grafo $G$ tal que $|T \cap T*|$ é máximo, ou seja, a árvore geradora mínima de $G$ com mais arestas em comum com $T$ (todos os vértices de $G$ sempre pertencem a $T \cap T^*$. \\
+Devemos, primeiramente, provar que o $T$ retornardo pelo algoritmo é uma árvore. Mas o algoritmo garante que $T$ é conexo, pois o algoritmo nunca remove uma ponte do grafo atual. Além disso, se fosse possível remover mais uma aresta de $T$ sem desconectá-lo, o algoritmo teria removido, pois ele passa por todas as arestas de $G$ e remove todas as que não desconectam o grafo. \\
+Agora vamos provar que $T$ é de fato mínima, ou seja, tem custo mínimo. Para isso, basta escolher o conjunto de arestas $R^* = G \setminus T^*$, ou seja, todas as arestas de $G$ que não pertencem à árvore $T^*$ que, por hipótese, é mínima. Se $R^* = R$, então $T = T^*$ e $T$ é uma árvore geradora mínima. Vamos supor, por absurdo, que $R^* \neq R$. \\
+Basta então ordenar $R$ e $R^*$ em ordem não-crescente, ou seja, a ordem na qual o algoritmo processa os vértices. $R$ nos dá todas as arestas escolhidas pelo algoritmo na ordem em que elas foram escolhidas. Seja $\alpha$ a primeira aresta que foi escolhida pelo algoritmo e não está em $R^*$, ou seja, uma aresta de maior custo (primeira) em $R \setminus R^*$ e seja $\beta$ a primeira aresta que não foi escolhida pelo algoritmo e está em $R$, ou seja, uma aresta de maior custo (primeira) em $R^* \setminus R$. Se $c_\alpha < c_\beta$, $\beta$ apareceria antes de $\alpha$ para o algoritmo e, já que $\beta$ retirar $R^*$ não desconecta o grafo $G$, retirar um subconjunto de $R^*$ (no caso, $\beta$ e todas as arestas maiores que $\beta$) não desconecta o grafo, logo, $\beta$ seria removido pelo algoritmo, então $c_\alpha \geq c_\beta$. \\
+Agora vamos considerar o grafo $S = T^* + \beta - \alpha$. Se $S$ for ainda uma árvore, temos que o custo de $S$ é menor ou igual ao custo de $T^*$, já que foi adicionada uma aresta de custo menor ou igual ao da que foi removida. Logo, $S$ é uma árvore geradora mínima que tem uma intersecção maior com $T$ do que $T^*$, um absurdo. Assim, $S$ não é uma árvore. \\
+Porém, se $S$ não é uma árvore e tem $n-1$ arestas, ela é um grafo desconexo onde uma componente tem um ciclo. Então remover $\alpha$ de $T^*$ desconecta o grafo 
+
+Seja $G$ um grafo conexo, com custos $c_a$ em cada aresta $a \in A(G)$. Seja também a função custo $c$ de um grafo $H$ definida como a soma dos custos de todas as arestas de $H$, ou seja, $c(H) = \sum_{a \in A(H)} c_a$. Queremos provar que o algoritmo $\textsc{Desapegado}$ devolve uma árvore geradora mínima $T$ do grafo $G$. Além disso, $m = |A(G)|$ e $n = |V(G)|$. \\
+O algoritmo opera removendo as arestas $G$ que não desconectam o grafo atual em ordem não-crescente de custo. Vamos indexar as arestas em ordem não-crescente também, ou seja, $c_i \geq c_{i+1}$. Podemos definir então o conjunto $R_i$ que define todas as arestas que foram removidas até o momento em que a $i$-ésima aresta é processada pelo algoritmo (incluindo a própria aresta $i$, se ela for removida). Ou seja, $T = G \setminus R_m$. \\
+Queremos provar que o algoritmo, de fato, retoran uma árvore geradora mínima $T$ de $G$. Para isso, escolhemos uma árvore geradora mínima $T^*$ de $G$ tal que para qualquer $S$ árvore geradora mínima de $G$, $|A(T) \cap A(T^*)| \geq |A(T) \cap A(S)|$.
+
+\end{document}

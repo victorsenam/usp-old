@@ -2,6 +2,8 @@
  * Nome: Mathias Van Sluys Menck
  * NumUSP: 4343470
 */
+import java.util.*;
+import edu.princeton.cs.algs4.*;
 
 public class WordFrequencies
 {

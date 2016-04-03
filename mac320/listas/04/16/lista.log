@@ -1,14 +1,14 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.2.20)  29 MAR 2016 23:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.11.4)  30 MAR 2016 13:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **lista.tex
 (./lista.tex
-LaTeX2e <2015/10/01> patch level 2
-Babel <3.9m> and hyphenation patterns for 79 languages loaded.
-(/usr/share/texmf-dist/tex/latex/base/article.cls
+LaTeX2e <2015/01/01>
+Babel <3.9l> and hyphenation patterns for 2 languages loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/share/texmf-dist/tex/latex/base/size12.clo
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -23,25 +23,23 @@ File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/share/texmf-dist/tex/latex/base/inputenc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
-(/usr/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-(/usr/share/texmf-dist/tex/latex/base/t1enc.dfu
-File: t1enc.dfu 2015/09/07 v1.1p UTF-8 support for inputenc
-   defining Unicode char U+00A0 (decimal 160)
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00AB (decimal 171)
-   defining Unicode char U+00AD (decimal 173)
    defining Unicode char U+00BB (decimal 187)
    defining Unicode char U+00BF (decimal 191)
    defining Unicode char U+00C0 (decimal 192)
@@ -162,10 +160,6 @@ File: t1enc.dfu 2015/09/07 v1.1p UTF-8 support for inputenc
    defining Unicode char U+016F (decimal 367)
    defining Unicode char U+0170 (decimal 368)
    defining Unicode char U+0171 (decimal 369)
-   defining Unicode char U+0174 (decimal 372)
-   defining Unicode char U+0175 (decimal 373)
-   defining Unicode char U+0176 (decimal 374)
-   defining Unicode char U+0177 (decimal 375)
    defining Unicode char U+0178 (decimal 376)
    defining Unicode char U+0179 (decimal 377)
    defining Unicode char U+017A (decimal 378)
@@ -173,10 +167,6 @@ File: t1enc.dfu 2015/09/07 v1.1p UTF-8 support for inputenc
    defining Unicode char U+017C (decimal 380)
    defining Unicode char U+017D (decimal 381)
    defining Unicode char U+017E (decimal 382)
-   defining Unicode char U+0218 (decimal 536)
-   defining Unicode char U+0219 (decimal 537)
-   defining Unicode char U+021A (decimal 538)
-   defining Unicode char U+021B (decimal 539)
    defining Unicode char U+200C (decimal 8204)
    defining Unicode char U+2013 (decimal 8211)
    defining Unicode char U+2014 (decimal 8212)
@@ -195,12 +185,10 @@ File: t1enc.dfu 2015/09/07 v1.1p UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-(/usr/share/texmf-dist/tex/latex/base/ot1enc.dfu
-File: ot1enc.dfu 2015/09/07 v1.1p UTF-8 support for inputenc
-   defining Unicode char U+00A0 (decimal 160)
+(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
-   defining Unicode char U+00AD (decimal 173)
    defining Unicode char U+00B8 (decimal 184)
    defining Unicode char U+00BF (decimal 191)
    defining Unicode char U+00C5 (decimal 197)
@@ -218,14 +206,6 @@ File: ot1enc.dfu 2015/09/07 v1.1p UTF-8 support for inputenc
    defining Unicode char U+0142 (decimal 322)
    defining Unicode char U+0152 (decimal 338)
    defining Unicode char U+0153 (decimal 339)
-   defining Unicode char U+0174 (decimal 372)
-   defining Unicode char U+0175 (decimal 373)
-   defining Unicode char U+0176 (decimal 374)
-   defining Unicode char U+0177 (decimal 375)
-   defining Unicode char U+0218 (decimal 536)
-   defining Unicode char U+0219 (decimal 537)
-   defining Unicode char U+021A (decimal 538)
-   defining Unicode char U+021B (decimal 539)
    defining Unicode char U+2013 (decimal 8211)
    defining Unicode char U+2014 (decimal 8212)
    defining Unicode char U+2018 (decimal 8216)
@@ -236,8 +216,8 @@ File: ot1enc.dfu 2015/09/07 v1.1p UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-(/usr/share/texmf-dist/tex/latex/base/omsenc.dfu
-File: omsenc.dfu 2015/09/07 v1.1p UTF-8 support for inputenc
+(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
    defining Unicode char U+00B7 (decimal 183)
@@ -260,22 +240,22 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-(/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 )
-(/usr/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-(/usr/share/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-(/usr/share/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count87
@@ -291,24 +271,24 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen110
 \Gm@dimlist=\toks17
 )
-(/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-(/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks18
 \ex@=\dimen111
 ))
-(/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen112
 )
-(/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count90
@@ -349,7 +329,7 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
-(/usr/share/texmf-dist/tex/latex/amscls/amsthm.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2015/03/04 v2.20.2
 \thm@style=\toks23
 \thm@bodyfont=\toks24
@@ -361,10 +341,10 @@ Package: amsthm 2015/03/04 v2.20.2
 \thm@headsep=\skip48
 \dth@everypar=\toks28
 )
-(/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
@@ -421,35 +401,37 @@ LaTeX Font Info:    ... okay on input line 14.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Try loading font information for U+msa on input line 24.
-(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 24.
 
-(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] (./lista.aux) ) 
 Here is how much of TeX's memory you used:
- 1951 strings out of 493054
- 22826 string characters out of 6140586
- 87646 words of memory out of 5000000
- 5474 multiletter control sequences out of 15000+600000
+ 1935 strings out of 495000
+ 23085 string characters out of 6181169
+ 84382 words of memory out of 5000000
+ 5170 multiletter control sequences out of 15000+600000
  12740 words of font info for 49 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 27i,8n,32p,497b,190s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 14 hyphenation exceptions out of 8191
+ 27i,8n,32p,855b,190s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/s
-hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pf
-b></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
-8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on lista.pdf (2 pages, 102114 bytes).
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
+>
+Output written on lista.pdf (2 pages, 108138 bytes).
 PDF statistics:
  55 PDF objects out of 1000 (max. 8388607)
  39 compressed objects within 1 object stream
