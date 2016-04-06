@@ -104,4 +104,24 @@ $$ 13n + 28 < 14n $$
 O que é verdade quando $n > 28$, logo, $T$ é linear.
 \end{proof}
 
+\begin{problem}{15}
+Descrever o algoritmo pedido no 18 (dando uma ideia de porque funciona e porque consome o tempo pedido).
+\end{problem}
+
+\begin{proof}
+Primeiro, temos um vetor de tamanho $n$ com os valores $a_i$ e $b_i$ em cada índice $i$. Estes valores definem $n$ retas $y = a_i x + b$. \\
+Ordenamos este vetor crescentemente no valor de $a_i$ e, no caso de empate, decrescentemente no tamanho de $b_i$. Agora podemos montar uma pilha de elementos que guarda, para cada elemento $x$ os valores $a_x$, $b_x$ e $c_x$ representam uma reta com os valores $a_x$ e $b_x$ e, também, a intersecção entre esta reta e a reta que vem imediatamente abaixo dela na pilha, se esta for a reta mais baixa na pilha, $c_x = -\infty$. \\
+Já que as retas vão ser inseridas ordenadamente na pilha, os valores de $a$ estarão decrescentes na pilha (os menores vão estar mais em cima), podemos inserir nesta pilha de uma maneira esperta para conseguir remover as retas que não serão vistas quando ignoradas as retas que vêm depois da reta atual no vetor, com isso, naturalmente, no passo final, teremos todas as retas que serão vistas quando consideradas todas as retas dadas. \\
+Para isso, basta observar que se a reta $x$ e a reta $y$ são tais que $a_x > a_y$, para todos os pontos à direita da intersecção de $x$ com $y$, $x$ está acima de $y$ e nos pontos à esquerda da intersecção, $y$ está acima de $x$. Ou seja, $x$ é visível à partir deste ponto, mas não antes deste, não importa o que vem antes deste ponto, $x$ não será visível lá e não importa o que venha depois deste ponto, $y$ não será visível lá. Se houverem duas retas tais que $a_x = a_y$, então a reta com $b$ menor nunca será visível e poderá ser ignorada. \\
+Agora, se houver uma reta $y$ que só é visível à partir do ponto $c_y$ e uma outra reta $x$ tal que $a_x > a_y$ tal que a intersecção $p$ entre $x$ e $y$ é tal que $p < c_y$, então $y$ nunca é visível, pois $x$ será maior que $y$ em todos os pontos onde $y$ antes era visível. Portanto, a reta $y$ pode ser ignorada. \\
+Ou seja, nosso algoritmo ordena as retas por ângulo em $O(n \lg n)$ e inicializa uma pilha vazia. Agora, ele percorre os elementos da pilha e vai colocando um por um na pilha, mas antes de inserir o elemento $x$ na pilha, 4 casos diferentes são checados. \\
+Se a pilha estiver vazia, $c_x = -\infty$ \\
+Se o topo $y$ da pilha for tal que $a_x = a_y$, então $x$ é ignorado e nunca é inserido (pois $b_x < b_y$, ja que no desempate o $b$ é decrescente) \\
+Se o topo $y$ da pilha se intersectar com $x$ no ponto $p$ e $p$ for tal que $p \leq c_y$, $y$ é removido da pilha e tentamos inserir $x$ novamente (checando essas condições novamente) \\
+Se o topo $y$ da pilha se intersectar com $x$ no ponto $p$ e $p$ for tal que $p > c_y$, então $c_x = p$ \\
+Todas as retas $x$ que estiverem na pilha ao final do algoritmo são visíveis do ponto $c_x$ até o ponto $c_{x+1}$, onde $x+1$ é o elemento acima de $x$ na pilha. Na falta de um elemento $x+1$ (ou seja, se $x$ é o topo da pilha), ele é visível de $c_x$ até $\infty$. \\
+Vamos contar a quantidade de operações feitas na pilha. A cada tentativa de inserção é necessário buscar o topo da pilha, ou seja, no mínimo, são feitas $O(n)$ operações na pilha. Além disso, elementos são removidos da pilha, porém, cada elemento é removido no máximo uma vez da pilha, logo, são feitas até $O(n)$ remoções. Todas as outras operações estão atreladas a (acontecem se e somente se acontecem) inserções ou remoções e custam todas $O(1)$. Logo, todo o processo custa $O(n)$. Assim, o algoritmo envolve uma ordenação e um processamento $O(n)$, portanto, tem tempo final $O(n \lg n)$. \\
+Existe também uma forma de se implementar isso numa árvore de busca binária em $O(n \lg n)$. Para cada inserção de uma reta $x$, basta buscar a reta $y$ com $a_y$ imediatamente inferior e ao $a_x$. Assim, encontra-se a posição de $x$ na pilha, agora, basta checar para as duas retas adjacentes a $x$ se $a_x$ fica em cima delas em alguma parte do intervalo em que elas são visíveis. As operações ficam um pouco mais complicadas com mais corner-cases, mas isso é útil quando não se pode ordenar as retas dadas ao começo do algoritmo (por exemplo, quando não se sabe, à priori, todas as retas que serão dadas). \\
+\end{proof}
+
 \end{document}
