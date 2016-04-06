@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb,amsfonts}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+ 
+\newenvironment{problem}[2][Ex]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\linespread{2}
+%If you want to title your bold things something different just make another thing exactly like this but replace "problem" with the name of the thing you want, like theorem or lemma or whatever
+ 
+\begin{document}
+ 
+%\renewcommand{\qedsymbol}{\filledbox}
+%Good resources for looking up how to do stuff:
+%Binary operators: http://www.access2science.com/latex/Binary.html
+%General help: http://en.wikibooks.org/wiki/LaTeX/Mathematics
+%Or just google stuff
+ 
+\title{Lista 5}
+\author{Victor Sena Molero - 8941317}
+\maketitle
+
+\begin{problem}{18}
+Seja $G$ um grafo simples com $n$ vértices e pelo menos $(n-1)(n-2)/2 + 2$ arestas. Prove que $G$ é hamiltoniano. Dê um exemplo de um grafo simples não hamiltoniano com $n$ vértices e $(n-1)(n-2)/2 + 1$ arestas.
+\end{problem}
+
+\begin{proof}[Prova]
+Seja $G$ um grafo simples com $n$ vértices e pelo menos $(n-1)(n-2)/2 + 2$ arestas. \\
+Sabemos que, para todo grafo simples 
+$$ |A(G)| \leq n(n-1)/2 $$ 
+Logo, estamos olhando para grafos $G$ onde 
+$$ (n-1)(n-2)/2 + 2 \leq |A(G)| \leq n(n-1)/2 $$ 
+Ou seja, $n \geq 3$. \\
+Segundo o Teorema de Ore se, para todo par de vértices $u$ e $v$ não adjacentes no grafo, $g(u) + g(v) \geq n$, então, $G$ é hamiltoniano. \\
+Se o grafo for completo, ele é hamiltoniano e vale a tese. Agora, se o grafo não é completo existe pelo menos um par de vértices $u$ e $v$ não adjacentes no grafo. Escolha um par qualquer e remova-o do grafo, obtendo então o grafo $H = G - u - v$. Já que $|V(H)| = n-2$, sabemos que 
+$$ |A(H)| \leq (n-2)(n-3)/2 $$ 
+E também sabemos que, se $A(u)$ for o conjunto de arestas que contém $u$ e $A(v)$ for o conjunto de arestas que contém $v$, $A(H) \cup A(u) \cup A(v) = A(G)$ e $A(H) \cap A(v) = A(H) \cap A(u) = A(u) \cap A(v) = \emptyset$, logo: 
+$$ |A(G)| = |A(H)| + |A(u)| + |A(v)| = |A(H)| + g(u) + g(v) $$ 
+$$ g(u) + g(v) = |A(G)| - |A(H)| \geq (n-1)(n-2)/2 + 2 + (n-2)(n-3)/2 = $$
+$$ = (n-2)(n-1-n+3)/2 + 2 = (n-2)(2)/2 + 2 = n-2+2 = n $$ 
+$$ g(u) + g(v) \geq n $$ 
+Portanto, qualquer par de vértices $u,v$ não adjacentes no grafo respeita a propriedade $g(u) + g(v) \geq n$, ou seja, valem todas as hipóteses do Teorema de Ore e o grafo é hamiltoniano. \\
+Um grafo não-hamiltoniano com $n$ vértices e $(n-1)(n-2)/2 + 1$ arestas é o único possível com $n = 3$. Se $n = 3$ então $(n-1)(n-2)/2+1 = 2$. E o grafo é um vértice adjacente a dois outros que não são adjacentes entre si. \\
+\end{proof}
+
+\begin{problem}{19}
+Seja $G$ um grafo simples $(X,Y)$-bipartido com $|X| = |Y| = m \geq 2$. Prove que se para todo par $u, v$ de vértices não-adjacentes tem-se que $g(u) + g(v) > m$, então $G$ é hamiltoniano. \\
+\end{problem}
+
+\begin{proof}[Prova]
+Seja $G$ um grafo simples $(X,Y)$-bipartido tal que $|X| = |Y| = m \geq 2$ onde para todo par de vértices $u, v \in V(G)$ não adjacentes $g(u) + g(v) > m$. \\
+Se $m = 2$ o único grafo que respeita as hipóteses dadas é bipartido completo, logo, é hamiltoniano, como diz a tese. \\
+Agora assumimos $m \geq 3$. Irei supor, por absurdo, que a tese é falsa. Então há um contra-exemplo máximal, ou seja, um grafo $G$ não-hamiltoniano tal que, se uma aresta entre dois vértices de componentes distintas não adjacentes quaisquer for adicionada, este grafo se torna hamiltoniano. Sempre há pelo menos um par de arestas não adjacentes neste grafo, pois o grafo completo é hamiltoniano. \\
+Neste grafo, então, escolhemos um par de vértices $u,v$ não adjacentes quaisquer tal que é possível inserir uma aresta entre eles. Vamos assumir, sem perda de generalidade, que $u \in X$ e $v \in Y$. Se adicionarmos uma aresta $\alpha = {u,v}$, teremos um caminho hamiltoniano no grafo, todas as arestas deste caminho diferentes de $\alpha$ pertencem ao grafo $G$ e formam, em $G$, um caminho hamiltoniano, chamemos este caminho de $S$. O grafo $G$ tem uma quantidade par de vértices, podemos particionar estes vértices em classes de tamanho 2 percorrendo o caminho $S$ no sentido de $u$ para $v$ (que são as duas pontas do caminho) e unindo os vértices em posições ímpares (indexadas em 1) com os vértices seguintes, por exemplo, juntando $u$ com o vértice seguinte, o terceiro vértice com o quarto, e assim por diante. \\
+Desta forma, teremos $m$ classes diferentes no particionamento. Cada classe possui exatamente um vértice em $X$ e outro em $Y$, portanto, $u$ só pode ser adjacente a um vértice de cada classe e $v$ só pode ser adjacente ao outro vértice de cada classe. Pelo princípio da casa dos pombos, já que $g(u) + g(v) > m$, existe uma classe adjacente tanto a $u$ quanto a $v$. Chamaremos o vértice em $|X|$ desta classe de $x$ e o vértice em $|Y|$ desta classe de $y$. \\
+Sabemos que $x \neq u$, pois $v$ não é adjacente a $u$ e $v$ é adjacente a $x$. Pelo mesmo argumento, $y \neq v$. Assim, podemos escolher o caminho $A$ de $u$ até $x$ e o caminho $B$ de $y$ até $v$. Sabemos que estes caminhos não se intersectam pois $x$ é visitado antes de $y$ ao percorrer o caminho $S$ de $u$ para $v$. Além disso, existe uma aresta de $u$ para $y$ e uma aresta de $v$ para $x$, logo, podemos escolher o caminho $R = A + vx + B + uy$ e obter um caminho hamiltoniano no grafo $G$. Um absurdo. \\
+Portanto, não existe contra-exemplo maximal para as hipóteses dadas, logo, não existe contra-exemplo, logo, vale a tese.
+\end{proof}
+
+\end{document}
