@@ -27,7 +27,7 @@ public class Tester {
                 StdOut.println("OK :)");
                 discount = 0;
             } else {
-                StdOut.print("[-" + discount + "] "));
+                StdOut.print("[-" + discount + "] ");
                 StdOut.println(res);
             }
         } catch (TimeoutException e) {
@@ -183,9 +183,9 @@ public class Tester {
     }
 
     public static void main(String[] args) {
-        int nota = 1000;
+        int nota = 10000;
         long stdTime = 1000;
-        int stdDiscount = 200;
+        int stdDiscount = 2000;
         nota -= Tester.test(stdDiscount, "Duas filas independentes têm grande chance de gerar permutações diferentes quando alimentadas com a mesma entrada", Tester::independentQueues, stdTime, 1, 10);
         nota -= Tester.test(stdDiscount, "A fila não deve desenfileirar duas vezes o mesmo item", Tester::repetitions, stdTime, 1, 200);
         nota -= Tester.test(stdDiscount, "A fila deve gerar permutações bem distribuidas (não enviesadas)", Tester::distribution, stdTime, 5, 4, 200);
@@ -194,6 +194,8 @@ public class Tester {
         nota -= Tester.test(stdDiscount, "É possível chamar todos os métodos especificados no enunciado", Tester::specification, stdTime, 1, new Integer[0]);
         nota -= Tester.test(stdDiscount, "A função sample funciona corretamente", Tester::sampling, stdTime, 1, new Integer[0]);
         nota -= Tester.test(stdDiscount, "A fila funciona com Strings", Tester::stringTest, stdTime, 1, new Integer[0]);
+
+        StdOut.println("Nota final: " + ((double)(nota) / 100.));
         System.exit(0);
     }
 }
