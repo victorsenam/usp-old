@@ -34,6 +34,8 @@ public class Tester {
             StdOut.println("TEMPO DE EXECUÇÃO EXCEDIDO");
         } catch (Throwable e) {
             StdOut.println("ERRO DE EXECUÇÃO");
+            while (e.getCause() != null)
+                e = e.getCause();
             e.printStackTrace();
         } finally {
             executor.shutdownNow();
@@ -47,8 +49,8 @@ public class Tester {
 
     public static /* varargs */ String independentQueues(Integer ... args) {
         Integer siz = args[0];
-        RandomQueue first = new RandomQueue();
-        RandomQueue second = new RandomQueue();
+        RandomQueue<Integer> first = new RandomQueue<Integer>();
+        RandomQueue<Integer> second = new RandomQueue<Integer>();
         for (int i = 0; i < siz; ++i) {
             first.enqueue((Object)i);
             second.enqueue((Object)i);
@@ -62,7 +64,7 @@ public class Tester {
 
     private static /* varargs */ String repetitions(Integer ... args) {
         Integer siz = args[0];
-        RandomQueue queue = new RandomQueue();
+        RandomQueue<Integer> queue = new RandomQueue<Integer>();
         boolean[] visited = new boolean[siz.intValue()];
         for (int i = 0; i < siz; ++i) {
             queue.enqueue((Object)i);
@@ -84,7 +86,7 @@ public class Tester {
     public static /* varargs */ String distribution(Integer ... args) {
         Integer siz = args[0];
         Integer lim = args[1];
-        RandomQueue queue = new RandomQueue();
+        RandomQueue<Integer> queue = new RandomQueue<Integer>();
         Integer fat = 0;
         for (int i = 0; i < siz; ++i) {
             fat = fat + (i + 1);
@@ -118,7 +120,7 @@ public class Tester {
     public static /* varargs */ String bigCase(Integer ... args) {
         int i;
         Integer siz = args[0];
-        RandomQueue queue = new RandomQueue();
+        RandomQueue<Integer> queue = new RandomQueue<Integer>();
         for (i = 0; i < siz; ++i) {
             queue.enqueue((Object)i);
         }
@@ -130,7 +132,7 @@ public class Tester {
 
     public static /* varargs */ String dynamic(Integer ... args) {
         Integer siz = args[0];
-        RandomQueue queue = new RandomQueue();
+        RandomQueue<Integer> queue = new RandomQueue<Integer>();
         while (siz > 0) {
             int op = StdRandom.uniform((int)1);
             if (queue.isEmpty()) {
@@ -148,7 +150,7 @@ public class Tester {
     }
 
     public static /* varargs */ String specification(Integer ... args) {
-        RandomQueue queue = new RandomQueue();
+        RandomQueue<Integer> queue = new RandomQueue<Integer>();
         if (queue.isEmpty()) {
             queue.enqueue((Object)10);
         }
@@ -159,7 +161,7 @@ public class Tester {
     }
 
     public static /* varargs */ String sampling(Integer ... args) {
-        RandomQueue queue = new RandomQueue();
+        RandomQueue<Integer> queue = new RandomQueue<Integer>();
         queue.enqueue((Object)1);
         int ret = (Integer)queue.sample();
         if (ret != 1) {
@@ -172,7 +174,7 @@ public class Tester {
     }
 
     public static /* varargs */ String stringTest(Integer ... args) {
-        RandomQueue queue = new RandomQueue();
+        RandomQueue<String> queue = new RandomQueue<String>();
         queue.enqueue((Object)"A string");
         String res = (String)queue.dequeue();
         if (res != "A string") {
