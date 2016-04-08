@@ -8,6 +8,7 @@ import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 import java.util.function.Function;
+import java.io.*;
 
 public class Tester {
     public static /* varargs */ int test(int discount, String nome, Function<Integer[], String> runner, long timeout, int repetitions, Integer ... args) {
@@ -184,6 +185,67 @@ public class Tester {
         return "";
     }
 
+    public static String bridgeValid(Integer ... args) {
+        try {
+            Process p = Runtime.getRuntime().exec("java-algs4 Bridge");
+            p.waitFor();
+
+            BufferedReader b = new BufferedReader(new InputStreamReader(p.getInputStream()));
+            String lines[] = new String[20];
+            int i = 0;
+
+            while (i < 20 && (lines[i] = b.readLine()) != null) {
+                int cnt = 0;
+                char[] c = new char[2];
+                c[0] = lines[i].charAt(0);
+                c[1] = lines[i].charAt(1);
+                if ( ((c[0] < '0' || c[0] > '9') && (c[0] != 'J') && (c[0] != 'Q') && (c[0] != 'K') && (c[0] != 'A') && (c[0] != 'T')) ||
+                     ( c[1] != 'S' && c[1] != 'C' && c[1] != 'D' && c[1] != 'H') )
+                    return "Carta inválida: " + lines[i];
+                i++;
+            }
+            if (i != 13)
+                return "Não imprimiu 13 cartas";
+
+            b.close();
+        } catch (IOException | InterruptedException e) {
+            return "Erro do Testador (se receber, reclame com o monitor)";
+        }
+        return "";
+    }
+
+    public static String bridgeRepeat(Integer ... args) {
+        try {
+            Process p = Runtime.getRuntime().exec("java-algs4 Bridge");
+            p.waitFor();
+
+            BufferedReader b = new BufferedReader(new InputStreamReader(p.getInputStream()));
+            String lines[] = new String[20];
+            int i = 0;
+
+            while (i < 20 && (lines[i] = b.readLine()) != null) {
+                int cnt = 0;
+                for (int j = 0; j < i; j++) {
+                    if (lines[i].charAt(0) == lines[j].charAt(0) && lines[i].charAt(1) == lines[j].charAt(1)) {
+                        cnt++;
+                    }
+                }
+
+                if (cnt >= 2)
+                    return "A carta " + lines[i] + " aparece mais de duas vezes";
+                i++;
+            }
+
+            if (i != 13)
+                return "Não imprimiu 13 cartas";
+
+            b.close();
+        } catch (IOException | InterruptedException e) {
+            return "Erro do Testador (se receber, reclame com o monitor)";
+        }
+        return "";
+    }
+
     public static void main(String[] args) {
         int nota = 10000;
         long stdTime = 1000;
@@ -193,9 +255,17 @@ public class Tester {
         nota -= Tester.test(stdDiscount, "A fila deve gerar permutações bem distribuidas (não enviesadas)", Tester::distribution, stdTime, 5, 4, 200);
         nota -= Tester.test(stdDiscount, "Gerar uma permutação grande não deve demorar muito tempo", Tester::bigCase, stdTime, 5, 100000);
         nota -= Tester.test(stdDiscount, "É possível alternar operações de enfileirar e desenfileirar sem muitos problemas", Tester::dynamic, stdTime, 30, 100);
-        nota -= Tester.test(stdDiscount, "É possível chamar todos os métodos especificados no enunciado", Tester::specification, stdTime, 1, new Integer[0]);
-        nota -= Tester.test(stdDiscount, "A função sample funciona corretamente", Tester::sampling, stdTime, 1, new Integer[0]);
-        nota -= Tester.test(stdDiscount, "A fila funciona com Strings", Tester::stringTest, stdTime, 1, new Integer[0]);
+        nota -= Tester.test(stdDiscount, "É possível chamar todos os métodos especificados no enunciado", Tester::specification, stdTime, 1);
+        nota -= Tester.test(stdDiscount, "A função sample funciona corretamente", Tester::sampling, stdTime, 1);
+        nota -= Tester.test(stdDiscount, "A fila funciona com Strings", Tester::stringTest, stdTime, 1);
+
+        try {
+            Process p = Runtime.getRuntime().exec("javac-algs4 Bridge.java");
+            p.waitFor();
+        } catch (Throwable e) {
+        }
+        nota -= Tester.test(stdDiscount, "A classe bridge imprime apenas cartas válidas", Tester::bridgeValid, stdTime, 10);
+        nota -= Tester.test(stdDiscount, "A classe bridge não imprime três vezes a mesma carta", Tester::bridgeRepeat, stdTime, 30);
 
         StdOut.println("Nota final: " + ((double)(nota) / 100.));
         System.exit(0);
