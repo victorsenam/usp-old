@@ -1,5 +1,19 @@
 import java.util.*;
 import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
 /******************************************************************************
  *  Compilation:  javac TesteVisual.java
  *  Execution:    java TesteVisual N T
@@ -37,14 +51,14 @@ public class RandomQueue<Item> {
     }
 
     /* Insere um item na lista "list" */
-    public void enQueue (Item item) {
+    public void enqueue (Item item) {
         if (N == list.length) resize (2 * list.length);
         list[N++] = item;
     }
 
     /* Retorna um item da lista presente em uma posicao
      * aleatoria e o retira da lista. */
-    public Item deQueue () {
+    public Item dequeue () {
         if (!isEmpty ()) {
             int rand = (int) (Math.random () * N);
             Item temp = list[rand];

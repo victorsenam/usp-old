@@ -1,0 +1,6 @@
+Seu EP recebeu correção manual =)
+
+[-40] : Bom, você implementou a API dada com os nomes dos métodos todos mudados... Isso é errado. O enunciado especifica os nomes das funções da API. :/
+Além disso, você não implementou a função isEmpty também
+
+

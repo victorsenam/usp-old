@@ -1,0 +1,6 @@
+Seu EP recebeu correção manual =)
+
+Gostei do seu código :)
+Meu objetivo aqui é dar dicas que não dependem da nota, mas que podem te ajudar a programar melhor num geral.
+No dequeue você checa se a fila está vazia e imprime algo na saída padrão caso isso aconteça. O java tem exceptions e uma interface robusta para traramento de erros, talvez possa ser interessante conhecer isso para conseguir fazer programas mais estáveis se você se interessar por Java :)
+Tudo certo, parabéns :)

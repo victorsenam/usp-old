@@ -1,205 +1,180 @@
-Tester.java:52: error: constructor RandomQueue in class RandomQueue<Item> cannot be applied to given types;
-        RandomQueue first = new RandomQueue();
-                            ^
-  required: int
-  found: no arguments
-  reason: actual and formal argument lists differ in length
-  where Item is a type-variable:
-    Item extends Object declared in class RandomQueue
 Tester.java:53: error: constructor RandomQueue in class RandomQueue<Item> cannot be applied to given types;
-        RandomQueue second = new RandomQueue();
-                             ^
+        RandomQueue<Integer> first = new RandomQueue<Integer>();
+                                     ^
   required: int
   found: no arguments
   reason: actual and formal argument lists differ in length
   where Item is a type-variable:
     Item extends Object declared in class RandomQueue
-Tester.java:55: error: cannot find symbol
-            first.enqueue((Object)i);
-                 ^
-  symbol:   method enqueue(Object)
-  location: variable first of type RandomQueue
+Tester.java:54: error: constructor RandomQueue in class RandomQueue<Item> cannot be applied to given types;
+        RandomQueue<Integer> second = new RandomQueue<Integer>();
+                                      ^
+  required: int
+  found: no arguments
+  reason: actual and formal argument lists differ in length
+  where Item is a type-variable:
+    Item extends Object declared in class RandomQueue
 Tester.java:56: error: cannot find symbol
-            second.enqueue((Object)i);
+            first.enqueue(i);
+                 ^
+  symbol:   method enqueue(int)
+  location: variable first of type RandomQueue<Integer>
+Tester.java:57: error: cannot find symbol
+            second.enqueue(i);
                   ^
-  symbol:   method enqueue(Object)
-  location: variable second of type RandomQueue
-Tester.java:58: error: cannot find symbol
-        while (!first.isEmpty()) {
-                     ^
-  symbol:   method isEmpty()
-  location: variable first of type RandomQueue
-Tester.java:59: error: cannot find symbol
+  symbol:   method enqueue(int)
+  location: variable second of type RandomQueue<Integer>
+Tester.java:60: error: cannot find symbol
             if (first.dequeue() == second.dequeue()) continue;
                      ^
   symbol:   method dequeue()
-  location: variable first of type RandomQueue
-Tester.java:59: error: cannot find symbol
+  location: variable first of type RandomQueue<Integer>
+Tester.java:60: error: cannot find symbol
             if (first.dequeue() == second.dequeue()) continue;
                                          ^
   symbol:   method dequeue()
-  location: variable second of type RandomQueue
-Tester.java:67: error: constructor RandomQueue in class RandomQueue<Item> cannot be applied to given types;
-        RandomQueue queue = new RandomQueue();
-                            ^
+  location: variable second of type RandomQueue<Integer>
+Tester.java:68: error: constructor RandomQueue in class RandomQueue<Item> cannot be applied to given types;
+        RandomQueue<Integer> queue = new RandomQueue<Integer>();
+                                     ^
   required: int
   found: no arguments
   reason: actual and formal argument lists differ in length
   where Item is a type-variable:
     Item extends Object declared in class RandomQueue
-Tester.java:70: error: cannot find symbol
-            queue.enqueue((Object)i);
+Tester.java:71: error: cannot find symbol
+            queue.enqueue(i);
                  ^
-  symbol:   method enqueue(Object)
-  location: variable queue of type RandomQueue
-Tester.java:73: error: cannot find symbol
-        while (!queue.isEmpty()) {
-                     ^
-  symbol:   method isEmpty()
-  location: variable queue of type RandomQueue
-Tester.java:74: error: cannot find symbol
+  symbol:   method enqueue(int)
+  location: variable queue of type RandomQueue<Integer>
+Tester.java:75: error: cannot find symbol
             int rm = (Integer)queue.dequeue();
                                    ^
   symbol:   method dequeue()
-  location: variable queue of type RandomQueue
-Tester.java:89: error: constructor RandomQueue in class RandomQueue<Item> cannot be applied to given types;
-        RandomQueue queue = new RandomQueue();
-                            ^
+  location: variable queue of type RandomQueue<Integer>
+Tester.java:90: error: constructor RandomQueue in class RandomQueue<Item> cannot be applied to given types;
+        RandomQueue<Integer> queue = new RandomQueue<Integer>();
+                                     ^
   required: int
   found: no arguments
   reason: actual and formal argument lists differ in length
   where Item is a type-variable:
     Item extends Object declared in class RandomQueue
-Tester.java:102: error: cannot find symbol
-                queue.enqueue((Object)j);
+Tester.java:103: error: cannot find symbol
+                queue.enqueue(j);
                      ^
-  symbol:   method enqueue(Object)
-  location: variable queue of type RandomQueue
-Tester.java:107: error: cannot find symbol
+  symbol:   method enqueue(int)
+  location: variable queue of type RandomQueue<Integer>
+Tester.java:108: error: cannot find symbol
                 val += pot * (Integer)queue.dequeue();
                                            ^
   symbol:   method dequeue()
-  location: variable queue of type RandomQueue
-Tester.java:123: error: constructor RandomQueue in class RandomQueue<Item> cannot be applied to given types;
-        RandomQueue queue = new RandomQueue();
-                            ^
+  location: variable queue of type RandomQueue<Integer>
+Tester.java:124: error: constructor RandomQueue in class RandomQueue<Item> cannot be applied to given types;
+        RandomQueue<Integer> queue = new RandomQueue<Integer>();
+                                     ^
   required: int
   found: no arguments
   reason: actual and formal argument lists differ in length
   where Item is a type-variable:
     Item extends Object declared in class RandomQueue
-Tester.java:125: error: cannot find symbol
-            queue.enqueue((Object)i);
+Tester.java:126: error: cannot find symbol
+            queue.enqueue(i);
                  ^
-  symbol:   method enqueue(Object)
-  location: variable queue of type RandomQueue
-Tester.java:128: error: cannot find symbol
+  symbol:   method enqueue(int)
+  location: variable queue of type RandomQueue<Integer>
+Tester.java:129: error: cannot find symbol
             queue.dequeue();
                  ^
   symbol:   method dequeue()
-  location: variable queue of type RandomQueue
-Tester.java:135: error: constructor RandomQueue in class RandomQueue<Item> cannot be applied to given types;
-        RandomQueue queue = new RandomQueue();
-                            ^
+  location: variable queue of type RandomQueue<Integer>
+Tester.java:136: error: constructor RandomQueue in class RandomQueue<Item> cannot be applied to given types;
+        RandomQueue<Integer> queue = new RandomQueue<Integer>();
+                                     ^
   required: int
   found: no arguments
   reason: actual and formal argument lists differ in length
   where Item is a type-variable:
     Item extends Object declared in class RandomQueue
-Tester.java:138: error: cannot find symbol
-            if (queue.isEmpty()) {
+Tester.java:143: error: cannot find symbol
+                queue.enqueue(StdRandom.uniform((int)100000));
                      ^
-  symbol:   method isEmpty()
-  location: variable queue of type RandomQueue
-Tester.java:142: error: cannot find symbol
-                queue.enqueue((Object)StdRandom.uniform((int)100000));
-                     ^
-  symbol:   method enqueue(Object)
-  location: variable queue of type RandomQueue
-Tester.java:144: error: cannot find symbol
+  symbol:   method enqueue(int)
+  location: variable queue of type RandomQueue<Integer>
+Tester.java:145: error: cannot find symbol
                 queue.dequeue();
                      ^
   symbol:   method dequeue()
-  location: variable queue of type RandomQueue
-Tester.java:153: error: constructor RandomQueue in class RandomQueue<Item> cannot be applied to given types;
-        RandomQueue queue = new RandomQueue();
-                            ^
+  location: variable queue of type RandomQueue<Integer>
+Tester.java:154: error: constructor RandomQueue in class RandomQueue<Item> cannot be applied to given types;
+        RandomQueue<Integer> queue = new RandomQueue<Integer>();
+                                     ^
   required: int
   found: no arguments
   reason: actual and formal argument lists differ in length
   where Item is a type-variable:
     Item extends Object declared in class RandomQueue
-Tester.java:154: error: cannot find symbol
-        if (queue.isEmpty()) {
+Tester.java:156: error: cannot find symbol
+            queue.enqueue(10);
                  ^
-  symbol:   method isEmpty()
-  location: variable queue of type RandomQueue
-Tester.java:155: error: cannot find symbol
-            queue.enqueue((Object)10);
-                 ^
-  symbol:   method enqueue(Object)
-  location: variable queue of type RandomQueue
-Tester.java:157: error: cannot find symbol
+  symbol:   method enqueue(int)
+  location: variable queue of type RandomQueue<Integer>
+Tester.java:158: error: cannot find symbol
         int val = (Integer)queue.sample();
                                 ^
   symbol:   method sample()
-  location: variable queue of type RandomQueue
-Tester.java:158: error: cannot find symbol
+  location: variable queue of type RandomQueue<Integer>
+Tester.java:159: error: cannot find symbol
         val = (Integer)queue.dequeue();
                             ^
   symbol:   method dequeue()
-  location: variable queue of type RandomQueue
-Tester.java:159: error: cannot find symbol
-        queue.enqueue((Object)val);
+  location: variable queue of type RandomQueue<Integer>
+Tester.java:160: error: cannot find symbol
+        queue.enqueue(val);
              ^
-  symbol:   method enqueue(Object)
-  location: variable queue of type RandomQueue
-Tester.java:164: error: constructor RandomQueue in class RandomQueue<Item> cannot be applied to given types;
-        RandomQueue queue = new RandomQueue();
-                            ^
+  symbol:   method enqueue(int)
+  location: variable queue of type RandomQueue<Integer>
+Tester.java:165: error: constructor RandomQueue in class RandomQueue<Item> cannot be applied to given types;
+        RandomQueue<Integer> queue = new RandomQueue<Integer>();
+                                     ^
   required: int
   found: no arguments
   reason: actual and formal argument lists differ in length
   where Item is a type-variable:
     Item extends Object declared in class RandomQueue
-Tester.java:165: error: cannot find symbol
-        queue.enqueue((Object)1);
-             ^
-  symbol:   method enqueue(Object)
-  location: variable queue of type RandomQueue
 Tester.java:166: error: cannot find symbol
+        queue.enqueue(1);
+             ^
+  symbol:   method enqueue(int)
+  location: variable queue of type RandomQueue<Integer>
+Tester.java:167: error: cannot find symbol
         int ret = (Integer)queue.sample();
                                 ^
   symbol:   method sample()
-  location: variable queue of type RandomQueue
-Tester.java:170: error: cannot find symbol
-        if (queue.isEmpty()) {
-                 ^
-  symbol:   method isEmpty()
-  location: variable queue of type RandomQueue
-Tester.java:177: error: constructor RandomQueue in class RandomQueue<Item> cannot be applied to given types;
-        RandomQueue queue = new RandomQueue();
-                            ^
+  location: variable queue of type RandomQueue<Integer>
+Tester.java:178: error: constructor RandomQueue in class RandomQueue<Item> cannot be applied to given types;
+        RandomQueue<String> queue = new RandomQueue<String>();
+                                    ^
   required: int
   found: no arguments
   reason: actual and formal argument lists differ in length
   where Item is a type-variable:
     Item extends Object declared in class RandomQueue
-Tester.java:178: error: cannot find symbol
-        queue.enqueue((Object)"A string");
-             ^
-  symbol:   method enqueue(Object)
-  location: variable queue of type RandomQueue
 Tester.java:179: error: cannot find symbol
+        queue.enqueue("A string");
+             ^
+  symbol:   method enqueue(String)
+  location: variable queue of type RandomQueue<String>
+Tester.java:180: error: cannot find symbol
         String res = (String)queue.dequeue();
                                   ^
   symbol:   method dequeue()
-  location: variable queue of type RandomQueue
-Tester.java:183: error: cannot find symbol
-        queue.enqueue((Object)"Another String");
+  location: variable queue of type RandomQueue<String>
+Tester.java:184: error: cannot find symbol
+        queue.enqueue("Another String");
              ^
-  symbol:   method enqueue(Object)
-  location: variable queue of type RandomQueue
+  symbol:   method enqueue(String)
+  location: variable queue of type RandomQueue<String>
 Note: ./RandomQueue.java uses unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
-35 errors
+30 errors

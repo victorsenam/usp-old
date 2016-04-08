@@ -1,5 +1,21 @@
 import java.util.*;
 import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
 /******************************************************************************
  *  Nome: Andre Victor dos Santos Nakazawa
  *  NUSP: 9298336

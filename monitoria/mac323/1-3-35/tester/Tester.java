@@ -53,8 +53,8 @@ public class Tester {
         RandomQueue<Integer> first = new RandomQueue<Integer>();
         RandomQueue<Integer> second = new RandomQueue<Integer>();
         for (int i = 0; i < siz; ++i) {
-            first.enqueue((Object)i);
-            second.enqueue((Object)i);
+            first.enqueue(i);
+            second.enqueue(i);
         }
         while (!first.isEmpty()) {
             if (first.dequeue() == second.dequeue()) continue;
@@ -68,7 +68,7 @@ public class Tester {
         RandomQueue<Integer> queue = new RandomQueue<Integer>();
         boolean[] visited = new boolean[siz.intValue()];
         for (int i = 0; i < siz; ++i) {
-            queue.enqueue((Object)i);
+            queue.enqueue(i);
             visited[i] = false;
         }
         while (!queue.isEmpty()) {
@@ -100,7 +100,7 @@ public class Tester {
         int visiCount = 0;
         for (int i3 = 0; i3 < lim && visiCount < fat; ++i3) {
             for (int j = 0; j < siz; ++j) {
-                queue.enqueue((Object)j);
+                queue.enqueue(j);
             }
             int pot = 1;
             int val = 0;
@@ -123,7 +123,7 @@ public class Tester {
         Integer siz = args[0];
         RandomQueue<Integer> queue = new RandomQueue<Integer>();
         for (i = 0; i < siz; ++i) {
-            queue.enqueue((Object)i);
+            queue.enqueue(i);
         }
         for (i = 0; i < siz; ++i) {
             queue.dequeue();
@@ -140,7 +140,7 @@ public class Tester {
                 op = 0;
             }
             if (op == 0) {
-                queue.enqueue((Object)StdRandom.uniform((int)100000));
+                queue.enqueue(StdRandom.uniform((int)100000));
             } else {
                 queue.dequeue();
             }
@@ -153,17 +153,17 @@ public class Tester {
     public static /* varargs */ String specification(Integer ... args) {
         RandomQueue<Integer> queue = new RandomQueue<Integer>();
         if (queue.isEmpty()) {
-            queue.enqueue((Object)10);
+            queue.enqueue(10);
         }
         int val = (Integer)queue.sample();
         val = (Integer)queue.dequeue();
-        queue.enqueue((Object)val);
+        queue.enqueue(val);
         return "";
     }
 
     public static /* varargs */ String sampling(Integer ... args) {
         RandomQueue<Integer> queue = new RandomQueue<Integer>();
-        queue.enqueue((Object)1);
+        queue.enqueue(1);
         int ret = (Integer)queue.sample();
         if (ret != 1) {
             return "Sample retorna um elemento fora da fila";
@@ -176,12 +176,12 @@ public class Tester {
 
     public static /* varargs */ String stringTest(Integer ... args) {
         RandomQueue<String> queue = new RandomQueue<String>();
-        queue.enqueue((Object)"A string");
+        queue.enqueue("A string");
         String res = (String)queue.dequeue();
         if (res != "A string") {
             return "A fila funciona mal com strings";
         }
-        queue.enqueue((Object)"Another String");
+        queue.enqueue("Another String");
         return "";
     }
 
@@ -249,7 +249,7 @@ public class Tester {
     public static void main(String[] args) {
         int nota = 10000;
         long stdTime = 1000;
-        int stdDiscount = 2000;
+        int stdDiscount = 1000;
         nota -= Tester.test(stdDiscount, "Duas filas independentes têm grande chance de gerar permutações diferentes quando alimentadas com a mesma entrada", Tester::independentQueues, stdTime, 1, 10);
         nota -= Tester.test(stdDiscount, "A fila não deve desenfileirar duas vezes o mesmo item", Tester::repetitions, stdTime, 1, 200);
         nota -= Tester.test(stdDiscount, "A fila deve gerar permutações bem distribuidas (não enviesadas)", Tester::distribution, stdTime, 5, 4, 200);

@@ -1,5 +1,19 @@
 import java.util.*;
 import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
 /***************************************************************/
 /**                                                           **/
 /**   Lucas Moreira Santos                          9345064   **/

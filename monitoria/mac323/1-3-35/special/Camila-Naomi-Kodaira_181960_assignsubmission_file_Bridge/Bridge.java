@@ -1,5 +1,21 @@
 import java.util.*;
 import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
 /* **************************************** */
 /*  Nome: Camila Naomi Kodaira              */
 /*  Numero USP: 4266602                     */

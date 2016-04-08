@@ -1,0 +1,3 @@
+Seu EP recebeu correção manual =)
+
+No seu dequeue, você primeiro decresce o valor de N e depois seta esta posição como null. Isso causa vários erros, entre eles é possível acessar posições negativas do vetor.

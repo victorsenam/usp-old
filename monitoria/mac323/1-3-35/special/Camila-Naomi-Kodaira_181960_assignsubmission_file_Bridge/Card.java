@@ -1,5 +1,21 @@
 import java.util.*;
 import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
 /******************************************************************************
  *  Compilation:  javac Card.java
  *  Execution:    java -cp .:cards.jar Card     (Unix, OS X)

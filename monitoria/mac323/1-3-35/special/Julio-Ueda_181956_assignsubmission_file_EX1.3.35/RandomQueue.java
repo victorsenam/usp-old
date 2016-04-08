@@ -1,5 +1,21 @@
 import java.util.*;
 import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
 /*******************************************************************************
  *
  * Nome:   JULIO KENJI UEDA
@@ -27,7 +43,7 @@ public class RandomQueue<Item> implements Iterable<Item> {
    private Item[] conteudo; // vetor de Item
    private int N;           // quantidade de Itens
 
-   // Construtor da fila.
+  // Construtor da fila.
    public RandomQueue(int tamanho) {
       conteudo = (Item[]) new Object[tamanho];
    }
@@ -67,6 +83,10 @@ public class RandomQueue<Item> implements Iterable<Item> {
    public Iterator<Item> iterator() {
       return new RandomIterator();
    }
+
+   public boolean isEmpty() {
+       return true;
+    }
 
    private class RandomIterator implements Iterator<Item>{
       private int i = N;

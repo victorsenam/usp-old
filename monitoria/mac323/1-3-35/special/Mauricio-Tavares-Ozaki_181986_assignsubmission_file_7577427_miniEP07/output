@@ -1,0 +1,31 @@
+Duas filas independentes têm grande chance de gerar permutações diferentes quando alimentadas com a mesma entrada
+OK :)
+---------------
+A fila não deve desenfileirar duas vezes o mesmo item
+OK :)
+---------------
+A fila deve gerar permutações bem distribuidas (não enviesadas)
+OK :)
+---------------
+Gerar uma permutação grande não deve demorar muito tempo
+TEMPO DE EXECUÇÃO EXCEDIDO
+---------------
+É possível alternar operações de enfileirar e desenfileirar sem muitos problemas
+OK :)
+---------------
+É possível chamar todos os métodos especificados no enunciado
+ERRO DE EXECUÇÃO
+---------------
+A função sample funciona corretamente
+ERRO DE EXECUÇÃO
+---------------
+A fila funciona com Strings
+OK :)
+---------------
+A classe bridge imprime apenas cartas válidas
+OK :)
+---------------
+A classe bridge não imprime três vezes a mesma carta
+OK :)
+---------------
+Nota final: 40.0

@@ -1,0 +1,39 @@
+Duas filas independentes têm grande chance de gerar permutações diferentes quando alimentadas com a mesma entrada
+ERRO DE EXECUÇÃO
+java.lang.ArrayIndexOutOfBoundsException: 3
+	at RandomQueue.enqueue(RandomQueue.java:56)
+	at Tester.independentQueues(Tester.java:57)
+	at Tester.lambda$test$0(Tester.java:17)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+---------------
+A fila não deve desenfileirar duas vezes o mesmo item
+OK :)
+---------------
+A fila deve gerar permutações bem distribuidas (não enviesadas)
+OK :)
+---------------
+Gerar uma permutação grande não deve demorar muito tempo
+OK :)
+---------------
+É possível alternar operações de enfileirar e desenfileirar sem muitos problemas
+OK :)
+---------------
+É possível chamar todos os métodos especificados no enunciado
+OK :)
+---------------
+A função sample funciona corretamente
+OK :)
+---------------
+A fila funciona com Strings
+OK :)
+---------------
+A classe bridge imprime apenas cartas válidas
+OK :)
+---------------
+A classe bridge não imprime três vezes a mesma carta
+OK :)
+---------------
+Nota final: 90.0

@@ -1,0 +1,6 @@
+Seu EP recebeu correção manual =)
+
+[-30] : No seu EP você fixou o tamanho da queue para 52 elementos. Isso faz ela funcioanr no exemplo dado, das cartas. Mas em nada mais. Isso faz da sua fila uma estrutura ineficaz.
+
+Bom, você fez a classe toda RandomQueue pensando só na aplicação dele para o exemplo do bridge, quando, na verdade, a ideia era implementar a estrutura da melhor forma possível e aplicar o exemplo do Bridge.
+Além disso, a sua função sample assume que a fila tem tamanho 52 sempre.

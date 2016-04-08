@@ -1,0 +1,5 @@
+Seu EP recebeu correção manual =)
+
+Sobre a forma como você coloca os elementos escolhidos no final da fila. 
+O método aplicado está correto, mas esse código poderia ser bem menor não? Você dá um swap do elemento random com o ultimo usando a variável item. Você poderia só passar o random pra item e sobrescrever o valor dele no vetor com o valor do ultimo, percebe? 
+Enfim, isso é de menos. Gostei bastante do seu código. Abraços.

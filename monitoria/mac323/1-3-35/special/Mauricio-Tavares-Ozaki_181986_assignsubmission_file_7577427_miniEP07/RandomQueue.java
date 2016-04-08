@@ -1,5 +1,19 @@
 import java.util.*;
 import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
 /******************************************************************************
  *  Prof: Yoshiharu Kohayakawa
  *  Aluno: Mauricio Tavares Ozaki
@@ -27,7 +41,7 @@ public class RandomQueue<Item> implements Iterable<Item> {
     //na fila, entao ja criei uma fila de tamanho 52. Segui a ideia do
     //enunciado.
     public RandomQueue() {
-        carta = (Item[]) new Object[52];
+        carta = (Item[]) new Object[1000000];
         tam=0;
     }
     

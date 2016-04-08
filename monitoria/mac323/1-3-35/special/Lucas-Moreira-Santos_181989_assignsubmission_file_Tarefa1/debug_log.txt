@@ -6,6 +6,4 @@
     this.items = new Vector<Item>(10);
                      ^
   both class java.util.Vector in java.util and class edu.princeton.cs.algs4.Vector in edu.princeton.cs.algs4 match
-Note: Tester.java uses unchecked or unsafe operations.
-Note: Recompile with -Xlint:unchecked for details.
 2 errors

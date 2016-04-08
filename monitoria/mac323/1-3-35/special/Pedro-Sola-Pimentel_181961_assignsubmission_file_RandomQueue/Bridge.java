@@ -1,5 +1,19 @@
 import java.util.*;
 import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+import edu.princeton.cs.algs4.*;
 /******************************************************************************
  *  Compilation:  javac Bridge.java
  *  Execution:    java Bridge
@@ -19,9 +33,9 @@ public class Bridge {
         RandomQueue<Card> queue = new RandomQueue<Card> ();
 
         for (int i = 0; i < 52; i ++) 
-            queue.enQueue (new Card (i));
+            queue.enqueue (new Card (i));
 
         for (int i = 0; i < 13; i++)
-            System.out.println (queue.deQueue().toString());
+            System.out.println (queue.dequeue().toString());
     }
 }

@@ -1,0 +1,3 @@
+Seu EP recebeu correção manual =)
+
+Você declarou o N como static, isso faz com que, se duas RandomQueues forem instanciadas juntas, a posição em que os novos elementos vão ser adicionadas vai ser única, apesar de que não necessáriamente este tamanho vai estar alocado nas duas. :/
