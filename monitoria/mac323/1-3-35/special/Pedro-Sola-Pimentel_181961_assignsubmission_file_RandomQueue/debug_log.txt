@@ -1,0 +1,98 @@
+Tester.java:55: error: cannot find symbol
+            first.enqueue((Object)i);
+                 ^
+  symbol:   method enqueue(Object)
+  location: variable first of type RandomQueue
+Tester.java:56: error: cannot find symbol
+            second.enqueue((Object)i);
+                  ^
+  symbol:   method enqueue(Object)
+  location: variable second of type RandomQueue
+Tester.java:59: error: cannot find symbol
+            if (first.dequeue() == second.dequeue()) continue;
+                     ^
+  symbol:   method dequeue()
+  location: variable first of type RandomQueue
+Tester.java:59: error: cannot find symbol
+            if (first.dequeue() == second.dequeue()) continue;
+                                         ^
+  symbol:   method dequeue()
+  location: variable second of type RandomQueue
+Tester.java:70: error: cannot find symbol
+            queue.enqueue((Object)i);
+                 ^
+  symbol:   method enqueue(Object)
+  location: variable queue of type RandomQueue
+Tester.java:74: error: cannot find symbol
+            int rm = (Integer)queue.dequeue();
+                                   ^
+  symbol:   method dequeue()
+  location: variable queue of type RandomQueue
+Tester.java:102: error: cannot find symbol
+                queue.enqueue((Object)j);
+                     ^
+  symbol:   method enqueue(Object)
+  location: variable queue of type RandomQueue
+Tester.java:107: error: cannot find symbol
+                val += pot * (Integer)queue.dequeue();
+                                           ^
+  symbol:   method dequeue()
+  location: variable queue of type RandomQueue
+Tester.java:125: error: cannot find symbol
+            queue.enqueue((Object)i);
+                 ^
+  symbol:   method enqueue(Object)
+  location: variable queue of type RandomQueue
+Tester.java:128: error: cannot find symbol
+            queue.dequeue();
+                 ^
+  symbol:   method dequeue()
+  location: variable queue of type RandomQueue
+Tester.java:142: error: cannot find symbol
+                queue.enqueue((Object)StdRandom.uniform((int)100000));
+                     ^
+  symbol:   method enqueue(Object)
+  location: variable queue of type RandomQueue
+Tester.java:144: error: cannot find symbol
+                queue.dequeue();
+                     ^
+  symbol:   method dequeue()
+  location: variable queue of type RandomQueue
+Tester.java:155: error: cannot find symbol
+            queue.enqueue((Object)10);
+                 ^
+  symbol:   method enqueue(Object)
+  location: variable queue of type RandomQueue
+Tester.java:158: error: cannot find symbol
+        val = (Integer)queue.dequeue();
+                            ^
+  symbol:   method dequeue()
+  location: variable queue of type RandomQueue
+Tester.java:159: error: cannot find symbol
+        queue.enqueue((Object)val);
+             ^
+  symbol:   method enqueue(Object)
+  location: variable queue of type RandomQueue
+Tester.java:165: error: cannot find symbol
+        queue.enqueue((Object)1);
+             ^
+  symbol:   method enqueue(Object)
+  location: variable queue of type RandomQueue
+Tester.java:178: error: cannot find symbol
+        queue.enqueue((Object)"A string");
+             ^
+  symbol:   method enqueue(Object)
+  location: variable queue of type RandomQueue
+Tester.java:179: error: cannot find symbol
+        String res = (String)queue.dequeue();
+                                  ^
+  symbol:   method dequeue()
+  location: variable queue of type RandomQueue
+Tester.java:183: error: cannot find symbol
+        queue.enqueue((Object)"Another String");
+             ^
+  symbol:   method enqueue(Object)
+  location: variable queue of type RandomQueue
+Note: ./RandomQueue.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+19 errors

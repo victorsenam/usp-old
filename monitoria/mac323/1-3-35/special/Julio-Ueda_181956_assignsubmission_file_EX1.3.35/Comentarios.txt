@@ -1,0 +1,15 @@
+/*******************************************************************************
+ *
+ * Nome: JULIO KENJI UEDA
+ *
+ * No.USP: 9298281
+ *
+ *******************************************************************************
+ *
+ * Comentário sobre RandomQueue
+ *
+ * - Mesmo que "Queue" signifique "fila", a estrutura RandomQueue foi feita 
+ *   baseado na API ResizingArrayStack (pilha), pois o resultado final seria o
+ *   mesmo, já que a saída seria aleatória e a implementação seria mais simples.
+ *
+ ******************************************************************************/
