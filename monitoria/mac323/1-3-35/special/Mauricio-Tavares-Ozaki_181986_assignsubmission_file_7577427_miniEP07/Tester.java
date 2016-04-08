@@ -28,12 +28,14 @@ public class Tester {
                 StdOut.println("OK :)");
                 discount = 0;
             } else {
-                StdOut.print("[-" + discount + "] ");
+                StdOut.print("[-" + (double)discount/100. + "] ");
                 StdOut.println(res);
             }
         } catch (TimeoutException e) {
+            StdOut.print("[-" + (double)discount/100. + "] ");
             StdOut.println("TEMPO DE EXECUÇÃO EXCEDIDO");
         } catch (Throwable e) {
+            StdOut.print("[-" + (double)discount/100. + "] ");
             StdOut.println("ERRO DE EXECUÇÃO");
             while (e.getCause() != null)
                 e = e.getCause();
@@ -42,10 +44,10 @@ public class Tester {
             executor.shutdownNow();
             if (!executor.isShutdown())
                 StdOut.println("NOT SHUT DOWN");
-        }
 
-        StdOut.println("---------------");
-        return discount;
+            StdOut.println("---------------");
+            return discount;
+        }
     }
 
     public static /* varargs */ String independentQueues(Integer ... args) {

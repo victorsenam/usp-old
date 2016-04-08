@@ -3,9 +3,11 @@ OK :)
 ---------------
 A fila não deve desenfileirar duas vezes o mesmo item
 ERRO DE EXECUÇÃO
-java.lang.ArrayIndexOutOfBoundsException: 52
-	at RandomQueue.enqueue(RandomQueue.java:43)
-	at Tester.repetitions(Tester.java:71)
+java.lang.IllegalArgumentException: Parameter N must be positive
+	at edu.princeton.cs.algs4.StdRandom.uniform(StdRandom.java:121)
+	at RandomQueue.randomSwap(RandomQueue.java:37)
+	at RandomQueue.dequeue(RandomQueue.java:46)
+	at Tester.repetitions(Tester.java:75)
 	at Tester.lambda$test$0(Tester.java:17)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
@@ -13,13 +15,25 @@ java.lang.ArrayIndexOutOfBoundsException: 52
 	at java.lang.Thread.run(Thread.java:745)
 ---------------
 A fila deve gerar permutações bem distribuidas (não enviesadas)
-OK :)
+ERRO DE EXECUÇÃO
+java.lang.IllegalArgumentException: Parameter N must be positive
+	at edu.princeton.cs.algs4.StdRandom.uniform(StdRandom.java:121)
+	at RandomQueue.randomSwap(RandomQueue.java:37)
+	at RandomQueue.dequeue(RandomQueue.java:46)
+	at Tester.distribution(Tester.java:108)
+	at Tester.lambda$test$0(Tester.java:17)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
 ---------------
 Gerar uma permutação grande não deve demorar muito tempo
 ERRO DE EXECUÇÃO
-java.lang.ArrayIndexOutOfBoundsException: 52
-	at RandomQueue.enqueue(RandomQueue.java:43)
-	at Tester.bigCase(Tester.java:126)
+java.lang.IllegalArgumentException: Parameter N must be positive
+	at edu.princeton.cs.algs4.StdRandom.uniform(StdRandom.java:121)
+	at RandomQueue.randomSwap(RandomQueue.java:37)
+	at RandomQueue.dequeue(RandomQueue.java:46)
+	at Tester.bigCase(Tester.java:129)
 	at Tester.lambda$test$0(Tester.java:17)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
@@ -27,19 +41,13 @@ java.lang.ArrayIndexOutOfBoundsException: 52
 	at java.lang.Thread.run(Thread.java:745)
 ---------------
 É possível alternar operações de enfileirar e desenfileirar sem muitos problemas
-ERRO DE EXECUÇÃO
-java.lang.ArrayIndexOutOfBoundsException: 52
-	at RandomQueue.enqueue(RandomQueue.java:43)
-	at Tester.dynamic(Tester.java:143)
-	at Tester.lambda$test$0(Tester.java:17)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
+OK :)
 ---------------
 É possível chamar todos os métodos especificados no enunciado
 ERRO DE EXECUÇÃO
-java.lang.NullPointerException
+java.lang.IllegalArgumentException: Parameter N must be positive
+	at edu.princeton.cs.algs4.StdRandom.uniform(StdRandom.java:121)
+	at RandomQueue.sample(RandomQueue.java:57)
 	at Tester.specification(Tester.java:158)
 	at Tester.lambda$test$0(Tester.java:17)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
@@ -49,7 +57,9 @@ java.lang.NullPointerException
 ---------------
 A função sample funciona corretamente
 ERRO DE EXECUÇÃO
-java.lang.NullPointerException
+java.lang.IllegalArgumentException: Parameter N must be positive
+	at edu.princeton.cs.algs4.StdRandom.uniform(StdRandom.java:121)
+	at RandomQueue.sample(RandomQueue.java:57)
 	at Tester.sampling(Tester.java:167)
 	at Tester.lambda$test$0(Tester.java:17)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
@@ -58,7 +68,17 @@ java.lang.NullPointerException
 	at java.lang.Thread.run(Thread.java:745)
 ---------------
 A fila funciona com Strings
-OK :)
+ERRO DE EXECUÇÃO
+java.lang.IllegalArgumentException: Parameter N must be positive
+	at edu.princeton.cs.algs4.StdRandom.uniform(StdRandom.java:121)
+	at RandomQueue.randomSwap(RandomQueue.java:37)
+	at RandomQueue.dequeue(RandomQueue.java:46)
+	at Tester.stringTest(Tester.java:180)
+	at Tester.lambda$test$0(Tester.java:17)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
 ---------------
 A classe bridge imprime apenas cartas válidas
 OK :)
@@ -66,4 +86,4 @@ OK :)
 A classe bridge não imprime três vezes a mesma carta
 OK :)
 ---------------
-Nota final: 50.0
+Nota final: 40.0

@@ -6,7 +6,7 @@ initial=$(pwd)
 rm -fr notas
 mkdir "notas"
 
-cd special
+cd result
 for aluno in */;
 do
     cd "$initial/result/"

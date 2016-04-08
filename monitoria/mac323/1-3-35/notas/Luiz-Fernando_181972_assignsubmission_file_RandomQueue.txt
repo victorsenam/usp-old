@@ -8,7 +8,7 @@ A fila deve gerar permutações bem distribuidas (não enviesadas)
 OK :)
 ---------------
 Gerar uma permutação grande não deve demorar muito tempo
-[-10.0] TEMPO DE EXECUÇÃO EXCEDIDO
+TEMPO DE EXECUÇÃO EXCEDIDO
 ---------------
 É possível alternar operações de enfileirar e desenfileirar sem muitos problemas
 OK :)
@@ -17,14 +17,7 @@ OK :)
 OK :)
 ---------------
 A função sample funciona corretamente
-[-10.0] ERRO DE EXECUÇÃO
-java.lang.NullPointerException
-	at Tester.sampling(Tester.java:169)
-	at Tester.lambda$test$0(Tester.java:17)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
+OK :)
 ---------------
 A fila funciona com Strings
 OK :)
@@ -35,4 +28,4 @@ OK :)
 A classe bridge não imprime três vezes a mesma carta
 OK :)
 ---------------
-Nota final: 80.0
+Nota final: 90.0

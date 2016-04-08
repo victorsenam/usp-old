@@ -1,6 +1,38 @@
-Seu EP recebeu correção manual =)
-
-[-30] : No seu EP você fixou o tamanho da queue para 52 elementos. Isso faz ela funcioanr no exemplo dado, das cartas. Mas em nada mais. Isso faz da sua fila uma estrutura ineficaz.
-
-Bom, você fez a classe toda RandomQueue pensando só na aplicação dele para o exemplo do bridge, quando, na verdade, a ideia era implementar a estrutura da melhor forma possível e aplicar o exemplo do Bridge.
-Além disso, a sua função sample assume que a fila tem tamanho 52 sempre.
+Duas filas independentes têm grande chance de gerar permutações diferentes quando alimentadas com a mesma entrada
+OK :)
+---------------
+A fila não deve desenfileirar duas vezes o mesmo item
+OK :)
+---------------
+A fila deve gerar permutações bem distribuidas (não enviesadas)
+OK :)
+---------------
+Gerar uma permutação grande não deve demorar muito tempo
+[-1000] TEMPO DE EXECUÇÃO EXCEDIDO
+---------------
+É possível alternar operações de enfileirar e desenfileirar sem muitos problemas
+OK :)
+---------------
+É possível chamar todos os métodos especificados no enunciado
+[-1000] ERRO DE EXECUÇÃO
+java.lang.NullPointerException
+	at Tester.specification(Tester.java:160)
+	at Tester.lambda$test$0(Tester.java:17)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+---------------
+A função sample funciona corretamente
+[-1000] ERRO DE EXECUÇÃO
+java.lang.NullPointerException
+	at Tester.sampling(Tester.java:169)
+	at Tester.lambda$test$0(Tester.java:17)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+---------------
+A fila funciona com Strings
+OK :)
+---------------

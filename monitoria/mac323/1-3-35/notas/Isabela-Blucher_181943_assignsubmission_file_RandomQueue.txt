@@ -2,13 +2,27 @@ Duas filas independentes têm grande chance de gerar permutações diferentes qu
 OK :)
 ---------------
 A fila não deve desenfileirar duas vezes o mesmo item
-OK :)
+ERRO DE EXECUÇÃO
+java.lang.NullPointerException
+	at Tester.repetitions(Tester.java:75)
+	at Tester.lambda$test$0(Tester.java:17)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
 ---------------
 A fila deve gerar permutações bem distribuidas (não enviesadas)
-OK :)
+ERRO DE EXECUÇÃO
+java.lang.NullPointerException
+	at Tester.distribution(Tester.java:108)
+	at Tester.lambda$test$0(Tester.java:17)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
 ---------------
 Gerar uma permutação grande não deve demorar muito tempo
-[-10.0] TEMPO DE EXECUÇÃO EXCEDIDO
+OK :)
 ---------------
 É possível alternar operações de enfileirar e desenfileirar sem muitos problemas
 OK :)
@@ -17,14 +31,7 @@ OK :)
 OK :)
 ---------------
 A função sample funciona corretamente
-[-10.0] ERRO DE EXECUÇÃO
-java.lang.NullPointerException
-	at Tester.sampling(Tester.java:169)
-	at Tester.lambda$test$0(Tester.java:17)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
+OK :)
 ---------------
 A fila funciona com Strings
 OK :)
