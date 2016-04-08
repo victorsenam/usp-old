@@ -5,7 +5,7 @@ A fila não deve desenfileirar duas vezes o mesmo item
 OK :)
 ---------------
 A fila deve gerar permutações bem distribuidas (não enviesadas)
-[-1000] Distribuição Enviesada
+[-10.0] Distribuição Enviesada
 ---------------
 Gerar uma permutação grande não deve demorar muito tempo
 OK :)
@@ -14,11 +14,11 @@ OK :)
 OK :)
 ---------------
 É possível chamar todos os métodos especificados no enunciado
-ERRO DE EXECUÇÃO
+[-10.0] ERRO DE EXECUÇÃO
 java.lang.IllegalArgumentException: Parameter N must be positive
 	at edu.princeton.cs.algs4.StdRandom.uniform(StdRandom.java:121)
-	at RandomQueue.sample(RandomQueue.java:45)
-	at Tester.specification(Tester.java:158)
+	at RandomQueue.sample(RandomQueue.java:43)
+	at Tester.specification(Tester.java:160)
 	at Tester.lambda$test$0(Tester.java:17)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
@@ -26,11 +26,11 @@ java.lang.IllegalArgumentException: Parameter N must be positive
 	at java.lang.Thread.run(Thread.java:745)
 ---------------
 A função sample funciona corretamente
-ERRO DE EXECUÇÃO
+[-10.0] ERRO DE EXECUÇÃO
 java.lang.IllegalArgumentException: Parameter N must be positive
 	at edu.princeton.cs.algs4.StdRandom.uniform(StdRandom.java:121)
-	at RandomQueue.sample(RandomQueue.java:45)
-	at Tester.sampling(Tester.java:167)
+	at RandomQueue.sample(RandomQueue.java:43)
+	at Tester.sampling(Tester.java:169)
 	at Tester.lambda$test$0(Tester.java:17)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)

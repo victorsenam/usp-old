@@ -8,7 +8,7 @@ A fila deve gerar permutações bem distribuidas (não enviesadas)
 OK :)
 ---------------
 Gerar uma permutação grande não deve demorar muito tempo
-TEMPO DE EXECUÇÃO EXCEDIDO
+[-10.0] TEMPO DE EXECUÇÃO EXCEDIDO
 ---------------
 É possível alternar operações de enfileirar e desenfileirar sem muitos problemas
 OK :)

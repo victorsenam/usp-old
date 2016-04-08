@@ -23,13 +23,13 @@ A fila funciona com Strings
 OK :)
 ---------------
 A classe bridge imprime apenas cartas válidas
-OK :)
+[-10.0] Carta inválida: P1 P2 P3 P4
 ---------------
 A classe bridge não imprime três vezes a mesma carta
-ERRO DE EXECUÇÃO
+[-10.0] ERRO DE EXECUÇÃO
 java.lang.StringIndexOutOfBoundsException: String index out of range: 0
 	at java.lang.String.charAt(String.java:658)
-	at Tester.bridgeRepeat(Tester.java:229)
+	at Tester.bridgeRepeat(Tester.java:231)
 	at Tester.lambda$test$0(Tester.java:17)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)

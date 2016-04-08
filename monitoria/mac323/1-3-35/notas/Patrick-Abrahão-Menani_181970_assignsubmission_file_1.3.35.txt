@@ -2,11 +2,11 @@ Duas filas independentes têm grande chance de gerar permutações diferentes qu
 OK :)
 ---------------
 A fila não deve desenfileirar duas vezes o mesmo item
-ERRO DE EXECUÇÃO
+[-10.0] ERRO DE EXECUÇÃO
 java.lang.IllegalArgumentException: Parameter N must be positive
 	at edu.princeton.cs.algs4.StdRandom.uniform(StdRandom.java:121)
 	at RandomQueue.dequeue(RandomQueue.java:41)
-	at Tester.repetitions(Tester.java:75)
+	at Tester.repetitions(Tester.java:77)
 	at Tester.lambda$test$0(Tester.java:17)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
@@ -14,11 +14,11 @@ java.lang.IllegalArgumentException: Parameter N must be positive
 	at java.lang.Thread.run(Thread.java:745)
 ---------------
 A fila deve gerar permutações bem distribuidas (não enviesadas)
-ERRO DE EXECUÇÃO
+[-10.0] ERRO DE EXECUÇÃO
 java.lang.IllegalArgumentException: Parameter N must be positive
 	at edu.princeton.cs.algs4.StdRandom.uniform(StdRandom.java:121)
 	at RandomQueue.dequeue(RandomQueue.java:41)
-	at Tester.distribution(Tester.java:108)
+	at Tester.distribution(Tester.java:110)
 	at Tester.lambda$test$0(Tester.java:17)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
@@ -26,11 +26,11 @@ java.lang.IllegalArgumentException: Parameter N must be positive
 	at java.lang.Thread.run(Thread.java:745)
 ---------------
 Gerar uma permutação grande não deve demorar muito tempo
-ERRO DE EXECUÇÃO
+[-10.0] ERRO DE EXECUÇÃO
 java.lang.IllegalArgumentException: Parameter N must be positive
 	at edu.princeton.cs.algs4.StdRandom.uniform(StdRandom.java:121)
 	at RandomQueue.dequeue(RandomQueue.java:41)
-	at Tester.bigCase(Tester.java:129)
+	at Tester.bigCase(Tester.java:131)
 	at Tester.lambda$test$0(Tester.java:17)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
@@ -41,11 +41,11 @@ java.lang.IllegalArgumentException: Parameter N must be positive
 OK :)
 ---------------
 É possível chamar todos os métodos especificados no enunciado
-ERRO DE EXECUÇÃO
+[-10.0] ERRO DE EXECUÇÃO
 java.lang.IllegalArgumentException: Parameter N must be positive
 	at edu.princeton.cs.algs4.StdRandom.uniform(StdRandom.java:121)
 	at RandomQueue.sample(RandomQueue.java:53)
-	at Tester.specification(Tester.java:158)
+	at Tester.specification(Tester.java:160)
 	at Tester.lambda$test$0(Tester.java:17)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
@@ -53,11 +53,11 @@ java.lang.IllegalArgumentException: Parameter N must be positive
 	at java.lang.Thread.run(Thread.java:745)
 ---------------
 A função sample funciona corretamente
-ERRO DE EXECUÇÃO
+[-10.0] ERRO DE EXECUÇÃO
 java.lang.IllegalArgumentException: Parameter N must be positive
 	at edu.princeton.cs.algs4.StdRandom.uniform(StdRandom.java:121)
 	at RandomQueue.sample(RandomQueue.java:53)
-	at Tester.sampling(Tester.java:167)
+	at Tester.sampling(Tester.java:169)
 	at Tester.lambda$test$0(Tester.java:17)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
@@ -65,11 +65,11 @@ java.lang.IllegalArgumentException: Parameter N must be positive
 	at java.lang.Thread.run(Thread.java:745)
 ---------------
 A fila funciona com Strings
-ERRO DE EXECUÇÃO
+[-10.0] ERRO DE EXECUÇÃO
 java.lang.IllegalArgumentException: Parameter N must be positive
 	at edu.princeton.cs.algs4.StdRandom.uniform(StdRandom.java:121)
 	at RandomQueue.dequeue(RandomQueue.java:41)
-	at Tester.stringTest(Tester.java:180)
+	at Tester.stringTest(Tester.java:182)
 	at Tester.lambda$test$0(Tester.java:17)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
@@ -77,9 +77,9 @@ java.lang.IllegalArgumentException: Parameter N must be positive
 	at java.lang.Thread.run(Thread.java:745)
 ---------------
 A classe bridge imprime apenas cartas válidas
-[-1000] Carta inválida: 10D
+[-10.0] Carta inválida: 10C
 ---------------
 A classe bridge não imprime três vezes a mesma carta
-[-1000] A carta 10S aparece mais de duas vezes
+[-10.0] A carta 10H aparece mais de duas vezes
 ---------------
 Nota final: 20.0

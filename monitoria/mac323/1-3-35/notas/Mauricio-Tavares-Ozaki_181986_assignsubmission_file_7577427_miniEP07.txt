@@ -2,10 +2,10 @@ Duas filas independentes têm grande chance de gerar permutações diferentes qu
 OK :)
 ---------------
 A fila não deve desenfileirar duas vezes o mesmo item
-ERRO DE EXECUÇÃO
+[-10.0] ERRO DE EXECUÇÃO
 java.lang.ArrayIndexOutOfBoundsException: 52
-	at RandomQueue.enqueue(RandomQueue.java:43)
-	at Tester.repetitions(Tester.java:71)
+	at RandomQueue.enqueue(RandomQueue.java:41)
+	at Tester.repetitions(Tester.java:73)
 	at Tester.lambda$test$0(Tester.java:17)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
@@ -16,10 +16,10 @@ A fila deve gerar permutações bem distribuidas (não enviesadas)
 OK :)
 ---------------
 Gerar uma permutação grande não deve demorar muito tempo
-ERRO DE EXECUÇÃO
+[-10.0] ERRO DE EXECUÇÃO
 java.lang.ArrayIndexOutOfBoundsException: 52
-	at RandomQueue.enqueue(RandomQueue.java:43)
-	at Tester.bigCase(Tester.java:126)
+	at RandomQueue.enqueue(RandomQueue.java:41)
+	at Tester.bigCase(Tester.java:128)
 	at Tester.lambda$test$0(Tester.java:17)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
@@ -27,10 +27,10 @@ java.lang.ArrayIndexOutOfBoundsException: 52
 	at java.lang.Thread.run(Thread.java:745)
 ---------------
 É possível alternar operações de enfileirar e desenfileirar sem muitos problemas
-ERRO DE EXECUÇÃO
+[-10.0] ERRO DE EXECUÇÃO
 java.lang.ArrayIndexOutOfBoundsException: 52
-	at RandomQueue.enqueue(RandomQueue.java:43)
-	at Tester.dynamic(Tester.java:143)
+	at RandomQueue.enqueue(RandomQueue.java:41)
+	at Tester.dynamic(Tester.java:145)
 	at Tester.lambda$test$0(Tester.java:17)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
@@ -38,9 +38,9 @@ java.lang.ArrayIndexOutOfBoundsException: 52
 	at java.lang.Thread.run(Thread.java:745)
 ---------------
 É possível chamar todos os métodos especificados no enunciado
-ERRO DE EXECUÇÃO
+[-10.0] ERRO DE EXECUÇÃO
 java.lang.NullPointerException
-	at Tester.specification(Tester.java:158)
+	at Tester.specification(Tester.java:160)
 	at Tester.lambda$test$0(Tester.java:17)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
@@ -48,9 +48,9 @@ java.lang.NullPointerException
 	at java.lang.Thread.run(Thread.java:745)
 ---------------
 A função sample funciona corretamente
-ERRO DE EXECUÇÃO
+[-10.0] ERRO DE EXECUÇÃO
 java.lang.NullPointerException
-	at Tester.sampling(Tester.java:167)
+	at Tester.sampling(Tester.java:169)
 	at Tester.lambda$test$0(Tester.java:17)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)

@@ -23,9 +23,9 @@ A fila funciona com Strings
 OK :)
 ---------------
 A classe bridge imprime apenas cartas válidas
-[-1000] Não imprimiu 13 cartas
+[-10.0] Não imprimiu 13 cartas
 ---------------
 A classe bridge não imprime três vezes a mesma carta
-[-1000] Não imprimiu 13 cartas
+[-10.0] Não imprimiu 13 cartas
 ---------------
 Nota final: 80.0

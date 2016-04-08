@@ -2,9 +2,9 @@ Duas filas independentes têm grande chance de gerar permutações diferentes qu
 OK :)
 ---------------
 A fila não deve desenfileirar duas vezes o mesmo item
-ERRO DE EXECUÇÃO
+[-10.0] ERRO DE EXECUÇÃO
 java.lang.NullPointerException
-	at Tester.repetitions(Tester.java:75)
+	at Tester.repetitions(Tester.java:77)
 	at Tester.lambda$test$0(Tester.java:17)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
@@ -12,9 +12,9 @@ java.lang.NullPointerException
 	at java.lang.Thread.run(Thread.java:745)
 ---------------
 A fila deve gerar permutações bem distribuidas (não enviesadas)
-ERRO DE EXECUÇÃO
+[-10.0] ERRO DE EXECUÇÃO
 java.lang.NullPointerException
-	at Tester.distribution(Tester.java:108)
+	at Tester.distribution(Tester.java:110)
 	at Tester.lambda$test$0(Tester.java:17)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)

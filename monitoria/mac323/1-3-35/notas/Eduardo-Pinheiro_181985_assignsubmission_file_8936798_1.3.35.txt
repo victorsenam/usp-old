@@ -26,6 +26,6 @@ A classe bridge imprime apenas cartas válidas
 OK :)
 ---------------
 A classe bridge não imprime três vezes a mesma carta
-OK :)
+[-10.0] TEMPO DE EXECUÇÃO EXCEDIDO
 ---------------
-Nota final: 100.0
+Nota final: 90.0
