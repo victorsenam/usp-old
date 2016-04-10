@@ -266,8 +266,8 @@ public class Tester {
             p.waitFor();
         } catch (Throwable e) {
         }
-        nota -= Tester.test(stdDiscount, "A classe bridge imprime apenas cartas válidas", Tester::bridgeValid, stdTime, 10);
-        nota -= Tester.test(stdDiscount, "A classe bridge não imprime três vezes a mesma carta", Tester::bridgeRepeat, stdTime, 30);
+        nota -= Tester.test(stdDiscount, "A classe bridge imprime apenas cartas válidas", Tester::bridgeValid, 60000, 10);
+        nota -= Tester.test(stdDiscount, "A classe bridge não imprime três vezes a mesma carta", Tester::bridgeRepeat, 60000, 30);
 
         StdOut.println("Nota final: " + ((double)(nota) / 100.));
         System.exit(0);

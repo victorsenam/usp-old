@@ -7,7 +7,7 @@ OK :)
 A fila deve gerar permutações bem distribuidas (não enviesadas)
 [-10.0] ERRO DE EXECUÇÃO
 java.lang.ArrayIndexOutOfBoundsException: 4
-	at RandomQueue.dequeue(RandomQueue.java:63)
+	at RandomQueue.dequeue(RandomQueue.java:65)
 	at Tester.distribution(Tester.java:110)
 	at Tester.lambda$test$0(Tester.java:17)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)

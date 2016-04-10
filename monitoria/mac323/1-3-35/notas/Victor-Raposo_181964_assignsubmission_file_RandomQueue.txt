@@ -5,8 +5,8 @@ A fila não deve desenfileirar duas vezes o mesmo item
 [-10.0] ERRO DE EXECUÇÃO
 java.lang.IllegalArgumentException: Parameter N must be positive
 	at edu.princeton.cs.algs4.StdRandom.uniform(StdRandom.java:121)
-	at RandomQueue.randomSwap(RandomQueue.java:37)
-	at RandomQueue.dequeue(RandomQueue.java:46)
+	at RandomQueue.randomSwap(RandomQueue.java:39)
+	at RandomQueue.dequeue(RandomQueue.java:48)
 	at Tester.repetitions(Tester.java:77)
 	at Tester.lambda$test$0(Tester.java:17)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
@@ -18,8 +18,8 @@ A fila deve gerar permutações bem distribuidas (não enviesadas)
 [-10.0] ERRO DE EXECUÇÃO
 java.lang.IllegalArgumentException: Parameter N must be positive
 	at edu.princeton.cs.algs4.StdRandom.uniform(StdRandom.java:121)
-	at RandomQueue.randomSwap(RandomQueue.java:37)
-	at RandomQueue.dequeue(RandomQueue.java:46)
+	at RandomQueue.randomSwap(RandomQueue.java:39)
+	at RandomQueue.dequeue(RandomQueue.java:48)
 	at Tester.distribution(Tester.java:110)
 	at Tester.lambda$test$0(Tester.java:17)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
@@ -31,8 +31,8 @@ Gerar uma permutação grande não deve demorar muito tempo
 [-10.0] ERRO DE EXECUÇÃO
 java.lang.IllegalArgumentException: Parameter N must be positive
 	at edu.princeton.cs.algs4.StdRandom.uniform(StdRandom.java:121)
-	at RandomQueue.randomSwap(RandomQueue.java:37)
-	at RandomQueue.dequeue(RandomQueue.java:46)
+	at RandomQueue.randomSwap(RandomQueue.java:39)
+	at RandomQueue.dequeue(RandomQueue.java:48)
 	at Tester.bigCase(Tester.java:131)
 	at Tester.lambda$test$0(Tester.java:17)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
@@ -47,7 +47,7 @@ OK :)
 [-10.0] ERRO DE EXECUÇÃO
 java.lang.IllegalArgumentException: Parameter N must be positive
 	at edu.princeton.cs.algs4.StdRandom.uniform(StdRandom.java:121)
-	at RandomQueue.sample(RandomQueue.java:57)
+	at RandomQueue.sample(RandomQueue.java:59)
 	at Tester.specification(Tester.java:160)
 	at Tester.lambda$test$0(Tester.java:17)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
@@ -59,7 +59,7 @@ A função sample funciona corretamente
 [-10.0] ERRO DE EXECUÇÃO
 java.lang.IllegalArgumentException: Parameter N must be positive
 	at edu.princeton.cs.algs4.StdRandom.uniform(StdRandom.java:121)
-	at RandomQueue.sample(RandomQueue.java:57)
+	at RandomQueue.sample(RandomQueue.java:59)
 	at Tester.sampling(Tester.java:169)
 	at Tester.lambda$test$0(Tester.java:17)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
@@ -71,8 +71,8 @@ A fila funciona com Strings
 [-10.0] ERRO DE EXECUÇÃO
 java.lang.IllegalArgumentException: Parameter N must be positive
 	at edu.princeton.cs.algs4.StdRandom.uniform(StdRandom.java:121)
-	at RandomQueue.randomSwap(RandomQueue.java:37)
-	at RandomQueue.dequeue(RandomQueue.java:46)
+	at RandomQueue.randomSwap(RandomQueue.java:39)
+	at RandomQueue.dequeue(RandomQueue.java:48)
 	at Tester.stringTest(Tester.java:182)
 	at Tester.lambda$test$0(Tester.java:17)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)

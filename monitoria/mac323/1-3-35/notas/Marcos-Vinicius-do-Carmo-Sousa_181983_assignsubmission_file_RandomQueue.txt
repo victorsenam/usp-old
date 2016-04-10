@@ -1,7 +1,7 @@
 Duas filas independentes têm grande chance de gerar permutações diferentes quando alimentadas com a mesma entrada
 [-10.0] ERRO DE EXECUÇÃO
 java.lang.NullPointerException
-	at RandomQueue.enqueue(RandomQueue.java:40)
+	at RandomQueue.enqueue(RandomQueue.java:42)
 	at Tester.independentQueues(Tester.java:58)
 	at Tester.lambda$test$0(Tester.java:17)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
@@ -12,7 +12,7 @@ java.lang.NullPointerException
 A fila não deve desenfileirar duas vezes o mesmo item
 [-10.0] ERRO DE EXECUÇÃO
 java.lang.NullPointerException
-	at RandomQueue.enqueue(RandomQueue.java:40)
+	at RandomQueue.enqueue(RandomQueue.java:42)
 	at Tester.repetitions(Tester.java:73)
 	at Tester.lambda$test$0(Tester.java:17)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
@@ -23,7 +23,7 @@ java.lang.NullPointerException
 A fila deve gerar permutações bem distribuidas (não enviesadas)
 [-10.0] ERRO DE EXECUÇÃO
 java.lang.NullPointerException
-	at RandomQueue.enqueue(RandomQueue.java:40)
+	at RandomQueue.enqueue(RandomQueue.java:42)
 	at Tester.distribution(Tester.java:105)
 	at Tester.lambda$test$0(Tester.java:17)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
@@ -34,7 +34,7 @@ java.lang.NullPointerException
 Gerar uma permutação grande não deve demorar muito tempo
 [-10.0] ERRO DE EXECUÇÃO
 java.lang.NullPointerException
-	at RandomQueue.enqueue(RandomQueue.java:40)
+	at RandomQueue.enqueue(RandomQueue.java:42)
 	at Tester.bigCase(Tester.java:128)
 	at Tester.lambda$test$0(Tester.java:17)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
@@ -45,7 +45,7 @@ java.lang.NullPointerException
 É possível alternar operações de enfileirar e desenfileirar sem muitos problemas
 [-10.0] ERRO DE EXECUÇÃO
 java.lang.NullPointerException
-	at RandomQueue.enqueue(RandomQueue.java:40)
+	at RandomQueue.enqueue(RandomQueue.java:42)
 	at Tester.dynamic(Tester.java:145)
 	at Tester.lambda$test$0(Tester.java:17)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
@@ -56,7 +56,7 @@ java.lang.NullPointerException
 É possível chamar todos os métodos especificados no enunciado
 [-10.0] ERRO DE EXECUÇÃO
 java.lang.NullPointerException
-	at RandomQueue.enqueue(RandomQueue.java:40)
+	at RandomQueue.enqueue(RandomQueue.java:42)
 	at Tester.specification(Tester.java:158)
 	at Tester.lambda$test$0(Tester.java:17)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
@@ -67,7 +67,7 @@ java.lang.NullPointerException
 A função sample funciona corretamente
 [-10.0] ERRO DE EXECUÇÃO
 java.lang.NullPointerException
-	at RandomQueue.enqueue(RandomQueue.java:40)
+	at RandomQueue.enqueue(RandomQueue.java:42)
 	at Tester.sampling(Tester.java:168)
 	at Tester.lambda$test$0(Tester.java:17)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
@@ -78,7 +78,7 @@ java.lang.NullPointerException
 A fila funciona com Strings
 [-10.0] ERRO DE EXECUÇÃO
 java.lang.NullPointerException
-	at RandomQueue.enqueue(RandomQueue.java:40)
+	at RandomQueue.enqueue(RandomQueue.java:42)
 	at Tester.stringTest(Tester.java:181)
 	at Tester.lambda$test$0(Tester.java:17)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)

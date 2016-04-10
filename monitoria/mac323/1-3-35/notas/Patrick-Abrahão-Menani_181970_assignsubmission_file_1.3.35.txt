@@ -5,7 +5,7 @@ A fila não deve desenfileirar duas vezes o mesmo item
 [-10.0] ERRO DE EXECUÇÃO
 java.lang.IllegalArgumentException: Parameter N must be positive
 	at edu.princeton.cs.algs4.StdRandom.uniform(StdRandom.java:121)
-	at RandomQueue.dequeue(RandomQueue.java:41)
+	at RandomQueue.dequeue(RandomQueue.java:43)
 	at Tester.repetitions(Tester.java:77)
 	at Tester.lambda$test$0(Tester.java:17)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
@@ -17,7 +17,7 @@ A fila deve gerar permutações bem distribuidas (não enviesadas)
 [-10.0] ERRO DE EXECUÇÃO
 java.lang.IllegalArgumentException: Parameter N must be positive
 	at edu.princeton.cs.algs4.StdRandom.uniform(StdRandom.java:121)
-	at RandomQueue.dequeue(RandomQueue.java:41)
+	at RandomQueue.dequeue(RandomQueue.java:43)
 	at Tester.distribution(Tester.java:110)
 	at Tester.lambda$test$0(Tester.java:17)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
@@ -29,7 +29,7 @@ Gerar uma permutação grande não deve demorar muito tempo
 [-10.0] ERRO DE EXECUÇÃO
 java.lang.IllegalArgumentException: Parameter N must be positive
 	at edu.princeton.cs.algs4.StdRandom.uniform(StdRandom.java:121)
-	at RandomQueue.dequeue(RandomQueue.java:41)
+	at RandomQueue.dequeue(RandomQueue.java:43)
 	at Tester.bigCase(Tester.java:131)
 	at Tester.lambda$test$0(Tester.java:17)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
@@ -44,7 +44,7 @@ OK :)
 [-10.0] ERRO DE EXECUÇÃO
 java.lang.IllegalArgumentException: Parameter N must be positive
 	at edu.princeton.cs.algs4.StdRandom.uniform(StdRandom.java:121)
-	at RandomQueue.sample(RandomQueue.java:53)
+	at RandomQueue.sample(RandomQueue.java:55)
 	at Tester.specification(Tester.java:160)
 	at Tester.lambda$test$0(Tester.java:17)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
@@ -56,7 +56,7 @@ A função sample funciona corretamente
 [-10.0] ERRO DE EXECUÇÃO
 java.lang.IllegalArgumentException: Parameter N must be positive
 	at edu.princeton.cs.algs4.StdRandom.uniform(StdRandom.java:121)
-	at RandomQueue.sample(RandomQueue.java:53)
+	at RandomQueue.sample(RandomQueue.java:55)
 	at Tester.sampling(Tester.java:169)
 	at Tester.lambda$test$0(Tester.java:17)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
@@ -68,7 +68,7 @@ A fila funciona com Strings
 [-10.0] ERRO DE EXECUÇÃO
 java.lang.IllegalArgumentException: Parameter N must be positive
 	at edu.princeton.cs.algs4.StdRandom.uniform(StdRandom.java:121)
-	at RandomQueue.dequeue(RandomQueue.java:41)
+	at RandomQueue.dequeue(RandomQueue.java:43)
 	at Tester.stringTest(Tester.java:182)
 	at Tester.lambda$test$0(Tester.java:17)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
@@ -77,9 +77,9 @@ java.lang.IllegalArgumentException: Parameter N must be positive
 	at java.lang.Thread.run(Thread.java:745)
 ---------------
 A classe bridge imprime apenas cartas válidas
-[-10.0] Carta inválida: 10C
+[-10.0] Carta inválida: 10H
 ---------------
 A classe bridge não imprime três vezes a mesma carta
-[-10.0] A carta 10H aparece mais de duas vezes
+OK :)
 ---------------
-Nota final: 20.0
+Nota final: 30.0

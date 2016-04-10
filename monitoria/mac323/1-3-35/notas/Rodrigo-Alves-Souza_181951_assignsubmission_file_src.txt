@@ -17,7 +17,7 @@ OK :)
 [-10.0] ERRO DE EXECUÇÃO
 java.lang.IllegalArgumentException: Parameter N must be positive
 	at edu.princeton.cs.algs4.StdRandom.uniform(StdRandom.java:121)
-	at RandomQueue.sample(RandomQueue.java:43)
+	at RandomQueue.sample(RandomQueue.java:45)
 	at Tester.specification(Tester.java:160)
 	at Tester.lambda$test$0(Tester.java:17)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
@@ -29,7 +29,7 @@ A função sample funciona corretamente
 [-10.0] ERRO DE EXECUÇÃO
 java.lang.IllegalArgumentException: Parameter N must be positive
 	at edu.princeton.cs.algs4.StdRandom.uniform(StdRandom.java:121)
-	at RandomQueue.sample(RandomQueue.java:43)
+	at RandomQueue.sample(RandomQueue.java:45)
 	at Tester.sampling(Tester.java:169)
 	at Tester.lambda$test$0(Tester.java:17)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
