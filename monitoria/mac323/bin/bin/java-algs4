@@ -8,6 +8,7 @@
 # *************************************************
 
 # Sets the path to the classpath libraries
-jars=(.:${MAC323_INSTALL}/algs4.jar:${MAC323_INSTALL}/stdlib.jar)
+#jars=(.:${MAC323_INSTALL}/algs4.jar:${MAC323_INSTALL}/stdlib.jar)
+jars=(.:${MAC323_INSTALL}/algs4.jar)
 
 java -cp "$jars" "$@"
