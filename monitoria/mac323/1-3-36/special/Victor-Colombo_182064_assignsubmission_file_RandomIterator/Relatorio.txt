@@ -1,0 +1,18 @@
+Victor de Oliveira Colombo - 8988657
+
+O RandomIterator funciona da seguinte forma:
+
+É criado um ArrayList de índices, a ordem dos elementos a serem percorridos na RandomQueue.
+
+Para uma iteração aleatória, esse ArrayList é embaralhado utilizando o método
+shuffle da classe Collection, que utiliza uma variação do Embaralhamento de Knuth
+para gerar uma permutação não enviezada equiprovável, como descrito na API:
+http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#shuffle(java.util.List)
+
+Para mostrar que o iterador de fato produz uma permutação aleatória, o programa foi executado
+com T >> N, que aproxima bem um número infinito de amostras, e percebe-se que as barras apresentam
+por volta de uma mesma altura, resultado esperado numa distribuição equiprovável.
+
+Embora existam métodos estatísticos mais elaborados para verificar a funcionalidade
+do iterador aleatório, como teste de hipótese, simulação computacional funciona bem
+o suficiente neste caso.

@@ -1,0 +1,17 @@
+Crative Exercise 1.3.36 - RandomQueue
+    MAC 323 - Yoshiharu Kohayakawa
+    Otávio Vasques - 8944665
+
+Para compilar:
+	$ javac-algs4 RandomQueue.java
+	$ javac-algs4 TesteVisual.java
+
+Para executar:
+	$ java-algs4 TesteVisual N T
+
+Não utilizei a classe Histogram.java como sugerido, não gostei de sua
+implementação pois tornava minha versão repetitiva. Fiz algo bem similar
+excluindo permutações que não apareceram.
+
+E desculpa pelas posições das figuras no relatório, já faz um tempo to com esse
+problema de fixação de figuras no latex. :\

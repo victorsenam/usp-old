@@ -1,0 +1,8 @@
+/*
+ * Autor: Luis Gustavo Bitencourt Almeida
+ * Numero USP: 9298207
+ */
+
+Como qualquer permutacao eh gerada uma unica vez e dado que a StdRandom.uniform
+gera uma uniforme [a, b), eh facil ver que as permutacoes sao distribuidas
+uniformemente no iterator da classe.

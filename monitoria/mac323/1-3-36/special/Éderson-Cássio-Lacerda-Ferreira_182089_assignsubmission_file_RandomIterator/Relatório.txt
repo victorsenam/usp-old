@@ -1,0 +1,20 @@
+O RandomIterator, ao iniciar, realiza um Knuth Shuffle no vetor de Item e em
+seguida devolve os objetos um a um.
+
+Anexos prints nomeados no padrão "N T.jpg". Quando o número T de testes é muito 
+menor que o número N! de permutações possíveis, as barras do histograma 
+apresentam a mesma altura ("10 100.jpg" e "15 300.jpg"), indicando que não houve 
+repetição escolhendo tão poucas permutações dentre as inúmeras existentes.
+
+Conforme os valores de N! e T se aproximam ("6 200.jpg" e "6 500".jpg) 
+(6! = 720), aparece um número pequeno de repetições, o que é razoável esperar
+dada a aleatoriedade das escolhas.
+
+Quanto T ultrapassa N!, aí repetições certamente ocorrerão, e o histograma
+apresenta mais variações conforme essa diferença aumenta ("5 200.jpg", 
+"6 1000.jpg" e "5 1000.jpg", este último o mais irregular de todos). No entanto,
+pode-se observar que o histograma é totalmente preenchido na base, ou seja,
+nenhuma permutação foi excluída para dar lugar a repetições.
+
+Destaca-se também o fato de que, quando a diferença é muito grande, todas as
+permutações possíveis aparecem várias vezes (observar "5 1000.jpg").

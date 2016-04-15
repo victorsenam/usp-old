@@ -1,0 +1,24 @@
+# Relatório
+# Creative Problem 1.3.36
+
+* Quais testes estatísticos você aprendeu para verificar se seu iterador aleatório está correto? *
+R: Eu vim da Poli (não aprendi nada disso lá). ¯\_(ツ)_/¯
+
+* Alternativamente/adicionalmente, esboce uma prova formal da correção de seu iterador. *
+Meu algoritmo:
+
+for (int i = 0; i < this.size; i++) {
+  int range = this.size - i - 1;                      // Range útil do array indexesAvailable
+  int tmp = (int) Math.floor(Math.random() * range);  // Pega um dos elementos disponiveis
+  this.indexes[i] = indexesAvailable[tmp];            // Coloca ele como próximo
+  indexesAvailable[tmp] = indexesAvailable[range];    // Swap o elemento com o último final (e diminui um tamanho do vetor, quando o i incrementar)
+}
+
+Segue que o invariante a cada iteração é:
+* No intervalo [0, (this.size - i - 1)], todos os elementos de "indexesAvailable" são índices disponíveis para uso
+* Até que o intervalo não contenha nenhum valor e o array indexesAvailable não tenha mais nenhum índice disponível.
+
+  Dado que a função Math.random() gera um número no intervalo [0, 1[ com distribuição uniforme,
+temos então que a probabilidade de cada índice ser escolhida é: 1/n com n = (tamanho_original_do_vetor - i - 1).
+  Portanto, a probabilidade de escolha dos índices é: 1/n * 1/(n-1) * ... * 1/1 = 1/(n!), como esperado.
+  Provamos assim a corretude do algoritmo aleatório do meu iterador.

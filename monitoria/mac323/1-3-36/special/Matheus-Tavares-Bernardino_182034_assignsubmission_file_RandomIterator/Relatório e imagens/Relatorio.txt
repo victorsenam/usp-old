@@ -1,0 +1,83 @@
+********************************************************************************
+
+                    Relatório sobre a classe TesteVisual
+
+Nome:   Matheus Tavares Bernardino
+Nº USP: 9292987
+Data:   27/03/2016
+
+********************************************************************************
+
+ Descrição:
+ 
+ Comentários e conclusões obtidos da execução da classe TesteVisual.
+
+ 
+ 
+********************************************************************************
+                            Testes realizados
+ 
+ Visando entender qual a relação dos parâmetros N e T com o formato do
+ histograma gerado, foram feitos testes, primeiro, mantendo T fixo (10000) e
+ aumentando o valor de N. (Teste 1) Posteriormente, o N foi mantido fixo a 4 e
+ o T aumentando de N! (Total de permutações de "1...N") a N!*10^5. (Teste 2)
+ Por fim, manteve-se o N fixo a 6 e o T aumentando de N! a N!*10^4. 
+ (Teste 3).
+ 
+ Todas as imagens geradas pelos testes encontram-se em pastas de nomes
+ respectivos aos números de cada teste. Estas, por sua vez, estão na mesma pasta
+ deste relatório. (Os nomes das imagens são do tipo "N e T.png" onde N e T são
+ os parâmetros que em TesteVisual, as geraram.
+ 
+ As conclusões tiradas a partir dos testes estão abaixo: 
+
+
+                                Conclusão
+
+ A partir dos testes 2 e 3, conlui-se que quando T é um valor elevado, o
+ histograma tende a ter barras de alturas uniformes. Mais que isso, pelos
+ resultados do teste 1 pode-se observar que este "valor elevado" para T varia em
+ conformidade com o N escolhido.
+ 
+ Como é essa relação? Aparentemente, observando os testes 2 e 3, um T proximo de
+ N!10^3 já aproxima as alturas da barras, e um T entre N!*10^4 e N!*10^5 é um
+ "valor elevado" o suficiente para aproximar as alturas das barras de forma
+ extremamente satisfatória.
+ 
+ É interessante pensar, tambêm, sobre a relação entre a uniformidade das alturas
+ das barras e o "bom-funcionamento" do RandomIterator. Se de fato o
+ RandomIterator itera "escolhendo" items na Queue de maneira pseudo-aleatória,
+ onde cada item tem igual (ou bem aproximada) probabilidade de ser escolhido,
+ esperamos que cada uma das permutações da sequência "1...N" tambêm apareçam com
+ probabilidades semelhantes. Percebemos que para valores de T razoavelmente
+ grandes (N!*10^3, por exemplo), o histograma é bem uniforme o que mostra o bom
+ funcionamento do RandomIterator.
+ 
+ Hipotese pessoal: Uma duvida que me surgiu é acerca de qual seria um T "bom"
+ para se testar o "bom-funcionamento" do RandomIterator. Mas fazendo alguns
+ testes, formulo uma hipotese de que, aparentemente, mesmo com um T 
+ "suficientemente" grande, se o RandomIterator não devolve itens aleatoriamente
+ com probabilidades bem semelhantes, é muito difícil o histograma ser uniforme.
+ Mudei o código do Random Iterator na função next, desta maneira:
+ 
+ 
+        public Item next () {           
+            int i;
+            double teste;
+            do {
+                teste = Math.random ();
+                if (teste >= 0.95) i = 0;
+                else i = (int)(Math.random()*iteratorScopeFixed);
+            } while (jaObservado[i] == true);
+            jaObservado[i] = true;
+            i = (front + i) % N;
+            iteratorScope--;
+            return v[i];
+        }
+        
+ Assim, para N = 4, onde antes a probabilidade esperada de sair um 0 no Random
+ Iterator era 0.042 (aproximação de 1/N!), passou a ser 0.05. Mesmo com T's
+ grandes (N!*10^6) o histograma não chegou perto da uniformidade.
+ 
+ Concluo assim, nesta hipotese pessoal, que o RandomIterator implementado,
+ aparentemente, funciona "bem".

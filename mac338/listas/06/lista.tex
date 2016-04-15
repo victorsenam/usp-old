@@ -1,0 +1,104 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb,amsfonts,algpseudocode}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+ 
+\newenvironment{problem}[2][Ex]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+%If you want to title your bold things something different just make another thing exactly like this but replace "problem" with the name of the thing you want, like theorem or lemma or whatever
+ 
+\begin{document}
+ 
+%\renewcommand{\qedsymbol}{\filledbox}
+%Good resources for looking up how to do stuff:
+%Binary operators: http://www.access2science.com/latex/Binary.html
+%General help: http://en.wikibooks.org/wiki/LaTeX/Mathematics
+%Or just google stuff
+ 
+\title{Lista 6}
+\author{Victor Sena Molero - 8941317}
+\maketitle
+ 
+\begin{problem}{8}
+Descreva um algoritmo que, dados n inteiros no intervalo de $1$ a $k$, preprocesse sua entrada e então responda em $O(1)$ qualquer consulta sobre quantos dos $n$ inteiros dados caem em um intervalo $[a \ldotp \ldotp b]$. O preprocessammento efetuado pelo seu algoritmo deve consumir tempo $O(n+k)$.
+\end{problem}
+ 
+\begin{proof}[Resposta]
+O algoritmo para encontrar o tamannho das subsequências máximas foi explicado em aula. Segue uma implementação que considera as strings dadas nos vetores $X$ e $Y$ de tamanhos $m$ e $n$ respectivamente. Além disso, a função assume a existência de uma matriz global $dp$ que vai guardar a resposta dos estados.
+
+\begin{algorithmic}[1]
+\Function{LCS}{}
+    \State $i \gets 1$
+    \While{$i \leq m$}
+        \State $j \gets 1$
+        \While{$j \leq n$}
+            \If {$X[i] = Y[j]$}
+                \State $dp[i][j] \gets dp[i-1][j-1] + 1$
+            \Else
+                \State $dp[i][j] \gets \textit{max}(dp[i-1][j], dp[i][j-1])$
+            \EndIf
+            \State $j \gets j+1$
+        \EndWhile
+        \State $i \gets i+1$
+    \EndWhile
+\EndFunction
+\end{algorithmic}
+
+Agora, precisamos conseguir imprimir todas as subsequências possíveis. Para isso, precisamos explorar todos os caminhos possíveis de subsequencias. A forma mais fácil de fazer isso é com um algoritmo recursivo, vou chamar de \textsc{Imprime-Sequencias}. Esta função recebe como parâmetro a posição a ser explorada na matriz calculada na programação dinâmica. \\
+Nós vamos montar as sequências uma a uma, de trás para frente, ou seja, da ultima letra para a primeira. Toda vez que estivermos numa posição $i,j$ com $X[i] = Y[j]$, sabemos que todas as strings que contém o final já montado contém, também, a letra da posição $X[i]$ (e $Y[j]$), logo, ela deve fazer parte do sufixo atual. Além disso, toda vez que estivermos numa posição $i,j$ onde $X[i] \neq Y[j]$ e $dp[i][j] > dp[i][j-1]$, sabemos que a posição $i,j-1$ não faz parte de nenhuma LCS que contenha aquele final, pois a maior subsequência daquele estado é menor do que a do estado atual e nenhuma letra foi ganha para transitar de um para o outro. O O pensamento análogo se aplica quando $dp[i][j] > dp[i-1][j]$. \\
+Podemos, então, escrever nossa função. Assumindo uma string $S$ vazia já alocada globalmente. \\
+
+\begin{algorithmic}[1]
+\Function{Imprime-Sequencias}{$i, j$}
+\If{$dp[i][j] = 0$}
+    \State \textsc{Imprime}($S$)
+\Else
+    \If{$X[i] = Y[j]$}
+        \State $S[dp[i][j]] \gets X[i]$
+        \State \textsc{Imprime-Sequencias}($i-1, j-1$)
+    \Else
+        \If{$dp[i-1][j] = d[i][j]$}
+            \State \textsc{Imprime-Sequencias}($i-1, j$)
+        \EndIf
+        \If{$dp[i][j-1] = d[i][j]$}
+            \State \textsc{Imprime-Sequencias}($i, j-1$)
+        \EndIf
+    \EndIf
+\EndIf
+\EndFunction
+\end{algorithmic}
+
+Basta chamar esta função com os argumentos $m, n$ e as sequências desejadas serão impressas.
+\end{proof}
+
+\begin{problem}{21}
+Escreva um programa que, dado o número $n$ de faixas a serem colocadas na vitrine, calcule o número de maneiras de satisfazer as condições do proprietário.
+\end{problem}
+
+\begin{proof}[Resposta]
+Basta observar que a primeira faixa a ser colocada nunca será uma azul, pois toda azul está entre uma branca e uma vermelha. Depois de colocarmos uma bandeira branca ou vermelha, temos duas opções, colocar uma faixa de cor oposta ou colocar uma faixa azul. Depois de colocar uma faixa azul não temos nenhuma opção, sempre colocaremos uma faixa da cor oposta à que veio antes da azul. \\
+Assim, podemos criar uma pd que assume que sempre acabamos de colocar uma faixa vermelha ou branca e calcule quantas formas de colocar faixas nos restam. Não precisamos saber se a ultima faixa foi vermelha ou branca pois a resposta é igual nos dois casos e não precisamos separar o caso onde acabamos de colocar uma azul pois a resposta será igual à do outro caso só que com uma bandeira a menos precisando ser colocada (a que vem depois da azul, que deve sempre ser diferente da que vem antes da azul). \\
+A resposta será, então, o dobro deste calculo feito para $n-1$ (basta definir se a primeira faixa é vermelha ou branca. \\
+\\
+\\
+
+\begin{algorithmic}[1]
+\Function{Bandeiras}{$n$}
+    \State $res[0] \gets 1$
+    \State $res[1] \gets 1$
+    \State $i \gets 2$
+    \While {$i < n$}
+        \State $res[i] \gets res[i-1] + res[i-2]$
+    \EndWhile
+    \State \Return $2*res[n-1]$
+\EndFunction
+\end{algorithmic}
+
+Isso é exatamente o dobro do fibonacci de $n-1$. E, por isso, esse problema pode ser resolvido em $O(\lg(n))$
+
+\end{proof}
+
+\end{document}

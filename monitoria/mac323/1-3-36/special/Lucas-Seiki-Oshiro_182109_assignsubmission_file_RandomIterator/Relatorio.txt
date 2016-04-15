@@ -1,0 +1,1 @@
+Para verificar se o iterador aleatório está coreto, pode ser feito um teste de aderência qui-quadrado. Como é esperado uma distribuição uniforme, a frequencia esperada de cada permutação é T/N!. Dessa forma, o valor de qui-quadrado será Σ(i = 1, s) (Oi - T/N!)² / (T/N!). Quanto menor o valor de qui-quadrado, maior será a evidência de que o iterador está correto.

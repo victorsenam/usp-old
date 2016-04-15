@@ -1,0 +1,11 @@
+Nome: Fabio Henrique Kiyoiti dos Santos Tanaka
+Numero Usp: 9297982
+
+    Nos testes realizados, na grande maioria das vezes houve uma distribuição
+homogenea das permutações intependentemente do N, comprovando que o Iterador é
+"justo".
+    Para comprovar isto, foi adicionada uma classe chamada Teste.java, que 
+realiza o teste de aderência com H0 = A distribuição foi homogênea, H1 = A 
+distribuição não foi homogênea e Alfa = 5%. Geralmente H0 só não é aceito
+quando T é menor que N!, pois neste caso há poucos dados para as N! possiveis
+permutações.
