@@ -1,0 +1,101 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry} 
+\usepackage[brazil]{babel}
+\usepackage{amsmath,amsthm,amssymb,amsfonts}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+ 
+\newcounter{exCounter}
+\setcounter{exCounter}{19}
+\newtheorem{lema}{Lema}
+\newtheorem{ex}[exCounter]{Ex}
+\newenvironment{problem}[2][Ex]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\linespread{2}
+%If you want to title your bold things something different just make another thing exactly like this but replace "problem" with the name of the thing you want, like theorem or lemma or whatever
+ 
+\begin{document}
+ 
+%\renewcommand{\qedsymbol}{\filledbox}
+%Good resources for looking up how to do stuff:
+%Binary operators: http://www.access2science.com/latex/Binary.html
+%General help: http://en.wikibooks.org/wiki/LaTeX/Mathematics
+%Or just google stuff
+ 
+\title{Lista 6}
+\author{Victor Sena Molero - 8941317}
+\maketitle
+
+\section{Provas Auxiliares}
+Eu percebi que ia deixar minhas respostas muito poluídas com alguns detalhes então resolvi provar alguns teoremas para poder usar sem argumentar no meio de minhas demonstrações.
+
+\begin{lema}
+Seja $G$ um grafo qualquer e $H \subseteq G$ um subgrafo gerador de $G$. Se $E$ é um emparelhamento perfeito de $H$, $E$ é um emparelhamento perfeito de $G$.
+\end{lema}
+
+\begin{proof}[Prova]
+Seja $G$ um grafo qualquer, $H \subseteq G$ um subgrafo gerador de $G$ e $E$ um emparelhamento perfeito de $H$. \\
+$E$ é um emparelhamento de $G$ pois toda aresta de $E$ pertence a $H$ e, portanto, pertence a $G$ e, já que $E$ é um emparelhamento em $H$, nenhum par de arestas em $E$ é adjacente. \\
+$E$ cobre todos os vértices de $G$, pois, por hipótese, cobre todos os vértices de $H$, que são todos os vértices de $G$, logo, $E$ é perfeito em $G$.
+\end{proof}
+
+\begin{lema}
+Se $S$ é um caminho e $|A(S)|$ é impar, $S$ contém um emparelhamento perfeito.
+\end{lema}
+\begin{proof}[Prova]
+Seja $S$ um caminho tal que $|A(S)|$ é ímpar. Vamos provar, por indução em $|A(S)|$ que $S$ contém um emparelhamento perfeito. \\
+Se $|A(S)| = 1$, então esta única aresta é um emparelhamento perfeito de $S$. \\
+Assuma que a tese vale para todo $|A(S)| < k$ ímpar, com $k > 1$.
+Se $|A(S)| = k$, removemos dois vértices adjacentes de uma das pontas de $S$ e obtemos um grafo $T$ com $|A(T)| < k$ ímpar, por hipótese de indução, ele tem um emparelhamento perfeito. Agora, basta adcionar a aresta entre os dois vértices removidos de $S$ no emparelhamento, ela não é adjacente a nenhuma aresta de $T$, portanto não é adjacente a ninguém do emparelhamento e ela cobre os dois vértices não cobertos pelo emparelhamento de $T$, portanto, é um emparelhamento perfeito em $S$.
+\end{proof}
+
+\section{Exercícios}
+\begin{ex}
+Seja $G$ um grafo simples com $n$ vértices, $n$ par, e $g(v) > n/2$ para todo $v$ em $V(G)$. Prove que $G$ contém 3 emparelhamentos perfeitos dois a dois disjuntos.
+\end{ex}
+
+\begin{proof}[Prova]
+Seja $G$ um grafo simples com $n$ vértices com $n$ par e tal que $\forall v \in V(G)$, $g_G(v) > n/2$. \\
+Sabemos que $n \geq 4$, pois $n = 2$ não é possível sob as hipóteses propostas. \\
+Assim, vale o teorema de Dirac, pois $\forall u \in V(G), g_G(u) \geq n/2$. Ou seja, o grafo contém um circuito hamiltoniano. Seja $C$ tal circuito, ele tem uma quantidade par de vértices. Removemos uma aresta qualquer de $C$ obtendo um caminho com uma quantidade ímpar de arestas. Pelo Lema 2, este caminho contém um emparelhamento perfeito $E_1$ e pelo Lema 1 este emparelhamento é também um emparelhamento perfeito de $C$. Além disso, o grafo $C \setminus E_1$ é também um emparelhamento $E_2$ de $C$, pois contém uma aresta adjacente a cada vértice de $C$ e nenhum par de arestas adjacentes entre si. Além disso, $E_1$ e $E_2$ são disjuntos entre si. \\
+Agora seja $x$ um vértice qualquer de $G$, escolhemos o grafo $F = G - A(C) - x$, ou seja, o grafo que se obtem removendo, de $G$, as arestas de $C$ e um vértice qualquer. Seja $u$ um vértice qualquer de $F$. Sabemos que $g_G(u) > n/2$, portanto $g_F(u) > n/2 - 3$, pois foram removidos dois vértices adjacentes a $u$ que estavam em $C$ e, no máximo, um vértice por causa da remoção de $x$. Ou seja:
+$$g_F(u) > n/2 - 3 = (n-1)/2 - 1$$, ou seja
+$$g_F(u) \geq (n-1)/2$$, portanto
+$$g_F(u) \geq |V(F)|/2$$ \\
+Ou seja, $\forall u \in V(F), g_F(u) \geq |V(F)|/2$, além disso, $|V(F)| \geq 3$, logo, vale o Teorema de Dirac e $F$ tem um circuito hamiltoniano, assim, podemos escolher um vértice $u \in F$ tal que $ux \in A(G)$ e remover uma aresta de $u$ do circuito encontrado, obtendo um caminho hamiltoniano em $F$ com uma ponta em $u$, agora, adicionamos $x$ a $F$ com a aresta $ux$, obtendo um caminho hamiltoniano $S$ em $G-A(C)$. Já que $A(S)$ é ímpar, vale o Lema 2 e encontramos um emparelhamento perfeito $E_3$ de $S$. Já que $S$ é gerador de $G$, $E_3$ é um emparelhamento perfeito de $G$ pelo Lema 1. Ainda temos que $E_3$ é disjunto, por arestas, de $C$, portanto, disjunto, por arestas, de $E_1$ e de $E_2$. \\
+Encontramos, portanto, 3 emparelhamentos perfeitos disjuntos por arestas em $G$.
+\end{proof}
+
+\begin{ex}
+Justifique se é verdadeira ou falsa a seguinte afirmação: Se $G$ é um grafo conexo não-trivial simples, então para todo vértice $v$ de $G$, escolhido arbitrariamente, sempre existe um emparelhamento maximal que cobre $v$.
+\end{ex}
+
+\begin{proof}[Prova]
+A afirmação é verdadeira. \\
+Seja $G$ um grafo conexo não-trivial simples e $v$ um vértice qualquer de $G$. $g(v) \geq 1$, já que $G$ é não-trivial e conexo. Escolhemos um emparelhamento maximal qualquer $E$ de $G$. Se $v$ é coberto por $E$ está provada a tese.  \\
+Então escolhemos um vértice $u$ qualquer adjacente a $v$. Se $u$ não é coberto por $E$, então $E$ não é maximal, pois poderia-se adicionar $uv$ a $E$ e gerar um emparelhamento que contém $E$ propriamente. Logo, $u$ é coberto por $E$. A aresta que cobre $u$ vai a um outro vértice $w$. Removemos a aresta $uw$ de $E$ e adicionamos a aresta $uv$ gerando um emparelhamento $E'$. Agora temos dois casos:
+Se $w$ tiver alguém adjacente não coberto em $E'$, podemos adicionar esta aresta e gerar um emparelhamento $E'$ que cobre todos os vértices de $E$, se fosse possível adicionar uma aresta em $E'$, seria possível adicionar a mesma aresta em $E$ e $E$ não seria maximal. \\
+Se $w$ não tiver nenhum vértice adjacente não coberto, não é possível adicionar nenhuma aresta de $w$ em $E$, além disso, todos os outros vértices que estavam cobertos em $E$ estão ainda cobertos em $E'$, portanto, se fosse possível adicionar uma aresta que não contém $w$ em $E'$ seria possível adicionar a mesma aresta em $E$ e $E$ não seria maximal. \\
+Assim, geramos um emparelhamento maximal $E'$ a partir de $E$ que cobre $v$.
+\end{proof}
+
+\begin{ex}
+Prove que uma árvore tem no máximo um emparelhamento perfeito.
+\end{ex}
+
+\begin{proof}[Prova]
+Seja $G$ uma árvore qualquer, vamos provar, por indução em $|V(G)|$ que $G$ tem, no máximo, um emparelhamento perfeito. \\
+Se $|V(G)| = 0$, $E = \emptyset$ é um emparelhamento perfeito. \\
+Com $k > 0$, assumindo que vale a tese com $|V(G)| < k$. \\
+Assumindo que $|V(G)| = k$. Se $G$ não contém nenhuma olha, então $k = 1$ e não existe um emparelhamento perfeito. Se $G$ tem uma folha, seja $u$ uma folha qualquer de $G$. \\
+O vértice $u$ é adjacente a apenas um outro vértice $v$, portanto, $uv$ pertence a qualquer emparelhamento perfeito de $G$. Seja $H = G - u - v$, $H$ é uma floresta. Nenhuma das arestas diferentes de $uv$ podem pertencer a um emparelhamento perfeito, pois são adjacentes a $uv$, que pertence a todos. \\
+A quantidade de emparelhamentos perfeitos em $G$ é igual à quantidade de emparelhamentos perfeitos em $H$, pois um emparelhamento perfeito em $H$ pode ser unido a $uv$ gerando um emparelhamento perfeito em $G$ e se houver um emparelhamento perfeito em $G$ pode-se remover $uv$ dele (que obrigatóriamente pertence a ele) e gerar um emparelhamento perfeito em $H$ (já que nenhuma aresta adjacente a $v$ diferente de $uv$ pode pertencer ao emparelhamento perfeito em $G$). \\
+Um emparelhamento perfeito $E$ qualquer de $G$ gera um emparelhamento perfeito em cada uma das árvores $T$ de $H$, pois toda aresta de $E$ diferente de $uv$ pertence a uma árvore de $T$. Logo, pode-se escolher todas as arestas que pertencem à $T$ em $E$, elas obrigatóriamente cobrem todas as arestas de $T$, pois, se não, $G$ não seria um emparelhamento perfeito, logo, elas formam um emparelhamento perfeito em $T$. \\
+Por hipótese de indução, toda árvore de $H$ tem no máximo um emparelhamento perfeito. Podemos separar em dois casos: \\
+Em um caso, existe pelo menos uma árvore $T$ de $H$ que não tem nenhum emparelhamento perfeito. Suponha, por absurdo, que $G$ tem um emparelhamento perfeito, como provado, ele gera um emparelhamento perfeito em toda árvore de $H$, logo, há um emparelhamento perfeito em qualquer árvore de $H$, um absurdo. Portanto, se existe uma árvore de $H$ sem emparelhamento, não existe emparelhamento perfeito em $G$. \\
+No outro caso, toda árvore de $H$ tem exatamente um emparelhamento perfeito. Então, $G$ tem pelo menos um emparelhamento perfeito, basta unir os os emparelhamentos de todas as árvores de $H$ à aresta $uv$, isso cobre todos os vértices de $G$ e gera um emparelhamento perfeito. Por outro lado, $G$ não tem dois emparelhamentos distintos. Seja $E$ o emparelhamento descrito pela união dos emparelhamentos das árvores de $H$ à aresta $uv$. Suponha, por absurdo, que $G$ contém outro emparelhamento perfeito $E'$ tal que $E \neq E'$. Assim, existe pelo menos uma aresta $\alpha$ em $E$ que não pertence a $E'$, seja $T$ a árvore que contém $\alpha$, sabemos que $E'$ gera um emparelhamento perfeito em $T$ que contém $\alpha$, um absurdo pois $T$ tem exatamente um emparelhamento perfeito e ele só contém arestas de $E$, ou seja, não contém $\alpha$.
+Ou seja, nos dois casos, ou $G$ não tem emparelhamentos perfeitos, ou $G$ tem exatamente um emparelhamento perfeito. Logo, está provada a tese.
+\end{proof}
+\end{document}
