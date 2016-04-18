@@ -21,6 +21,8 @@ int find(int v) {
 
 void insert (int v) {
     int u = find(v);
+
+    assert(!us[u]);
     
     us[u] = 1;
     vl[u] = v;
@@ -29,6 +31,8 @@ void insert (int v) {
 }
 
 void printLevel (int u) {
+    assert(us[u]);
+
     qi = qf = 0;
     qu[qf++] = u;
     while (qi < qf) {
