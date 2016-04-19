@@ -1,0 +1,6 @@
+CORREÇÃO AUTOMÁTICA
+Quantidade de Testes | Veredito
+12 | OK
+0 | Tempo de Execução Excedido
+0 | Resposta Errada
+88 | Erro de Execução

@@ -1,0 +1,3 @@
+[submodule "monitoria/mac323/pdfs-mac323"]
+	path = monitoria/mac323/pdfs-mac323
+	url = https://github.com/victorsenam/pdfs-mac323.git
