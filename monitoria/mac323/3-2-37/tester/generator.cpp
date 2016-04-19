@@ -123,5 +123,5 @@ int main () {
 
     // large cases : cases [85..100)
     for (int i = 0; i < 15; i++)
-        generateCase(100000, 100, INT_MIN, 0);
+        generateCase(100000, 10000, INT_MIN, 0);
 }

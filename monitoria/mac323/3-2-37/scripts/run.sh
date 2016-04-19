@@ -3,7 +3,6 @@
 cd ..
 initial=$(pwd)
 
-rm -fr notas
 mkdir "notas"
 
 folder=${1-"result"}
@@ -30,6 +29,11 @@ do
     javac -cp .:algs4.jar:stdlib.jar *.java &> verbose
     
     toexec=failed
+    if [ -a BST.class ]
+    then
+        toexec=$toexec
+        #toexec=BST
+    fi
     if [ -a LevelTransversal.class ]
     then
         toexec=LevelTransversal
@@ -37,6 +41,11 @@ do
     if [ -a LevelTraversal.class ]
     then
         toexec=LevelTraversal
+    fi
+    if [ -a LevelOrderTraversal.class ]
+    then
+        toexec=$toexec
+        #toexec=LevelOrderTraversal
     fi
 
     if [ $toexec != failed ];
