@@ -77,7 +77,8 @@ do
         echo "failed compile"
     fi
 
-    echo "Quantidade de Testes | Veredito" > $initial/notas/${aluno%/}.txt
+    echo "CORREÇÃO AUTOMÁTICA" > $initial/notas/${aluno%/}.txt
+    echo "Quantidade de Testes | Veredito" >> $initial/notas/${aluno%/}.txt
     echo "$r_ac | OK" >> $initial/notas/${aluno%/}.txt
     echo "$r_tl | Tempo de Execução Excedido" >> $initial/notas/${aluno%/}.txt
     echo "$r_wa | Resposta Errada" >> $initial/notas/${aluno%/}.txt
