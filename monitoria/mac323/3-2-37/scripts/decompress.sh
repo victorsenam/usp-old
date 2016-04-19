@@ -90,5 +90,5 @@ do
     name=${file// /-}
     name=${name%.zip}
     mkdir "$initial/result/$name"
-    mv "$file" "$initial/result/$name/"
+    mv "$file" "$initial/result/$name/LevelTraversal.java"
 done
