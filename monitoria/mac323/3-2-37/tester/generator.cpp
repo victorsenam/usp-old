@@ -109,16 +109,24 @@ int main () {
     }
     generateCase(10000, 100, 0, 10000);
 
-    // small cases tiny-range : cases [10..15)
-    for (int i = 0; i < 5; i++)
-        generateRandomCase(10, 100, -100, 200);
+    // tiny cases : cases [10..30)
+    for (int i = 0; i < 20; i++) {
+        generateRandomCase(5, 20, -(1<<(i+4)), (1<<(i+5)));
+    }
 
-    // small cases full-range : cases [15..35)
+    // small cases tiny-range : cases [30..35)
+    int tmp = 50;
+    for (int i = 0; i < 5; i++) {
+        generateRandomCase(10, 100, -tmp, 2*tmp);
+        tmp += tmp/2;
+    }
+
+    // small cases full-range : cases [35..55)
     for (int i = 0; i < 20; i++)
         generateRandomCase(10, 100, INT_MIN, 0);
 
-    // medium cases only positives : cases [35..85)
-    for (int i = 0; i < 50; i++) 
+    // medium cases only positives : cases [55..85)
+    for (int i = 0; i < 30; i++) 
         generateRandomCase(1000, 10000, INT_MIN, 0);
 
     // large cases : cases [85..100)
