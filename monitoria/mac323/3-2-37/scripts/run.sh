@@ -7,10 +7,11 @@ rm -fr notas
 mkdir "notas"
 
 folder=${1-"result"}
+pattern=${2-*/}
 
 cd $folder
 
-for aluno in */;
+for aluno in $pattern;
 do
     cd "$initial/$folder/"
     cd "$aluno"
@@ -27,8 +28,18 @@ do
     rm -r output || true
     mkdir output
     javac -cp .:algs4.jar:stdlib.jar *.java &> verbose
+    
+    toexec=failed
+    if [ -a LevelTransversal.class ]
+    then
+        toexec=LevelTransversal
+    fi
+    if [ -a LevelTraversal.class ]
+    then
+        toexec=LevelTraversal
+    fi
 
-    if [ $? -eq 0 ];
+    if [ $toexec != failed ];
     then
         for testcase in $(find $initial/tester/input/in*);
         do
@@ -37,7 +48,7 @@ do
             echo "===================" >> verbose
             echo "TESTE $number" >> verbose
 
-            (time timeout --kill-after=7s 5s java -cp .:algs4.jar:stdlib.jar LevelTraversal < $initial/tester/input/in$number > output/out$number 2>> verbose) &>> verbose
+            (time timeout --kill-after=12s 10s java -cp .:algs4.jar:stdlib.jar $toexec < $initial/tester/input/in$number > output/out$number 2>> verbose) &>> verbose
             exitstatus=$?
 
             if [ $exitstatus -eq 124 ]

@@ -1,5 +1,0 @@
-Quantidade de Testes | Veredito
-0 | OK
-0 | Tempo de Execução Excedido
-0 | Resposta Errada
-100 | Erro de Execução
