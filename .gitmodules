@@ -1,3 +1,12 @@
 [submodule "monitoria/mac323/pdfs-mac323"]
 	path = monitoria/mac323/pdfs-mac323
 	url = https://github.com/victorsenam/pdfs-mac323.git
+[submodule "mac214/blog"]
+	path = mac214/blog
+	url = https://github.com/victorsenam/blog-mac0214.git
+[submodule "mac239"]
+	path = mac239
+	url = https://github.com/victorsenam/mac239.git
+[submodule "mac242/claudia"]
+	path = mac242/claudia
+	url = https://github.com/victorsenam/claudia.git
