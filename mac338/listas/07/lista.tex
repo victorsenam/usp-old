@@ -48,7 +48,7 @@ Para isso, podemos criar uma tabela que memoriza o resultado da função para to
 
 Para calcular cada um dos valores, precisamos iterar por todo o vetor $a$, ou seja, cada cálculo de estado custa $O(n)$. Já que temos $m$ estados para calcular, o tempo total de execução do programa será $O(nm)$.
 
-Eu tive minha submissão aceita no URI, meu user lá é Victor Sena Molero. Segue o código submetido no juíz, em C.
+Eu tive minha submissão aceita no URI, meu user lá é \texttt{Victor Sena Molero}. Segue o código submetido no juíz, em C++.
 \end{proof}
 \cppcode{gelo.cpp}
 
@@ -57,6 +57,18 @@ LISA - Pocket Money
 \end{ex}
 
 \begin{proof}[Resposta]
+Dada uma expressão aritmética com inteiros entre 0 e 9 e operadores $+$ e $*$, deve-se calcular um valor mínimo que pode ser obtido com uma parentização e o valor máximo que pode ser obtido por uma parentização. Parentizar uma expressão é, na verdade, escolher uma ordem para seus operadores. Assim, podemos definir a função $f$ que recebe uma expressão e devolve uma parentização máxima, se soubermos calcular $f$ sabemos calcular a expressão mínima analogamente.
+
+Seja então a expressão $s$, como dito, $f(s)$ é o valor máximo de uma parentização. Podemos definir $f$ da seguinte maneira, recursivamente.
+\begin{itemize}
+    \item Se $s$ é um inteiro (não tem nenhum operador), $f(s) = s$, pois esta é a única "parentização" possível.
+    \item Caso contrário, devemos escolher um operador para ser calculado com prioridade sobre todos os outros nesta expressão. Todo operador divide a expressão em duas, para calcular o valor obtido ao remover este operador, basta calcular o valor ótimo para as expressões obtidas. Conseguimos, assim, uma forma de calcular o valor de $f$ a partir de partes de $f$.
+\end{itemize}
+
+Agora, devemos calcular a complexidade deste programa. A tabela de símbolos tem tamanho $O(n^2)$ e para calcular cada um dos estados realizamos trabalho $O(n)$. Assim a complexidade final fica $O(n^3)$.
+
+Eu tive uma submissão aceita no SPOJ-BR, meu user lá é \texttt{victorsenam}. O link pro meu status neste problema é http://www.spoj.com/status/LISA,victorsenam/. Segue o código submetico no juíz, em C++.
+\cppcode{lisa.cpp}
 \end{proof}
 
 \end{document}
