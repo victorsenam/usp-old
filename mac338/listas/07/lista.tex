@@ -2,7 +2,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[margin=1in]{geometry} 
 \usepackage[brazil]{babel}
-\usepackage{amsmath,amsthm,amssymb,amsfonts,listings,algpseudocode}
+\usepackage{amsmath,amsthm,amssymb,amsfonts,listings,algpseudocode,xcolor,minted}
  
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\Z}{\mathbb{Z}}
@@ -14,7 +14,12 @@
 \newenvironment{problem}[2][Ex]{\begin{trivlist}
 \item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
 %If you want to title your bold things something different just make another thing exactly like this but replace "problem" with the name of the thing you want, like theorem or lemma or whatever
- 
+
+\usemintedstyle{trac}
+\newmintedfile[cppcode]{cpp}{
+    linenos=true,
+}
+
 \begin{document}
  
 %\renewcommand{\qedsymbol}{\filledbox}
@@ -44,13 +49,14 @@ Para isso, podemos criar uma tabela que memoriza o resultado da função para to
 Para calcular cada um dos valores, precisamos iterar por todo o vetor $a$, ou seja, cada cálculo de estado custa $O(n)$. Já que temos $m$ estados para calcular, o tempo total de execução do programa será $O(nm)$.
 
 Eu tive minha submissão aceita no URI, meu user lá é Victor Sena Molero. Segue o código submetido no juíz, em C.
-\lstinputlisting[language=C++]{gelo.cpp}
 \end{proof}
+\cppcode{gelo.cpp}
 
 \begin{ex}
 LISA - Pocket Money
 \end{ex}
 
 \begin{proof}[Resposta]
+\end{proof}
 
 \end{document}
