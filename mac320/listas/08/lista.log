@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.11.4)  5 MAY 2016 12:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.11.4)  9 MAY 2016 09:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -352,26 +352,28 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
 
-! LaTeX Error: File `algpseudocode.sty' not found.
+! LaTeX Error: File `enumitem.sty' not found.
 
 Type X to quit or <RETURN> to proceed,
 or enter new name. (Default extension: sty)
 
-Enter file name: 
-! Emergency stop.
-<read *> 
-         
-l.5 ^^M
-       
-End of file on the terminal!
+Enter file name: x
 
- 
+ )
+(\end occurred when \ifx on line 6 was incomplete)
+(\end occurred when \ifx on line 6 was incomplete) 
 Here is how much of TeX's memory you used:
  1862 strings out of 495000
- 22157 string characters out of 6181169
- 75416 words of memory out of 5000000
+ 22137 string characters out of 6181169
+ 75411 words of memory out of 5000000
  5125 multiletter control sequences out of 15000+600000
  3938 words of font info for 15 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 27i,0n,32p,201b,38s stack positions out of 5000i,500n,10000p,200000b,80000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 27i,1n,32p,201b,38s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+No pages of output.
+PDF statistics:
+ 0 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

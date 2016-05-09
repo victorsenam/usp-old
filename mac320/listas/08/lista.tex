@@ -1,0 +1,97 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry} 
+%\usepackage[brazil]{babel}
+\usepackage{amsmath,amsthm,amssymb,amsfonts,enumitem}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+ 
+\newcounter{exCounter}
+\setcounter{exCounter}{26}
+\newtheorem{lema}{Lema}
+\newtheorem{ex}[exCounter]{Ex}
+\newenvironment{problem}[2][Ex]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\linespread{2}
+%If you want to title your bold things something different just make another thing exactly like this but replace "problem" with the name of the thing you want, like theorem or lemma or whatever
+ 
+\begin{document}
+ 
+%\renewcommand{\qedsymbol}{\filledbox}
+%Good resources for looking up how to do stuff:
+%Binary operators: http://www.access2science.com/latex/Binary.html
+%General help: http://en.wikibooks.org/wiki/LaTeX/Mathematics
+%Or just google stuff
+ 
+\title{Lista 8}
+\author{Victor Sena Molero - 8941317}
+\maketitle
+
+\section{Exercícios}
+\begin{ex}
+Seja $G$ um grafo de ordem $n$. Mostre que se $n$ é ímpar e $G$ tem mais do que $\Delta(G)(n-1)/2$ arestas, então $\chi'(G) > \Delta(G)$.
+\end{ex}
+
+\begin{proof}[Resposta]
+Não sei :(
+\end{proof}
+
+\begin{ex}
+\begin{enumitem}[label=(\alph*)]
+    \item Mostre que se $G$ é um grafo bipartido, então $G$ tem um supergrafo bipartido $k$-regulr, onde $k = \Delta(G)$.
+    \item Usando o resultado do item $(a)$ faça uma prova alternativa do Teorema de König (Teorema 6.2 das Notas de Aula).
+\end{enumitem}
+\end{ex}
+
+\begin{proof}
+Seja $G$ um grafo $(X,Y)$-bipartido com pelo menos uma aresta. Seja $X^*$ o conjunto de vértices de grau $\Delta(G)$ em $X$. Vamos provar que sempre existe um emparelhamento em $G$ que cobre $X^*$.
+
+Suponha, por absurdo, que existe um subconjunto $S$ de $X^*$ tal que $|Adj(S)| < |S|$. Consideremos o grafo $H$ induzido em $G$ por $S \cup Adj(S)$. Já que $H$ é $(S,Adj(S))$-bipartido, temos que
+$$ \sum_{u \in S} g_H(u) = \sum_{v \in Adj(S)} g_H(v) $$, mas
+$$ \sum_{u \in S} g_H(u) = |S| \Delta(G) $$ e
+$$ \sum_{v \in Adj(S)} \leq |Adj(S)| \Delta(G) < |S| \Delta(G) $$, ou seja
+$$ |S| \Delta(G) < |S| \Delta(G) $$, um absurdo.
+
+Temos, então, que para todo subconjunto $S$ de $X^*$, $|Adj(S)| \geq |S|$, portanto, vale o teorema de Hall e existe um emparelhamento em $G$ que cobre $X^*$. 
+
+Analogamente, existe um emparelhamento em $G$ que cobre o conjunto $Y^*$ de vértices de grau $\Delta(G)$ em $Y$.
+
+Escolhemos então um emparelhamento $E_X$ que cobre $X^*$ e um $E_Y$ que cobre $Y^*$. Escolha o conjunto de arestas $E = E_X \cup E_Y$, se não houver nenhum vértice $x \in X^*$ ou $y \in Y^*$ coberto por duas arestas este é um emparelhamento em $G$ que cobre todos os vértices de grau máximo. Se não, $E$ tem duas arestas adjacentes. Escolha uma qualquer suponha, s.p.g. que existem duas arestas adjacentes num vértice $x \in X^*$. Obrigatóriamente uma delas pertence a $E_X$, podemos remover esta de $E$ gerando um novo conjunto de arestas que cobre $X^*$ e $Y^*$. Podemos remover arestas até que não exista nenhum par de arestas adjacentes, já que em cada passo mantemos a propriedade de que o conjunto cobre tanto $X^*$ quanto $Y^*$, obtemos um emparelhamento que cobre tanto $X^*$ quanto $Y^*$.
+\end{proof}
+
+\begin{ex}
+Prove que se $G$ é um grafo $(X,Y)$-bipartido com pelo menos uma aresta e $g(x) \geq g(y)$ para todo $x \in X$ e $y \in Y$, então existe em $G$ um emparelhamento que cobre $X$.
+\end{ex}
+
+\begin{proof}
+Seja $G$ um grafo $(X,Y)$-bipartido com pelo menos uma aresta e tal que $g(x) \geq g(y)$ para todo par $x \in X$, $y \in Y$. Seja $m$ o valor grau mínimo de um vértice de $X$.
+
+Consideremos o grafo $H$ induzido em $G$ por $S \cup Adj(S)$. Já que $H$ é $(S,Adj(S))$-bipartido, temos que
+$$ \sum_{u \in S} g_H(u) = \sum_{v \in Adj(S)} g_H(v) $$, mas
+$$ \sum_{u \in S} g_H(u) \geq |S| m $$ e
+$$ |Adj(S)| m \geq \sum_{v \in Adj(S)}$$, ou seja
+$$ |Adj(S)| m \geq |S| m $$
+$$ |Adj(S)| \geq |S| $$
+Ou seja, vale o teorema de Hall e existe um emparelhamento que cobre $X$.
+\end{proof}
+
+\begin{ex}
+Um retângulo latino $m \times n$ é uma matriz com $m$ linhas e $n$ colunas, cujas entradas são símbolos, sendo que cada símbolo ocorre no máximo uma vez em cada linha e em cada coluna. Um quadrado latino de ordem $n$ é um retângulo latino $n \times n$ sobre $n$ símbolos.
+
+Prove: Se $m < n$ então todo retângulo latino $m \times n$ sobre $n$ símbolos pode ser estendido a um quadrado latino de ordem $n$.
+\end{ex}
+
+\begin{proof}
+Assumindo que os $n$ símbolos possíveis são $s_1, s_2, \dots, s_n$.
+
+Basta montar um grafo $G$ $(X,Y)$-bipartido onde $X = {x_1, x_2, \dots, x_n}$ e $Y = {y_1, y_2, \dots, y_n}$ e para todo par $i, j \in \mathbb{N}$, com $0 \leq i,j \leq n$ tem-se que $x_i$ e $y_j$ são adjacentes entre si se e somente se não existe, na linha $i$, o símbolo $s_j$.
+
+Com isso, temos que, para um $i$ qualquer, o grau de $x_i$ é igual à quantidade de símbolos não utilizados na coluna $i$. Já que $m$ linhas foram usadas e nenhum símbolo se repetiu numa única coluna, $g(x_i) = n-m \forall i$. Por outro lado, para um $j$ qualquer, o grau de $y_i$ é a quantidade de colunas onde o símbolo $s_i$ ainda não foi usado. Sabemos que cada símbolo aparece exatamente uma vez por linha e nunca se repete numa coluna, ou seja, ele já foi usado em exatamente $m$ colunas. Temos então que o $g(y_j) = n-m \forall j$.
+
+Assim, temos um grafo $G$ $(X,Y)$-bipartido onde para todo par $x \in X$ e $y \in Y$, $g(x) \geq g(y)$, pelo exercício anterior, existe um emparelhamento que cobre $X$, já que $|X| = |Y|$, temos um emparelhamento que cobre $X$ e $Y$, assim, se houver uma aresta entre $x_i$ e $y_j$ no emparelhamento para qualquer $i,j$ então podemos colocar o símbolo $s_j$ na coluna $i$ da nova linha e gerar um retângulo latino $m+1 \times n$ para qualquer $m < n$.
+
+Assim, basta repetir o processo acima $n-m$ vezes, a cada passo $n-m > 0$, então o grafo montado vai ter pelo menos uma aresta e ser bipartido, ou seja, vai valer a hipótese do teorema provado acima.
+\end{proof}
+
+\end{document}
