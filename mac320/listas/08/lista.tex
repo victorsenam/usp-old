@@ -38,60 +38,71 @@ Não sei :(
 \end{proof}
 
 \begin{ex}
-\begin{enumitem}[label=(\alph*)]
-    \item Mostre que se $G$ é um grafo bipartido, então $G$ tem um supergrafo bipartido $k$-regulr, onde $k = \Delta(G)$.
+\begin{enumerate}[label=(\alph*)]
+    \item Mostre que se $G$ é um grafo bipartido, então $G$ tem um supergrafo bipartido $k$-regular, onde $k = \Delta(G)$.
     \item Usando o resultado do item $(a)$ faça uma prova alternativa do Teorema de König (Teorema 6.2 das Notas de Aula).
-\end{enumitem}
+\end{enumerate}
 \end{ex}
 
-\begin{proof}
-Seja $G$ um grafo $(X,Y)$-bipartido com pelo menos uma aresta. Seja $X^*$ o conjunto de vértices de grau $\Delta(G)$ em $X$. Vamos provar que sempre existe um emparelhamento em $G$ que cobre $X^*$.
+\begin{proof}[Prova da parte a]
+Primeiro, seja $G$ um grafo $(X,Y)$-bipartido, podemos assumir s.p.g. que $|X| \geq |Y|$. Podemos escolher um supergrafo $G'$ de $G$ que é $(X,Y')$-bipartido onde $Y'$ contém $Y$ e $|X|-|Y|$ vértices de grau 0. \\
+Temos agora que se $G'$ tem um grafo $\Delta(G')$-regular, temos que $G$ tem um supergrafo $\Delta(G')$-regular e já que $\Delta(G) = \Delta(G')$, $G$ tem um supergrafo $\Delta(G)$-regular.
 
-Suponha, por absurdo, que existe um subconjunto $S$ de $X^*$ tal que $|Adj(S)| < |S|$. Consideremos o grafo $H$ induzido em $G$ por $S \cup Adj(S)$. Já que $H$ é $(S,Adj(S))$-bipartido, temos que
-$$ \sum_{u \in S} g_H(u) = \sum_{v \in Adj(S)} g_H(v) $$, mas
-$$ \sum_{u \in S} g_H(u) = |S| \Delta(G) $$ e
-$$ \sum_{v \in Adj(S)} \leq |Adj(S)| \Delta(G) < |S| \Delta(G) $$, ou seja
-$$ |S| \Delta(G) < |S| \Delta(G) $$, um absurdo.
+Escolhemos agora o grafo $G'$ e vamos provar, por indução na quantidade de arestas de $G'$, que $G'$ tem um supergrafo $\Delta(G')$-regular. 
 
-Temos, então, que para todo subconjunto $S$ de $X^*$, $|Adj(S)| \geq |S|$, portanto, vale o teorema de Hall e existe um emparelhamento em $G$ que cobre $X^*$. 
+Se $|A(G')| = |X|\Delta(G')$, então $G'$ é $\Delta(G')$-regular, trivialmente.
 
-Analogamente, existe um emparelhamento em $G$ que cobre o conjunto $Y^*$ de vértices de grau $\Delta(G)$ em $Y$.
+Caso contrário, podemos assumir, por hipótese de indução, que todo grafo que cumpre as hipóteses e tem mais do que $|A(G')|$ arestas segue a tese. Sabemos que existe um vértice de $X$ que não tem grau $\Delta(G')$, mas sabemos também que
+$$ \sum\limits_{u \in X} g_{G'}(u) = \sum\limits_{v \in Y} g_{G'}(v) < |X|\Delta(G') = |Y|\Delta(G') $$
+Então tem que haver um vértice em $Y$ que não tem grau $\Delta(G')$ também, logo, podemos escolher estes dois vértices e adicionar uma aresta entre eles. Geramos assim um supergrafo de $G'$ com $|A(G')|+1$ que, é $(X,Y')$-bipartido e tem grau máximo $\Delta(G')$. Por hipótese de indução, este tem um supergrafo bipartido $\Delta(G')$-regular, logo, $G'$ tem um supergrafo bipartido $\Delta(G')$-regular.
 
-Escolhemos então um emparelhamento $E_X$ que cobre $X^*$ e um $E_Y$ que cobre $Y^*$. Escolha o conjunto de arestas $E = E_X \cup E_Y$, se não houver nenhum vértice $x \in X^*$ ou $y \in Y^*$ coberto por duas arestas este é um emparelhamento em $G$ que cobre todos os vértices de grau máximo. Se não, $E$ tem duas arestas adjacentes. Escolha uma qualquer suponha, s.p.g. que existem duas arestas adjacentes num vértice $x \in X^*$. Obrigatóriamente uma delas pertence a $E_X$, podemos remover esta de $E$ gerando um novo conjunto de arestas que cobre $X^*$ e $Y^*$. Podemos remover arestas até que não exista nenhum par de arestas adjacentes, já que em cada passo mantemos a propriedade de que o conjunto cobre tanto $X^*$ quanto $Y^*$, obtemos um emparelhamento que cobre tanto $X^*$ quanto $Y^*$.
+Assim, $G$ tem um supergrafo bipartido $\Delta(G)$-regular.
+\end{proof}
+
+\begin{proof}[Prova da parte b]
+O Teorema de König diz que se $G$ é um grafo bipartido, então $\chi'(G) \leq \Delta(G)$. Então seja $G$ um grafo bipartido qualquer, podemos usar o teorema do item $(a)$ para concluir que que existe um supergrafo $H$ de $G$ que é $\Delta(G)$-regular. Vamos provar que se $H$ é um grafo $k$-regular então ele é $k$ colorível, por indução em $k$.
+
+Se $k = 0$ então é não há nenhuma aresta e é possível colorir ele com nenhuma cor, trivialmente. 
+
+Se $k > 0$, assumimos que a tese é válida para todo $k' = k$. Sabemos que todo grafo bipartido regular tem um emparelhamento perfeito, assim, removemos este emparelhamento de $H$ obtendo $H'$ $k-1$-regular, pela hipótese de indução, $H'$ é $k-1$ colorível, podemos escolher o emparelhamento de $H$ para gerar a nova cor em $H$ e conseguir uma $k$ coloração em $H$.
+
+Assim, provamos que $H$ é $\Delta(G)$-colorível, basta tirar de cada cor as arestas que não estão em $G$ e obter uma $\Delta(G)$ coloração em $G$, ou seja $\chi'(G) \leq \Delta(G)$.
 \end{proof}
 
 \begin{ex}
-Prove que se $G$ é um grafo $(X,Y)$-bipartido com pelo menos uma aresta e $g(x) \geq g(y)$ para todo $x \in X$ e $y \in Y$, então existe em $G$ um emparelhamento que cobre $X$.
+Seja $G$ um grafo que tem uma coloração própria na qual toda cor é usada pelo menos 2 vezes. Mostre que $G$ tem uma coloração com $\chi(G)$ cores que tem essa mesma propriedade.
 \end{ex}
 
-\begin{proof}
-Seja $G$ um grafo $(X,Y)$-bipartido com pelo menos uma aresta e tal que $g(x) \geq g(y)$ para todo par $x \in X$, $y \in Y$. Seja $m$ o valor grau mínimo de um vértice de $X$.
+\begin{proof}[Resposta]
+Não sei :(
+%Seja $G$ um grafo simples tal que toda coloração minima tem pelo menos uma cor usada só uma vez. Escolhemos uma coloração $C$ de $G$ minima que minimize a quantidade de cores com só um vértice.
 
-Consideremos o grafo $H$ induzido em $G$ por $S \cup Adj(S)$. Já que $H$ é $(S,Adj(S))$-bipartido, temos que
-$$ \sum_{u \in S} g_H(u) = \sum_{v \in Adj(S)} g_H(v) $$, mas
-$$ \sum_{u \in S} g_H(u) \geq |S| m $$ e
-$$ |Adj(S)| m \geq \sum_{v \in Adj(S)}$$, ou seja
-$$ |Adj(S)| m \geq |S| m $$
-$$ |Adj(S)| \geq |S| $$
-Ou seja, vale o teorema de Hall e existe um emparelhamento que cobre $X$.
+%Seja $c$ uma cor de $C$ que só tem um vértice $u$. Vamos provar que em toda coloração de $G$ existe algum vértice que aparece sozinho.
+
+%Seja $d$ uma outra cor qualquer de $C$. Se $d$ só tem um vértice, ele é adjacente a $u$, se não poderíamos formar uma coloração menor em $G$. Se $d$ tem mais do que dois vértices, todos são adjacentes a $u$, se não, poderíamos escolher um qualquer e dar a ele a cor $c$, gerando uma coloração com menos cores de um só vértice. Se $d$ tem mais de um vértice, então pelo menos um deles é adjacente a $u$, se não poderíamos atribuir a cor $d$ também a $u$. 
+
+%Escolhemos então uma coloração $D$ do grafo onde $u$ não aparece sozinho numa cor. Temos que
 \end{proof}
 
 \begin{ex}
-Um retângulo latino $m \times n$ é uma matriz com $m$ linhas e $n$ colunas, cujas entradas são símbolos, sendo que cada símbolo ocorre no máximo uma vez em cada linha e em cada coluna. Um quadrado latino de ordem $n$ é um retângulo latino $n \times n$ sobre $n$ símbolos.
-
-Prove: Se $m < n$ então todo retângulo latino $m \times n$ sobre $n$ símbolos pode ser estendido a um quadrado latino de ordem $n$.
+Seja $G$ um grafo simples com $n$ vértices e seja $\alpha$ a cardinalidade de um conjunto independente máximo de $G$. Prove que
+\begin{enumerate}[label=(\alph*)]
+    \item $n/\alpha \leq \chi(G) \leq n - \alpha + 1$
+    \item Caracterize os grafos $G$ de ordem $n$ tais que $\chi(G) = n - \alpha + 1$.
+\end{enumerate}
 \end{ex}
 
-\begin{proof}
-Assumindo que os $n$ símbolos possíveis são $s_1, s_2, \dots, s_n$.
+\begin{proof}[Prova da parte a]
+Seja $G$ um grafo simples com $n$ vértices onde $\alpha$ é a cardinalidade máxima de um conjunto independente. Seja também $C$ uma coloração qualquer desse grafo, temos que
+$$ n = \sum\limits_{c \in C} |c| \leq \sum\limits_{c \in C} \alpha = |C| \alpha $$, então
+$$ n \leq |C| \alpha $$, logo
+$$ n/\alpha \leq |C| $$, ou seja
+$$ n/\alpha \leq \chi(G) $$
+Por outro lado temos que, já que existe um tamanho independente de tamanho $\alpha$, podemos colorir ele todo de uma cor, restam-nos $n-\alpha$ vértices. Se escolhermos uma cor distinta para cada um, teremos uma coloração de $n-\alpha+1$ cores, logo $\chi(G) \leq n-\alpha+1$.
+\end{proof}
 
-Basta montar um grafo $G$ $(X,Y)$-bipartido onde $X = {x_1, x_2, \dots, x_n}$ e $Y = {y_1, y_2, \dots, y_n}$ e para todo par $i, j \in \mathbb{N}$, com $0 \leq i,j \leq n$ tem-se que $x_i$ e $y_j$ são adjacentes entre si se e somente se não existe, na linha $i$, o símbolo $s_j$.
-
-Com isso, temos que, para um $i$ qualquer, o grau de $x_i$ é igual à quantidade de símbolos não utilizados na coluna $i$. Já que $m$ linhas foram usadas e nenhum símbolo se repetiu numa única coluna, $g(x_i) = n-m \forall i$. Por outro lado, para um $j$ qualquer, o grau de $y_i$ é a quantidade de colunas onde o símbolo $s_i$ ainda não foi usado. Sabemos que cada símbolo aparece exatamente uma vez por linha e nunca se repete numa coluna, ou seja, ele já foi usado em exatamente $m$ colunas. Temos então que o $g(y_j) = n-m \forall j$.
-
-Assim, temos um grafo $G$ $(X,Y)$-bipartido onde para todo par $x \in X$ e $y \in Y$, $g(x) \geq g(y)$, pelo exercício anterior, existe um emparelhamento que cobre $X$, já que $|X| = |Y|$, temos um emparelhamento que cobre $X$ e $Y$, assim, se houver uma aresta entre $x_i$ e $y_j$ no emparelhamento para qualquer $i,j$ então podemos colocar o símbolo $s_j$ na coluna $i$ da nova linha e gerar um retângulo latino $m+1 \times n$ para qualquer $m < n$.
-
-Assim, basta repetir o processo acima $n-m$ vezes, a cada passo $n-m > 0$, então o grafo montado vai ter pelo menos uma aresta e ser bipartido, ou seja, vai valer a hipótese do teorema provado acima.
+\begin{proof}[Resposta da parte b]
+Se $G$ é tal que $\chi(G) = n - \alpha + 1$ temos que a coloração feita da forma descrita no exercício anterior é mínima. Assim, podemos concluir que todos os vértices que não estão no conjunto independente de tamanho $\alpha$ são adjacentes a todos os outros que não pertencem ao conjunto. Além disso, cada um desses vértices é adjacente a pelo menos um vértice do conjunto independente, caso contrário, haveria um conjunto independente de tamanho $\alpha + 1$. Ou seja, este grafo tem um grafo completo de tamanho $n - \alpha$ e $\alpha$ vértices não-adjacentes entre si que são adjacentes ao grafo completo. 
 \end{proof}
 
 \end{document}
