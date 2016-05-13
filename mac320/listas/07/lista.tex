@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry} 
+\usepackage[brazil]{babel}
+\usepackage{amsmath,amsthm,amssymb,amsfonts}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+ 
+\newcounter{exCounter}
+\setcounter{exCounter}{22}
+\newtheorem{lema}{Lema}
+\newtheorem{ex}[exCounter]{Ex}
+\newenvironment{problem}[2][Ex]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\linespread{2}
+%If you want to title your bold things something different just make another thing exactly like this but replace "problem" with the name of the thing you want, like theorem or lemma or whatever
+ 
+\begin{document}
+ 
+%\renewcommand{\qedsymbol}{\filledbox}
+%Good resources for looking up how to do stuff:
+%Binary operators: http://www.access2science.com/latex/Binary.html
+%General help: http://en.wikibooks.org/wiki/LaTeX/Mathematics
+%Or just google stuff
+ 
+\title{Lista 7}
+\author{Victor Sena Molero - 8941317}
+\maketitle
+
+\begin{ex}
+Seja $G$ um grafo simples de ordem $n \geq 2k$ e tal que $g(v) \geq k \geq 1$ para todo $v$ em $G$. Mostre que $G$ tem um emparelhamento com pelo menos $k$ arestas.
+\end{ex}
+
+\begin{proof}[Prova]
+Seja $k$ um inteiro maior que 1 e $G$ um grafo simples de ordem $n \geq 2k$ e tal que $\forall v \in V(G), g(v) \geq k$. Queremos demonstrar a tese de que $G$ tem um emparelhamento $E$ tal que $|E| \geq k$. \\
+Primeiro, vamos provar que com $k = 1$, vale a tese. O grafo tem pelo menos uma aresta, pois todo vértice tem grau pelo menos 1, logo, basta escolher uma aresta qualquer e esta será o emparelhamento desejado. \\
+Agora, suponha que a tese seja falsa com $k > 1$, então existe um contra exemplo para tal tese. Sabemos que se $G$ for um grafo completo, ele tem um emparelhamento de tamanho $k$, logo, existe um contra-exemplo maximal, ou seja, um grafo tal que não vale a propriedade e, se adicionarmos uma aresta qualquer, a propriedade passa a valer. \\
+Seja $G$ tal contra-exemplo maximal. Escolhemos dois vértices não-adjacentes $u$ e $v$ quaisquer de $G$, se adicionarmos a aresta $uv$ gerando o grafo $G'$, criaremos um emparelhamento $E'$ de tamanho $k$. Temos duas opções: \\
+Se $uv \notin E'$, então $E'$ é um emparelhamento em $G$, pois só contém arestas que pertencem a $G$. \\
+Se $uv \in E'$, então $E' - uv$ é um emparelhamento de tamanho $k-1$ em $G$ onde nem $u$ nem $v$ estão cobertos. Sabemos que $g(u) \geq k$ e $g(v) \geq k$, além disso, $u$ e $v$ não são adjacentes. Mais uma vez, três casos são possíveis: \\
+$u$ tem um vizinho $x$ livre, desta forma, basta adicionar a aresta $ux$ ao emparelhamento e gerar um emparelhamento em $G$ de ordem $k$. \\
+$v$ tem um vizinho $y$ livre, analogamente, obtemos um emparelhamento de ordem $k$. \\
+Caso contrário, todos os vizinhos de $u$ e $v$ estão emparelhados com algum vértice. Suponha, por absurdo, que não existe nenhum par de vértices $x$, $y$ emparelhado em $E'$ onde $u$ é vizinho de $x$ e $v$ é vizinho de $y$. Já que o emparelhamento tem tamanho $k-1$, temos exatamente $2(k-1)$ vértices emparelhados, porém, cada vizinho de $u$ impossibilita um vizinho de $v$ (e vice-versa), logo, deveríamos ter, no mínimo $g(u) + g(v)$ vértices emparelhados, porém $g(u) + g(v) \geq 2k > 2(k-1)$, um absurdo. Logo, existe um par $x$, $y$ onde a aresta $xy$ esta em $E'$ e as arestas $ux$ e $vy$ estão em $G$, ou seja, existe um caminho alterante em $G$ em relação ao emparelhamento $E'$, portanto, podemos formar um novo emparelhamento $E$ em $G$ onde $|E| = |E'| + 1 = k$. \\
+Ou seja, em todos os casos possíveis obtivemos um emparelhamento de ordem $k$ no grafo $G$.
+\end{proof}
+
+\begin{ex}
+Seja $G$ um grafo bipartido com pelo menos uma aresta. Mostre que existe um emparelhamento que cobre todos os vértices de grau $\Delta(G)$.
+\end{ex}
+
+\begin{proof}[Prova]
+Seja $G$ um grafo $(X,Y)$-bipartido com pelo menos uma aresta. Vamos provar que existe um emparelhamento que cobre todos os vértices de grau $\Delta(G)$. Seja $S$ o conjunto de vértices de grau máximo em $X$ e $T$ o conjunto de vértices de grau máximo em $Y$.
+Eu estava tentando achar um caminho alternante entre alguém de grau máximo e alguém que não tivesse grau máximo, mas acho que isso não ajuda :(
+\end{proof}
+
+\begin{ex}
+Prove que uma árvore tem no máximo um emparelhamento perfeito.
+\end{ex}
+
+\begin{proof}[Prova]
+Seja $G$ uma árvore qualquer, vamos provar, por indução em $|V(G)|$ que $G$ tem, no máximo, um emparelhamento perfeito. \\
+Se $|V(G)| = 0$, $E = \emptyset$ é um emparelhamento perfeito. \\
+Com $k > 0$, assumindo que vale a tese com $|V(G)| < k$. \\
+Assumindo que $|V(G)| = k$. Se $G$ não contém nenhuma olha, então $k = 1$ e não existe um emparelhamento perfeito. Se $G$ tem uma folha, seja $u$ uma folha qualquer de $G$. \\
+O vértice $u$ é adjacente a apenas um outro vértice $v$, portanto, $uv$ pertence a qualquer emparelhamento perfeito de $G$. Seja $H = G - u - v$, $H$ é uma floresta. Nenhuma das arestas diferentes de $uv$ podem pertencer a um emparelhamento perfeito, pois são adjacentes a $uv$, que pertence a todos. \\
+A quantidade de emparelhamentos perfeitos em $G$ é igual à quantidade de emparelhamentos perfeitos em $H$, pois um emparelhamento perfeito em $H$ pode ser unido a $uv$ gerando um emparelhamento perfeito em $G$ e se houver um emparelhamento perfeito em $G$ pode-se remover $uv$ dele (que obrigatóriamente pertence a ele) e gerar um emparelhamento perfeito em $H$ (já que nenhuma aresta adjacente a $v$ diferente de $uv$ pode pertencer ao emparelhamento perfeito em $G$). \\
+Um emparelhamento perfeito $E$ qualquer de $G$ gera um emparelhamento perfeito em cada uma das árvores $T$ de $H$, pois toda aresta de $E$ diferente de $uv$ pertence a uma árvore de $T$. Logo, pode-se escolher todas as arestas que pertencem à $T$ em $E$, elas obrigatóriamente cobrem todas as arestas de $T$, pois, se não, $G$ não seria um emparelhamento perfeito, logo, elas formam um emparelhamento perfeito em $T$. \\
+Por hipótese de indução, toda árvore de $H$ tem no máximo um emparelhamento perfeito. Podemos separar em dois casos: \\
+Em um caso, existe pelo menos uma árvore $T$ de $H$ que não tem nenhum emparelhamento perfeito. Suponha, por absurdo, que $G$ tem um emparelhamento perfeito, como provado, ele gera um emparelhamento perfeito em toda árvore de $H$, logo, há um emparelhamento perfeito em qualquer árvore de $H$, um absurdo. Portanto, se existe uma árvore de $H$ sem emparelhamento, não existe emparelhamento perfeito em $G$. \\
+No outro caso, toda árvore de $H$ tem exatamente um emparelhamento perfeito. Então, $G$ tem pelo menos um emparelhamento perfeito, basta unir os os emparelhamentos de todas as árvores de $H$ à aresta $uv$, isso cobre todos os vértices de $G$ e gera um emparelhamento perfeito. Por outro lado, $G$ não tem dois emparelhamentos distintos. Seja $E$ o emparelhamento descrito pela união dos emparelhamentos das árvores de $H$ à aresta $uv$. Suponha, por absurdo, que $G$ contém outro emparelhamento perfeito $E'$ tal que $E \neq E'$. Assim, existe pelo menos uma aresta $\alpha$ em $E$ que não pertence a $E'$, seja $T$ a árvore que contém $\alpha$, sabemos que $E'$ gera um emparelhamento perfeito em $T$ que contém $\alpha$, um absurdo pois $T$ tem exatamente um emparelhamento perfeito e ele só contém arestas de $E$, ou seja, não contém $\alpha$.
+Ou seja, nos dois casos, ou $G$ não tem emparelhamentos perfeitos, ou $G$ tem exatamente um emparelhamento perfeito. Logo, está provada a tese.
+\end{proof}
+\end{document}
