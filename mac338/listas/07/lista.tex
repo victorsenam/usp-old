@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry} 
+\usepackage[brazil]{babel}
+\usepackage{amsmath,amsthm,amssymb,amsfonts,listings,algpseudocode,xcolor,minted}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+ 
+\newcounter{exCounter}
+\setcounter{exCounter}{22}
+\newtheorem{lema}{Lema}
+\newtheorem{ex}[exCounter]{Ex}
+\newenvironment{problem}[2][Ex]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+%If you want to title your bold things something different just make another thing exactly like this but replace "problem" with the name of the thing you want, like theorem or lemma or whatever
+
+\usemintedstyle{trac}
+\newmintedfile[cppcode]{cpp}{
+    linenos=true,
+}
+
+\begin{document}
+ 
+%\renewcommand{\qedsymbol}{\filledbox}
+%Good resources for looking up how to do stuff:
+%Binary operators: http://www.access2science.com/latex/Binary.html
+%General help: http://en.wikibooks.org/wiki/LaTeX/Mathematics
+%Or just google stuff
+ 
+\title{Lista 7}
+\author{Victor Sena Molero - 8941317}
+\maketitle
+
+\begin{ex}
+Festival de Estátuas de Gelo
+\end{ex}
+
+\begin{proof}[Resposta]
+Dado um $m$ e um vetor $a$ de $n$ inteiros $a_1, a_2, \dots, a_n$, temos que encontrar um vetor $x \in \mathbb{N}^n$ que minimize $\sum\limits_{i=1}^n x_i$ sujeito a $x^Ta = m$. Ou seja, devemos conseguir somar os inteiros dados no vetor $a$ de forma a atingir um valor exatamente $m$, podendo usar cada valor de $a$ quantas vezes forem necessárias e minimzando a quantidade de somas feitas. Vamos chamar a solução ótima de uma instância com um $m$ dado de $f(m)$.
+
+Temos que $f(0) = 0$ pois não precisamos somar nenhum inteiro para atingir o valor 0. Agora, queremos descobrir o valor de $f(m)$ dados os valores de todas as instâncias menores, ou seja, sabendo os valores para todo $f(x)$ tal que $x < m$. Sabemos que, se temos um vetor de $a$ e queremos atingir a soma $m$, devemos escolher algum valor de $a$ e colocar nesta soma, porém, após inserir este valor $x$, temos que conseguir somar $m-x$ com os mesmos valores $a$ do problema anterior, ou seja, este é um subproblema do problema anterior. 
+
+Podemos, então, concluir a seguinte recorrência sobre um valor de $f(m)$ quando $m > 0$
+$$ f(m) = \min\limits_{i=1}^{n} f(m-a_i)+1 $$
+
+Para isso, podemos criar uma tabela que memoriza o resultado da função para todo $m$ e calcular os valores dela crescentemente em $m$, sabendo que $f(0) = 0$, ou seja, podemos aplicar programação dinâmica.
+
+Para calcular cada um dos valores, precisamos iterar por todo o vetor $a$, ou seja, cada cálculo de estado custa $O(n)$. Já que temos $m$ estados para calcular, o tempo total de execução do programa será $O(nm)$.
+
+Eu tive minha submissão aceita no URI, meu user lá é \texttt{Victor Sena Molero}. Segue o código submetido no juíz, em C++.
+\end{proof}
+\cppcode{gelo.cpp}
+
+\begin{ex}
+LISA - Pocket Money
+\end{ex}
+
+\begin{proof}[Resposta]
+Dada uma expressão aritmética com inteiros entre 0 e 9 e operadores $+$ e $*$, deve-se calcular um valor mínimo que pode ser obtido com uma parentização e o valor máximo que pode ser obtido por uma parentização. Parentizar uma expressão é, na verdade, escolher uma ordem para seus operadores. Assim, podemos definir a função $f$ que recebe uma expressão e devolve uma parentização máxima, se soubermos calcular $f$ sabemos calcular a expressão mínima analogamente.
+
+Seja então a expressão $s$, como dito, $f(s)$ é o valor máximo de uma parentização. Podemos definir $f$ da seguinte maneira, recursivamente.
+\begin{itemize}
+    \item Se $s$ é um inteiro (não tem nenhum operador), $f(s) = s$, pois esta é a única "parentização" possível.
+    \item Caso contrário, devemos escolher um operador para ser calculado com prioridade sobre todos os outros nesta expressão. Todo operador divide a expressão em duas, para calcular o valor obtido ao remover este operador, basta calcular o valor ótimo para as expressões obtidas. Conseguimos, assim, uma forma de calcular o valor de $f$ a partir de partes de $f$.
+\end{itemize}
+
+Agora, devemos calcular a complexidade deste programa. A tabela de símbolos tem tamanho $O(n^2)$ e para calcular cada um dos estados realizamos trabalho $O(n)$. Assim a complexidade final fica $O(n^3)$.
+
+Eu tive uma submissão aceita no SPOJ-BR, meu user lá é \texttt{victorsenam}. O link pro meu status neste problema é http://www.spoj.com/status/LISA,victorsenam/. Segue o código submetico no juíz, em C++.
+\cppcode{lisa.cpp}
+\end{proof}
+
+\end{document}

@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry} 
+\usepackage[brazil]{babel}
+\usepackage{amsmath,amsthm,amssymb,amsfonts,enumitem}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+ 
+\newcounter{exCounter}
+\setcounter{exCounter}{26}
+\newtheorem{lema}{Lema}
+\newtheorem{ex}[exCounter]{Ex}
+\newenvironment{problem}[2][Ex]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\linespread{2}
+%If you want to title your bold things something different just make another thing exactly like this but replace "problem" with the name of the thing you want, like theorem or lemma or whatever
+ 
+\begin{document}
+ 
+%\renewcommand{\qedsymbol}{\filledbox}
+%Good resources for looking up how to do stuff:
+%Binary operators: http://www.access2science.com/latex/Binary.html
+%General help: http://en.wikibooks.org/wiki/LaTeX/Mathematics
+%Or just google stuff
+ 
+\title{Lista 8 - Parte 2}
+\author{Victor Sena Molero - 8941317}
+\maketitle
+
+\section{Exercícios}
+\begin{ex}
+Seja $I_1, I_2, \dots, I_n$ intervalos fechados na reta real. Seja $G$ o grafo simples com vértices $v_1, v_2, \dots, v_n$ tal que para todo $i,j$,
+
+$v_i$ é adjacente a $v_j$ se e só se $I_i \cap I_j \neq \emptyset$
+
+Mostre que $\chi(G) = \omega(G)$. (Lembramos que uma \textit{clique} é um subgrafo completo, e $\omega(G)$ denota a cardinalidade de uma clique máxima em $G$).
+\end{ex}
+
+\begin{proof}[Prova]
+Seja $G$ o grafo dos intervalos $I_1, I_2, \dots, I_n$. Queremos provar que $\chi(G) = \omega(G)$. Seja $x$ um vértice qualquer do grafo, definimos $I_x$ como o intervalo associado a este vértice, $\alpha_x$ como o extremo inferior do intervalo e $\beta_x$ como o extremo superior do intervalo.
+
+Primeiro vamos provar $\chi(G) \geq \omega(G)$. Suponha, por absurdo que $\chi(G) < \omega(G)$.
+
+Temos então uma coloração $C$ em $G$ onde $|C| < \omega(G)$, seja $H$ um clique máximo do grafo, sabemos que $|H| = \omega(G)$ e que $H$ está propriamente colorido em $C$, portanto, encontramos uma coloração em $H$ com menos do que $|H|$ cores, logo, colorimos um grafo completo com menos cores do que a sua cardinalidade, um absurdo. Portanto, $\chi(G) \geq \omega(G)$.
+
+Agora vamos provar que $\chi(G) \leq \omega(G)$. Vamos fazer indução em $n$.
+
+Se $n = 1$, $\omega(G) = 1$ e é possível colorir o grafo com uma cor.
+
+Se $n > 1$, suponha que a hipótese vale para todo $1 \leq k < n$. Seja $u$ um vértice de $G$ tal que $\beta_u$ é mínimo. Escolhemos o grafo $G' = G - u$, é certo que $\omega(G') \leq \omega(G)$, portanto, por hipótese de indução, $G'$ é colorível com $\omega(G)$ cores.
+
+Vamos provar que $|Adj(u)| < \omega(G)$. Sejam $v$ e $w$ dois vértices adjacentes a $u$, sabemos que $\beta_v \geq \beta_u$ e $\beta_w \geq \beta_u$, porém, $v$ e $u$ devem ter um ponto em comum, logo, $\alpha_v \leq \beta_u$ e, analogamente, $\alpha_w \leq \beta_u$. Com isso, sabemos que $\beta_u$ é um ponto em comum aos três vértices, portanto $v$ é adjacente a $w$. Assim, qualquer par de vértices adjacentes a $u$ é adjacente entre si, portanto, $u + Adj(u)$ forma um clique no grafo $G$. Assim, temos que $|Adj(u)| < \omega(G)$.
+
+Assim, usarmos a coloração já obtida pela indução em $G'$, podemos adicionar o vértice $u$ com a garantia de que há uma cor disponível para ele, já que ele tem menos do que $\omega(G)$ vizinhos e existem $\omega(G)$ cores disponíveis.
+
+Está provado, então, que é possível colorir $G$ com $\omega(G)$ cores, logo, $\chi(G) \leq \omega(G)$. Porém, já provamos que $\chi(G) \geq \omega(G)$, logo, $\chi(G) = \omega(G)$.
+\end{proof}
+
+\end{document}
