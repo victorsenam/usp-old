@@ -34,10 +34,14 @@ do
     then
         echo "Exit status $generator_status" &>> $LOG
         ((gen_fails++))
+        printf "G"
+    else
+        printf "."
     fi
 
     ((case_num++))
 done;
+printf "\n"
 
 # validation loop
 for testcase in $(find cases/*.in);
@@ -50,8 +54,12 @@ do
     then
         echo "Exit status $validator_status" &>> $LOG
         ((val_fails++))
+        printf "V"
+    else
+        printf "."
     fi
 done;
+printf "\n"
 
 # output
 echo "gen_fails: $gen_fails"

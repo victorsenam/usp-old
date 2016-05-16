@@ -19,5 +19,5 @@ int main (int argc, char ** argv) {
     printf("%d %.20f\n", n, d);
 
     for (int i = 0; i < n; i++)
-        printf("%.20f %.20f\n", rnd.next(-1., 1.), rnd.next(-1., 1.));
+        printf("%.20f %.20f\n", rnd.next(0., 1.), rnd.next(0., 1.));
 }

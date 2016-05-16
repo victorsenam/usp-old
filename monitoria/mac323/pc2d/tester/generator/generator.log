@@ -1,7 +1,7 @@
 
 mkdir: é impossível criar o diretório “cases”: Arquivo existe
 make: 'generator/generator' is up to date.
-make: 'validator/validator' is up to date.
+g++     validator/validator.cpp   -o validator/validator
 Generating Case generated_0
 Generating Case generated_1
 Generating Case generated_2

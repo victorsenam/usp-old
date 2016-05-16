@@ -1,7 +1,15 @@
 #!/bin/bash
 
+# Parâmetros
+# 1 - Pasta da solução a ser testada
+# 2 (opcional) - Pasta contendo os testes a serem rodados
+# 3 (opcional) - Pasta contendo uma solulção válida
+
 # important vars
 DIR="$( cd "$( dirname "$0" )" && cd ../../ && pwd )/"
+LOG="judge.log"
+RES="judge.out"
+OUT="judge_output/"
 
 # parameters
 if [[ $# -eq 0 ]];
@@ -15,9 +23,6 @@ anwsers=${DIR}${3-'tester/solution/anwser/'}
 
 # going to wanted folder
 cd $folder
-LOG="judge.log"
-RES="judge.out"
-OUT="judge_output/"
 
 # resetting
 echo "" > $LOG
@@ -41,12 +46,12 @@ fi
 
 if [ $toexec != failed ];
 then
-    for testpath in $(find $cases);
+    for testpath in $(find $cases/*);
     do
         testcase=$(basename $testpath)
         testcase=${testcase%.*}
         
-        echo "======= $testecase ============" >> $LOG
+        echo "======= $testcase ============" >> $LOG
 
         (time timeout --kill-after=12s 10s java -cp .:algs4.jar:stdlib.jar $toexec < ${cases}/${testcase}.in > ${OUT}${testcase}.out 2>> $LOG) &>> $LOG
         run_status=$?
@@ -55,6 +60,7 @@ then
         then
             ((r_tl++))
             echo "Tempo Excedido" >> $LOG
+            printf "T"
         elif [ $run_status -eq 0 ]
         then
             checker_status=0
@@ -62,20 +68,23 @@ then
             then
                 ((r_ac++))
                 echo "OK" >> $LOG
+                printf "."
             else
                 ((r_wa++))
                 echo "Resposta Errada" >> $LOG
+                printf "W"
             fi
         else
             ((r_re++))
             echo "Erro de Execução" >> $LOG
+            printf "R"
         fi
         
-        printf "."
     done;
 else
     echo "FAILED COMPILE" >> $LOG
 fi
+printf "\n"
 
 echo "CORREÇÃO AUTOMÁTICA" > $RES
 echo "Quantidade de Testes | Veredito" >> $RES
