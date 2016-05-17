@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry} 
+\usepackage[brazil]{babel}
+\usepackage{amsmath,amsthm,amssymb,amsfonts,enumitem,tikz}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+ 
+\newcounter{exCounter}
+\setcounter{exCounter}{31}
+\newtheorem{lema}{Lema}
+\newtheorem{ex}[exCounter]{Ex}
+\newenvironment{problem}[2][Ex]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\linespread{2}
+%If you want to title your bold things something different just make another thing exactly like this but replace "problem" with the name of the thing you want, like theorem or lemma or whatever
+ 
+\begin{document}
+ 
+%\renewcommand{\qedsymbol}{\filledbox}
+%Good resources for looking up how to do stuff:
+%Binary operators: http://www.access2science.com/latex/Binary.html
+%General help: http://en.wikibooks.org/wiki/LaTeX/Mathematics
+%Or just google stuff
+ 
+\title{Lista 9}
+\author{Victor Sena Molero - 8941317}
+\maketitle
+
+\section{Exercícios}
+\begin{ex}[a]
+Exiba um grafo planar de ordem 8 cujo complemento também é planar.
+\end{ex}
+\setcounter{exCounter}{31}
+
+\begin{proof}[Resposta]
+Queremos criar um grafo planar $G$ de grau 8 cujo complemento também é planar. Definimos $H_{a,b}$ para qualquer par de inteiros $a,b$ onde $a \leq b$ como um grafo completo com vértices $\{a,a+1,\dots,b\}$. Agora, basta definir $V(G) = \{1,2,\dots,8\}$ e $A(G) = A(H_{1,4}) \cup A(H_{3,6}) \cup A(H_{5,8})$. Tanto $G$ quanto seu complementar são planares.
+\end{proof}
+
+\begin{ex}[b]
+Exiba um grafo não planar cujo complemento não é planar.
+\end{ex}
+
+\begin{proof}[Resposta]
+Para obter tal grafo, basta escolher um $K_5$ e adicionar 5 novos vértices de grau 1, cada um conectado a uma aresta distinta do $K_5$. Este grafo é não planar pois contém um $K_5$ e, em seu complemento, todos os vértices novos são adjacentes entre si, formando, também, um $K_5$.
+\end{proof}
+
+\begin{ex}
+Mostre que se $G$ é um grafo simples conexo planar com cintura $k \geq 3$, então
+$$ |A(G)| \leq k(|V(G)| - 2)/(k-2) $$
+\end{ex}
+
+
+
+\end{document}
