@@ -1,0 +1,12 @@
+CORRECAO MANUAL
+Ola :)
+Não era necessário usar uma HashTable para guardar os pontos, por isso alguns testes falharam. Que estrutura cumpriria com as funções necessárias melhor do que uma HashTable? Abraços
+Relatório OK, prefiro que envie com o nome relatório mesmo, às vezes me perco aqui (hehe)
+
+......................................................................T..T..........................
+CORREÇÃO AUTOMÁTICA
+Quantidade de Testes | Veredito
+98 | OK
+2 | Tempo de Execução Excedido
+0 | Resposta Errada
+0 | Erro de Execução

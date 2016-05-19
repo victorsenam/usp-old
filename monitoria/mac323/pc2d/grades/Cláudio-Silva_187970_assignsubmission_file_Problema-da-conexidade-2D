@@ -1,0 +1,12 @@
+CORRECAO MANUAL
+Olá :)
+Seu programa teve uma performance um pouco ruim em alguns casos. Não era esperado que se fizesse uma busca no grafo após montá-lo, aliás, não era esperado que se montasse um grafo. Um Union-Find tem a capacidade de resolver o problema de forma bem mais eficiente, já que só requer que se olhe para as adjacencias de um vértice apenas uma vez, a sua busca em grafo fez com que toda aresta fosse olhada pelo menos 3 vezes. Além disso, a busca ainda envolve o uso adicional de uma Queue e de vetores de adjacência.
+Relatório OK
+
+..............T..R.......T.....TT.......................R....RRR...TTTTRTTRRT.......................
+CORREÇÃO AUTOMÁTICA
+Quantidade de Testes | Veredito
+81 | OK
+11 | Tempo de Execução Excedido
+0 | Resposta Errada
+8 | Erro de Execução

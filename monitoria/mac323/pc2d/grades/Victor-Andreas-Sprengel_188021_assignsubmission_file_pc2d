@@ -1,0 +1,14 @@
+CORRECAO MANUAL
+Oi :)
+Muito cuidado com o scanner, ele usa definições locais do que é double. Por padrão, meu locale na rede linux é Brasil e então ele esperava que doubles fossem escritos da forma 1,0 e não da forma 1.0 (bizarro né? padrões...)
+Enfim, eu arrumei, acho super injusto tirar nota por isso, mas toma cuidado...
+Tudo certo de resto :D
+Relatório bem completo, perfeito, parabéns.
+
+....................................................................................................
+CORREÇÃO AUTOMÁTICA
+Quantidade de Testes | Veredito
+100 | OK
+0 | Tempo de Execução Excedido
+0 | Resposta Errada
+0 | Erro de Execução
