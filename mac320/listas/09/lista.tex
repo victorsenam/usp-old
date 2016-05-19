@@ -51,6 +51,46 @@ Mostre que se $G$ é um grafo simples conexo planar com cintura $k \geq 3$, ent�
 $$ |A(G)| \leq k(|V(G)| - 2)/(k-2) $$
 \end{ex}
 
+\begin{proof}[Prova]
+Foi mostrado na apostila, sob o nome de corolário 8.6, que Se $G$ é um grafo simples com $n \geq 3$ vértices e $m$ arestas, então $m \leq 3n - 6$. Queremos mostrar que se $G$ é um grafo simples conexo planar com cintura $k \geq 3$, então $ |A(G)| \leq k(|V(G)| - 2)/(k-2) $. Já que $G$ tem cintura pelo menos 3, então $|V(G)| \geq 3$, logo, ele vale na hipótese do corolário citado, assim, $|A(G)| \leq 3|V(G)| - 6 = 3(|V(G)| - 2)$. Já que $3 \leq k/(k-2) \forall k \geq 3$, então $|A(G)| \leq k(|V(G)| - 2)/(k-2)$.
+\end{proof}
+
+\begin{ex}
+Mostre que se $|V(G)| = 11$ então $G$ ou seu complemento não é planar.
+\end{ex}
+
+\begin{proof}[Prova]
+Seja $G$ um grafo tal que $|V(G)| = 11$, suponha, por absurdo que $G$ e $\bar{G}$ são planares. Definimos $a = max(|V(G)|, |V(\bar{G})|$ e $b = min(|V(G)|, |V(\bar{G})|)$, assim $a + b = 11$ e, já que $G$ e seu complementar são planares, $a \leq 3|V(G)| - 6 = 27$ e $b \leq 27$, mas
+$$ a+b = 55 $$
+$$ 55-b = a \leq 27 $$
+$$ b \geq 28 $$
+Um absurdo, logo, ou $G$ ou seu complementar são não-planares.
+\end{proof}
+
+\begin{ex}
+Um grafo planar $G$ é \textit{auto-dual} se é isomorfo ao seu dual (geométrico) $G^*$.
+\end{ex}
+
+\setcounter{exCounter}{34}
+\begin{ex}[a]
+Mostre que se $G$ é auto-dual, então $2|V(G)| = |A(G)| + 2$.
+\end{ex}
+
+\begin{proof}[Prova]
+Seja $G$ um grafo planar auto-dual e $G^*$ seu dual. Já que $G$ é isomorfo a $G^*$, $|V(G)| = |V(G^*)|$. Já que $G$ é planar $|V(G)| - |A(G)| + |F(G)| = 2$. Além disso, se $G$ e $G^*$ são duais, $|F(G)| = |V(G^*)|$. Assim
+$$ |F(G)| = |V(G^*)| = |V(G)| $$, assim
+$$ |V(G)| - |A(G)| + |V(G)| = 2 $$, ou seja
+$$ 2|V(G)| = |A(V)| + 2 $$
+\end{proof}
+
+\setcounter{exCounter}{34}
+\begin{ex}[b]
+Mostre que nem todo grafo $G$ com $2|V(G)| = |A(G)| + 2$ é auto-dual.
+\end{ex}
+
+\begin{proof}[Prova]
+Basta escolher um triângulo e adicionar um loop em um dos vértices. Este é um grafo que respeita a igualdade dada e não é auto-dual, seu dual é um grafo de três vértices, onde um par deles é conectado por 3 arestas, outro par é conectado por uma aresta e o par restante não é adjacente.
+\end{proof}
 
 
 \end{document}
