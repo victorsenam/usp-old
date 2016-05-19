@@ -14,5 +14,5 @@ done
 
 for aluno in $(ls special);
 do
-    cat "CORRECAO MANUAL\n" special/$aluno/comment.txt special/$aluno/judge.out > grades/$aluno
+    cat helpers/manual.txt special/$aluno/comment.txt special/$aluno/judge.out > grades/$aluno
 done
