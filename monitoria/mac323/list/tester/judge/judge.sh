@@ -18,8 +18,8 @@ then
     exit 1
 fi
 folder=$1
-cases=${DIR}${2-'tester/cases/'}
-anwsers=${DIR}${3-'tester/solution/anwser/'}
+#cases=${DIR}${2-'tester/cases/'}
+#anwsers=${DIR}${3-'tester/solution/anwser/'}
 
 # going to wanted folder
 cd $folder
