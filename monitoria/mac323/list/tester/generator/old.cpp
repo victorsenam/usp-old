@@ -141,6 +141,7 @@ int main (int argc, char ** argv) {
             bit.add(v[it], -1);
             el_count--;
         } else if (now == 2) { // get
+        }
             
     }
 }

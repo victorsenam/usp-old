@@ -1,8 +1,10 @@
 #include "../testlib.h"
 #include <cstdio>
+#include <map>
+#include <algorithm>
 
 // limits
-const int N = 10000007;
+const int N = 1000007;
 const int level_N = 4;
 const int operation_N = 12;
 
@@ -15,17 +17,17 @@ struct BIT {
     { n = siz; memset(bit, 0, sizeof bit); }
 
     void add (int i, int x) {
-        for (i += 2; i < n+2; i+=(i&-i))
+        for (i += 2; i <= n+2; i+=(i&-i))
             bit[i] += x;
     }
 
     int get (int i) {
         int res = 0;
-        for (i += 2; i >= 2; i-=(i&-i))
+        for (i += 2; i > 2; i-=(i&-i))
             res += bit[i];
         return res;
     }
-}
+};
 
 // operations
 struct Operation {
@@ -42,9 +44,9 @@ int operation_queue_s;
 
 int buildOperations (char ** argv) {
     int level, m_lo, m_hi;
-    sscanf(argv[0], "%d", &level);
-    sscanf(argv[1], "%d", &m_lo);
-    sscanf(argv[2], "%d", &m_hi);
+    sscanf(argv[1], "%d", &level);
+    sscanf(argv[2], "%d", &m_lo);
+    sscanf(argv[3], "%d", &m_hi);
 
     operation_queue_s = 0;
 
@@ -93,13 +95,13 @@ int buildOperations (char ** argv) {
 int order[N]; 
 
 bool checkOrder () {
-    int n = operations[0].cnt;
-    map<int, double> mp;
-    map<int, double>::iterator lo_b, up_b;
+    int n = operation[0].cnt;
+    std::map<int, double> mp;
+    std::map<int, double>::iterator lo_b, up_b;
     double lo_k = 1., hi_k = 1.;
 
     for (int i = 0; i < n; i++) {
-        lo_b = mp.upper_bound(v[i]);
+        lo_b = mp.upper_bound(order[i]);
 
         if (lo_b == mp.end()) {
             mp[order[i]] = hi_k;
@@ -121,7 +123,7 @@ bool checkOrder () {
 }
 
 void setOrder () {
-    long long n = operations[0].cnt;
+    long long n = operation[0].cnt;
     for (int i = 0; i < n; i++)
         order[i] = i;
 
@@ -130,24 +132,43 @@ void setOrder () {
         for (long long k = 0; k*k*k < n*n; k++) {
             i = rnd.next(n);
             j = rnd.next(n);
-            swap(order[i], order[j]);
+            std::swap(order[i], order[j]);
         }
     } while (!checkOrder());
 }
 
 // generator
+int getNewValue (std::map<int, int> & used, int element) {
+    int value;
+    do {
+        value = rnd.next(INT_MAX);
+    } while (used.find(value) != used.end());
+    used[value] = element;
+    return value;
+}
+
+int getUsedValue (std::map<int, int> & used) {
+    int ref = rnd.next(INT_MAX);
+
+    std::map<int, int>::iterator it = used.lower_bound(ref);
+    if (it == used.end())
+        it = used.begin();
+    return it->first;
+}
+
 void generate (int m) {
-    int n = operations[0].cnt;
+    int n = operation[0].cnt;
     BIT positions = BIT(n);
-    mp<int, int> used;
+    std::map<int, int> used;
 
     int count_add = 0, count_front = 0, count_back = 0, size = 0;
     
+    printf("%d\n", m);
     for (int i = 0; i < m; i++) {
-        swap(operations_queue[operations_queue_s-1], operations_queue[rnd.next(operations_queue_s)]);
-        Operation current = operations[operations_queue[operations_queue_s-1]];
+        std::swap(operation_queue[operation_queue_s-1], operation_queue[rnd.next(operation_queue_s)]);
+        Operation current = operation[operation_queue[operation_queue_s-1]];
         
-        if ( !size && (current.name != 'a' || current.name != 'f' || current.name != 'b') ) {
+        if ( !size && (current.name != 'a' && current.name != 'f' && current.name != 'b') ) {
             i--;
             continue;
         }
@@ -160,34 +181,70 @@ void generate (int m) {
 
             int position = positions.get(element) + count_front;
             positions.add(element, 1);
-
-            int value;
-            do {
-                value = rnd.next(INT_MAX);
-            } while (used.find(value) != used.end());
-            used[value] = element;
             
-            printf("%d %d\n", position, value);
+            int value = getNewValue(used, element);
+            
+            printf("%d %d", position, value);
             size++;
         } else if (current.name == 'd') {
-            int element = rnd.next(size);
+            int chosen = rnd.next(size);
 
-            if (element < count_front) {
-                printf("%d\n", element);
+            if (chosen < count_front) {
+                printf("%d", chosen);
                 count_front--;
                 size--;
-            } else if (element < count_front + count_back) {
-                printf("%d\n", size-1-count_back);
+            } else if (chosen < count_front + count_back) {
+                printf("%d", size-1-chosen);
                 count_back--;
                 size--;
             } else {
-                element -= count_front;
-                printf("%d\n", positions.get(element) + count_front);
+                chosen -= count_front + count_back;
+                int element = order[chosen];
+                printf("%d", positions.get(element) + count_front);
+                positions.add(element, -1);
                 size--;
             }
         } else if (current.name == 'g') {
-            printf("%d\n", rnd.next(size));
-        } 
+            printf("%d", rnd.next(size));
+        } else if (current.name == 'f') {
+            int value = getNewValue(used, -1);
+            printf("%d", value);
+            count_front++;
+            size++;
+        } else if (current.name == 'b') {
+            int value = getNewValue(used, -2);
+            printf("%d", value);
+            count_back++;
+            size++;
+        } else if (current.name == 'F') {
+            count_front--;
+            size--;
+        } else if (current.name == 'B') {
+            count_back--;
+            size--;
+        } else if (current.name == 'c') {
+            int value = getUsedValue(used);
+            printf("%d", value);
+        } else if (current.name == 'D') {
+            int value = getUsedValue(used);
+            int element = used[value];
+            printf("%d", value);
+
+            if (element == -1)
+                count_front--;   
+            else if (element == -2)
+                count_back--;
+            else
+                positions.add(element, -1);
+
+            size--;
+        }
+
+        current.cnt--;
+        if (!current.cnt)
+            operation_queue_s--;
+
+        putchar('\n');
     }
 }
 
