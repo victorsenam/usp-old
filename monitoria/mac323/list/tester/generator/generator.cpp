@@ -2,6 +2,7 @@
 #include <cstdio>
 #include <map>
 #include <algorithm>
+#include <cassert>
 
 // limits
 const int N = 1000007;
@@ -23,8 +24,9 @@ struct BIT {
 
     int get (int i) {
         int res = 0;
-        for (i += 2; i > 2; i-=(i&-i))
+        for (i += 2; i > 0; i-=(i&-i))
             res += bit[i];
+        assert(res >= 0);
         return res;
     }
 };
@@ -160,8 +162,9 @@ void generate (int m) {
     int n = operation[0].cnt;
     BIT positions = BIT(n);
     std::map<int, int> used;
+    std::map<int, int> contained;
 
-    int count_add = 0, count_front = 0, count_back = 0, size = 0;
+    int count_add = 0, count_front = 0, count_back = 0, size = 0, count_deleted = 0;
     
     printf("%d\n", m);
     for (int i = 0; i < m; i++) {
@@ -183,6 +186,7 @@ void generate (int m) {
             positions.add(element, 1);
             
             int value = getNewValue(used, element);
+            contained[value] = element;
             
             printf("%d %d", position, value);
             size++;
@@ -194,15 +198,21 @@ void generate (int m) {
                 count_front--;
                 size--;
             } else if (chosen < count_front + count_back) {
+                chosen -= count_front;
                 printf("%d", size-1-chosen);
                 count_back--;
                 size--;
             } else {
-                chosen -= count_front + count_back;
-                int element = order[chosen];
-                printf("%d", positions.get(element) + count_front);
+                chosen += count_deleted - count_front - count_back;
+                std::swap(order[chosen], order[count_deleted]);
+
+                int element = order[count_deleted];
+                int position = positions.get(element) + count_front - 1;
+                printf("%d", position, element);
                 positions.add(element, -1);
+
                 size--;
+                count_deleted++;
             }
         } else if (current.name == 'g') {
             printf("%d", rnd.next(size));
@@ -227,15 +237,22 @@ void generate (int m) {
             printf("%d", value);
         } else if (current.name == 'D') {
             int value = getUsedValue(used);
-            int element = used[value];
             printf("%d", value);
 
-            if (element == -1)
+            int chosen = used[value];
+
+            if (chosen == -1)
                 count_front--;   
-            else if (element == -2)
+            else if (chosen == -2)
                 count_back--;
-            else
+            else {
+                std::swap(order[chosen], order[count_deleted]);
+                int element = order[count_deleted];
+
                 positions.add(element, -1);
+
+                count_deleted++;
+            }
 
             size--;
         }
