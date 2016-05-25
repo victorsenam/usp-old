@@ -10,7 +10,7 @@ int main () {
     int lvl = 0;
 
     for (int i = 0; i < 100; i++) {
-        printf("%d %d %d\n", lvl, range, 9*range, c++);
+        printf("%d %d %d\n", lvl, range, 4*range, c++);
         range *= 10;
         if (range >= maxrange)
             range = 1;

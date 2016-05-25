@@ -18,8 +18,8 @@ then
     exit 1
 fi
 folder=$1
-#cases=${DIR}${2-'tester/cases/'}
-#anwsers=${DIR}${3-'tester/solution/anwser/'}
+cases=${DIR}${2-'tester/cases/'}
+anwsers=${DIR}${3-'tester/solution/anwser/'}
 
 # going to wanted folder
 cd $folder
@@ -36,13 +36,14 @@ r_re=0
 # compiling
 make ${DIR}tester/checker/checker &>> $LOG
 cp -n ${DIR}tester/standart/* . &>> $LOG
+cp -f ${DIR}tester/standart/MyTester.java . &>> $LOG
 cp -n ${DIR}tester/judge/.gitignore . &>> $LOG
 javac -cp .:algs4.jar:stdlib.jar *.java &>> $LOG
 
 toexec=failed
-if [ -a PC2D.class ];
+if [ -a MyTester.class ];
 then
-    toexec=PC2D
+    toexec=MyTester
 fi
 
 # second compile method
@@ -50,12 +51,13 @@ if [ $toexec == failed ];
 then
     echo "Second Compile Method" &>> $LOG
 
-    echo -e "import edu.princeton.cs.algs4.*;\nimport java.util.*;\n$(cat PC2D.java)" > PC2D.java
+    rm *.class
+    echo -e "import edu.princeton.cs.algs4.*;\nimport java.util.*;\n$(cat List.java)" > List.java
     javac -cp .:algs4.jar:stdlib.jar *.java &>> $LOG
     
-    if [ -a PC2D.class ];
+    if [ -a MyTester.class ];
     then
-        toexec=PC2D
+        toexec=MyTester
     fi
 fi
 

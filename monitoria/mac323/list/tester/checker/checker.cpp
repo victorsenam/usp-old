@@ -1,32 +1,38 @@
 #include "../testlib.h"
-#include <string>
 
 using namespace std;
 
-const string YES = "SIM";
-const string NO = "NAO";
-const string ALTNO = "NãO";
-
 int main(int argc, char * argv[])
 {
-    setName((YES + " or " + NO + " (case insensetive)").c_str());
+    setName("compare sequences of tokens");
     registerTestlibCmd(argc, argv);
 
-    std::string ja = upperCase(ans.readWord());
-    std::string pa = upperCase(ouf.readWord());
+    int n = 0;
+    string j, p;
 
-    if (ja == ALTNO) ja = NO;
-    if (pa == ALTNO) pa = NO;
+    while (!ans.seekEof() && !ouf.seekEof()) 
+    {
+        n++;
 
-    if (ja != YES && ja != NO)
-        quitf(_fail, "%s or %s expected in answer, but %s found", YES.c_str(), NO.c_str(), compress(ja).c_str());
+        ans.readWordTo(j);
+        ouf.readWordTo(p);
+        
+        if (j != p)
+            quitf(_wa, "%d%s words differ - expected: '%s', found: '%s'", n, englishEnding(n).c_str(), compress(j).c_str(), compress(p).c_str());
+    }
 
-    if (pa != YES && pa != NO)
-        quitf(_pe, "%s or %s expected, but %s found", YES.c_str(), NO.c_str(), compress(pa).c_str());
-
-    if (ja != pa)
-        quitf(_wa, "expected %s, found %s", compress(ja).c_str(), compress(pa).c_str());
-
-    quitf(_ok, "answer is %s", ja.c_str());
+    if (ans.seekEof() && ouf.seekEof())
+    {
+        if (n == 1)
+            quitf(_ok, "\"%s\"", compress(j).c_str());
+        else
+            quitf(_ok, "%d tokens", n);
+    }
+    else
+    {
+        if (ans.seekEof())
+            quitf(_wa, "Participant output contains extra tokens");
+        else
+            quitf(_wa, "Unexpected EOF in the participants output");
+    }
 }
-
