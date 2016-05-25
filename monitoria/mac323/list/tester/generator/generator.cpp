@@ -126,14 +126,20 @@ bool checkOrder () {
 
 void setOrder () {
     long long n = operation[0].cnt;
-    for (int i = 0; i < n; i++)
+    int pref = operation[3].cnt;
+    int posf = operation[4].cnt;
+
+    for (int i = 0; i < pref; i++)
+        order[i] = pref - i - 1;
+
+    for (int i = pref; i < n + pref + posf; i++)
         order[i] = i;
 
     do {
         int i, j;
         for (long long k = 0; k*k*k < n*n; k++) {
-            i = rnd.next(n);
-            j = rnd.next(n);
+            i = rnd.next(n) + pref;
+            j = rnd.next(n) + pref;
             std::swap(order[i], order[j]);
         }
     } while (!checkOrder());
@@ -159,12 +165,17 @@ int getUsedValue (std::map<int, int> & used) {
 }
 
 void generate (int m) {
-    int n = operation[0].cnt;
-    BIT positions = BIT(n);
+    BIT positions = BIT(operation[0].cnt + operation[3].cnt + operation[4].cnt);
     std::map<int, int> used;
-    std::map<int, int> contained;
+    int assigned[N];
 
-    int count_add = 0, count_front = 0, count_back = 0, size = 0, count_deleted = 0;
+    int size = 0;
+
+    int ini[3], fim[3];
+    ini[0] = 0; // front
+    ini[1] = operation[3].cnt; // mid
+    ini[2] = operation[3].cnt + operation[0].cnt; // back
+    for (int i = 0; i < 3; i++) fim[i] = ini[i];
     
     printf("%d\n", m);
     for (int i = 0; i < m; i++) {
@@ -179,82 +190,83 @@ void generate (int m) {
         putchar(current.name);
         putchar(' ');
 
-        if (current.name == 'a') {
-            int element = order[count_add++];
+        if (current.name == 'a' || current.name == 'f' || current.name == 'b') {
+            int element;
+            if (current.name == 'a')
+                element = order[fim[1]++];
+            else if (current.name == 'f')
+                element = order[fim[0]++];
+            else
+                element = order[fim[2]++];
 
-            int position = positions.get(element) + count_front;
+            int position = positions.get(element);
             positions.add(element, 1);
             
             int value = getNewValue(used, element);
-            contained[value] = element;
+            assigned[element] = value;
             
-            printf("%d %d", position, value);
+            if (current.name == 'a')
+                printf("%d ", position);
+
+            printf("%d", value);
             size++;
-        } else if (current.name == 'd') {
-            int chosen = rnd.next(size);
+        } else if (current.name == 'd' || current.name == 'F' || current.name == 'B' || current.name == 'D') {
+            int chosen;
+            int k;
+            if (current.name == 'd' || current.name == 'D') {
+                int which = rnd.next(size);
+                
+                for (k = 0; k < 3 && which >= fim[k] - ini[k]; k++)
+                    which -= fim[k] - ini[k];
+                assert(k < 3);
 
-            if (chosen < count_front) {
-                printf("%d", chosen);
-                count_front--;
-                size--;
-            } else if (chosen < count_front + count_back) {
-                chosen -= count_front;
-                printf("%d", size-1-chosen);
-                count_back--;
-                size--;
-            } else {
-                chosen += count_deleted - count_front - count_back;
-                std::swap(order[chosen], order[count_deleted]);
-
-                int element = order[count_deleted];
-                int position = positions.get(element) + count_front - 1;
-                printf("%d", position, element);
-                positions.add(element, -1);
-
-                size--;
-                count_deleted++;
+                chosen = which + ini[k];
+            } else if (current.name == 'F') {
+                if (fim[0] - ini[0]) {
+                    k = 0;
+                    chosen = fim[0]-1;
+                } else if (fim[1] - ini[1]) {
+                    k = 1;
+                    chosen = ini[1];
+                } else if (fim[2] - ini[2]) {
+                    k = 2;
+                    chosen = ini[2];
+                } else {
+                    assert(false);
+                }
+            } else if (current.name == 'B') {
+                if (fim[2] - ini[2]) {
+                    k = 2;
+                    chosen = fim[2] - 1;
+                } else if (fim[1] - ini[1]) {
+                    k = 1;
+                    chosen = fim[1] - 1;
+                } else if (fim[0] - ini[0]) {
+                    k = 0;
+                    chosen = ini[0];
+                } else {
+                    assert(false);
+                }
             }
+
+            std::swap(order[chosen], order[ini[k]]);
+
+            int element = order[ini[k]];
+            int position = positions.get(element) - 1;
+            if (current.name == 'd') {
+                printf("%d", position);
+            } else if (current.name == 'D') {
+                printf("%d", assigned[element]);
+            }
+            positions.add(element, -1);
+
+            size--;
+            ini[k]++;
         } else if (current.name == 'g') {
             printf("%d", rnd.next(size));
-        } else if (current.name == 'f') {
-            int value = getNewValue(used, -1);
-            printf("%d", value);
-            count_front++;
-            size++;
-        } else if (current.name == 'b') {
-            int value = getNewValue(used, -2);
-            printf("%d", value);
-            count_back++;
-            size++;
-        } else if (current.name == 'F') {
-            count_front--;
-            size--;
-        } else if (current.name == 'B') {
-            count_back--;
-            size--;
         } else if (current.name == 'c') {
             int value = getUsedValue(used);
             printf("%d", value);
-        } else if (current.name == 'D') {
-            int value = getUsedValue(used);
-            printf("%d", value);
-
-            int chosen = used[value];
-
-            if (chosen == -1)
-                count_front--;   
-            else if (chosen == -2)
-                count_back--;
-            else {
-                std::swap(order[chosen], order[count_deleted]);
-                int element = order[count_deleted];
-
-                positions.add(element, -1);
-
-                count_deleted++;
-            }
-
-            size--;
         }
 
         current.cnt--;
