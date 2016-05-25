@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry} 
+\usepackage[brazil]{babel}
+\usepackage{amsmath,amsthm,amssymb,amsfonts,listings,algpseudocode}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+ 
+\newcounter{exCounter}
+\setcounter{exCounter}{5}
+\newtheorem{lema}{Lema}
+\newtheorem{ex}[exCounter]{Ex}
+\newenvironment{problem}[2][Ex]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+%If you want to title your bold things something different just make another thing exactly like this but replace "problem" with the name of the thing you want, like theorem or lemma or whatever
+
+\begin{document}
+ 
+%\renewcommand{\qedsymbol}{\filledbox}
+%Good resources for looking up how to do stuff:
+%Binary operators: http://www.access2science.com/latex/Binary.html
+%General help: http://en.wikibooks.org/wiki/LaTeX/Mathematics
+%Or just google stuff
+ 
+\title{Lista 8}
+\author{Victor Sena Molero - 8941317}
+\maketitle
+
+\begin{ex}
+Descreva um algoritmo eficiente que, dado um conjunto $\{x_1, x_2, \dots, x_n\}$ de pontos na reta real, determine o menor conjunto de intervalos fechados de comprimento um que contém todos os pontos dados. Justifique informalmente seu algoritmo e analise a sua complexidade.
+\end{ex}
+
+\begin{proof}[Resposta]
+Para isso, podemos utilizar a estratégia gulosa de sempre escolher um intervalo conveniente que cobre o menor elemento. Ou seja, basta ordenar os pontos dados e, com eles ordenados, escolher o menor elemento e adicionar um intervalo que inicia naquele ponto, eliminando todos os pontos com distância menor ou igual a 1 do ponto escolhido.
+
+Para mostrar que isso funciona basta argumentar que o primeiro elemento vai, obrigatóriamente, ter que ser coberto por algum intervalo. Já que não existe ninguém menor do que ele, não devemos nos preocupar em fazer um intervalo que cubra valores menores do que ele, logo, sempre vale a pena fazer um intervalo que cresça o máximo possível no sentido positivo, ou seja, que consiga abrangir o máximo de números maiores do que este ponto escolhido como referência.
+
+Para executar este algoritmo precisamos, primeiramente, ordenar os pontos dados, o que custa $O(n \log{n})$ e, depois, basta percorrer os valores do menor para o maior guardando alguma informação sobre o ultimo intervalo adicionado (o início ou fim dele, por exemplo), o que custa $O(n)$.
+\end{proof}
+
+\end{document}

@@ -4,15 +4,10 @@
 initial=$(cd $(dirname $0) && cd .. && pwd)
 cd $initial
 
-rm -r grades
-mkdir grades
+cd grades
 
-for aluno in $(ls result);
+for aluno in $(ls);
 do
-    cat result/$aluno/judge.out > grades/$aluno
-done
-
-for aluno in $(ls special);
-do
-    cat helpers/manual.txt special/$aluno/comment.txt special/$aluno/judge.out > grades/$aluno
+    xsel -b < $aluno
+    read -p "clipboard: $aluno"
 done
