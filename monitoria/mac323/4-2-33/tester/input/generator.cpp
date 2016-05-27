@@ -25,15 +25,6 @@ int main (int argc, char ** argv) {
     assert(lim <= 'z');
     assert(n > 0);
 
-    // origem
-    for (int i = 0; i < n; i++)
-        putchar(lim);
-    putchar(' ');
-    
-    // destino
-    putchar('a');
-    putchar('\n');
-
     // vertices
     for (int i = 0; i < n; i++) {
         for (char k = 'a'; k <= lim; k++) {
@@ -45,3 +36,5 @@ int main (int argc, char ** argv) {
         }
     }
 }
+
+
