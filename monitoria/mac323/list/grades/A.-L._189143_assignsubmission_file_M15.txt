@@ -1,0 +1,10 @@
+Cada método errado tira até 10 pontos
+
+Erros (checar https://gist.github.com/victorsenam/87bc44496148fcc477ae126ec4b6c5a3 para explicações)
+[-5] addFront() + addBack(): 2
+[-10] deleteFront() + deleteBack(): 1 2
+[-10] contains(Item): 1
+[-10] delete(Item): 1
+[-10] iterator(): 2
+
+Nota: 55

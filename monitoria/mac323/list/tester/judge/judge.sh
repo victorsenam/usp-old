@@ -18,8 +18,8 @@ then
     exit 1
 fi
 folder=$1
-cases=${DIR}${2-'tester/cases/'}
-anwsers=${DIR}${3-'tester/solution/anwser/'}
+cases=${DIR}${3-'tester/cases/'}
+anwsers=${DIR}${4-'tester/solution/anwser/'}
 
 # going to wanted folder
 cd $folder
@@ -36,18 +36,19 @@ r_re=0
 # compiling
 make ${DIR}tester/checker/checker &>> $LOG
 cp -n ${DIR}tester/standart/* . &>> $LOG
-cp -f ${DIR}tester/standart/MyTester.java . &>> $LOG
 cp -n ${DIR}tester/judge/.gitignore . &>> $LOG
+rm *.class
 javac -cp .:algs4.jar:stdlib.jar *.java &>> $LOG
 
 toexec=failed
-if [ -a MyTester.class ];
+if [ -a CorretorDoVictor.class ];
 then
-    toexec=MyTester
+    toexec=CorretorDoVictor
 fi
 
 # second compile method
-if [ $toexec == failed ];
+# if [ $toexec == failed ];
+if [ 1 == 0 ];
 then
     echo "Second Compile Method" &>> $LOG
 
@@ -70,7 +71,7 @@ then
         
         echo "======= $testcase ============" >> $LOG
 
-        (time timeout --kill-after=10s 8s java -cp .:algs4.jar:stdlib.jar $toexec < ${testpath} > ${OUT}${testcase}.out 2>> $LOG) &>> $LOG
+        (time timeout --kill-after=25s 20s java -cp .:algs4.jar:stdlib.jar $toexec $2 < ${testpath} > ${OUT}${testcase}.out 2>> $LOG) &>> $LOG
         run_status=$?
 
 

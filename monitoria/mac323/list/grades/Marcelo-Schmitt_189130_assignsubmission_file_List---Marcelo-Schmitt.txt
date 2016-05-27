@@ -1,0 +1,7 @@
+Erros (checar https://gist.github.com/victorsenam/87bc44496148fcc477ae126ec4b6c5a3 para explicações)
+[-10] Item(): 1
+[-10] add(int, Item): 3 (tinham vários erros no seu código que causavam isso, tente rever esta parte)
+[-5] addFront() + addBack(): 2
+[-5] A função não se chama deleteItem, se chama delete(Item).
+
+Nota: 70

@@ -23,9 +23,10 @@ gen_fails=0
 val_fails=0
 
 # generation loop
-case_num=0
+case_num_unformatted=0
 while read line
 do
+    case_num=$(printf "%03d" $case_num_unformatted)
     echo "Generating Case ${PREFIX}_${case_num}" &>> $LOG
     ./generator/generator $line > "cases/${PREFIX}_${case_num}.in" 2>> $LOG
     generator_status=$?
@@ -39,7 +40,7 @@ do
         printf "."
     fi
 
-    ((case_num++))
+    ((case_num_unformatted++))
 done;
 printf "\n"
 

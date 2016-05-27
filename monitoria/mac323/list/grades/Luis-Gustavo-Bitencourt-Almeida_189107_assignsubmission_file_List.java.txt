@@ -1,0 +1,6 @@
+Erros (checar https://gist.github.com/victorsenam/87bc44496148fcc477ae126ec4b6c5a3 para explicações)
+[-10] Item(): 1
+[-5] add(int, Item): 2
+[-10] iterator(): 4
+
+Nota: 75

@@ -1,0 +1,6 @@
+Erros (checar https://gist.github.com/victorsenam/87bc44496148fcc477ae126ec4b6c5a3 para explicações)
+[-10] deleteFront() + deleteBack(): deleteback. em algumas ocasioes a sua variavel front (back) não e atualizada direito, o que quebra o deleteFront (deleteBack).
+
+[-10] Mandou código com erro de compilação, um i solto por ai num lugar que quebrava a sintaxe. Teste antes de mandar, se não fosse tão simples teria te dado 0.
+
+Nota: 80

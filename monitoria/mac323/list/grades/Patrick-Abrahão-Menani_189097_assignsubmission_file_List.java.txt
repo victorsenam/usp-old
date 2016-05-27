@@ -1,0 +1,9 @@
+Erros (checar https://gist.github.com/victorsenam/87bc44496148fcc477ae126ec4b6c5a3 para explicações)
+[-10] Item(): 1
+[-10] add(int, Item): 1
+[-10] delete(int): 1
+[-10] addFront() + addBack(): 1 2 
+[-10] deleteFront() + deleteBack(): 1
+[-10] delete(Item): 1
+
+Nota: 40

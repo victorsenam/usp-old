@@ -1,38 +1,53 @@
 #include "../testlib.h"
+#include <string>
+#include <vector>
+#include <sstream>
 
 using namespace std;
 
+bool compareWords(string a, string b)
+{
+    vector<string> va, vb;
+    stringstream sa;
+    
+    sa << a;
+    string cur;
+    while (sa >> cur)
+        va.push_back(cur);
+
+    stringstream sb;
+    sb << b;
+    while (sb >> cur)
+        vb.push_back(cur);
+
+    return (va == vb);
+}
+
 int main(int argc, char * argv[])
 {
-    setName("compare sequences of tokens");
+    setName("compare files as sequence of tokens in lines");
     registerTestlibCmd(argc, argv);
 
+    std::string strAnswer;
+
     int n = 0;
-    string j, p;
-
-    while (!ans.seekEof() && !ouf.seekEof()) 
+    while (!ans.eof()) 
     {
-        n++;
+        std::string j = ans.readString();
 
-        ans.readWordTo(j);
-        ouf.readWordTo(p);
+        if (j == "" && ans.eof())
+          break;
         
-        if (j != p)
-            quitf(_wa, "%d%s words differ - expected: '%s', found: '%s'", n, englishEnding(n).c_str(), compress(j).c_str(), compress(p).c_str());
-    }
+        std::string p = ouf.readString();
+        strAnswer = p;
 
-    if (ans.seekEof() && ouf.seekEof())
-    {
-        if (n == 1)
-            quitf(_ok, "\"%s\"", compress(j).c_str());
-        else
-            quitf(_ok, "%d tokens", n);
+        n++;
+        if (p[0] != '|' && !compareWords(j, p))
+            quitf(_wa, "%d%s lines differ - expected: '%s', found: '%s'", n, englishEnding(n).c_str(), compress(j).c_str(), compress(p).c_str());
     }
-    else
-    {
-        if (ans.seekEof())
-            quitf(_wa, "Participant output contains extra tokens");
-        else
-            quitf(_wa, "Unexpected EOF in the participants output");
-    }
+    
+    if (n == 1)
+        quitf(_ok, "single line: '%s'", compress(strAnswer).c_str());
+    
+    quitf(_ok, "%d lines", n);
 }

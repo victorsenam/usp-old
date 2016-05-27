@@ -69,7 +69,7 @@ int buildOperations (char ** argv) {
         {0., 0., 0.01, 0.01},
         {0., 0., 0, 0.05},
         {0., 0., 0, 0.07},
-        {0., 0., -10., -10.}
+        {0., 0., -1., -1.}
     };
 
     const char names[operation_N] = {'a', 'd', 'g', 'f', 'b', 'F', 'B', 's', 'e', 'c', 'D', 'i'};
@@ -86,9 +86,10 @@ int buildOperations (char ** argv) {
 
     operation[0] = Operation(names[0], 1., m-used);
 
-    for (int i = 0; i < operation_N; i++)
+    for (int i = 0; i < operation_N; i++) {
         if (operation[i].cnt)
             operation_queue[operation_queue_s++] = i;
+    }
 
     return m;
 }
@@ -100,7 +101,7 @@ bool checkOrder () {
     int n = operation[0].cnt;
     std::map<int, double> mp;
     std::map<int, double>::iterator lo_b, up_b;
-    double lo_k = 1., hi_k = 1.;
+    float lo_k = 1., hi_k = 1.;
 
     for (int i = 0; i < n; i++) {
         lo_b = mp.upper_bound(order[i]);
@@ -113,9 +114,9 @@ bool checkOrder () {
             mp[order[i]] = lo_k;
         } else {
             up_b = lo_b--;
-            double lo = lo_b->second;
-            double hi = up_b->second;
-            double val = lo + (hi-lo)*.5;
+            float lo = lo_b->second;
+            float hi = up_b->second;
+            float val = lo + (hi-lo)*.5;
             if (val <= lo || val >= hi)
                 return 0;
             mp[order[i]] = val;
@@ -180,9 +181,13 @@ void generate (int m) {
     printf("%d\n", m);
     for (int i = 0; i < m; i++) {
         std::swap(operation_queue[operation_queue_s-1], operation_queue[rnd.next(operation_queue_s)]);
-        Operation current = operation[operation_queue[operation_queue_s-1]];
+        Operation & current = operation[operation_queue[operation_queue_s-1]];
         
         if ( !size && (current.name != 'a' && current.name != 'f' && current.name != 'b') ) {
+            i--;
+            continue;
+        }
+        if ( i != m-1 && current.name == 'i' ) {
             i--;
             continue;
         }
@@ -270,7 +275,7 @@ void generate (int m) {
         }
 
         current.cnt--;
-        if (!current.cnt)
+        if (current.cnt <= 0)
             operation_queue_s--;
 
         putchar('\n');

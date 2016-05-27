@@ -6,7 +6,7 @@ int c;
 
 int main () {
     int range = 1;
-    int maxrange = 1000000;
+    int maxrange = 10000;
     int lvl = 0;
 
     for (int i = 0; i < 100; i++) {

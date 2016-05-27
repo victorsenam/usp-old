@@ -1,0 +1,5 @@
+Erros (checar https://gist.github.com/victorsenam/87bc44496148fcc477ae126ec4b6c5a3 para explicações)
+[-10] add(int, Item): 3
+[-5] addFront() + addBack(): 2
+
+Nota: 85
