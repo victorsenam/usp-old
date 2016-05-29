@@ -3,47 +3,41 @@
 
 using namespace std;
 
-set<pair<string, string> > s;
-pair<string, string> a;
+set<string> s;
+string a;
 
 int main(int argc, char * argv[])
 {
-    setName("compare set of unordered pairs preceded by one integer");
+    setName("compare set of strings succeded by sequence of integers");
     registerTestlibCmd(argc, argv);
 
-    ja = ans.readWord();
-    pa = ouf.readWord();
+    inf.readWord();
+    int ty = inf.readInt();
+    inf.readInt();
+    int n = inf.readInt();
 
-    if (ja != pa)
-        quitf(_wa, "contagem de caminhos difere, esperando %s, mas encontrou %s", ja.c_str(), pa.c_str());
+    if (ty) {
+        do {
+            a = ans.readString();
+            ensuref(s.find(a) == s.end(), "arestas repetidas no juiz");
+            s.insert(a);
+        } while (a.length());
 
-    while (!ans.eof()) {
-        a.first = ans.readWord();
-        a.second = ans.readWord();
+        do {
+            a = ouf.readString();
+            quitif(s.find(a) == s.end(), _wa, "montagem incorreta, aresta na resposta aparece repetida ou não existe");
+            s.erase(a);
+        } while (a.length());
 
-        if (a.first.compare(a.second) > 0)
-            swap(a.first, a.second);
-
-        if (s.find(a) != s.end())
-            quitf(_fail, "arestas repetidas no juiz");
-        s.insert(a);
+        quitif(s.size(), _wa, "montagem incorreta, faltou alguma aresta");
     }
 
-    while (!ouf.eof()) {
-        a.first = ouf.readWord();
-        a.second = ouf.readWord();
-
-        if (a.first.compare(a.second) > 0)
-            swap(a.first, a.second);
-
-        if (s.find(a) == s.end())
-            quitf(_wa, "solucao tem arestas repetidas ou alguma aresta que o juiz nao tem");
-        s.erase(a);
+    for (int i = 0; i < n; i++) {
+        string ja = ans.readString();
+        string pa = ans.readString();
+        quitif(ja.compare(pa) != 0, _wa, "reposta da query %d errada. %s esperado, recebeu %s.", i, ja.c_str(), pa.c_str());
     }
 
-    if (s.size())
-        quitf(_wa, "juiz tem %d arestas a mais que solucao", s.size());
-
-    quitf(_ok, "tudo certo");
+    quitf(_ok, "ok");
 }
 

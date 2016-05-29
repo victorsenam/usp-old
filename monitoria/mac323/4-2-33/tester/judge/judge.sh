@@ -34,28 +34,32 @@ r_wa=0
 r_re=0
 
 # compiling
+rm CorretorDoVictaum.java
 make ${DIR}tester/checker/checker &>> $LOG
 cp -n ${DIR}tester/standart/* . &>> $LOG
 cp -n ${DIR}tester/judge/.gitignore . &>> $LOG
+rm *.class
 javac -cp .:algs4.jar:stdlib.jar *.java &>> $LOG
 
 toexec=failed
-if [ -a PC2D.class ];
+if [ -a CorretorDoVictaum.class ];
 then
-    toexec=PC2D
+    toexec=CorretorDoVictaum
 fi
 
 # second compile method
-if [ $toexec == failed ];
+# if [ $toexec == failed ];
+if [ "lalal" == "oasda" ];
 then
     echo "Second Compile Method" &>> $LOG
 
-    echo -e "import edu.princeton.cs.algs4.*;\nimport java.util.*;\n$(cat PC2D.java)" > PC2D.java
+    rm *.class
+    echo -e "import edu.princeton.cs.algs4.*;\nimport java.util.*;\n$(cat WordDAG.java)" > WordDAG.java
     javac -cp .:algs4.jar:stdlib.jar *.java &>> $LOG
     
-    if [ -a PC2D.class ];
+    if [ -a CorretorDoVictaum.class ];
     then
-        toexec=PC2D
+        toexec=CorretorDoVictaum
     fi
 fi
 
@@ -67,48 +71,17 @@ then
         testcase=${testcase%.*}
         
         echo "======= $testcase ============" >> $LOG
+        echo "======= $testcase ============" >> $RES
 
-        (time timeout --kill-after=10s 8s java -cp .:algs4.jar:stdlib.jar $toexec < ${testpath} > ${OUT}${testcase}.out 2>> $LOG) &>> $LOG
-        run_status=$?
-
-
-        if [ $run_status -eq 124 ]
+        if [ -a saida.txt ];
         then
-            ((r_tl++))
-            echo "Tempo Excedido" >> $LOG
-            veredict="T"
-        elif [ $run_status -eq 0 ]
-        then
-            checker_output=$( ${DIR}tester/checker/checker ${testpath} ${OUT}${testcase}.out ${DIR}tester/solution/answer/${testcase}.out 2>&1)
-            echo $checker_output >> $LOG
-            if [[ ${checker_output:0:1} == "o" ]]
-            then
-                ((r_ac++))
-                echo "OK" >> $LOG
-                veredict="."
-            else
-                ((r_wa++))
-                echo "Resposta Errada" >> $LOG
-                veredict="W"
-            fi
-        else
-            ((r_re++))
-            echo "Erro de Execução" >> $LOG
-            veredict="R"
+            rm saida.txt
         fi
+        touch saida.txt
 
-        printf $veredict
-        printf $veredict >> $RES
+        (time java -cp .:algs4.jar:stdlib.jar $toexec < $testpath >> $RES 2>> $LOG) &>> $LOG
+        run_status=$?
     done;
 else
-    echo "FAILED COMPILE" >> $LOG
+    echo "COMPILATION ERROR" >> $RES
 fi
-printf "\n"
-printf "\n" >> $RES
-
-echo "CORREÇÃO AUTOMÁTICA" >> $RES
-echo "Quantidade de Testes | Veredito" >> $RES
-echo "$r_ac | OK" >> $RES
-echo "$r_tl | Tempo de Execução Excedido" >> $RES
-echo "$r_wa | Resposta Errada" >> $RES
-echo "$r_re | Erro de Execução" >> $RES

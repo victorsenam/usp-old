@@ -23,11 +23,12 @@ gen_fails=0
 val_fails=0
 
 # generation loop
-case_num=0
+case_num_unformatted=0
 while read line
 do
+    case_num=$(printf "%03d" $case_num_unformatted)
     echo "Generating Case ${PREFIX}_${case_num}" &>> $LOG
-    ./generator/generator $line > "cases/${PREFIX}_${case_num}.in" 2>> $LOG
+    echo ${DIR}/../input/$line > "cases/${PREFIX}_${case_num}.in" 2>> $LOG
     generator_status=$?
     
     if [ $generator_status -ne 0 ]
@@ -39,28 +40,9 @@ do
         printf "."
     fi
 
-    ((case_num++))
-done;
-printf "\n"
-
-# validation loop
-for testcase in $(find cases/*.in);
-do
-    echo "Validating Case ${testcase}" &>> $LOG
-    ./validator/validator < $testcase &>> $LOG
-    validator_status=$?
-    
-    if [ $validator_status -ne 0 ]
-    then
-        echo "Exit status $validator_status" &>> $LOG
-        ((val_fails++))
-        printf "V"
-    else
-        printf "."
-    fi
+    ((case_num_unformatted++))
 done;
 printf "\n"
 
 # output
 echo "gen_fails: $gen_fails"
-echo "val_fails: $val_fails"
