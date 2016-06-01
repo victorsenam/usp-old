@@ -19,28 +19,8 @@ public class CorretorDoVictaum {
         ArgsPasser () { }
     }
 
-    public static String checkAnswer (String casename) {
-        In ja = new In("../../tester/solution/answer/" + casename + ".out");
-        In pa = new In("judge_output/" + casename + ".out");
-
-        int i = 0;
-        
-        while (ja.hasNextLine()) {
-            if (!pa.hasNextLine())
-                return "resposta do juiz é mais longa que a do participante";
-            if (!ja.readLine().equals(pa.readLine())) {
-                return "resposta do juiz e participante diferem na linha " + i;
-            }
-            i++;
-        }
-        if (pa.hasNextLine())
-            return "resposta do juiz é mais curta que a do participante";
-        return "";
-    }
-
-    public static int test(int discount, String nome, Function<ArgsPasser, Throwable> runner, long timeout, int repetitions, ArgsPasser args, int i) {
+    public static int test(String nome, Function<ArgsPasser, Throwable> runner, long timeout, int repetitions, ArgsPasser args, int i) {
         String casename = args.file.getFileName().toString().replace(".", "_") + "_" + String.format("%03d", i);
-        System.err.println("=== " + casename + " ===");
         args.output = new Out("judge_output/" + casename + ".out");
         
         Callable<Throwable> task = ()-> (Throwable)runner.apply(args);
@@ -56,30 +36,17 @@ public class CorretorDoVictaum {
 
             if (ret != null) 
                 throw ret;
-
-            String res = checkAnswer(casename);
-            if (res == "") {
-                System.err.println("OK :)");
-                discount = 0;
-            } else {
-                System.err.print("[-" + (double)discount/100. + "] ");
-                System.err.println(res);
-            }
         } catch (TimeoutException e) {
-            System.err.print("[-" + (double)discount/100. + "] ");
-            System.err.println("TEMPO DE EXECUÇÃO EXCEDIDO");
+            args.output.println("TEMPO DE EXECUÇÃO EXCEDIDO");
         } catch (Throwable e) {
-            System.err.print("[-" + (double)discount/100. + "] ");
-            System.err.println("ERRO DE EXECUÇÃO");
+            args.output.println("ERRO DE EXECUÇÃO");
             while (e.getCause() != null)
                 e = e.getCause();
-            e.printStackTrace();
+            args.output.println(e.getStackTrace());
         } finally {
             executor.shutdownNow();
             if (!executor.isShutdown())
                 System.err.println("NOT SHUT DOWN");
-
-            return discount;
         }
     }
 
@@ -153,17 +120,16 @@ public class CorretorDoVictaum {
             if (command.equals("mount")) {
                 env.file = Paths.get(StdIn.readString());
                 env.siz = StdIn.readInt();
-                nota -= test(stdDiscount, "Monta o grafo num tempo razoável", CorretorDoVictaum::mountGraph, 10000, 1, env, i);
+                nota -= test("Monta o grafo num tempo razoável", CorretorDoVictaum::mountGraph, 10000, 1, env, i);
             } else if (command.equals("print")) {
-                nota -= test(stdDiscount, "Imprime o grafo corretamente", CorretorDoVictaum::printGraph, 10000, 1, env, i);
+                nota -= test("Imprime o grafo corretamente", CorretorDoVictaum::printGraph, 10000, 1, env, i);
             } else if (command.equals("count")) {
                 env.a = StdIn.readString();
                 env.b = StdIn.readString();
-                nota -= test(stdDiscount, "Conta caminho corretamente", CorretorDoVictaum::printPathCount, 10000, 1, env, i);
+                nota -= test("Conta caminho corretamente", CorretorDoVictaum::printPathCount, 10000, 1, env, i);
             }
         }
 
-        StdOut.println("Nota final: " + ((double)(nota) / 100.));
         System.exit(0);
     }
 }
