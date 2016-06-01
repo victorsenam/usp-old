@@ -20,14 +20,18 @@ public class CorretorDoVictaum {
     }
 
     public static String checkAnswer (String casename) {
-        In ja = new In("../../tester/answer/" + casename + ".out");
+        In ja = new In("../../tester/solution/answer/" + casename + ".out");
         In pa = new In("judge_output/" + casename + ".out");
+
+        int i = 0;
         
         while (ja.hasNextLine()) {
             if (!pa.hasNextLine())
                 return "resposta do juiz é mais longa que a do participante";
-            if (ja.readLine() != pa.readLine())
-                return "resposta do juiz e participante diferem";
+            if (!ja.readLine().equals(pa.readLine())) {
+                return "resposta do juiz e participante diferem na linha " + i;
+            }
+            i++;
         }
         if (pa.hasNextLine())
             return "resposta do juiz é mais curta que a do participante";
@@ -39,7 +43,7 @@ public class CorretorDoVictaum {
         System.err.println("=== " + casename + " ===");
         args.output = new Out("judge_output/" + casename + ".out");
         
-        Callable<Throwable> task = () -> (Throwable)runner.apply(args);
+        Callable<Throwable> task = ()-> (Throwable)runner.apply(args);
         ExecutorService executor = Executors.newFixedThreadPool(1);
 
         try {
@@ -121,7 +125,6 @@ public class CorretorDoVictaum {
         } catch (Throwable e) {
             return e;
         }
-        //args.output.println(args.exOut.readLine());
         return null;
     }
 
@@ -141,7 +144,6 @@ public class CorretorDoVictaum {
             System.err.println("This failed!");
             return;
         }
-        env.file = Paths.get(StdIn.readString());
 
         int n = StdIn.readInt();
         int stdDiscount = nota/n;
@@ -149,6 +151,7 @@ public class CorretorDoVictaum {
         for (int i = 0; i < n; i++) {
             String command = StdIn.readString();
             if (command.equals("mount")) {
+                env.file = Paths.get(StdIn.readString());
                 env.siz = StdIn.readInt();
                 nota -= test(stdDiscount, "Monta o grafo num tempo razoável", CorretorDoVictaum::mountGraph, 10000, 1, env, i);
             } else if (command.equals("print")) {
