@@ -1,0 +1,9 @@
+# Ignoring every file without extension
+**/*
+!**/
+!**/*.*
+
+
+**/*.swp
+**/*.class
+**/*.o
