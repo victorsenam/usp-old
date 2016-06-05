@@ -1,21 +1,27 @@
-21
-mount ../../tester/input/small.txt 7
-print
+26
+mount ../../tester/input/small.txt 8
 count cobro cobra
 count sobrando cobrou
 count sobrar cobra
+count sobrando cobrando
 mount ../../tester/input/normal.txt 10
-print
 count AAA A
 count aaa aa
-count aaa aaa
+count aaa AAA
 mount ../../tester/input/normal.txt 10000
-print
 count abandonee abandoned
 count abandonee abandon
+count aasvogels aasvogel
 mount ../../tester/input/normal.txt 645288
 count ZZZ A
 count zymomes zymome
 count aals aa
-count Aggadahs aggada
-count agete agen
+count Zend PST
+count dirk NWT
+count vizzy Gigli
+mount ../../tester/input/bonus.txt 5200
+count zzzzzzzz a
+count zzzzzzzzzzzzzzzzzzh zzzzzzzzzzzzzd
+count zzzzzzzzzzzzzzzzzzzf zzzzzzzzzg
+count zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz a
+count zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzg
