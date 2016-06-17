@@ -1,0 +1,62 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry} 
+\usepackage[brazil]{babel}
+\usepackage{amsmath,amsthm,amssymb,amsfonts,enumitem,tikz}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+ 
+\newcounter{exCounter}
+\setcounter{exCounter}{36}
+\newtheorem{lema}{Lema}
+\newtheorem{ex}[exCounter]{Ex}
+\newenvironment{problem}[2][Ex]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\linespread{2}
+%If you want to title your bold things something different just make another thing exactly like this but replace "problem" with the name of the thing you want, like theorem or lemma or whatever
+ 
+\begin{document}
+ 
+%\renewcommand{\qedsymbol}{\filledbox}
+%Good resources for looking up how to do stuff:
+%Binary operators: http://www.access2science.com/latex/Binary.html
+%General help: http://en.wikibooks.org/wiki/LaTeX/Mathematics
+%Or just google stuff
+ 
+\title{Lista 10}
+\author{Victor Sena Molero - 8941317}
+\maketitle
+
+\section{Exercícios}
+\begin{ex}
+Seja $G$ um grafo 2-conexo tal que $\delta(G) \geq 3$, então $G$ tem um vértice $v$ tal que $G-v$ é 2-conexo.
+\end{ex}
+
+\begin{proof}[Resposta]
+\end{proof}
+
+\begin{ex}
+Prove que se $G$ é um grafo $k$-conexo e seja $G'$ o grafo que resulta de $G$ acrescentando-se um novo vértice e arestas ligando esse vértice a todos os vértices de $G$. Prove que $G'$ é $(k+1)$-conexo.
+\end{ex}
+
+\begin{proof}[Resposta]
+Seja $G$ um grafo $k$-conexo e $G'$ o grafo gerado ao adicionar, em $G$ um novo vértice $v$ adjacente a todos os outros.
+
+Se $G$ é completo, ele tem $k+1$ vértices e $G'$ é um completo com $k+2$ vértices, logo, é $(k+1)$-conexo. Se $G$ não é completo, suponha, por absurdo, que $G'$ não seja $(k+1)$-conexo. Assim, é possível obter um conjunto $S$ de $k$ ou menos vértices que separa $G'$. Este conjunto não pode estar contido em $G$, pois o vértice $v$ mantém o grafo conexo, logo, $v \in S$. Assim, existe um conjunto $S-v$ que separa $G'-v$, ou seja $G$ tem um conjunto separador com $k$ vértices, um absurdo.
+
+Logo, $G'$ é $(k+1)$-conexo.
+\end{proof}
+
+\begin{ex}
+Se $G$ é um grafo $k$-conexo $(k \geq 2)$ então qualquer conjunto de $k$ vértices de $G$ pertence a um mesmo circuito de $G$. (Tal circuito pode conter outros vértices adicionais além dos $k$ vértices fixados.) [Sugestão e dica em aula.]
+\end{ex}
+
+\begin{proof}[Resposta]
+Seja $G$ um grafo $k$-conexo. Vamos provar, por indução em $k$, que qualquer conjunto de $k$ vértices de $G$ pertence a um mesmo circuito de $G$ para todo $k \geq 2$.
+
+Se $k = 2$, então o grafo é $2$-conexo e, segundo o teorema 9.6, todo par de vertice pertence a um conjunto em comum.
+
+Se $k > 2$, assuma que a tese vale para todo grafo $(k-1)$-conexo. Escolha um vértice qualquer $v$ de $G$. Queremos que este vértice pertenca ao mesmo circuito que qualquer conjunto de tamanho $k-1$. Seja $G' = G-v$. Se $v$ pertence a um conjunto separador de tamanho $k$ em $G$, então $G'$ é $(k-1)$-conexo. Se não, $G'$ é $k$-conexo e, portanto, $(k-1)$-conexo (já que $k > 2$). Assim, $G'$ é sempre $(k-1)$-conexo e vale a hipótese de indução. Qualquer conjunto de $k-1$ vértices de $G'$ pertence a um circuito em comum.
+
+\end{document}
