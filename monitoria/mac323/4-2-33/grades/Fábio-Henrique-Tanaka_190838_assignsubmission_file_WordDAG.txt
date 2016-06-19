@@ -11,6 +11,8 @@ Quantidade de Testes | Veredito
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-33/tester/checker/checker' is up to date.
 Note: Some input files use unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
+CORREÇÃO MANUAL
+Tudo certo :) Os erros são todos casos Bônus :)
 ........R.................
 
 real	0m31.923s

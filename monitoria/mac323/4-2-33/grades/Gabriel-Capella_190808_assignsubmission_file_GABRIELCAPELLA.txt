@@ -1,16 +1,89 @@
-
-
+.....WR.RW...WR.WRRR....R.
 CORREÇÃO AUTOMÁTICA
 Quantidade de Testes | Veredito
-0 | OK
+15 | OK
 0 | Erro de Montagem (o grafo dessa query não pode ser montado)
 0 | Tempo de Execução Excedido
-0 | Resposta Errada
-0 | Erro de Execução
+4 | Resposta Errada
+7 | Erro de Execução
 
-make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-33/tester/checker/checker' is up to date.
+
+make: '/home/victorsenam/dev/usp/monitoria/mac323/4-2-33/tester/checker/checker' is up to date.
 ......R.R.....R..RRR....R.
+CORREÇÃO MANUAL
+Você considerou letras maiúsculas e minúsculas como iguais. Deve ter algum outro erro na montagem do grafo, também. Algo que esteja gerando um ciclo, não consegui encontrar.
 
-real	0m20.018s
-user	0m38.172s
-sys	0m0.928s
+real	0m32.614s
+user	0m35.947s
+sys	0m5.167s
+====== 000_case =========
+ok 6 lines
+OK
+====== 001_case =========
+ok single line: '2'
+OK
+====== 002_case =========
+ok single line: '0'
+OK
+====== 003_case =========
+ok single line: '1'
+OK
+====== 004_case =========
+ok single line: '1'
+OK
+====== 005_case =========
+wrong answer 1st lines differ - expected: 'a A', found: 'aa a'
+Resposta Errada
+====== 006_case =========
+Erro de Execução
+====== 007_case =========
+ok single line: '1'
+OK
+====== 008_case =========
+Erro de Execução
+====== 009_case =========
+wrong answer 1st lines differ - expected: 'a A', found: 'aa a'
+Resposta Errada
+====== 010_case =========
+ok single line: '1'
+OK
+====== 011_case =========
+ok single line: '0'
+OK
+====== 012_case =========
+ok single line: '1'
+OK
+====== 013_case =========
+wrong answer 1st lines differ - expected: 'a A', found: 'aa a'
+Resposta Errada
+====== 014_case =========
+Erro de Execução
+====== 015_case =========
+ok single line: '1'
+OK
+====== 016_case =========
+wrong answer 1st lines differ - expected: '6', found: '56'
+Resposta Errada
+====== 017_case =========
+Erro de Execução
+====== 018_case =========
+Erro de Execução
+====== 019_case =========
+Erro de Execução
+====== 020_case =========
+ok 70174 lines
+OK
+====== 021_case =========
+ok single line: '803469022129495137770981046170581301261101496891396417650688'
+OK
+====== 022_case =========
+ok single line: '340282366920938463463374607431768211456'
+OK
+====== 023_case =========
+ok single line: '452312848583266388373324160190...7600158453279131187530910662656'
+OK
+====== 024_case =========
+Erro de Execução
+====== 025_case =========
+ok single line: '216164294552797813644468298334...4074980640712723296570197409792'
+OK
