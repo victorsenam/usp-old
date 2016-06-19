@@ -122,7 +122,7 @@ public class CorretorDoVictaum {
             if (command.equals("mount")) {
                 env.file = Paths.get(StdIn.readString());
                 env.siz = StdIn.readInt();
-                nota -= test("Monta o grafo num tempo razoável", CorretorDoVictaum::mountGraph, 180000, 1, env, i, true);
+                nota -= test("Monta o grafo num tempo razoável", CorretorDoVictaum::mountGraph, 90000, 1, env, i, true);
             } else if (command.equals("count")) {
                 env.a = StdIn.readString();
                 env.b = StdIn.readString();

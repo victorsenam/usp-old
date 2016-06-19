@@ -104,7 +104,7 @@ public class Out {
      * Closes the output stream.
      */
     public void close() {
-        out.close();
+        //out.close();
     }
 
    /**

@@ -1,26 +1,91 @@
-
-COMPILATION ERROR
-
+WW.WWW...WW..TMMMMMMWWWWWW
 CORREÇÃO AUTOMÁTICA
 Quantidade de Testes | Veredito
-0 | OK
-0 | Erro de Montagem (o grafo dessa query não pode ser montado)
-0 | Tempo de Execução Excedido
-0 | Resposta Errada
+6 | OK
+6 | Erro de Montagem (o grafo dessa query não pode ser montado)
+1 | Tempo de Execução Excedido
+13 | Resposta Errada
 0 | Erro de Execução
 
-make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-33/tester/checker/checker' is up to date.
-LevelTraversal.java:13: error: class WordDAG is public, should be declared in a file named WordDAG.java
-public class WordDAG {
-       ^
-CorretorDoVictaum.java:85: error: cannot find symbol
-            args.ex.PrintDag();
-                   ^
-  symbol:   method PrintDag()
-  location: variable ex of type WordDAG
-CorretorDoVictaum.java:97: error: cannot find symbol
-            args.ex.PrintPathCount(args.a, args.b);
-                   ^
-  symbol:   method PrintPathCount(String,String)
-  location: variable ex of type WordDAG
-3 errors
+CORREÇÃO MANUAL
+Porque as pessoas sempre colocam o nome LevelTransversal nesse ep?
+Os nomes das funções estavam errados e a PrintPathCount estava private...
+Acho que os testes caíram porque você montou o grafo ao contrário.
+
+make: '/home/victorsenam/dev/usp/monitoria/mac323/4-2-33/tester/checker/checker' is up to date.
+.............TMMMMMM......
+
+real	1m36.228s
+user	1m41.137s
+sys	0m1.380s
+====== 000_case =========
+wrong answer 1st lines differ - expected: 'cobre cobra', found: 'cobra cobre'
+Resposta Errada
+====== 001_case =========
+wrong answer 1st lines differ - expected: '2', found: '0'
+Resposta Errada
+====== 002_case =========
+ok single line: '0'
+OK
+====== 003_case =========
+wrong answer 1st lines differ - expected: '1', found: '0'
+Resposta Errada
+====== 004_case =========
+wrong answer 1st lines differ - expected: '1', found: '0'
+Resposta Errada
+====== 005_case =========
+wrong answer 1st lines differ - expected: 'a A', found: 'A a'
+Resposta Errada
+====== 006_case =========
+ok single line: '1'
+OK
+====== 007_case =========
+ok single line: '1'
+OK
+====== 008_case =========
+ok single line: '0'
+OK
+====== 009_case =========
+wrong answer 1st lines differ - expected: 'a A', found: 'A a'
+Resposta Errada
+====== 010_case =========
+wrong answer 1st lines differ - expected: '1', found: '0'
+Resposta Errada
+====== 011_case =========
+ok single line: '0'
+OK
+====== 012_case =========
+ok single line: '1'
+OK
+====== 013_case =========
+Tempo Excedido
+====== 014_case =========
+Tempo de Montagem Excedido
+====== 015_case =========
+Tempo de Montagem Excedido
+====== 016_case =========
+Tempo de Montagem Excedido
+====== 017_case =========
+Tempo de Montagem Excedido
+====== 018_case =========
+Tempo de Montagem Excedido
+====== 019_case =========
+Tempo de Montagem Excedido
+====== 020_case =========
+wrong answer 1st lines differ - expected: 'b a', found: 'a b'
+Resposta Errada
+====== 021_case =========
+wrong answer 1st lines differ - expected: '803469022129495137770981046170581301261101496891396417650688', found: '0'
+Resposta Errada
+====== 022_case =========
+wrong answer 1st lines differ - expected: '340282366920938463463374607431768211456', found: '0'
+Resposta Errada
+====== 023_case =========
+wrong answer 1st lines differ - expected: '452312848583266388373324160190...7600158453279131187530910662656', found: '0'
+Resposta Errada
+====== 024_case =========
+wrong answer 1st lines differ - expected: '706233516069713018417604833508...6082073593257084545458595954688', found: '0'
+Resposta Errada
+====== 025_case =========
+wrong answer 1st lines differ - expected: '216164294552797813644468298334...4074980640712723296570197409792', found: '0'
+Resposta Errada

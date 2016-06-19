@@ -10,6 +10,9 @@ Quantidade de Testes | Veredito
 
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-33/tester/checker/checker' is up to date.
 ........................R.
+CORREÇÃO MANUAL
+Em alguns casos você gera arestas que não deveriam existir, por exemplo, no log do checador é possível ver que o caso 005 gera uma aresta inválida:
+AAAAAA AAAA
 
 real	0m20.811s
 user	0m36.512s
