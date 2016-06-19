@@ -39,7 +39,7 @@ r_tm=0
 # compiling
 rm CorretorDoVictaum.java
 rm Out.java
-make ${DIR}tester/checker/checker &>> $LOG
+    make ${DIR}tester/checker/checker &>> $LOG
 cp -n ${DIR}tester/standart/* . &>> $LOG
 cp -n ${DIR}tester/judge/.gitignore . &>> $LOG
 rm *.class
@@ -71,10 +71,7 @@ if [ $toexec != failed ];
 then
     testpath="$cases/unique_test.in"
     
-    #touch saida.txt
-    #chmod 777 saida.txt
-    #tail -f saida.txt > $TMPOUT 2> /dev/null &
-    (time java -cp .:algs4.jar:stdlib.jar $toexec < $testpath > $TMPOUT) 2>> $LOG
+    (time java -cp .:algs4.jar:stdlib.jar $toexec < $testpath > $TMPOUT 2>>$LOG) 2>> $LOG
     run_status=$?
 
     case_num=0
