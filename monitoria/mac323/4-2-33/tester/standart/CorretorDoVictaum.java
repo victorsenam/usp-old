@@ -43,26 +43,25 @@ public class CorretorDoVictaum {
             if (ret != null) {
                 throw ret;
             }
-            System.out.print(".");
+            System.err.print(".");
         } catch (UnsupportedOperationException e) {
             args.exOut.println("TEMPO DE MONTAGEM EXCEDIDO");
-            System.out.print("M");
+            System.err.print("M");
         } catch (TimeoutException e) {
             args.exOut.println("TEMPO DE EXECUCAO EXCEDIDO");
-            System.out.print("T");
+            System.err.print("T");
         } catch (Throwable e) {
             args.exOut.println("ERRO DE EXECUCAO");
-            System.out.print("R");
+            System.err.print("R");
             while (e.getCause() != null)
                 e = e.getCause();
-            args.exOut.println(getStackTrace(e));
+            System.out.println(getStackTrace(e));
         } finally {
             executor.shutdownNow();
             if (!executor.isShutdown())
                 System.err.println("NOT SHUT DOWN");
         }
-        args.exOut.println("----------");
-        args.exOut.print();
+        System.out.println("----------");
 
         return 0;
     }
@@ -130,7 +129,7 @@ public class CorretorDoVictaum {
                 nota -= test("Conta caminho corretamente", CorretorDoVictaum::printPathCount, 3000, 1, env, i, false);
             }
         }
-        System.out.println("");
+        System.err.println("");
 
         System.exit(0);
     }

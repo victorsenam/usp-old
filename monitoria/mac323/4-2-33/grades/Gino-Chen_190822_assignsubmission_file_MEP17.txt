@@ -1,0 +1,81 @@
+
+WWWWWWWWWWWWWTWTTTTWTTTTT
+CORREÇÃO AUTOMÁTICA
+Quantidade de Testes | Veredito
+0 | OK
+0 | Erro de Montagem (o grafo dessa query não pode ser montado)
+10 | Tempo de Execução Excedido
+15 | Resposta Errada
+0 | Erro de Execução
+
+make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-33/tester/checker/checker' is up to date.
+..............T.TTTT.TTTTT
+
+real	0m59.585s
+user	3m19.156s
+sys	0m2.480s
+====== 000_case =========
+wrong answer 1st lines differ - expected: 'cobre cobra', found: ''
+Resposta Errada
+====== 001_case =========
+wrong answer 1st lines differ - expected: '2', found: ''
+Resposta Errada
+====== 002_case =========
+wrong answer 1st lines differ - expected: '0', found: ''
+Resposta Errada
+====== 003_case =========
+wrong answer 1st lines differ - expected: '1', found: ''
+Resposta Errada
+====== 004_case =========
+wrong answer 1st lines differ - expected: '1', found: ''
+Resposta Errada
+====== 005_case =========
+wrong answer 1st lines differ - expected: 'a A', found: ''
+Resposta Errada
+====== 006_case =========
+wrong answer 1st lines differ - expected: '1', found: ''
+Resposta Errada
+====== 007_case =========
+wrong answer 1st lines differ - expected: '1', found: ''
+Resposta Errada
+====== 008_case =========
+wrong answer 1st lines differ - expected: '0', found: ''
+Resposta Errada
+====== 009_case =========
+wrong answer 1st lines differ - expected: 'a A', found: ''
+Resposta Errada
+====== 010_case =========
+wrong answer 1st lines differ - expected: '1', found: ''
+Resposta Errada
+====== 011_case =========
+wrong answer 1st lines differ - expected: '0', found: ''
+Resposta Errada
+====== 012_case =========
+wrong answer 1st lines differ - expected: '1', found: ''
+Resposta Errada
+====== 013_case =========
+Tempo Excedido
+====== 014_case =========
+wrong answer 1st lines differ - expected: '114495854014092500', found: ''
+Resposta Errada
+====== 015_case =========
+Tempo Excedido
+====== 016_case =========
+Tempo Excedido
+====== 017_case =========
+Tempo Excedido
+====== 018_case =========
+Tempo Excedido
+====== 019_case =========
+wrong answer 1st lines differ - expected: '1398768', found: ''
+Resposta Errada
+====== 020_case =========
+Tempo Excedido
+====== 021_case =========
+Tempo Excedido
+====== 022_case =========
+Tempo Excedido
+====== 023_case =========
+Tempo Excedido
+====== 024_case =========
+Tempo Excedido

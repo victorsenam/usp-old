@@ -1,0 +1,96 @@
+
+...W..W......TMMMMMM.WWWWW
+CORREÇÃO AUTOMÁTICA
+Quantidade de Testes | Veredito
+12 | OK
+6 | Erro de Montagem (o grafo dessa query não pode ser montado)
+1 | Tempo de Execução Excedido
+7 | Resposta Errada
+0 | Erro de Execução
+CORREÇÃO MANUAL
+Olá :)
+Então, seu algoritmo de montar grafo não tem a complexidade que você diz que ele tem. Tem algumas coisas que mostram que seu algoritmo não roda em tempo O(NL + NlogN), como você propos.
+Primeiro, o loop que começa na linha 63 tem, dentro dele, um loop (linha 68) com passo 1 (a cada iteração a variável n é incrementada apenas uma vez). Pense nos valores i e i+n como pares de elementos i, j onde m é o tamanho de auxWords, i<n e 0<=i,j<m. Note que seus loops visitam todos os pares i,j possíveis. Quantos pares deste existem? m(m-1)/2 = (m^2-m)/2 = O(m^2). Logo, seu loop é quadrático no tamanho de auxWords.
+Além disso, dentro deste loop quadrático, você chama a função indexOf no vetor words. Essa função percorre todo o vetor para achar a palavra desejada, o que custa tempo linear. Ou seja, seu algoritmo é cúbico.
+Além da montagem do grafo, o calculo da quantidade de caminhos não é correta nem eficiente, pois você percorre o grafo ordenado topologicamente e para todas as palavras entre a e b, você chama uma dfs à partir dela. Se houver um caminho que passa por ali você soma um na resposta.
+Bom, fazer uma dfs para cada vértice entre um par é quadrático, pois a quantidade de elementos entre dois quaisquer é linear e uma busca em profundiade (dfs) é linear. Note que a ordenação topológica não ajudou a melhorar a complexidade da sua ideia, pois bastava fazer este calculo para todos os vértices ao invés de apenas para os entre a e b, a complexidade assintótica continuaria a mesma e você não precisa ordenar eles no começo.
+Outra observação é que somar um apenas para cada caminho não responde à pergunta, isso não conta a quantidade de caminhos entre a e b. Por exemplo, um grafo com 4 vértices, nomeados 0, 1, 2 e 3 e com as arestas {0,1}, {0,2}, {0,3}, {1,2}, {1,3} e {2,3} tem 4 caminhos entre 0 e 3 e a resposta do seu algoritmo seria 3.
+
+
+make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-33/tester/checker/checker' is up to date.
+.............TMMMMMM......
+
+real	4m7.685s
+user	5m6.136s
+sys	0m1.224s
+====== 000_case =========
+ok 6 lines
+OK
+====== 001_case =========
+ok single line: '2'
+OK
+====== 002_case =========
+ok single line: '0'
+OK
+====== 003_case =========
+wrong answer 1st lines differ - expected: '1', found: '2'
+Resposta Errada
+====== 004_case =========
+ok single line: '1'
+OK
+====== 005_case =========
+ok 11 lines
+OK
+====== 006_case =========
+wrong answer 1st lines differ - expected: '1', found: '2'
+Resposta Errada
+====== 007_case =========
+ok single line: '1'
+OK
+====== 008_case =========
+ok single line: '0'
+OK
+====== 009_case =========
+ok 6425 lines
+OK
+====== 010_case =========
+ok single line: '1'
+OK
+====== 011_case =========
+ok single line: '0'
+OK
+====== 012_case =========
+ok single line: '1'
+OK
+====== 013_case =========
+Tempo Excedido
+====== 014_case =========
+Tempo de Montagem Excedido
+====== 015_case =========
+Tempo de Montagem Excedido
+====== 016_case =========
+Tempo de Montagem Excedido
+====== 017_case =========
+Tempo de Montagem Excedido
+====== 018_case =========
+Tempo de Montagem Excedido
+====== 019_case =========
+Tempo de Montagem Excedido
+====== 020_case =========
+ok 70174 lines
+OK
+====== 021_case =========
+wrong answer 1st lines differ - expected: '803469022129495137770981046170581301261101496891396417650688', found: '207'
+Resposta Errada
+====== 022_case =========
+wrong answer 1st lines differ - expected: '340282366920938463463374607431768211456', found: '134'
+Resposta Errada
+====== 023_case =========
+wrong answer 1st lines differ - expected: '452312848583266388373324160190...7600158453279131187530910662656', found: '259'
+Resposta Errada
+====== 024_case =========
+wrong answer 1st lines differ - expected: '706233516069713018417604833508...6082073593257084545458595954688', found: '5199'
+Resposta Errada
+====== 025_case =========
+wrong answer 1st lines differ - expected: '216164294552797813644468298334...4074980640712723296570197409792', found: '1449'
+Resposta Errada

@@ -8,5 +8,5 @@ cd result
 
 for aluno in $(find . -maxdepth 1 -mindepth 1 -type d);
 do
-    cat $aluno/judge.out $aluno/comment.txt $initial/grades/$(basename $aluno).txt
+    cat $aluno/judge.out $aluno/comment.txt $aluno/judge.log > $initial/grades/$(basename $aluno).txt
 done

@@ -1,0 +1,26 @@
+
+COMPILATION ERROR
+
+CORREÇÃO AUTOMÁTICA
+Quantidade de Testes | Veredito
+0 | OK
+0 | Erro de Montagem (o grafo dessa query não pode ser montado)
+0 | Tempo de Execução Excedido
+0 | Resposta Errada
+0 | Erro de Execução
+
+make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-33/tester/checker/checker' is up to date.
+LevelTraversal.java:13: error: class WordDAG is public, should be declared in a file named WordDAG.java
+public class WordDAG {
+       ^
+CorretorDoVictaum.java:85: error: cannot find symbol
+            args.ex.PrintDag();
+                   ^
+  symbol:   method PrintDag()
+  location: variable ex of type WordDAG
+CorretorDoVictaum.java:97: error: cannot find symbol
+            args.ex.PrintPathCount(args.a, args.b);
+                   ^
+  symbol:   method PrintPathCount(String,String)
+  location: variable ex of type WordDAG
+3 errors
