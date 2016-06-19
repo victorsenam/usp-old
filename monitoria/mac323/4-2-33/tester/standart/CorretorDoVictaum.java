@@ -11,8 +11,7 @@ public class CorretorDoVictaum {
         public int siz;
         public String a, b;
         public WordDAG ex;
-        public BufferedInputStream exOut;
-        public Out output;
+        public Out exOut;
         public In answer;
         public Path file;
         public boolean tl;
@@ -28,7 +27,7 @@ public class CorretorDoVictaum {
 
     public static int test(String nome, Function<ArgsPasser, Throwable> runner, long timeout, int repetitions, ArgsPasser args, int i, boolean keeptl) {
         String casename = String.format("%03d", i) + "_" + args.file.getFileName().toString().replace(".", "_");
-        args.output = new Out("judge_output/" + casename + ".out");
+        args.exOut = new Out("saida.txt");
         
         Callable<Throwable> task = ()-> (Throwable)runner.apply(args);
         ExecutorService executor = Executors.newFixedThreadPool(1);
@@ -46,22 +45,24 @@ public class CorretorDoVictaum {
             }
             System.out.print(".");
         } catch (UnsupportedOperationException e) {
-            args.output.println("TEMPO DE MONTAGEM EXCEDIDO");
+            args.exOut.println("TEMPO DE MONTAGEM EXCEDIDO");
             System.out.print("M");
         } catch (TimeoutException e) {
-            args.output.println("TEMPO DE EXECUCAO EXCEDIDO");
+            args.exOut.println("TEMPO DE EXECUCAO EXCEDIDO");
             System.out.print("T");
         } catch (Throwable e) {
-            args.output.println("ERRO DE EXECUCAO");
+            args.exOut.println("ERRO DE EXECUCAO");
             System.out.print("R");
             while (e.getCause() != null)
                 e = e.getCause();
-            args.output.println(getStackTrace(e));
+            args.exOut.println(getStackTrace(e));
         } finally {
             executor.shutdownNow();
             if (!executor.isShutdown())
                 System.err.println("NOT SHUT DOWN");
         }
+        args.exOut.println("----------");
+        args.exOut.print();
 
         return 0;
     }
@@ -82,13 +83,7 @@ public class CorretorDoVictaum {
         args.tl = false;
 
         try {
-            BufferedInputStream auxStream = getBuffer();
             args.ex.PrintDag();
-
-            if (args.exOut.available() <= 0)
-                args.exOut = auxStream;
-            while (args.exOut.available() > 0)
-                args.output.print((char) args.exOut.read() );
         } catch (Throwable e) {
             return e;
         }
@@ -100,21 +95,11 @@ public class CorretorDoVictaum {
             return new UnsupportedOperationException();
         }
         try {
-            BufferedInputStream auxStream = getBuffer();
             args.ex.PrintPathCount(args.a, args.b);
-
-            if (args.exOut.available() <= 0)
-                args.exOut = auxStream;
-            while (args.exOut.available() > 0)
-                args.output.print((char) args.exOut.read() );
         } catch (Throwable e) {
             return e;
         }
         return null;
-    }
-
-    public static BufferedInputStream getBuffer() throws Exception {
-        return new BufferedInputStream(new FileInputStream( "saida.txt" ) );
     }
 
     public static void main(String args[]) {
@@ -124,8 +109,7 @@ public class CorretorDoVictaum {
         ArgsPasser env = new ArgsPasser();
         env.tl = false;
         try {
-            new Out("saida.txt");
-            env.exOut = getBuffer();
+            env.exOut = new Out("saida.txt");
         } catch (Exception e) {
             System.err.println("This failed!");
             return;
@@ -139,7 +123,7 @@ public class CorretorDoVictaum {
             if (command.equals("mount")) {
                 env.file = Paths.get(StdIn.readString());
                 env.siz = StdIn.readInt();
-                nota -= test("Monta o grafo num tempo razoável", CorretorDoVictaum::mountGraph, 120000, 1, env, i, true);
+                nota -= test("Monta o grafo num tempo razoável", CorretorDoVictaum::mountGraph, 180000, 1, env, i, true);
             } else if (command.equals("count")) {
                 env.a = StdIn.readString();
                 env.b = StdIn.readString();

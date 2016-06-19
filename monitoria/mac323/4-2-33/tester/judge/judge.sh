@@ -10,6 +10,7 @@ DIR="$( cd "$( dirname "$0" )" && cd ../../ && pwd )/"
 LOG="judge.log"
 RES="judge.out"
 OUT="judge_output/"
+TMPOUT="judge_output.txt"
 
 # parameters
 if [[ $# -eq 0 ]];
@@ -74,9 +75,37 @@ then
         rm saida.txt
     fi
     touch saida.txt
+    tail -f saida.txt > $TMPOUT 2> /dev/null &
 
     (time java -cp .:algs4.jar:stdlib.jar $toexec < $testpath 2>> $LOG) 2>> $LOG
     run_status=$?
+
+    case_num=0
+    lines_read=-1
+    case_lines=0
+
+    printf "."
+    cat $TMPOUT | while read line
+    do
+        ((lines_read++))
+        if [[ $lines_read -le 0 ]];
+        then
+            continue
+        fi
+
+        if [[ ${line:0:1} == "-" ]]
+        then
+            curr_out=$(printf "${OUT}%03d_case.out" $case_num)
+            
+            cat $TMPOUT | head -n $lines_read | tail -n $case_lines > $curr_out
+
+            ((case_num++))
+            case_lines=-1
+            printf "."
+        fi
+        ((case_lines++))
+    done
+    printf "\n"
 
     for casepath in $(find $OUT/*);
     do
@@ -130,7 +159,7 @@ printf "\n" >> $RES
 echo "CORREÇÃO AUTOMÁTICA" >> $RES
 echo "Quantidade de Testes | Veredito" >> $RES
 echo "$r_ac | OK" >> $RES
-echo "$r_tm | Tempo de Montagem Excedido (o grafo dessa query não pode ser montado)" >> $RES
+echo "$r_tm | Erro de Montagem (o grafo dessa query não pode ser montado)" >> $RES
 echo "$r_tl | Tempo de Execução Excedido" >> $RES
 echo "$r_wa | Resposta Errada" >> $RES
 echo "$r_re | Erro de Execução" >> $RES
