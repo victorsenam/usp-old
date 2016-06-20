@@ -13,9 +13,9 @@ Note: WordDAG.java uses unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
 ..........................
 
-real	0m18.799s
-user	0m36.156s
-sys	0m2.172s
+real	0m19.487s
+user	0m31.192s
+sys	0m2.280s
 ====== 000_case =========
 ok 6 lines
 OK
@@ -29,52 +29,52 @@ OK
 ok single line: '1'
 OK
 ====== 004_case =========
-ok single line: '1'
-OK
-====== 005_case =========
 ok 11 lines
 OK
-====== 006_case =========
+====== 005_case =========
 ok single line: '1'
+OK
+====== 006_case =========
+ok single line: '0'
 OK
 ====== 007_case =========
-ok single line: '1'
+ok 40666 lines
 OK
 ====== 008_case =========
-ok single line: '0'
+ok single line: '1474'
 OK
 ====== 009_case =========
-ok 6425 lines
+ok single line: '235229'
 OK
 ====== 010_case =========
-ok single line: '1'
+ok single line: '84'
 OK
 ====== 011_case =========
-ok single line: '0'
+ok single line: '240'
 OK
 ====== 012_case =========
-ok single line: '1'
-OK
-====== 013_case =========
 ok 817246 lines
 OK
-====== 014_case =========
-ok single line: '114495854014092500'
-OK
-====== 015_case =========
+====== 013_case =========
 ok single line: '1'
 OK
-====== 016_case =========
+====== 014_case =========
 ok single line: '6'
 OK
-====== 017_case =========
+====== 015_case =========
 ok single line: '1964'
 OK
-====== 018_case =========
+====== 016_case =========
 ok single line: '398394'
 OK
-====== 019_case =========
+====== 017_case =========
 ok single line: '1398768'
+OK
+====== 018_case =========
+ok single line: '923340550'
+OK
+====== 019_case =========
+ok single line: '114495854014092500'
 OK
 ====== 020_case =========
 ok 70174 lines

@@ -1,84 +1,64 @@
-.............TMMMMMM.TTTTT
+
+.WWTTTTTMMMMMMMWTTTTT
 CORREÇÃO AUTOMÁTICA
 Quantidade de Testes | Veredito
-14 | OK
-6 | Erro de Montagem (o grafo dessa query não pode ser montado)
-6 | Tempo de Execução Excedido
-0 | Resposta Errada
+1 | OK
+7 | Erro de Montagem (o grafo dessa query não pode ser montado)
+10 | Tempo de Execução Excedido
+3 | Resposta Errada
 0 | Erro de Execução
-
 CORREÇÃO MANUAL
-[-5] : Nunca se esqueça de imprimir quebras de linha
+[-5] : Não se esqueça de imprimir quebras de linha
 
-make: '/home/victorsenam/dev/usp/monitoria/mac323/4-2-33/tester/checker/checker' is up to date.
-.............TMMMMMM.TTTTT
+make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-33/tester/checker/checker' is up to date.
+........TTTTTMMMMMMM.TTTTT
 
-real	1m56.807s
-user	2m18.363s
-sys	0m1.237s
+real	2m28.223s
+user	9m13.168s
+sys	0m1.224s
 ====== 000_case =========
 ok 6 lines
 OK
 ====== 001_case =========
-ok single line: '2'
-OK
+wrong answer 1st lines differ - expected: '2', found: '0----------'
+Resposta Errada
 ====== 002_case =========
-ok single line: '0'
-OK
+wrong answer 1st lines differ - expected: '0', found: '0----------'
+Resposta Errada
 ====== 003_case =========
-ok single line: '1'
-OK
-====== 004_case =========
-ok single line: '1'
-OK
-====== 005_case =========
-ok 11 lines
-OK
-====== 006_case =========
-ok single line: '1'
-OK
-====== 007_case =========
-ok single line: '1'
-OK
-====== 008_case =========
-ok single line: '0'
-OK
-====== 009_case =========
-ok 6425 lines
-OK
-====== 010_case =========
-ok single line: '1'
-OK
-====== 011_case =========
-ok single line: '0'
-OK
-====== 012_case =========
-ok single line: '1'
-OK
-====== 013_case =========
 Tempo Excedido
+====== 004_case =========
+Tempo Excedido
+====== 005_case =========
+Tempo Excedido
+====== 006_case =========
+Tempo Excedido
+====== 007_case =========
+Tempo Excedido
+====== 008_case =========
+Tempo de Montagem Excedido
+====== 009_case =========
+Tempo de Montagem Excedido
+====== 010_case =========
+Tempo de Montagem Excedido
+====== 011_case =========
+Tempo de Montagem Excedido
+====== 012_case =========
+Tempo de Montagem Excedido
+====== 013_case =========
+Tempo de Montagem Excedido
 ====== 014_case =========
 Tempo de Montagem Excedido
 ====== 015_case =========
-Tempo de Montagem Excedido
+wrong answer 1st lines differ - expected: '1964', found: 'b a'
+Resposta Errada
 ====== 016_case =========
-Tempo de Montagem Excedido
+Tempo Excedido
 ====== 017_case =========
-Tempo de Montagem Excedido
+Tempo Excedido
 ====== 018_case =========
-Tempo de Montagem Excedido
+Tempo Excedido
 ====== 019_case =========
-Tempo de Montagem Excedido
+Tempo Excedido
 ====== 020_case =========
-ok 70174 lines
-OK
-====== 021_case =========
-Tempo Excedido
-====== 022_case =========
-Tempo Excedido
-====== 023_case =========
-Tempo Excedido
-====== 024_case =========
-Tempo Excedido
-====== 025_case =========
 Tempo Excedido

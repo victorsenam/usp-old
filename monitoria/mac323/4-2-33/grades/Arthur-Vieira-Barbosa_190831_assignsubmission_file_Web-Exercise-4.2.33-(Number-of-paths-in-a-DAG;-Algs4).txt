@@ -14,3 +14,8 @@ WordDAG.java:167: error: reached end of file while parsing
 }
  ^
 1 error
+Second Compile Method
+WordDAG.java:167: error: reached end of file while parsing
+}
+ ^
+1 error

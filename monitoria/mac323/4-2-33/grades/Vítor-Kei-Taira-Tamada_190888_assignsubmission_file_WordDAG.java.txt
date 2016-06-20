@@ -59,3 +59,50 @@ LevelTraversal.java:201: error: cannot find symbol
   symbol:   variable Merge
   location: class WordDAG
 10 errors
+Second Compile Method
+WordDAG.java:12: error: cannot find symbol
+  private Digraph dag;
+          ^
+  symbol:   class Digraph
+  location: class WordDAG
+WordDAG.java:13: error: cannot find symbol
+  private IndexSET<String> words;
+          ^
+  symbol:   class IndexSET
+  location: class WordDAG
+WordDAG.java:58: error: cannot find symbol
+    dag = new Digraph (size);
+              ^
+  symbol:   class Digraph
+  location: class WordDAG
+WordDAG.java:62: error: cannot find symbol
+    words = new IndexSET<String>();
+                ^
+  symbol:   class IndexSET
+  location: class WordDAG
+WordDAG.java:63: error: cannot find symbol
+    IndexSET<String> auxWords;
+    ^
+  symbol:   class IndexSET
+  location: class WordDAG
+WordDAG.java:74: error: cannot find symbol
+      auxWords = new IndexSET<String>();
+                     ^
+  symbol:   class IndexSET
+  location: class WordDAG
+WordDAG.java:167: error: cannot find symbol
+    Stack<Integer> path = new Stack<Integer>();
+    ^
+  symbol:   class Stack
+  location: class WordDAG
+WordDAG.java:167: error: cannot find symbol
+    Stack<Integer> path = new Stack<Integer>();
+                              ^
+  symbol:   class Stack
+  location: class WordDAG
+WordDAG.java:201: error: cannot find symbol
+    Merge.sort(test);
+    ^
+  symbol:   variable Merge
+  location: class WordDAG
+9 errors

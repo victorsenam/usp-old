@@ -20,7 +20,7 @@ Finished building graph for length 6
 Finished building graph for length 7
 Finished building graph for length 4 and 5
 Finished building graph
-.....Finished reading word list
+....Finished reading word list
 Finished building graph for length 0
 Finished building graph for length 1
 Finished building graph for length 2
@@ -31,7 +31,7 @@ Finished building graph for length 0 and 1
 Finished building graph for length 1 and 2
 Finished building graph for length 2 and 3
 Finished building graph
-....Finished reading word list
+...Finished reading word list
 Finished building graph for length 0
 Finished building graph for length 1
 Finished building graph for length 2
@@ -54,6 +54,14 @@ Finished building graph for length 18
 Finished building graph for length 19
 Finished building graph for length 20
 Finished building graph for length 21
+Finished building graph for length 22
+Finished building graph for length 23
+Finished building graph for length 24
+Finished building graph for length 25
+Finished building graph for length 26
+Finished building graph for length 27
+Finished building graph for length 28
+Finished building graph for length 29
 Finished building graph for length 0 and 1
 Finished building graph for length 1 and 2
 Finished building graph for length 2 and 3
@@ -75,8 +83,14 @@ Finished building graph for length 17 and 18
 Finished building graph for length 18 and 19
 Finished building graph for length 19 and 20
 Finished building graph for length 20 and 21
+Finished building graph for length 21 and 22
+Finished building graph for length 22 and 23
+Finished building graph for length 23 and 24
+Finished building graph for length 24 and 25
+Finished building graph for length 27 and 28
+Finished building graph for length 28 and 29
 Finished building graph
-....Finished reading word list
+.....Finished reading word list
 Finished building graph for length 0
 Finished building graph for length 1
 Finished building graph for length 2
@@ -171,7 +185,7 @@ Finished building graph for length 30 and 31
 Finished building graph for length 31 and 32
 Finished building graph for length 32 and 33
 Finished building graph
-.......Finished reading word list
+........Finished reading word list
 Finished building graph for length 0
 Finished building graph for length 1
 Finished building graph for length 2
@@ -574,9 +588,9 @@ Finished building graph for length 198 and 199
 Finished building graph
 ......
 
-real	1m2.670s
-user	1m30.260s
-sys	0m1.236s
+real	1m4.753s
+user	1m25.620s
+sys	0m1.120s
 ====== 000_case =========
 wrong answer 1st lines differ - expected: 'cobre cobra', found: ''
 Resposta Errada
@@ -590,52 +604,52 @@ Resposta Errada
 wrong answer 1st lines differ - expected: '1', found: ''
 Resposta Errada
 ====== 004_case =========
-wrong answer 1st lines differ - expected: '1', found: ''
-Resposta Errada
-====== 005_case =========
 wrong answer 1st lines differ - expected: 'a A', found: '10 vertices, 6 edges'
 Resposta Errada
-====== 006_case =========
+====== 005_case =========
 wrong answer 1st lines differ - expected: '1', found: ''
+Resposta Errada
+====== 006_case =========
+wrong answer 1st lines differ - expected: '0', found: ''
 Resposta Errada
 ====== 007_case =========
-wrong answer 1st lines differ - expected: '1', found: ''
+wrong answer 1st lines differ - expected: 'a A', found: '50000 vertices, 46317 edges'
 Resposta Errada
 ====== 008_case =========
-wrong answer 1st lines differ - expected: '0', found: ''
+wrong answer 1st lines differ - expected: '1474', found: ''
 Resposta Errada
 ====== 009_case =========
-wrong answer 1st lines differ - expected: 'a A', found: '10000 vertices, 7530 edges'
+wrong answer 1st lines differ - expected: '235229', found: ''
 Resposta Errada
 ====== 010_case =========
-wrong answer 1st lines differ - expected: '1', found: ''
+wrong answer 1st lines differ - expected: '84', found: ''
 Resposta Errada
 ====== 011_case =========
-wrong answer 1st lines differ - expected: '0', found: ''
+wrong answer 1st lines differ - expected: '240', found: ''
 Resposta Errada
 ====== 012_case =========
-wrong answer 1st lines differ - expected: '1', found: ''
-Resposta Errada
-====== 013_case =========
 wrong answer 1st lines differ - expected: 'a A', found: '645288 vertices, 868384 edges'
 Resposta Errada
-====== 014_case =========
-wrong answer 1st lines differ - expected: '114495854014092500', found: ''
-Resposta Errada
-====== 015_case =========
+====== 013_case =========
 wrong answer 1st lines differ - expected: '1', found: ''
 Resposta Errada
-====== 016_case =========
+====== 014_case =========
 wrong answer 1st lines differ - expected: '6', found: ''
 Resposta Errada
-====== 017_case =========
+====== 015_case =========
 wrong answer 1st lines differ - expected: '1964', found: ''
 Resposta Errada
-====== 018_case =========
+====== 016_case =========
 wrong answer 1st lines differ - expected: '398394', found: ''
 Resposta Errada
-====== 019_case =========
+====== 017_case =========
 wrong answer 1st lines differ - expected: '1398768', found: ''
+Resposta Errada
+====== 018_case =========
+wrong answer 1st lines differ - expected: '923340550', found: ''
+Resposta Errada
+====== 019_case =========
+wrong answer 1st lines differ - expected: '114495854014092500', found: ''
 Resposta Errada
 ====== 020_case =========
 wrong answer 1st lines differ - expected: 'b a', found: '5200 vertices, 9775 edges'

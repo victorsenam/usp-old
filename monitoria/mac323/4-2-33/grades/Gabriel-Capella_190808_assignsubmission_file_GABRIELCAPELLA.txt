@@ -1,21 +1,21 @@
-.....WR.RW...WR.WRRR....R.
+
+....W.RWRW.RW.WRRRRR....R.
 CORREÇÃO AUTOMÁTICA
 Quantidade de Testes | Veredito
-15 | OK
+12 | OK
 0 | Erro de Montagem (o grafo dessa query não pode ser montado)
 0 | Tempo de Execução Excedido
-4 | Resposta Errada
-7 | Erro de Execução
-
-
-make: '/home/victorsenam/dev/usp/monitoria/mac323/4-2-33/tester/checker/checker' is up to date.
-......R.R.....R..RRR....R.
+5 | Resposta Errada
+9 | Erro de Execução
 CORREÇÃO MANUAL
-Você considerou letras maiúsculas e minúsculas como iguais. Deve ter algum outro erro na montagem do grafo, também. Algo que esteja gerando um ciclo, não consegui encontrar.
+Você considerou letras maíusculas e minúsculas como iguais, além disso, deve haver algum erro na montagem do grafo que está deixando ele cíclico.
 
-real	0m32.614s
-user	0m35.947s
-sys	0m5.167s
+make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-33/tester/checker/checker' is up to date.
+......R.R..R...RRRRR....R.
+
+real	0m17.641s
+user	0m27.348s
+sys	0m1.892s
 ====== 000_case =========
 ok 6 lines
 OK
@@ -29,41 +29,39 @@ OK
 ok single line: '1'
 OK
 ====== 004_case =========
-ok single line: '1'
-OK
-====== 005_case =========
 wrong answer 1st lines differ - expected: 'a A', found: 'aa a'
 Resposta Errada
+====== 005_case =========
+ok single line: '1'
+OK
 ====== 006_case =========
 Erro de Execução
 ====== 007_case =========
-ok single line: '1'
-OK
+wrong answer 1st lines differ - expected: 'a A', found: 'aa a'
+Resposta Errada
 ====== 008_case =========
 Erro de Execução
 ====== 009_case =========
-wrong answer 1st lines differ - expected: 'a A', found: 'aa a'
+wrong answer 1st lines differ - expected: '235229', found: '9653669'
 Resposta Errada
 ====== 010_case =========
-ok single line: '1'
+ok single line: '84'
 OK
 ====== 011_case =========
-ok single line: '0'
-OK
+Erro de Execução
 ====== 012_case =========
-ok single line: '1'
-OK
-====== 013_case =========
 wrong answer 1st lines differ - expected: 'a A', found: 'aa a'
 Resposta Errada
-====== 014_case =========
-Erro de Execução
-====== 015_case =========
+====== 013_case =========
 ok single line: '1'
 OK
-====== 016_case =========
+====== 014_case =========
 wrong answer 1st lines differ - expected: '6', found: '56'
 Resposta Errada
+====== 015_case =========
+Erro de Execução
+====== 016_case =========
+Erro de Execução
 ====== 017_case =========
 Erro de Execução
 ====== 018_case =========

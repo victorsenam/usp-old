@@ -21,3 +21,15 @@ CorretorDoVictaum.java:78: error: cannot find symbol
   symbol:   class WordDAG
   location: class CorretorDoVictaum
 2 errors
+Second Compile Method
+CorretorDoVictaum.java:13: error: cannot find symbol
+        public WordDAG ex;
+               ^
+  symbol:   class WordDAG
+  location: class ArgsPasser
+CorretorDoVictaum.java:78: error: cannot find symbol
+            args.ex = new WordDAG(strings);
+                          ^
+  symbol:   class WordDAG
+  location: class CorretorDoVictaum
+2 errors

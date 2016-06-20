@@ -106,3 +106,100 @@ Digraph.java:122: error: cannot find symbol
   symbol:   class Stack
   location: class Digraph
 19 errors
+Second Compile Method
+WordDAG.java:48: error: cannot find symbol
+    IndexSET<String> words;
+    ^
+  symbol:   class IndexSET
+  location: class WordDAG
+WordDAG.java:161: error: cannot find symbol
+    private static void PreencheGraph (String[] a, IndexSET Is, Digraph G, int n, boolean pre) {
+                                                   ^
+  symbol:   class IndexSET
+  location: class WordDAG
+WordDAG.java:199: error: cannot find symbol
+    private static void PreencheGraph (String[] a, IndexSET Is, Digraph G, int n) {
+                                                   ^
+  symbol:   class IndexSET
+  location: class WordDAG
+Digraph.java:58: error: cannot find symbol
+    private Bag<Integer>[] adj;    // adj[v] = adjacency list for vertex v
+            ^
+  symbol:   class Bag
+  location: class Digraph
+WordDAG.java:60: error: cannot find symbol
+        words = new IndexSET<String>();
+                    ^
+  symbol:   class IndexSET
+  location: class WordDAG
+WordDAG.java:241: error: cannot find symbol
+        Topological T = new Topological(R);
+        ^
+  symbol:   class Topological
+  location: class WordDAG
+WordDAG.java:241: error: cannot find symbol
+        Topological T = new Topological(R);
+                            ^
+  symbol:   class Topological
+  location: class WordDAG
+WordDAG.java:242: error: cannot find symbol
+        Stack<Integer> pilha = new Stack<Integer>();
+        ^
+  symbol:   class Stack
+  location: class WordDAG
+WordDAG.java:242: error: cannot find symbol
+        Stack<Integer> pilha = new Stack<Integer>();
+                                   ^
+  symbol:   class Stack
+  location: class WordDAG
+WordDAG.java:278: error: cannot find symbol
+        IndexSET<String> aux = new IndexSET<String>();
+        ^
+  symbol:   class IndexSET
+  location: class WordDAG
+WordDAG.java:278: error: cannot find symbol
+        IndexSET<String> aux = new IndexSET<String>();
+                                   ^
+  symbol:   class IndexSET
+  location: class WordDAG
+Digraph.java:72: error: cannot find symbol
+        adj = (Bag<Integer>[]) new Bag[V];
+               ^
+  symbol:   class Bag
+  location: class Digraph
+Digraph.java:72: error: cannot find symbol
+        adj = (Bag<Integer>[]) new Bag[V];
+                                   ^
+  symbol:   class Bag
+  location: class Digraph
+Digraph.java:74: error: cannot find symbol
+            adj[v] = new Bag<Integer>();
+                         ^
+  symbol:   class Bag
+  location: class Digraph
+Digraph.java:93: error: cannot find symbol
+            adj = (Bag<Integer>[]) new Bag[V];
+                   ^
+  symbol:   class Bag
+  location: class Digraph
+Digraph.java:93: error: cannot find symbol
+            adj = (Bag<Integer>[]) new Bag[V];
+                                       ^
+  symbol:   class Bag
+  location: class Digraph
+Digraph.java:95: error: cannot find symbol
+                adj[v] = new Bag<Integer>();
+                             ^
+  symbol:   class Bag
+  location: class Digraph
+Digraph.java:122: error: cannot find symbol
+            Stack<Integer> reverse = new Stack<Integer>();
+            ^
+  symbol:   class Stack
+  location: class Digraph
+Digraph.java:122: error: cannot find symbol
+            Stack<Integer> reverse = new Stack<Integer>();
+                                         ^
+  symbol:   class Stack
+  location: class Digraph
+19 errors

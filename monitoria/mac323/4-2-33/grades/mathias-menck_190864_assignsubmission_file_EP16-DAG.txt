@@ -81,3 +81,75 @@ WordDAG.java:154: error: cannot find symbol
   symbol:   class IndexSET
   location: class WordDAG
 14 errors
+Second Compile Method
+WordDAG.java:10: error: cannot find symbol
+  Digraph Di;
+  ^
+  symbol:   class Digraph
+  location: class WordDAG
+WordDAG.java:11: error: cannot find symbol
+  RedBlackBST<String, Integer> indices;
+  ^
+  symbol:   class RedBlackBST
+  location: class WordDAG
+WordDAG.java:12: error: cannot find symbol
+  RedBlackBST<Integer, String> objetos;
+  ^
+  symbol:   class RedBlackBST
+  location: class WordDAG
+WordDAG.java:19: error: cannot find symbol
+    Di = new Digraph(N);
+             ^
+  symbol:   class Digraph
+  location: class WordDAG
+WordDAG.java:20: error: cannot find symbol
+    indices = new RedBlackBST<String, Integer>();
+                  ^
+  symbol:   class RedBlackBST
+  location: class WordDAG
+WordDAG.java:21: error: cannot find symbol
+    objetos = new RedBlackBST<Integer, String>();
+                  ^
+  symbol:   class RedBlackBST
+  location: class WordDAG
+WordDAG.java:106: error: cannot find symbol
+    Stack<Integer> indice = new Stack<Integer>();
+    ^
+  symbol:   class Stack
+  location: class WordDAG
+WordDAG.java:106: error: cannot find symbol
+    Stack<Integer> indice = new Stack<Integer>();
+                                ^
+  symbol:   class Stack
+  location: class WordDAG
+WordDAG.java:107: error: cannot find symbol
+    Stack<Boolean> P = new Stack<Boolean>();
+    ^
+  symbol:   class Stack
+  location: class WordDAG
+WordDAG.java:107: error: cannot find symbol
+    Stack<Boolean> P = new Stack<Boolean>();
+                           ^
+  symbol:   class Stack
+  location: class WordDAG
+WordDAG.java:137: error: cannot find symbol
+    DepthFirstOrder depth = new DepthFirstOrder(Di);
+    ^
+  symbol:   class DepthFirstOrder
+  location: class WordDAG
+WordDAG.java:137: error: cannot find symbol
+    DepthFirstOrder depth = new DepthFirstOrder(Di);
+                                ^
+  symbol:   class DepthFirstOrder
+  location: class WordDAG
+WordDAG.java:154: error: cannot find symbol
+    IndexSET<String> wordsAux = new IndexSET<String>();
+    ^
+  symbol:   class IndexSET
+  location: class WordDAG
+WordDAG.java:154: error: cannot find symbol
+    IndexSET<String> wordsAux = new IndexSET<String>();
+                                    ^
+  symbol:   class IndexSET
+  location: class WordDAG
+14 errors

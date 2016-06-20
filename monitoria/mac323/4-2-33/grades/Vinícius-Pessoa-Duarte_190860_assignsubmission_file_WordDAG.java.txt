@@ -1,16 +1,85 @@
 
-COMPILATION ERROR
-
+W...W..WWT.WTMMMMMMMWRRRRR
 CORREÇÃO AUTOMÁTICA
 Quantidade de Testes | Veredito
-0 | OK
-0 | Erro de Montagem (o grafo dessa query não pode ser montado)
-0 | Tempo de Execução Excedido
-0 | Resposta Errada
-0 | Erro de Execução
+6 | OK
+7 | Erro de Montagem (o grafo dessa query não pode ser montado)
+2 | Tempo de Execução Excedido
+6 | Resposta Errada
+5 | Erro de Execução
 
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-33/tester/checker/checker' is up to date.
 LevelTraversal.java:8: error: class WordDAG is public, should be declared in a file named WordDAG.java
 public class WordDAG {
        ^
 1 error
+Second Compile Method
+.........T..TMMMMMMM.RRRRR
+
+real	3m2.354s
+user	3m57.560s
+sys	0m1.688s
+====== 000_case =========
+wrong answer 1st lines differ - expected: 'cobre cobra', found: 'cobrando cobra'
+Resposta Errada
+====== 001_case =========
+ok single line: '2'
+OK
+====== 002_case =========
+ok single line: '0'
+OK
+====== 003_case =========
+ok single line: '1'
+OK
+====== 004_case =========
+wrong answer 4th lines differ - expected: 'aaa aa', found: 'aaa a'
+Resposta Errada
+====== 005_case =========
+ok single line: '1'
+OK
+====== 006_case =========
+ok single line: '0'
+OK
+====== 007_case =========
+wrong answer 4th lines differ - expected: 'aaa aa', found: 'aaa a'
+Resposta Errada
+====== 008_case =========
+wrong answer 1st lines differ - expected: '1474', found: '2270'
+Resposta Errada
+====== 009_case =========
+Tempo Excedido
+====== 010_case =========
+ok single line: '84'
+OK
+====== 011_case =========
+wrong answer 1st lines differ - expected: '240', found: '408'
+Resposta Errada
+====== 012_case =========
+Tempo Excedido
+====== 013_case =========
+Tempo de Montagem Excedido
+====== 014_case =========
+Tempo de Montagem Excedido
+====== 015_case =========
+Tempo de Montagem Excedido
+====== 016_case =========
+Tempo de Montagem Excedido
+====== 017_case =========
+Tempo de Montagem Excedido
+====== 018_case =========
+Tempo de Montagem Excedido
+====== 019_case =========
+Tempo de Montagem Excedido
+====== 020_case =========
+wrong answer 1st lines differ - expected: 'b a', found: 'A a'
+Resposta Errada
+====== 021_case =========
+Erro de Execução
+====== 022_case =========
+Erro de Execução
+====== 023_case =========
+Erro de Execução
+====== 024_case =========
+Erro de Execução
+====== 025_case =========
+Erro de Execução

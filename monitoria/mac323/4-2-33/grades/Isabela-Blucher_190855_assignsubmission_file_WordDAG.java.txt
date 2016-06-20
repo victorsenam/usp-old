@@ -44,3 +44,35 @@ LevelTraversal.java:44: error: cannot find symbol
   symbol:   class Digraph
   location: class WordDAG
 7 errors
+Second Compile Method
+WordDAG.java:13: error: cannot find symbol
+	Digraph G;
+	^
+  symbol:   class Digraph
+  location: class WordDAG
+WordDAG.java:14: error: cannot find symbol
+	IndexSET<String> set;
+	^
+  symbol:   class IndexSET
+  location: class WordDAG
+CorretorDoVictaum.java:85: error: cannot find symbol
+            args.ex.PrintDag();
+                   ^
+  symbol:   method PrintDag()
+  location: variable ex of type WordDAG
+CorretorDoVictaum.java:97: error: cannot find symbol
+            args.ex.PrintPathCount(args.a, args.b);
+                   ^
+  symbol:   method PrintPathCount(String,String)
+  location: variable ex of type WordDAG
+WordDAG.java:29: error: cannot find symbol
+		set = new IndexSET<String>();
+		          ^
+  symbol:   class IndexSET
+  location: class WordDAG
+WordDAG.java:44: error: cannot find symbol
+		G = new Digraph (strings.length);
+		        ^
+  symbol:   class Digraph
+  location: class WordDAG
+6 errors

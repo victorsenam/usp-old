@@ -21,3 +21,15 @@ CorretorDoVictaum.java:97: error: cannot find symbol
   symbol:   method PrintPathCount(String,String)
   location: variable ex of type WordDAG
 2 errors
+Second Compile Method
+CorretorDoVictaum.java:85: error: cannot find symbol
+            args.ex.PrintDag();
+                   ^
+  symbol:   method PrintDag()
+  location: variable ex of type WordDAG
+CorretorDoVictaum.java:97: error: cannot find symbol
+            args.ex.PrintPathCount(args.a, args.b);
+                   ^
+  symbol:   method PrintPathCount(String,String)
+  location: variable ex of type WordDAG
+2 errors

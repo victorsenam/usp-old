@@ -31,3 +31,25 @@ WordDAG.java:23: error: cannot find symbol
   symbol:   class Digraph
   location: class WordDAG
 4 errors
+Second Compile Method
+WordDAG.java:2: error: cannot find symbol
+    IndexSET<String> words;
+    ^
+  symbol:   class IndexSET
+  location: class WordDAG
+WordDAG.java:3: error: cannot find symbol
+    Digraph G;
+    ^
+  symbol:   class Digraph
+  location: class WordDAG
+WordDAG.java:22: error: cannot find symbol
+        words = new IndexSET<String>();
+                    ^
+  symbol:   class IndexSET
+  location: class WordDAG
+WordDAG.java:23: error: cannot find symbol
+        G = new Digraph(strings.length);
+                ^
+  symbol:   class Digraph
+  location: class WordDAG
+4 errors

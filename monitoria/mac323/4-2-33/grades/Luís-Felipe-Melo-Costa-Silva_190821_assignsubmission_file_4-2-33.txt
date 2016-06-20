@@ -18,3 +18,12 @@ CorretorDoVictaum.java:85: error: cannot find symbol
 Note: Digraph.java uses unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
 1 error
+Second Compile Method
+CorretorDoVictaum.java:85: error: cannot find symbol
+            args.ex.PrintDag();
+                   ^
+  symbol:   method PrintDag()
+  location: variable ex of type WordDAG
+Note: Digraph.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error

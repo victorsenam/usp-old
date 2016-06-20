@@ -1,21 +1,21 @@
 
-.....WWW.W...WW.TTTT.TTTTT
+....WW.WWTWWTMMMMMMM.TTTTT
 CORREÇÃO AUTOMÁTICA
 Quantidade de Testes | Veredito
-11 | OK
-0 | Erro de Montagem (o grafo dessa query não pode ser montado)
-9 | Tempo de Execução Excedido
+6 | OK
+7 | Erro de Montagem (o grafo dessa query não pode ser montado)
+7 | Tempo de Execução Excedido
 6 | Resposta Errada
 0 | Erro de Execução
 
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-33/tester/checker/checker' is up to date.
 Note: Digraph.java uses unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
-................TTTT.TTTTT
+.........T..TMMMMMMM.TTTTT
 
-real	3m25.843s
-user	9m44.708s
-sys	0m3.908s
+real	2m12.467s
+user	8m53.004s
+sys	0m3.160s
 ====== 000_case =========
 ok 6 lines
 OK
@@ -29,49 +29,44 @@ OK
 ok single line: '1'
 OK
 ====== 004_case =========
-ok single line: '1'
-OK
-====== 005_case =========
 wrong answer 2nd lines differ - expected: 'aa a', found: 'AA A'
+Resposta Errada
+====== 005_case =========
+wrong answer 1st lines differ - expected: '1', found: '0'
 Resposta Errada
 ====== 006_case =========
-wrong answer 1st lines differ - expected: '1', found: '0'
-Resposta Errada
+ok single line: '0'
+OK
 ====== 007_case =========
-wrong answer 1st lines differ - expected: '1', found: '0'
+wrong answer 2nd lines differ - expected: 'aa a', found: 'AA A'
 Resposta Errada
 ====== 008_case =========
-ok single line: '0'
-OK
+wrong answer 1st lines differ - expected: '1474', found: '0'
+Resposta Errada
 ====== 009_case =========
-wrong answer 2nd lines differ - expected: 'aa a', found: 'AA A'
-Resposta Errada
+Tempo Excedido
 ====== 010_case =========
-ok single line: '1'
-OK
+wrong answer 1st lines differ - expected: '84', found: '0'
+Resposta Errada
 ====== 011_case =========
-ok single line: '0'
-OK
+wrong answer 1st lines differ - expected: '240', found: '0'
+Resposta Errada
 ====== 012_case =========
-ok single line: '1'
-OK
+Tempo Excedido
 ====== 013_case =========
-wrong answer 2nd lines differ - expected: 'aa a', found: 'AA A'
-Resposta Errada
+Tempo de Montagem Excedido
 ====== 014_case =========
-wrong answer 1st lines differ - expected: '114495854014092500', found: '0'
-Resposta Errada
+Tempo de Montagem Excedido
 ====== 015_case =========
-ok single line: '1'
-OK
+Tempo de Montagem Excedido
 ====== 016_case =========
-Tempo Excedido
+Tempo de Montagem Excedido
 ====== 017_case =========
-Tempo Excedido
+Tempo de Montagem Excedido
 ====== 018_case =========
-Tempo Excedido
+Tempo de Montagem Excedido
 ====== 019_case =========
-Tempo Excedido
+Tempo de Montagem Excedido
 ====== 020_case =========
 ok 70174 lines
 OK
