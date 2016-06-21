@@ -1,24 +1,4 @@
-26
-mount ../../tester/input/small.txt 8
-count cobro cobra
-count sobrando cobrou
-count sobrar cobra
-mount ../../tester/input/normal.txt 10
-count aaa aa
-count aaa AAA
-mount ../../tester/input/normal.txt 50000
-count aleut Aia
-count antu alb
-count barns barde
-count awaked AUC
-mount ../../tester/input/normal.txt 645288
-count zymomes zymome
-count aals aa
-count Zend PST
-count dirk NWT
-count vizzy Gigli
-count chintze BSc
-count ZZZ A
+6
 mount ../../tester/input/bonus.txt 5200
 count zzzzzzzz a
 count zzzzzzzzzzzzzzzzzzh zzzzzzzzzzzzzd

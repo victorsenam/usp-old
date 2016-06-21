@@ -1,0 +1,4 @@
+3
+mount ../../tester/input/normal.txt 10
+count aaa aa
+count aaa AAA
