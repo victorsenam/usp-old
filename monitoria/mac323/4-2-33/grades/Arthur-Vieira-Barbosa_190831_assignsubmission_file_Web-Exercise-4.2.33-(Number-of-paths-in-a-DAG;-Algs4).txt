@@ -8,6 +8,7 @@ Quantidade de Testes | Veredito
 0 | Tempo de Execução Excedido
 0 | Resposta Errada
 0 | Erro de Execução
+Existem 26 testes, se a soma não der 26 quer dizer que houve alguma falha especial em algum teste que não foi identificada pelo corretor
 
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-33/tester/checker/checker' is up to date.
 WordDAG.java:167: error: reached end of file while parsing

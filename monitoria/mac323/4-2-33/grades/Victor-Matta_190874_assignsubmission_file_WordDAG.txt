@@ -8,6 +8,7 @@ Quantidade de Testes | Veredito
 0 | Tempo de Execução Excedido
 0 | Resposta Errada
 0 | Erro de Execução
+Existem 26 testes, se a soma não der 26 quer dizer que houve alguma falha especial em algum teste que não foi identificada pelo corretor
 
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-33/tester/checker/checker' is up to date.
 WordDAG.java:2: error: cannot find symbol
@@ -30,6 +31,8 @@ WordDAG.java:23: error: cannot find symbol
                 ^
   symbol:   class Digraph
   location: class WordDAG
+Note: CorretorDoVictaum.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
 4 errors
 Second Compile Method
 WordDAG.java:2: error: cannot find symbol
@@ -52,4 +55,6 @@ WordDAG.java:23: error: cannot find symbol
                 ^
   symbol:   class Digraph
   location: class WordDAG
+Note: CorretorDoVictaum.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
 4 errors

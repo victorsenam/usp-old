@@ -1,64 +1,115 @@
 
-.WWTTTTTMMMMMMMWTTTTT
+...TTTTWMMMMMMM.TTTTT
 CORREÇÃO AUTOMÁTICA
 Quantidade de Testes | Veredito
-1 | OK
+4 | OK
 7 | Erro de Montagem (o grafo dessa query não pode ser montado)
-10 | Tempo de Execução Excedido
-3 | Resposta Errada
+9 | Tempo de Execução Excedido
+1 | Resposta Errada
 0 | Erro de Execução
+Existem 26 testes, se a soma não der 26 quer dizer que houve alguma falha especial em algum teste que não foi identificada pelo corretor
 CORREÇÃO MANUAL
 [-5] : Não se esqueça de imprimir quebras de linha
 
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-33/tester/checker/checker' is up to date.
-........TTTTTMMMMMMM.TTTTT
+Note: CorretorDoVictaum.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+....
 
-real	2m28.223s
-user	9m13.168s
-sys	0m1.224s
+real	0m0.261s
+user	0m0.300s
+sys	0m0.024s
+...
+
+real	0m0.239s
+user	0m0.272s
+sys	0m0.044s
+.TTTT
+
+real	0m42.433s
+user	1m2.224s
+sys	0m0.284s
+TMException in thread "Thread-1" java.lang.IllegalMonitorStateException
+	at java.util.concurrent.locks.ReentrantLock$Sync.tryRelease(ReentrantLock.java:151)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.release(AbstractQueuedSynchronizer.java:1261)
+	at java.util.concurrent.locks.ReentrantLock.unlock(ReentrantLock.java:457)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:449)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Exception in thread "Thread-3" Mjava.lang.IllegalMonitorStateException
+	at java.util.concurrent.locks.ReentrantLock$Sync.tryRelease(ReentrantLock.java:151)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.release(AbstractQueuedSynchronizer.java:1261)
+	at java.util.concurrent.locks.ReentrantLock.unlock(ReentrantLock.java:457)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:449)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+MException in thread "Thread-5" java.lang.IllegalMonitorStateException
+	at java.util.concurrent.locks.ReentrantLock$Sync.tryRelease(ReentrantLock.java:151)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.release(AbstractQueuedSynchronizer.java:1261)
+	at java.util.concurrent.locks.ReentrantLock.unlock(ReentrantLock.java:457)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:449)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+MMMM
+
+real	1m30.290s
+user	1m33.836s
+sys	0m0.740s
+.TTTTT
+
+real	0m17.913s
+user	0m48.588s
+sys	0m0.364s
 ====== 000_case =========
 ok 6 lines
 OK
-====== 001_case =========
-wrong answer 1st lines differ - expected: '2', found: '0----------'
+====== 100_case =========
+ok 10 lines
+OK
+====== 200_case =========
+ok 40665 lines
+OK
+====== 201_case =========
+Tempo Excedido
+====== 202_case =========
+Tempo Excedido
+====== 203_case =========
+Tempo Excedido
+====== 204_case =========
+Tempo Excedido
+====== 300_case =========
+wrong answer 1st lines differ - expected: 'a A', found: ''
 Resposta Errada
-====== 002_case =========
-wrong answer 1st lines differ - expected: '0', found: '0----------'
-Resposta Errada
-====== 003_case =========
-Tempo Excedido
-====== 004_case =========
-Tempo Excedido
-====== 005_case =========
-Tempo Excedido
-====== 006_case =========
-Tempo Excedido
-====== 007_case =========
-Tempo Excedido
-====== 008_case =========
+====== 301_case =========
 Tempo de Montagem Excedido
-====== 009_case =========
+====== 302_case =========
 Tempo de Montagem Excedido
-====== 010_case =========
+====== 303_case =========
 Tempo de Montagem Excedido
-====== 011_case =========
+====== 304_case =========
 Tempo de Montagem Excedido
-====== 012_case =========
+====== 305_case =========
 Tempo de Montagem Excedido
-====== 013_case =========
+====== 306_case =========
 Tempo de Montagem Excedido
-====== 014_case =========
+====== 307_case =========
 Tempo de Montagem Excedido
-====== 015_case =========
-wrong answer 1st lines differ - expected: '1964', found: 'b a'
-Resposta Errada
-====== 016_case =========
+====== 400_case =========
+ok 70173 lines
+OK
+====== 401_case =========
 Tempo Excedido
-====== 017_case =========
+====== 402_case =========
 Tempo Excedido
-====== 018_case =========
+====== 403_case =========
 Tempo Excedido
-====== 019_case =========
+====== 404_case =========
 Tempo Excedido
-====== 020_case =========
+====== 405_case =========
 Tempo Excedido

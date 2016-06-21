@@ -6,8 +6,6 @@ import java.io.*;
 import java.nio.file.*;
 
 public class CorretorDoVictaum {
-    public static Thread innerThread;
-
     private static class ArgsPasser {
         public int siz;
         public String a, b;
@@ -31,14 +29,7 @@ public class CorretorDoVictaum {
         args.exOut = new Out("saida.txt");
         
         Callable<Throwable> task = ()-> (Throwable)runner.apply(args);
-
-        class MyThreadFact implements ThreadFactory {
-           public Thread newThread(Runnable r) {
-                innerThread = new Thread(r);
-                return innerThread;
-           }
-        }
-        ExecutorService executor = Executors.newFixedThreadPool(1, new MyThreadFact());
+        ExecutorService executor = Executors.newFixedThreadPool(1);
         Future<Throwable> future = executor.submit(task);
 
         try {
@@ -50,13 +41,10 @@ public class CorretorDoVictaum {
             }
             System.err.print(".");
         } catch (UnsupportedOperationException e) {
-            innerThread.stop();
-            args.exOut.println("TEMPO DE MONTAGEM EXCEDIDO");
+            args.exOut.println("FALHA NA MONTAGEM");
             System.err.print("M");
         } catch (TimeoutException e) {
             args.exOut.println("TEMPO DE EXECUCAO EXCEDIDO");
-            future.cancel(true);
-            executor.shutdownNow();
             System.err.print("T");
         } catch (Throwable e) {
             args.exOut.println("ERRO DE EXECUCAO");

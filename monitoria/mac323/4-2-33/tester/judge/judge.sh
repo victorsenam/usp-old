@@ -11,6 +11,9 @@ LOG="judge.log"
 RES="judge.out"
 OUT="judge_output/"
 TMPOUT="judge_output.txt"
+#ARGS=""
+ARGS="-cp .:algs4.jar:stdlib.jar"
+#ARGS="-cp .:algs4.jar:stdlib.jar -agentlib:jdwp=transport=dt_socket,address=8000,server=y,suspend=n"
 
 # parameters
 if [[ $# -eq 0 ]];
@@ -43,10 +46,10 @@ make ${DIR}tester/checker/checker &>> $LOG
 cp -n ${DIR}tester/standart/* . &>> $LOG
 cp -n ${DIR}tester/judge/.gitignore . &>> $LOG
 rm *.class
-javac -cp .:algs4.jar:stdlib.jar *.java &>> $LOG
+javac $ARGS *.java &>> $LOG
 
 toexec=failed
-if [ -a CorretorDoVictaum.class ];
+if [[ -f CorretorDoVictaum.class && -f WordDAG.java ]];
 then
     toexec=CorretorDoVictaum
 fi
@@ -54,28 +57,28 @@ fi
 # second compile method
 if [ $toexec == failed ];
 then
-    echo "Second Compile Method" &>> $LOG
+    echo "=========== TENTANDO COMPILAR DE NOVO (LevelTraversal.java -> WordDAG.java) =============" &>> $LOG
 
     rm *.class
     mv LevelTraversal.java WordDAG.java
-    javac -cp .:algs4.jar:stdlib.jar *.java &>> $LOG
+    javac $ARGS *.java &>> $LOG
     
-    if [ -a CorretorDoVictaum.class ];
+    if [[ -f CorretorDoVictaum.class && -f WordDAG.java ]];
     then
         toexec=CorretorDoVictaum
     fi
 fi
 
-# if [ $toexec == failed ];
-if [ "lalal" == "oasda" ];
+# third compile method
+if [ $toexec == failed ];
 then
-    echo "Second Compile Method" &>> $LOG
+    echo "=========== TENTANDO COMPILAR DE NOVO (imports no começo do código) ==============" &>> $LOG
 
     rm *.class
     echo -e "import edu.princeton.cs.algs4.*;\nimport java.util.*;\n$(cat WordDAG.java)" > WordDAG.java
-    javac -cp .:algs4.jar:stdlib.jar *.java &>> $LOG
+    javac $ARGS *.java &>> $LOG
     
-    if [ -a CorretorDoVictaum.class ];
+    if [[ -f CorretorDoVictaum.class && -f WordDAG.java ]];
     then
         toexec=CorretorDoVictaum
     fi
@@ -87,8 +90,7 @@ then
     
     for testpath in $(find $cases/*);
     do
-        #(time java -agentlib:jdwp=transport=dt_socket,address=8000,server=y,suspend=n -cp .:algs4.jar:stdlib.jar $toexec < $testpath 2>>$LOG | tee $TMPOUT) 2>> $LOG
-        (time timeout --signal=SIGKILL 180s java -cp .:algs4.jar:stdlib.jar $toexec < $testpath 2>>$LOG > $TMPOUT) 2>> $LOG
+        (time timeout --signal=SIGKILL 180s java $ARGS $toexec < $testpath 2>>$LOG > $TMPOUT) 2>> $LOG
         run_status=$?
 
         lines_read=-1

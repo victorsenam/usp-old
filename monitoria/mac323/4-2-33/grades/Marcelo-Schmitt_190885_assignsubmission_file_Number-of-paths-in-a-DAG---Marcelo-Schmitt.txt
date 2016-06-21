@@ -7,8 +7,11 @@ Quantidade de Testes | Veredito
 0 | Tempo de Execução Excedido
 26 | Resposta Errada
 0 | Erro de Execução
+Existem 26 testes, se a soma não der 26 quer dizer que houve alguma falha especial em algum teste que não foi identificada pelo corretor
 
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-33/tester/checker/checker' is up to date.
+Note: CorretorDoVictaum.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
 Finished reading word list
 Finished building graph for length 0
 Finished building graph for length 1
@@ -20,7 +23,12 @@ Finished building graph for length 6
 Finished building graph for length 7
 Finished building graph for length 4 and 5
 Finished building graph
-....Finished reading word list
+....
+
+real	0m0.304s
+user	0m0.320s
+sys	0m0.024s
+Finished reading word list
 Finished building graph for length 0
 Finished building graph for length 1
 Finished building graph for length 2
@@ -31,7 +39,12 @@ Finished building graph for length 0 and 1
 Finished building graph for length 1 and 2
 Finished building graph for length 2 and 3
 Finished building graph
-...Finished reading word list
+...
+
+real	0m0.251s
+user	0m0.288s
+sys	0m0.052s
+Finished reading word list
 Finished building graph for length 0
 Finished building graph for length 1
 Finished building graph for length 2
@@ -90,7 +103,12 @@ Finished building graph for length 24 and 25
 Finished building graph for length 27 and 28
 Finished building graph for length 28 and 29
 Finished building graph
-.....Finished reading word list
+.....
+
+real	0m3.961s
+user	0m6.444s
+sys	0m0.296s
+Finished reading word list
 Finished building graph for length 0
 Finished building graph for length 1
 Finished building graph for length 2
@@ -185,7 +203,12 @@ Finished building graph for length 30 and 31
 Finished building graph for length 31 and 32
 Finished building graph for length 32 and 33
 Finished building graph
-........Finished reading word list
+........
+
+real	1m0.153s
+user	1m26.672s
+sys	0m1.148s
+Finished reading word list
 Finished building graph for length 0
 Finished building graph for length 1
 Finished building graph for length 2
@@ -588,9 +611,9 @@ Finished building graph for length 198 and 199
 Finished building graph
 ......
 
-real	1m4.753s
-user	1m25.620s
-sys	0m1.120s
+real	0m4.055s
+user	0m5.700s
+sys	0m0.348s
 ====== 000_case =========
 wrong answer 1st lines differ - expected: 'cobre cobra', found: ''
 Resposta Errada
@@ -603,69 +626,69 @@ Resposta Errada
 ====== 003_case =========
 wrong answer 1st lines differ - expected: '1', found: ''
 Resposta Errada
-====== 004_case =========
-wrong answer 1st lines differ - expected: 'a A', found: '10 vertices, 6 edges'
+====== 100_case =========
+wrong answer 1st lines differ - expected: 'aa a', found: ''
 Resposta Errada
-====== 005_case =========
+====== 101_case =========
 wrong answer 1st lines differ - expected: '1', found: ''
 Resposta Errada
-====== 006_case =========
+====== 102_case =========
 wrong answer 1st lines differ - expected: '0', found: ''
 Resposta Errada
-====== 007_case =========
-wrong answer 1st lines differ - expected: 'a A', found: '50000 vertices, 46317 edges'
+====== 200_case =========
+wrong answer 1st lines differ - expected: 'a A', found: ''
 Resposta Errada
-====== 008_case =========
+====== 201_case =========
 wrong answer 1st lines differ - expected: '1474', found: ''
 Resposta Errada
-====== 009_case =========
+====== 202_case =========
 wrong answer 1st lines differ - expected: '235229', found: ''
 Resposta Errada
-====== 010_case =========
+====== 203_case =========
 wrong answer 1st lines differ - expected: '84', found: ''
 Resposta Errada
-====== 011_case =========
+====== 204_case =========
 wrong answer 1st lines differ - expected: '240', found: ''
 Resposta Errada
-====== 012_case =========
-wrong answer 1st lines differ - expected: 'a A', found: '645288 vertices, 868384 edges'
+====== 300_case =========
+wrong answer 1st lines differ - expected: 'a A', found: ''
 Resposta Errada
-====== 013_case =========
+====== 301_case =========
 wrong answer 1st lines differ - expected: '1', found: ''
 Resposta Errada
-====== 014_case =========
+====== 302_case =========
 wrong answer 1st lines differ - expected: '6', found: ''
 Resposta Errada
-====== 015_case =========
+====== 303_case =========
 wrong answer 1st lines differ - expected: '1964', found: ''
 Resposta Errada
-====== 016_case =========
+====== 304_case =========
 wrong answer 1st lines differ - expected: '398394', found: ''
 Resposta Errada
-====== 017_case =========
+====== 305_case =========
 wrong answer 1st lines differ - expected: '1398768', found: ''
 Resposta Errada
-====== 018_case =========
+====== 306_case =========
 wrong answer 1st lines differ - expected: '923340550', found: ''
 Resposta Errada
-====== 019_case =========
+====== 307_case =========
 wrong answer 1st lines differ - expected: '114495854014092500', found: ''
 Resposta Errada
-====== 020_case =========
-wrong answer 1st lines differ - expected: 'b a', found: '5200 vertices, 9775 edges'
+====== 400_case =========
+wrong answer 1st lines differ - expected: 'c a', found: ''
 Resposta Errada
-====== 021_case =========
+====== 401_case =========
 wrong answer 1st lines differ - expected: '803469022129495137770981046170581301261101496891396417650688', found: ''
 Resposta Errada
-====== 022_case =========
+====== 402_case =========
 wrong answer 1st lines differ - expected: '340282366920938463463374607431768211456', found: ''
 Resposta Errada
-====== 023_case =========
+====== 403_case =========
 wrong answer 1st lines differ - expected: '452312848583266388373324160190...7600158453279131187530910662656', found: ''
 Resposta Errada
-====== 024_case =========
+====== 404_case =========
 wrong answer 1st lines differ - expected: '706233516069713018417604833508...6082073593257084545458595954688', found: ''
 Resposta Errada
-====== 025_case =========
+====== 405_case =========
 wrong answer 1st lines differ - expected: '216164294552797813644468298334...4074980640712723296570197409792', found: ''
 Resposta Errada
