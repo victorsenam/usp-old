@@ -11,6 +11,9 @@ LOG="judge.log"
 RES="judge.out"
 OUT="judge_output/"
 TMPOUT="judge_output.txt"
+ARGS="-cp .:algs4.jar:stdlib.jar"
+RARGS="-Xss 1024M"
+NAME="CoreVertices"
 
 # parameters
 if [[ $# -eq 0 ]];
@@ -37,98 +40,54 @@ r_re=0
 r_tm=0
 
 # compiling
-rm CorretorDoVictaum.java
-rm Out.java
 make ${DIR}tester/checker/checker &>> $LOG
 cp -n ${DIR}tester/standart/* . &>> $LOG
 cp -n ${DIR}tester/judge/.gitignore . &>> $LOG
 rm *.class
-javac -cp .:algs4.jar:stdlib.jar *.java &>> $LOG
+javac $ARGS *.java &>> $LOG
 
 toexec=failed
-if [ -a CoreVertices.class ];
+if [ -a $NAME.class ];
 then
-    toexec=CoreVertices
+    toexec=$NAME
 fi
 
 # second compile method
 if [ $toexec == failed ];
 then
-    echo "Second Compile Method" &>> $LOG
+    echo "=========== TENTANDO COMPILAR DE NOVO (imports no começo do código) ==============" &>> $LOG
 
     rm *.class
-    echo -e "import edu.princeton.cs.algs4.*;\nimport java.util.*;\n$(cat WordDAG.java)" > WordDAG.java
-    javac -cp .:algs4.jar:stdlib.jar *.java &>> $LOG
+    echo -e "import edu.princeton.cs.algs4.*;\nimport java.util.*;\n$(cat CoreVertices.java)" > $NAME.java
+    javac $ARGS *.java &>> $LOG
     
-    if [ -a CoreVertices.class ];
+    if [ -a $NAME.class ];
     then
-        toexec=CoreVertices
+        toexec=$NAME
     fi
 fi
 
-
 if [ $toexec != failed ];
 then
-    testpath="$cases/unique_test.in"
-    
-    #touch saida.txt
-    #chmod 777 saida.txt
-    #tail -f saida.txt > $TMPOUT 2> /dev/null &
-    (time java -cp .:algs4.jar:stdlib.jar $toexec < $testpath > $TMPOUT) 2>> $LOG
-    run_status=$?
-
-    case_num=0
-    lines_read=-1
-    case_lines=0
-
-    cat $TMPOUT | while read line
+    for testpath in $(find $cases/*);
     do
-        ((lines_read++))
-        if [[ $lines_read -le 0 ]];
-        then
-            continue
-        fi
-
-        if [[ ${line:0:1} == "-" ]]
-        then
-            curr_out=$(printf "${OUT}%03d_case.out" $case_num)
-            
-            cat $TMPOUT | head -n $lines_read | tail -n $case_lines > $curr_out
-
-            ((case_num++))
-            case_lines=-1
-            printf "."
-        fi
-        ((case_lines++))
-    done
-    printf "\n"
-
-    for casepath in $(find $OUT/*);
-    do
-        testcase=$(basename $casepath)
+        testcase=$(basename $testpath)
         testcase=${testcase%.*}
-        veredict="F"
         
-        echo "====== $testcase =========" >> $LOG
-        
-        if grep -q "TEMPO DE EXECUCAO EXCEDIDO" $casepath;
+        echo "======= $testcase ============" >> $LOG
+
+        (time timeout --kill-after=25s 20s java $RAGRS $ARGS $toexec $2 < ${testpath} > ${OUT}${testcase}.out 2>> $LOG) &>> $LOG
+        run_status=$?
+
+
+        if [ $run_status -eq 124 ]
         then
             ((r_tl++))
             echo "Tempo Excedido" >> $LOG
             veredict="T"
-        elif grep -q "TEMPO DE MONTAGEM EXCEDIDO" $casepath;
+        elif [ $run_status -eq 0 ]
         then
-            ((r_tm++))
-            echo "Tempo de Montagem Excedido" >> $LOG
-            veredict="M"
-        elif grep -q "ERRO DE EXECUCAO" $casepath;
-        then
-            ((r_re++))
-            echo "Erro de Execução" >> $LOG
-            veredict="R"
-        else
-            sort ${OUT}${testcase}.out -o ${OUT}${testcase}.out
-            checker_output=$( ${DIR}tester/checker/checker $testpath ${OUT}${testcase}.out ${DIR}tester/solution/answer/${testcase}.out 2>&1)
+            checker_output=$( ${DIR}tester/checker/checker ${testpath} ${OUT}${testcase}.out ${DIR}tester/solution/answer/${testcase}.out 2>&1)
             echo $checker_output >> $LOG
             if [[ ${checker_output:0:1} == "o" ]]
             then
@@ -140,6 +99,10 @@ then
                 echo "Resposta Errada" >> $LOG
                 veredict="W"
             fi
+        else
+            ((r_re++))
+            echo "Erro de Execução" >> $LOG
+            veredict="R"
         fi
 
         printf $veredict
@@ -155,7 +118,6 @@ printf "\n" >> $RES
 echo "CORREÇÃO AUTOMÁTICA" >> $RES
 echo "Quantidade de Testes | Veredito" >> $RES
 echo "$r_ac | OK" >> $RES
-echo "$r_tm | Erro de Montagem (o grafo dessa query não pode ser montado)" >> $RES
 echo "$r_tl | Tempo de Execução Excedido" >> $RES
 echo "$r_wa | Resposta Errada" >> $RES
 echo "$r_re | Erro de Execução" >> $RES
