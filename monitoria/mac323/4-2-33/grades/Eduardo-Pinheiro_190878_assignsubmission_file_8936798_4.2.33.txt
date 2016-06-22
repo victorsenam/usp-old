@@ -8,6 +8,10 @@ Bom, fazer uma dfs para cada vértice entre um par é quadrático, pois a quanti
 Outra observação é que somar um apenas para cada caminho não responde à pergunta, isso não conta a quantidade de caminhos entre a e b. Por exemplo, um grafo com 4 vértices, nomeados 0, 1, 2 e 3 e com as arestas {0,1}, {0,2}, {0,3}, {1,2}, {1,3} e {2,3} tem 4 caminhos entre 0 e 3 e a resposta do seu algoritmo seria 3.
 
 
+LOG DE COMPILAÇÃO E TESTE
+Existem três métodos de compilação, eles estão indicados, se um falha eu parto pro outro. Então se quiser entender o porque não compilou, verifique os 3.
+Segue também o log do corretor, pode ser interessante para descobrir a natureza de seus erros.
+
 ...W...WWWWWWWWWWWWW.WWWWW
 CORREÇÃO AUTOMÁTICA
 Quantidade de Testes | Veredito

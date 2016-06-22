@@ -2,6 +2,10 @@ CORREÇÃO MANUAL
 Seu programa funciona mal pra grafos grandes, muito cuidado com a função indexOf, ela demora tempo linear no tamanho do vetor, ou seja, tem que percorrer todas as palavras do vetor para achar a desejada
 Além disso, você colocou o nome da função errado
 
+LOG DE COMPILAÇÃO E TESTE
+Existem três métodos de compilação, eles estão indicados, se um falha eu parto pro outro. Então se quiser entender o porque não compilou, verifique os 3.
+Segue também o log do corretor, pode ser interessante para descobrir a natureza de seus erros.
+
 W...W..WWWWWWWWWWWWWWWWWWW
 CORREÇÃO AUTOMÁTICA
 Quantidade de Testes | Veredito
