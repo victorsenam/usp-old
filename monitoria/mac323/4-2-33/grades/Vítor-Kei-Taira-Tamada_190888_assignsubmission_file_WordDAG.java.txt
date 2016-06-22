@@ -8,54 +8,103 @@ Quantidade de Testes | Veredito
 0 | Tempo de Execução Excedido
 0 | Resposta Errada
 0 | Erro de Execução
+Existem 26 testes, se a soma não der 26 quer dizer que houve alguma falha especial em algum teste que não foi identificada pelo corretor
 
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-33/tester/checker/checker' is up to date.
-LevelTraversal.java:10: error: class WordDAG is public, should be declared in a file named WordDAG.java
-public class WordDAG
-       ^
-LevelTraversal.java:12: error: cannot find symbol
+WordDAG.java:12: error: cannot find symbol
   private Digraph dag;
           ^
   symbol:   class Digraph
   location: class WordDAG
-LevelTraversal.java:13: error: cannot find symbol
+WordDAG.java:13: error: cannot find symbol
   private IndexSET<String> words;
           ^
   symbol:   class IndexSET
   location: class WordDAG
-LevelTraversal.java:58: error: cannot find symbol
+WordDAG.java:58: error: cannot find symbol
     dag = new Digraph (size);
               ^
   symbol:   class Digraph
   location: class WordDAG
-LevelTraversal.java:62: error: cannot find symbol
+WordDAG.java:62: error: cannot find symbol
     words = new IndexSET<String>();
                 ^
   symbol:   class IndexSET
   location: class WordDAG
-LevelTraversal.java:63: error: cannot find symbol
+WordDAG.java:63: error: cannot find symbol
     IndexSET<String> auxWords;
     ^
   symbol:   class IndexSET
   location: class WordDAG
-LevelTraversal.java:74: error: cannot find symbol
+WordDAG.java:74: error: cannot find symbol
       auxWords = new IndexSET<String>();
                      ^
   symbol:   class IndexSET
   location: class WordDAG
-LevelTraversal.java:167: error: cannot find symbol
+WordDAG.java:167: error: cannot find symbol
     Stack<Integer> path = new Stack<Integer>();
     ^
   symbol:   class Stack
   location: class WordDAG
-LevelTraversal.java:167: error: cannot find symbol
+WordDAG.java:167: error: cannot find symbol
     Stack<Integer> path = new Stack<Integer>();
                               ^
   symbol:   class Stack
   location: class WordDAG
-LevelTraversal.java:201: error: cannot find symbol
+WordDAG.java:201: error: cannot find symbol
     Merge.sort(test);
     ^
   symbol:   variable Merge
   location: class WordDAG
-10 errors
+Note: CorretorDoVictaum.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+9 errors
+Second Compile Method
+WordDAG.java:12: error: cannot find symbol
+  private Digraph dag;
+          ^
+  symbol:   class Digraph
+  location: class WordDAG
+WordDAG.java:13: error: cannot find symbol
+  private IndexSET<String> words;
+          ^
+  symbol:   class IndexSET
+  location: class WordDAG
+WordDAG.java:58: error: cannot find symbol
+    dag = new Digraph (size);
+              ^
+  symbol:   class Digraph
+  location: class WordDAG
+WordDAG.java:62: error: cannot find symbol
+    words = new IndexSET<String>();
+                ^
+  symbol:   class IndexSET
+  location: class WordDAG
+WordDAG.java:63: error: cannot find symbol
+    IndexSET<String> auxWords;
+    ^
+  symbol:   class IndexSET
+  location: class WordDAG
+WordDAG.java:74: error: cannot find symbol
+      auxWords = new IndexSET<String>();
+                     ^
+  symbol:   class IndexSET
+  location: class WordDAG
+WordDAG.java:167: error: cannot find symbol
+    Stack<Integer> path = new Stack<Integer>();
+    ^
+  symbol:   class Stack
+  location: class WordDAG
+WordDAG.java:167: error: cannot find symbol
+    Stack<Integer> path = new Stack<Integer>();
+                              ^
+  symbol:   class Stack
+  location: class WordDAG
+WordDAG.java:201: error: cannot find symbol
+    Merge.sort(test);
+    ^
+  symbol:   variable Merge
+  location: class WordDAG
+Note: CorretorDoVictaum.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+9 errors

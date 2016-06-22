@@ -1,5 +1,5 @@
 
-.....W.......W..........R.
+....W.......W...........R.
 CORREÇÃO AUTOMÁTICA
 Quantidade de Testes | Veredito
 23 | OK
@@ -7,16 +7,37 @@ Quantidade de Testes | Veredito
 0 | Tempo de Execução Excedido
 2 | Resposta Errada
 1 | Erro de Execução
+Existem 26 testes, se a soma não der 26 quer dizer que houve alguma falha especial em algum teste que não foi identificada pelo corretor
+CORREÇÃO MANUAL
+Em alguns casos você gera arestas que não deveriam existir. Em um caso, por exemplo, você gerou a aresta AAAAAA AAAA.
 
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-33/tester/checker/checker' is up to date.
-........................R.
-CORREÇÃO MANUAL
-Em alguns casos você gera arestas que não deveriam existir, por exemplo, no log do checador é possível ver que o caso 005 gera uma aresta inválida:
-AAAAAA AAAA
+Note: Recompile with -Xlint:deprecation for details.
+....
 
-real	0m20.811s
-user	0m36.512s
-sys	0m1.852s
+real	0m0.331s
+user	0m0.316s
+sys	0m0.040s
+...
+
+real	0m0.254s
+user	0m0.300s
+sys	0m0.048s
+.....
+
+real	0m1.582s
+user	0m2.468s
+sys	0m0.224s
+........
+
+real	0m18.762s
+user	0m35.232s
+sys	0m1.804s
+....R.
+
+real	0m3.121s
+user	0m2.440s
+sys	0m0.400s
 ====== 000_case =========
 ok 6 lines
 OK
@@ -29,68 +50,68 @@ OK
 ====== 003_case =========
 ok single line: '1'
 OK
-====== 004_case =========
-ok single line: '1'
-OK
-====== 005_case =========
-wrong answer 7th lines differ - expected: 'AAAL AAA', found: 'AAAAAA AAAA'
+====== 100_case =========
+wrong answer 6th lines differ - expected: 'AAAL AAA', found: 'AAAAAA AAAA'
 Resposta Errada
-====== 006_case =========
+====== 101_case =========
 ok single line: '1'
 OK
-====== 007_case =========
-ok single line: '1'
-OK
-====== 008_case =========
+====== 102_case =========
 ok single line: '0'
 OK
-====== 009_case =========
-ok 6425 lines
+====== 200_case =========
+ok 40665 lines
 OK
-====== 010_case =========
-ok single line: '1'
+====== 201_case =========
+ok single line: '1474'
 OK
-====== 011_case =========
-ok single line: '0'
+====== 202_case =========
+ok single line: '235229'
 OK
-====== 012_case =========
-ok single line: '1'
+====== 203_case =========
+ok single line: '84'
 OK
-====== 013_case =========
-wrong answer 154357th lines differ - expected: 'diamins diamin', found: 'diaminopropyltetramethylenedia...minopropyltetramethylenediamine'
+====== 204_case =========
+ok single line: '240'
+OK
+====== 300_case =========
+wrong answer 154356th lines differ - expected: 'diamins diamin', found: 'diaminopropyltetramethylenedia...minopropyltetramethylenediamine'
 Resposta Errada
-====== 014_case =========
-ok single line: '114495854014092500'
-OK
-====== 015_case =========
+====== 301_case =========
 ok single line: '1'
 OK
-====== 016_case =========
+====== 302_case =========
 ok single line: '6'
 OK
-====== 017_case =========
+====== 303_case =========
 ok single line: '1964'
 OK
-====== 018_case =========
+====== 304_case =========
 ok single line: '398394'
 OK
-====== 019_case =========
+====== 305_case =========
 ok single line: '1398768'
 OK
-====== 020_case =========
-ok 70174 lines
+====== 306_case =========
+ok single line: '923340550'
 OK
-====== 021_case =========
+====== 307_case =========
+ok single line: '114495854014092500'
+OK
+====== 400_case =========
+ok 70173 lines
+OK
+====== 401_case =========
 ok single line: '803469022129495137770981046170581301261101496891396417650688'
 OK
-====== 022_case =========
+====== 402_case =========
 ok single line: '340282366920938463463374607431768211456'
 OK
-====== 023_case =========
+====== 403_case =========
 ok single line: '452312848583266388373324160190...7600158453279131187530910662656'
 OK
-====== 024_case =========
+====== 404_case =========
 Erro de Execução
-====== 025_case =========
+====== 405_case =========
 ok single line: '216164294552797813644468298334...4074980640712723296570197409792'
 OK

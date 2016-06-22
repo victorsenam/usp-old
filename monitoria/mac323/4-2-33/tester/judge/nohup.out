@@ -1,313 +1,303 @@
 Adriano-Santin_190818_assignsubmission_file_WordDAG_Adriano/
-rm: não foi possível remover “Out.java”: Arquivo ou diretório não encontrado
+mv: impossível obter estado de “LevelTraversal.java”: Arquivo ou diretório não encontrado
 
 
-real	0m1.644s
-user	0m2.864s
-sys	0m0.108s
+real	0m2.500s
+user	0m5.528s
+sys	0m0.280s
 Andre-Nakazawa_190862_assignsubmission_file_ANDREVIC/
+..........................
+W..WW..WWW.WW.WWW.WWWWWWWW
 
-find: `judge_output//*': Arquivo ou diretório não encontrado
-
-
-real	1m1.836s
-user	1m27.800s
-sys	0m1.288s
+real	2m36.572s
+user	2m41.392s
+sys	0m19.468s
 Ângelo-Lovatto_190861_assignsubmission_file_ANGELOGR/
-rm: não foi possível remover “Out.java”: Arquivo ou diretório não encontrado
 ..........................
-WW.WWWWW.RMMMRMMMMMMRMMMMM
+WW.WWW.WMMMMWMMMMMMMWMMMMM
 
-real	2m47.080s
-user	7m45.416s
-sys	0m1.652s
+real	2m37.233s
+user	6m24.684s
+sys	0m2.832s
 Arthur-Vieira-Barbosa_190831_assignsubmission_file_Web-Exercise-4.2.33-(Number-of-paths-in-a-DAG;-Algs4)/
-rm: não foi possível remover “Out.java”: Arquivo ou diretório não encontrado
 rm: não foi possível remover “*.class”: Arquivo ou diretório não encontrado
+rm: não foi possível remover “*.class”: Arquivo ou diretório não encontrado
+mv: impossível obter estado de “LevelTraversal.java”: Arquivo ou diretório não encontrado
 
 
-real	0m0.799s
-user	0m0.812s
-sys	0m0.072s
+real	0m1.210s
+user	0m1.736s
+sys	0m0.160s
 Camila-Naomi-Kodaira_190886_assignsubmission_file_WordDAG/
-rm: não foi possível remover “Out.java”: Arquivo ou diretório não encontrado
 rm: não foi possível remover “*.class”: Arquivo ou diretório não encontrado
+rm: não foi possível remover “*.class”: Arquivo ou diretório não encontrado
+mv: impossível obter estado de “LevelTraversal.java”: Arquivo ou diretório não encontrado
 
 
-real	0m2.270s
-user	0m2.604s
-sys	0m0.196s
+real	0m2.159s
+user	0m5.680s
+sys	0m0.240s
 Carlos-Augusto-Motta-de-Lima_190837_assignsubmission_file_7991228_word_dag/
-rm: não foi possível remover “Out.java”: Arquivo ou diretório não encontrado
+..........................
+W...W..W....W......W.WWWRW
 
-find: `judge_output//*': Arquivo ou diretório não encontrado
-
-
-real	0m28.458s
-user	0m50.012s
-sys	0m0.964s
+real	1m20.836s
+user	1m27.480s
+sys	0m10.644s
 Éderson-Cássio-Lacerda-Ferreira_190846_assignsubmission_file_Number-of-paths-in-a-DAG/
-rm: não foi possível remover “Out.java”: Arquivo ou diretório não encontrado
 ..........................
-.....W.......W..........R.
+....W.......W...........R.
 
-real	1m11.831s
-user	1m17.260s
-sys	0m10.176s
+real	1m15.863s
+user	1m22.600s
+sys	0m10.772s
 Eduardo-Pinheiro_190878_assignsubmission_file_8936798_4.2.33/
-rm: não foi possível remover “Out.java”: Arquivo ou diretório não encontrado
 ..........................
-...W..W......TMMMMMM.WWWWW
+...W...WMMMMWMMMMMMM.WWWWW
 
-real	4m28.912s
-user	5m20.392s
-sys	0m4.784s
+real	4m8.292s
+user	4m27.164s
+sys	0m6.348s
 Fábio-Henrique-Tanaka_190838_assignsubmission_file_WordDAG/
-rm: não foi possível remover “Out.java”: Arquivo ou diretório não encontrado
 ..........................
-........R.....W......WWWWW
+......R............W.WWWWW
 
-real	1m28.326s
-user	1m42.276s
-sys	0m10.804s
+real	1m40.791s
+user	1m50.424s
+sys	0m11.736s
 Felipe-Caetano-Silva_190812_assignsubmission_file_TAREFA/
-rm: não foi possível remover “Out.java”: Arquivo ou diretório não encontrado
 ..........................
-WWWWW.WWW.WWWTMMMMMM.WWWWW
+WWWWWWWWWWWWWMMMMMMM.WWWWW
 
-real	3m22.764s
-user	3m19.976s
-sys	0m4.032s
+real	2m9.702s
+user	2m0.176s
+sys	0m4.596s
 Gabriel-Capella_190808_assignsubmission_file_GABRIELCAPELLA/
-rm: não foi possível remover “Out.java”: Arquivo ou diretório não encontrado
-
-find: `judge_output//*': Arquivo ou diretório não encontrado
-
-
-real	0m21.457s
-user	0m40.740s
-sys	0m1.056s
-Gabriel-de-Russo-e-Carmo_190816_assignsubmission_file_NumberOfPathsDAG/
-rm: não foi possível remover “Out.java”: Arquivo ou diretório não encontrado
-
-find: `judge_output//*': Arquivo ou diretório não encontrado
-
-
-real	0m18.537s
-user	0m33.800s
-sys	0m0.856s
-Gabriel-Kuribara-Lasso_190850_assignsubmission_file_WordDAG/
-rm: não foi possível remover “Out.java”: Arquivo ou diretório não encontrado
-rm: não foi possível remover “*.class”: Arquivo ou diretório não encontrado
-
-
-real	0m1.108s
-user	0m2.368s
-sys	0m0.132s
-Germano-Hüning-Neuenfeld_190839_assignsubmission_file_WordDAG/
-rm: não foi possível remover “Out.java”: Arquivo ou diretório não encontrado
-rm: não foi possível remover “*.class”: Arquivo ou diretório não encontrado
-
-
-real	0m1.418s
-user	0m2.308s
-sys	0m0.100s
-Gino-Chen_190822_assignsubmission_file_MEP17/
-rm: não foi possível remover “Out.java”: Arquivo ou diretório não encontrado
-.........................
-WWWWWWWWWWWWWTWTTTTWTTTTT
-
-real	1m2.021s
-user	3m22.612s
-sys	0m2.728s
-Gustavo-Henrique-Faustino-Silva_190856_assignsubmission_file_WordDAG/
-rm: não foi possível remover “Out.java”: Arquivo ou diretório não encontrado
-rm: não foi possível remover “*.class”: Arquivo ou diretório não encontrado
-
-
-real	0m1.093s
-user	0m1.928s
-sys	0m0.064s
-Isabela-Blucher_190855_assignsubmission_file_WordDAG.java/
-rm: não foi possível remover “Out.java”: Arquivo ou diretório não encontrado
-rm: não foi possível remover “*.class”: Arquivo ou diretório não encontrado
-
-
-real	0m1.221s
-user	0m2.108s
-sys	0m0.068s
-Julio-Ueda_190828_assignsubmission_file_EX4.2.33/
-rm: não foi possível remover “Out.java”: Arquivo ou diretório não encontrado
-rm: não foi possível remover “*.class”: Arquivo ou diretório não encontrado
-
-
-real	0m2.024s
-user	0m2.336s
-sys	0m0.064s
-Leonardo-Benicio_190833_assignsubmission_file_8536110-WE.4.2.33/
-rm: não foi possível remover “Out.java”: Arquivo ou diretório não encontrado
-rm: não foi possível remover “*.class”: Arquivo ou diretório não encontrado
-
-
-real	0m1.057s
-user	0m1.928s
-sys	0m0.132s
-Leonardo-C.-F.-Padilha-Aguilar_190815_assignsubmission_file_WordDAG/
-rm: não foi possível remover “Out.java”: Arquivo ou diretório não encontrado
 ..........................
-..............T.TTTT.TTTTT
+....W.RWRW.RW.WRRRRR....R.
 
-real	3m53.231s
-user	9m1.360s
-sys	0m11.116s
+real	1m23.865s
+user	1m19.192s
+sys	0m11.100s
+Gabriel-de-Russo-e-Carmo_190816_assignsubmission_file_NumberOfPathsDAG/
+..........................
+..........................
+
+real	1m17.955s
+user	1m22.608s
+sys	0m10.204s
+Gabriel-Kuribara-Lasso_190850_assignsubmission_file_WordDAG/
+rm: não foi possível remover “*.class”: Arquivo ou diretório não encontrado
+rm: não foi possível remover “*.class”: Arquivo ou diretório não encontrado
+mv: impossível obter estado de “LevelTraversal.java”: Arquivo ou diretório não encontrado
+
+
+real	0m2.131s
+user	0m4.284s
+sys	0m0.200s
+Germano-Hüning-Neuenfeld_190839_assignsubmission_file_WordDAG/
+rm: não foi possível remover “*.class”: Arquivo ou diretório não encontrado
+rm: não foi possível remover “*.class”: Arquivo ou diretório não encontrado
+mv: impossível obter estado de “LevelTraversal.java”: Arquivo ou diretório não encontrado
+
+
+real	0m1.978s
+user	0m4.504s
+sys	0m0.240s
+Gino-Chen_190822_assignsubmission_file_MEP17/
+.....................
+WWWWWTTWWWTTTTWTTTTTT
+
+real	1m13.219s
+user	2m27.512s
+sys	0m3.492s
+Gustavo-Henrique-Faustino-Silva_190856_assignsubmission_file_WordDAG/
+rm: não foi possível remover “*.class”: Arquivo ou diretório não encontrado
+rm: não foi possível remover “*.class”: Arquivo ou diretório não encontrado
+mv: impossível obter estado de “LevelTraversal.java”: Arquivo ou diretório não encontrado
+
+
+real	0m1.759s
+user	0m3.668s
+sys	0m0.200s
+Isabela-Blucher_190855_assignsubmission_file_WordDAG.java/
+rm: não foi possível remover “*.class”: Arquivo ou diretório não encontrado
+rm: não foi possível remover “*.class”: Arquivo ou diretório não encontrado
+mv: impossível obter estado de “LevelTraversal.java”: Arquivo ou diretório não encontrado
+
+
+real	0m3.496s
+user	0m4.148s
+sys	0m0.228s
+Julio-Ueda_190828_assignsubmission_file_EX4.2.33/
+rm: não foi possível remover “*.class”: Arquivo ou diretório não encontrado
+rm: não foi possível remover “*.class”: Arquivo ou diretório não encontrado
+mv: impossível obter estado de “LevelTraversal.java”: Arquivo ou diretório não encontrado
+
+
+real	0m3.127s
+user	0m4.096s
+sys	0m0.184s
+Leonardo-Benicio_190833_assignsubmission_file_8536110-WE.4.2.33/
+rm: não foi possível remover “*.class”: Arquivo ou diretório não encontrado
+rm: não foi possível remover “*.class”: Arquivo ou diretório não encontrado
+mv: impossível obter estado de “LevelTraversal.java”: Arquivo ou diretório não encontrado
+
+
+real	0m1.832s
+user	0m3.524s
+sys	0m0.224s
+Leonardo-C.-F.-Padilha-Aguilar_190815_assignsubmission_file_WordDAG/
+..........................
+........TTTTWMMMMMMM.TTTTT
+
+real	2m37.298s
+user	5m1.060s
+sys	0m6.996s
 Lucas-Moreira-Santos_190859_assignsubmission_file_Arquivo-Comprimido-2/
-rm: não foi possível remover “Out.java”: Arquivo ou diretório não encontrado
+..........................
+WW.WW..WWWWWWWWWWWWWWMMMMM
 
-find: `judge_output//*': Arquivo ou diretório não encontrado
-
-
-real	0m18.563s
-user	0m30.868s
-sys	0m1.080s
+real	0m40.210s
+user	0m57.824s
+sys	0m4.392s
 Lucas-Seiki-Oshiro_190810_assignsubmission_file_WordDAG/
-rm: não foi possível remover “Out.java”: Arquivo ou diretório não encontrado
-rm: não foi possível remover “*.class”: Arquivo ou diretório não encontrado
+..........................
+W...W..WMMMMWMMMMMMMWMMMMM
 
-
-real	0m1.163s
-user	0m2.232s
-sys	0m0.112s
+real	4m46.246s
+user	4m48.900s
+sys	0m4.160s
 Luís-Felipe-Melo-Costa-Silva_190821_assignsubmission_file_4-2-33/
+mv: impossível obter estado de “LevelTraversal.java”: Arquivo ou diretório não encontrado
 
 
-real	0m1.520s
-user	0m2.856s
-sys	0m0.124s
+real	0m3.129s
+user	0m5.688s
+sys	0m0.236s
 Luis-Gustavo-Bitencourt-Almeida_190889_assignsubmission_file_WordDAG.java/
-rm: não foi possível remover “Out.java”: Arquivo ou diretório não encontrado
-rm: não foi possível remover “*.class”: Arquivo ou diretório não encontrado
+...................
+WW.WW..WWWWWWWWWWWW
 
-
-real	0m1.164s
-user	0m2.152s
-sys	0m0.088s
+real	4m7.730s
+user	0m56.104s
+sys	0m8.420s
 Marcelo-Schmitt_190885_assignsubmission_file_Number-of-paths-in-a-DAG---Marcelo-Schmitt/
-rm: não foi possível remover “Out.java”: Arquivo ou diretório não encontrado
 ..........................
 WWWWWWWWWWWWWWWWWWWWWWWWWW
 
-real	1m5.633s
-user	1m34.012s
-sys	0m1.428s
+real	1m11.748s
+user	1m42.776s
+sys	0m2.108s
 Marcos-Kawakami_190853_assignsubmission_file_worddag/
 ..........................
 ..........................
 
-real	1m13.472s
-user	1m20.824s
-sys	0m10.860s
+real	1m18.697s
+user	1m32.296s
+sys	0m11.412s
 Marcos-Vinicius-do-Carmo-Sousa_190843_assignsubmission_file_WordDAG/
-rm: não foi possível remover “Out.java”: Arquivo ou diretório não encontrado
 ..........................
-.....WWW.W...WW.TTTT.TTTTT
+....WW.WWTWWWMMMMMMM.TTTTT
 
-real	4m9.466s
-user	10m19.176s
-sys	0m11.540s
+real	2m28.018s
+user	4m50.572s
+sys	0m7.876s
 Matheus-Oliveira_190825_assignsubmission_file_WE-4.2.33/
-rm: não foi possível remover “Out.java”: Arquivo ou diretório não encontrado
 rm: não foi possível remover “*.class”: Arquivo ou diretório não encontrado
+rm: não foi possível remover “*.class”: Arquivo ou diretório não encontrado
+mv: impossível obter estado de “LevelTraversal.java”: Arquivo ou diretório não encontrado
 
 
-real	0m1.110s
-user	0m1.992s
-sys	0m0.116s
+real	0m2.097s
+user	0m4.380s
+sys	0m0.212s
 Matheus-Tavares-Bernardino_190872_assignsubmission_file_WordDAG/
-rm: não foi possível remover “Out.java”: Arquivo ou diretório não encontrado
+.....................
+...TTTTWMMMMMMM.TTTTT
 
-find: `judge_output//*': Arquivo ou diretório não encontrado
-
-
-real	3m20.425s
-user	4m16.032s
-sys	0m0.856s
+real	2m52.514s
+user	3m40.412s
+sys	0m5.180s
 mathias-menck_190864_assignsubmission_file_EP16-DAG/
-rm: não foi possível remover “Out.java”: Arquivo ou diretório não encontrado
 rm: não foi possível remover “*.class”: Arquivo ou diretório não encontrado
+rm: não foi possível remover “*.class”: Arquivo ou diretório não encontrado
+mv: impossível obter estado de “LevelTraversal.java”: Arquivo ou diretório não encontrado
 
 
-real	0m1.259s
-user	0m2.396s
-sys	0m0.116s
+real	0m2.296s
+user	0m5.424s
+sys	0m0.324s
 Mauricio-Tavares-Ozaki_190880_assignsubmission_file_WordDAG/
-rm: não foi possível remover “Out.java”: Arquivo ou diretório não encontrado
 rm: não foi possível remover “*.class”: Arquivo ou diretório não encontrado
+rm: não foi possível remover “*.class”: Arquivo ou diretório não encontrado
+mv: impossível obter estado de “LevelTraversal.java”: Arquivo ou diretório não encontrado
 
 
-real	0m1.055s
-user	0m1.836s
-sys	0m0.076s
+real	0m2.245s
+user	0m3.748s
+sys	0m0.184s
 Patrick-Abrahão-Menani_190863_assignsubmission_file_WordDAG.java/
-rm: não foi possível remover “Out.java”: Arquivo ou diretório não encontrado
-rm: não foi possível remover “*.class”: Arquivo ou diretório não encontrado
+..........................
+WWWWWWWWWWWWWWWWWWWWWWWWWW
 
-
-real	0m1.159s
-user	0m2.292s
-sys	0m0.120s
+real	0m6.103s
+user	0m9.984s
+sys	0m0.968s
 Rodrigo-Ribeiro-Santos-de-Carvalho_190844_assignsubmission_file_DAG/
-rm: não foi possível remover “Out.java”: Arquivo ou diretório não encontrado
 rm: não foi possível remover “*.class”: Arquivo ou diretório não encontrado
+rm: não foi possível remover “*.class”: Arquivo ou diretório não encontrado
+mv: impossível obter estado de “LevelTraversal.java”: Arquivo ou diretório não encontrado
 
 
-real	0m1.056s
-user	0m2.048s
-sys	0m0.096s
+real	0m1.865s
+user	0m4.372s
+sys	0m0.228s
 Victor-Andreas-Sprengel_190836_assignsubmission_file_4.2.33/
+..........................
+WWWWWWWWWWWWWWWWWWWWWWWWWW
 
-find: `judge_output//*': Arquivo ou diretório não encontrado
-
-
-real	0m41.219s
-user	0m59.008s
-sys	0m0.924s
+real	1m33.580s
+user	1m40.264s
+sys	0m10.636s
 Victor-Colombo_190879_assignsubmission_file_WordDAG.java/
-rm: não foi possível remover “Out.java”: Arquivo ou diretório não encontrado
-.........................
-WWWWWWWWWWWWWWWWWWWWWWWWW
+..........................
+...W.W.WWWWWWWWWWWWW.WWWWW
 
-real	1m4.963s
-user	1m35.692s
-sys	0m1.388s
+real	2m25.586s
+user	2m43.972s
+sys	0m11.092s
 Victor-Matta_190874_assignsubmission_file_WordDAG/
-rm: não foi possível remover “Out.java”: Arquivo ou diretório não encontrado
 rm: não foi possível remover “*.class”: Arquivo ou diretório não encontrado
+rm: não foi possível remover “*.class”: Arquivo ou diretório não encontrado
+mv: impossível obter estado de “LevelTraversal.java”: Arquivo ou diretório não encontrado
 
 
-real	0m1.366s
-user	0m2.352s
-sys	0m0.088s
+real	0m2.585s
+user	0m4.520s
+sys	0m0.208s
 Victor-Raposo_190842_assignsubmission_file_PathsDAG/
-rm: não foi possível remover “Out.java”: Arquivo ou diretório não encontrado
 rm: não foi possível remover “*.class”: Arquivo ou diretório não encontrado
+rm: não foi possível remover “*.class”: Arquivo ou diretório não encontrado
+mv: impossível obter estado de “LevelTraversal.java”: Arquivo ou diretório não encontrado
 
 
-real	0m1.437s
-user	0m2.304s
-sys	0m0.068s
+real	0m2.728s
+user	0m4.116s
+sys	0m0.164s
 Vinícius-Pessoa-Duarte_190860_assignsubmission_file_WordDAG.java/
-rm: não foi possível remover “Out.java”: Arquivo ou diretório não encontrado
-rm: não foi possível remover “*.class”: Arquivo ou diretório não encontrado
+..........................
+W...W..WWT.WWMMMMMMMWTTTTT
 
-
-real	0m1.079s
-user	0m1.888s
-sys	0m0.088s
+real	5m19.296s
+user	5m28.632s
+sys	0m32.872s
 Vítor-Kei-Taira-Tamada_190888_assignsubmission_file_WordDAG.java/
-rm: não foi possível remover “Out.java”: Arquivo ou diretório não encontrado
 rm: não foi possível remover “*.class”: Arquivo ou diretório não encontrado
+rm: não foi possível remover “*.class”: Arquivo ou diretório não encontrado
+mv: impossível obter estado de “LevelTraversal.java”: Arquivo ou diretório não encontrado
 
 
-real	0m0.994s
-user	0m2.000s
-sys	0m0.116s
+real	0m1.832s
+user	0m4.060s
+sys	0m0.220s

@@ -8,6 +8,7 @@ Quantidade de Testes | Veredito
 0 | Tempo de Execução Excedido
 0 | Resposta Errada
 0 | Erro de Execução
+Existem 26 testes, se a soma não der 26 quer dizer que houve alguma falha especial em algum teste que não foi identificada pelo corretor
 
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-33/tester/checker/checker' is up to date.
 WordDAG.java:10: error: cannot find symbol
@@ -80,4 +81,80 @@ WordDAG.java:154: error: cannot find symbol
                                     ^
   symbol:   class IndexSET
   location: class WordDAG
+Note: CorretorDoVictaum.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+14 errors
+Second Compile Method
+WordDAG.java:10: error: cannot find symbol
+  Digraph Di;
+  ^
+  symbol:   class Digraph
+  location: class WordDAG
+WordDAG.java:11: error: cannot find symbol
+  RedBlackBST<String, Integer> indices;
+  ^
+  symbol:   class RedBlackBST
+  location: class WordDAG
+WordDAG.java:12: error: cannot find symbol
+  RedBlackBST<Integer, String> objetos;
+  ^
+  symbol:   class RedBlackBST
+  location: class WordDAG
+WordDAG.java:19: error: cannot find symbol
+    Di = new Digraph(N);
+             ^
+  symbol:   class Digraph
+  location: class WordDAG
+WordDAG.java:20: error: cannot find symbol
+    indices = new RedBlackBST<String, Integer>();
+                  ^
+  symbol:   class RedBlackBST
+  location: class WordDAG
+WordDAG.java:21: error: cannot find symbol
+    objetos = new RedBlackBST<Integer, String>();
+                  ^
+  symbol:   class RedBlackBST
+  location: class WordDAG
+WordDAG.java:106: error: cannot find symbol
+    Stack<Integer> indice = new Stack<Integer>();
+    ^
+  symbol:   class Stack
+  location: class WordDAG
+WordDAG.java:106: error: cannot find symbol
+    Stack<Integer> indice = new Stack<Integer>();
+                                ^
+  symbol:   class Stack
+  location: class WordDAG
+WordDAG.java:107: error: cannot find symbol
+    Stack<Boolean> P = new Stack<Boolean>();
+    ^
+  symbol:   class Stack
+  location: class WordDAG
+WordDAG.java:107: error: cannot find symbol
+    Stack<Boolean> P = new Stack<Boolean>();
+                           ^
+  symbol:   class Stack
+  location: class WordDAG
+WordDAG.java:137: error: cannot find symbol
+    DepthFirstOrder depth = new DepthFirstOrder(Di);
+    ^
+  symbol:   class DepthFirstOrder
+  location: class WordDAG
+WordDAG.java:137: error: cannot find symbol
+    DepthFirstOrder depth = new DepthFirstOrder(Di);
+                                ^
+  symbol:   class DepthFirstOrder
+  location: class WordDAG
+WordDAG.java:154: error: cannot find symbol
+    IndexSET<String> wordsAux = new IndexSET<String>();
+    ^
+  symbol:   class IndexSET
+  location: class WordDAG
+WordDAG.java:154: error: cannot find symbol
+    IndexSET<String> wordsAux = new IndexSET<String>();
+                                    ^
+  symbol:   class IndexSET
+  location: class WordDAG
+Note: CorretorDoVictaum.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
 14 errors

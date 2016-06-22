@@ -7,15 +7,38 @@ Quantidade de Testes | Veredito
 0 | Tempo de Execução Excedido
 0 | Resposta Errada
 0 | Erro de Execução
+Existem 26 testes, se a soma não der 26 quer dizer que houve alguma falha especial em algum teste que não foi identificada pelo corretor
 
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-33/tester/checker/checker' is up to date.
+Note: CorretorDoVictaum.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
 Note: WordDAG.java uses unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
-..........................
+....
 
-real	0m18.799s
-user	0m36.156s
-sys	0m2.172s
+real	0m0.446s
+user	0m0.292s
+sys	0m0.036s
+...
+
+real	0m0.301s
+user	0m0.272s
+sys	0m0.048s
+.....
+
+real	0m1.469s
+user	0m4.104s
+sys	0m0.320s
+........
+
+real	0m17.072s
+user	0m36.920s
+sys	0m2.136s
+......
+
+real	0m4.260s
+user	0m5.176s
+sys	0m0.744s
 ====== 000_case =========
 ok 6 lines
 OK
@@ -28,69 +51,69 @@ OK
 ====== 003_case =========
 ok single line: '1'
 OK
-====== 004_case =========
+====== 100_case =========
+ok 10 lines
+OK
+====== 101_case =========
 ok single line: '1'
 OK
-====== 005_case =========
-ok 11 lines
-OK
-====== 006_case =========
-ok single line: '1'
-OK
-====== 007_case =========
-ok single line: '1'
-OK
-====== 008_case =========
+====== 102_case =========
 ok single line: '0'
 OK
-====== 009_case =========
-ok 6425 lines
+====== 200_case =========
+ok 40665 lines
 OK
-====== 010_case =========
+====== 201_case =========
+ok single line: '1474'
+OK
+====== 202_case =========
+ok single line: '235229'
+OK
+====== 203_case =========
+ok single line: '84'
+OK
+====== 204_case =========
+ok single line: '240'
+OK
+====== 300_case =========
+ok 817245 lines
+OK
+====== 301_case =========
 ok single line: '1'
 OK
-====== 011_case =========
-ok single line: '0'
-OK
-====== 012_case =========
-ok single line: '1'
-OK
-====== 013_case =========
-ok 817246 lines
-OK
-====== 014_case =========
-ok single line: '114495854014092500'
-OK
-====== 015_case =========
-ok single line: '1'
-OK
-====== 016_case =========
+====== 302_case =========
 ok single line: '6'
 OK
-====== 017_case =========
+====== 303_case =========
 ok single line: '1964'
 OK
-====== 018_case =========
+====== 304_case =========
 ok single line: '398394'
 OK
-====== 019_case =========
+====== 305_case =========
 ok single line: '1398768'
 OK
-====== 020_case =========
-ok 70174 lines
+====== 306_case =========
+ok single line: '923340550'
 OK
-====== 021_case =========
+====== 307_case =========
+ok single line: '114495854014092500'
+OK
+====== 400_case =========
+ok 70173 lines
+OK
+====== 401_case =========
 ok single line: '803469022129495137770981046170581301261101496891396417650688'
 OK
-====== 022_case =========
+====== 402_case =========
 ok single line: '340282366920938463463374607431768211456'
 OK
-====== 023_case =========
+====== 403_case =========
 ok single line: '452312848583266388373324160190...7600158453279131187530910662656'
 OK
-====== 024_case =========
+====== 404_case =========
 ok single line: '706233516069713018417604833508...6082073593257084545458595954688'
 OK
-====== 025_case =========
+====== 405_case =========
 ok single line: '216164294552797813644468298334...4074980640712723296570197409792'
 OK

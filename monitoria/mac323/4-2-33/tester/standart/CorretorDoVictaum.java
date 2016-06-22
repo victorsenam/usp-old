@@ -6,7 +6,6 @@ import java.io.*;
 import java.nio.file.*;
 
 public class CorretorDoVictaum {
-
     private static class ArgsPasser {
         public int siz;
         public String a, b;
@@ -25,27 +24,24 @@ public class CorretorDoVictaum {
         return sw.toString();
     }
 
-    public static int test(String nome, Function<ArgsPasser, Throwable> runner, long timeout, int repetitions, ArgsPasser args, int i, boolean keeptl) {
+    public static int test(String nome, Function<ArgsPasser, Throwable> runner, long timeout, ArgsPasser args, int i, boolean keeptl) {
         String casename = String.format("%03d", i) + "_" + args.file.getFileName().toString().replace(".", "_");
         args.exOut = new Out("saida.txt");
         
         Callable<Throwable> task = ()-> (Throwable)runner.apply(args);
         ExecutorService executor = Executors.newFixedThreadPool(1);
+        Future<Throwable> future = executor.submit(task);
 
         try {
             Throwable ret = null;
-            while (repetitions > 0 && ret == null) {
-                Future<Throwable> future = executor.submit(task);
-                ret = future.get(timeout, TimeUnit.MILLISECONDS);
-                --repetitions;
-            }
+            ret = future.get(timeout, TimeUnit.MILLISECONDS);
 
             if (ret != null) {
                 throw ret;
             }
             System.err.print(".");
         } catch (UnsupportedOperationException e) {
-            args.exOut.println("TEMPO DE MONTAGEM EXCEDIDO");
+            args.exOut.println("FALHA NA MONTAGEM");
             System.err.print("M");
         } catch (TimeoutException e) {
             args.exOut.println("TEMPO DE EXECUCAO EXCEDIDO");
@@ -122,11 +118,11 @@ public class CorretorDoVictaum {
             if (command.equals("mount")) {
                 env.file = Paths.get(StdIn.readString());
                 env.siz = StdIn.readInt();
-                nota -= test("Monta o grafo num tempo razoável", CorretorDoVictaum::mountGraph, 90000, 1, env, i, true);
+                nota -= test("Monta o grafo num tempo razoável", CorretorDoVictaum::mountGraph, 90000, env, i, true);
             } else if (command.equals("count")) {
                 env.a = StdIn.readString();
                 env.b = StdIn.readString();
-                nota -= test("Conta caminho corretamente", CorretorDoVictaum::printPathCount, 3000, 1, env, i, false);
+                nota -= test("Conta caminho corretamente", CorretorDoVictaum::printPathCount, 3000, env, i, false);
             }
         }
         System.err.println("");

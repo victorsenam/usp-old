@@ -1,18 +1,141 @@
 
-
+WW.WW..WWWWWWWWWWWWWWMMMMM
 CORREÇÃO AUTOMÁTICA
 Quantidade de Testes | Veredito
-0 | OK
-0 | Erro de Montagem (o grafo dessa query não pode ser montado)
+3 | OK
+5 | Erro de Montagem (o grafo dessa query não pode ser montado)
 0 | Tempo de Execução Excedido
-0 | Resposta Errada
+18 | Resposta Errada
 0 | Erro de Execução
+Existem 26 testes, se a soma não der 26 quer dizer que houve alguma falha especial em algum teste que não foi identificada pelo corretor
 
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-33/tester/checker/checker' is up to date.
+Note: CorretorDoVictaum.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
 Note: Graph.java uses unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
-....................RMMMMM
+....
 
-real	0m17.042s
-user	0m27.932s
-sys	0m0.940s
+real	0m0.261s
+user	0m0.304s
+sys	0m0.032s
+...
+
+real	0m0.241s
+user	0m0.292s
+sys	0m0.040s
+.....
+
+real	0m1.209s
+user	0m3.084s
+sys	0m0.228s
+........
+
+real	0m21.420s
+user	0m38.884s
+sys	0m1.676s
+RMException in thread "Thread-1" java.lang.IllegalMonitorStateException
+	at java.util.concurrent.locks.ReentrantLock$Sync.tryRelease(ReentrantLock.java:151)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.release(AbstractQueuedSynchronizer.java:1261)
+	at java.util.concurrent.locks.ReentrantLock.unlock(ReentrantLock.java:457)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:449)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+MMException in thread "Thread-4" java.lang.IllegalMonitorStateException
+	at java.util.concurrent.locks.ReentrantLock$Sync.tryRelease(ReentrantLock.java:151)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.release(AbstractQueuedSynchronizer.java:1261)
+	at java.util.concurrent.locks.ReentrantLock.unlock(ReentrantLock.java:457)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:449)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+MException in thread "Thread-6" java.lang.IllegalMonitorStateException
+	at java.util.concurrent.locks.ReentrantLock$Sync.tryRelease(ReentrantLock.java:151)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.release(AbstractQueuedSynchronizer.java:1261)
+	at java.util.concurrent.locks.ReentrantLock.unlock(ReentrantLock.java:457)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:449)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+M
+
+real	0m0.367s
+user	0m0.676s
+sys	0m0.056s
+====== 000_case =========
+wrong answer 1st lines differ - expected: 'cobre cobra', found: 'cobra cobre'
+Resposta Errada
+====== 001_case =========
+wrong answer 1st lines differ - expected: '2', found: '0'
+Resposta Errada
+====== 002_case =========
+ok single line: '0'
+OK
+====== 003_case =========
+wrong answer 1st lines differ - expected: '1', found: '0'
+Resposta Errada
+====== 100_case =========
+wrong answer 2nd lines differ - expected: 'AA A', found: 'aaa aa'
+Resposta Errada
+====== 101_case =========
+ok single line: '1'
+OK
+====== 102_case =========
+ok single line: '0'
+OK
+====== 200_case =========
+wrong answer 1st lines differ - expected: 'a A', found: 'AAAA AAAL'
+Resposta Errada
+====== 201_case =========
+wrong answer 1st lines differ - expected: '1474', found: '0'
+Resposta Errada
+====== 202_case =========
+wrong answer 1st lines differ - expected: '235229', found: '0'
+Resposta Errada
+====== 203_case =========
+wrong answer 1st lines differ - expected: '84', found: '0'
+Resposta Errada
+====== 204_case =========
+wrong answer 1st lines differ - expected: '240', found: '0'
+Resposta Errada
+====== 300_case =========
+wrong answer 1st lines differ - expected: 'a A', found: 'AAAA AAAL'
+Resposta Errada
+====== 301_case =========
+wrong answer 1st lines differ - expected: '1', found: '0'
+Resposta Errada
+====== 302_case =========
+wrong answer 1st lines differ - expected: '6', found: '0'
+Resposta Errada
+====== 303_case =========
+wrong answer 1st lines differ - expected: '1964', found: '0'
+Resposta Errada
+====== 304_case =========
+wrong answer 1st lines differ - expected: '398394', found: '0'
+Resposta Errada
+====== 305_case =========
+wrong answer 1st lines differ - expected: '1398768', found: '0'
+Resposta Errada
+====== 306_case =========
+wrong answer 1st lines differ - expected: '923340550', found: '0'
+Resposta Errada
+====== 307_case =========
+wrong answer 1st lines differ - expected: '114495854014092500', found: '0'
+Resposta Errada
+====== 400_case =========
+wrong answer 1st lines differ - expected: 'c a', found: ''
+Resposta Errada
+====== 401_case =========
+Tempo de Montagem Excedido
+====== 402_case =========
+Tempo de Montagem Excedido
+====== 403_case =========
+Tempo de Montagem Excedido
+====== 404_case =========
+Tempo de Montagem Excedido
+====== 405_case =========
+Tempo de Montagem Excedido

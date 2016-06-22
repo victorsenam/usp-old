@@ -1,16 +1,158 @@
 
-COMPILATION ERROR
-
+W...W..WWT.WWMMMMMMMWTTTTT
 CORREÇÃO AUTOMÁTICA
 Quantidade de Testes | Veredito
-0 | OK
-0 | Erro de Montagem (o grafo dessa query não pode ser montado)
-0 | Tempo de Execução Excedido
-0 | Resposta Errada
+6 | OK
+7 | Erro de Montagem (o grafo dessa query não pode ser montado)
+6 | Tempo de Execução Excedido
+7 | Resposta Errada
 0 | Erro de Execução
+Existem 26 testes, se a soma não der 26 quer dizer que houve alguma falha especial em algum teste que não foi identificada pelo corretor
 
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-33/tester/checker/checker' is up to date.
-LevelTraversal.java:8: error: class WordDAG is public, should be declared in a file named WordDAG.java
-public class WordDAG {
-       ^
-1 error
+Note: CorretorDoVictaum.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+....
+
+real	0m0.961s
+user	0m0.296s
+sys	0m0.052s
+...
+
+real	0m0.307s
+user	0m0.300s
+sys	0m0.024s
+..T..
+
+real	1m28.678s
+user	1m29.532s
+sys	0m0.856s
+TMMException in thread "Thread-3" MException in thread "Thread-5" Mjava.lang.IllegalMonitorStateException
+	at java.util.concurrent.locks.ReentrantLock$Sync.tryRelease(ReentrantLock.java:151)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.release(AbstractQueuedSynchronizer.java:1261)
+	at java.util.concurrent.locks.ReentrantLock.unlock(ReentrantLock.java:457)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:449)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.IllegalMonitorStateException
+	at java.util.concurrent.locks.ReentrantLock$Sync.tryRelease(ReentrantLock.java:151)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.release(AbstractQueuedSynchronizer.java:1261)
+	at java.util.concurrent.locks.ReentrantLock.unlock(ReentrantLock.java:457)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:449)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Exception in thread "Thread-7" java.lang.IllegalMonitorStateException
+	at java.util.concurrent.locks.ReentrantLock$Sync.tryRelease(ReentrantLock.java:151)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.release(AbstractQueuedSynchronizer.java:1261)
+	at java.util.concurrent.locks.ReentrantLock.unlock(ReentrantLock.java:457)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:449)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+MException in thread "Thread-9" java.lang.IllegalMonitorStateException
+	at java.util.concurrent.locks.ReentrantLock$Sync.tryRelease(ReentrantLock.java:151)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.release(AbstractQueuedSynchronizer.java:1261)
+	at java.util.concurrent.locks.ReentrantLock.unlock(ReentrantLock.java:457)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:449)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+MException in thread "Thread-11" java.lang.IllegalMonitorStateException
+	at java.util.concurrent.locks.ReentrantLock$Sync.tryRelease(ReentrantLock.java:151)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.release(AbstractQueuedSynchronizer.java:1261)
+	at java.util.concurrent.locks.ReentrantLock.unlock(ReentrantLock.java:457)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:449)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+MException in thread "Thread-13" 
+java.lang.IllegalMonitorStateException
+	at java.util.concurrent.locks.ReentrantLock$Sync.tryRelease(ReentrantLock.java:151)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.release(AbstractQueuedSynchronizer.java:1261)
+	at java.util.concurrent.locks.ReentrantLock.unlock(ReentrantLock.java:457)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:449)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+real	1m30.309s
+user	1m36.672s
+sys	0m0.796s
+.TTTTT
+
+real	0m31.019s
+user	0m26.224s
+sys	0m1.476s
+====== 000_case =========
+wrong answer 1st lines differ - expected: 'cobre cobra', found: 'cobrando cobra'
+Resposta Errada
+====== 001_case =========
+ok single line: '2'
+OK
+====== 002_case =========
+ok single line: '0'
+OK
+====== 003_case =========
+ok single line: '1'
+OK
+====== 100_case =========
+wrong answer 3rd lines differ - expected: 'aaa aa', found: 'aaa a'
+Resposta Errada
+====== 101_case =========
+ok single line: '1'
+OK
+====== 102_case =========
+ok single line: '0'
+OK
+====== 200_case =========
+wrong answer 4th lines differ - expected: 'aaa aa', found: 'aaa a'
+Resposta Errada
+====== 201_case =========
+wrong answer 1st lines differ - expected: '1474', found: '2270'
+Resposta Errada
+====== 202_case =========
+Tempo Excedido
+====== 203_case =========
+ok single line: '84'
+OK
+====== 204_case =========
+wrong answer 1st lines differ - expected: '240', found: '408'
+Resposta Errada
+====== 300_case =========
+wrong answer 1st lines differ - expected: 'a A', found: ''
+Resposta Errada
+====== 301_case =========
+Tempo de Montagem Excedido
+====== 302_case =========
+Tempo de Montagem Excedido
+====== 303_case =========
+Tempo de Montagem Excedido
+====== 304_case =========
+Tempo de Montagem Excedido
+====== 305_case =========
+Tempo de Montagem Excedido
+====== 306_case =========
+Tempo de Montagem Excedido
+====== 307_case =========
+Tempo de Montagem Excedido
+====== 400_case =========
+wrong answer 650th lines differ - expected: 'zza zz', found: 'zza z'
+Resposta Errada
+====== 401_case =========
+Tempo Excedido
+====== 402_case =========
+Tempo Excedido
+====== 403_case =========
+Tempo Excedido
+====== 404_case =========
+Tempo Excedido
+====== 405_case =========
+Tempo Excedido

@@ -11,6 +11,9 @@ LOG="judge.log"
 RES="judge.out"
 OUT="judge_output/"
 TMPOUT="judge_output.txt"
+#ARGS=""
+ARGS="-cp .:algs4.jar:stdlib.jar"
+#ARGS="-cp .:algs4.jar:stdlib.jar -agentlib:jdwp=transport=dt_socket,address=8000,server=y,suspend=n"
 
 # parameters
 if [[ $# -eq 0 ]];
@@ -43,25 +46,39 @@ make ${DIR}tester/checker/checker &>> $LOG
 cp -n ${DIR}tester/standart/* . &>> $LOG
 cp -n ${DIR}tester/judge/.gitignore . &>> $LOG
 rm *.class
-javac -cp .:algs4.jar:stdlib.jar *.java &>> $LOG
+javac $ARGS *.java &>> $LOG
 
 toexec=failed
-if [ -a CorretorDoVictaum.class ];
+if [[ -f CorretorDoVictaum.class && -f WordDAG.java ]];
 then
     toexec=CorretorDoVictaum
 fi
 
 # second compile method
-# if [ $toexec == failed ];
-if [ "lalal" == "oasda" ];
+if [ $toexec == failed ];
 then
-    echo "Second Compile Method" &>> $LOG
+    echo "=========== TENTANDO COMPILAR DE NOVO (LevelTraversal.java -> WordDAG.java) =============" &>> $LOG
+
+    rm *.class
+    mv LevelTraversal.java WordDAG.java
+    javac $ARGS *.java &>> $LOG
+    
+    if [[ -f CorretorDoVictaum.class && -f WordDAG.java ]];
+    then
+        toexec=CorretorDoVictaum
+    fi
+fi
+
+# third compile method
+if [ $toexec == failed ];
+then
+    echo "=========== TENTANDO COMPILAR DE NOVO (imports no começo do código) ==============" &>> $LOG
 
     rm *.class
     echo -e "import edu.princeton.cs.algs4.*;\nimport java.util.*;\n$(cat WordDAG.java)" > WordDAG.java
-    javac -cp .:algs4.jar:stdlib.jar *.java &>> $LOG
+    javac $ARGS *.java &>> $LOG
     
-    if [ -a CorretorDoVictaum.class ];
+    if [[ -f CorretorDoVictaum.class && -f WordDAG.java ]];
     then
         toexec=CorretorDoVictaum
     fi
@@ -69,37 +86,39 @@ fi
 
 if [ $toexec != failed ];
 then
-    testpath="$cases/unique_test.in"
+    case_start=0
     
-    #touch saida.txt
-    #chmod 777 saida.txt
-    #tail -f saida.txt > $TMPOUT 2> /dev/null &
-    (time java -cp .:algs4.jar:stdlib.jar $toexec < $testpath > $TMPOUT) 2>> $LOG
-    run_status=$?
-
-    case_num=0
-    lines_read=-1
-    case_lines=0
-
-    cat $TMPOUT | while read line
+    for testpath in $(find $cases/*);
     do
-        ((lines_read++))
-        if [[ $lines_read -le 0 ]];
-        then
-            continue
-        fi
+        (time timeout --signal=SIGKILL 180s java $ARGS $toexec < $testpath 2>>$LOG > $TMPOUT) 2>> $LOG
+        run_status=$?
 
-        if [[ ${line:0:1} == "-" ]]
-        then
-            curr_out=$(printf "${OUT}%03d_case.out" $case_num)
-            
-            cat $TMPOUT | head -n $lines_read | tail -n $case_lines > $curr_out
+        lines_read=-1
+        case_lines=0
+        case_num=$case_start
 
-            ((case_num++))
-            case_lines=-1
-            printf "."
-        fi
-        ((case_lines++))
+        cat $TMPOUT | while read line
+        do
+            ((lines_read++))
+            if [[ $lines_read -le 0 ]];
+            then
+                continue
+            fi
+
+            if [[ ${line:0:1} == "-" ]]
+            then
+                curr_out=$(printf "${OUT}%03d_case.out" $case_num)
+                
+                cat $TMPOUT | head -n $lines_read | tail -n $case_lines > $curr_out
+
+                ((case_num++))
+                case_lines=-1
+                printf "."
+            fi
+            ((case_lines++))
+        done
+
+        case_start=$(echo "$case_start + 100" | bc)
     done
     printf "\n"
 
@@ -159,3 +178,4 @@ echo "$r_tm | Erro de Montagem (o grafo dessa query não pode ser montado)" >> $
 echo "$r_tl | Tempo de Execução Excedido" >> $RES
 echo "$r_wa | Resposta Errada" >> $RES
 echo "$r_re | Erro de Execução" >> $RES
+echo "Existem 26 testes, se a soma não der 26 quer dizer que houve alguma falha especial em algum teste que não foi identificada pelo corretor" >> $RES

@@ -1,19 +1,119 @@
 
-
+W..WW..WWW.WW.WWW.WWWWWWWW
 CORREÇÃO AUTOMÁTICA
 Quantidade de Testes | Veredito
-0 | OK
+7 | OK
 0 | Erro de Montagem (o grafo dessa query não pode ser montado)
 0 | Tempo de Execução Excedido
-0 | Resposta Errada
+19 | Resposta Errada
 0 | Erro de Execução
-[-5] Colocou os nomes das funções erradas. Não faz isso por favor :(
+Existem 26 testes, se a soma não der 26 quer dizer que houve alguma falha especial em algum teste que não foi identificada pelo corretor
 
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-33/tester/checker/checker' is up to date.
+Note: CorretorDoVictaum.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
 Note: Some input files use unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
-..........................
+....
 
-real	0m58.911s
-user	1m22.748s
-sys	0m1.096s
+real	0m0.478s
+user	0m0.348s
+sys	0m0.052s
+...
+
+real	0m0.286s
+user	0m0.312s
+sys	0m0.020s
+.....
+
+real	0m2.160s
+user	0m4.520s
+sys	0m0.300s
+........
+
+real	0m29.709s
+user	0m49.200s
+sys	0m2.184s
+......
+
+real	0m36.135s
+user	0m34.680s
+sys	0m0.980s
+====== 000_case =========
+wrong answer 4th lines differ - expected: 'cobrou cobro', found: 'cobrou cobra'
+Resposta Errada
+====== 001_case =========
+ok single line: '2'
+OK
+====== 002_case =========
+ok single line: '0'
+OK
+====== 003_case =========
+wrong answer 1st lines differ - expected: '1', found: '2'
+Resposta Errada
+====== 100_case =========
+wrong answer 2nd lines differ - expected: 'AA A', found: 'aa A'
+Resposta Errada
+====== 101_case =========
+ok single line: '1'
+OK
+====== 102_case =========
+ok single line: '0'
+OK
+====== 200_case =========
+wrong answer 3rd lines differ - expected: 'AA A', found: 'aa A'
+Resposta Errada
+====== 201_case =========
+wrong answer 1st lines differ - expected: '1474', found: '50323'
+Resposta Errada
+====== 202_case =========
+wrong answer 1st lines differ - expected: '235229', found: '326754'
+Resposta Errada
+====== 203_case =========
+ok single line: '84'
+OK
+====== 204_case =========
+wrong answer 1st lines differ - expected: '240', found: '882'
+Resposta Errada
+====== 300_case =========
+wrong answer 3rd lines differ - expected: 'AA A', found: 'aa A'
+Resposta Errada
+====== 301_case =========
+ok single line: '1'
+OK
+====== 302_case =========
+wrong answer 1st lines differ - expected: '6', found: '10'
+Resposta Errada
+====== 303_case =========
+wrong answer 1st lines differ - expected: '1964', found: '3440'
+Resposta Errada
+====== 304_case =========
+wrong answer 1st lines differ - expected: '398394', found: '757024'
+Resposta Errada
+====== 305_case =========
+ok single line: '1398768'
+OK
+====== 306_case =========
+wrong answer 1st lines differ - expected: '923340550', found: '9480310668'
+Resposta Errada
+====== 307_case =========
+wrong answer 1st lines differ - expected: '114495854014092500', found: '364163928110427992'
+Resposta Errada
+====== 400_case =========
+wrong answer 301st lines differ - expected: 'za z', found: 'za a'
+Resposta Errada
+====== 401_case =========
+wrong answer 1st lines differ - expected: '803469022129495137770981046170581301261101496891396417650688', found: '102844025637602474978791867542861337914489636859208321011286016'
+Resposta Errada
+====== 402_case =========
+wrong answer 1st lines differ - expected: '340282366920938463463374607431768211456', found: '10889035092432938021084225131867099103232'
+Resposta Errada
+====== 403_case =========
+wrong answer 1st lines differ - expected: '452312848583266388373324160190...7600158453279131187530910662656', found: '463168294833551362964335096212...5042948883252017598984217427968'
+Resposta Errada
+====== 404_case =========
+wrong answer 1st lines differ - expected: '706233516069713018417604833508...6082073593257084545458595954688', found: '567435078371694329223568787879...7270871309788755540198918455296'
+Resposta Errada
+====== 405_case =========
+wrong answer 1st lines differ - expected: '216164294552797813644468298334...4074980640712723296570197409792', found: '778813322436737986923858637937...6823063777328012209968669261824'
+Resposta Errada
