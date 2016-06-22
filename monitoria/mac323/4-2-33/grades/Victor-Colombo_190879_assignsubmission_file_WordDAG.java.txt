@@ -10,33 +10,31 @@ Quantidade de Testes | Veredito
 Existem 26 testes, se a soma não der 26 quer dizer que houve alguma falha especial em algum teste que não foi identificada pelo corretor
 
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-33/tester/checker/checker' is up to date.
-Note: CorretorDoVictaum.java uses or overrides a deprecated API.
-Note: Recompile with -Xlint:deprecation for details.
 ....
 
-real	0m0.604s
-user	0m0.288s
+real	0m0.731s
+user	0m0.284s
 sys	0m0.032s
 ...
 
-real	0m0.236s
-user	0m0.264s
-sys	0m0.048s
+real	0m0.228s
+user	0m0.292s
+sys	0m0.028s
 .....
 
-real	0m3.237s
-user	0m5.476s
-sys	0m0.424s
+real	0m3.334s
+user	0m6.440s
+sys	0m0.456s
 ........
 
-real	1m6.482s
-user	1m40.088s
-sys	0m2.028s
+real	1m9.612s
+user	1m44.080s
+sys	0m1.956s
 ......
 
-real	0m18.614s
-user	0m17.848s
-sys	0m0.548s
+real	0m17.982s
+user	0m17.584s
+sys	0m0.672s
 ====== 000_case =========
 ok 6 lines
 OK

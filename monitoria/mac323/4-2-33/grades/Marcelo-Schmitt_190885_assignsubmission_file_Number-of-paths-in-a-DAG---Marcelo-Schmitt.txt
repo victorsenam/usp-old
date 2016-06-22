@@ -1,694 +1,115 @@
 
-WWWWWWWWWWWWWWWWWWWWWWWWWW
+WW.WWW.WWWWWWWWWWWWWWWWWWW
 CORREÇÃO AUTOMÁTICA
 Quantidade de Testes | Veredito
-0 | OK
+2 | OK
 0 | Erro de Montagem (o grafo dessa query não pode ser montado)
 0 | Tempo de Execução Excedido
-26 | Resposta Errada
+24 | Resposta Errada
 0 | Erro de Execução
 Existem 26 testes, se a soma não der 26 quer dizer que houve alguma falha especial em algum teste que não foi identificada pelo corretor
 
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-33/tester/checker/checker' is up to date.
-Note: CorretorDoVictaum.java uses or overrides a deprecated API.
-Note: Recompile with -Xlint:deprecation for details.
-Finished reading word list
-Finished building graph for length 0
-Finished building graph for length 1
-Finished building graph for length 2
-Finished building graph for length 3
-Finished building graph for length 4
-Finished building graph for length 5
-Finished building graph for length 6
-Finished building graph for length 7
-Finished building graph for length 4 and 5
-Finished building graph
 ....
 
-real	0m0.304s
-user	0m0.320s
-sys	0m0.024s
-Finished reading word list
-Finished building graph for length 0
-Finished building graph for length 1
-Finished building graph for length 2
-Finished building graph for length 3
-Finished building graph for length 4
-Finished building graph for length 5
-Finished building graph for length 0 and 1
-Finished building graph for length 1 and 2
-Finished building graph for length 2 and 3
-Finished building graph
+real	0m0.312s
+user	0m0.300s
+sys	0m0.040s
 ...
 
-real	0m0.251s
-user	0m0.288s
-sys	0m0.052s
-Finished reading word list
-Finished building graph for length 0
-Finished building graph for length 1
-Finished building graph for length 2
-Finished building graph for length 3
-Finished building graph for length 4
-Finished building graph for length 5
-Finished building graph for length 6
-Finished building graph for length 7
-Finished building graph for length 8
-Finished building graph for length 9
-Finished building graph for length 10
-Finished building graph for length 11
-Finished building graph for length 12
-Finished building graph for length 13
-Finished building graph for length 14
-Finished building graph for length 15
-Finished building graph for length 16
-Finished building graph for length 17
-Finished building graph for length 18
-Finished building graph for length 19
-Finished building graph for length 20
-Finished building graph for length 21
-Finished building graph for length 22
-Finished building graph for length 23
-Finished building graph for length 24
-Finished building graph for length 25
-Finished building graph for length 26
-Finished building graph for length 27
-Finished building graph for length 28
-Finished building graph for length 29
-Finished building graph for length 0 and 1
-Finished building graph for length 1 and 2
-Finished building graph for length 2 and 3
-Finished building graph for length 3 and 4
-Finished building graph for length 4 and 5
-Finished building graph for length 5 and 6
-Finished building graph for length 6 and 7
-Finished building graph for length 7 and 8
-Finished building graph for length 8 and 9
-Finished building graph for length 9 and 10
-Finished building graph for length 10 and 11
-Finished building graph for length 11 and 12
-Finished building graph for length 12 and 13
-Finished building graph for length 13 and 14
-Finished building graph for length 14 and 15
-Finished building graph for length 15 and 16
-Finished building graph for length 16 and 17
-Finished building graph for length 17 and 18
-Finished building graph for length 18 and 19
-Finished building graph for length 19 and 20
-Finished building graph for length 20 and 21
-Finished building graph for length 21 and 22
-Finished building graph for length 22 and 23
-Finished building graph for length 23 and 24
-Finished building graph for length 24 and 25
-Finished building graph for length 27 and 28
-Finished building graph for length 28 and 29
-Finished building graph
+real	0m0.240s
+user	0m0.292s
+sys	0m0.044s
 .....
 
-real	0m3.961s
-user	0m6.444s
-sys	0m0.296s
-Finished reading word list
-Finished building graph for length 0
-Finished building graph for length 1
-Finished building graph for length 2
-Finished building graph for length 3
-Finished building graph for length 4
-Finished building graph for length 5
-Finished building graph for length 6
-Finished building graph for length 7
-Finished building graph for length 8
-Finished building graph for length 9
-Finished building graph for length 10
-Finished building graph for length 11
-Finished building graph for length 12
-Finished building graph for length 13
-Finished building graph for length 14
-Finished building graph for length 15
-Finished building graph for length 16
-Finished building graph for length 17
-Finished building graph for length 18
-Finished building graph for length 19
-Finished building graph for length 20
-Finished building graph for length 21
-Finished building graph for length 22
-Finished building graph for length 23
-Finished building graph for length 24
-Finished building graph for length 25
-Finished building graph for length 26
-Finished building graph for length 27
-Finished building graph for length 28
-Finished building graph for length 29
-Finished building graph for length 30
-Finished building graph for length 31
-Finished building graph for length 32
-Finished building graph for length 33
-Finished building graph for length 34
-Finished building graph for length 35
-Finished building graph for length 36
-Finished building graph for length 37
-Finished building graph for length 38
-Finished building graph for length 39
-Finished building graph for length 40
-Finished building graph for length 41
-Finished building graph for length 42
-Finished building graph for length 43
-Finished building graph for length 44
-Finished building graph for length 45
-Finished building graph for length 46
-Finished building graph for length 47
-Finished building graph for length 48
-Finished building graph for length 49
-Finished building graph for length 50
-Finished building graph for length 51
-Finished building graph for length 52
-Finished building graph for length 53
-Finished building graph for length 54
-Finished building graph for length 55
-Finished building graph for length 56
-Finished building graph for length 57
-Finished building graph for length 58
-Finished building graph for length 59
-Finished building graph for length 0 and 1
-Finished building graph for length 1 and 2
-Finished building graph for length 2 and 3
-Finished building graph for length 3 and 4
-Finished building graph for length 4 and 5
-Finished building graph for length 5 and 6
-Finished building graph for length 6 and 7
-Finished building graph for length 7 and 8
-Finished building graph for length 8 and 9
-Finished building graph for length 9 and 10
-Finished building graph for length 10 and 11
-Finished building graph for length 11 and 12
-Finished building graph for length 12 and 13
-Finished building graph for length 13 and 14
-Finished building graph for length 14 and 15
-Finished building graph for length 15 and 16
-Finished building graph for length 16 and 17
-Finished building graph for length 17 and 18
-Finished building graph for length 18 and 19
-Finished building graph for length 19 and 20
-Finished building graph for length 20 and 21
-Finished building graph for length 21 and 22
-Finished building graph for length 22 and 23
-Finished building graph for length 23 and 24
-Finished building graph for length 24 and 25
-Finished building graph for length 25 and 26
-Finished building graph for length 26 and 27
-Finished building graph for length 27 and 28
-Finished building graph for length 28 and 29
-Finished building graph for length 29 and 30
-Finished building graph for length 30 and 31
-Finished building graph for length 31 and 32
-Finished building graph for length 32 and 33
-Finished building graph
+real	0m2.793s
+user	0m4.456s
+sys	0m0.300s
 ........
 
-real	1m0.153s
-user	1m26.672s
-sys	0m1.148s
-Finished reading word list
-Finished building graph for length 0
-Finished building graph for length 1
-Finished building graph for length 2
-Finished building graph for length 3
-Finished building graph for length 4
-Finished building graph for length 5
-Finished building graph for length 6
-Finished building graph for length 7
-Finished building graph for length 8
-Finished building graph for length 9
-Finished building graph for length 10
-Finished building graph for length 11
-Finished building graph for length 12
-Finished building graph for length 13
-Finished building graph for length 14
-Finished building graph for length 15
-Finished building graph for length 16
-Finished building graph for length 17
-Finished building graph for length 18
-Finished building graph for length 19
-Finished building graph for length 20
-Finished building graph for length 21
-Finished building graph for length 22
-Finished building graph for length 23
-Finished building graph for length 24
-Finished building graph for length 25
-Finished building graph for length 26
-Finished building graph for length 27
-Finished building graph for length 28
-Finished building graph for length 29
-Finished building graph for length 30
-Finished building graph for length 31
-Finished building graph for length 32
-Finished building graph for length 33
-Finished building graph for length 34
-Finished building graph for length 35
-Finished building graph for length 36
-Finished building graph for length 37
-Finished building graph for length 38
-Finished building graph for length 39
-Finished building graph for length 40
-Finished building graph for length 41
-Finished building graph for length 42
-Finished building graph for length 43
-Finished building graph for length 44
-Finished building graph for length 45
-Finished building graph for length 46
-Finished building graph for length 47
-Finished building graph for length 48
-Finished building graph for length 49
-Finished building graph for length 50
-Finished building graph for length 51
-Finished building graph for length 52
-Finished building graph for length 53
-Finished building graph for length 54
-Finished building graph for length 55
-Finished building graph for length 56
-Finished building graph for length 57
-Finished building graph for length 58
-Finished building graph for length 59
-Finished building graph for length 60
-Finished building graph for length 61
-Finished building graph for length 62
-Finished building graph for length 63
-Finished building graph for length 64
-Finished building graph for length 65
-Finished building graph for length 66
-Finished building graph for length 67
-Finished building graph for length 68
-Finished building graph for length 69
-Finished building graph for length 70
-Finished building graph for length 71
-Finished building graph for length 72
-Finished building graph for length 73
-Finished building graph for length 74
-Finished building graph for length 75
-Finished building graph for length 76
-Finished building graph for length 77
-Finished building graph for length 78
-Finished building graph for length 79
-Finished building graph for length 80
-Finished building graph for length 81
-Finished building graph for length 82
-Finished building graph for length 83
-Finished building graph for length 84
-Finished building graph for length 85
-Finished building graph for length 86
-Finished building graph for length 87
-Finished building graph for length 88
-Finished building graph for length 89
-Finished building graph for length 90
-Finished building graph for length 91
-Finished building graph for length 92
-Finished building graph for length 93
-Finished building graph for length 94
-Finished building graph for length 95
-Finished building graph for length 96
-Finished building graph for length 97
-Finished building graph for length 98
-Finished building graph for length 99
-Finished building graph for length 100
-Finished building graph for length 101
-Finished building graph for length 102
-Finished building graph for length 103
-Finished building graph for length 104
-Finished building graph for length 105
-Finished building graph for length 106
-Finished building graph for length 107
-Finished building graph for length 108
-Finished building graph for length 109
-Finished building graph for length 110
-Finished building graph for length 111
-Finished building graph for length 112
-Finished building graph for length 113
-Finished building graph for length 114
-Finished building graph for length 115
-Finished building graph for length 116
-Finished building graph for length 117
-Finished building graph for length 118
-Finished building graph for length 119
-Finished building graph for length 120
-Finished building graph for length 121
-Finished building graph for length 122
-Finished building graph for length 123
-Finished building graph for length 124
-Finished building graph for length 125
-Finished building graph for length 126
-Finished building graph for length 127
-Finished building graph for length 128
-Finished building graph for length 129
-Finished building graph for length 130
-Finished building graph for length 131
-Finished building graph for length 132
-Finished building graph for length 133
-Finished building graph for length 134
-Finished building graph for length 135
-Finished building graph for length 136
-Finished building graph for length 137
-Finished building graph for length 138
-Finished building graph for length 139
-Finished building graph for length 140
-Finished building graph for length 141
-Finished building graph for length 142
-Finished building graph for length 143
-Finished building graph for length 144
-Finished building graph for length 145
-Finished building graph for length 146
-Finished building graph for length 147
-Finished building graph for length 148
-Finished building graph for length 149
-Finished building graph for length 150
-Finished building graph for length 151
-Finished building graph for length 152
-Finished building graph for length 153
-Finished building graph for length 154
-Finished building graph for length 155
-Finished building graph for length 156
-Finished building graph for length 157
-Finished building graph for length 158
-Finished building graph for length 159
-Finished building graph for length 160
-Finished building graph for length 161
-Finished building graph for length 162
-Finished building graph for length 163
-Finished building graph for length 164
-Finished building graph for length 165
-Finished building graph for length 166
-Finished building graph for length 167
-Finished building graph for length 168
-Finished building graph for length 169
-Finished building graph for length 170
-Finished building graph for length 171
-Finished building graph for length 172
-Finished building graph for length 173
-Finished building graph for length 174
-Finished building graph for length 175
-Finished building graph for length 176
-Finished building graph for length 177
-Finished building graph for length 178
-Finished building graph for length 179
-Finished building graph for length 180
-Finished building graph for length 181
-Finished building graph for length 182
-Finished building graph for length 183
-Finished building graph for length 184
-Finished building graph for length 185
-Finished building graph for length 186
-Finished building graph for length 187
-Finished building graph for length 188
-Finished building graph for length 189
-Finished building graph for length 190
-Finished building graph for length 191
-Finished building graph for length 192
-Finished building graph for length 193
-Finished building graph for length 194
-Finished building graph for length 195
-Finished building graph for length 196
-Finished building graph for length 197
-Finished building graph for length 198
-Finished building graph for length 199
-Finished building graph for length 0 and 1
-Finished building graph for length 1 and 2
-Finished building graph for length 2 and 3
-Finished building graph for length 3 and 4
-Finished building graph for length 4 and 5
-Finished building graph for length 5 and 6
-Finished building graph for length 6 and 7
-Finished building graph for length 7 and 8
-Finished building graph for length 8 and 9
-Finished building graph for length 9 and 10
-Finished building graph for length 10 and 11
-Finished building graph for length 11 and 12
-Finished building graph for length 12 and 13
-Finished building graph for length 13 and 14
-Finished building graph for length 14 and 15
-Finished building graph for length 15 and 16
-Finished building graph for length 16 and 17
-Finished building graph for length 17 and 18
-Finished building graph for length 18 and 19
-Finished building graph for length 19 and 20
-Finished building graph for length 20 and 21
-Finished building graph for length 21 and 22
-Finished building graph for length 22 and 23
-Finished building graph for length 23 and 24
-Finished building graph for length 24 and 25
-Finished building graph for length 25 and 26
-Finished building graph for length 26 and 27
-Finished building graph for length 27 and 28
-Finished building graph for length 28 and 29
-Finished building graph for length 29 and 30
-Finished building graph for length 30 and 31
-Finished building graph for length 31 and 32
-Finished building graph for length 32 and 33
-Finished building graph for length 33 and 34
-Finished building graph for length 34 and 35
-Finished building graph for length 35 and 36
-Finished building graph for length 36 and 37
-Finished building graph for length 37 and 38
-Finished building graph for length 38 and 39
-Finished building graph for length 39 and 40
-Finished building graph for length 40 and 41
-Finished building graph for length 41 and 42
-Finished building graph for length 42 and 43
-Finished building graph for length 43 and 44
-Finished building graph for length 44 and 45
-Finished building graph for length 45 and 46
-Finished building graph for length 46 and 47
-Finished building graph for length 47 and 48
-Finished building graph for length 48 and 49
-Finished building graph for length 49 and 50
-Finished building graph for length 50 and 51
-Finished building graph for length 51 and 52
-Finished building graph for length 52 and 53
-Finished building graph for length 53 and 54
-Finished building graph for length 54 and 55
-Finished building graph for length 55 and 56
-Finished building graph for length 56 and 57
-Finished building graph for length 57 and 58
-Finished building graph for length 58 and 59
-Finished building graph for length 59 and 60
-Finished building graph for length 60 and 61
-Finished building graph for length 61 and 62
-Finished building graph for length 62 and 63
-Finished building graph for length 63 and 64
-Finished building graph for length 64 and 65
-Finished building graph for length 65 and 66
-Finished building graph for length 66 and 67
-Finished building graph for length 67 and 68
-Finished building graph for length 68 and 69
-Finished building graph for length 69 and 70
-Finished building graph for length 70 and 71
-Finished building graph for length 71 and 72
-Finished building graph for length 72 and 73
-Finished building graph for length 73 and 74
-Finished building graph for length 74 and 75
-Finished building graph for length 75 and 76
-Finished building graph for length 76 and 77
-Finished building graph for length 77 and 78
-Finished building graph for length 78 and 79
-Finished building graph for length 79 and 80
-Finished building graph for length 80 and 81
-Finished building graph for length 81 and 82
-Finished building graph for length 82 and 83
-Finished building graph for length 83 and 84
-Finished building graph for length 84 and 85
-Finished building graph for length 85 and 86
-Finished building graph for length 86 and 87
-Finished building graph for length 87 and 88
-Finished building graph for length 88 and 89
-Finished building graph for length 89 and 90
-Finished building graph for length 90 and 91
-Finished building graph for length 91 and 92
-Finished building graph for length 92 and 93
-Finished building graph for length 93 and 94
-Finished building graph for length 94 and 95
-Finished building graph for length 95 and 96
-Finished building graph for length 96 and 97
-Finished building graph for length 97 and 98
-Finished building graph for length 98 and 99
-Finished building graph for length 99 and 100
-Finished building graph for length 100 and 101
-Finished building graph for length 101 and 102
-Finished building graph for length 102 and 103
-Finished building graph for length 103 and 104
-Finished building graph for length 104 and 105
-Finished building graph for length 105 and 106
-Finished building graph for length 106 and 107
-Finished building graph for length 107 and 108
-Finished building graph for length 108 and 109
-Finished building graph for length 109 and 110
-Finished building graph for length 110 and 111
-Finished building graph for length 111 and 112
-Finished building graph for length 112 and 113
-Finished building graph for length 113 and 114
-Finished building graph for length 114 and 115
-Finished building graph for length 115 and 116
-Finished building graph for length 116 and 117
-Finished building graph for length 117 and 118
-Finished building graph for length 118 and 119
-Finished building graph for length 119 and 120
-Finished building graph for length 120 and 121
-Finished building graph for length 121 and 122
-Finished building graph for length 122 and 123
-Finished building graph for length 123 and 124
-Finished building graph for length 124 and 125
-Finished building graph for length 125 and 126
-Finished building graph for length 126 and 127
-Finished building graph for length 127 and 128
-Finished building graph for length 128 and 129
-Finished building graph for length 129 and 130
-Finished building graph for length 130 and 131
-Finished building graph for length 131 and 132
-Finished building graph for length 132 and 133
-Finished building graph for length 133 and 134
-Finished building graph for length 134 and 135
-Finished building graph for length 135 and 136
-Finished building graph for length 136 and 137
-Finished building graph for length 137 and 138
-Finished building graph for length 138 and 139
-Finished building graph for length 139 and 140
-Finished building graph for length 140 and 141
-Finished building graph for length 141 and 142
-Finished building graph for length 142 and 143
-Finished building graph for length 143 and 144
-Finished building graph for length 144 and 145
-Finished building graph for length 145 and 146
-Finished building graph for length 146 and 147
-Finished building graph for length 147 and 148
-Finished building graph for length 148 and 149
-Finished building graph for length 149 and 150
-Finished building graph for length 150 and 151
-Finished building graph for length 151 and 152
-Finished building graph for length 152 and 153
-Finished building graph for length 153 and 154
-Finished building graph for length 154 and 155
-Finished building graph for length 155 and 156
-Finished building graph for length 156 and 157
-Finished building graph for length 157 and 158
-Finished building graph for length 158 and 159
-Finished building graph for length 159 and 160
-Finished building graph for length 160 and 161
-Finished building graph for length 161 and 162
-Finished building graph for length 162 and 163
-Finished building graph for length 163 and 164
-Finished building graph for length 164 and 165
-Finished building graph for length 165 and 166
-Finished building graph for length 166 and 167
-Finished building graph for length 167 and 168
-Finished building graph for length 168 and 169
-Finished building graph for length 169 and 170
-Finished building graph for length 170 and 171
-Finished building graph for length 171 and 172
-Finished building graph for length 172 and 173
-Finished building graph for length 173 and 174
-Finished building graph for length 174 and 175
-Finished building graph for length 175 and 176
-Finished building graph for length 176 and 177
-Finished building graph for length 177 and 178
-Finished building graph for length 178 and 179
-Finished building graph for length 179 and 180
-Finished building graph for length 180 and 181
-Finished building graph for length 181 and 182
-Finished building graph for length 182 and 183
-Finished building graph for length 183 and 184
-Finished building graph for length 184 and 185
-Finished building graph for length 185 and 186
-Finished building graph for length 186 and 187
-Finished building graph for length 187 and 188
-Finished building graph for length 188 and 189
-Finished building graph for length 189 and 190
-Finished building graph for length 190 and 191
-Finished building graph for length 191 and 192
-Finished building graph for length 192 and 193
-Finished building graph for length 193 and 194
-Finished building graph for length 194 and 195
-Finished building graph for length 195 and 196
-Finished building graph for length 196 and 197
-Finished building graph for length 197 and 198
-Finished building graph for length 198 and 199
-Finished building graph
+real	0m58.897s
+user	1m25.344s
+sys	0m1.968s
 ......
 
-real	0m4.055s
-user	0m5.700s
-sys	0m0.348s
+real	0m3.801s
+user	0m4.844s
+sys	0m0.304s
 ====== 000_case =========
-wrong answer 1st lines differ - expected: 'cobre cobra', found: ''
+wrong answer 3rd lines differ - expected: 'cobro cobre', found: 'cobrou cobro'
 Resposta Errada
 ====== 001_case =========
-wrong answer 1st lines differ - expected: '2', found: ''
+wrong answer 1st lines differ - expected: '2', found: '1'
 Resposta Errada
 ====== 002_case =========
-wrong answer 1st lines differ - expected: '0', found: ''
-Resposta Errada
+ok single line: '0'
+OK
 ====== 003_case =========
-wrong answer 1st lines differ - expected: '1', found: ''
+wrong answer 1st lines differ - expected: '1', found: '0'
 Resposta Errada
 ====== 100_case =========
-wrong answer 1st lines differ - expected: 'aa a', found: ''
+wrong answer 1st lines differ - expected: 'aa a', found: 'AAA AA'
 Resposta Errada
 ====== 101_case =========
-wrong answer 1st lines differ - expected: '1', found: ''
+wrong answer 1st lines differ - expected: '1', found: '0'
 Resposta Errada
 ====== 102_case =========
-wrong answer 1st lines differ - expected: '0', found: ''
-Resposta Errada
+ok single line: '0'
+OK
 ====== 200_case =========
-wrong answer 1st lines differ - expected: 'a A', found: ''
+wrong answer 1st lines differ - expected: 'a A', found: 'aa a'
 Resposta Errada
 ====== 201_case =========
-wrong answer 1st lines differ - expected: '1474', found: ''
+wrong answer 1st lines differ - expected: '1474', found: '0'
 Resposta Errada
 ====== 202_case =========
-wrong answer 1st lines differ - expected: '235229', found: ''
+wrong answer 1st lines differ - expected: '235229', found: '0'
 Resposta Errada
 ====== 203_case =========
-wrong answer 1st lines differ - expected: '84', found: ''
+wrong answer 1st lines differ - expected: '84', found: '0'
 Resposta Errada
 ====== 204_case =========
-wrong answer 1st lines differ - expected: '240', found: ''
+wrong answer 1st lines differ - expected: '240', found: '0'
 Resposta Errada
 ====== 300_case =========
-wrong answer 1st lines differ - expected: 'a A', found: ''
+wrong answer 1st lines differ - expected: 'a A', found: 'aa a'
 Resposta Errada
 ====== 301_case =========
-wrong answer 1st lines differ - expected: '1', found: ''
+wrong answer 1st lines differ - expected: '1', found: '0'
 Resposta Errada
 ====== 302_case =========
-wrong answer 1st lines differ - expected: '6', found: ''
+wrong answer 1st lines differ - expected: '6', found: '0'
 Resposta Errada
 ====== 303_case =========
-wrong answer 1st lines differ - expected: '1964', found: ''
+wrong answer 1st lines differ - expected: '1964', found: '0'
 Resposta Errada
 ====== 304_case =========
-wrong answer 1st lines differ - expected: '398394', found: ''
+wrong answer 1st lines differ - expected: '398394', found: '0'
 Resposta Errada
 ====== 305_case =========
-wrong answer 1st lines differ - expected: '1398768', found: ''
+wrong answer 1st lines differ - expected: '1398768', found: '0'
 Resposta Errada
 ====== 306_case =========
-wrong answer 1st lines differ - expected: '923340550', found: ''
+wrong answer 1st lines differ - expected: '923340550', found: '0'
 Resposta Errada
 ====== 307_case =========
-wrong answer 1st lines differ - expected: '114495854014092500', found: ''
+wrong answer 1st lines differ - expected: '114495854014092500', found: '0'
 Resposta Errada
 ====== 400_case =========
-wrong answer 1st lines differ - expected: 'c a', found: ''
+wrong answer 2nd lines differ - expected: 'c b', found: 'd a'
 Resposta Errada
 ====== 401_case =========
-wrong answer 1st lines differ - expected: '803469022129495137770981046170581301261101496891396417650688', found: ''
+wrong answer 1st lines differ - expected: '803469022129495137770981046170581301261101496891396417650688', found: '0'
 Resposta Errada
 ====== 402_case =========
-wrong answer 1st lines differ - expected: '340282366920938463463374607431768211456', found: ''
+wrong answer 1st lines differ - expected: '340282366920938463463374607431768211456', found: '0'
 Resposta Errada
 ====== 403_case =========
-wrong answer 1st lines differ - expected: '452312848583266388373324160190...7600158453279131187530910662656', found: ''
+wrong answer 1st lines differ - expected: '452312848583266388373324160190...7600158453279131187530910662656', found: '0'
 Resposta Errada
 ====== 404_case =========
-wrong answer 1st lines differ - expected: '706233516069713018417604833508...6082073593257084545458595954688', found: ''
+wrong answer 1st lines differ - expected: '706233516069713018417604833508...6082073593257084545458595954688', found: '0'
 Resposta Errada
 ====== 405_case =========
-wrong answer 1st lines differ - expected: '216164294552797813644468298334...4074980640712723296570197409792', found: ''
+wrong answer 1st lines differ - expected: '216164294552797813644468298334...4074980640712723296570197409792', found: '0'
 Resposta Errada

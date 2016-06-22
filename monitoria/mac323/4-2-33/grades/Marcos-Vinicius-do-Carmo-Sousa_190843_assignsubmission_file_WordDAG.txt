@@ -1,89 +1,42 @@
 
-....WW.WWTWWWMMMMMMM.TTTTT
+....WW.WWTWWWWWWWWWW.TTTTT
 CORREÇÃO AUTOMÁTICA
 Quantidade de Testes | Veredito
 6 | OK
-7 | Erro de Montagem (o grafo dessa query não pode ser montado)
+0 | Erro de Montagem (o grafo dessa query não pode ser montado)
 6 | Tempo de Execução Excedido
-7 | Resposta Errada
+14 | Resposta Errada
 0 | Erro de Execução
 Existem 26 testes, se a soma não der 26 quer dizer que houve alguma falha especial em algum teste que não foi identificada pelo corretor
 
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-33/tester/checker/checker' is up to date.
-Note: CorretorDoVictaum.java uses or overrides a deprecated API.
-Note: Recompile with -Xlint:deprecation for details.
 Note: Digraph.java uses unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
 ....
 
-real	0m0.394s
-user	0m0.304s
-sys	0m0.024s
+real	0m0.267s
+user	0m0.288s
+sys	0m0.028s
 ...
 
-real	0m0.253s
-user	0m0.284s
-sys	0m0.036s
+real	0m0.244s
+user	0m0.280s
+sys	0m0.044s
 ..T..
 
-real	0m8.615s
-user	0m13.800s
-sys	0m0.616s
-TException in thread "Thread-1" Mjava.lang.IllegalMonitorStateException
-	at java.util.concurrent.locks.ReentrantLock$Sync.tryRelease(ReentrantLock.java:151)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer.release(AbstractQueuedSynchronizer.java:1261)
-	at java.util.concurrent.locks.ReentrantLock.unlock(ReentrantLock.java:457)
-	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:449)
-	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-MMException in thread "Thread-4" java.lang.IllegalMonitorStateException
-	at java.util.concurrent.locks.ReentrantLock$Sync.tryRelease(ReentrantLock.java:151)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer.release(AbstractQueuedSynchronizer.java:1261)
-	at java.util.concurrent.locks.ReentrantLock.unlock(ReentrantLock.java:457)
-	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:449)
-	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-MMException in thread "Thread-7" java.lang.IllegalMonitorStateException
-	at java.util.concurrent.locks.ReentrantLock$Sync.tryRelease(ReentrantLock.java:151)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer.release(AbstractQueuedSynchronizer.java:1261)
-	at java.util.concurrent.locks.ReentrantLock.unlock(ReentrantLock.java:457)
-	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:449)
-	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-MException in thread "Thread-9" java.lang.IllegalMonitorStateException
-	at java.util.concurrent.locks.ReentrantLock$Sync.tryRelease(ReentrantLock.java:151)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer.release(AbstractQueuedSynchronizer.java:1261)
-	at java.util.concurrent.locks.ReentrantLock.unlock(ReentrantLock.java:457)
-	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:449)
-	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-MException in thread "Thread-11" java.lang.IllegalMonitorStateException
-	at java.util.concurrent.locks.ReentrantLock$Sync.tryRelease(ReentrantLock.java:151)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer.release(AbstractQueuedSynchronizer.java:1261)
-	at java.util.concurrent.locks.ReentrantLock.unlock(ReentrantLock.java:457)
-	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:449)
-	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
+real	0m8.263s
+user	0m13.236s
+sys	0m0.660s
+TMMMMMMM
 
-
-real	1m30.422s
-user	3m19.576s
-sys	0m2.272s
+real	1m30.726s
+user	3m20.088s
+sys	0m2.228s
 .TTTTT
 
-real	0m26.854s
-user	1m1.192s
-sys	0m1.364s
+real	0m26.621s
+user	1m0.900s
+sys	0m1.224s
 ====== 000_case =========
 ok 6 lines
 OK
@@ -123,19 +76,26 @@ Resposta Errada
 wrong answer 1st lines differ - expected: 'a A', found: ''
 Resposta Errada
 ====== 301_case =========
-Tempo de Montagem Excedido
+wrong answer 1st lines differ - expected: '1', found: 'FALHA NA MONTAGEM'
+Resposta Errada
 ====== 302_case =========
-Tempo de Montagem Excedido
+wrong answer 1st lines differ - expected: '6', found: 'FALHA NA MONTAGEM'
+Resposta Errada
 ====== 303_case =========
-Tempo de Montagem Excedido
+wrong answer 1st lines differ - expected: '1964', found: 'FALHA NA MONTAGEM'
+Resposta Errada
 ====== 304_case =========
-Tempo de Montagem Excedido
+wrong answer 1st lines differ - expected: '398394', found: 'FALHA NA MONTAGEM'
+Resposta Errada
 ====== 305_case =========
-Tempo de Montagem Excedido
+wrong answer 1st lines differ - expected: '1398768', found: 'FALHA NA MONTAGEM'
+Resposta Errada
 ====== 306_case =========
-Tempo de Montagem Excedido
+wrong answer 1st lines differ - expected: '923340550', found: 'FALHA NA MONTAGEM'
+Resposta Errada
 ====== 307_case =========
-Tempo de Montagem Excedido
+wrong answer 1st lines differ - expected: '114495854014092500', found: 'FALHA NA MONTAGEM'
+Resposta Errada
 ====== 400_case =========
 ok 70173 lines
 OK

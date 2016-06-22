@@ -1,40 +1,115 @@
 
-COMPILATION ERROR
-
+...W...WWWWWWWWWWWWW.WWWWW
 CORREÇÃO AUTOMÁTICA
 Quantidade de Testes | Veredito
-0 | OK
+7 | OK
 0 | Erro de Montagem (o grafo dessa query não pode ser montado)
 0 | Tempo de Execução Excedido
-0 | Resposta Errada
+19 | Resposta Errada
 0 | Erro de Execução
 Existem 26 testes, se a soma não der 26 quer dizer que houve alguma falha especial em algum teste que não foi identificada pelo corretor
 
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-33/tester/checker/checker' is up to date.
-CorretorDoVictaum.java:93: error: cannot find symbol
-            args.ex.PrintDag();
-                   ^
-  symbol:   method PrintDag()
-  location: variable ex of type WordDAG
-CorretorDoVictaum.java:105: error: cannot find symbol
-            args.ex.PrintPathCount(args.a, args.b);
-                   ^
-  symbol:   method PrintPathCount(String,String)
-  location: variable ex of type WordDAG
-Note: CorretorDoVictaum.java uses or overrides a deprecated API.
-Note: Recompile with -Xlint:deprecation for details.
-2 errors
-Second Compile Method
-CorretorDoVictaum.java:93: error: cannot find symbol
-            args.ex.PrintDag();
-                   ^
-  symbol:   method PrintDag()
-  location: variable ex of type WordDAG
-CorretorDoVictaum.java:105: error: cannot find symbol
-            args.ex.PrintPathCount(args.a, args.b);
-                   ^
-  symbol:   method PrintPathCount(String,String)
-  location: variable ex of type WordDAG
-Note: CorretorDoVictaum.java uses or overrides a deprecated API.
-Note: Recompile with -Xlint:deprecation for details.
-2 errors
+....
+
+real	0m0.262s
+user	0m0.292s
+sys	0m0.044s
+...
+
+real	0m0.234s
+user	0m0.292s
+sys	0m0.040s
+TMMMM
+
+real	1m30.224s
+user	1m30.772s
+sys	0m0.188s
+TMMMMMMM
+
+real	1m30.277s
+user	1m33.844s
+sys	0m0.516s
+......
+
+real	0m7.726s
+user	0m7.336s
+sys	0m0.244s
+====== 000_case =========
+ok 6 lines
+OK
+====== 001_case =========
+ok single line: '2'
+OK
+====== 002_case =========
+ok single line: '0'
+OK
+====== 003_case =========
+wrong answer 1st lines differ - expected: '1', found: '2'
+Resposta Errada
+====== 100_case =========
+ok 10 lines
+OK
+====== 101_case =========
+ok single line: '1'
+OK
+====== 102_case =========
+ok single line: '0'
+OK
+====== 200_case =========
+wrong answer 1st lines differ - expected: 'a A', found: ''
+Resposta Errada
+====== 201_case =========
+wrong answer 1st lines differ - expected: '1474', found: 'FALHA NA MONTAGEM'
+Resposta Errada
+====== 202_case =========
+wrong answer 1st lines differ - expected: '235229', found: 'FALHA NA MONTAGEM'
+Resposta Errada
+====== 203_case =========
+wrong answer 1st lines differ - expected: '84', found: 'FALHA NA MONTAGEM'
+Resposta Errada
+====== 204_case =========
+wrong answer 1st lines differ - expected: '240', found: 'FALHA NA MONTAGEM'
+Resposta Errada
+====== 300_case =========
+wrong answer 1st lines differ - expected: 'a A', found: ''
+Resposta Errada
+====== 301_case =========
+wrong answer 1st lines differ - expected: '1', found: 'FALHA NA MONTAGEM'
+Resposta Errada
+====== 302_case =========
+wrong answer 1st lines differ - expected: '6', found: 'FALHA NA MONTAGEM'
+Resposta Errada
+====== 303_case =========
+wrong answer 1st lines differ - expected: '1964', found: 'FALHA NA MONTAGEM'
+Resposta Errada
+====== 304_case =========
+wrong answer 1st lines differ - expected: '398394', found: 'FALHA NA MONTAGEM'
+Resposta Errada
+====== 305_case =========
+wrong answer 1st lines differ - expected: '1398768', found: 'FALHA NA MONTAGEM'
+Resposta Errada
+====== 306_case =========
+wrong answer 1st lines differ - expected: '923340550', found: 'FALHA NA MONTAGEM'
+Resposta Errada
+====== 307_case =========
+wrong answer 1st lines differ - expected: '114495854014092500', found: 'FALHA NA MONTAGEM'
+Resposta Errada
+====== 400_case =========
+ok 70173 lines
+OK
+====== 401_case =========
+wrong answer 1st lines differ - expected: '803469022129495137770981046170581301261101496891396417650688', found: '207'
+Resposta Errada
+====== 402_case =========
+wrong answer 1st lines differ - expected: '340282366920938463463374607431768211456', found: '134'
+Resposta Errada
+====== 403_case =========
+wrong answer 1st lines differ - expected: '452312848583266388373324160190...7600158453279131187530910662656', found: '259'
+Resposta Errada
+====== 404_case =========
+wrong answer 1st lines differ - expected: '706233516069713018417604833508...6082073593257084545458595954688', found: '5199'
+Resposta Errada
+====== 405_case =========
+wrong answer 1st lines differ - expected: '216164294552797813644468298334...4074980640712723296570197409792', found: '1449'
+Resposta Errada

@@ -1,71 +1,42 @@
-
-...TTTTWMMMMMMM.TTTTT
-CORREÇÃO AUTOMÁTICA
-Quantidade de Testes | Veredito
-4 | OK
-7 | Erro de Montagem (o grafo dessa query não pode ser montado)
-9 | Tempo de Execução Excedido
-1 | Resposta Errada
-0 | Erro de Execução
-Existem 26 testes, se a soma não der 26 quer dizer que houve alguma falha especial em algum teste que não foi identificada pelo corretor
 CORREÇÃO MANUAL
 [-5] : Não se esqueça de imprimir quebras de linha
 
+...TTTTWWWWWWWW.TTTTT
+CORREÇÃO AUTOMÁTICA
+Quantidade de Testes | Veredito
+4 | OK
+0 | Erro de Montagem (o grafo dessa query não pode ser montado)
+9 | Tempo de Execução Excedido
+8 | Resposta Errada
+0 | Erro de Execução
+Existem 26 testes, se a soma não der 26 quer dizer que houve alguma falha especial em algum teste que não foi identificada pelo corretor
+
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-33/tester/checker/checker' is up to date.
-Note: CorretorDoVictaum.java uses or overrides a deprecated API.
-Note: Recompile with -Xlint:deprecation for details.
 ....
 
-real	0m0.261s
-user	0m0.300s
-sys	0m0.024s
+real	0m0.291s
+user	0m0.292s
+sys	0m0.032s
 ...
 
-real	0m0.239s
-user	0m0.272s
-sys	0m0.044s
+real	0m0.228s
+user	0m0.288s
+sys	0m0.032s
 .TTTT
 
-real	0m42.433s
-user	1m2.224s
-sys	0m0.284s
-TMException in thread "Thread-1" java.lang.IllegalMonitorStateException
-	at java.util.concurrent.locks.ReentrantLock$Sync.tryRelease(ReentrantLock.java:151)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer.release(AbstractQueuedSynchronizer.java:1261)
-	at java.util.concurrent.locks.ReentrantLock.unlock(ReentrantLock.java:457)
-	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:449)
-	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-Exception in thread "Thread-3" Mjava.lang.IllegalMonitorStateException
-	at java.util.concurrent.locks.ReentrantLock$Sync.tryRelease(ReentrantLock.java:151)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer.release(AbstractQueuedSynchronizer.java:1261)
-	at java.util.concurrent.locks.ReentrantLock.unlock(ReentrantLock.java:457)
-	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:449)
-	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-MException in thread "Thread-5" java.lang.IllegalMonitorStateException
-	at java.util.concurrent.locks.ReentrantLock$Sync.tryRelease(ReentrantLock.java:151)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer.release(AbstractQueuedSynchronizer.java:1261)
-	at java.util.concurrent.locks.ReentrantLock.unlock(ReentrantLock.java:457)
-	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:449)
-	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-MMMM
+real	0m45.023s
+user	1m5.128s
+sys	0m0.276s
+TMMMMMMM
 
-real	1m30.290s
-user	1m33.836s
-sys	0m0.740s
+real	1m30.281s
+user	1m33.896s
+sys	0m0.568s
 .TTTTT
 
-real	0m17.913s
-user	0m48.588s
-sys	0m0.364s
+real	0m17.933s
+user	0m49.412s
+sys	0m0.328s
 ====== 000_case =========
 ok 6 lines
 OK
@@ -87,19 +58,26 @@ Tempo Excedido
 wrong answer 1st lines differ - expected: 'a A', found: ''
 Resposta Errada
 ====== 301_case =========
-Tempo de Montagem Excedido
+wrong answer 1st lines differ - expected: '1', found: 'FALHA NA MONTAGEM'
+Resposta Errada
 ====== 302_case =========
-Tempo de Montagem Excedido
+wrong answer 1st lines differ - expected: '6', found: 'FALHA NA MONTAGEM'
+Resposta Errada
 ====== 303_case =========
-Tempo de Montagem Excedido
+wrong answer 1st lines differ - expected: '1964', found: 'FALHA NA MONTAGEM'
+Resposta Errada
 ====== 304_case =========
-Tempo de Montagem Excedido
+wrong answer 1st lines differ - expected: '398394', found: 'FALHA NA MONTAGEM'
+Resposta Errada
 ====== 305_case =========
-Tempo de Montagem Excedido
+wrong answer 1st lines differ - expected: '1398768', found: 'FALHA NA MONTAGEM'
+Resposta Errada
 ====== 306_case =========
-Tempo de Montagem Excedido
+wrong answer 1st lines differ - expected: '923340550', found: 'FALHA NA MONTAGEM'
+Resposta Errada
 ====== 307_case =========
-Tempo de Montagem Excedido
+wrong answer 1st lines differ - expected: '114495854014092500', found: 'FALHA NA MONTAGEM'
+Resposta Errada
 ====== 400_case =========
 ok 70173 lines
 OK
