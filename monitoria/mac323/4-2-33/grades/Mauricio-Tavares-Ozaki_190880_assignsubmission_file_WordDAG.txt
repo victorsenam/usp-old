@@ -1,40 +1,91 @@
 
-COMPILATION ERROR
-
+...TTTTWWWWWWWW.TTTTT
 CORREÇÃO AUTOMÁTICA
 Quantidade de Testes | Veredito
-0 | OK
+4 | OK
 0 | Erro de Montagem (o grafo dessa query não pode ser montado)
-0 | Tempo de Execução Excedido
-0 | Resposta Errada
+9 | Tempo de Execução Excedido
+8 | Resposta Errada
 0 | Erro de Execução
 Existem 26 testes, se a soma não der 26 quer dizer que houve alguma falha especial em algum teste que não foi identificada pelo corretor
 
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-33/tester/checker/checker' is up to date.
-CorretorDoVictaum.java:14: error: cannot find symbol
-        public WordDAG ex;
-               ^
-  symbol:   class WordDAG
-  location: class ArgsPasser
-CorretorDoVictaum.java:86: error: cannot find symbol
-            args.ex = new WordDAG(strings);
-                          ^
-  symbol:   class WordDAG
-  location: class CorretorDoVictaum
-Note: CorretorDoVictaum.java uses or overrides a deprecated API.
-Note: Recompile with -Xlint:deprecation for details.
-2 errors
-Second Compile Method
-CorretorDoVictaum.java:14: error: cannot find symbol
-        public WordDAG ex;
-               ^
-  symbol:   class WordDAG
-  location: class ArgsPasser
-CorretorDoVictaum.java:86: error: cannot find symbol
-            args.ex = new WordDAG(strings);
-                          ^
-  symbol:   class WordDAG
-  location: class CorretorDoVictaum
-Note: CorretorDoVictaum.java uses or overrides a deprecated API.
-Note: Recompile with -Xlint:deprecation for details.
-2 errors
+....
+
+real	0m0.258s
+user	0m0.292s
+sys	0m0.028s
+...
+
+real	0m0.229s
+user	0m0.268s
+sys	0m0.048s
+.TTTT
+
+real	0m41.750s
+user	1m1.760s
+sys	0m0.292s
+TMMMMMMM
+
+real	1m30.283s
+user	1m33.732s
+sys	0m0.480s
+.TTTTT
+
+real	0m17.792s
+user	0m47.736s
+sys	0m0.252s
+====== 000_case =========
+ok 6 lines
+OK
+====== 100_case =========
+ok 10 lines
+OK
+====== 200_case =========
+ok 40665 lines
+OK
+====== 201_case =========
+Tempo Excedido
+====== 202_case =========
+Tempo Excedido
+====== 203_case =========
+Tempo Excedido
+====== 204_case =========
+Tempo Excedido
+====== 300_case =========
+wrong answer 1st lines differ - expected: 'a A', found: ''
+Resposta Errada
+====== 301_case =========
+wrong answer 1st lines differ - expected: '1', found: 'FALHA NA MONTAGEM'
+Resposta Errada
+====== 302_case =========
+wrong answer 1st lines differ - expected: '6', found: 'FALHA NA MONTAGEM'
+Resposta Errada
+====== 303_case =========
+wrong answer 1st lines differ - expected: '1964', found: 'FALHA NA MONTAGEM'
+Resposta Errada
+====== 304_case =========
+wrong answer 1st lines differ - expected: '398394', found: 'FALHA NA MONTAGEM'
+Resposta Errada
+====== 305_case =========
+wrong answer 1st lines differ - expected: '1398768', found: 'FALHA NA MONTAGEM'
+Resposta Errada
+====== 306_case =========
+wrong answer 1st lines differ - expected: '923340550', found: 'FALHA NA MONTAGEM'
+Resposta Errada
+====== 307_case =========
+wrong answer 1st lines differ - expected: '114495854014092500', found: 'FALHA NA MONTAGEM'
+Resposta Errada
+====== 400_case =========
+ok 70173 lines
+OK
+====== 401_case =========
+Tempo Excedido
+====== 402_case =========
+Tempo Excedido
+====== 403_case =========
+Tempo Excedido
+====== 404_case =========
+Tempo Excedido
+====== 405_case =========
+Tempo Excedido

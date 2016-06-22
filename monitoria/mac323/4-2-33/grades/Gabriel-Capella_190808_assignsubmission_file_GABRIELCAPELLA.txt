@@ -1,3 +1,5 @@
+CORREÇÃO MANUAL
+Você considerou letras maíusculas e minúsculas como iguais, além disso, deve haver algum erro na montagem do grafo que está deixando ele cíclico.
 
 ....W.RWRW.RW.WRRRRR....R.
 CORREÇÃO AUTOMÁTICA
@@ -8,37 +10,33 @@ Quantidade de Testes | Veredito
 5 | Resposta Errada
 9 | Erro de Execução
 Existem 26 testes, se a soma não der 26 quer dizer que houve alguma falha especial em algum teste que não foi identificada pelo corretor
-CORREÇÃO MANUAL
-Você considerou letras maíusculas e minúsculas como iguais, além disso, deve haver algum erro na montagem do grafo que está deixando ele cíclico.
 
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-33/tester/checker/checker' is up to date.
-Note: CorretorDoVictaum.java uses or overrides a deprecated API.
-Note: Recompile with -Xlint:deprecation for details.
 ....
 
-real	0m0.520s
-user	0m0.280s
-sys	0m0.056s
-..R
-
-real	0m0.567s
+real	0m0.270s
 user	0m0.300s
 sys	0m0.028s
+..R
+
+real	0m0.240s
+user	0m0.276s
+sys	0m0.060s
 .R..R
 
-real	0m1.443s
-user	0m2.696s
-sys	0m0.196s
+real	0m1.278s
+user	0m2.544s
+sys	0m0.252s
 ...RRRRR
 
-real	0m19.721s
-user	0m32.044s
-sys	0m2.048s
+real	0m17.336s
+user	0m35.736s
+sys	0m1.704s
 ....R.
 
-real	0m2.728s
-user	0m2.204s
-sys	0m0.180s
+real	0m2.469s
+user	0m2.120s
+sys	0m0.240s
 ====== 000_case =========
 ok 6 lines
 OK

@@ -15,8 +15,13 @@ WordDAG.java:167: error: reached end of file while parsing
 }
  ^
 1 error
-Second Compile Method
+=========== TENTANDO COMPILAR DE NOVO (LevelTraversal.java -> WordDAG.java) =============
 WordDAG.java:167: error: reached end of file while parsing
+}
+ ^
+1 error
+=========== TENTANDO COMPILAR DE NOVO (imports no começo do código) ==============
+WordDAG.java:169: error: reached end of file while parsing
 }
  ^
 1 error

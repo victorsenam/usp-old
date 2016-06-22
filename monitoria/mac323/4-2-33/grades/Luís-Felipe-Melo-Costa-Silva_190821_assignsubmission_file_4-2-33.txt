@@ -1,34 +1,111 @@
 
-COMPILATION ERROR
-
+WW..W..WWWWWW.TTTTTTWWWWWW
 CORREÇÃO AUTOMÁTICA
 Quantidade de Testes | Veredito
-0 | OK
+5 | OK
 0 | Erro de Montagem (o grafo dessa query não pode ser montado)
-0 | Tempo de Execução Excedido
-0 | Resposta Errada
+6 | Tempo de Execução Excedido
+15 | Resposta Errada
 0 | Erro de Execução
 Existem 26 testes, se a soma não der 26 quer dizer que houve alguma falha especial em algum teste que não foi identificada pelo corretor
 
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-33/tester/checker/checker' is up to date.
-CorretorDoVictaum.java:93: error: cannot find symbol
-            args.ex.PrintDag();
-                   ^
-  symbol:   method PrintDag()
-  location: variable ex of type WordDAG
-Note: CorretorDoVictaum.java uses or overrides a deprecated API.
-Note: Recompile with -Xlint:deprecation for details.
 Note: Digraph.java uses unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
-1 error
-Second Compile Method
-CorretorDoVictaum.java:93: error: cannot find symbol
-            args.ex.PrintDag();
-                   ^
-  symbol:   method PrintDag()
-  location: variable ex of type WordDAG
-Note: CorretorDoVictaum.java uses or overrides a deprecated API.
-Note: Recompile with -Xlint:deprecation for details.
-Note: Digraph.java uses unchecked or unsafe operations.
-Note: Recompile with -Xlint:unchecked for details.
-1 error
+....
+
+real	0m0.263s
+user	0m0.292s
+sys	0m0.032s
+...
+
+real	0m0.235s
+user	0m0.272s
+sys	0m0.052s
+.....
+
+real	0m1.864s
+user	0m3.636s
+sys	0m0.180s
+..TTTTTT
+
+real	0m49.217s
+user	1m48.084s
+sys	0m1.416s
+......
+
+real	0m3.662s
+user	0m4.192s
+sys	0m0.128s
+====== 000_case =========
+wrong answer 2nd lines differ - expected: 'cobro cobra', found: 'cobro cobre '
+Resposta Errada
+====== 001_case =========
+wrong answer 1st lines differ - expected: '2', found: '1'
+Resposta Errada
+====== 002_case =========
+ok single line: '0'
+OK
+====== 003_case =========
+ok single line: '1'
+OK
+====== 100_case =========
+wrong answer 6th lines differ - expected: 'AAAL AAA', found: 'AAAL AAAA '
+Resposta Errada
+====== 101_case =========
+ok single line: '1'
+OK
+====== 102_case =========
+ok single line: '0'
+OK
+====== 200_case =========
+wrong answer 1st lines differ - expected: 'a A', found: 'aa a '
+Resposta Errada
+====== 201_case =========
+wrong answer 1st lines differ - expected: '1474', found: '40'
+Resposta Errada
+====== 202_case =========
+wrong answer 1st lines differ - expected: '235229', found: '269'
+Resposta Errada
+====== 203_case =========
+wrong answer 1st lines differ - expected: '84', found: '3'
+Resposta Errada
+====== 204_case =========
+wrong answer 1st lines differ - expected: '240', found: '12'
+Resposta Errada
+====== 300_case =========
+wrong answer 1st lines differ - expected: 'a A', found: 'aa ... '
+Resposta Errada
+====== 301_case =========
+ok single line: '1'
+OK
+====== 302_case =========
+Tempo Excedido
+====== 303_case =========
+Tempo Excedido
+====== 304_case =========
+Tempo Excedido
+====== 305_case =========
+Tempo Excedido
+====== 306_case =========
+Tempo Excedido
+====== 307_case =========
+Tempo Excedido
+====== 400_case =========
+wrong answer 1st lines differ - expected: 'c a', found: 'c ... '
+Resposta Errada
+====== 401_case =========
+wrong answer 1st lines differ - expected: '803469022129495137770981046170581301261101496891396417650688', found: '1'
+Resposta Errada
+====== 402_case =========
+wrong answer 1st lines differ - expected: '340282366920938463463374607431768211456', found: '1'
+Resposta Errada
+====== 403_case =========
+wrong answer 1st lines differ - expected: '452312848583266388373324160190...7600158453279131187530910662656', found: '1'
+Resposta Errada
+====== 404_case =========
+wrong answer 1st lines differ - expected: '706233516069713018417604833508...6082073593257084545458595954688', found: '1'
+Resposta Errada
+====== 405_case =========
+wrong answer 1st lines differ - expected: '216164294552797813644468298334...4074980640712723296570197409792', found: '1'
+Resposta Errada

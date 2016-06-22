@@ -1,9 +1,8 @@
 
-COMPILATION ERROR
-
+..........................
 CORREÇÃO AUTOMÁTICA
 Quantidade de Testes | Veredito
-0 | OK
+26 | OK
 0 | Erro de Montagem (o grafo dessa query não pode ser montado)
 0 | Tempo de Execução Excedido
 0 | Resposta Errada
@@ -11,30 +10,106 @@ Quantidade de Testes | Veredito
 Existem 26 testes, se a soma não der 26 quer dizer que houve alguma falha especial em algum teste que não foi identificada pelo corretor
 
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-33/tester/checker/checker' is up to date.
-CorretorDoVictaum.java:93: error: cannot find symbol
-            args.ex.PrintDag();
-                   ^
-  symbol:   method PrintDag()
-  location: variable ex of type WordDAG
-CorretorDoVictaum.java:105: error: cannot find symbol
-            args.ex.PrintPathCount(args.a, args.b);
-                   ^
-  symbol:   method PrintPathCount(String,String)
-  location: variable ex of type WordDAG
-Note: CorretorDoVictaum.java uses or overrides a deprecated API.
-Note: Recompile with -Xlint:deprecation for details.
-2 errors
-Second Compile Method
-CorretorDoVictaum.java:93: error: cannot find symbol
-            args.ex.PrintDag();
-                   ^
-  symbol:   method PrintDag()
-  location: variable ex of type WordDAG
-CorretorDoVictaum.java:105: error: cannot find symbol
-            args.ex.PrintPathCount(args.a, args.b);
-                   ^
-  symbol:   method PrintPathCount(String,String)
-  location: variable ex of type WordDAG
-Note: CorretorDoVictaum.java uses or overrides a deprecated API.
-Note: Recompile with -Xlint:deprecation for details.
-2 errors
+....
+
+real	0m0.257s
+user	0m0.288s
+sys	0m0.040s
+...
+
+real	0m0.264s
+user	0m0.296s
+sys	0m0.028s
+.....
+
+real	0m1.140s
+user	0m3.044s
+sys	0m0.184s
+........
+
+real	0m15.170s
+user	0m34.156s
+sys	0m1.680s
+......
+
+real	0m2.659s
+user	0m2.444s
+sys	0m0.204s
+====== 000_case =========
+ok 6 lines
+OK
+====== 001_case =========
+ok single line: '2'
+OK
+====== 002_case =========
+ok single line: '0'
+OK
+====== 003_case =========
+ok single line: '1'
+OK
+====== 100_case =========
+ok 10 lines
+OK
+====== 101_case =========
+ok single line: '1'
+OK
+====== 102_case =========
+ok single line: '0'
+OK
+====== 200_case =========
+ok 40665 lines
+OK
+====== 201_case =========
+ok single line: '1474'
+OK
+====== 202_case =========
+ok single line: '235229'
+OK
+====== 203_case =========
+ok single line: '84'
+OK
+====== 204_case =========
+ok single line: '240'
+OK
+====== 300_case =========
+ok 817245 lines
+OK
+====== 301_case =========
+ok single line: '1'
+OK
+====== 302_case =========
+ok single line: '6'
+OK
+====== 303_case =========
+ok single line: '1964'
+OK
+====== 304_case =========
+ok single line: '398394'
+OK
+====== 305_case =========
+ok single line: '1398768'
+OK
+====== 306_case =========
+ok single line: '923340550'
+OK
+====== 307_case =========
+ok single line: '114495854014092500'
+OK
+====== 400_case =========
+ok 70173 lines
+OK
+====== 401_case =========
+ok single line: '803469022129495137770981046170581301261101496891396417650688'
+OK
+====== 402_case =========
+ok single line: '340282366920938463463374607431768211456'
+OK
+====== 403_case =========
+ok single line: '452312848583266388373324160190...7600158453279131187530910662656'
+OK
+====== 404_case =========
+ok single line: '706233516069713018417604833508...6082073593257084545458595954688'
+OK
+====== 405_case =========
+ok single line: '216164294552797813644468298334...4074980640712723296570197409792'
+OK

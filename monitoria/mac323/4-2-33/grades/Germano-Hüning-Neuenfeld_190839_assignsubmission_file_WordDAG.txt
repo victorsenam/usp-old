@@ -1,30 +1,104 @@
 
-COMPILATION ERROR
-
+WWWWW.WWRRRRWRRRRRRRWWWWWW
 CORREÇÃO AUTOMÁTICA
 Quantidade de Testes | Veredito
-0 | OK
+1 | OK
 0 | Erro de Montagem (o grafo dessa query não pode ser montado)
 0 | Tempo de Execução Excedido
-0 | Resposta Errada
-0 | Erro de Execução
+14 | Resposta Errada
+11 | Erro de Execução
 Existem 26 testes, se a soma não der 26 quer dizer que houve alguma falha especial em algum teste que não foi identificada pelo corretor
 
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-33/tester/checker/checker' is up to date.
-CorretorDoVictaum.java:93: error: cannot find symbol
-            args.ex.PrintDag();
-                   ^
-  symbol:   method PrintDag()
-  location: variable ex of type WordDAG
-Note: CorretorDoVictaum.java uses or overrides a deprecated API.
-Note: Recompile with -Xlint:deprecation for details.
-1 error
-Second Compile Method
-CorretorDoVictaum.java:93: error: cannot find symbol
-            args.ex.PrintDag();
-                   ^
-  symbol:   method PrintDag()
-  location: variable ex of type WordDAG
-Note: CorretorDoVictaum.java uses or overrides a deprecated API.
-Note: Recompile with -Xlint:deprecation for details.
-1 error
+RMMM
+
+real	0m0.232s
+user	0m0.292s
+sys	0m0.020s
+R..
+
+real	0m0.232s
+user	0m0.300s
+sys	0m0.020s
+RRRRR
+
+real	0m0.440s
+user	0m0.828s
+sys	0m0.124s
+RRRRRRRR
+
+real	0m2.104s
+user	0m5.584s
+sys	0m0.512s
+RMMMMM
+
+real	0m0.303s
+user	0m0.536s
+sys	0m0.068s
+====== 000_case =========
+wrong answer 1st lines differ - expected: 'cobre cobra', found: ''
+Resposta Errada
+====== 001_case =========
+wrong answer 1st lines differ - expected: '2', found: 'FALHA NA MONTAGEM'
+Resposta Errada
+====== 002_case =========
+wrong answer 1st lines differ - expected: '0', found: 'FALHA NA MONTAGEM'
+Resposta Errada
+====== 003_case =========
+wrong answer 1st lines differ - expected: '1', found: 'FALHA NA MONTAGEM'
+Resposta Errada
+====== 100_case =========
+wrong answer 1st lines differ - expected: 'aa a', found: ''
+Resposta Errada
+====== 101_case =========
+ok single line: '1'
+OK
+====== 102_case =========
+wrong answer 1st lines differ - expected: '0', found: '1'
+Resposta Errada
+====== 200_case =========
+wrong answer 1st lines differ - expected: 'a A', found: ''
+Resposta Errada
+====== 201_case =========
+Erro de Execução
+====== 202_case =========
+Erro de Execução
+====== 203_case =========
+Erro de Execução
+====== 204_case =========
+Erro de Execução
+====== 300_case =========
+wrong answer 1st lines differ - expected: 'a A', found: ''
+Resposta Errada
+====== 301_case =========
+Erro de Execução
+====== 302_case =========
+Erro de Execução
+====== 303_case =========
+Erro de Execução
+====== 304_case =========
+Erro de Execução
+====== 305_case =========
+Erro de Execução
+====== 306_case =========
+Erro de Execução
+====== 307_case =========
+Erro de Execução
+====== 400_case =========
+wrong answer 1st lines differ - expected: 'c a', found: ''
+Resposta Errada
+====== 401_case =========
+wrong answer 1st lines differ - expected: '803469022129495137770981046170581301261101496891396417650688', found: 'FALHA NA MONTAGEM'
+Resposta Errada
+====== 402_case =========
+wrong answer 1st lines differ - expected: '340282366920938463463374607431768211456', found: 'FALHA NA MONTAGEM'
+Resposta Errada
+====== 403_case =========
+wrong answer 1st lines differ - expected: '452312848583266388373324160190...7600158453279131187530910662656', found: 'FALHA NA MONTAGEM'
+Resposta Errada
+====== 404_case =========
+wrong answer 1st lines differ - expected: '706233516069713018417604833508...6082073593257084545458595954688', found: 'FALHA NA MONTAGEM'
+Resposta Errada
+====== 405_case =========
+wrong answer 1st lines differ - expected: '216164294552797813644468298334...4074980640712723296570197409792', found: 'FALHA NA MONTAGEM'
+Resposta Errada

@@ -1,44 +1,42 @@
+CORREÇÃO MANUAL
+Algumas arestsa ficaram invertidas
 
-WW.WW..WWWWWWWWWWWW
+WW.WW..WWWWWWWWWWWWW
 CORREÇÃO AUTOMÁTICA
 Quantidade de Testes | Veredito
 3 | OK
 0 | Erro de Montagem (o grafo dessa query não pode ser montado)
 0 | Tempo de Execução Excedido
-16 | Resposta Errada
+17 | Resposta Errada
 0 | Erro de Execução
 Existem 26 testes, se a soma não der 26 quer dizer que houve alguma falha especial em algum teste que não foi identificada pelo corretor
-CORREÇÃO MANUAL
-Algumas arestsa ficaram invertidas
 
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-33/tester/checker/checker' is up to date.
-Note: CorretorDoVictaum.java uses or overrides a deprecated API.
-Note: Recompile with -Xlint:deprecation for details.
 ....
 
-real	0m0.283s
-user	0m0.264s
-sys	0m0.064s
+real	0m0.262s
+user	0m0.284s
+sys	0m0.044s
 ...
 
-real	0m0.265s
-user	0m0.296s
-sys	0m0.028s
+real	0m0.234s
+user	0m0.292s
+sys	0m0.040s
 .....
 
-real	0m28.520s
-user	0m29.272s
-sys	0m0.860s
-T/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-33/tester/judge/judge.sh: line 88: 27389 Morto                   timeout --signal=SIGKILL 180s java -cp .:algs4.jar:stdlib.jar $toexec < $testpath 2>> $LOG > $TMPOUT
+real	0m25.658s
+user	0m26.492s
+sys	0m0.684s
+TM/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-33/tester/judge/judge.sh: line 91:  9078 Morto                   timeout --signal=SIGKILL 180s java $ARGS $toexec < $testpath 2>> $LOG > $TMPOUT
 
 real	3m0.005s
 user	0m0.000s
 sys	0m0.000s
 ......
 
-real	0m3.554s
-user	0m1.608s
-sys	0m0.340s
+real	0m3.501s
+user	0m1.588s
+sys	0m0.328s
 ====== 000_case =========
 wrong answer 1st lines differ - expected: 'cobre cobra', found: 'cobra cobre'
 Resposta Errada
@@ -77,6 +75,9 @@ wrong answer 1st lines differ - expected: '240', found: '0'
 Resposta Errada
 ====== 300_case =========
 wrong answer 1st lines differ - expected: 'a A', found: ''
+Resposta Errada
+====== 301_case =========
+wrong answer 1st lines differ - expected: '1', found: 'FALHA NA MONTAGEM'
 Resposta Errada
 ====== 400_case =========
 wrong answer 1st lines differ - expected: 'c a', found: 'a b'

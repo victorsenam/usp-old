@@ -16,30 +16,10 @@ WordDAG.java:12: error: cannot find symbol
           ^
   symbol:   class Digraph
   location: class WordDAG
-WordDAG.java:13: error: cannot find symbol
-  private IndexSET<String> words;
-          ^
-  symbol:   class IndexSET
-  location: class WordDAG
 WordDAG.java:58: error: cannot find symbol
     dag = new Digraph (size);
               ^
   symbol:   class Digraph
-  location: class WordDAG
-WordDAG.java:62: error: cannot find symbol
-    words = new IndexSET<String>();
-                ^
-  symbol:   class IndexSET
-  location: class WordDAG
-WordDAG.java:63: error: cannot find symbol
-    IndexSET<String> auxWords;
-    ^
-  symbol:   class IndexSET
-  location: class WordDAG
-WordDAG.java:74: error: cannot find symbol
-      auxWords = new IndexSET<String>();
-                     ^
-  symbol:   class IndexSET
   location: class WordDAG
 WordDAG.java:167: error: cannot find symbol
     Stack<Integer> path = new Stack<Integer>();
@@ -56,39 +36,17 @@ WordDAG.java:201: error: cannot find symbol
     ^
   symbol:   variable Merge
   location: class WordDAG
-Note: CorretorDoVictaum.java uses or overrides a deprecated API.
-Note: Recompile with -Xlint:deprecation for details.
-9 errors
-Second Compile Method
+5 errors
+=========== TENTANDO COMPILAR DE NOVO (LevelTraversal.java -> WordDAG.java) =============
 WordDAG.java:12: error: cannot find symbol
   private Digraph dag;
           ^
   symbol:   class Digraph
   location: class WordDAG
-WordDAG.java:13: error: cannot find symbol
-  private IndexSET<String> words;
-          ^
-  symbol:   class IndexSET
-  location: class WordDAG
 WordDAG.java:58: error: cannot find symbol
     dag = new Digraph (size);
               ^
   symbol:   class Digraph
-  location: class WordDAG
-WordDAG.java:62: error: cannot find symbol
-    words = new IndexSET<String>();
-                ^
-  symbol:   class IndexSET
-  location: class WordDAG
-WordDAG.java:63: error: cannot find symbol
-    IndexSET<String> auxWords;
-    ^
-  symbol:   class IndexSET
-  location: class WordDAG
-WordDAG.java:74: error: cannot find symbol
-      auxWords = new IndexSET<String>();
-                     ^
-  symbol:   class IndexSET
   location: class WordDAG
 WordDAG.java:167: error: cannot find symbol
     Stack<Integer> path = new Stack<Integer>();
@@ -105,6 +63,42 @@ WordDAG.java:201: error: cannot find symbol
     ^
   symbol:   variable Merge
   location: class WordDAG
-Note: CorretorDoVictaum.java uses or overrides a deprecated API.
-Note: Recompile with -Xlint:deprecation for details.
-9 errors
+5 errors
+=========== TENTANDO COMPILAR DE NOVO (imports no começo do código) ==============
+WordDAG.java:99: error: unclosed string literal
+-----");
+     ^
+WordDAG.java:114: error: ';' expected
+word1 = " + word1 + "
+                     ^
+WordDAG.java:115: error: ';' expected
+i - i_minus = " + (i - i_minus) + "
+                                   ^
+WordDAG.java:116: error: unclosed string literal
+word2 = " + word2);
+        ^
+WordDAG.java:126: error: unclosed string literal
+");
+^
+WordDAG.java:125: error: not a statement
+" + words2 + "
+^
+WordDAG.java:148: error: unclosed string literal
+        out.print(word1 + " " + word2 + "
+                                        ^
+WordDAG.java:149: error: unclosed string literal
+");
+^
+WordDAG.java:181: error: unclosed string literal
+      StdOut.println("c = " + c + "
+                                  ^
+WordDAG.java:181: error: ';' expected
+      StdOut.println("c = " + c + "
+                                   ^
+WordDAG.java:182: error: illegal start of expression
+from = " + from);
+     ^
+WordDAG.java:182: error: unclosed string literal
+from = " + from);
+       ^
+12 errors

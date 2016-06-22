@@ -1,152 +1,40 @@
 
-WW.WWW.WMMMMWMMMMMMMWMMMMM
+WW.WWW.WWWWWWWWWWWWWWWWWWW
 CORREÇÃO AUTOMÁTICA
 Quantidade de Testes | Veredito
 2 | OK
-16 | Erro de Montagem (o grafo dessa query não pode ser montado)
+0 | Erro de Montagem (o grafo dessa query não pode ser montado)
 0 | Tempo de Execução Excedido
-8 | Resposta Errada
+24 | Resposta Errada
 0 | Erro de Execução
 Existem 26 testes, se a soma não der 26 quer dizer que houve alguma falha especial em algum teste que não foi identificada pelo corretor
 
-[-5] : Nome de função errada, não faz isso, por favor
-
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-33/tester/checker/checker' is up to date.
-Note: CorretorDoVictaum.java uses or overrides a deprecated API.
-Note: Recompile with -Xlint:deprecation for details.
 ....
 
-real	0m0.244s
-user	0m0.308s
-sys	0m0.032s
+real	0m0.519s
+user	0m0.296s
+sys	0m0.036s
 ...
 
-real	0m0.234s
-user	0m0.276s
-sys	0m0.052s
-RMException in thread "Thread-1" java.lang.IllegalMonitorStateException
-	at java.util.concurrent.locks.ReentrantLock$Sync.tryRelease(ReentrantLock.java:151)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer.release(AbstractQueuedSynchronizer.java:1261)
-	at java.util.concurrent.locks.ReentrantLock.unlock(ReentrantLock.java:457)
-	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:449)
-	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-MMException in thread "Thread-4" java.lang.IllegalMonitorStateException
-	at java.util.concurrent.locks.ReentrantLock$Sync.tryRelease(ReentrantLock.java:151)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer.release(AbstractQueuedSynchronizer.java:1261)
-	at java.util.concurrent.locks.ReentrantLock.unlock(ReentrantLock.java:457)
-	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:449)
-	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-MException in thread "Thread-6" java.lang.IllegalMonitorStateException
-	at java.util.concurrent.locks.ReentrantLock$Sync.tryRelease(ReentrantLock.java:151)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer.release(AbstractQueuedSynchronizer.java:1261)
-	at java.util.concurrent.locks.ReentrantLock.unlock(ReentrantLock.java:457)
-	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:449)
-	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
+real	0m0.236s
+user	0m0.300s
+sys	0m0.032s
+RMMMM
 
+real	0m2.828s
+user	0m4.296s
+sys	0m0.400s
+TMMMMMMM
 
-real	0m3.082s
-user	0m4.292s
-sys	0m0.468s
-TMMException in thread "Thread-2" java.lang.IllegalMonitorStateException
-	at java.util.concurrent.locks.ReentrantLock$Sync.tryRelease(ReentrantLock.java:151)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer.release(AbstractQueuedSynchronizer.java:1261)
-	at java.util.concurrent.locks.ReentrantLock.unlock(ReentrantLock.java:457)
-	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:449)
-	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-MException in thread "Thread-5" Mjava.lang.IllegalMonitorStateException
-	at java.util.concurrent.locks.ReentrantLock$Sync.tryRelease(ReentrantLock.java:151)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer.release(AbstractQueuedSynchronizer.java:1261)
-	at java.util.concurrent.locks.ReentrantLock.unlock(ReentrantLock.java:457)
-	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:449)
-	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-MException in thread "Thread-7" java.lang.IllegalMonitorStateException
-	at java.util.concurrent.locks.ReentrantLock$Sync.tryRelease(ReentrantLock.java:151)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer.release(AbstractQueuedSynchronizer.java:1261)
-	at java.util.concurrent.locks.ReentrantLock.unlock(ReentrantLock.java:457)
-	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:449)
-	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-MException in thread "Thread-9" java.lang.IllegalMonitorStateException
-	at java.util.concurrent.locks.ReentrantLock$Sync.tryRelease(ReentrantLock.java:151)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer.release(AbstractQueuedSynchronizer.java:1261)
-	at java.util.concurrent.locks.ReentrantLock.unlock(ReentrantLock.java:457)
-	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:449)
-	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-MException in thread "Thread-11" 
-java.lang.IllegalMonitorStateException
-	at java.util.concurrent.locks.ReentrantLock$Sync.tryRelease(ReentrantLock.java:151)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer.release(AbstractQueuedSynchronizer.java:1261)
-	at java.util.concurrent.locks.ReentrantLock.unlock(ReentrantLock.java:457)
-	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:449)
-	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
+real	1m30.315s
+user	6m8.296s
+sys	0m1.420s
+RMMMMM
 
-real	1m30.376s
-user	5m13.576s
-sys	0m1.304s
-RMException in thread "Thread-1" java.lang.IllegalMonitorStateException
-	at java.util.concurrent.locks.ReentrantLock$Sync.tryRelease(ReentrantLock.java:151)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer.release(AbstractQueuedSynchronizer.java:1261)
-	at java.util.concurrent.locks.ReentrantLock.unlock(ReentrantLock.java:457)
-	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:449)
-	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-MException in thread "Thread-3" java.lang.IllegalMonitorStateException
-	at java.util.concurrent.locks.ReentrantLock$Sync.tryRelease(ReentrantLock.java:151)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer.release(AbstractQueuedSynchronizer.java:1261)
-	at java.util.concurrent.locks.ReentrantLock.unlock(ReentrantLock.java:457)
-	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:449)
-	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-MException in thread "Thread-5" java.lang.IllegalMonitorStateException
-	at java.util.concurrent.locks.ReentrantLock$Sync.tryRelease(ReentrantLock.java:151)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer.release(AbstractQueuedSynchronizer.java:1261)
-	at java.util.concurrent.locks.ReentrantLock.unlock(ReentrantLock.java:457)
-	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:449)
-	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-Exception in thread "Thread-7" java.lang.IllegalMonitorStateException
-	at java.util.concurrent.locks.ReentrantLock$Sync.tryRelease(ReentrantLock.java:151)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer.release(AbstractQueuedSynchronizer.java:1261)
-	at java.util.concurrent.locks.ReentrantLock.unlock(ReentrantLock.java:457)
-	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:449)
-	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-MM
-
-real	1m0.739s
-user	1m3.744s
-sys	0m0.800s
+real	0m56.911s
+user	0m59.880s
+sys	0m0.624s
 ====== 000_case =========
 wrong answer 2nd lines differ - expected: 'cobro cobra', found: 'cobre cobra'
 Resposta Errada
@@ -172,40 +60,56 @@ OK
 wrong answer 1st lines differ - expected: 'a A', found: ''
 Resposta Errada
 ====== 201_case =========
-Tempo de Montagem Excedido
+wrong answer 1st lines differ - expected: '1474', found: 'FALHA NA MONTAGEM'
+Resposta Errada
 ====== 202_case =========
-Tempo de Montagem Excedido
+wrong answer 1st lines differ - expected: '235229', found: 'FALHA NA MONTAGEM'
+Resposta Errada
 ====== 203_case =========
-Tempo de Montagem Excedido
+wrong answer 1st lines differ - expected: '84', found: 'FALHA NA MONTAGEM'
+Resposta Errada
 ====== 204_case =========
-Tempo de Montagem Excedido
+wrong answer 1st lines differ - expected: '240', found: 'FALHA NA MONTAGEM'
+Resposta Errada
 ====== 300_case =========
 wrong answer 1st lines differ - expected: 'a A', found: ''
 Resposta Errada
 ====== 301_case =========
-Tempo de Montagem Excedido
+wrong answer 1st lines differ - expected: '1', found: 'FALHA NA MONTAGEM'
+Resposta Errada
 ====== 302_case =========
-Tempo de Montagem Excedido
+wrong answer 1st lines differ - expected: '6', found: 'FALHA NA MONTAGEM'
+Resposta Errada
 ====== 303_case =========
-Tempo de Montagem Excedido
+wrong answer 1st lines differ - expected: '1964', found: 'FALHA NA MONTAGEM'
+Resposta Errada
 ====== 304_case =========
-Tempo de Montagem Excedido
+wrong answer 1st lines differ - expected: '398394', found: 'FALHA NA MONTAGEM'
+Resposta Errada
 ====== 305_case =========
-Tempo de Montagem Excedido
+wrong answer 1st lines differ - expected: '1398768', found: 'FALHA NA MONTAGEM'
+Resposta Errada
 ====== 306_case =========
-Tempo de Montagem Excedido
+wrong answer 1st lines differ - expected: '923340550', found: 'FALHA NA MONTAGEM'
+Resposta Errada
 ====== 307_case =========
-Tempo de Montagem Excedido
+wrong answer 1st lines differ - expected: '114495854014092500', found: 'FALHA NA MONTAGEM'
+Resposta Errada
 ====== 400_case =========
 wrong answer 1st lines differ - expected: 'c a', found: ''
 Resposta Errada
 ====== 401_case =========
-Tempo de Montagem Excedido
+wrong answer 1st lines differ - expected: '803469022129495137770981046170581301261101496891396417650688', found: 'FALHA NA MONTAGEM'
+Resposta Errada
 ====== 402_case =========
-Tempo de Montagem Excedido
+wrong answer 1st lines differ - expected: '340282366920938463463374607431768211456', found: 'FALHA NA MONTAGEM'
+Resposta Errada
 ====== 403_case =========
-Tempo de Montagem Excedido
+wrong answer 1st lines differ - expected: '452312848583266388373324160190...7600158453279131187530910662656', found: 'FALHA NA MONTAGEM'
+Resposta Errada
 ====== 404_case =========
-Tempo de Montagem Excedido
+wrong answer 1st lines differ - expected: '706233516069713018417604833508...6082073593257084545458595954688', found: 'FALHA NA MONTAGEM'
+Resposta Errada
 ====== 405_case =========
-Tempo de Montagem Excedido
+wrong answer 1st lines differ - expected: '216164294552797813644468298334...4074980640712723296570197409792', found: 'FALHA NA MONTAGEM'
+Resposta Errada

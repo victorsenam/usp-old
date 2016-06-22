@@ -10,34 +10,33 @@ Quantidade de Testes | Veredito
 Existem 26 testes, se a soma não der 26 quer dizer que houve alguma falha especial em algum teste que não foi identificada pelo corretor
 
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-33/tester/checker/checker' is up to date.
-Note: Recompile with -Xlint:deprecation for details.
 Note: Some input files use unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
 ....
 
-real	0m0.265s
-user	0m0.276s
-sys	0m0.040s
+real	0m0.368s
+user	0m0.296s
+sys	0m0.020s
 ...
 
-real	0m0.245s
-user	0m0.308s
-sys	0m0.024s
+real	0m0.232s
+user	0m0.260s
+sys	0m0.056s
 .....
 
-real	0m1.629s
-user	0m3.992s
-sys	0m0.228s
+real	0m1.597s
+user	0m3.960s
+sys	0m0.236s
 ........
 
-real	0m19.989s
-user	0m34.676s
-sys	0m1.768s
+real	0m19.110s
+user	0m39.820s
+sys	0m1.800s
 ....R.
 
-real	0m7.318s
-user	0m6.888s
-sys	0m0.364s
+real	0m6.789s
+user	0m6.600s
+sys	0m0.332s
 ====== 000_case =========
 wrong answer 1st lines differ - expected: 'cobre cobra', found: 'cobro cobra'
 Resposta Errada
