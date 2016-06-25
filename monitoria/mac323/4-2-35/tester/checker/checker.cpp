@@ -1,54 +1,57 @@
 #include "../testlib.h"
-#include <string>
-#include <vector>
 #include <sstream>
 
 using namespace std;
 
-bool compareWords(string a, string b)
-{
-    vector<string> va, vb;
-    stringstream sa;
-    
-    sa << a;
-    string cur;
-    while (sa >> cur)
-        va.push_back(cur);
-
-    stringstream sb;
-    sb << b;
-    while (sb >> cur)
-        vb.push_back(cur);
-
-    return (va == vb);
-}
-
 int main(int argc, char * argv[])
 {
-    setName("compare files as sequence of tokens in lines");
+    setName("compare ordered sequences of signed int%ld numbers", 8 * sizeof(long long));
+
     registerTestlibCmd(argc, argv);
 
-    std::string strAnswer;
-
     int n = 0;
-    while (!ans.eof()) 
+    string firstElems;
+
+    while (!ans.seekEof() && !ouf.seekEof())
     {
-        std::string j = ans.readString();
-
-        if (j == "" && ans.eof())
-          break;
-        
-        std::string p = ouf.readString();
-        strAnswer = p;
-
         n++;
+        long long j = ans.readLong();
+        long long p = ouf.readLong();
+        if (j != p)
+            quitf(_wa, "%d%s numbers differ - expected: '%s', found: '%s'", n, englishEnding(n).c_str(), vtos(j).c_str(), vtos(p).c_str());
+        else
+            if (n <= 5)
+            {
+                if (firstElems.length() > 0)
+                    firstElems += " ";
+                firstElems += vtos(j);
+            }
+    }
 
-        if (!compareWords(j, p))
-            quitf(_wa, "%d%s lines differ - expected: '%s', found: '%s'", n, englishEnding(n).c_str(), compress(j).c_str(), compress(p).c_str());
+    int extraInAnsCount = 0;
+
+    while (!ans.seekEof())
+    {
+        ans.readLong();
+        extraInAnsCount++;
     }
     
-    if (n == 1)
-        quitf(_ok, "single line: '%s'", compress(strAnswer).c_str());
+    int extraInOufCount = 0;
+
+    while (!ouf.seekEof())
+    {
+        ouf.readLong();
+        extraInOufCount++;
+    }
+
+    if (extraInAnsCount > 0)
+        quitf(_wa, "Answer contains longer sequence [length = %d], but output contains %d elements", n + extraInAnsCount, n);
     
-    quitf(_ok, "%d lines", n);
+    if (extraInOufCount > 0)
+        quitf(_wa, "Output contains longer sequence [length = %d], but answer contains %d elements", n + extraInOufCount, n);
+    
+    if (n <= 5)
+        quitf(_ok, "%d number(s): \"%s\"", n, compress(firstElems).c_str());
+    else
+        quitf(_ok, "%d numbers", n);
 }

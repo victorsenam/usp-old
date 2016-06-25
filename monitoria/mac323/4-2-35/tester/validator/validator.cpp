@@ -24,4 +24,6 @@ int main () {
         s.insert(aux);
     }
     inf.readEof();
+
+    return 0;
 }
