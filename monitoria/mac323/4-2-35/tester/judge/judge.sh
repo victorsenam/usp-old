@@ -9,10 +9,10 @@
 DIR="$( cd "$( dirname "$0" )" && cd ../../ && pwd )/"
 LOG="judge.log"
 RES="judge.out"
-OUT="judge_output/"
+OUT="judge_out/"
 TMPOUT="judge_output.txt"
 ARGS="-cp .:algs4.jar:stdlib.jar"
-RARGS="-Xss 1024M"
+RARGS="-Xmx512M -Xms512M"
 NAME="CoreVertices"
 
 # parameters
@@ -52,6 +52,7 @@ then
     toexec=$NAME
 fi
 
+
 # second compile method
 if [ $toexec == failed ];
 then
@@ -76,7 +77,7 @@ then
         
         echo "======= $testcase ============" >> $LOG
 
-        (time timeout --kill-after=25s 20s java $RAGRS $ARGS $toexec $2 < ${testpath} > ${OUT}${testcase}.out 2>> $LOG) &>> $LOG
+        (time timeout --kill-after=60s 30s java $RAGRS $ARGS $toexec $2 < ${testpath} > ${OUT}${testcase}.out 2>> $LOG) &>> $LOG
         run_status=$?
 
 

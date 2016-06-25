@@ -54,4 +54,6 @@ int main (int argc, char ** argv) {
 
     for (std::pair<int, int> v : s)
         printf("%d %d\n", v.first, v.second);
+
+    return 0;
 }
