@@ -12,7 +12,6 @@ RES="judge.out"
 OUT="judge_out/"
 TMPOUT="judge_output.txt"
 ARGS="-cp .:algs4.jar:stdlib.jar"
-RARGS="-Xmx512M -Xms512M"
 NAME="CoreVertices"
 
 # parameters
@@ -59,7 +58,13 @@ then
     echo "=========== TENTANDO COMPILAR DE NOVO (imports no começo do código) ==============" &>> $LOG
 
     rm *.class
-    echo -e "import edu.princeton.cs.algs4.*;\nimport java.util.*;\n$(cat CoreVertices.java)" > $NAME.java
+
+    for javafile in $(find *.java);
+    do
+        echo -e "import edu.princeton.cs.algs4.*;\n$(cat $javafile)" > $javafile
+        #echo -e "import java.util.*;\n$(cat $javafile)" > $javafile
+    done
+
     javac $ARGS *.java &>> $LOG
     
     if [ -a $NAME.class ];
@@ -77,7 +82,8 @@ then
         
         echo "======= $testcase ============" >> $LOG
 
-        (time timeout --kill-after=60s 30s java $RAGRS $ARGS $toexec $2 < ${testpath} > ${OUT}${testcase}.out 2>> $LOG) &>> $LOG
+        (time timeout --kill-after=20s 15s java -Xss512m -Xmx512m -Xms512m -XX:+HeapDumpOnOutOfMemoryError $RAGRS $ARGS $toexec $2 < ${testpath} > ${OUT}${testcase}.out 2>> $LOG) &>> $LOG
+
         run_status=$?
 
 

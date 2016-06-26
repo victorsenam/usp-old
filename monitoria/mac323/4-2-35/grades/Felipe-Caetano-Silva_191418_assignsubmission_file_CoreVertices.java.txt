@@ -1,0 +1,665 @@
+
+..................................................TTT.TTTT.TTTTTTTTTTTTT.TTT.TT.TTTTTTTTTTTTTTTTTTTT
+CORREÇÃO AUTOMÁTICA
+Quantidade de Testes | Veredito
+55 | OK
+45 | Tempo de Execução Excedido
+0 | Resposta Errada
+0 | Erro de Execução
+
+make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/checker/checker' is up to date.
+======= generated_000 ============
+
+real	0m0.148s
+user	0m0.156s
+sys	0m0.032s
+ok 3 number(s): "0 1 2"
+OK
+======= generated_001 ============
+
+real	0m0.137s
+user	0m0.156s
+sys	0m0.016s
+ok 5 number(s): "0 1 2 4 5"
+OK
+======= generated_002 ============
+
+real	0m0.135s
+user	0m0.152s
+sys	0m0.024s
+ok 5 number(s): "1 2 3 4 5"
+OK
+======= generated_003 ============
+
+real	0m0.158s
+user	0m0.160s
+sys	0m0.036s
+ok 1 number(s): "4"
+OK
+======= generated_004 ============
+
+real	0m0.158s
+user	0m0.168s
+sys	0m0.024s
+ok 2 number(s): "1 5"
+OK
+======= generated_005 ============
+
+real	0m0.178s
+user	0m0.252s
+sys	0m0.020s
+ok 21 numbers
+OK
+======= generated_006 ============
+
+real	0m0.186s
+user	0m0.288s
+sys	0m0.036s
+ok 173 numbers
+OK
+======= generated_007 ============
+
+real	0m0.182s
+user	0m0.264s
+sys	0m0.024s
+ok 0 number(s): ""
+OK
+======= generated_008 ============
+
+real	0m0.169s
+user	0m0.244s
+sys	0m0.040s
+ok 0 number(s): ""
+OK
+======= generated_009 ============
+
+real	0m0.173s
+user	0m0.248s
+sys	0m0.036s
+ok 0 number(s): ""
+OK
+======= generated_010 ============
+
+real	0m0.202s
+user	0m0.320s
+sys	0m0.048s
+ok 10 numbers
+OK
+======= generated_011 ============
+
+real	0m0.210s
+user	0m0.384s
+sys	0m0.032s
+ok 30 numbers
+OK
+======= generated_012 ============
+
+real	0m0.249s
+user	0m0.436s
+sys	0m0.048s
+ok 135 numbers
+OK
+======= generated_013 ============
+
+real	0m0.191s
+user	0m0.324s
+sys	0m0.036s
+ok 113 numbers
+OK
+======= generated_014 ============
+
+real	0m0.235s
+user	0m0.464s
+sys	0m0.036s
+ok 197 numbers
+OK
+======= generated_015 ============
+
+real	0m0.413s
+user	0m0.720s
+sys	0m0.056s
+ok 436 numbers
+OK
+======= generated_016 ============
+
+real	0m0.390s
+user	0m0.760s
+sys	0m0.052s
+ok 326 numbers
+OK
+======= generated_017 ============
+
+real	0m0.256s
+user	0m0.484s
+sys	0m0.048s
+ok 23 numbers
+OK
+======= generated_018 ============
+
+real	0m0.387s
+user	0m0.704s
+sys	0m0.048s
+ok 371 numbers
+OK
+======= generated_019 ============
+
+real	0m0.390s
+user	0m0.736s
+sys	0m0.016s
+ok 484 numbers
+OK
+======= generated_020 ============
+
+real	0m0.788s
+user	0m1.360s
+sys	0m0.092s
+ok 422 numbers
+OK
+======= generated_021 ============
+
+real	0m0.965s
+user	0m1.464s
+sys	0m0.120s
+ok 8 numbers
+OK
+======= generated_022 ============
+
+real	0m6.011s
+user	0m6.696s
+sys	0m0.088s
+ok 551 numbers
+OK
+======= generated_023 ============
+
+real	0m1.552s
+user	0m2.200s
+sys	0m0.120s
+ok 483 numbers
+OK
+======= generated_024 ============
+
+real	0m0.664s
+user	0m1.144s
+sys	0m0.032s
+ok 541 numbers
+OK
+======= generated_025 ============
+
+real	0m2.513s
+user	0m3.168s
+sys	0m0.132s
+ok 366 numbers
+OK
+======= generated_026 ============
+
+real	0m1.501s
+user	0m2.248s
+sys	0m0.112s
+ok 137 numbers
+OK
+======= generated_027 ============
+
+real	0m2.650s
+user	0m3.344s
+sys	0m0.092s
+ok 588 numbers
+OK
+======= generated_028 ============
+
+real	0m1.864s
+user	0m2.484s
+sys	0m0.132s
+ok 563 numbers
+OK
+======= generated_029 ============
+
+real	0m1.228s
+user	0m1.828s
+sys	0m0.108s
+ok 116 numbers
+OK
+======= generated_030 ============
+
+real	0m0.279s
+user	0m0.600s
+sys	0m0.028s
+ok 0 number(s): ""
+OK
+======= generated_031 ============
+
+real	0m1.613s
+user	0m2.152s
+sys	0m0.040s
+ok 1364 numbers
+OK
+======= generated_032 ============
+
+real	0m0.248s
+user	0m0.496s
+sys	0m0.036s
+ok 0 number(s): ""
+OK
+======= generated_033 ============
+
+real	0m8.536s
+user	0m9.208s
+sys	0m0.120s
+ok 5121 numbers
+OK
+======= generated_034 ============
+
+real	0m1.450s
+user	0m2.016s
+sys	0m0.068s
+ok 849 numbers
+OK
+======= generated_035 ============
+
+real	0m1.850s
+user	0m2.208s
+sys	0m0.040s
+ok 0 number(s): ""
+OK
+======= generated_036 ============
+
+real	0m7.562s
+user	0m8.384s
+sys	0m0.176s
+ok 8436 numbers
+OK
+======= generated_037 ============
+
+real	0m1.149s
+user	0m1.468s
+sys	0m0.064s
+ok 0 number(s): ""
+OK
+======= generated_038 ============
+
+real	0m0.333s
+user	0m0.716s
+sys	0m0.036s
+ok 0 number(s): ""
+OK
+======= generated_039 ============
+
+real	0m1.664s
+user	0m2.180s
+sys	0m0.072s
+ok 1355 numbers
+OK
+======= generated_040 ============
+
+real	0m2.017s
+user	0m2.368s
+sys	0m0.044s
+ok 0 number(s): ""
+OK
+======= generated_041 ============
+
+real	0m0.551s
+user	0m0.952s
+sys	0m0.068s
+ok 614 numbers
+OK
+======= generated_042 ============
+
+real	0m0.689s
+user	0m1.036s
+sys	0m0.052s
+ok 0 number(s): ""
+OK
+======= generated_043 ============
+
+real	0m2.688s
+user	0m3.068s
+sys	0m0.068s
+ok 0 number(s): ""
+OK
+======= generated_044 ============
+
+real	0m1.880s
+user	0m2.416s
+sys	0m0.068s
+ok 1374 numbers
+OK
+======= generated_045 ============
+
+real	0m0.930s
+user	0m1.272s
+sys	0m0.060s
+ok 0 number(s): ""
+OK
+======= generated_046 ============
+
+real	0m5.338s
+user	0m5.684s
+sys	0m0.084s
+ok 0 number(s): ""
+OK
+======= generated_047 ============
+
+real	0m1.261s
+user	0m1.744s
+sys	0m0.052s
+ok 1472 numbers
+OK
+======= generated_048 ============
+
+real	0m6.521s
+user	0m7.296s
+sys	0m0.112s
+ok 5682 numbers
+OK
+======= generated_049 ============
+
+real	0m0.936s
+user	0m1.408s
+sys	0m0.044s
+ok 886 numbers
+OK
+======= generated_050 ============
+
+real	0m15.044s
+user	0m15.856s
+sys	0m0.132s
+Tempo Excedido
+======= generated_051 ============
+
+real	0m15.035s
+user	0m15.576s
+sys	0m0.100s
+Tempo Excedido
+======= generated_052 ============
+
+real	0m15.036s
+user	0m15.548s
+sys	0m0.084s
+Tempo Excedido
+======= generated_053 ============
+
+real	0m3.013s
+user	0m3.488s
+sys	0m0.112s
+ok 0 number(s): ""
+OK
+======= generated_054 ============
+
+real	0m15.039s
+user	0m15.532s
+sys	0m0.168s
+Tempo Excedido
+======= generated_055 ============
+
+real	0m15.040s
+user	0m15.828s
+sys	0m0.128s
+Tempo Excedido
+======= generated_056 ============
+
+real	0m15.034s
+user	0m15.540s
+sys	0m0.096s
+Tempo Excedido
+======= generated_057 ============
+
+real	0m15.044s
+user	0m15.644s
+sys	0m0.128s
+Tempo Excedido
+======= generated_058 ============
+
+real	0m0.585s
+user	0m1.016s
+sys	0m0.136s
+ok 0 number(s): ""
+OK
+======= generated_059 ============
+
+real	0m15.038s
+user	0m15.836s
+sys	0m0.136s
+Tempo Excedido
+======= generated_060 ============
+
+real	0m15.031s
+user	0m15.572s
+sys	0m0.108s
+Tempo Excedido
+======= generated_061 ============
+
+real	0m15.035s
+user	0m15.600s
+sys	0m0.084s
+Tempo Excedido
+======= generated_062 ============
+
+real	0m15.033s
+user	0m15.652s
+sys	0m0.116s
+Tempo Excedido
+======= generated_063 ============
+
+real	0m15.037s
+user	0m15.556s
+sys	0m0.116s
+Tempo Excedido
+======= generated_064 ============
+
+real	0m15.032s
+user	0m15.824s
+sys	0m0.124s
+Tempo Excedido
+======= generated_065 ============
+
+real	0m15.035s
+user	0m15.596s
+sys	0m0.112s
+Tempo Excedido
+======= generated_066 ============
+
+real	0m15.033s
+user	0m15.640s
+sys	0m0.120s
+Tempo Excedido
+======= generated_067 ============
+
+real	0m15.034s
+user	0m15.588s
+sys	0m0.136s
+Tempo Excedido
+======= generated_068 ============
+
+real	0m15.027s
+user	0m15.536s
+sys	0m0.116s
+Tempo Excedido
+======= generated_069 ============
+
+real	0m15.031s
+user	0m15.576s
+sys	0m0.120s
+Tempo Excedido
+======= generated_070 ============
+
+real	0m15.028s
+user	0m15.620s
+sys	0m0.136s
+Tempo Excedido
+======= generated_071 ============
+
+real	0m15.037s
+user	0m15.932s
+sys	0m0.120s
+Tempo Excedido
+======= generated_072 ============
+
+real	0m13.028s
+user	0m13.592s
+sys	0m0.112s
+ok 0 number(s): ""
+OK
+======= generated_073 ============
+
+real	0m15.031s
+user	0m15.540s
+sys	0m0.152s
+Tempo Excedido
+======= generated_074 ============
+
+real	0m15.031s
+user	0m15.636s
+sys	0m0.068s
+Tempo Excedido
+======= generated_075 ============
+
+real	0m15.031s
+user	0m15.584s
+sys	0m0.084s
+Tempo Excedido
+======= generated_076 ============
+
+real	0m0.519s
+user	0m0.956s
+sys	0m0.080s
+ok 0 number(s): ""
+OK
+======= generated_077 ============
+
+real	0m15.034s
+user	0m15.584s
+sys	0m0.092s
+Tempo Excedido
+======= generated_078 ============
+
+real	0m15.046s
+user	0m15.596s
+sys	0m0.160s
+Tempo Excedido
+======= generated_079 ============
+
+real	0m0.591s
+user	0m0.992s
+sys	0m0.112s
+ok 0 number(s): ""
+OK
+======= generated_080 ============
+
+real	0m15.048s
+user	0m38.216s
+sys	0m0.480s
+Tempo Excedido
+======= generated_081 ============
+
+real	0m16.660s
+user	0m25.100s
+sys	0m3.064s
+Tempo Excedido
+======= generated_082 ============
+
+real	0m15.051s
+user	0m31.352s
+sys	0m0.452s
+Tempo Excedido
+======= generated_083 ============
+
+real	0m15.059s
+user	0m31.088s
+sys	0m0.488s
+Tempo Excedido
+======= generated_084 ============
+
+real	0m15.057s
+user	0m32.756s
+sys	0m0.456s
+Tempo Excedido
+======= generated_085 ============
+
+real	0m15.057s
+user	0m20.732s
+sys	0m0.384s
+Tempo Excedido
+======= generated_086 ============
+
+real	0m15.050s
+user	0m29.668s
+sys	0m0.456s
+Tempo Excedido
+======= generated_087 ============
+
+real	0m15.062s
+user	0m30.496s
+sys	0m0.492s
+Tempo Excedido
+======= generated_088 ============
+
+real	0m15.055s
+user	0m20.260s
+sys	0m0.340s
+Tempo Excedido
+======= generated_089 ============
+
+real	0m15.056s
+user	0m20.048s
+sys	0m0.320s
+Tempo Excedido
+======= generated_090 ============
+
+real	0m15.046s
+user	0m31.308s
+sys	0m0.520s
+Tempo Excedido
+======= generated_091 ============
+
+real	0m15.054s
+user	0m31.632s
+sys	0m0.468s
+Tempo Excedido
+======= generated_092 ============
+
+real	0m15.057s
+user	0m31.136s
+sys	0m0.504s
+Tempo Excedido
+======= generated_093 ============
+
+real	0m15.060s
+user	0m31.824s
+sys	0m0.456s
+Tempo Excedido
+======= generated_094 ============
+
+real	0m15.062s
+user	0m30.808s
+sys	0m0.476s
+Tempo Excedido
+======= generated_095 ============
+
+real	0m15.052s
+user	0m32.232s
+sys	0m1.948s
+Tempo Excedido
+======= generated_096 ============
+
+real	0m15.054s
+user	0m19.936s
+sys	0m0.380s
+Tempo Excedido
+======= generated_097 ============
+
+real	0m15.046s
+user	0m20.100s
+sys	0m0.384s
+Tempo Excedido
+======= generated_098 ============
+
+real	0m15.050s
+user	0m19.684s
+sys	0m0.304s
+Tempo Excedido
+======= generated_099 ============
+
+real	0m15.062s
+user	0m33.232s
+sys	0m4.792s
+Tempo Excedido

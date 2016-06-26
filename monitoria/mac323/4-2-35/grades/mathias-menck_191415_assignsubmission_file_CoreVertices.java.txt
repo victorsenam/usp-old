@@ -1,0 +1,709 @@
+
+.......WWW....................W.W..W.WW.W.WW.WW....WWWW.WWW.WWWW.WWWWWW.WWWWWWWW...................T
+CORREÇÃO AUTOMÁTICA
+Quantidade de Testes | Veredito
+61 | OK
+1 | Tempo de Execução Excedido
+38 | Resposta Errada
+0 | Erro de Execução
+
+make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/checker/checker' is up to date.
+======= generated_000 ============
+
+real	0m0.161s
+user	0m0.168s
+sys	0m0.036s
+ok 3 number(s): "0 1 2"
+OK
+======= generated_001 ============
+
+real	0m0.162s
+user	0m0.160s
+sys	0m0.028s
+ok 5 number(s): "0 1 2 4 5"
+OK
+======= generated_002 ============
+
+real	0m0.147s
+user	0m0.156s
+sys	0m0.024s
+ok 5 number(s): "1 2 3 4 5"
+OK
+======= generated_003 ============
+
+real	0m0.141s
+user	0m0.152s
+sys	0m0.024s
+ok 1 number(s): "4"
+OK
+======= generated_004 ============
+
+real	0m0.153s
+user	0m0.168s
+sys	0m0.016s
+ok 2 number(s): "1 5"
+OK
+======= generated_005 ============
+
+real	0m0.164s
+user	0m0.228s
+sys	0m0.032s
+ok 21 numbers
+OK
+======= generated_006 ============
+
+real	0m0.208s
+user	0m0.252s
+sys	0m0.016s
+ok 173 numbers
+OK
+======= generated_007 ============
+
+real	0m0.164s
+user	0m0.220s
+sys	0m0.024s
+wrong output format Expected integer, but "Não" found
+Resposta Errada
+======= generated_008 ============
+
+real	0m0.172s
+user	0m0.252s
+sys	0m0.020s
+wrong output format Expected integer, but "Não" found
+Resposta Errada
+======= generated_009 ============
+
+real	0m0.197s
+user	0m0.252s
+sys	0m0.016s
+wrong output format Expected integer, but "Não" found
+Resposta Errada
+======= generated_010 ============
+
+real	0m0.188s
+user	0m0.304s
+sys	0m0.032s
+ok 10 numbers
+OK
+======= generated_011 ============
+
+real	0m0.207s
+user	0m0.336s
+sys	0m0.052s
+ok 30 numbers
+OK
+======= generated_012 ============
+
+real	0m0.186s
+user	0m0.332s
+sys	0m0.020s
+ok 135 numbers
+OK
+======= generated_013 ============
+
+real	0m0.206s
+user	0m0.288s
+sys	0m0.028s
+ok 113 numbers
+OK
+======= generated_014 ============
+
+real	0m0.202s
+user	0m0.328s
+sys	0m0.044s
+ok 197 numbers
+OK
+======= generated_015 ============
+
+real	0m0.229s
+user	0m0.440s
+sys	0m0.048s
+ok 436 numbers
+OK
+======= generated_016 ============
+
+real	0m0.234s
+user	0m0.468s
+sys	0m0.020s
+ok 326 numbers
+OK
+======= generated_017 ============
+
+real	0m0.231s
+user	0m0.408s
+sys	0m0.052s
+ok 23 numbers
+OK
+======= generated_018 ============
+
+real	0m0.245s
+user	0m0.456s
+sys	0m0.036s
+ok 371 numbers
+OK
+======= generated_019 ============
+
+real	0m0.222s
+user	0m0.420s
+sys	0m0.032s
+ok 484 numbers
+OK
+======= generated_020 ============
+
+real	0m0.499s
+user	0m0.884s
+sys	0m0.096s
+ok 422 numbers
+OK
+======= generated_021 ============
+
+real	0m0.877s
+user	0m1.356s
+sys	0m0.108s
+ok 8 numbers
+OK
+======= generated_022 ============
+
+real	0m0.649s
+user	0m1.096s
+sys	0m0.100s
+ok 551 numbers
+OK
+======= generated_023 ============
+
+real	0m0.656s
+user	0m1.132s
+sys	0m0.076s
+ok 483 numbers
+OK
+======= generated_024 ============
+
+real	0m0.284s
+user	0m0.560s
+sys	0m0.036s
+ok 541 numbers
+OK
+======= generated_025 ============
+
+real	0m0.922s
+user	0m1.424s
+sys	0m0.124s
+ok 366 numbers
+OK
+======= generated_026 ============
+
+real	0m1.006s
+user	0m1.560s
+sys	0m0.136s
+ok 137 numbers
+OK
+======= generated_027 ============
+
+real	0m0.700s
+user	0m1.168s
+sys	0m0.112s
+ok 588 numbers
+OK
+======= generated_028 ============
+
+real	0m0.701s
+user	0m1.132s
+sys	0m0.116s
+ok 563 numbers
+OK
+======= generated_029 ============
+
+real	0m0.862s
+user	0m1.408s
+sys	0m0.116s
+ok 116 numbers
+OK
+======= generated_030 ============
+
+real	0m0.289s
+user	0m0.564s
+sys	0m0.040s
+wrong output format Expected integer, but "Não" found
+Resposta Errada
+======= generated_031 ============
+
+real	0m0.285s
+user	0m0.640s
+sys	0m0.044s
+ok 1364 numbers
+OK
+======= generated_032 ============
+
+real	0m0.296s
+user	0m0.504s
+sys	0m0.052s
+wrong output format Expected integer, but "Não" found
+Resposta Errada
+======= generated_033 ============
+
+real	0m0.395s
+user	0m0.800s
+sys	0m0.056s
+ok 5121 numbers
+OK
+======= generated_034 ============
+
+real	0m0.337s
+user	0m0.704s
+sys	0m0.040s
+ok 849 numbers
+OK
+======= generated_035 ============
+
+real	0m0.281s
+user	0m0.600s
+sys	0m0.036s
+wrong output format Expected integer, but "Não" found
+Resposta Errada
+======= generated_036 ============
+
+real	0m0.316s
+user	0m0.608s
+sys	0m0.088s
+ok 8436 numbers
+OK
+======= generated_037 ============
+
+real	0m0.250s
+user	0m0.500s
+sys	0m0.040s
+wrong output format Expected integer, but "Não" found
+Resposta Errada
+======= generated_038 ============
+
+real	0m0.325s
+user	0m0.656s
+sys	0m0.044s
+wrong output format Expected integer, but "Não" found
+Resposta Errada
+======= generated_039 ============
+
+real	0m0.365s
+user	0m0.700s
+sys	0m0.032s
+ok 1355 numbers
+OK
+======= generated_040 ============
+
+real	0m0.298s
+user	0m0.652s
+sys	0m0.036s
+wrong output format Expected integer, but "Não" found
+Resposta Errada
+======= generated_041 ============
+
+real	0m0.253s
+user	0m0.488s
+sys	0m0.044s
+ok 614 numbers
+OK
+======= generated_042 ============
+
+real	0m0.281s
+user	0m0.568s
+sys	0m0.076s
+wrong output format Expected integer, but "Não" found
+Resposta Errada
+======= generated_043 ============
+
+real	0m0.321s
+user	0m0.684s
+sys	0m0.056s
+wrong output format Expected integer, but "Não" found
+Resposta Errada
+======= generated_044 ============
+
+real	0m0.330s
+user	0m0.644s
+sys	0m0.048s
+ok 1374 numbers
+OK
+======= generated_045 ============
+
+real	0m0.299s
+user	0m0.552s
+sys	0m0.036s
+wrong output format Expected integer, but "Não" found
+Resposta Errada
+======= generated_046 ============
+
+real	0m0.262s
+user	0m0.540s
+sys	0m0.044s
+wrong output format Expected integer, but "Não" found
+Resposta Errada
+======= generated_047 ============
+
+real	0m0.300s
+user	0m0.568s
+sys	0m0.036s
+ok 1472 numbers
+OK
+======= generated_048 ============
+
+real	0m0.325s
+user	0m0.696s
+sys	0m0.048s
+ok 5682 numbers
+OK
+======= generated_049 ============
+
+real	0m0.289s
+user	0m0.604s
+sys	0m0.040s
+ok 886 numbers
+OK
+======= generated_050 ============
+
+real	0m0.826s
+user	0m1.324s
+sys	0m0.144s
+ok 32425 numbers
+OK
+======= generated_051 ============
+
+real	0m0.663s
+user	0m1.160s
+sys	0m0.116s
+wrong output format Expected integer, but "Não" found
+Resposta Errada
+======= generated_052 ============
+
+real	0m0.660s
+user	0m1.112s
+sys	0m0.092s
+wrong output format Expected integer, but "Não" found
+Resposta Errada
+======= generated_053 ============
+
+real	0m0.587s
+user	0m1.056s
+sys	0m0.092s
+wrong output format Expected integer, but "Não" found
+Resposta Errada
+======= generated_054 ============
+
+real	0m0.608s
+user	0m1.060s
+sys	0m0.096s
+wrong output format Expected integer, but "Não" found
+Resposta Errada
+======= generated_055 ============
+
+real	0m0.810s
+user	0m1.348s
+sys	0m0.132s
+ok 33225 numbers
+OK
+======= generated_056 ============
+
+real	0m0.706s
+user	0m1.124s
+sys	0m0.088s
+wrong output format Expected integer, but "Não" found
+Resposta Errada
+======= generated_057 ============
+
+real	0m0.614s
+user	0m1.080s
+sys	0m0.120s
+wrong output format Expected integer, but "Não" found
+Resposta Errada
+======= generated_058 ============
+
+real	0m0.587s
+user	0m1.076s
+sys	0m0.096s
+wrong output format Expected integer, but "Não" found
+Resposta Errada
+======= generated_059 ============
+
+real	0m0.722s
+user	0m1.308s
+sys	0m0.108s
+ok 36358 numbers
+OK
+======= generated_060 ============
+
+real	0m0.535s
+user	0m0.984s
+sys	0m0.068s
+wrong output format Expected integer, but "Não" found
+Resposta Errada
+======= generated_061 ============
+
+real	0m0.507s
+user	0m0.936s
+sys	0m0.100s
+wrong output format Expected integer, but "Não" found
+Resposta Errada
+======= generated_062 ============
+
+real	0m0.597s
+user	0m1.056s
+sys	0m0.092s
+wrong output format Expected integer, but "Não" found
+Resposta Errada
+======= generated_063 ============
+
+real	0m0.521s
+user	0m0.964s
+sys	0m0.084s
+wrong output format Expected integer, but "Não" found
+Resposta Errada
+======= generated_064 ============
+
+real	0m0.696s
+user	0m1.308s
+sys	0m0.120s
+ok 44095 numbers
+OK
+======= generated_065 ============
+
+real	0m0.604s
+user	0m1.072s
+sys	0m0.084s
+wrong output format Expected integer, but "Não" found
+Resposta Errada
+======= generated_066 ============
+
+real	0m0.592s
+user	0m1.100s
+sys	0m0.108s
+wrong output format Expected integer, but "Não" found
+Resposta Errada
+======= generated_067 ============
+
+real	0m0.587s
+user	0m1.016s
+sys	0m0.132s
+wrong output format Expected integer, but "Não" found
+Resposta Errada
+======= generated_068 ============
+
+real	0m0.533s
+user	0m0.968s
+sys	0m0.068s
+wrong output format Expected integer, but "Não" found
+Resposta Errada
+======= generated_069 ============
+
+real	0m0.571s
+user	0m1.068s
+sys	0m0.076s
+wrong output format Expected integer, but "Não" found
+Resposta Errada
+======= generated_070 ============
+
+real	0m0.547s
+user	0m1.016s
+sys	0m0.088s
+wrong output format Expected integer, but "Não" found
+Resposta Errada
+======= generated_071 ============
+
+real	0m0.734s
+user	0m1.320s
+sys	0m0.120s
+ok 47188 numbers
+OK
+======= generated_072 ============
+
+real	0m0.546s
+user	0m0.952s
+sys	0m0.088s
+wrong output format Expected integer, but "Não" found
+Resposta Errada
+======= generated_073 ============
+
+real	0m0.523s
+user	0m0.976s
+sys	0m0.056s
+wrong output format Expected integer, but "Não" found
+Resposta Errada
+======= generated_074 ============
+
+real	0m0.561s
+user	0m1.012s
+sys	0m0.104s
+wrong output format Expected integer, but "Não" found
+Resposta Errada
+======= generated_075 ============
+
+real	0m0.588s
+user	0m0.996s
+sys	0m0.100s
+wrong output format Expected integer, but "Não" found
+Resposta Errada
+======= generated_076 ============
+
+real	0m0.522s
+user	0m0.960s
+sys	0m0.060s
+wrong output format Expected integer, but "Não" found
+Resposta Errada
+======= generated_077 ============
+
+real	0m0.550s
+user	0m0.960s
+sys	0m0.092s
+wrong output format Expected integer, but "Não" found
+Resposta Errada
+======= generated_078 ============
+
+real	0m0.577s
+user	0m1.072s
+sys	0m0.088s
+wrong output format Expected integer, but "Não" found
+Resposta Errada
+======= generated_079 ============
+
+real	0m0.535s
+user	0m0.916s
+sys	0m0.124s
+wrong output format Expected integer, but "Não" found
+Resposta Errada
+======= generated_080 ============
+
+real	0m14.102s
+user	0m33.744s
+sys	0m0.392s
+ok 7086 numbers
+OK
+======= generated_081 ============
+
+real	0m12.900s
+user	0m22.848s
+sys	0m3.112s
+ok 56184 numbers
+OK
+======= generated_082 ============
+
+real	0m13.495s
+user	0m30.788s
+sys	0m0.480s
+ok 36325 numbers
+OK
+======= generated_083 ============
+
+real	0m11.313s
+user	0m27.008s
+sys	0m0.412s
+ok 18913 numbers
+OK
+======= generated_084 ============
+
+real	0m11.981s
+user	0m28.568s
+sys	0m0.480s
+ok 12088 numbers
+OK
+======= generated_085 ============
+
+real	0m8.962s
+user	0m14.108s
+sys	0m0.356s
+ok 52553 numbers
+OK
+======= generated_086 ============
+
+real	0m11.457s
+user	0m27.256s
+sys	0m0.460s
+ok 50189 numbers
+OK
+======= generated_087 ============
+
+real	0m11.546s
+user	0m26.900s
+sys	0m0.532s
+ok 46483 numbers
+OK
+======= generated_088 ============
+
+real	0m9.540s
+user	0m14.960s
+sys	0m0.376s
+ok 42516 numbers
+OK
+======= generated_089 ============
+
+real	0m9.583s
+user	0m14.636s
+sys	0m0.380s
+ok 6454 numbers
+OK
+======= generated_090 ============
+
+real	0m13.354s
+user	0m30.292s
+sys	0m0.440s
+ok 38982 numbers
+OK
+======= generated_091 ============
+
+real	0m13.130s
+user	0m29.648s
+sys	0m0.572s
+ok 40622 numbers
+OK
+======= generated_092 ============
+
+real	0m13.331s
+user	0m29.612s
+sys	0m0.448s
+ok 1486 numbers
+OK
+======= generated_093 ============
+
+real	0m12.821s
+user	0m29.972s
+sys	0m0.464s
+ok 57161 numbers
+OK
+======= generated_094 ============
+
+real	0m13.203s
+user	0m28.852s
+sys	0m0.460s
+ok 46175 numbers
+OK
+======= generated_095 ============
+
+real	0m14.482s
+user	0m31.816s
+sys	0m2.368s
+ok 42321 numbers
+OK
+======= generated_096 ============
+
+real	0m11.453s
+user	0m16.640s
+sys	0m0.348s
+ok 39237 numbers
+OK
+======= generated_097 ============
+
+real	0m10.580s
+user	0m15.548s
+sys	0m0.404s
+ok 59874 numbers
+OK
+======= generated_098 ============
+
+real	0m11.118s
+user	0m15.768s
+sys	0m0.388s
+ok 16736 numbers
+OK
+======= generated_099 ============
+
+real	0m15.107s
+user	0m33.548s
+sys	0m4.380s
+Tempo Excedido

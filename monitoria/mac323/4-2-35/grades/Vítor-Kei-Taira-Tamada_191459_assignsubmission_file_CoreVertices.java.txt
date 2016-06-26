@@ -1,0 +1,46 @@
+
+COMPILATION ERROR
+
+CORREÇÃO AUTOMÁTICA
+Quantidade de Testes | Veredito
+0 | OK
+0 | Tempo de Execução Excedido
+0 | Resposta Errada
+0 | Erro de Execução
+
+make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/checker/checker' is up to date.
+CoreVertices.java:35: error: reference to Queue is ambiguous
+    Queue<Integer>[] components = (Queue<Integer>[]) new Queue[M];
+    ^
+  both interface java.util.Queue in java.util and class edu.princeton.cs.algs4.Queue in edu.princeton.cs.algs4 match
+CoreVertices.java:35: error: reference to Queue is ambiguous
+    Queue<Integer>[] components = (Queue<Integer>[]) new Queue[M];
+                                   ^
+  both interface java.util.Queue in java.util and class edu.princeton.cs.algs4.Queue in edu.princeton.cs.algs4 match
+CoreVertices.java:35: error: reference to Queue is ambiguous
+    Queue<Integer>[] components = (Queue<Integer>[]) new Queue[M];
+                                                         ^
+  both interface java.util.Queue in java.util and class edu.princeton.cs.algs4.Queue in edu.princeton.cs.algs4 match
+CoreVertices.java:37: error: reference to Queue is ambiguous
+      components[i] = new Queue<Integer>();
+                          ^
+  both interface java.util.Queue in java.util and class edu.princeton.cs.algs4.Queue in edu.princeton.cs.algs4 match
+4 errors
+=========== TENTANDO COMPILAR DE NOVO (imports no começo do código) ==============
+CoreVertices.java:36: error: reference to Queue is ambiguous
+    Queue<Integer>[] components = (Queue<Integer>[]) new Queue[M];
+    ^
+  both interface java.util.Queue in java.util and class edu.princeton.cs.algs4.Queue in edu.princeton.cs.algs4 match
+CoreVertices.java:36: error: reference to Queue is ambiguous
+    Queue<Integer>[] components = (Queue<Integer>[]) new Queue[M];
+                                   ^
+  both interface java.util.Queue in java.util and class edu.princeton.cs.algs4.Queue in edu.princeton.cs.algs4 match
+CoreVertices.java:36: error: reference to Queue is ambiguous
+    Queue<Integer>[] components = (Queue<Integer>[]) new Queue[M];
+                                                         ^
+  both interface java.util.Queue in java.util and class edu.princeton.cs.algs4.Queue in edu.princeton.cs.algs4 match
+CoreVertices.java:38: error: reference to Queue is ambiguous
+      components[i] = new Queue<Integer>();
+                          ^
+  both interface java.util.Queue in java.util and class edu.princeton.cs.algs4.Queue in edu.princeton.cs.algs4 match
+4 errors

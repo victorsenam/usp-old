@@ -1,0 +1,20 @@
+
+COMPILATION ERROR
+
+CORREÇÃO AUTOMÁTICA
+Quantidade de Testes | Veredito
+0 | OK
+0 | Tempo de Execução Excedido
+0 | Resposta Errada
+0 | Erro de Execução
+
+make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/checker/checker' is up to date.
+CoreVertices.java:47: error: variable declaration not allowed here
+            DirectedDFS dfs = new DirectedDFS (G, possibleore);
+                        ^
+1 error
+=========== TENTANDO COMPILAR DE NOVO (imports no começo do código) ==============
+CoreVertices.java:48: error: variable declaration not allowed here
+            DirectedDFS dfs = new DirectedDFS (G, possibleore);
+                        ^
+1 error

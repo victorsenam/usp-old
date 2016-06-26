@@ -1,0 +1,16 @@
+
+COMPILATION ERROR
+
+CORREÇÃO AUTOMÁTICA
+Quantidade de Testes | Veredito
+0 | OK
+0 | Tempo de Execução Excedido
+0 | Resposta Errada
+0 | Erro de Execução
+
+make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/checker/checker' is up to date.
+Note: CoreVertex.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+=========== TENTANDO COMPILAR DE NOVO (imports no começo do código) ==============
+Note: CoreVertex.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.

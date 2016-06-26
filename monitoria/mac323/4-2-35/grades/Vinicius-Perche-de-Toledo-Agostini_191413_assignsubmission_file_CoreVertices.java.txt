@@ -1,0 +1,50 @@
+
+COMPILATION ERROR
+
+CORREÇÃO AUTOMÁTICA
+Quantidade de Testes | Veredito
+0 | OK
+0 | Tempo de Execução Excedido
+0 | Resposta Errada
+0 | Erro de Execução
+
+make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/checker/checker' is up to date.
+CoreVertices.java:7: error: unmappable character for encoding UTF8
+ *  Esta tarefa recebe da entrada padr�o as especifica��es de um d�grafo
+                                      ^
+CoreVertices.java:7: error: unmappable character for encoding UTF8
+ *  Esta tarefa recebe da entrada padr�o as especifica��es de um d�grafo
+                                                      ^
+CoreVertices.java:7: error: unmappable character for encoding UTF8
+ *  Esta tarefa recebe da entrada padr�o as especifica��es de um d�grafo
+                                                       ^
+CoreVertices.java:7: error: unmappable character for encoding UTF8
+ *  Esta tarefa recebe da entrada padr�o as especifica��es de um d�grafo
+                                                                  ^
+CoreVertices.java:8: error: unmappable character for encoding UTF8
+ *  e imprime seus core vertices na sa�da padr�o (caso existam).
+                                      ^
+CoreVertices.java:8: error: unmappable character for encoding UTF8
+ *  e imprime seus core vertices na sa�da padr�o (caso existam).
+                                              ^
+6 errors
+=========== TENTANDO COMPILAR DE NOVO (imports no começo do código) ==============
+CoreVertices.java:8: error: unmappable character for encoding UTF8
+ *  Esta tarefa recebe da entrada padr�o as especifica��es de um d�grafo
+                                      ^
+CoreVertices.java:8: error: unmappable character for encoding UTF8
+ *  Esta tarefa recebe da entrada padr�o as especifica��es de um d�grafo
+                                                      ^
+CoreVertices.java:8: error: unmappable character for encoding UTF8
+ *  Esta tarefa recebe da entrada padr�o as especifica��es de um d�grafo
+                                                       ^
+CoreVertices.java:8: error: unmappable character for encoding UTF8
+ *  Esta tarefa recebe da entrada padr�o as especifica��es de um d�grafo
+                                                                  ^
+CoreVertices.java:9: error: unmappable character for encoding UTF8
+ *  e imprime seus core vertices na sa�da padr�o (caso existam).
+                                      ^
+CoreVertices.java:9: error: unmappable character for encoding UTF8
+ *  e imprime seus core vertices na sa�da padr�o (caso existam).
+                                              ^
+6 errors

@@ -1,0 +1,668 @@
+
+.......WWW....................W.W..W.WW.W.WW.WW...TTTTTTTTTTTRRTTTTTRTTTRRRTTTTTTTTTTTTTTTTTTTTTTTTT
+CORREÇÃO AUTOMÁTICA
+Quantidade de Testes | Veredito
+37 | OK
+44 | Tempo de Execução Excedido
+13 | Resposta Errada
+6 | Erro de Execução
+
+make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/checker/checker' is up to date.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+======= generated_000 ============
+
+real	0m0.171s
+user	0m0.180s
+sys	0m0.012s
+ok 3 number(s): "0 1 2"
+OK
+======= generated_001 ============
+
+real	0m0.141s
+user	0m0.148s
+sys	0m0.024s
+ok 5 number(s): "0 1 2 4 5"
+OK
+======= generated_002 ============
+
+real	0m0.162s
+user	0m0.156s
+sys	0m0.024s
+ok 5 number(s): "1 2 3 4 5"
+OK
+======= generated_003 ============
+
+real	0m0.157s
+user	0m0.156s
+sys	0m0.024s
+ok 1 number(s): "4"
+OK
+======= generated_004 ============
+
+real	0m0.166s
+user	0m0.156s
+sys	0m0.036s
+ok 2 number(s): "1 5"
+OK
+======= generated_005 ============
+
+real	0m0.194s
+user	0m0.300s
+sys	0m0.016s
+ok 21 numbers
+OK
+======= generated_006 ============
+
+real	0m0.177s
+user	0m0.248s
+sys	0m0.044s
+ok 173 numbers
+OK
+======= generated_007 ============
+
+real	0m0.186s
+user	0m0.268s
+sys	0m0.032s
+wrong output format Expected integer, but "No" found
+Resposta Errada
+======= generated_008 ============
+
+real	0m0.182s
+user	0m0.284s
+sys	0m0.032s
+wrong output format Expected integer, but "No" found
+Resposta Errada
+======= generated_009 ============
+
+real	0m0.195s
+user	0m0.260s
+sys	0m0.044s
+wrong output format Expected integer, but "No" found
+Resposta Errada
+======= generated_010 ============
+
+real	0m0.229s
+user	0m0.388s
+sys	0m0.028s
+ok 10 numbers
+OK
+======= generated_011 ============
+
+real	0m0.252s
+user	0m0.404s
+sys	0m0.052s
+ok 30 numbers
+OK
+======= generated_012 ============
+
+real	0m0.239s
+user	0m0.392s
+sys	0m0.044s
+ok 135 numbers
+OK
+======= generated_013 ============
+
+real	0m0.203s
+user	0m0.340s
+sys	0m0.032s
+ok 113 numbers
+OK
+======= generated_014 ============
+
+real	0m0.279s
+user	0m0.428s
+sys	0m0.036s
+ok 197 numbers
+OK
+======= generated_015 ============
+
+real	0m0.404s
+user	0m0.672s
+sys	0m0.056s
+ok 436 numbers
+OK
+======= generated_016 ============
+
+real	0m0.388s
+user	0m0.672s
+sys	0m0.044s
+ok 326 numbers
+OK
+======= generated_017 ============
+
+real	0m0.400s
+user	0m0.696s
+sys	0m0.036s
+ok 23 numbers
+OK
+======= generated_018 ============
+
+real	0m0.450s
+user	0m0.728s
+sys	0m0.036s
+ok 371 numbers
+OK
+======= generated_019 ============
+
+real	0m0.396s
+user	0m0.596s
+sys	0m0.040s
+ok 484 numbers
+OK
+======= generated_020 ============
+
+real	0m0.801s
+user	0m1.220s
+sys	0m0.092s
+ok 422 numbers
+OK
+======= generated_021 ============
+
+real	0m6.883s
+user	0m7.352s
+sys	0m0.124s
+ok 8 numbers
+OK
+======= generated_022 ============
+
+real	0m6.225s
+user	0m6.724s
+sys	0m0.072s
+ok 551 numbers
+OK
+======= generated_023 ============
+
+real	0m1.645s
+user	0m2.156s
+sys	0m0.108s
+ok 483 numbers
+OK
+======= generated_024 ============
+
+real	0m0.654s
+user	0m0.976s
+sys	0m0.068s
+ok 541 numbers
+OK
+======= generated_025 ============
+
+real	0m3.193s
+user	0m3.724s
+sys	0m0.136s
+ok 366 numbers
+OK
+======= generated_026 ============
+
+real	0m3.145s
+user	0m3.832s
+sys	0m0.120s
+ok 137 numbers
+OK
+======= generated_027 ============
+
+real	0m2.724s
+user	0m3.236s
+sys	0m0.100s
+ok 588 numbers
+OK
+======= generated_028 ============
+
+real	0m1.899s
+user	0m2.424s
+sys	0m0.092s
+ok 563 numbers
+OK
+======= generated_029 ============
+
+real	0m2.548s
+user	0m3.116s
+sys	0m0.116s
+ok 116 numbers
+OK
+======= generated_030 ============
+
+real	0m3.798s
+user	0m4.080s
+sys	0m0.120s
+wrong output format Expected integer, but "No" found
+Resposta Errada
+======= generated_031 ============
+
+real	0m1.944s
+user	0m2.288s
+sys	0m0.068s
+ok 1364 numbers
+OK
+======= generated_032 ============
+
+real	0m1.841s
+user	0m2.172s
+sys	0m0.044s
+wrong output format Expected integer, but "No" found
+Resposta Errada
+======= generated_033 ============
+
+real	0m9.387s
+user	0m9.828s
+sys	0m0.088s
+ok 5121 numbers
+OK
+======= generated_034 ============
+
+real	0m4.102s
+user	0m4.488s
+sys	0m0.092s
+ok 849 numbers
+OK
+======= generated_035 ============
+
+real	0m4.237s
+user	0m4.564s
+sys	0m0.092s
+wrong output format Expected integer, but "No" found
+Resposta Errada
+======= generated_036 ============
+
+real	0m7.411s
+user	0m7.736s
+sys	0m0.092s
+ok 8436 numbers
+OK
+======= generated_037 ============
+
+real	0m1.563s
+user	0m1.868s
+sys	0m0.032s
+wrong output format Expected integer, but "No" found
+Resposta Errada
+======= generated_038 ============
+
+real	0m8.227s
+user	0m8.628s
+sys	0m0.076s
+wrong output format Expected integer, but "No" found
+Resposta Errada
+======= generated_039 ============
+
+real	0m2.969s
+user	0m3.320s
+sys	0m0.060s
+ok 1355 numbers
+OK
+======= generated_040 ============
+
+real	0m4.773s
+user	0m5.100s
+sys	0m0.076s
+wrong output format Expected integer, but "No" found
+Resposta Errada
+======= generated_041 ============
+
+real	0m0.735s
+user	0m0.984s
+sys	0m0.032s
+ok 614 numbers
+OK
+======= generated_042 ============
+
+real	0m3.262s
+user	0m3.600s
+sys	0m0.064s
+wrong output format Expected integer, but "No" found
+Resposta Errada
+======= generated_043 ============
+
+real	0m6.307s
+user	0m6.616s
+sys	0m0.088s
+wrong output format Expected integer, but "No" found
+Resposta Errada
+======= generated_044 ============
+
+real	0m2.453s
+user	0m2.804s
+sys	0m0.056s
+ok 1374 numbers
+OK
+======= generated_045 ============
+
+real	0m2.050s
+user	0m2.376s
+sys	0m0.032s
+wrong output format Expected integer, but "No" found
+Resposta Errada
+======= generated_046 ============
+
+real	0m5.382s
+user	0m5.720s
+sys	0m0.064s
+wrong output format Expected integer, but "No" found
+Resposta Errada
+======= generated_047 ============
+
+real	0m1.374s
+user	0m1.744s
+sys	0m0.044s
+ok 1472 numbers
+OK
+======= generated_048 ============
+
+real	0m6.669s
+user	0m6.784s
+sys	0m0.100s
+ok 5682 numbers
+OK
+======= generated_049 ============
+
+real	0m0.926s
+user	0m1.276s
+sys	0m0.032s
+ok 886 numbers
+OK
+======= generated_050 ============
+
+real	0m15.041s
+user	0m15.604s
+sys	0m0.200s
+Tempo Excedido
+======= generated_051 ============
+
+real	0m15.038s
+user	0m15.632s
+sys	0m0.184s
+Tempo Excedido
+======= generated_052 ============
+
+real	0m15.043s
+user	0m15.604s
+sys	0m0.200s
+Tempo Excedido
+======= generated_053 ============
+
+real	0m15.033s
+user	0m15.668s
+sys	0m0.192s
+Tempo Excedido
+======= generated_054 ============
+
+real	0m15.040s
+user	0m15.596s
+sys	0m0.228s
+Tempo Excedido
+======= generated_055 ============
+
+real	0m15.130s
+user	0m15.636s
+sys	0m0.180s
+Tempo Excedido
+======= generated_056 ============
+
+real	0m15.040s
+user	0m15.620s
+sys	0m0.176s
+Tempo Excedido
+======= generated_057 ============
+
+real	0m15.041s
+user	0m15.636s
+sys	0m0.216s
+Tempo Excedido
+======= generated_058 ============
+
+real	0m15.032s
+user	0m15.572s
+sys	0m0.264s
+Tempo Excedido
+======= generated_059 ============
+
+real	0m15.053s
+user	0m15.584s
+sys	0m0.104s
+Tempo Excedido
+======= generated_060 ============
+
+real	0m15.048s
+user	0m16.256s
+sys	0m0.460s
+Tempo Excedido
+======= generated_061 ============
+/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/judge/judge.sh: line 78:  1421 Morto                   timeout --kill-after=20s 15s java -Xss512m -Xmx512m -Xms512m -XX:+HeapDumpOnOutOfMemoryError $RAGRS $ARGS $toexec $2 < ${testpath} > ${OUT}${testcase}.out 2>> $LOG
+
+real	0m35.309s
+user	0m0.000s
+sys	0m0.000s
+Erro de Execução
+======= generated_062 ============
+/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/judge/judge.sh: line 78:  1470 Morto                   timeout --kill-after=20s 15s java -Xss512m -Xmx512m -Xms512m -XX:+HeapDumpOnOutOfMemoryError $RAGRS $ARGS $toexec $2 < ${testpath} > ${OUT}${testcase}.out 2>> $LOG
+
+real	0m35.313s
+user	0m0.000s
+sys	0m0.000s
+Erro de Execução
+======= generated_063 ============
+
+real	0m15.047s
+user	0m16.344s
+sys	0m0.404s
+Tempo Excedido
+======= generated_064 ============
+
+real	0m15.042s
+user	0m15.616s
+sys	0m0.220s
+Tempo Excedido
+======= generated_065 ============
+
+real	0m15.048s
+user	0m15.640s
+sys	0m0.244s
+Tempo Excedido
+======= generated_066 ============
+
+real	0m15.043s
+user	0m15.680s
+sys	0m0.260s
+Tempo Excedido
+======= generated_067 ============
+
+real	0m15.046s
+user	0m16.356s
+sys	0m0.416s
+Tempo Excedido
+======= generated_068 ============
+/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/judge/judge.sh: line 78:  1747 Morto                   timeout --kill-after=20s 15s java -Xss512m -Xmx512m -Xms512m -XX:+HeapDumpOnOutOfMemoryError $RAGRS $ARGS $toexec $2 < ${testpath} > ${OUT}${testcase}.out 2>> $LOG
+
+real	0m35.430s
+user	0m0.000s
+sys	0m0.000s
+Erro de Execução
+======= generated_069 ============
+
+real	0m15.051s
+user	0m16.288s
+sys	0m0.440s
+Tempo Excedido
+======= generated_070 ============
+
+real	0m15.060s
+user	0m16.340s
+sys	0m0.428s
+Tempo Excedido
+======= generated_071 ============
+
+real	0m15.038s
+user	0m15.696s
+sys	0m0.220s
+Tempo Excedido
+======= generated_072 ============
+/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/judge/judge.sh: line 78:  1892 Morto                   timeout --kill-after=20s 15s java -Xss512m -Xmx512m -Xms512m -XX:+HeapDumpOnOutOfMemoryError $RAGRS $ARGS $toexec $2 < ${testpath} > ${OUT}${testcase}.out 2>> $LOG
+
+real	0m35.368s
+user	0m0.000s
+sys	0m0.000s
+Erro de Execução
+======= generated_073 ============
+/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/judge/judge.sh: line 78:  1938 Morto                   timeout --kill-after=20s 15s java -Xss512m -Xmx512m -Xms512m -XX:+HeapDumpOnOutOfMemoryError $RAGRS $ARGS $toexec $2 < ${testpath} > ${OUT}${testcase}.out 2>> $LOG
+
+real	0m35.425s
+user	0m0.000s
+sys	0m0.004s
+Erro de Execução
+======= generated_074 ============
+/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/judge/judge.sh: line 78:  2013 Morto                   timeout --kill-after=20s 15s java -Xss512m -Xmx512m -Xms512m -XX:+HeapDumpOnOutOfMemoryError $RAGRS $ARGS $toexec $2 < ${testpath} > ${OUT}${testcase}.out 2>> $LOG
+
+real	0m35.526s
+user	0m0.000s
+sys	0m0.000s
+Erro de Execução
+======= generated_075 ============
+
+real	0m15.033s
+user	0m15.628s
+sys	0m0.268s
+Tempo Excedido
+======= generated_076 ============
+
+real	0m15.049s
+user	0m16.352s
+sys	0m0.416s
+Tempo Excedido
+======= generated_077 ============
+
+real	0m15.044s
+user	0m15.680s
+sys	0m0.296s
+Tempo Excedido
+======= generated_078 ============
+
+real	0m15.053s
+user	0m15.684s
+sys	0m0.228s
+Tempo Excedido
+======= generated_079 ============
+
+real	0m15.058s
+user	0m16.636s
+sys	0m0.472s
+Tempo Excedido
+======= generated_080 ============
+
+real	0m15.059s
+user	0m38.184s
+sys	0m0.492s
+Tempo Excedido
+======= generated_081 ============
+
+real	0m16.861s
+user	0m25.684s
+sys	0m3.144s
+Tempo Excedido
+======= generated_082 ============
+
+real	0m15.087s
+user	0m32.588s
+sys	0m0.448s
+Tempo Excedido
+======= generated_083 ============
+
+real	0m15.065s
+user	0m31.080s
+sys	0m0.504s
+Tempo Excedido
+======= generated_084 ============
+
+real	0m15.074s
+user	0m33.556s
+sys	0m0.440s
+Tempo Excedido
+======= generated_085 ============
+
+real	0m15.066s
+user	0m30.036s
+sys	0m0.508s
+Tempo Excedido
+======= generated_086 ============
+
+real	0m15.060s
+user	0m29.616s
+sys	0m0.508s
+Tempo Excedido
+======= generated_087 ============
+
+real	0m15.064s
+user	0m30.848s
+sys	0m0.448s
+Tempo Excedido
+======= generated_088 ============
+
+real	0m15.050s
+user	0m19.728s
+sys	0m0.380s
+Tempo Excedido
+======= generated_089 ============
+
+real	0m15.060s
+user	0m18.688s
+sys	0m0.420s
+Tempo Excedido
+======= generated_090 ============
+
+real	0m15.055s
+user	0m30.452s
+sys	0m0.500s
+Tempo Excedido
+======= generated_091 ============
+
+real	0m15.050s
+user	0m31.968s
+sys	0m0.464s
+Tempo Excedido
+======= generated_092 ============
+
+real	0m15.061s
+user	0m30.928s
+sys	0m0.396s
+Tempo Excedido
+======= generated_093 ============
+
+real	0m15.065s
+user	0m32.020s
+sys	0m0.404s
+Tempo Excedido
+======= generated_094 ============
+
+real	0m15.044s
+user	0m31.416s
+sys	0m0.404s
+Tempo Excedido
+======= generated_095 ============
+
+real	0m15.055s
+user	0m32.484s
+sys	0m1.904s
+Tempo Excedido
+======= generated_096 ============
+
+real	0m15.059s
+user	0m19.812s
+sys	0m0.324s
+Tempo Excedido
+======= generated_097 ============
+
+real	0m15.050s
+user	0m19.960s
+sys	0m0.384s
+Tempo Excedido
+======= generated_098 ============
+
+real	0m16.878s
+user	0m25.036s
+sys	0m3.140s
+Tempo Excedido
+======= generated_099 ============
+
+real	0m15.064s
+user	0m33.280s
+sys	0m4.868s
+Tempo Excedido

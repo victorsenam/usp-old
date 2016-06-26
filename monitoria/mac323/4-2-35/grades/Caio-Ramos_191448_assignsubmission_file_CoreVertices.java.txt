@@ -1,0 +1,64 @@
+
+COMPILATION ERROR
+
+CORREÇÃO AUTOMÁTICA
+Quantidade de Testes | Veredito
+0 | OK
+0 | Tempo de Execução Excedido
+0 | Resposta Errada
+0 | Erro de Execução
+
+make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/checker/checker' is up to date.
+CoreVertices.java:17: error: no suitable constructor found for Digraph(In)
+		Digraph D = new Digraph(in);
+		            ^
+    constructor Digraph.Digraph(int) is not applicable
+      (argument mismatch; In cannot be converted to int)
+    constructor Digraph.Digraph(edu.princeton.cs.algs4.In) is not applicable
+      (argument mismatch; In cannot be converted to edu.princeton.cs.algs4.In)
+    constructor Digraph.Digraph(Digraph) is not applicable
+      (argument mismatch; In cannot be converted to Digraph)
+CoreVertices.java:23: error: reference to Queue is ambiguous
+		Queue<Integer>[] components = (Queue<Integer>[]) new Queue[M];
+		^
+  both class edu.princeton.cs.algs4.Queue in edu.princeton.cs.algs4 and interface java.util.Queue in java.util match
+CoreVertices.java:23: error: reference to Queue is ambiguous
+		Queue<Integer>[] components = (Queue<Integer>[]) new Queue[M];
+		                               ^
+  both class edu.princeton.cs.algs4.Queue in edu.princeton.cs.algs4 and interface java.util.Queue in java.util match
+CoreVertices.java:23: error: reference to Queue is ambiguous
+		Queue<Integer>[] components = (Queue<Integer>[]) new Queue[M];
+		                                                     ^
+  both class edu.princeton.cs.algs4.Queue in edu.princeton.cs.algs4 and interface java.util.Queue in java.util match
+CoreVertices.java:25: error: reference to Queue is ambiguous
+			components[i] = new Queue<Integer>();
+			                    ^
+  both class edu.princeton.cs.algs4.Queue in edu.princeton.cs.algs4 and interface java.util.Queue in java.util match
+5 errors
+=========== TENTANDO COMPILAR DE NOVO (imports no começo do código) ==============
+CoreVertices.java:18: error: no suitable constructor found for Digraph(In)
+		Digraph D = new Digraph(in);
+		            ^
+    constructor Digraph.Digraph(int) is not applicable
+      (argument mismatch; In cannot be converted to int)
+    constructor Digraph.Digraph(edu.princeton.cs.algs4.In) is not applicable
+      (argument mismatch; In cannot be converted to edu.princeton.cs.algs4.In)
+    constructor Digraph.Digraph(Digraph) is not applicable
+      (argument mismatch; In cannot be converted to Digraph)
+CoreVertices.java:24: error: reference to Queue is ambiguous
+		Queue<Integer>[] components = (Queue<Integer>[]) new Queue[M];
+		^
+  both class edu.princeton.cs.algs4.Queue in edu.princeton.cs.algs4 and interface java.util.Queue in java.util match
+CoreVertices.java:24: error: reference to Queue is ambiguous
+		Queue<Integer>[] components = (Queue<Integer>[]) new Queue[M];
+		                               ^
+  both class edu.princeton.cs.algs4.Queue in edu.princeton.cs.algs4 and interface java.util.Queue in java.util match
+CoreVertices.java:24: error: reference to Queue is ambiguous
+		Queue<Integer>[] components = (Queue<Integer>[]) new Queue[M];
+		                                                     ^
+  both class edu.princeton.cs.algs4.Queue in edu.princeton.cs.algs4 and interface java.util.Queue in java.util match
+CoreVertices.java:26: error: reference to Queue is ambiguous
+			components[i] = new Queue<Integer>();
+			                    ^
+  both class edu.princeton.cs.algs4.Queue in edu.princeton.cs.algs4 and interface java.util.Queue in java.util match
+5 errors

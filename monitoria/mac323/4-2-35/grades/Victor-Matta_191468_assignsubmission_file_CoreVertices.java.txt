@@ -1,0 +1,710 @@
+
+....................................................................................................
+CORREÇÃO AUTOMÁTICA
+Quantidade de Testes | Veredito
+100 | OK
+0 | Tempo de Execução Excedido
+0 | Resposta Errada
+0 | Erro de Execução
+
+make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/checker/checker' is up to date.
+======= generated_000 ============
+
+real	0m0.157s
+user	0m0.152s
+sys	0m0.040s
+ok 3 number(s): "0 1 2"
+OK
+======= generated_001 ============
+
+real	0m0.151s
+user	0m0.148s
+sys	0m0.024s
+ok 5 number(s): "0 1 2 4 5"
+OK
+======= generated_002 ============
+
+real	0m0.128s
+user	0m0.136s
+sys	0m0.024s
+ok 5 number(s): "1 2 3 4 5"
+OK
+======= generated_003 ============
+
+real	0m0.165s
+user	0m0.140s
+sys	0m0.028s
+ok 1 number(s): "4"
+OK
+======= generated_004 ============
+
+real	0m0.124s
+user	0m0.140s
+sys	0m0.020s
+ok 2 number(s): "1 5"
+OK
+======= generated_005 ============
+
+real	0m0.193s
+user	0m0.228s
+sys	0m0.040s
+ok 21 numbers
+OK
+======= generated_006 ============
+
+real	0m0.193s
+user	0m0.244s
+sys	0m0.040s
+ok 173 numbers
+OK
+======= generated_007 ============
+
+real	0m0.161s
+user	0m0.220s
+sys	0m0.024s
+ok 0 number(s): ""
+OK
+======= generated_008 ============
+
+real	0m0.160s
+user	0m0.204s
+sys	0m0.032s
+ok 0 number(s): ""
+OK
+======= generated_009 ============
+
+real	0m0.157s
+user	0m0.192s
+sys	0m0.036s
+ok 0 number(s): ""
+OK
+======= generated_010 ============
+
+real	0m0.195s
+user	0m0.288s
+sys	0m0.044s
+ok 10 numbers
+OK
+======= generated_011 ============
+
+real	0m0.211s
+user	0m0.324s
+sys	0m0.032s
+ok 30 numbers
+OK
+======= generated_012 ============
+
+real	0m0.196s
+user	0m0.340s
+sys	0m0.028s
+ok 135 numbers
+OK
+======= generated_013 ============
+
+real	0m0.185s
+user	0m0.292s
+sys	0m0.020s
+ok 113 numbers
+OK
+======= generated_014 ============
+
+real	0m0.215s
+user	0m0.364s
+sys	0m0.032s
+ok 197 numbers
+OK
+======= generated_015 ============
+
+real	0m0.283s
+user	0m0.516s
+sys	0m0.032s
+ok 436 numbers
+OK
+======= generated_016 ============
+
+real	0m0.242s
+user	0m0.480s
+sys	0m0.028s
+ok 326 numbers
+OK
+======= generated_017 ============
+
+real	0m0.255s
+user	0m0.416s
+sys	0m0.052s
+ok 23 numbers
+OK
+======= generated_018 ============
+
+real	0m0.249s
+user	0m0.500s
+sys	0m0.048s
+ok 371 numbers
+OK
+======= generated_019 ============
+
+real	0m0.283s
+user	0m0.500s
+sys	0m0.036s
+ok 484 numbers
+OK
+======= generated_020 ============
+
+real	0m0.536s
+user	0m1.012s
+sys	0m0.068s
+ok 422 numbers
+OK
+======= generated_021 ============
+
+real	0m0.853s
+user	0m1.360s
+sys	0m0.088s
+ok 8 numbers
+OK
+======= generated_022 ============
+
+real	0m0.699s
+user	0m1.204s
+sys	0m0.116s
+ok 551 numbers
+OK
+======= generated_023 ============
+
+real	0m0.718s
+user	0m1.184s
+sys	0m0.108s
+ok 483 numbers
+OK
+======= generated_024 ============
+
+real	0m0.284s
+user	0m0.624s
+sys	0m0.024s
+ok 541 numbers
+OK
+======= generated_025 ============
+
+real	0m0.890s
+user	0m1.396s
+sys	0m0.128s
+ok 366 numbers
+OK
+======= generated_026 ============
+
+real	0m1.041s
+user	0m1.644s
+sys	0m0.116s
+ok 137 numbers
+OK
+======= generated_027 ============
+
+real	0m0.763s
+user	0m1.280s
+sys	0m0.144s
+ok 588 numbers
+OK
+======= generated_028 ============
+
+real	0m0.761s
+user	0m1.272s
+sys	0m0.092s
+ok 563 numbers
+OK
+======= generated_029 ============
+
+real	0m0.875s
+user	0m1.468s
+sys	0m0.072s
+ok 116 numbers
+OK
+======= generated_030 ============
+
+real	0m0.280s
+user	0m0.512s
+sys	0m0.052s
+ok 0 number(s): ""
+OK
+======= generated_031 ============
+
+real	0m0.347s
+user	0m0.740s
+sys	0m0.056s
+ok 1364 numbers
+OK
+======= generated_032 ============
+
+real	0m0.230s
+user	0m0.464s
+sys	0m0.024s
+ok 0 number(s): ""
+OK
+======= generated_033 ============
+
+real	0m0.450s
+user	0m0.976s
+sys	0m0.072s
+ok 5121 numbers
+OK
+======= generated_034 ============
+
+real	0m0.363s
+user	0m0.772s
+sys	0m0.052s
+ok 849 numbers
+OK
+======= generated_035 ============
+
+real	0m0.258s
+user	0m0.520s
+sys	0m0.032s
+ok 0 number(s): ""
+OK
+======= generated_036 ============
+
+real	0m0.366s
+user	0m0.848s
+sys	0m0.060s
+ok 8436 numbers
+OK
+======= generated_037 ============
+
+real	0m0.237s
+user	0m0.436s
+sys	0m0.052s
+ok 0 number(s): ""
+OK
+======= generated_038 ============
+
+real	0m0.288s
+user	0m0.588s
+sys	0m0.040s
+ok 0 number(s): ""
+OK
+======= generated_039 ============
+
+real	0m0.321s
+user	0m0.692s
+sys	0m0.056s
+ok 1355 numbers
+OK
+======= generated_040 ============
+
+real	0m0.286s
+user	0m0.592s
+sys	0m0.032s
+ok 0 number(s): ""
+OK
+======= generated_041 ============
+
+real	0m0.273s
+user	0m0.560s
+sys	0m0.044s
+ok 614 numbers
+OK
+======= generated_042 ============
+
+real	0m0.274s
+user	0m0.564s
+sys	0m0.044s
+ok 0 number(s): ""
+OK
+======= generated_043 ============
+
+real	0m0.293s
+user	0m0.588s
+sys	0m0.064s
+ok 0 number(s): ""
+OK
+======= generated_044 ============
+
+real	0m0.339s
+user	0m0.768s
+sys	0m0.072s
+ok 1374 numbers
+OK
+======= generated_045 ============
+
+real	0m0.253s
+user	0m0.500s
+sys	0m0.036s
+ok 0 number(s): ""
+OK
+======= generated_046 ============
+
+real	0m0.236s
+user	0m0.436s
+sys	0m0.060s
+ok 0 number(s): ""
+OK
+======= generated_047 ============
+
+real	0m0.315s
+user	0m0.620s
+sys	0m0.044s
+ok 1472 numbers
+OK
+======= generated_048 ============
+
+real	0m0.383s
+user	0m0.880s
+sys	0m0.052s
+ok 5682 numbers
+OK
+======= generated_049 ============
+
+real	0m0.344s
+user	0m0.652s
+sys	0m0.052s
+ok 886 numbers
+OK
+======= generated_050 ============
+
+real	0m0.907s
+user	0m1.812s
+sys	0m0.128s
+ok 32425 numbers
+OK
+======= generated_051 ============
+
+real	0m0.629s
+user	0m1.112s
+sys	0m0.092s
+ok 0 number(s): ""
+OK
+======= generated_052 ============
+
+real	0m0.586s
+user	0m1.040s
+sys	0m0.088s
+ok 0 number(s): ""
+OK
+======= generated_053 ============
+
+real	0m0.562s
+user	0m0.996s
+sys	0m0.092s
+ok 0 number(s): ""
+OK
+======= generated_054 ============
+
+real	0m0.588s
+user	0m1.076s
+sys	0m0.088s
+ok 0 number(s): ""
+OK
+======= generated_055 ============
+
+real	0m0.880s
+user	0m1.800s
+sys	0m0.124s
+ok 33225 numbers
+OK
+======= generated_056 ============
+
+real	0m0.654s
+user	0m1.116s
+sys	0m0.084s
+ok 0 number(s): ""
+OK
+======= generated_057 ============
+
+real	0m0.572s
+user	0m1.040s
+sys	0m0.080s
+ok 0 number(s): ""
+OK
+======= generated_058 ============
+
+real	0m0.586s
+user	0m1.024s
+sys	0m0.088s
+ok 0 number(s): ""
+OK
+======= generated_059 ============
+
+real	0m0.827s
+user	0m1.708s
+sys	0m0.132s
+ok 36358 numbers
+OK
+======= generated_060 ============
+
+real	0m0.461s
+user	0m0.868s
+sys	0m0.088s
+ok 0 number(s): ""
+OK
+======= generated_061 ============
+
+real	0m0.474s
+user	0m0.888s
+sys	0m0.076s
+ok 0 number(s): ""
+OK
+======= generated_062 ============
+
+real	0m0.528s
+user	0m0.880s
+sys	0m0.096s
+ok 0 number(s): ""
+OK
+======= generated_063 ============
+
+real	0m0.474s
+user	0m0.864s
+sys	0m0.084s
+ok 0 number(s): ""
+OK
+======= generated_064 ============
+
+real	0m0.809s
+user	0m1.720s
+sys	0m0.156s
+ok 44095 numbers
+OK
+======= generated_065 ============
+
+real	0m0.535s
+user	0m0.948s
+sys	0m0.100s
+ok 0 number(s): ""
+OK
+======= generated_066 ============
+
+real	0m0.540s
+user	0m1.044s
+sys	0m0.096s
+ok 0 number(s): ""
+OK
+======= generated_067 ============
+
+real	0m0.525s
+user	0m0.940s
+sys	0m0.112s
+ok 0 number(s): ""
+OK
+======= generated_068 ============
+
+real	0m0.501s
+user	0m0.908s
+sys	0m0.088s
+ok 0 number(s): ""
+OK
+======= generated_069 ============
+
+real	0m0.563s
+user	0m1.012s
+sys	0m0.044s
+ok 0 number(s): ""
+OK
+======= generated_070 ============
+
+real	0m0.544s
+user	0m0.964s
+sys	0m0.120s
+ok 0 number(s): ""
+OK
+======= generated_071 ============
+
+real	0m0.863s
+user	0m1.856s
+sys	0m0.156s
+ok 47188 numbers
+OK
+======= generated_072 ============
+
+real	0m0.480s
+user	0m0.892s
+sys	0m0.072s
+ok 0 number(s): ""
+OK
+======= generated_073 ============
+
+real	0m0.507s
+user	0m0.904s
+sys	0m0.104s
+ok 0 number(s): ""
+OK
+======= generated_074 ============
+
+real	0m0.508s
+user	0m0.964s
+sys	0m0.072s
+ok 0 number(s): ""
+OK
+======= generated_075 ============
+
+real	0m0.535s
+user	0m0.956s
+sys	0m0.068s
+ok 0 number(s): ""
+OK
+======= generated_076 ============
+
+real	0m0.481s
+user	0m0.864s
+sys	0m0.096s
+ok 0 number(s): ""
+OK
+======= generated_077 ============
+
+real	0m0.497s
+user	0m0.836s
+sys	0m0.096s
+ok 0 number(s): ""
+OK
+======= generated_078 ============
+
+real	0m0.522s
+user	0m0.952s
+sys	0m0.096s
+ok 0 number(s): ""
+OK
+======= generated_079 ============
+
+real	0m0.517s
+user	0m0.932s
+sys	0m0.112s
+ok 0 number(s): ""
+OK
+======= generated_080 ============
+
+real	0m13.551s
+user	0m30.528s
+sys	0m0.560s
+ok 7086 numbers
+OK
+======= generated_081 ============
+
+real	0m14.520s
+user	0m33.932s
+sys	0m3.576s
+ok 56184 numbers
+OK
+======= generated_082 ============
+
+real	0m14.038s
+user	0m30.940s
+sys	0m0.480s
+ok 36325 numbers
+OK
+======= generated_083 ============
+
+real	0m9.135s
+user	0m14.108s
+sys	0m0.392s
+ok 18913 numbers
+OK
+======= generated_084 ============
+
+real	0m9.361s
+user	0m14.432s
+sys	0m0.432s
+ok 12088 numbers
+OK
+======= generated_085 ============
+
+real	0m9.886s
+user	0m15.216s
+sys	0m0.364s
+ok 52553 numbers
+OK
+======= generated_086 ============
+
+real	0m9.058s
+user	0m14.428s
+sys	0m0.436s
+ok 50189 numbers
+OK
+======= generated_087 ============
+
+real	0m11.497s
+user	0m27.132s
+sys	0m0.484s
+ok 46483 numbers
+OK
+======= generated_088 ============
+
+real	0m12.389s
+user	0m28.452s
+sys	0m0.456s
+ok 42516 numbers
+OK
+======= generated_089 ============
+
+real	0m9.285s
+user	0m14.424s
+sys	0m0.388s
+ok 6454 numbers
+OK
+======= generated_090 ============
+
+real	0m12.810s
+user	0m28.832s
+sys	0m0.428s
+ok 38982 numbers
+OK
+======= generated_091 ============
+
+real	0m14.500s
+user	0m31.304s
+sys	0m0.500s
+ok 40622 numbers
+OK
+======= generated_092 ============
+
+real	0m11.537s
+user	0m16.628s
+sys	0m0.408s
+ok 1486 numbers
+OK
+======= generated_093 ============
+
+real	0m13.148s
+user	0m30.364s
+sys	0m0.576s
+ok 57161 numbers
+OK
+======= generated_094 ============
+
+real	0m11.087s
+user	0m16.688s
+sys	0m0.392s
+ok 46175 numbers
+OK
+======= generated_095 ============
+
+real	0m13.807s
+user	0m33.836s
+sys	0m0.532s
+ok 42321 numbers
+OK
+======= generated_096 ============
+
+real	0m12.660s
+user	0m19.788s
+sys	0m2.944s
+ok 39237 numbers
+OK
+======= generated_097 ============
+
+real	0m12.401s
+user	0m19.032s
+sys	0m3.284s
+ok 59874 numbers
+OK
+======= generated_098 ============
+
+real	0m14.632s
+user	0m33.052s
+sys	0m3.856s
+ok 16736 numbers
+OK
+======= generated_099 ============
+
+real	0m14.069s
+user	0m32.232s
+sys	0m1.880s
+ok 50277 numbers
+OK

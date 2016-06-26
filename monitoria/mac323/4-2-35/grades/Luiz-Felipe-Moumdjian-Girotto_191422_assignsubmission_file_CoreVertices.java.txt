@@ -1,0 +1,74 @@
+
+COMPILATION ERROR
+
+CORREÇÃO AUTOMÁTICA
+Quantidade de Testes | Veredito
+0 | OK
+0 | Tempo de Execução Excedido
+0 | Resposta Errada
+0 | Erro de Execução
+
+make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/checker/checker' is up to date.
+CoreVertices.java:41: error: unclosed string literal
+                StdOut.print("
+                             ^
+CoreVertices.java:41: error: ';' expected
+                StdOut.print("
+                              ^
+CoreVertices.java:42: error: ';' expected
+There are no core vertices.
+            ^
+CoreVertices.java:42: error: ';' expected
+There are no core vertices.
+                          ^
+CoreVertices.java:43: error: unclosed string literal
+");
+^
+CoreVertices.java:47: error: unclosed string literal
+                StdOut.print("
+                             ^
+CoreVertices.java:47: error: ';' expected
+                StdOut.print("
+                              ^
+CoreVertices.java:48: error: unclosed string literal
+Core vertices: ");
+               ^
+CoreVertices.java:51: error: unclosed string literal
+                StdOut.print("
+                             ^
+CoreVertices.java:53: error: unclosed string literal
+");
+^
+10 errors
+=========== TENTANDO COMPILAR DE NOVO (imports no começo do código) ==============
+CoreVertices.java:42: error: unclosed string literal
+                StdOut.print("
+                             ^
+CoreVertices.java:42: error: ';' expected
+                StdOut.print("
+                              ^
+CoreVertices.java:43: error: ';' expected
+There are no core vertices.
+            ^
+CoreVertices.java:43: error: ';' expected
+There are no core vertices.
+                          ^
+CoreVertices.java:44: error: unclosed string literal
+");
+^
+CoreVertices.java:48: error: unclosed string literal
+                StdOut.print("
+                             ^
+CoreVertices.java:48: error: ';' expected
+                StdOut.print("
+                              ^
+CoreVertices.java:49: error: unclosed string literal
+Core vertices: ");
+               ^
+CoreVertices.java:52: error: unclosed string literal
+                StdOut.print("
+                             ^
+CoreVertices.java:54: error: unclosed string literal
+");
+^
+10 errors

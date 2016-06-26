@@ -1,0 +1,117 @@
+
+COMPILATION ERROR
+
+CORREÇÃO AUTOMÁTICA
+Quantidade de Testes | Veredito
+0 | OK
+0 | Tempo de Execução Excedido
+0 | Resposta Errada
+0 | Erro de Execução
+
+make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/checker/checker' is up to date.
+DepthFirstOrder.java:81: error: cannot find symbol
+    public DepthFirstOrder(EdgeWeightedDigraph G) {
+                           ^
+  symbol:   class EdgeWeightedDigraph
+  location: class DepthFirstOrder
+DepthFirstOrder.java:106: error: cannot find symbol
+    private void dfs(EdgeWeightedDigraph G, int v) {
+                     ^
+  symbol:   class EdgeWeightedDigraph
+  location: class DepthFirstOrder
+CoreVertices.java:24: error: reference to DepthFirstOrder is ambiguous
+    DepthFirstOrder dfs = new DepthFirstOrder(dg);
+                          ^
+  both constructor DepthFirstOrder(Digraph) in DepthFirstOrder and constructor DepthFirstOrder(EdgeWeightedDigraph) in DepthFirstOrder match
+DepthFirstOrder.java:74: error: reference to dfs is ambiguous
+            if (!marked[v]) dfs(G, v);
+                            ^
+  both method dfs(Digraph,int) in DepthFirstOrder and method dfs(EdgeWeightedDigraph,int) in DepthFirstOrder match
+DepthFirstOrder.java:98: error: reference to dfs is ambiguous
+                dfs(G, w);
+                ^
+  both method dfs(Digraph,int) in DepthFirstOrder and method dfs(EdgeWeightedDigraph,int) in DepthFirstOrder match
+DepthFirstOrder.java:110: error: cannot find symbol
+        for (DirectedEdge e : G.adj(v)) {
+             ^
+  symbol:   class DirectedEdge
+  location: class DepthFirstOrder
+DepthFirstOrder.java:159: error: cannot find symbol
+        Stack<Integer> reverse = new Stack<Integer>();
+        ^
+  symbol:   class Stack
+  location: class DepthFirstOrder
+DepthFirstOrder.java:159: error: cannot find symbol
+        Stack<Integer> reverse = new Stack<Integer>();
+                                     ^
+  symbol:   class Stack
+  location: class DepthFirstOrder
+DepthFirstOrder.java:200: error: reference to DepthFirstOrder is ambiguous
+        DepthFirstOrder dfs = new DepthFirstOrder(G);
+                              ^
+  both constructor DepthFirstOrder(Digraph) in DepthFirstOrder and constructor DepthFirstOrder(EdgeWeightedDigraph) in DepthFirstOrder match
+Digraph.java:121: error: cannot find symbol
+            Stack<Integer> reverse = new Stack<Integer>();
+            ^
+  symbol:   class Stack
+  location: class Digraph
+Digraph.java:121: error: cannot find symbol
+            Stack<Integer> reverse = new Stack<Integer>();
+                                         ^
+  symbol:   class Stack
+  location: class Digraph
+KosarajuSharirSCC.java:105: error: reference to DepthFirstOrder is ambiguous
+        DepthFirstOrder dfs = new DepthFirstOrder(G.reverse());
+                              ^
+  both constructor DepthFirstOrder(Digraph) in DepthFirstOrder and constructor DepthFirstOrder(EdgeWeightedDigraph) in DepthFirstOrder match
+KosarajuSharirSCC.java:160: error: cannot find symbol
+        TransitiveClosure tc = new TransitiveClosure(G);
+        ^
+  symbol:   class TransitiveClosure
+  location: class KosarajuSharirSCC
+KosarajuSharirSCC.java:160: error: cannot find symbol
+        TransitiveClosure tc = new TransitiveClosure(G);
+                                   ^
+  symbol:   class TransitiveClosure
+  location: class KosarajuSharirSCC
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+14 errors
+=========== TENTANDO COMPILAR DE NOVO (imports no começo do código) ==============
+DepthFirstOrder.java:205: error: unclosed string literal
+            StdOut.printf("%4d %4d %4d
+                          ^
+DepthFirstOrder.java:206: error: unclosed string literal
+", v, dfs.pre(v), dfs.post(v));
+^
+In.java:74: error: illegal escape character
+        = Pattern.compile("\p{javaWhitespace}+");
+                            ^
+In.java:83: error: illegal escape character
+        = Pattern.compile("\A");
+                            ^
+In.java:661: error: illegal escape character
+            in = new In("G:\www\introcs\stdlib\InTest.txt");
+                            ^
+In.java:661: error: illegal escape character
+            in = new In("G:\www\introcs\stdlib\InTest.txt");
+                                ^
+In.java:661: error: illegal escape character
+            in = new In("G:\www\introcs\stdlib\InTest.txt");
+                                        ^
+In.java:661: error: illegal escape character
+            in = new In("G:\www\introcs\stdlib\InTest.txt");
+                                               ^
+StdIn.java:73: error: illegal escape character
+  private static final Pattern WHITESPACE_PATTERN = Pattern.compile("\p{javaWhitespace}+");
+                                                                      ^
+StdIn.java:79: error: illegal escape character
+  private static final Pattern EVERYTHING_PATTERN = Pattern.compile("\A");
+                                                                      ^
+StdOut.java:229: error: unclosed string literal
+        StdOut.printf("%.6f
+                      ^
+StdOut.java:230: error: unclosed string literal
+", 1.0/7.0);
+^
+12 errors

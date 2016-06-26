@@ -1,0 +1,708 @@
+
+.......WWW....................W.W..W.WW.W.WW.WW....WWWW.WWW.WWWW.WWWWWW.WWWWWWWWT..................T
+CORREÇÃO AUTOMÁTICA
+Quantidade de Testes | Veredito
+60 | OK
+2 | Tempo de Execução Excedido
+38 | Resposta Errada
+0 | Erro de Execução
+
+make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/checker/checker' is up to date.
+======= generated_000 ============
+
+real	0m0.153s
+user	0m0.168s
+sys	0m0.028s
+ok 3 number(s): "0 1 2"
+OK
+======= generated_001 ============
+
+real	0m0.156s
+user	0m0.140s
+sys	0m0.052s
+ok 5 number(s): "0 1 2 4 5"
+OK
+======= generated_002 ============
+
+real	0m0.137s
+user	0m0.152s
+sys	0m0.016s
+ok 5 number(s): "1 2 3 4 5"
+OK
+======= generated_003 ============
+
+real	0m0.134s
+user	0m0.140s
+sys	0m0.020s
+ok 1 number(s): "4"
+OK
+======= generated_004 ============
+
+real	0m0.142s
+user	0m0.184s
+sys	0m0.012s
+ok 2 number(s): "1 5"
+OK
+======= generated_005 ============
+
+real	0m0.172s
+user	0m0.252s
+sys	0m0.020s
+ok 21 numbers
+OK
+======= generated_006 ============
+
+real	0m0.170s
+user	0m0.256s
+sys	0m0.020s
+ok 173 numbers
+OK
+======= generated_007 ============
+
+real	0m0.179s
+user	0m0.260s
+sys	0m0.024s
+wrong answer Output contains longer sequence [length = 10], but answer contains 0 elements
+Resposta Errada
+======= generated_008 ============
+
+real	0m0.175s
+user	0m0.244s
+sys	0m0.044s
+wrong answer Output contains longer sequence [length = 241], but answer contains 0 elements
+Resposta Errada
+======= generated_009 ============
+
+real	0m0.180s
+user	0m0.268s
+sys	0m0.020s
+wrong answer Output contains longer sequence [length = 271], but answer contains 0 elements
+Resposta Errada
+======= generated_010 ============
+
+real	0m0.192s
+user	0m0.308s
+sys	0m0.036s
+ok 10 numbers
+OK
+======= generated_011 ============
+
+real	0m0.202s
+user	0m0.328s
+sys	0m0.048s
+ok 30 numbers
+OK
+======= generated_012 ============
+
+real	0m0.214s
+user	0m0.356s
+sys	0m0.036s
+ok 135 numbers
+OK
+======= generated_013 ============
+
+real	0m0.176s
+user	0m0.284s
+sys	0m0.024s
+ok 113 numbers
+OK
+======= generated_014 ============
+
+real	0m0.222s
+user	0m0.384s
+sys	0m0.024s
+ok 197 numbers
+OK
+======= generated_015 ============
+
+real	0m0.236s
+user	0m0.428s
+sys	0m0.052s
+ok 436 numbers
+OK
+======= generated_016 ============
+
+real	0m0.237s
+user	0m0.444s
+sys	0m0.036s
+ok 326 numbers
+OK
+======= generated_017 ============
+
+real	0m0.242s
+user	0m0.448s
+sys	0m0.036s
+ok 23 numbers
+OK
+======= generated_018 ============
+
+real	0m0.240s
+user	0m0.456s
+sys	0m0.048s
+ok 371 numbers
+OK
+======= generated_019 ============
+
+real	0m0.233s
+user	0m0.436s
+sys	0m0.040s
+ok 484 numbers
+OK
+======= generated_020 ============
+
+real	0m0.495s
+user	0m0.876s
+sys	0m0.100s
+ok 422 numbers
+OK
+======= generated_021 ============
+
+real	0m0.818s
+user	0m1.324s
+sys	0m0.088s
+ok 8 numbers
+OK
+======= generated_022 ============
+
+real	0m0.631s
+user	0m1.100s
+sys	0m0.100s
+ok 551 numbers
+OK
+======= generated_023 ============
+
+real	0m0.666s
+user	0m1.156s
+sys	0m0.092s
+ok 483 numbers
+OK
+======= generated_024 ============
+
+real	0m0.268s
+user	0m0.548s
+sys	0m0.048s
+ok 541 numbers
+OK
+======= generated_025 ============
+
+real	0m0.844s
+user	0m1.448s
+sys	0m0.096s
+ok 366 numbers
+OK
+======= generated_026 ============
+
+real	0m1.038s
+user	0m1.676s
+sys	0m0.096s
+ok 137 numbers
+OK
+======= generated_027 ============
+
+real	0m0.692s
+user	0m1.200s
+sys	0m0.088s
+ok 588 numbers
+OK
+======= generated_028 ============
+
+real	0m0.682s
+user	0m1.180s
+sys	0m0.108s
+ok 563 numbers
+OK
+======= generated_029 ============
+
+real	0m0.847s
+user	0m1.368s
+sys	0m0.120s
+ok 116 numbers
+OK
+======= generated_030 ============
+
+real	0m0.309s
+user	0m0.648s
+sys	0m0.028s
+wrong answer Output contains longer sequence [length = 1581], but answer contains 0 elements
+Resposta Errada
+======= generated_031 ============
+
+real	0m0.314s
+user	0m0.652s
+sys	0m0.052s
+ok 1364 numbers
+OK
+======= generated_032 ============
+
+real	0m0.266s
+user	0m0.532s
+sys	0m0.060s
+wrong answer Output contains longer sequence [length = 1500], but answer contains 0 elements
+Resposta Errada
+======= generated_033 ============
+
+real	0m0.351s
+user	0m0.768s
+sys	0m0.052s
+ok 5121 numbers
+OK
+======= generated_034 ============
+
+real	0m0.332s
+user	0m0.712s
+sys	0m0.064s
+ok 849 numbers
+OK
+======= generated_035 ============
+
+real	0m0.282s
+user	0m0.600s
+sys	0m0.044s
+wrong answer Output contains longer sequence [length = 1862], but answer contains 0 elements
+Resposta Errada
+======= generated_036 ============
+
+real	0m0.322s
+user	0m0.664s
+sys	0m0.060s
+ok 8436 numbers
+OK
+======= generated_037 ============
+
+real	0m0.296s
+user	0m0.544s
+sys	0m0.076s
+wrong answer Output contains longer sequence [length = 1629], but answer contains 0 elements
+Resposta Errada
+======= generated_038 ============
+
+real	0m0.318s
+user	0m0.680s
+sys	0m0.032s
+wrong answer Output contains longer sequence [length = 468], but answer contains 0 elements
+Resposta Errada
+======= generated_039 ============
+
+real	0m0.288s
+user	0m0.632s
+sys	0m0.044s
+ok 1355 numbers
+OK
+======= generated_040 ============
+
+real	0m0.296s
+user	0m0.664s
+sys	0m0.048s
+wrong answer Output contains longer sequence [length = 1565], but answer contains 0 elements
+Resposta Errada
+======= generated_041 ============
+
+real	0m0.260s
+user	0m0.500s
+sys	0m0.052s
+ok 614 numbers
+OK
+======= generated_042 ============
+
+real	0m0.292s
+user	0m0.616s
+sys	0m0.060s
+wrong answer Output contains longer sequence [length = 417], but answer contains 0 elements
+Resposta Errada
+======= generated_043 ============
+
+real	0m0.333s
+user	0m0.728s
+sys	0m0.060s
+wrong answer Output contains longer sequence [length = 1737], but answer contains 0 elements
+Resposta Errada
+======= generated_044 ============
+
+real	0m0.308s
+user	0m0.672s
+sys	0m0.044s
+ok 1374 numbers
+OK
+======= generated_045 ============
+
+real	0m0.283s
+user	0m0.584s
+sys	0m0.052s
+wrong answer Output contains longer sequence [length = 910], but answer contains 0 elements
+Resposta Errada
+======= generated_046 ============
+
+real	0m0.302s
+user	0m0.648s
+sys	0m0.032s
+wrong answer Output contains longer sequence [length = 6415], but answer contains 0 elements
+Resposta Errada
+======= generated_047 ============
+
+real	0m0.272s
+user	0m0.600s
+sys	0m0.036s
+ok 1472 numbers
+OK
+======= generated_048 ============
+
+real	0m0.341s
+user	0m0.716s
+sys	0m0.032s
+ok 5682 numbers
+OK
+======= generated_049 ============
+
+real	0m0.275s
+user	0m0.568s
+sys	0m0.060s
+ok 886 numbers
+OK
+======= generated_050 ============
+
+real	0m0.785s
+user	0m1.332s
+sys	0m0.108s
+ok 32425 numbers
+OK
+======= generated_051 ============
+
+real	0m0.705s
+user	0m1.244s
+sys	0m0.132s
+wrong answer Output contains longer sequence [length = 16392], but answer contains 0 elements
+Resposta Errada
+======= generated_052 ============
+
+real	0m0.685s
+user	0m1.176s
+sys	0m0.140s
+wrong answer Output contains longer sequence [length = 13538], but answer contains 0 elements
+Resposta Errada
+======= generated_053 ============
+
+real	0m0.598s
+user	0m1.112s
+sys	0m0.104s
+wrong answer Output contains longer sequence [length = 1689], but answer contains 0 elements
+Resposta Errada
+======= generated_054 ============
+
+real	0m0.655s
+user	0m1.196s
+sys	0m0.088s
+wrong answer Output contains longer sequence [length = 17858], but answer contains 0 elements
+Resposta Errada
+======= generated_055 ============
+
+real	0m0.795s
+user	0m1.360s
+sys	0m0.144s
+ok 33225 numbers
+OK
+======= generated_056 ============
+
+real	0m0.704s
+user	0m1.212s
+sys	0m0.100s
+wrong answer Output contains longer sequence [length = 9692], but answer contains 0 elements
+Resposta Errada
+======= generated_057 ============
+
+real	0m0.657s
+user	0m1.164s
+sys	0m0.100s
+wrong answer Output contains longer sequence [length = 11710], but answer contains 0 elements
+Resposta Errada
+======= generated_058 ============
+
+real	0m0.607s
+user	0m1.104s
+sys	0m0.096s
+wrong answer Output contains longer sequence [length = 1314], but answer contains 0 elements
+Resposta Errada
+======= generated_059 ============
+
+real	0m0.676s
+user	0m1.152s
+sys	0m0.196s
+ok 36358 numbers
+OK
+======= generated_060 ============
+
+real	0m0.585s
+user	0m1.104s
+sys	0m0.072s
+wrong answer Output contains longer sequence [length = 21173], but answer contains 0 elements
+Resposta Errada
+======= generated_061 ============
+
+real	0m0.578s
+user	0m1.000s
+sys	0m0.132s
+wrong answer Output contains longer sequence [length = 11055], but answer contains 0 elements
+Resposta Errada
+======= generated_062 ============
+
+real	0m0.605s
+user	0m1.176s
+sys	0m0.088s
+wrong answer Output contains longer sequence [length = 14569], but answer contains 0 elements
+Resposta Errada
+======= generated_063 ============
+
+real	0m0.614s
+user	0m1.104s
+sys	0m0.136s
+wrong answer Output contains longer sequence [length = 25635], but answer contains 0 elements
+Resposta Errada
+======= generated_064 ============
+
+real	0m0.676s
+user	0m1.196s
+sys	0m0.140s
+ok 44095 numbers
+OK
+======= generated_065 ============
+
+real	0m0.733s
+user	0m1.344s
+sys	0m0.120s
+wrong answer Output contains longer sequence [length = 37063], but answer contains 0 elements
+Resposta Errada
+======= generated_066 ============
+
+real	0m0.700s
+user	0m1.328s
+sys	0m0.120s
+wrong answer Output contains longer sequence [length = 41421], but answer contains 0 elements
+Resposta Errada
+======= generated_067 ============
+
+real	0m0.654s
+user	0m1.256s
+sys	0m0.116s
+wrong answer Output contains longer sequence [length = 25221], but answer contains 0 elements
+Resposta Errada
+======= generated_068 ============
+
+real	0m0.641s
+user	0m1.136s
+sys	0m0.136s
+wrong answer Output contains longer sequence [length = 19365], but answer contains 0 elements
+Resposta Errada
+======= generated_069 ============
+
+real	0m0.679s
+user	0m1.244s
+sys	0m0.144s
+wrong answer Output contains longer sequence [length = 23456], but answer contains 0 elements
+Resposta Errada
+======= generated_070 ============
+
+real	0m0.642s
+user	0m1.204s
+sys	0m0.108s
+wrong answer Output contains longer sequence [length = 22555], but answer contains 0 elements
+Resposta Errada
+======= generated_071 ============
+
+real	0m0.718s
+user	0m1.356s
+sys	0m0.104s
+ok 47188 numbers
+OK
+======= generated_072 ============
+
+real	0m0.590s
+user	0m1.124s
+sys	0m0.072s
+wrong answer Output contains longer sequence [length = 13478], but answer contains 0 elements
+Resposta Errada
+======= generated_073 ============
+
+real	0m0.576s
+user	0m1.052s
+sys	0m0.112s
+wrong answer Output contains longer sequence [length = 18225], but answer contains 0 elements
+Resposta Errada
+======= generated_074 ============
+
+real	0m0.581s
+user	0m1.088s
+sys	0m0.104s
+wrong answer Output contains longer sequence [length = 12875], but answer contains 0 elements
+Resposta Errada
+======= generated_075 ============
+
+real	0m0.634s
+user	0m1.148s
+sys	0m0.124s
+wrong answer Output contains longer sequence [length = 38063], but answer contains 0 elements
+Resposta Errada
+======= generated_076 ============
+
+real	0m0.589s
+user	0m1.008s
+sys	0m0.116s
+wrong answer Output contains longer sequence [length = 9780], but answer contains 0 elements
+Resposta Errada
+======= generated_077 ============
+
+real	0m0.621s
+user	0m1.072s
+sys	0m0.140s
+wrong answer Output contains longer sequence [length = 26392], but answer contains 0 elements
+Resposta Errada
+======= generated_078 ============
+
+real	0m0.691s
+user	0m1.280s
+sys	0m0.148s
+wrong answer Output contains longer sequence [length = 37753], but answer contains 0 elements
+Resposta Errada
+======= generated_079 ============
+
+real	0m0.613s
+user	0m1.156s
+sys	0m0.088s
+wrong answer Output contains longer sequence [length = 12134], but answer contains 0 elements
+Resposta Errada
+======= generated_080 ============
+
+real	0m15.049s
+user	0m38.472s
+sys	0m0.440s
+Tempo Excedido
+======= generated_081 ============
+
+real	0m12.619s
+user	0m19.064s
+sys	0m3.224s
+ok 56184 numbers
+OK
+======= generated_082 ============
+
+real	0m13.108s
+user	0m30.288s
+sys	0m0.456s
+ok 36325 numbers
+OK
+======= generated_083 ============
+
+real	0m11.226s
+user	0m26.964s
+sys	0m0.456s
+ok 18913 numbers
+OK
+======= generated_084 ============
+
+real	0m11.519s
+user	0m29.100s
+sys	0m0.420s
+ok 12088 numbers
+OK
+======= generated_085 ============
+
+real	0m8.739s
+user	0m13.676s
+sys	0m0.460s
+ok 52553 numbers
+OK
+======= generated_086 ============
+
+real	0m11.772s
+user	0m27.668s
+sys	0m0.456s
+ok 50189 numbers
+OK
+======= generated_087 ============
+
+real	0m11.647s
+user	0m28.176s
+sys	0m0.528s
+ok 46483 numbers
+OK
+======= generated_088 ============
+
+real	0m9.103s
+user	0m14.120s
+sys	0m0.380s
+ok 42516 numbers
+OK
+======= generated_089 ============
+
+real	0m9.282s
+user	0m14.232s
+sys	0m0.372s
+ok 6454 numbers
+OK
+======= generated_090 ============
+
+real	0m12.663s
+user	0m29.040s
+sys	0m0.452s
+ok 38982 numbers
+OK
+======= generated_091 ============
+
+real	0m12.887s
+user	0m29.340s
+sys	0m0.452s
+ok 40622 numbers
+OK
+======= generated_092 ============
+
+real	0m12.776s
+user	0m28.628s
+sys	0m0.356s
+ok 1486 numbers
+OK
+======= generated_093 ============
+
+real	0m12.761s
+user	0m28.952s
+sys	0m0.520s
+ok 57161 numbers
+OK
+======= generated_094 ============
+
+real	0m13.181s
+user	0m28.968s
+sys	0m0.480s
+ok 46175 numbers
+OK
+======= generated_095 ============
+
+real	0m14.545s
+user	0m31.400s
+sys	0m2.072s
+ok 42321 numbers
+OK
+======= generated_096 ============
+
+real	0m11.097s
+user	0m16.392s
+sys	0m0.424s
+ok 39237 numbers
+OK
+======= generated_097 ============
+
+real	0m10.950s
+user	0m16.432s
+sys	0m0.444s
+ok 59874 numbers
+OK
+======= generated_098 ============
+
+real	0m14.135s
+user	0m20.800s
+sys	0m3.264s
+ok 16736 numbers
+OK
+======= generated_099 ============
+
+real	0m15.064s
+user	0m34.192s
+sys	0m4.912s
+Tempo Excedido
