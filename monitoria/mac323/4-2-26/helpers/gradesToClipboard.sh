@@ -7,7 +7,6 @@ cd grades
 
 for aluno in $(ls);
 do
-
-    cat $initial/helpers/trunc.txt $aluno | head -n 80 | xsel -b
+    xsel -b < $aluno
     read -p "clipboard: $aluno"
 done
