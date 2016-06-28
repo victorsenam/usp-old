@@ -1,48 +1,145 @@
 
-COMPILATION ERROR
+LOG DE COMPILAÇÃO E TESTE
+Existem dois métodos de compilação, eles estão indicados, se um falha eu parto pro outro. Então se quiser entender o porque não compilou, verifique todos.
+Segue também o log do corretor, pode ser interessante para descobrir a natureza de seus erros. A saída está trucada (não mostra todas as linha), se quiser ver todo o log, fale comigo
 
+.........TTTTTTTTTTT
 CORREÇÃO AUTOMÁTICA
 Quantidade de Testes | Veredito
-0 | OK
-0 | Tempo de Execução Excedido
+9 | OK
+11 | Tempo de Execução Excedido
 0 | Resposta Errada
 0 | Erro de Execução
 
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/checker/checker' is up to date.
-CoreVertices.java:28: error: no suitable constructor found for Digraph(In)
-        Digraph G = new Digraph(in);
-                    ^
-    constructor Digraph.Digraph(int) is not applicable
-      (argument mismatch; In cannot be converted to int)
-    constructor Digraph.Digraph(edu.princeton.cs.algs4.In) is not applicable
-      (argument mismatch; In cannot be converted to edu.princeton.cs.algs4.In)
-    constructor Digraph.Digraph(Digraph) is not applicable
-      (argument mismatch; In cannot be converted to Digraph)
-CoreVertices.java:43: error: reference to Queue is ambiguous
-                Queue<Integer> queue = new Queue<Integer>();
-                ^
-  both class edu.princeton.cs.algs4.Queue in edu.princeton.cs.algs4 and interface java.util.Queue in java.util match
-CoreVertices.java:43: error: reference to Queue is ambiguous
-                Queue<Integer> queue = new Queue<Integer>();
-                                           ^
-  both class edu.princeton.cs.algs4.Queue in edu.princeton.cs.algs4 and interface java.util.Queue in java.util match
-3 errors
-=========== TENTANDO COMPILAR DE NOVO (imports no começo do código) ==============
-CoreVertices.java:29: error: no suitable constructor found for Digraph(In)
-        Digraph G = new Digraph(in);
-                    ^
-    constructor Digraph.Digraph(int) is not applicable
-      (argument mismatch; In cannot be converted to int)
-    constructor Digraph.Digraph(edu.princeton.cs.algs4.In) is not applicable
-      (argument mismatch; In cannot be converted to edu.princeton.cs.algs4.In)
-    constructor Digraph.Digraph(Digraph) is not applicable
-      (argument mismatch; In cannot be converted to Digraph)
-CoreVertices.java:44: error: reference to Queue is ambiguous
-                Queue<Integer> queue = new Queue<Integer>();
-                ^
-  both class edu.princeton.cs.algs4.Queue in edu.princeton.cs.algs4 and interface java.util.Queue in java.util match
-CoreVertices.java:44: error: reference to Queue is ambiguous
-                Queue<Integer> queue = new Queue<Integer>();
-                                           ^
-  both class edu.princeton.cs.algs4.Queue in edu.princeton.cs.algs4 and interface java.util.Queue in java.util match
-3 errors
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+======= generated_000 ============
+
+real	0m0.186s
+user	0m0.180s
+sys	0m0.032s
+ok 3 numbers (in increasing order): 0 1 2
+OK
+======= generated_001 ============
+
+real	0m0.163s
+user	0m0.164s
+sys	0m0.020s
+ok 5 numbers (in increasing order): 0 1 2 4 5
+OK
+======= generated_002 ============
+
+real	0m0.209s
+user	0m0.292s
+sys	0m0.028s
+ok 21 numbers (in increasing order): 7 8 ... 116 118
+OK
+======= generated_003 ============
+
+real	0m0.234s
+user	0m0.376s
+sys	0m0.048s
+ok 10 numbers (in increasing order): 11 21 ... 80 112
+OK
+======= generated_004 ============
+
+real	0m0.455s
+user	0m0.692s
+sys	0m0.044s
+ok 436 numbers (in increasing order): 0 5 ... 718 719
+OK
+======= generated_005 ============
+
+real	0m0.860s
+user	0m1.304s
+sys	0m0.084s
+ok 422 numbers (in increasing order): 1 2 ... 581 582
+OK
+======= generated_006 ============
+
+real	0m6.962s
+user	0m7.504s
+sys	0m0.100s
+ok 8 numbers (in increasing order): 3 33 ... 456 504
+OK
+======= generated_007 ============
+
+real	0m5.979s
+user	0m6.832s
+sys	0m1.496s
+ok empty sequence
+OK
+======= generated_008 ============
+
+real	0m7.737s
+user	0m8.552s
+sys	0m1.280s
+ok empty sequence
+OK
+======= generated_009 ============
+
+real	0m15.035s
+user	0m15.648s
+sys	0m0.184s
+Tempo Excedido
+======= generated_010 ============
+
+real	0m15.038s
+user	0m15.660s
+sys	0m0.220s
+Tempo Excedido
+======= generated_011 ============
+
+real	0m15.045s
+user	0m15.636s
+sys	0m0.196s
+Tempo Excedido
+======= generated_012 ============
+
+real	0m15.048s
+user	0m16.572s
+sys	0m0.456s
+Tempo Excedido
+======= generated_013 ============
+
+real	0m15.051s
+user	0m15.720s
+sys	0m0.264s
+Tempo Excedido
+======= generated_014 ============
+
+real	0m15.054s
+user	0m16.556s
+sys	0m0.444s
+Tempo Excedido
+======= generated_015 ============
+
+real	0m15.070s
+user	0m34.712s
+sys	0m0.504s
+Tempo Excedido
+======= generated_016 ============
+
+real	0m17.188s
+user	0m26.264s
+sys	0m4.004s
+Tempo Excedido
+======= generated_017 ============
+
+real	0m15.054s
+user	0m20.164s
+sys	0m0.336s
+Tempo Excedido
+======= generated_018 ============
+
+real	0m15.053s
+user	0m30.452s
+sys	0m0.360s
+Tempo Excedido
+======= generated_019 ============
+
+real	0m15.052s
+user	0m31.732s
+sys	0m0.424s
+Tempo Excedido

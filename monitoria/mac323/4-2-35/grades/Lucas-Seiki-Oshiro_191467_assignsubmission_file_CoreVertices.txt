@@ -1,834 +1,181 @@
 
-RRRWRRR...RRRRRRRRRRRRRRRRRRRR.R.RR.R..R.RR.R..RRRR....R...R....R......R........RRRRRRRRRRRRRRRRRRRT
+LOG DE COMPILAÇÃO E TESTE
+Existem dois métodos de compilação, eles estão indicados, se um falha eu parto pro outro. Então se quiser entender o porque não compilou, verifique todos.
+Segue também o log do corretor, pode ser interessante para descobrir a natureza de seus erros. A saída está trucada (não mostra todas as linha), se quiser ver todo o log, fale comigo
+
+RRRRRRR..R.....RRRRR
 CORREÇÃO AUTOMÁTICA
 Quantidade de Testes | Veredito
-37 | OK
-1 | Tempo de Execução Excedido
-1 | Resposta Errada
-61 | Erro de Execução
+7 | OK
+0 | Tempo de Execução Excedido
+0 | Resposta Errada
+13 | Erro de Execução
 
+rm: não foi possível remover “judge_out/”: Arquivo ou diretório não encontrado
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/checker/checker' is up to date.
 ======= generated_000 ============
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
 	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
 	at CoreVertices.main(CoreVertices.java:40)
 
-real	0m0.153s
-user	0m0.176s
-sys	0m0.020s
+real	0m0.297s
+user	0m0.172s
+sys	0m0.040s
 Erro de Execução
 ======= generated_001 ============
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 7
 	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
 	at CoreVertices.main(CoreVertices.java:40)
 
-real	0m0.137s
-user	0m0.164s
-sys	0m0.024s
+real	0m0.134s
+user	0m0.148s
+sys	0m0.032s
 Erro de Execução
 ======= generated_002 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m0.139s
-user	0m0.156s
-sys	0m0.020s
-Erro de Execução
-======= generated_003 ============
-
-real	0m0.139s
-user	0m0.148s
-sys	0m0.020s
-wrong answer Answer contains longer sequence [length = 1], but output contains 0 elements
-Resposta Errada
-======= generated_004 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 8
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m0.142s
-user	0m0.164s
-sys	0m0.016s
-Erro de Execução
-======= generated_005 ============
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 130
 	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
 	at CoreVertices.main(CoreVertices.java:40)
 
-real	0m0.171s
-user	0m0.268s
-sys	0m0.012s
+real	0m0.181s
+user	0m0.260s
+sys	0m0.028s
 Erro de Execução
-======= generated_006 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 208
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m0.175s
-user	0m0.248s
-sys	0m0.044s
-Erro de Execução
-======= generated_007 ============
-
-real	0m0.155s
-user	0m0.208s
-sys	0m0.040s
-ok 0 number(s): ""
-OK
-======= generated_008 ============
-
-real	0m0.170s
-user	0m0.256s
-sys	0m0.020s
-ok 0 number(s): ""
-OK
-======= generated_009 ============
-
-real	0m0.156s
-user	0m0.216s
-sys	0m0.036s
-ok 0 number(s): ""
-OK
-======= generated_010 ============
+======= generated_003 ============
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 114
 	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
 	at CoreVertices.main(CoreVertices.java:40)
 
-real	0m0.195s
+real	0m0.189s
 user	0m0.324s
-sys	0m0.036s
-Erro de Execução
-======= generated_011 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 338
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m0.204s
-user	0m0.368s
 sys	0m0.024s
 Erro de Execução
-======= generated_012 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 307
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m0.224s
-user	0m0.380s
-sys	0m0.036s
-Erro de Execução
-======= generated_013 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 130
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m0.185s
-user	0m0.312s
-sys	0m0.020s
-Erro de Execução
-======= generated_014 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 354
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m0.206s
-user	0m0.356s
-sys	0m0.040s
-Erro de Execução
-======= generated_015 ============
+======= generated_004 ============
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 720
 	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
 	at CoreVertices.main(CoreVertices.java:40)
 
-real	0m0.257s
-user	0m0.496s
-sys	0m0.056s
+real	0m0.258s
+user	0m0.524s
+sys	0m0.052s
 Erro de Execução
-======= generated_016 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 689
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m0.249s
-user	0m0.504s
-sys	0m0.044s
-Erro de Execução
-======= generated_017 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 512
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m0.223s
-user	0m0.436s
-sys	0m0.036s
-Erro de Execução
-======= generated_018 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 882
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m0.252s
-user	0m0.520s
-sys	0m0.040s
-Erro de Execução
-======= generated_019 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 559
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m0.261s
-user	0m0.532s
-sys	0m0.032s
-Erro de Execução
-======= generated_020 ============
+======= generated_005 ============
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 585
 	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
 	at CoreVertices.main(CoreVertices.java:40)
 
-real	0m0.523s
-user	0m0.932s
-sys	0m0.136s
+real	0m0.510s
+user	0m0.916s
+sys	0m0.124s
 Erro de Execução
-======= generated_021 ============
+======= generated_006 ============
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 554
 	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
 	at CoreVertices.main(CoreVertices.java:40)
 
-real	0m0.872s
-user	0m1.388s
-sys	0m0.096s
+real	0m0.848s
+user	0m1.284s
+sys	0m0.132s
 Erro de Execução
-======= generated_022 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 778
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
+======= generated_007 ============
 
-real	0m0.668s
-user	0m1.188s
-sys	0m0.096s
-Erro de Execução
-======= generated_023 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 747
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m0.719s
-user	0m1.296s
-sys	0m0.108s
-Erro de Execução
-======= generated_024 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 570
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m0.287s
-user	0m0.644s
-sys	0m0.036s
-Erro de Execução
-======= generated_025 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 794
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m0.876s
-user	0m1.492s
-sys	0m0.088s
-Erro de Execução
-======= generated_026 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 763
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m1.018s
-user	0m1.624s
-sys	0m0.116s
-Erro de Execução
-======= generated_027 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 841
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m0.729s
-user	0m1.332s
-sys	0m0.068s
-Erro de Execução
-======= generated_028 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 810
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m0.689s
-user	0m1.268s
-sys	0m0.100s
-Erro de Execução
-======= generated_029 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 633
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m0.860s
-user	0m1.384s
-sys	0m0.148s
-Erro de Execução
-======= generated_030 ============
-
-real	0m0.274s
-user	0m0.548s
-sys	0m0.048s
-ok 0 number(s): ""
-OK
-======= generated_031 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2397
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m0.333s
-user	0m0.768s
-sys	0m0.052s
-Erro de Execução
-======= generated_032 ============
-
-real	0m0.246s
-user	0m0.492s
-sys	0m0.032s
-ok 0 number(s): ""
-OK
-======= generated_033 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 7597
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m0.439s
-user	0m1.060s
-sys	0m0.044s
-Erro de Execução
-======= generated_034 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 3704
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m0.372s
-user	0m0.864s
-sys	0m0.052s
-Erro de Execução
-======= generated_035 ============
-
-real	0m0.272s
-user	0m0.536s
-sys	0m0.076s
-ok 0 number(s): ""
-OK
-======= generated_036 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 8904
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m0.392s
-user	0m0.924s
-sys	0m0.060s
-Erro de Execução
-======= generated_037 ============
-
-real	0m0.256s
-user	0m0.492s
+real	0m0.260s
+user	0m0.556s
 sys	0m0.040s
-ok 0 number(s): ""
+ok empty sequence
 OK
-======= generated_038 ============
+======= generated_008 ============
 
-real	0m0.304s
-user	0m0.616s
-sys	0m0.072s
-ok 0 number(s): ""
-OK
-======= generated_039 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 3719
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m0.323s
-user	0m0.784s
-sys	0m0.032s
-Erro de Execução
-======= generated_040 ============
-
-real	0m0.274s
-user	0m0.596s
-sys	0m0.036s
-ok 0 number(s): ""
-OK
-======= generated_041 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1266
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m0.292s
-user	0m0.596s
-sys	0m0.048s
-Erro de Execução
-======= generated_042 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 3866
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m0.322s
-user	0m0.712s
-sys	0m0.056s
-Erro de Execução
-======= generated_043 ============
-
-real	0m0.321s
-user	0m0.688s
-sys	0m0.060s
-ok 0 number(s): ""
-OK
-======= generated_044 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2573
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m0.363s
-user	0m0.836s
-sys	0m0.048s
-Erro de Execução
-======= generated_045 ============
-
-real	0m0.265s
-user	0m0.528s
-sys	0m0.060s
-ok 0 number(s): ""
-OK
-======= generated_046 ============
-
-real	0m0.258s
-user	0m0.524s
-sys	0m0.028s
-ok 0 number(s): ""
-OK
-======= generated_047 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2372
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m0.315s
-user	0m0.696s
-sys	0m0.036s
-Erro de Execução
-======= generated_048 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6480
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m0.381s
-user	0m0.908s
-sys	0m0.060s
-Erro de Execução
-======= generated_049 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1079
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m0.327s
-user	0m0.700s
+real	0m0.249s
+user	0m0.508s
 sys	0m0.052s
-Erro de Execução
-======= generated_050 ============
+ok empty sequence
+OK
+======= generated_009 ============
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 37952
 	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
 	at CoreVertices.main(CoreVertices.java:40)
 
-real	0m0.907s
+real	0m1.380s
 user	0m1.812s
-sys	0m0.112s
+sys	0m0.124s
 Erro de Execução
-======= generated_051 ============
-
-real	0m0.671s
-user	0m1.148s
-sys	0m0.096s
-ok 0 number(s): ""
-OK
-======= generated_052 ============
-
-real	0m0.598s
-user	0m1.100s
-sys	0m0.096s
-ok 0 number(s): ""
-OK
-======= generated_053 ============
-
-real	0m0.578s
-user	0m1.024s
-sys	0m0.112s
-ok 0 number(s): ""
-OK
-======= generated_054 ============
-
-real	0m0.555s
-user	0m1.020s
-sys	0m0.076s
-ok 0 number(s): ""
-OK
-======= generated_055 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 38374
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m0.945s
-user	0m1.872s
-sys	0m0.152s
-Erro de Execução
-======= generated_056 ============
+======= generated_010 ============
 
 real	0m0.652s
-user	0m1.136s
+user	0m1.152s
 sys	0m0.076s
-ok 0 number(s): ""
+ok empty sequence
 OK
-======= generated_057 ============
+======= generated_011 ============
 
-real	0m0.569s
-user	0m1.044s
-sys	0m0.088s
-ok 0 number(s): ""
-OK
-======= generated_058 ============
-
-real	0m0.590s
-user	0m1.056s
-sys	0m0.088s
-ok 0 number(s): ""
-OK
-======= generated_059 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 39417
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m0.869s
-user	0m1.856s
-sys	0m0.108s
-Erro de Execução
-======= generated_060 ============
-
-real	0m0.533s
-user	0m0.944s
-sys	0m0.108s
-ok 0 number(s): ""
-OK
-======= generated_061 ============
-
-real	0m0.505s
-user	0m0.972s
-sys	0m0.044s
-ok 0 number(s): ""
-OK
-======= generated_062 ============
-
-real	0m0.542s
-user	0m1.072s
-sys	0m0.080s
-ok 0 number(s): ""
-OK
-======= generated_063 ============
-
-real	0m0.544s
-user	0m0.952s
-sys	0m0.116s
-ok 0 number(s): ""
-OK
-======= generated_064 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 44936
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m0.872s
-user	0m1.800s
-sys	0m0.156s
-Erro de Execução
-======= generated_065 ============
-
-real	0m0.568s
-user	0m1.060s
-sys	0m0.116s
-ok 0 number(s): ""
-OK
-======= generated_066 ============
-
-real	0m0.559s
-user	0m1.096s
-sys	0m0.084s
-ok 0 number(s): ""
-OK
-======= generated_067 ============
-
-real	0m0.570s
-user	0m1.100s
-sys	0m0.088s
-ok 0 number(s): ""
-OK
-======= generated_068 ============
-
-real	0m0.565s
-user	0m0.972s
+real	0m0.643s
+user	0m1.148s
 sys	0m0.076s
-ok 0 number(s): ""
+ok empty sequence
 OK
-======= generated_069 ============
+======= generated_012 ============
 
-real	0m0.568s
-user	0m1.036s
-sys	0m0.108s
-ok 0 number(s): ""
-OK
-======= generated_070 ============
-
-real	0m0.569s
-user	0m1.024s
-sys	0m0.120s
-ok 0 number(s): ""
-OK
-======= generated_071 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 49761
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m0.862s
-user	0m1.856s
-sys	0m0.152s
-Erro de Execução
-======= generated_072 ============
-
-real	0m0.512s
-user	0m0.992s
-sys	0m0.052s
-ok 0 number(s): ""
-OK
-======= generated_073 ============
-
-real	0m0.524s
+real	0m0.513s
 user	0m0.968s
-sys	0m0.068s
-ok 0 number(s): ""
+sys	0m0.088s
+ok empty sequence
 OK
-======= generated_074 ============
+======= generated_013 ============
 
-real	0m0.557s
-user	0m1.000s
-sys	0m0.108s
-ok 0 number(s): ""
+real	0m0.531s
+user	0m1.004s
+sys	0m0.072s
+ok empty sequence
 OK
-======= generated_075 ============
+======= generated_014 ============
 
-real	0m0.541s
-user	0m0.968s
-sys	0m0.092s
-ok 0 number(s): ""
-OK
-======= generated_076 ============
-
-real	0m0.522s
-user	0m0.928s
-sys	0m0.080s
-ok 0 number(s): ""
-OK
-======= generated_077 ============
-
-real	0m0.506s
+real	0m0.511s
 user	0m0.940s
-sys	0m0.084s
-ok 0 number(s): ""
+sys	0m0.088s
+ok empty sequence
 OK
-======= generated_078 ============
-
-real	0m0.567s
-user	0m1.080s
-sys	0m0.080s
-ok 0 number(s): ""
-OK
-======= generated_079 ============
-
-real	0m0.523s
-user	0m0.988s
-sys	0m0.068s
-ok 0 number(s): ""
-OK
-======= generated_080 ============
+======= generated_015 ============
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 60818
 	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
 	at CoreVertices.main(CoreVertices.java:40)
 
-real	0m14.842s
-user	0m38.108s
-sys	0m0.472s
+real	0m14.008s
+user	0m33.588s
+sys	0m0.456s
 Erro de Execução
-======= generated_081 ============
+======= generated_016 ============
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 60197
 	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
 	at CoreVertices.main(CoreVertices.java:40)
 
-real	0m13.143s
-user	0m19.872s
-sys	0m2.716s
+real	0m13.197s
+user	0m23.488s
+sys	0m3.032s
 Erro de Execução
-======= generated_082 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 69577
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m14.291s
-user	0m31.916s
-sys	0m0.512s
-Erro de Execução
-======= generated_083 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 66798
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m11.519s
-user	0m27.272s
-sys	0m0.416s
-Erro de Execução
-======= generated_084 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 64019
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m11.950s
-user	0m28.996s
-sys	0m0.468s
-Erro de Execução
-======= generated_085 ============
+======= generated_017 ============
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 61240
 	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
 	at CoreVertices.main(CoreVertices.java:40)
 
-real	0m9.475s
-user	0m15.104s
-sys	0m0.300s
+real	0m9.684s
+user	0m15.060s
+sys	0m0.496s
 Erro de Execução
-======= generated_086 ============
+======= generated_018 ============
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 60619
 	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
 	at CoreVertices.main(CoreVertices.java:40)
 
-real	0m11.999s
-user	0m27.816s
-sys	0m0.444s
+real	0m12.327s
+user	0m28.220s
+sys	0m0.480s
 Erro de Execução
-======= generated_087 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 65683
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m11.519s
-user	0m27.656s
-sys	0m0.564s
-Erro de Execução
-======= generated_088 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 65062
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m9.482s
-user	0m14.800s
-sys	0m0.436s
-Erro de Execução
-======= generated_089 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 62283
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m9.535s
-user	0m14.776s
-sys	0m0.324s
-Erro de Execução
-======= generated_090 ============
+======= generated_019 ============
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 69100
 	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
 	at CoreVertices.main(CoreVertices.java:40)
 
-real	0m14.495s
-user	0m31.772s
-sys	0m0.480s
+real	0m13.820s
+user	0m31.196s
+sys	0m0.468s
 Erro de Execução
-======= generated_091 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 68479
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m14.014s
-user	0m31.288s
-sys	0m0.516s
-Erro de Execução
-======= generated_092 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 65700
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m14.177s
-user	0m30.592s
-sys	0m0.440s
-Erro de Execução
-======= generated_093 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 62921
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m13.324s
-user	0m30.636s
-sys	0m0.448s
-Erro de Execução
-======= generated_094 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 60142
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m13.377s
-user	0m29.692s
-sys	0m0.528s
-Erro de Execução
-======= generated_095 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 69522
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m14.108s
-user	0m32.068s
-sys	0m1.808s
-Erro de Execução
-======= generated_096 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 66743
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m12.652s
-user	0m19.708s
-sys	0m3.352s
-Erro de Execução
-======= generated_097 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 63964
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m12.390s
-user	0m19.064s
-sys	0m3.444s
-Erro de Execução
-======= generated_098 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 61185
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m12.553s
-user	0m19.384s
-sys	0m3.100s
-Erro de Execução
-======= generated_099 ============
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 60564
-	at edu.princeton.cs.algs4.KosarajuSharirSCC.id(KosarajuSharirSCC.java:157)
-	at CoreVertices.main(CoreVertices.java:40)
-
-real	0m15.028s
-user	0m34.428s
-sys	0m5.136s
-Tempo Excedido

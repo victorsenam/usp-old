@@ -3,55 +3,67 @@
 
 using namespace std;
 
+const int N = 10000;
+
+bool val[N];
+
+bool getVal (int a) {
+    if (a < 0)
+        return !val[-a-1];
+    return val[a-1];
+}
+
 int main(int argc, char * argv[])
 {
-    setName("compare ordered sequences of signed int%ld numbers", 8 * sizeof(long long));
+    setName("2-sat checker\n");
 
     registerTestlibCmd(argc, argv);
 
-    int n = 0;
-    string firstElems;
+    int n = inf.readInt();
+    int m = inf.readInt();
 
-    while (!ans.seekEof() && !ouf.seekEof())
-    {
-        n++;
-        long long j = ans.readLong();
-        long long p = ouf.readLong();
-        if (j != p)
-            quitf(_wa, "%d%s numbers differ - expected: '%s', found: '%s'", n, englishEnding(n).c_str(), vtos(j).c_str(), vtos(p).c_str());
-        else
-            if (n <= 5)
-            {
-                if (firstElems.length() > 0)
-                    firstElems += " ";
-                firstElems += vtos(j);
-            }
+    string res = ouf.readString();
+    if (res == "MENTIRA") {
+        res = ans.readString();
+        
+        if (res == "MENTIRA")
+            quitf(_ok, "não há como satisfazer a expressão\n");
+        else if (res != "VERDADE")
+            quitf(_fail, "juíz dá resposta inválida %s\n", res.c_str());
+
+        for (int i = 0; i < n; i++)
+            val[i] = ans.readInt(0, 1);
+
+        for (int i = 0; i < m; i++) {
+            bool a = getVal(inf.readInt());
+            bool b = getVal(inf.readInt());
+
+            if (!(a || b))
+                quitf(_fail, "juíz dá valoração falsa e diz ser verdadeira\n");
+        }
+
+        quitf(_wa, "solução existente e não encontrada\n");
+    } else if (res == "VERDADE") {
+        res = ans.readString();
+        for (int i = 0; i < n; i++)
+            val[i] = ouf.readInt(0, 1);
+
+        for (int i = 0; i < m; i++) {
+            bool a = getVal(inf.readInt());
+            bool b = getVal(inf.readInt());
+
+
+            if (!(a || b))
+                quitf(_wa, "valoração dada não satisfaz a expressão\n");
+        }
+
+        if (res == "MENTIRA")
+            quitf(_fail, "solução do juíz não encontra valoração existente\n");
+        else if (res != "VERDADE")
+            quitf(_fail, "juíz dá resposta inválida %s\n", res.c_str());
+
+        quitf(_ok, "solução correta\n");
+    } else {
+        quitf(_wa, "resposta inválida %s\n", res.c_str());
     }
-
-    int extraInAnsCount = 0;
-
-    while (!ans.seekEof())
-    {
-        ans.readLong();
-        extraInAnsCount++;
-    }
-    
-    int extraInOufCount = 0;
-
-    while (!ouf.seekEof())
-    {
-        ouf.readLong();
-        extraInOufCount++;
-    }
-
-    if (extraInAnsCount > 0)
-        quitf(_wa, "Answer contains longer sequence [length = %d], but output contains %d elements", n + extraInAnsCount, n);
-    
-    if (extraInOufCount > 0)
-        quitf(_wa, "Output contains longer sequence [length = %d], but answer contains %d elements", n + extraInOufCount, n);
-    
-    if (n <= 5)
-        quitf(_ok, "%d number(s): \"%s\"", n, compress(firstElems).c_str());
-    else
-        quitf(_ok, "%d numbers", n);
 }

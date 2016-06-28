@@ -1,50 +1,153 @@
 
-COMPILATION ERROR
+LOG DE COMPILAÇÃO E TESTE
+Existem dois métodos de compilação, eles estão indicados, se um falha eu parto pro outro. Então se quiser entender o porque não compilou, verifique todos.
+Segue também o log do corretor, pode ser interessante para descobrir a natureza de seus erros. A saída está trucada (não mostra todas as linha), se quiser ver todo o log, fale comigo
 
+...............T....
 CORREÇÃO AUTOMÁTICA
 Quantidade de Testes | Veredito
-0 | OK
-0 | Tempo de Execução Excedido
+19 | OK
+1 | Tempo de Execução Excedido
 0 | Resposta Errada
 0 | Erro de Execução
 
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/checker/checker' is up to date.
-CoreVertices.java:7: error: unmappable character for encoding UTF8
- *  Esta tarefa recebe da entrada padr�o as especifica��es de um d�grafo
-                                      ^
-CoreVertices.java:7: error: unmappable character for encoding UTF8
- *  Esta tarefa recebe da entrada padr�o as especifica��es de um d�grafo
-                                                      ^
-CoreVertices.java:7: error: unmappable character for encoding UTF8
- *  Esta tarefa recebe da entrada padr�o as especifica��es de um d�grafo
-                                                       ^
-CoreVertices.java:7: error: unmappable character for encoding UTF8
- *  Esta tarefa recebe da entrada padr�o as especifica��es de um d�grafo
-                                                                  ^
-CoreVertices.java:8: error: unmappable character for encoding UTF8
- *  e imprime seus core vertices na sa�da padr�o (caso existam).
-                                      ^
-CoreVertices.java:8: error: unmappable character for encoding UTF8
- *  e imprime seus core vertices na sa�da padr�o (caso existam).
-                                              ^
-6 errors
-=========== TENTANDO COMPILAR DE NOVO (imports no começo do código) ==============
-CoreVertices.java:8: error: unmappable character for encoding UTF8
- *  Esta tarefa recebe da entrada padr�o as especifica��es de um d�grafo
-                                      ^
-CoreVertices.java:8: error: unmappable character for encoding UTF8
- *  Esta tarefa recebe da entrada padr�o as especifica��es de um d�grafo
-                                                      ^
-CoreVertices.java:8: error: unmappable character for encoding UTF8
- *  Esta tarefa recebe da entrada padr�o as especifica��es de um d�grafo
-                                                       ^
-CoreVertices.java:8: error: unmappable character for encoding UTF8
- *  Esta tarefa recebe da entrada padr�o as especifica��es de um d�grafo
-                                                                  ^
-CoreVertices.java:9: error: unmappable character for encoding UTF8
- *  e imprime seus core vertices na sa�da padr�o (caso existam).
-                                      ^
-CoreVertices.java:9: error: unmappable character for encoding UTF8
- *  e imprime seus core vertices na sa�da padr�o (caso existam).
-                                              ^
-6 errors
+======= generated_000 ============
+
+real	0m0.149s
+user	0m0.160s
+sys	0m0.016s
+ok 3 numbers (in increasing order): 0 1 2
+OK
+======= generated_001 ============
+
+real	0m0.163s
+user	0m0.160s
+sys	0m0.016s
+ok 5 numbers (in increasing order): 0 1 2 4 5
+OK
+======= generated_002 ============
+
+real	0m0.204s
+user	0m0.252s
+sys	0m0.016s
+ok 21 numbers (in increasing order): 7 8 ... 116 118
+OK
+======= generated_003 ============
+
+real	0m0.202s
+user	0m0.296s
+sys	0m0.032s
+ok 10 numbers (in increasing order): 11 21 ... 80 112
+OK
+======= generated_004 ============
+
+real	0m0.245s
+user	0m0.448s
+sys	0m0.044s
+ok 436 numbers (in increasing order): 0 5 ... 718 719
+OK
+======= generated_005 ============
+
+real	0m0.487s
+user	0m0.876s
+sys	0m0.072s
+ok 422 numbers (in increasing order): 1 2 ... 581 582
+OK
+======= generated_006 ============
+
+real	0m0.892s
+user	0m1.364s
+sys	0m0.124s
+ok 8 numbers (in increasing order): 3 33 ... 456 504
+OK
+======= generated_007 ============
+
+real	0m0.276s
+user	0m0.552s
+sys	0m0.060s
+ok empty sequence
+OK
+======= generated_008 ============
+
+real	0m0.283s
+user	0m0.568s
+sys	0m0.044s
+ok empty sequence
+OK
+======= generated_009 ============
+
+real	0m0.774s
+user	0m1.364s
+sys	0m0.124s
+ok 32425 numbers (in increasing order): 0 1 ... 37950 37951
+OK
+======= generated_010 ============
+
+real	0m0.691s
+user	0m1.188s
+sys	0m0.072s
+ok empty sequence
+OK
+======= generated_011 ============
+
+real	0m0.673s
+user	0m1.196s
+sys	0m0.080s
+ok empty sequence
+OK
+======= generated_012 ============
+
+real	0m0.550s
+user	0m0.988s
+sys	0m0.128s
+ok empty sequence
+OK
+======= generated_013 ============
+
+real	0m0.541s
+user	0m1.032s
+sys	0m0.096s
+ok empty sequence
+OK
+======= generated_014 ============
+
+real	0m0.533s
+user	0m0.964s
+sys	0m0.104s
+ok empty sequence
+OK
+======= generated_015 ============
+
+real	0m15.209s
+user	0m37.244s
+sys	0m0.496s
+Tempo Excedido
+======= generated_016 ============
+
+real	0m13.423s
+user	0m24.816s
+sys	0m3.120s
+ok 56184 numbers (in increasing order): 0 1 ... 60195 60196
+OK
+======= generated_017 ============
+
+real	0m9.715s
+user	0m14.808s
+sys	0m0.380s
+ok 52553 numbers (in increasing order): 0 1 ... 61238 61239
+OK
+======= generated_018 ============
+
+real	0m11.652s
+user	0m27.064s
+sys	0m0.484s
+ok 50189 numbers (in increasing order): 0 1 ... 60617 60618
+OK
+======= generated_019 ============
+
+real	0m13.110s
+user	0m29.424s
+sys	0m0.472s
+ok 38982 numbers (in increasing order): 1 2 ... 69098 69099
+OK

@@ -12,7 +12,6 @@ RES="judge.out"
 OUT="judge_out/"
 TMPOUT="judge_output.txt"
 ARGS="-cp .:algs4.jar:stdlib.jar"
-RARGS="-Xmx512M -Xms512M"
 NAME="SAT"
 
 # parameters
@@ -38,6 +37,7 @@ r_tl=0
 r_wa=0
 r_re=0
 r_tm=0
+r_fa=0
 
 # compiling
 make ${DIR}tester/checker/checker &>> $LOG
@@ -77,7 +77,7 @@ then
         
         echo "======= $testcase ============" >> $LOG
 
-        (time timeout --kill-after=60s 30s java $RAGRS $ARGS $toexec $2 < ${testpath} > ${OUT}${testcase}.out 2>> $LOG) &>> $LOG
+        (time timeout --kill-after=30s 20s java -Xss1024m -Xmx1024m -Xms1024m $RAGRS $ARGS $toexec $2 < ${testpath} > ${OUT}${testcase}.out 2>> $LOG) &>> $LOG
         run_status=$?
 
 
@@ -90,7 +90,12 @@ then
         then
             checker_output=$( ${DIR}tester/checker/checker ${testpath} ${OUT}${testcase}.out ${DIR}tester/solution/answer/${testcase}.out 2>&1)
             echo $checker_output >> $LOG
-            if [[ ${checker_output:0:1} == "o" ]]
+            if [[ ${checker_output:0:4} == "FAIL" ]]
+            then
+                ((r_fa++))
+                echo "FAIL" >> $LOG
+                veredict="F"
+            elif [[ ${checker_output:0:1} == "o" ]]
             then
                 ((r_ac++))
                 echo "OK" >> $LOG
@@ -122,3 +127,4 @@ echo "$r_ac | OK" >> $RES
 echo "$r_tl | Tempo de Execução Excedido" >> $RES
 echo "$r_wa | Resposta Errada" >> $RES
 echo "$r_re | Erro de Execução" >> $RES
+echo "$r_fa | Falha no corretor (avise o monitor)" >> $RES

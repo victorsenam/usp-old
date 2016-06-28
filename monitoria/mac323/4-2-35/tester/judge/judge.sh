@@ -61,8 +61,8 @@ then
 
     for javafile in $(find *.java);
     do
-        echo -e "import edu.princeton.cs.algs4.*;\n$(cat $javafile)" > $javafile
         #echo -e "import java.util.*;\n$(cat $javafile)" > $javafile
+        echo -e "import edu.princeton.cs.algs4.*;\n$(cat $javafile)" > $javafile
     done
 
     javac $ARGS *.java &>> $LOG
@@ -82,7 +82,7 @@ then
         
         echo "======= $testcase ============" >> $LOG
 
-        (time timeout --kill-after=20s 15s java -Xss512m -Xmx512m -Xms512m -XX:+HeapDumpOnOutOfMemoryError $RAGRS $ARGS $toexec $2 < ${testpath} > ${OUT}${testcase}.out 2>> $LOG) &>> $LOG
+        (time timeout --kill-after=20s 15s java -Xss512m -Xmx512m -Xms512m $RAGRS $ARGS $toexec $2 < ${testpath} > ${OUT}${testcase}.out 2>> $LOG) &>> $LOG
 
         run_status=$?
 
@@ -111,6 +111,8 @@ then
             echo "Erro de Execução" >> $LOG
             veredict="R"
         fi
+
+        #rm ${OUT}${testcase}.out
 
         printf $veredict
         printf $veredict >> $RES

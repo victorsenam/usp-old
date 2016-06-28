@@ -1,712 +1,157 @@
 
-.......WWW....................W.W..W.WW.W.WW.WW....WWWW.WWW.WWWW.WWWWWW.WWWWWWWW....................
+LOG DE COMPILAÇÃO E TESTE
+Existem dois métodos de compilação, eles estão indicados, se um falha eu parto pro outro. Então se quiser entender o porque não compilou, verifique todos.
+Segue também o log do corretor, pode ser interessante para descobrir a natureza de seus erros. A saída está trucada (não mostra todas as linha), se quiser ver todo o log, fale comigo
+
+.......WW.WWWWW.....
 CORREÇÃO AUTOMÁTICA
 Quantidade de Testes | Veredito
-62 | OK
+13 | OK
 0 | Tempo de Execução Excedido
-38 | Resposta Errada
+7 | Resposta Errada
 0 | Erro de Execução
 
+rm: não foi possível remover “judge_out/”: Arquivo ou diretório não encontrado
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/checker/checker' is up to date.
 Note: CoreVertices.java uses unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
 ======= generated_000 ============
 
-real	0m0.174s
-user	0m0.172s
-sys	0m0.036s
-ok 3 number(s): "0 1 2"
+real	0m0.159s
+user	0m0.184s
+sys	0m0.016s
+ok 3 numbers (in increasing order): 0 1 2
 OK
 ======= generated_001 ============
 
-real	0m0.159s
-user	0m0.152s
-sys	0m0.036s
-ok 5 number(s): "0 1 2 4 5"
+real	0m0.161s
+user	0m0.184s
+sys	0m0.008s
+ok 5 numbers (in increasing order): 0 1 2 4 5
 OK
 ======= generated_002 ============
 
-real	0m0.156s
-user	0m0.152s
-sys	0m0.032s
-ok 5 number(s): "1 2 3 4 5"
+real	0m0.172s
+user	0m0.256s
+sys	0m0.012s
+ok 21 numbers (in increasing order): 7 8 ... 116 118
 OK
 ======= generated_003 ============
 
-real	0m0.143s
-user	0m0.140s
+real	0m0.203s
+user	0m0.336s
 sys	0m0.036s
-ok 1 number(s): "4"
+ok 10 numbers (in increasing order): 11 21 ... 80 112
 OK
 ======= generated_004 ============
 
-real	0m0.146s
-user	0m0.160s
-sys	0m0.012s
-ok 2 number(s): "1 5"
+real	0m0.262s
+user	0m0.476s
+sys	0m0.024s
+ok 436 numbers (in increasing order): 0 5 ... 718 719
 OK
 ======= generated_005 ============
 
-real	0m0.192s
-user	0m0.248s
-sys	0m0.016s
-ok 21 numbers
+real	0m0.542s
+user	0m0.944s
+sys	0m0.108s
+ok 422 numbers (in increasing order): 1 2 ... 581 582
 OK
 ======= generated_006 ============
 
-real	0m0.167s
-user	0m0.244s
-sys	0m0.032s
-ok 173 numbers
+real	0m0.899s
+user	0m1.432s
+sys	0m0.124s
+ok 8 numbers (in increasing order): 3 33 ... 456 504
 OK
 ======= generated_007 ============
 
-real	0m0.214s
-user	0m0.232s
-sys	0m0.036s
-wrong answer Output contains longer sequence [length = 1], but answer contains 0 elements
+real	0m0.335s
+user	0m0.628s
+sys	0m0.064s
+wrong answer Expected 0 elements, but 1 found
 Resposta Errada
 ======= generated_008 ============
 
-real	0m0.189s
-user	0m0.268s
-sys	0m0.032s
-wrong answer Output contains longer sequence [length = 232], but answer contains 0 elements
+real	0m0.440s
+user	0m0.680s
+sys	0m0.044s
+wrong answer Expected 0 elements, but 6401 found
 Resposta Errada
 ======= generated_009 ============
 
-real	0m0.187s
-user	0m0.284s
-sys	0m0.016s
-wrong answer Output contains longer sequence [length = 266], but answer contains 0 elements
-Resposta Errada
+real	0m0.783s
+user	0m1.372s
+sys	0m0.156s
+ok 32425 numbers (in increasing order): 0 1 ... 37950 37951
+OK
 ======= generated_010 ============
 
-real	0m0.198s
-user	0m0.304s
-sys	0m0.032s
-ok 10 numbers
-OK
+real	0m0.701s
+user	0m1.300s
+sys	0m0.116s
+wrong answer Expected 0 elements, but 16319 found
+Resposta Errada
 ======= generated_011 ============
 
-real	0m0.205s
-user	0m0.336s
-sys	0m0.044s
-ok 30 numbers
-OK
-======= generated_012 ============
-
-real	0m0.209s
-user	0m0.332s
-sys	0m0.044s
-ok 135 numbers
-OK
-======= generated_013 ============
-
-real	0m0.184s
-user	0m0.288s
-sys	0m0.028s
-ok 113 numbers
-OK
-======= generated_014 ============
-
-real	0m0.219s
-user	0m0.340s
-sys	0m0.032s
-ok 197 numbers
-OK
-======= generated_015 ============
-
-real	0m0.296s
-user	0m0.444s
-sys	0m0.028s
-ok 436 numbers
-OK
-======= generated_016 ============
-
-real	0m0.249s
-user	0m0.472s
-sys	0m0.032s
-ok 326 numbers
-OK
-======= generated_017 ============
-
-real	0m0.226s
-user	0m0.424s
-sys	0m0.032s
-ok 23 numbers
-OK
-======= generated_018 ============
-
-real	0m0.246s
-user	0m0.444s
-sys	0m0.052s
-ok 371 numbers
-OK
-======= generated_019 ============
-
-real	0m0.232s
-user	0m0.444s
-sys	0m0.036s
-ok 484 numbers
-OK
-======= generated_020 ============
-
-real	0m0.541s
-user	0m0.980s
-sys	0m0.072s
-ok 422 numbers
-OK
-======= generated_021 ============
-
-real	0m0.845s
-user	0m1.360s
-sys	0m0.120s
-ok 8 numbers
-OK
-======= generated_022 ============
-
-real	0m0.654s
-user	0m1.200s
-sys	0m0.100s
-ok 551 numbers
-OK
-======= generated_023 ============
-
-real	0m0.690s
-user	0m1.212s
-sys	0m0.116s
-ok 483 numbers
-OK
-======= generated_024 ============
-
-real	0m0.263s
-user	0m0.552s
-sys	0m0.048s
-ok 541 numbers
-OK
-======= generated_025 ============
-
-real	0m0.862s
-user	0m1.488s
-sys	0m0.084s
-ok 366 numbers
-OK
-======= generated_026 ============
-
-real	0m1.019s
-user	0m1.632s
-sys	0m0.124s
-ok 137 numbers
-OK
-======= generated_027 ============
-
-real	0m0.702s
-user	0m1.208s
-sys	0m0.116s
-ok 588 numbers
-OK
-======= generated_028 ============
-
-real	0m0.683s
-user	0m1.180s
-sys	0m0.120s
-ok 563 numbers
-OK
-======= generated_029 ============
-
-real	0m0.858s
-user	0m1.476s
-sys	0m0.100s
-ok 116 numbers
-OK
-======= generated_030 ============
-
-real	0m0.279s
-user	0m0.560s
-sys	0m0.064s
-wrong answer Output contains longer sequence [length = 1], but answer contains 0 elements
-Resposta Errada
-======= generated_031 ============
-
-real	0m0.305s
-user	0m0.652s
-sys	0m0.056s
-ok 1364 numbers
-OK
-======= generated_032 ============
-
-real	0m0.296s
-user	0m0.572s
-sys	0m0.028s
-wrong answer Output contains longer sequence [length = 1], but answer contains 0 elements
-Resposta Errada
-======= generated_033 ============
-
-real	0m0.402s
-user	0m0.792s
-sys	0m0.080s
-ok 5121 numbers
-OK
-======= generated_034 ============
-
-real	0m0.317s
-user	0m0.700s
-sys	0m0.060s
-ok 849 numbers
-OK
-======= generated_035 ============
-
-real	0m0.321s
-user	0m0.684s
-sys	0m0.056s
-wrong answer Output contains longer sequence [length = 1714], but answer contains 0 elements
-Resposta Errada
-======= generated_036 ============
-
-real	0m0.308s
-user	0m0.660s
-sys	0m0.060s
-ok 8436 numbers
-OK
-======= generated_037 ============
-
-real	0m0.255s
-user	0m0.544s
-sys	0m0.028s
-wrong answer Output contains longer sequence [length = 1624], but answer contains 0 elements
-Resposta Errada
-======= generated_038 ============
-
-real	0m0.304s
-user	0m0.636s
-sys	0m0.052s
-wrong answer Output contains longer sequence [length = 1], but answer contains 0 elements
-Resposta Errada
-======= generated_039 ============
-
-real	0m0.338s
-user	0m0.676s
-sys	0m0.064s
-ok 1355 numbers
-OK
-======= generated_040 ============
-
-real	0m0.331s
-user	0m0.712s
-sys	0m0.064s
-wrong answer Output contains longer sequence [length = 1467], but answer contains 0 elements
-Resposta Errada
-======= generated_041 ============
-
-real	0m0.293s
-user	0m0.520s
-sys	0m0.028s
-ok 614 numbers
-OK
-======= generated_042 ============
-
-real	0m0.311s
-user	0m0.632s
-sys	0m0.068s
-wrong answer Output contains longer sequence [length = 406], but answer contains 0 elements
-Resposta Errada
-======= generated_043 ============
-
-real	0m0.326s
-user	0m0.748s
-sys	0m0.036s
-wrong answer Output contains longer sequence [length = 1703], but answer contains 0 elements
-Resposta Errada
-======= generated_044 ============
-
-real	0m0.342s
-user	0m0.704s
-sys	0m0.068s
-ok 1374 numbers
-OK
-======= generated_045 ============
-
-real	0m0.287s
-user	0m0.628s
-sys	0m0.036s
-wrong answer Output contains longer sequence [length = 893], but answer contains 0 elements
-Resposta Errada
-======= generated_046 ============
-
-real	0m0.322s
-user	0m0.648s
-sys	0m0.048s
-wrong answer Output contains longer sequence [length = 6401], but answer contains 0 elements
-Resposta Errada
-======= generated_047 ============
-
-real	0m0.306s
-user	0m0.600s
-sys	0m0.040s
-ok 1472 numbers
-OK
-======= generated_048 ============
-
-real	0m0.328s
-user	0m0.728s
-sys	0m0.024s
-ok 5682 numbers
-OK
-======= generated_049 ============
-
-real	0m0.318s
-user	0m0.628s
-sys	0m0.028s
-ok 886 numbers
-OK
-======= generated_050 ============
-
-real	0m0.771s
-user	0m1.408s
-sys	0m0.116s
-ok 32425 numbers
-OK
-======= generated_051 ============
-
-real	0m0.728s
-user	0m1.348s
-sys	0m0.092s
-wrong answer Output contains longer sequence [length = 16319], but answer contains 0 elements
-Resposta Errada
-======= generated_052 ============
-
-real	0m0.691s
-user	0m1.236s
-sys	0m0.108s
-wrong answer Output contains longer sequence [length = 13404], but answer contains 0 elements
-Resposta Errada
-======= generated_053 ============
-
-real	0m0.623s
-user	0m1.168s
-sys	0m0.088s
-wrong answer Output contains longer sequence [length = 456], but answer contains 0 elements
-Resposta Errada
-======= generated_054 ============
-
-real	0m0.687s
-user	0m1.264s
-sys	0m0.124s
-wrong answer Output contains longer sequence [length = 17440], but answer contains 0 elements
-Resposta Errada
-======= generated_055 ============
-
-real	0m0.779s
-user	0m1.396s
-sys	0m0.140s
-ok 33225 numbers
-OK
-======= generated_056 ============
-
-real	0m0.710s
-user	0m1.252s
-sys	0m0.104s
-wrong answer Output contains longer sequence [length = 9484], but answer contains 0 elements
-Resposta Errada
-======= generated_057 ============
-
-real	0m0.655s
-user	0m1.232s
-sys	0m0.108s
-wrong answer Output contains longer sequence [length = 11500], but answer contains 0 elements
-Resposta Errada
-======= generated_058 ============
-
-real	0m0.642s
-user	0m1.120s
-sys	0m0.108s
-wrong answer Output contains longer sequence [length = 1], but answer contains 0 elements
-Resposta Errada
-======= generated_059 ============
-
-real	0m0.724s
-user	0m1.396s
-sys	0m0.132s
-ok 36358 numbers
-OK
-======= generated_060 ============
-
-real	0m0.626s
-user	0m1.260s
-sys	0m0.068s
-wrong answer Output contains longer sequence [length = 19245], but answer contains 0 elements
-Resposta Errada
-======= generated_061 ============
-
-real	0m0.568s
-user	0m1.092s
-sys	0m0.120s
-wrong answer Output contains longer sequence [length = 5796], but answer contains 0 elements
-Resposta Errada
-======= generated_062 ============
-
-real	0m0.603s
-user	0m1.148s
-sys	0m0.136s
-wrong answer Output contains longer sequence [length = 8396], but answer contains 0 elements
-Resposta Errada
-======= generated_063 ============
-
-real	0m0.669s
-user	0m1.120s
-sys	0m0.120s
-wrong answer Output contains longer sequence [length = 23012], but answer contains 0 elements
-Resposta Errada
-======= generated_064 ============
-
-real	0m0.706s
-user	0m1.320s
-sys	0m0.156s
-ok 44095 numbers
-OK
-======= generated_065 ============
-
-real	0m0.705s
-user	0m1.332s
-sys	0m0.148s
-wrong answer Output contains longer sequence [length = 36777], but answer contains 0 elements
-Resposta Errada
-======= generated_066 ============
-
-real	0m0.698s
-user	0m1.340s
-sys	0m0.112s
-wrong answer Output contains longer sequence [length = 41392], but answer contains 0 elements
-Resposta Errada
-======= generated_067 ============
-
-real	0m0.710s
+real	0m0.701s
 user	0m1.244s
-sys	0m0.124s
-wrong answer Output contains longer sequence [length = 23476], but answer contains 0 elements
+sys	0m0.104s
+wrong answer Expected 0 elements, but 9484 found
 Resposta Errada
-======= generated_068 ============
-
-real	0m0.659s
-user	0m1.196s
-sys	0m0.140s
-wrong answer Output contains longer sequence [length = 14698], but answer contains 0 elements
-Resposta Errada
-======= generated_069 ============
-
-real	0m0.660s
-user	0m1.292s
-sys	0m0.092s
-wrong answer Output contains longer sequence [length = 22750], but answer contains 0 elements
-Resposta Errada
-======= generated_070 ============
-
-real	0m0.678s
-user	0m1.200s
-sys	0m0.128s
-wrong answer Output contains longer sequence [length = 22060], but answer contains 0 elements
-Resposta Errada
-======= generated_071 ============
-
-real	0m0.765s
-user	0m1.352s
-sys	0m0.128s
-ok 47188 numbers
-OK
-======= generated_072 ============
-
-real	0m0.581s
-user	0m1.108s
-sys	0m0.088s
-wrong answer Output contains longer sequence [length = 4371], but answer contains 0 elements
-Resposta Errada
-======= generated_073 ============
-
-real	0m0.705s
-user	0m1.108s
-sys	0m0.132s
-wrong answer Output contains longer sequence [length = 12049], but answer contains 0 elements
-Resposta Errada
-======= generated_074 ============
+======= generated_012 ============
 
 real	0m0.625s
 user	0m1.180s
-sys	0m0.100s
-wrong answer Output contains longer sequence [length = 9726], but answer contains 0 elements
+sys	0m0.148s
+wrong answer Expected 0 elements, but 19245 found
 Resposta Errada
-======= generated_075 ============
+======= generated_013 ============
 
-real	0m0.696s
-user	0m1.388s
-sys	0m0.120s
-wrong answer Output contains longer sequence [length = 38032], but answer contains 0 elements
+real	0m0.691s
+user	0m1.344s
+sys	0m0.132s
+wrong answer Expected 0 elements, but 38032 found
 Resposta Errada
-======= generated_076 ============
+======= generated_014 ============
 
-real	0m0.563s
-user	0m1.176s
-sys	0m0.108s
-wrong answer Output contains longer sequence [length = 1], but answer contains 0 elements
+real	0m0.608s
+user	0m1.168s
+sys	0m0.104s
+wrong answer Expected 0 elements, but 1 found
 Resposta Errada
-======= generated_077 ============
+======= generated_015 ============
 
-real	0m0.635s
-user	0m1.244s
-sys	0m0.120s
-wrong answer Output contains longer sequence [length = 25327], but answer contains 0 elements
-Resposta Errada
-======= generated_078 ============
-
-real	0m0.674s
-user	0m1.292s
-sys	0m0.168s
-wrong answer Output contains longer sequence [length = 37518], but answer contains 0 elements
-Resposta Errada
-======= generated_079 ============
-
-real	0m0.567s
-user	0m1.124s
-sys	0m0.076s
-wrong answer Output contains longer sequence [length = 1], but answer contains 0 elements
-Resposta Errada
-======= generated_080 ============
-
-real	0m13.224s
-user	0m29.864s
-sys	0m0.516s
-ok 7086 numbers
+real	0m13.471s
+user	0m29.724s
+sys	0m0.424s
+ok 7086 numbers (in increasing order): 2 24 ... 60811 60812
 OK
-======= generated_081 ============
+======= generated_016 ============
 
-real	0m12.981s
-user	0m30.108s
-sys	0m0.480s
-ok 56184 numbers
+real	0m13.622s
+user	0m30.968s
+sys	0m0.484s
+ok 56184 numbers (in increasing order): 0 1 ... 60195 60196
 OK
-======= generated_082 ============
+======= generated_017 ============
 
-real	0m11.160s
-user	0m16.608s
+real	0m9.163s
+user	0m14.296s
 sys	0m0.364s
-ok 36325 numbers
+ok 52553 numbers (in increasing order): 0 1 ... 61238 61239
 OK
-======= generated_083 ============
+======= generated_018 ============
 
-real	0m8.761s
-user	0m13.272s
-sys	0m0.360s
-ok 18913 numbers
+real	0m9.809s
+user	0m13.788s
+sys	0m0.428s
+ok 50189 numbers (in increasing order): 0 1 ... 60617 60618
 OK
-======= generated_084 ============
+======= generated_019 ============
 
-real	0m9.764s
-user	0m14.324s
-sys	0m0.408s
-ok 12088 numbers
-OK
-======= generated_085 ============
-
-real	0m9.228s
-user	0m14.352s
-sys	0m0.408s
-ok 52553 numbers
-OK
-======= generated_086 ============
-
-real	0m9.292s
-user	0m13.856s
-sys	0m0.372s
-ok 50189 numbers
-OK
-======= generated_087 ============
-
-real	0m9.182s
-user	0m14.324s
-sys	0m0.380s
-ok 46483 numbers
-OK
-======= generated_088 ============
-
-real	0m11.610s
-user	0m26.888s
-sys	0m0.444s
-ok 42516 numbers
-OK
-======= generated_089 ============
-
-real	0m11.177s
-user	0m26.868s
-sys	0m0.440s
-ok 6454 numbers
-OK
-======= generated_090 ============
-
-real	0m14.011s
-user	0m31.456s
-sys	0m3.016s
-ok 38982 numbers
-OK
-======= generated_091 ============
-
-real	0m13.275s
-user	0m23.956s
-sys	0m3.064s
-ok 40622 numbers
-OK
-======= generated_092 ============
-
-real	0m12.995s
-user	0m29.476s
-sys	0m0.456s
-ok 1486 numbers
-OK
-======= generated_093 ============
-
-real	0m11.080s
-user	0m15.900s
-sys	0m0.412s
-ok 57161 numbers
-OK
-======= generated_094 ============
-
-real	0m13.035s
-user	0m29.636s
-sys	0m0.432s
-ok 46175 numbers
-OK
-======= generated_095 ============
-
-real	0m13.514s
-user	0m29.912s
-sys	0m0.472s
-ok 42321 numbers
-OK
-======= generated_096 ============
-
-real	0m12.941s
-user	0m30.332s
-sys	0m0.500s
-ok 39237 numbers
-OK
-======= generated_097 ============
-
-real	0m13.941s
-user	0m33.992s
-sys	0m0.536s
-ok 59874 numbers
-OK
-======= generated_098 ============
-
-real	0m13.118s
-user	0m29.956s
-sys	0m0.480s
-ok 16736 numbers
-OK
-======= generated_099 ============
-
-real	0m13.313s
-user	0m29.780s
-sys	0m0.540s
-ok 50277 numbers
+real	0m14.089s
+user	0m31.624s
+sys	0m2.996s
+ok 38982 numbers (in increasing order): 1 2 ... 69098 69099
 OK

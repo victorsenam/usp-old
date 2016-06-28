@@ -1,6 +1,33 @@
 
 mkdir: é impossível criar o diretório “cases”: Arquivo existe
-make: 'generator/generator' is up to date.
+g++ -std=c++11    generator/generator.cpp   -o generator/generator
+generator/generator.cpp: In function ‘int main(int, char**)’:
+generator/generator.cpp:36:14: error: ‘val’ was not declared in this scope
+         if (!val[a-1]) a = -a;
+              ^
+generator/generator.cpp:42:40: error: ‘swap’ was not declared in this scope
+         if (rnd.next(2) == 0) swap(a, b);
+                                        ^
+generator/generator.cpp:42:40: note: suggested alternatives:
+In file included from /usr/include/c++/4.9/set:62:0,
+                 from generator/../testlib.h:138,
+                 from generator/generator.cpp:1:
+/usr/include/c++/4.9/bits/stl_multiset.h:829:5: note:   ‘std::swap’
+     swap(multiset<_Key, _Compare, _Alloc>& __x,
+     ^
+In file included from /usr/include/c++/4.9/exception:162:0,
+                 from /usr/include/c++/4.9/new:40,
+                 from /usr/include/c++/4.9/bits/stl_construct.h:59,
+                 from /usr/include/c++/4.9/bits/stl_tempbuf.h:60,
+                 from /usr/include/c++/4.9/bits/stl_algo.h:62,
+                 from /usr/include/c++/4.9/algorithm:62,
+                 from generator/../testlib.h:130,
+                 from generator/generator.cpp:1:
+/usr/include/c++/4.9/bits/exception_ptr.h:160:5: note:   ‘std::__exception_ptr::swap’
+     swap(exception_ptr& __lhs, exception_ptr& __rhs)
+     ^
+<builtin>: recipe for target 'generator/generator' failed
+make: *** [generator/generator] Error 1
 make: 'validator/validator' is up to date.
 Generating Case generated_000
 Generating Case generated_001
@@ -52,56 +79,6 @@ Generating Case generated_046
 Generating Case generated_047
 Generating Case generated_048
 Generating Case generated_049
-Generating Case generated_050
-Generating Case generated_051
-Generating Case generated_052
-Generating Case generated_053
-Generating Case generated_054
-Generating Case generated_055
-Generating Case generated_056
-Generating Case generated_057
-Generating Case generated_058
-Generating Case generated_059
-Generating Case generated_060
-Generating Case generated_061
-Generating Case generated_062
-Generating Case generated_063
-Generating Case generated_064
-Generating Case generated_065
-Generating Case generated_066
-Generating Case generated_067
-Generating Case generated_068
-Generating Case generated_069
-Generating Case generated_070
-Generating Case generated_071
-Generating Case generated_072
-Generating Case generated_073
-Generating Case generated_074
-Generating Case generated_075
-Generating Case generated_076
-Generating Case generated_077
-Generating Case generated_078
-Generating Case generated_079
-Generating Case generated_080
-Generating Case generated_081
-Generating Case generated_082
-Generating Case generated_083
-Generating Case generated_084
-Generating Case generated_085
-Generating Case generated_086
-Generating Case generated_087
-Generating Case generated_088
-Generating Case generated_089
-Generating Case generated_090
-Generating Case generated_091
-Generating Case generated_092
-Generating Case generated_093
-Generating Case generated_094
-Generating Case generated_095
-Generating Case generated_096
-Generating Case generated_097
-Generating Case generated_098
-Generating Case generated_099
 Validating Case cases/generated_000.in
 Validating Case cases/generated_001.in
 Validating Case cases/generated_002.in
@@ -152,53 +129,3 @@ Validating Case cases/generated_046.in
 Validating Case cases/generated_047.in
 Validating Case cases/generated_048.in
 Validating Case cases/generated_049.in
-Validating Case cases/generated_050.in
-Validating Case cases/generated_051.in
-Validating Case cases/generated_052.in
-Validating Case cases/generated_053.in
-Validating Case cases/generated_054.in
-Validating Case cases/generated_055.in
-Validating Case cases/generated_056.in
-Validating Case cases/generated_057.in
-Validating Case cases/generated_058.in
-Validating Case cases/generated_059.in
-Validating Case cases/generated_060.in
-Validating Case cases/generated_061.in
-Validating Case cases/generated_062.in
-Validating Case cases/generated_063.in
-Validating Case cases/generated_064.in
-Validating Case cases/generated_065.in
-Validating Case cases/generated_066.in
-Validating Case cases/generated_067.in
-Validating Case cases/generated_068.in
-Validating Case cases/generated_069.in
-Validating Case cases/generated_070.in
-Validating Case cases/generated_071.in
-Validating Case cases/generated_072.in
-Validating Case cases/generated_073.in
-Validating Case cases/generated_074.in
-Validating Case cases/generated_075.in
-Validating Case cases/generated_076.in
-Validating Case cases/generated_077.in
-Validating Case cases/generated_078.in
-Validating Case cases/generated_079.in
-Validating Case cases/generated_080.in
-Validating Case cases/generated_081.in
-Validating Case cases/generated_082.in
-Validating Case cases/generated_083.in
-Validating Case cases/generated_084.in
-Validating Case cases/generated_085.in
-Validating Case cases/generated_086.in
-Validating Case cases/generated_087.in
-Validating Case cases/generated_088.in
-Validating Case cases/generated_089.in
-Validating Case cases/generated_090.in
-Validating Case cases/generated_091.in
-Validating Case cases/generated_092.in
-Validating Case cases/generated_093.in
-Validating Case cases/generated_094.in
-Validating Case cases/generated_095.in
-Validating Case cases/generated_096.in
-Validating Case cases/generated_097.in
-Validating Case cases/generated_098.in
-Validating Case cases/generated_099.in

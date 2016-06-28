@@ -1,710 +1,157 @@
+CORREÇÃO MANUAL
+Boa! parabéns
 
-WWW..WW...WWWWWWWWWWWWWWWWWWWW.W.WW.W..W.W..W..WWWW....W...W....W......W........WWWWWWWWWWWWWWWWWWWW
+LOG DE COMPILAÇÃO E TESTE
+Existem dois métodos de compilação, eles estão indicados, se um falha eu parto pro outro. Então se quiser entender o porque não compilou, verifique todos.
+Segue também o log do corretor, pode ser interessante para descobrir a natureza de seus erros. A saída está trucada (não mostra todas as linha), se quiser ver todo o log, fale comigo
+
+....................
 CORREÇÃO AUTOMÁTICA
 Quantidade de Testes | Veredito
-40 | OK
+20 | OK
 0 | Tempo de Execução Excedido
-60 | Resposta Errada
+0 | Resposta Errada
 0 | Erro de Execução
 
+rm: não foi possível remover “judge_out/”: Arquivo ou diretório não encontrado
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/checker/checker' is up to date.
 ======= generated_000 ============
 
-real	0m0.146s
-user	0m0.156s
-sys	0m0.016s
-wrong answer 2nd numbers differ - expected: '1', found: '2'
-Resposta Errada
+real	0m0.174s
+user	0m0.172s
+sys	0m0.020s
+ok 3 numbers (in increasing order): 0 1 2
+OK
 ======= generated_001 ============
 
-real	0m0.146s
-user	0m0.144s
-sys	0m0.036s
-wrong answer 2nd numbers differ - expected: '1', found: '5'
-Resposta Errada
+real	0m0.148s
+user	0m0.148s
+sys	0m0.024s
+ok 5 numbers (in increasing order): 0 1 2 4 5
+OK
 ======= generated_002 ============
 
-real	0m0.152s
-user	0m0.136s
-sys	0m0.048s
-wrong answer 2nd numbers differ - expected: '2', found: '4'
-Resposta Errada
+real	0m0.174s
+user	0m0.244s
+sys	0m0.028s
+ok 21 numbers (in increasing order): 7 8 ... 116 118
+OK
 ======= generated_003 ============
 
-real	0m0.132s
-user	0m0.128s
-sys	0m0.032s
-ok 1 number(s): "4"
+real	0m0.198s
+user	0m0.324s
+sys	0m0.020s
+ok 10 numbers (in increasing order): 11 21 ... 80 112
 OK
 ======= generated_004 ============
 
-real	0m0.147s
-user	0m0.168s
-sys	0m0.008s
-ok 2 number(s): "1 5"
+real	0m0.239s
+user	0m0.464s
+sys	0m0.012s
+ok 436 numbers (in increasing order): 0 5 ... 718 719
 OK
 ======= generated_005 ============
 
-real	0m0.166s
-user	0m0.244s
-sys	0m0.032s
-wrong answer 2nd numbers differ - expected: '8', found: '67'
-Resposta Errada
+real	0m0.490s
+user	0m0.884s
+sys	0m0.080s
+ok 422 numbers (in increasing order): 1 2 ... 581 582
+OK
 ======= generated_006 ============
 
-real	0m0.168s
-user	0m0.252s
-sys	0m0.028s
-wrong answer 2nd numbers differ - expected: '1', found: '44'
-Resposta Errada
+real	0m0.861s
+user	0m1.332s
+sys	0m0.104s
+ok 8 numbers (in increasing order): 3 33 ... 456 504
+OK
 ======= generated_007 ============
 
-real	0m0.160s
-user	0m0.236s
-sys	0m0.016s
-ok 0 number(s): ""
+real	0m0.253s
+user	0m0.512s
+sys	0m0.048s
+ok empty sequence
 OK
 ======= generated_008 ============
 
-real	0m0.168s
-user	0m0.244s
-sys	0m0.028s
-ok 0 number(s): ""
+real	0m0.287s
+user	0m0.568s
+sys	0m0.040s
+ok empty sequence
 OK
 ======= generated_009 ============
 
-real	0m0.163s
-user	0m0.244s
-sys	0m0.024s
-ok 0 number(s): ""
+real	0m0.805s
+user	0m1.356s
+sys	0m0.160s
+ok 32425 numbers (in increasing order): 0 1 ... 37950 37951
 OK
 ======= generated_010 ============
 
-real	0m0.191s
-user	0m0.324s
-sys	0m0.028s
-wrong answer 2nd numbers differ - expected: '21', found: '72'
-Resposta Errada
+real	0m0.697s
+user	0m1.196s
+sys	0m0.096s
+ok empty sequence
+OK
 ======= generated_011 ============
 
-real	0m0.215s
-user	0m0.364s
-sys	0m0.044s
-wrong answer 2nd numbers differ - expected: '40', found: '287'
-Resposta Errada
+real	0m0.658s
+user	0m1.136s
+sys	0m0.116s
+ok empty sequence
+OK
 ======= generated_012 ============
 
-real	0m0.209s
-user	0m0.368s
-sys	0m0.016s
-wrong answer 2nd numbers differ - expected: '5', found: '272'
-Resposta Errada
+real	0m0.537s
+user	0m0.952s
+sys	0m0.112s
+ok empty sequence
+OK
 ======= generated_013 ============
 
-real	0m0.177s
-user	0m0.260s
-sys	0m0.040s
-wrong answer 2nd numbers differ - expected: '1', found: '88'
-Resposta Errada
+real	0m0.543s
+user	0m1.024s
+sys	0m0.096s
+ok empty sequence
+OK
 ======= generated_014 ============
 
-real	0m0.189s
-user	0m0.332s
-sys	0m0.020s
-wrong answer 2nd numbers differ - expected: '2', found: '207'
-Resposta Errada
+real	0m0.551s
+user	0m0.988s
+sys	0m0.108s
+ok empty sequence
+OK
 ======= generated_015 ============
 
-real	0m0.240s
-user	0m0.460s
-sys	0m0.040s
-wrong answer 2nd numbers differ - expected: '5', found: '117'
-Resposta Errada
+real	0m14.283s
+user	0m34.448s
+sys	0m0.508s
+ok 7086 numbers (in increasing order): 2 24 ... 60811 60812
+OK
 ======= generated_016 ============
 
-real	0m0.236s
-user	0m0.428s
-sys	0m0.064s
-wrong answer 2nd numbers differ - expected: '3', found: '270'
-Resposta Errada
+real	0m13.259s
+user	0m23.944s
+sys	0m4.604s
+ok 56184 numbers (in increasing order): 0 1 ... 60195 60196
+OK
 ======= generated_017 ============
 
-real	0m0.225s
-user	0m0.424s
-sys	0m0.040s
-wrong answer 3rd numbers differ - expected: '38', found: '454'
-Resposta Errada
+real	0m10.483s
+user	0m15.392s
+sys	0m0.460s
+ok 52553 numbers (in increasing order): 0 1 ... 61238 61239
+OK
 ======= generated_018 ============
 
-real	0m0.236s
-user	0m0.436s
-sys	0m0.036s
-wrong answer 2nd numbers differ - expected: '1', found: '444'
-Resposta Errada
+real	0m11.563s
+user	0m26.872s
+sys	0m0.444s
+ok 50189 numbers (in increasing order): 0 1 ... 60617 60618
+OK
 ======= generated_019 ============
 
-real	0m0.224s
-user	0m0.416s
-sys	0m0.048s
-wrong answer 2nd numbers differ - expected: '2', found: '204'
-Resposta Errada
-======= generated_020 ============
-
-real	0m0.491s
-user	0m0.824s
-sys	0m0.116s
-wrong answer 2nd numbers differ - expected: '2', found: '488'
-Resposta Errada
-======= generated_021 ============
-
-real	0m0.832s
-user	0m1.296s
-sys	0m0.120s
-wrong answer 2nd numbers differ - expected: '33', found: '270'
-Resposta Errada
-======= generated_022 ============
-
-real	0m0.639s
-user	0m1.088s
-sys	0m0.088s
-wrong answer 2nd numbers differ - expected: '2', found: '527'
-Resposta Errada
-======= generated_023 ============
-
-real	0m0.670s
-user	0m1.144s
-sys	0m0.104s
-wrong answer 2nd numbers differ - expected: '1', found: '611'
-Resposta Errada
-======= generated_024 ============
-
-real	0m0.269s
-user	0m0.560s
-sys	0m0.036s
-wrong answer 2nd numbers differ - expected: '1', found: '389'
-Resposta Errada
-======= generated_025 ============
-
-real	0m0.895s
-user	0m1.412s
-sys	0m0.136s
-wrong answer 2nd numbers differ - expected: '1', found: '171'
-Resposta Errada
-======= generated_026 ============
-
-real	0m1.000s
-user	0m1.608s
-sys	0m0.096s
-wrong answer 2nd numbers differ - expected: '5', found: '573'
-Resposta Errada
-======= generated_027 ============
-
-real	0m0.694s
-user	0m1.164s
-sys	0m0.128s
-wrong answer 2nd numbers differ - expected: '2', found: '44'
-Resposta Errada
-======= generated_028 ============
-
-real	0m0.660s
-user	0m1.144s
-sys	0m0.092s
-wrong answer 2nd numbers differ - expected: '2', found: '75'
-Resposta Errada
-======= generated_029 ============
-
-real	0m0.842s
-user	0m1.348s
-sys	0m0.096s
-wrong answer 2nd numbers differ - expected: '19', found: '288'
-Resposta Errada
-======= generated_030 ============
-
-real	0m0.274s
-user	0m0.536s
-sys	0m0.044s
-ok 0 number(s): ""
-OK
-======= generated_031 ============
-
-real	0m0.277s
-user	0m0.620s
-sys	0m0.048s
-wrong answer 2nd numbers differ - expected: '2', found: '1684'
-Resposta Errada
-======= generated_032 ============
-
-real	0m0.239s
-user	0m0.472s
-sys	0m0.044s
-ok 0 number(s): ""
-OK
-======= generated_033 ============
-
-real	0m0.346s
-user	0m0.724s
-sys	0m0.072s
-wrong answer 2nd numbers differ - expected: '2', found: '4660'
-Resposta Errada
-======= generated_034 ============
-
-real	0m0.322s
-user	0m0.668s
-sys	0m0.072s
-wrong answer 2nd numbers differ - expected: '10', found: '3374'
-Resposta Errada
-======= generated_035 ============
-
-real	0m0.270s
-user	0m0.556s
-sys	0m0.036s
-ok 0 number(s): ""
-OK
-======= generated_036 ============
-
-real	0m0.292s
-user	0m0.648s
-sys	0m0.044s
-wrong answer 2nd numbers differ - expected: '1', found: '4550'
-Resposta Errada
-======= generated_037 ============
-
-real	0m0.242s
-user	0m0.464s
-sys	0m0.044s
-ok 0 number(s): ""
-OK
-======= generated_038 ============
-
-real	0m0.315s
-user	0m0.608s
-sys	0m0.068s
-ok 0 number(s): ""
-OK
-======= generated_039 ============
-
-real	0m0.307s
-user	0m0.636s
-sys	0m0.056s
-wrong answer 2nd numbers differ - expected: '1', found: '226'
-Resposta Errada
-======= generated_040 ============
-
-real	0m0.300s
-user	0m0.664s
-sys	0m0.024s
-ok 0 number(s): ""
-OK
-======= generated_041 ============
-
-real	0m0.254s
-user	0m0.508s
-sys	0m0.044s
-wrong answer 2nd numbers differ - expected: '3', found: '542'
-Resposta Errada
-======= generated_042 ============
-
-real	0m0.301s
-user	0m0.620s
-sys	0m0.032s
-ok 0 number(s): ""
-OK
-======= generated_043 ============
-
-real	0m0.327s
-user	0m0.704s
-sys	0m0.052s
-ok 0 number(s): ""
-OK
-======= generated_044 ============
-
-real	0m0.311s
-user	0m0.640s
-sys	0m0.056s
-wrong answer 2nd numbers differ - expected: '5', found: '931'
-Resposta Errada
-======= generated_045 ============
-
-real	0m0.261s
-user	0m0.520s
-sys	0m0.056s
-ok 0 number(s): ""
-OK
-======= generated_046 ============
-
-real	0m0.271s
-user	0m0.572s
-sys	0m0.020s
-ok 0 number(s): ""
-OK
-======= generated_047 ============
-
-real	0m0.275s
-user	0m0.568s
-sys	0m0.056s
-wrong answer 2nd numbers differ - expected: '2', found: '1279'
-Resposta Errada
-======= generated_048 ============
-
-real	0m0.315s
-user	0m0.664s
-sys	0m0.072s
-wrong answer 2nd numbers differ - expected: '1', found: '5528'
-Resposta Errada
-======= generated_049 ============
-
-real	0m0.267s
-user	0m0.556s
-sys	0m0.040s
-wrong answer 2nd numbers differ - expected: '2', found: '373'
-Resposta Errada
-======= generated_050 ============
-
-real	0m0.816s
-user	0m1.476s
-sys	0m0.100s
-wrong answer 2nd numbers differ - expected: '1', found: '32866'
-Resposta Errada
-======= generated_051 ============
-
-real	0m0.673s
-user	0m1.148s
-sys	0m0.120s
-ok 0 number(s): ""
-OK
-======= generated_052 ============
-
-real	0m0.633s
-user	0m1.096s
-sys	0m0.108s
-ok 0 number(s): ""
-OK
-======= generated_053 ============
-
-real	0m0.588s
-user	0m1.092s
-sys	0m0.076s
-ok 0 number(s): ""
-OK
-======= generated_054 ============
-
-real	0m0.586s
-user	0m1.080s
-sys	0m0.104s
-ok 0 number(s): ""
-OK
-======= generated_055 ============
-
-real	0m0.847s
-user	0m1.416s
-sys	0m0.184s
-wrong answer 2nd numbers differ - expected: '1', found: '18819'
-Resposta Errada
-======= generated_056 ============
-
-real	0m0.660s
-user	0m1.176s
-sys	0m0.096s
-ok 0 number(s): ""
-OK
-======= generated_057 ============
-
-real	0m0.576s
-user	0m1.100s
-sys	0m0.072s
-ok 0 number(s): ""
-OK
-======= generated_058 ============
-
-real	0m0.603s
-user	0m1.096s
-sys	0m0.100s
-ok 0 number(s): ""
-OK
-======= generated_059 ============
-
-real	0m0.730s
-user	0m1.360s
-sys	0m0.104s
-wrong answer 2nd numbers differ - expected: '1', found: '37664'
-Resposta Errada
-======= generated_060 ============
-
-real	0m0.548s
-user	0m1.000s
-sys	0m0.076s
-ok 0 number(s): ""
-OK
-======= generated_061 ============
-
-real	0m0.521s
-user	0m0.952s
-sys	0m0.096s
-ok 0 number(s): ""
-OK
-======= generated_062 ============
-
-real	0m0.578s
-user	0m1.104s
-sys	0m0.076s
-ok 0 number(s): ""
-OK
-======= generated_063 ============
-
-real	0m0.531s
-user	0m0.972s
-sys	0m0.072s
-ok 0 number(s): ""
-OK
-======= generated_064 ============
-
-real	0m0.719s
-user	0m1.388s
-sys	0m0.120s
-wrong answer 2nd numbers differ - expected: '1', found: '1920'
-Resposta Errada
-======= generated_065 ============
-
-real	0m0.590s
-user	0m1.196s
-sys	0m0.084s
-ok 0 number(s): ""
-OK
-======= generated_066 ============
-
-real	0m0.560s
-user	0m1.056s
-sys	0m0.116s
-ok 0 number(s): ""
-OK
-======= generated_067 ============
-
-real	0m0.576s
-user	0m1.088s
-sys	0m0.092s
-ok 0 number(s): ""
-OK
-======= generated_068 ============
-
-real	0m0.630s
-user	0m0.996s
-sys	0m0.104s
-ok 0 number(s): ""
-OK
-======= generated_069 ============
-
-real	0m0.573s
-user	0m1.132s
-sys	0m0.108s
-ok 0 number(s): ""
-OK
-======= generated_070 ============
-
-real	0m0.546s
-user	0m1.032s
-sys	0m0.100s
-ok 0 number(s): ""
-OK
-======= generated_071 ============
-
-real	0m0.739s
-user	0m1.400s
-sys	0m0.120s
-wrong answer 2nd numbers differ - expected: '1', found: '47367'
-Resposta Errada
-======= generated_072 ============
-
-real	0m0.540s
-user	0m1.036s
-sys	0m0.088s
-ok 0 number(s): ""
-OK
-======= generated_073 ============
-
-real	0m0.499s
-user	0m0.952s
-sys	0m0.084s
-ok 0 number(s): ""
-OK
-======= generated_074 ============
-
-real	0m0.556s
-user	0m1.068s
-sys	0m0.080s
-ok 0 number(s): ""
-OK
-======= generated_075 ============
-
-real	0m0.553s
-user	0m1.088s
-sys	0m0.080s
-ok 0 number(s): ""
-OK
-======= generated_076 ============
-
-real	0m0.533s
-user	0m0.968s
-sys	0m0.100s
-ok 0 number(s): ""
-OK
-======= generated_077 ============
-
-real	0m0.512s
-user	0m0.972s
-sys	0m0.060s
-ok 0 number(s): ""
-OK
-======= generated_078 ============
-
-real	0m0.583s
-user	0m1.116s
-sys	0m0.100s
-ok 0 number(s): ""
-OK
-======= generated_079 ============
-
-real	0m0.584s
-user	0m1.100s
-sys	0m0.140s
-ok 0 number(s): ""
-OK
-======= generated_080 ============
-
-real	0m13.932s
-user	0m33.600s
-sys	0m0.376s
-wrong answer 2nd numbers differ - expected: '24', found: '8858'
-Resposta Errada
-======= generated_081 ============
-
-real	0m14.514s
-user	0m25.604s
-sys	0m4.864s
-wrong answer 2nd numbers differ - expected: '1', found: '58693'
-Resposta Errada
-======= generated_082 ============
-
-real	0m13.753s
-user	0m30.968s
-sys	0m0.404s
-wrong answer 2nd numbers differ - expected: '3', found: '58757'
-Resposta Errada
-======= generated_083 ============
-
-real	0m11.208s
-user	0m26.792s
-sys	0m0.468s
-wrong answer 2nd numbers differ - expected: '5', found: '65052'
-Resposta Errada
-======= generated_084 ============
-
-real	0m11.146s
-user	0m26.968s
-sys	0m0.416s
-wrong answer 2nd numbers differ - expected: '6', found: '27941'
-Resposta Errada
-======= generated_085 ============
-
-real	0m9.333s
-user	0m14.188s
-sys	0m0.384s
-wrong answer 2nd numbers differ - expected: '1', found: '41987'
-Resposta Errada
-======= generated_086 ============
-
-real	0m11.393s
-user	0m26.660s
-sys	0m0.496s
-wrong answer 2nd numbers differ - expected: '1', found: '41161'
-Resposta Errada
-======= generated_087 ============
-
-real	0m11.530s
-user	0m26.744s
-sys	0m0.448s
-wrong answer 2nd numbers differ - expected: '1', found: '4461'
-Resposta Errada
-======= generated_088 ============
-
-real	0m11.560s
-user	0m27.884s
+real	0m13.025s
+user	0m29.880s
 sys	0m0.452s
-wrong answer 2nd numbers differ - expected: '5', found: '24071'
-Resposta Errada
-======= generated_089 ============
-
-real	0m10.137s
-user	0m15.236s
-sys	0m0.368s
-wrong answer 2nd numbers differ - expected: '15', found: '49238'
-Resposta Errada
-======= generated_090 ============
-
-real	0m12.779s
-user	0m29.196s
-sys	0m0.448s
-wrong answer 2nd numbers differ - expected: '2', found: '61840'
-Resposta Errada
-======= generated_091 ============
-
-real	0m13.502s
-user	0m30.516s
-sys	0m0.452s
-wrong answer 2nd numbers differ - expected: '2', found: '2253'
-Resposta Errada
-======= generated_092 ============
-
-real	0m13.179s
-user	0m29.188s
-sys	0m0.448s
-wrong answer 2nd numbers differ - expected: '84', found: '8543'
-Resposta Errada
-======= generated_093 ============
-
-real	0m12.832s
-user	0m29.552s
-sys	0m0.516s
-wrong answer 2nd numbers differ - expected: '1', found: '13067'
-Resposta Errada
-======= generated_094 ============
-
-real	0m13.029s
-user	0m29.156s
-sys	0m0.384s
-wrong answer 2nd numbers differ - expected: '1', found: '26556'
-Resposta Errada
-======= generated_095 ============
-
-real	0m13.787s
-user	0m30.884s
-sys	0m1.900s
-wrong answer 2nd numbers differ - expected: '1', found: '30045'
-Resposta Errada
-======= generated_096 ============
-
-real	0m10.920s
-user	0m15.876s
-sys	0m0.336s
-wrong answer 2nd numbers differ - expected: '2', found: '18429'
-Resposta Errada
-======= generated_097 ============
-
-real	0m10.886s
-user	0m16.092s
-sys	0m0.352s
-wrong answer 2nd numbers differ - expected: '3', found: '41570'
-Resposta Errada
-======= generated_098 ============
-
-real	0m14.891s
-user	0m25.748s
-sys	0m4.856s
-wrong answer 2nd numbers differ - expected: '3', found: '25961'
-Resposta Errada
-======= generated_099 ============
-
-real	0m14.713s
-user	0m32.684s
-sys	0m5.120s
-wrong answer 2nd numbers differ - expected: '1', found: '39297'
-Resposta Errada
+ok 38982 numbers (in increasing order): 1 2 ... 69098 69099
+OK

@@ -1,668 +1,145 @@
 
-..................................................TTTTTTTTTTTRRTTTTTRTTTRRRTTTTTTTTTTTTTTTTTTTTTTTTT
+LOG DE COMPILAÇÃO E TESTE
+Existem dois métodos de compilação, eles estão indicados, se um falha eu parto pro outro. Então se quiser entender o porque não compilou, verifique todos.
+Segue também o log do corretor, pode ser interessante para descobrir a natureza de seus erros. A saída está trucada (não mostra todas as linha), se quiser ver todo o log, fale comigo
+
+.........TTTTTTTTTTT
 CORREÇÃO AUTOMÁTICA
 Quantidade de Testes | Veredito
-50 | OK
-44 | Tempo de Execução Excedido
+9 | OK
+11 | Tempo de Execução Excedido
 0 | Resposta Errada
-6 | Erro de Execução
+0 | Erro de Execução
 
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/checker/checker' is up to date.
 Note: Some input files use unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
 ======= generated_000 ============
 
-real	0m0.174s
-user	0m0.144s
-sys	0m0.048s
-ok 3 number(s): "0 1 2"
+real	0m0.172s
+user	0m0.168s
+sys	0m0.028s
+ok 3 numbers (in increasing order): 0 1 2
 OK
 ======= generated_001 ============
 
-real	0m0.158s
-user	0m0.152s
+real	0m0.193s
+user	0m0.168s
 sys	0m0.024s
-ok 5 number(s): "0 1 2 4 5"
+ok 5 numbers (in increasing order): 0 1 2 4 5
 OK
 ======= generated_002 ============
 
-real	0m0.166s
-user	0m0.144s
-sys	0m0.036s
-ok 5 number(s): "1 2 3 4 5"
+real	0m0.193s
+user	0m0.288s
+sys	0m0.024s
+ok 21 numbers (in increasing order): 7 8 ... 116 118
 OK
 ======= generated_003 ============
 
-real	0m0.152s
-user	0m0.140s
+real	0m0.243s
+user	0m0.388s
 sys	0m0.036s
-ok 1 number(s): "4"
+ok 10 numbers (in increasing order): 11 21 ... 80 112
 OK
 ======= generated_004 ============
 
-real	0m0.153s
-user	0m0.132s
-sys	0m0.044s
-ok 2 number(s): "1 5"
+real	0m0.491s
+user	0m0.696s
+sys	0m0.060s
+ok 436 numbers (in increasing order): 0 5 ... 718 719
 OK
 ======= generated_005 ============
 
-real	0m0.214s
-user	0m0.300s
-sys	0m0.048s
-ok 21 numbers
+real	0m0.858s
+user	0m1.280s
+sys	0m0.104s
+ok 422 numbers (in increasing order): 1 2 ... 581 582
 OK
 ======= generated_006 ============
 
-real	0m0.213s
-user	0m0.296s
-sys	0m0.052s
-ok 173 numbers
+real	0m7.031s
+user	0m7.492s
+sys	0m0.116s
+ok 8 numbers (in increasing order): 3 33 ... 456 504
 OK
 ======= generated_007 ============
 
-real	0m0.190s
-user	0m0.284s
-sys	0m0.028s
-ok 0 number(s): ""
+real	0m5.989s
+user	0m6.888s
+sys	0m1.452s
+ok empty sequence
 OK
 ======= generated_008 ============
 
-real	0m0.227s
-user	0m0.312s
-sys	0m0.044s
-ok 0 number(s): ""
+real	0m7.790s
+user	0m8.556s
+sys	0m1.332s
+ok empty sequence
 OK
 ======= generated_009 ============
 
-real	0m0.203s
-user	0m0.300s
-sys	0m0.032s
-ok 0 number(s): ""
-OK
+real	0m15.043s
+user	0m15.604s
+sys	0m0.188s
+Tempo Excedido
 ======= generated_010 ============
 
-real	0m0.221s
-user	0m0.372s
-sys	0m0.024s
-ok 10 numbers
-OK
+real	0m15.037s
+user	0m15.576s
+sys	0m0.184s
+Tempo Excedido
 ======= generated_011 ============
 
-real	0m0.285s
-user	0m0.472s
-sys	0m0.028s
-ok 30 numbers
-OK
+real	0m15.046s
+user	0m15.564s
+sys	0m0.168s
+Tempo Excedido
 ======= generated_012 ============
 
-real	0m0.252s
-user	0m0.424s
-sys	0m0.024s
-ok 135 numbers
-OK
+real	0m15.076s
+user	0m16.548s
+sys	0m0.432s
+Tempo Excedido
 ======= generated_013 ============
 
-real	0m0.207s
-user	0m0.352s
-sys	0m0.032s
-ok 113 numbers
-OK
+real	0m15.051s
+user	0m15.684s
+sys	0m0.252s
+Tempo Excedido
 ======= generated_014 ============
 
-real	0m0.268s
-user	0m0.416s
-sys	0m0.052s
-ok 197 numbers
-OK
-======= generated_015 ============
-
-real	0m0.466s
-user	0m0.728s
-sys	0m0.032s
-ok 436 numbers
-OK
-======= generated_016 ============
-
-real	0m0.429s
-user	0m0.660s
-sys	0m0.036s
-ok 326 numbers
-OK
-======= generated_017 ============
-
-real	0m0.445s
-user	0m0.660s
-sys	0m0.060s
-ok 23 numbers
-OK
-======= generated_018 ============
-
-real	0m0.501s
-user	0m0.844s
-sys	0m0.040s
-ok 371 numbers
-OK
-======= generated_019 ============
-
-real	0m0.428s
-user	0m0.644s
-sys	0m0.036s
-ok 484 numbers
-OK
-======= generated_020 ============
-
-real	0m0.843s
-user	0m1.296s
-sys	0m0.084s
-ok 422 numbers
-OK
-======= generated_021 ============
-
-real	0m6.976s
-user	0m7.484s
-sys	0m0.120s
-ok 8 numbers
-OK
-======= generated_022 ============
-
-real	0m6.306s
-user	0m6.812s
-sys	0m0.096s
-ok 551 numbers
-OK
-======= generated_023 ============
-
-real	0m1.669s
-user	0m2.180s
-sys	0m0.100s
-ok 483 numbers
-OK
-======= generated_024 ============
-
-real	0m0.699s
-user	0m1.056s
-sys	0m0.056s
-ok 541 numbers
-OK
-======= generated_025 ============
-
-real	0m3.225s
-user	0m3.748s
-sys	0m0.128s
-ok 366 numbers
-OK
-======= generated_026 ============
-
-real	0m3.169s
-user	0m3.848s
-sys	0m0.096s
-ok 137 numbers
-OK
-======= generated_027 ============
-
-real	0m2.715s
-user	0m3.232s
-sys	0m0.108s
-ok 588 numbers
-OK
-======= generated_028 ============
-
-real	0m1.885s
-user	0m2.348s
-sys	0m0.144s
-ok 563 numbers
-OK
-======= generated_029 ============
-
-real	0m2.575s
-user	0m3.156s
-sys	0m0.120s
-ok 116 numbers
-OK
-======= generated_030 ============
-
-real	0m5.983s
-user	0m6.836s
-sys	0m1.508s
-ok 0 number(s): ""
-OK
-======= generated_031 ============
-
-real	0m2.077s
-user	0m2.472s
-sys	0m0.072s
-ok 1364 numbers
-OK
-======= generated_032 ============
-
-real	0m2.537s
-user	0m2.968s
-sys	0m0.440s
-ok 0 number(s): ""
-OK
-======= generated_033 ============
-
-real	0m11.854s
-user	0m12.728s
-sys	0m1.396s
-ok 5121 numbers
-OK
-======= generated_034 ============
-
-real	0m4.542s
-user	0m4.972s
-sys	0m0.076s
-ok 849 numbers
-OK
-======= generated_035 ============
-
-real	0m5.753s
-user	0m6.280s
-sys	0m0.564s
-ok 0 number(s): ""
-OK
-======= generated_036 ============
-
-real	0m10.768s
-user	0m11.940s
-sys	0m1.944s
-ok 8436 numbers
-OK
-======= generated_037 ============
-
-real	0m1.892s
-user	0m2.212s
-sys	0m0.052s
-ok 0 number(s): ""
-OK
-======= generated_038 ============
-
-real	0m10.596s
-user	0m11.328s
-sys	0m1.252s
-ok 0 number(s): ""
-OK
-======= generated_039 ============
-
-real	0m3.372s
-user	0m3.816s
-sys	0m0.316s
-ok 1355 numbers
-OK
-======= generated_040 ============
-
-real	0m6.466s
-user	0m7.164s
-sys	0m1.160s
-ok 0 number(s): ""
-OK
-======= generated_041 ============
-
-real	0m0.688s
-user	0m1.032s
-sys	0m0.036s
-ok 614 numbers
-OK
-======= generated_042 ============
-
-real	0m3.742s
-user	0m4.124s
-sys	0m0.064s
-ok 0 number(s): ""
-OK
-======= generated_043 ============
-
-real	0m7.879s
-user	0m8.464s
-sys	0m0.728s
-ok 0 number(s): ""
-OK
-======= generated_044 ============
-
-real	0m2.571s
-user	0m2.992s
-sys	0m0.064s
-ok 1374 numbers
-OK
-======= generated_045 ============
-
-real	0m2.448s
-user	0m2.800s
-sys	0m0.056s
-ok 0 number(s): ""
-OK
-======= generated_046 ============
-
-real	0m7.780s
-user	0m8.588s
-sys	0m1.316s
-ok 0 number(s): ""
-OK
-======= generated_047 ============
-
-real	0m1.531s
-user	0m1.896s
-sys	0m0.072s
-ok 1472 numbers
-OK
-======= generated_048 ============
-
-real	0m8.062s
-user	0m8.748s
-sys	0m0.752s
-ok 5682 numbers
-OK
-======= generated_049 ============
-
-real	0m0.989s
-user	0m1.352s
-sys	0m0.052s
-ok 886 numbers
-OK
-======= generated_050 ============
-
-real	0m15.032s
-user	0m15.712s
-sys	0m0.140s
-Tempo Excedido
-======= generated_051 ============
-
-real	0m15.034s
-user	0m15.752s
-sys	0m0.136s
-Tempo Excedido
-======= generated_052 ============
-
-real	0m15.030s
-user	0m15.672s
-sys	0m0.180s
-Tempo Excedido
-======= generated_053 ============
-
-real	0m15.047s
-user	0m15.672s
-sys	0m0.196s
-Tempo Excedido
-======= generated_054 ============
-
-real	0m15.041s
-user	0m15.708s
-sys	0m0.200s
-Tempo Excedido
-======= generated_055 ============
-
-real	0m15.036s
-user	0m15.620s
-sys	0m0.172s
-Tempo Excedido
-======= generated_056 ============
-
-real	0m15.033s
-user	0m15.632s
-sys	0m0.204s
-Tempo Excedido
-======= generated_057 ============
-
-real	0m15.039s
-user	0m15.640s
-sys	0m0.228s
-Tempo Excedido
-======= generated_058 ============
-
-real	0m15.036s
-user	0m15.612s
-sys	0m0.244s
-Tempo Excedido
-======= generated_059 ============
-
-real	0m15.022s
-user	0m15.484s
-sys	0m0.140s
-Tempo Excedido
-======= generated_060 ============
-
-real	0m15.042s
-user	0m16.656s
-sys	0m0.420s
-Tempo Excedido
-======= generated_061 ============
-/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/judge/judge.sh: line 78: 24820 Morto                   timeout --kill-after=20s 15s java -Xss512m -Xmx512m -Xms512m -XX:+HeapDumpOnOutOfMemoryError $RAGRS $ARGS $toexec $2 < ${testpath} > ${OUT}${testcase}.out 2>> $LOG
-
-real	0m35.667s
-user	0m0.000s
-sys	0m0.000s
-Erro de Execução
-======= generated_062 ============
-/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/judge/judge.sh: line 78: 24876 Morto                   timeout --kill-after=20s 15s java -Xss512m -Xmx512m -Xms512m -XX:+HeapDumpOnOutOfMemoryError $RAGRS $ARGS $toexec $2 < ${testpath} > ${OUT}${testcase}.out 2>> $LOG
-
-real	0m35.434s
-user	0m0.000s
-sys	0m0.000s
-Erro de Execução
-======= generated_063 ============
-
-real	0m15.041s
-user	0m16.532s
-sys	0m0.424s
-Tempo Excedido
-======= generated_064 ============
-
-real	0m15.038s
-user	0m15.652s
-sys	0m0.212s
-Tempo Excedido
-======= generated_065 ============
-
-real	0m15.044s
-user	0m15.672s
-sys	0m0.216s
-Tempo Excedido
-======= generated_066 ============
-
-real	0m15.045s
-user	0m15.676s
-sys	0m0.280s
-Tempo Excedido
-======= generated_067 ============
-
-real	0m15.208s
-user	0m16.536s
-sys	0m0.420s
-Tempo Excedido
-======= generated_068 ============
-/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/judge/judge.sh: line 78: 25356 Morto                   timeout --kill-after=20s 15s java -Xss512m -Xmx512m -Xms512m -XX:+HeapDumpOnOutOfMemoryError $RAGRS $ARGS $toexec $2 < ${testpath} > ${OUT}${testcase}.out 2>> $LOG
-
-real	0m35.263s
-user	0m0.000s
-sys	0m0.000s
-Erro de Execução
-======= generated_069 ============
-
-real	0m15.056s
-user	0m15.548s
-sys	0m0.264s
-Tempo Excedido
-======= generated_070 ============
-
-real	0m15.040s
-user	0m15.720s
-sys	0m0.220s
-Tempo Excedido
-======= generated_071 ============
-
-real	0m15.040s
-user	0m15.672s
-sys	0m0.240s
-Tempo Excedido
-======= generated_072 ============
-/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/judge/judge.sh: line 78: 25918 Morto                   timeout --kill-after=20s 15s java -Xss512m -Xmx512m -Xms512m -XX:+HeapDumpOnOutOfMemoryError $RAGRS $ARGS $toexec $2 < ${testpath} > ${OUT}${testcase}.out 2>> $LOG
-
-real	0m35.399s
-user	0m0.000s
-sys	0m0.000s
-Erro de Execução
-======= generated_073 ============
-/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/judge/judge.sh: line 78: 25971 Morto                   timeout --kill-after=20s 15s java -Xss512m -Xmx512m -Xms512m -XX:+HeapDumpOnOutOfMemoryError $RAGRS $ARGS $toexec $2 < ${testpath} > ${OUT}${testcase}.out 2>> $LOG
-
-real	0m35.667s
-user	0m0.000s
-sys	0m0.000s
-Erro de Execução
-======= generated_074 ============
-/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/judge/judge.sh: line 78: 26045 Morto                   timeout --kill-after=20s 15s java -Xss512m -Xmx512m -Xms512m -XX:+HeapDumpOnOutOfMemoryError $RAGRS $ARGS $toexec $2 < ${testpath} > ${OUT}${testcase}.out 2>> $LOG
-
-real	0m35.277s
-user	0m0.000s
-sys	0m0.000s
-Erro de Execução
-======= generated_075 ============
-
-real	0m15.071s
-user	0m15.744s
-sys	0m0.248s
-Tempo Excedido
-======= generated_076 ============
-
-real	0m15.052s
-user	0m16.504s
-sys	0m0.448s
-Tempo Excedido
-======= generated_077 ============
-
-real	0m15.037s
-user	0m15.668s
-sys	0m0.280s
-Tempo Excedido
-======= generated_078 ============
-
-real	0m15.046s
-user	0m15.736s
-sys	0m0.228s
-Tempo Excedido
-======= generated_079 ============
-
-real	0m15.054s
-user	0m16.788s
-sys	0m0.536s
-Tempo Excedido
-======= generated_080 ============
-
-real	0m15.051s
-user	0m34.528s
-sys	0m0.416s
-Tempo Excedido
-======= generated_081 ============
-
-real	0m17.027s
-user	0m25.004s
-sys	0m4.004s
-Tempo Excedido
-======= generated_082 ============
-
-real	0m15.056s
-user	0m31.432s
-sys	0m0.420s
-Tempo Excedido
-======= generated_083 ============
-
-real	0m15.054s
-user	0m30.392s
-sys	0m0.412s
-Tempo Excedido
-======= generated_084 ============
-
-real	0m15.058s
-user	0m32.348s
-sys	0m0.384s
-Tempo Excedido
-======= generated_085 ============
-
-real	0m15.049s
-user	0m19.984s
-sys	0m0.316s
-Tempo Excedido
-======= generated_086 ============
-
 real	0m15.055s
-user	0m30.228s
-sys	0m0.428s
-Tempo Excedido
-======= generated_087 ============
-
-real	0m15.056s
-user	0m32.384s
-sys	0m0.416s
-Tempo Excedido
-======= generated_088 ============
-
-real	0m15.055s
-user	0m20.064s
-sys	0m0.428s
-Tempo Excedido
-======= generated_089 ============
-
-real	0m15.046s
-user	0m20.344s
-sys	0m0.364s
-Tempo Excedido
-======= generated_090 ============
-
-real	0m15.051s
-user	0m31.680s
-sys	0m0.436s
-Tempo Excedido
-======= generated_091 ============
-
-real	0m15.058s
-user	0m31.324s
+user	0m16.496s
 sys	0m0.444s
 Tempo Excedido
-======= generated_092 ============
-
-real	0m15.059s
-user	0m30.984s
-sys	0m0.480s
-Tempo Excedido
-======= generated_093 ============
+======= generated_015 ============
 
 real	0m15.051s
-user	0m32.012s
-sys	0m0.464s
+user	0m34.592s
+sys	0m0.460s
 Tempo Excedido
-======= generated_094 ============
+======= generated_016 ============
 
-real	0m15.043s
-user	0m30.900s
-sys	0m0.508s
+real	0m17.461s
+user	0m27.544s
+sys	0m4.356s
 Tempo Excedido
-======= generated_095 ============
+======= generated_017 ============
 
-real	0m15.062s
-user	0m32.692s
-sys	0m2.236s
+real	0m15.133s
+user	0m19.852s
+sys	0m0.432s
 Tempo Excedido
-======= generated_096 ============
+======= generated_018 ============
 
-real	0m15.053s
-user	0m19.968s
-sys	0m0.324s
+real	0m15.202s
+user	0m30.620s
+sys	0m0.360s
 Tempo Excedido
-======= generated_097 ============
+======= generated_019 ============
 
-real	0m15.048s
-user	0m20.028s
-sys	0m0.328s
-Tempo Excedido
-======= generated_098 ============
-
-real	0m17.262s
-user	0m27.672s
-sys	0m3.908s
-Tempo Excedido
-======= generated_099 ============
-
-real	0m15.045s
-user	0m33.992s
-sys	0m4.748s
+real	0m15.124s
+user	0m31.220s
+sys	0m0.396s
 Tempo Excedido

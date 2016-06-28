@@ -1,64 +1,145 @@
 
-COMPILATION ERROR
+LOG DE COMPILAÇÃO E TESTE
+Existem dois métodos de compilação, eles estão indicados, se um falha eu parto pro outro. Então se quiser entender o porque não compilou, verifique todos.
+Segue também o log do corretor, pode ser interessante para descobrir a natureza de seus erros. A saída está trucada (não mostra todas as linha), se quiser ver todo o log, fale comigo
 
+.......WWTTTTTTTTTTT
 CORREÇÃO AUTOMÁTICA
 Quantidade de Testes | Veredito
-0 | OK
-0 | Tempo de Execução Excedido
-0 | Resposta Errada
+7 | OK
+11 | Tempo de Execução Excedido
+2 | Resposta Errada
 0 | Erro de Execução
 
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/checker/checker' is up to date.
-CoreVertices.java:17: error: no suitable constructor found for Digraph(In)
-		Digraph D = new Digraph(in);
-		            ^
-    constructor Digraph.Digraph(int) is not applicable
-      (argument mismatch; In cannot be converted to int)
-    constructor Digraph.Digraph(edu.princeton.cs.algs4.In) is not applicable
-      (argument mismatch; In cannot be converted to edu.princeton.cs.algs4.In)
-    constructor Digraph.Digraph(Digraph) is not applicable
-      (argument mismatch; In cannot be converted to Digraph)
-CoreVertices.java:23: error: reference to Queue is ambiguous
-		Queue<Integer>[] components = (Queue<Integer>[]) new Queue[M];
-		^
-  both class edu.princeton.cs.algs4.Queue in edu.princeton.cs.algs4 and interface java.util.Queue in java.util match
-CoreVertices.java:23: error: reference to Queue is ambiguous
-		Queue<Integer>[] components = (Queue<Integer>[]) new Queue[M];
-		                               ^
-  both class edu.princeton.cs.algs4.Queue in edu.princeton.cs.algs4 and interface java.util.Queue in java.util match
-CoreVertices.java:23: error: reference to Queue is ambiguous
-		Queue<Integer>[] components = (Queue<Integer>[]) new Queue[M];
-		                                                     ^
-  both class edu.princeton.cs.algs4.Queue in edu.princeton.cs.algs4 and interface java.util.Queue in java.util match
-CoreVertices.java:25: error: reference to Queue is ambiguous
-			components[i] = new Queue<Integer>();
-			                    ^
-  both class edu.princeton.cs.algs4.Queue in edu.princeton.cs.algs4 and interface java.util.Queue in java.util match
-5 errors
-=========== TENTANDO COMPILAR DE NOVO (imports no começo do código) ==============
-CoreVertices.java:18: error: no suitable constructor found for Digraph(In)
-		Digraph D = new Digraph(in);
-		            ^
-    constructor Digraph.Digraph(int) is not applicable
-      (argument mismatch; In cannot be converted to int)
-    constructor Digraph.Digraph(edu.princeton.cs.algs4.In) is not applicable
-      (argument mismatch; In cannot be converted to edu.princeton.cs.algs4.In)
-    constructor Digraph.Digraph(Digraph) is not applicable
-      (argument mismatch; In cannot be converted to Digraph)
-CoreVertices.java:24: error: reference to Queue is ambiguous
-		Queue<Integer>[] components = (Queue<Integer>[]) new Queue[M];
-		^
-  both class edu.princeton.cs.algs4.Queue in edu.princeton.cs.algs4 and interface java.util.Queue in java.util match
-CoreVertices.java:24: error: reference to Queue is ambiguous
-		Queue<Integer>[] components = (Queue<Integer>[]) new Queue[M];
-		                               ^
-  both class edu.princeton.cs.algs4.Queue in edu.princeton.cs.algs4 and interface java.util.Queue in java.util match
-CoreVertices.java:24: error: reference to Queue is ambiguous
-		Queue<Integer>[] components = (Queue<Integer>[]) new Queue[M];
-		                                                     ^
-  both class edu.princeton.cs.algs4.Queue in edu.princeton.cs.algs4 and interface java.util.Queue in java.util match
-CoreVertices.java:26: error: reference to Queue is ambiguous
-			components[i] = new Queue<Integer>();
-			                    ^
-  both class edu.princeton.cs.algs4.Queue in edu.princeton.cs.algs4 and interface java.util.Queue in java.util match
-5 errors
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+======= generated_000 ============
+
+real	0m0.287s
+user	0m0.208s
+sys	0m0.036s
+ok 3 numbers (in increasing order): 0 1 2
+OK
+======= generated_001 ============
+
+real	0m0.187s
+user	0m0.212s
+sys	0m0.012s
+ok 5 numbers (in increasing order): 0 1 2 4 5
+OK
+======= generated_002 ============
+
+real	0m0.314s
+user	0m0.280s
+sys	0m0.044s
+ok 21 numbers (in increasing order): 7 8 ... 116 118
+OK
+======= generated_003 ============
+
+real	0m0.261s
+user	0m0.404s
+sys	0m0.036s
+ok 10 numbers (in increasing order): 11 21 ... 80 112
+OK
+======= generated_004 ============
+
+real	0m0.635s
+user	0m0.748s
+sys	0m0.028s
+ok 436 numbers (in increasing order): 0 5 ... 718 719
+OK
+======= generated_005 ============
+
+real	0m1.001s
+user	0m1.320s
+sys	0m0.104s
+ok 422 numbers (in increasing order): 1 2 ... 581 582
+OK
+======= generated_006 ============
+
+real	0m7.353s
+user	0m7.800s
+sys	0m0.156s
+ok 8 numbers (in increasing order): 3 33 ... 456 504
+OK
+======= generated_007 ============
+
+real	0m6.346s
+user	0m6.788s
+sys	0m1.000s
+wrong answer Expected 0 elements, but 1581 found
+Resposta Errada
+======= generated_008 ============
+
+real	0m8.043s
+user	0m8.948s
+sys	0m1.408s
+wrong answer Expected 0 elements, but 6415 found
+Resposta Errada
+======= generated_009 ============
+
+real	0m15.063s
+user	0m15.568s
+sys	0m0.160s
+Tempo Excedido
+======= generated_010 ============
+
+real	0m15.038s
+user	0m15.520s
+sys	0m0.176s
+Tempo Excedido
+======= generated_011 ============
+
+real	0m15.039s
+user	0m15.536s
+sys	0m0.160s
+Tempo Excedido
+======= generated_012 ============
+
+real	0m15.038s
+user	0m16.412s
+sys	0m0.360s
+Tempo Excedido
+======= generated_013 ============
+
+real	0m15.090s
+user	0m15.476s
+sys	0m0.264s
+Tempo Excedido
+======= generated_014 ============
+
+real	0m15.039s
+user	0m16.352s
+sys	0m0.348s
+Tempo Excedido
+======= generated_015 ============
+
+real	0m15.142s
+user	0m34.232s
+sys	0m0.500s
+Tempo Excedido
+======= generated_016 ============
+
+real	0m17.323s
+user	0m26.240s
+sys	0m3.940s
+Tempo Excedido
+======= generated_017 ============
+
+real	0m15.069s
+user	0m19.436s
+sys	0m0.416s
+Tempo Excedido
+======= generated_018 ============
+
+real	0m15.049s
+user	0m29.928s
+sys	0m0.484s
+Tempo Excedido
+======= generated_019 ============
+
+real	0m16.306s
+user	0m32.004s
+sys	0m0.464s
+Tempo Excedido

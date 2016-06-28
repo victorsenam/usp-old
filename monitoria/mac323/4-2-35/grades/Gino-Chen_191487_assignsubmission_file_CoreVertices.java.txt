@@ -1,702 +1,163 @@
 
-WWW.WWW...WWWWWWWWWWWWWWWWWWWW.W.WW.W..W.W..W..WWWW....W...W....W......W........TTRRRTTRRTRRRRTRRRTT
+LOG DE COMPILAÇÃO E TESTE
+Existem dois métodos de compilação, eles estão indicados, se um falha eu parto pro outro. Então se quiser entender o porque não compilou, verifique todos.
+Segue também o log do corretor, pode ser interessante para descobrir a natureza de seus erros. A saída está trucada (não mostra todas as linha), se quiser ver todo o log, fale comigo
+
+WWWWWWW..W.....TTTTR
 CORREÇÃO AUTOMÁTICA
 Quantidade de Testes | Veredito
-39 | OK
-8 | Tempo de Execução Excedido
-41 | Resposta Errada
-12 | Erro de Execução
+7 | OK
+4 | Tempo de Execução Excedido
+8 | Resposta Errada
+1 | Erro de Execução
 
+rm: não foi possível remover “judge_out/”: Arquivo ou diretório não encontrado
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/checker/checker' is up to date.
 ======= generated_000 ============
 
-real	0m0.133s
-user	0m0.140s
+real	0m0.175s
+user	0m0.160s
 sys	0m0.024s
-wrong answer Answer contains longer sequence [length = 3], but output contains 0 elements
+wrong answer Expected 3 elements, but 0 found
 Resposta Errada
 ======= generated_001 ============
 
-real	0m0.127s
-user	0m0.128s
-sys	0m0.032s
-wrong answer Answer contains longer sequence [length = 5], but output contains 0 elements
+real	0m0.125s
+user	0m0.148s
+sys	0m0.016s
+wrong answer Expected 5 elements, but 0 found
 Resposta Errada
 ======= generated_002 ============
 
-real	0m0.126s
-user	0m0.120s
-sys	0m0.040s
-wrong answer Answer contains longer sequence [length = 5], but output contains 0 elements
+real	0m0.164s
+user	0m0.188s
+sys	0m0.024s
+wrong answer Expected 21 elements, but 0 found
 Resposta Errada
 ======= generated_003 ============
 
-real	0m0.149s
-user	0m0.144s
+real	0m0.170s
+user	0m0.244s
 sys	0m0.040s
-ok 1 number(s): "4"
-OK
+wrong answer Expected 10 elements, but 0 found
+Resposta Errada
 ======= generated_004 ============
 
-real	0m0.129s
-user	0m0.144s
-sys	0m0.016s
-wrong answer Answer contains longer sequence [length = 2], but output contains 0 elements
+real	0m0.209s
+user	0m0.352s
+sys	0m0.036s
+wrong answer Expected 436 elements, but 0 found
 Resposta Errada
 ======= generated_005 ============
 
-real	0m0.161s
-user	0m0.196s
-sys	0m0.032s
-wrong answer Answer contains longer sequence [length = 21], but output contains 0 elements
+real	0m0.430s
+user	0m0.696s
+sys	0m0.116s
+wrong answer Expected 422 elements, but 0 found
 Resposta Errada
 ======= generated_006 ============
 
-real	0m0.144s
-user	0m0.196s
-sys	0m0.016s
-wrong answer Answer contains longer sequence [length = 173], but output contains 0 elements
+real	0m0.677s
+user	0m1.012s
+sys	0m0.096s
+wrong answer Expected 8 elements, but 0 found
 Resposta Errada
 ======= generated_007 ============
 
-real	0m0.169s
-user	0m0.180s
-sys	0m0.032s
-ok 0 number(s): ""
+real	0m0.296s
+user	0m0.480s
+sys	0m0.052s
+ok empty sequence
 OK
 ======= generated_008 ============
 
-real	0m0.150s
-user	0m0.212s
-sys	0m0.008s
-ok 0 number(s): ""
+real	0m0.252s
+user	0m0.444s
+sys	0m0.068s
+ok empty sequence
 OK
 ======= generated_009 ============
 
-real	0m0.152s
-user	0m0.184s
-sys	0m0.032s
-ok 0 number(s): ""
-OK
+real	0m0.878s
+user	0m1.224s
+sys	0m0.264s
+wrong answer Expected 32425 elements, but 0 found
+Resposta Errada
 ======= generated_010 ============
 
-real	0m0.181s
-user	0m0.264s
-sys	0m0.024s
-wrong answer Answer contains longer sequence [length = 10], but output contains 0 elements
-Resposta Errada
+real	0m0.739s
+user	0m1.236s
+sys	0m0.240s
+ok empty sequence
+OK
 ======= generated_011 ============
 
-real	0m0.188s
-user	0m0.288s
-sys	0m0.028s
-wrong answer Answer contains longer sequence [length = 30], but output contains 0 elements
-Resposta Errada
+real	0m0.752s
+user	0m1.140s
+sys	0m0.296s
+ok empty sequence
+OK
 ======= generated_012 ============
 
-real	0m0.179s
-user	0m0.292s
-sys	0m0.020s
-wrong answer Answer contains longer sequence [length = 135], but output contains 0 elements
-Resposta Errada
+real	0m0.558s
+user	0m0.960s
+sys	0m0.320s
+ok empty sequence
+OK
 ======= generated_013 ============
 
-real	0m0.167s
-user	0m0.224s
-sys	0m0.040s
-wrong answer Answer contains longer sequence [length = 113], but output contains 0 elements
-Resposta Errada
+real	0m0.597s
+user	0m1.068s
+sys	0m0.320s
+ok empty sequence
+OK
 ======= generated_014 ============
 
-real	0m0.190s
-user	0m0.308s
-sys	0m0.024s
-wrong answer Answer contains longer sequence [length = 197], but output contains 0 elements
-Resposta Errada
+real	0m0.837s
+user	0m1.004s
+sys	0m0.340s
+ok empty sequence
+OK
 ======= generated_015 ============
 
-real	0m0.208s
-user	0m0.336s
-sys	0m0.056s
-wrong answer Answer contains longer sequence [length = 436], but output contains 0 elements
-Resposta Errada
-======= generated_016 ============
-
-real	0m0.205s
-user	0m0.332s
-sys	0m0.048s
-wrong answer Answer contains longer sequence [length = 326], but output contains 0 elements
-Resposta Errada
-======= generated_017 ============
-
-real	0m0.201s
-user	0m0.364s
-sys	0m0.036s
-wrong answer Answer contains longer sequence [length = 23], but output contains 0 elements
-Resposta Errada
-======= generated_018 ============
-
-real	0m0.215s
-user	0m0.372s
-sys	0m0.028s
-wrong answer Answer contains longer sequence [length = 371], but output contains 0 elements
-Resposta Errada
-======= generated_019 ============
-
-real	0m0.209s
-user	0m0.332s
-sys	0m0.044s
-wrong answer Answer contains longer sequence [length = 484], but output contains 0 elements
-Resposta Errada
-======= generated_020 ============
-
-real	0m0.429s
-user	0m0.736s
-sys	0m0.100s
-wrong answer Answer contains longer sequence [length = 422], but output contains 0 elements
-Resposta Errada
-======= generated_021 ============
-
-real	0m0.708s
-user	0m1.060s
-sys	0m0.080s
-wrong answer Answer contains longer sequence [length = 8], but output contains 0 elements
-Resposta Errada
-======= generated_022 ============
-
-real	0m0.531s
-user	0m0.844s
-sys	0m0.112s
-wrong answer Answer contains longer sequence [length = 551], but output contains 0 elements
-Resposta Errada
-======= generated_023 ============
-
-real	0m0.559s
-user	0m0.920s
-sys	0m0.060s
-wrong answer Answer contains longer sequence [length = 483], but output contains 0 elements
-Resposta Errada
-======= generated_024 ============
-
-real	0m0.259s
-user	0m0.476s
-sys	0m0.036s
-wrong answer Answer contains longer sequence [length = 541], but output contains 0 elements
-Resposta Errada
-======= generated_025 ============
-
-real	0m0.740s
-user	0m1.060s
-sys	0m0.084s
-wrong answer Answer contains longer sequence [length = 366], but output contains 0 elements
-Resposta Errada
-======= generated_026 ============
-
-real	0m0.807s
-user	0m1.168s
-sys	0m0.072s
-wrong answer Answer contains longer sequence [length = 137], but output contains 0 elements
-Resposta Errada
-======= generated_027 ============
-
-real	0m0.587s
-user	0m0.888s
-sys	0m0.124s
-wrong answer Answer contains longer sequence [length = 588], but output contains 0 elements
-Resposta Errada
-======= generated_028 ============
-
-real	0m0.578s
-user	0m0.900s
-sys	0m0.092s
-wrong answer Answer contains longer sequence [length = 563], but output contains 0 elements
-Resposta Errada
-======= generated_029 ============
-
-real	0m0.711s
-user	0m1.052s
-sys	0m0.096s
-wrong answer Answer contains longer sequence [length = 116], but output contains 0 elements
-Resposta Errada
-======= generated_030 ============
-
-real	0m0.248s
-user	0m0.464s
-sys	0m0.064s
-ok 0 number(s): ""
-OK
-======= generated_031 ============
-
-real	0m0.255s
-user	0m0.480s
-sys	0m0.052s
-wrong answer Answer contains longer sequence [length = 1364], but output contains 0 elements
-Resposta Errada
-======= generated_032 ============
-
-real	0m0.236s
-user	0m0.444s
-sys	0m0.032s
-ok 0 number(s): ""
-OK
-======= generated_033 ============
-
-real	0m0.287s
-user	0m0.612s
-sys	0m0.068s
-wrong answer Answer contains longer sequence [length = 5121], but output contains 0 elements
-Resposta Errada
-======= generated_034 ============
-
-real	0m0.264s
-user	0m0.540s
-sys	0m0.060s
-wrong answer Answer contains longer sequence [length = 849], but output contains 0 elements
-Resposta Errada
-======= generated_035 ============
-
-real	0m0.260s
-user	0m0.488s
-sys	0m0.068s
-ok 0 number(s): ""
-OK
-======= generated_036 ============
-
-real	0m0.261s
-user	0m0.488s
-sys	0m0.028s
-wrong answer Answer contains longer sequence [length = 8436], but output contains 0 elements
-Resposta Errada
-======= generated_037 ============
-
-real	0m0.234s
-user	0m0.416s
-sys	0m0.044s
-ok 0 number(s): ""
-OK
-======= generated_038 ============
-
-real	0m0.272s
-user	0m0.572s
-sys	0m0.020s
-ok 0 number(s): ""
-OK
-======= generated_039 ============
-
-real	0m0.265s
-user	0m0.524s
-sys	0m0.044s
-wrong answer Answer contains longer sequence [length = 1355], but output contains 0 elements
-Resposta Errada
-======= generated_040 ============
-
-real	0m0.269s
-user	0m0.536s
-sys	0m0.040s
-ok 0 number(s): ""
-OK
-======= generated_041 ============
-
-real	0m0.214s
-user	0m0.388s
-sys	0m0.040s
-wrong answer Answer contains longer sequence [length = 614], but output contains 0 elements
-Resposta Errada
-======= generated_042 ============
-
-real	0m0.246s
-user	0m0.500s
-sys	0m0.036s
-ok 0 number(s): ""
-OK
-======= generated_043 ============
-
-real	0m0.303s
-user	0m0.584s
-sys	0m0.064s
-ok 0 number(s): ""
-OK
-======= generated_044 ============
-
-real	0m0.268s
-user	0m0.548s
-sys	0m0.032s
-wrong answer Answer contains longer sequence [length = 1374], but output contains 0 elements
-Resposta Errada
-======= generated_045 ============
-
-real	0m0.238s
-user	0m0.460s
-sys	0m0.048s
-ok 0 number(s): ""
-OK
-======= generated_046 ============
-
-real	0m0.235s
-user	0m0.464s
-sys	0m0.020s
-ok 0 number(s): ""
-OK
-======= generated_047 ============
-
-real	0m0.222s
-user	0m0.420s
-sys	0m0.040s
-wrong answer Answer contains longer sequence [length = 1472], but output contains 0 elements
-Resposta Errada
-======= generated_048 ============
-
-real	0m0.262s
-user	0m0.520s
-sys	0m0.044s
-wrong answer Answer contains longer sequence [length = 5682], but output contains 0 elements
-Resposta Errada
-======= generated_049 ============
-
-real	0m0.242s
-user	0m0.484s
-sys	0m0.016s
-wrong answer Answer contains longer sequence [length = 886], but output contains 0 elements
-Resposta Errada
-======= generated_050 ============
-
-real	0m0.757s
-user	0m1.180s
-sys	0m0.312s
-wrong answer Answer contains longer sequence [length = 32425], but output contains 0 elements
-Resposta Errada
-======= generated_051 ============
-
-real	0m0.732s
-user	0m1.188s
-sys	0m0.300s
-ok 0 number(s): ""
-OK
-======= generated_052 ============
-
-real	0m0.681s
-user	0m1.128s
-sys	0m0.252s
-ok 0 number(s): ""
-OK
-======= generated_053 ============
-
-real	0m0.640s
-user	0m1.116s
-sys	0m0.220s
-ok 0 number(s): ""
-OK
-======= generated_054 ============
-
-real	0m0.642s
-user	0m1.032s
-sys	0m0.316s
-ok 0 number(s): ""
-OK
-======= generated_055 ============
-
-real	0m0.760s
-user	0m1.216s
-sys	0m0.300s
-wrong answer Answer contains longer sequence [length = 33225], but output contains 0 elements
-Resposta Errada
-======= generated_056 ============
-
-real	0m0.755s
-user	0m1.260s
-sys	0m0.256s
-ok 0 number(s): ""
-OK
-======= generated_057 ============
-
-real	0m0.644s
-user	0m1.064s
-sys	0m0.268s
-ok 0 number(s): ""
-OK
-======= generated_058 ============
-
-real	0m0.595s
-user	0m0.984s
-sys	0m0.172s
-ok 0 number(s): ""
-OK
-======= generated_059 ============
-
-real	0m0.657s
-user	0m1.148s
-sys	0m0.292s
-wrong answer Answer contains longer sequence [length = 36358], but output contains 0 elements
-Resposta Errada
-======= generated_060 ============
-
-real	0m0.563s
-user	0m1.048s
-sys	0m0.276s
-ok 0 number(s): ""
-OK
-======= generated_061 ============
-
-real	0m0.515s
-user	0m0.880s
-sys	0m0.192s
-ok 0 number(s): ""
-OK
-======= generated_062 ============
-
-real	0m0.609s
-user	0m1.040s
-sys	0m0.292s
-ok 0 number(s): ""
-OK
-======= generated_063 ============
-
-real	0m0.567s
-user	0m0.992s
-sys	0m0.356s
-ok 0 number(s): ""
-OK
-======= generated_064 ============
-
-real	0m0.639s
-user	0m1.064s
-sys	0m0.344s
-wrong answer Answer contains longer sequence [length = 44095], but output contains 0 elements
-Resposta Errada
-======= generated_065 ============
-
-real	0m0.662s
-user	0m1.148s
-sys	0m0.284s
-ok 0 number(s): ""
-OK
-======= generated_066 ============
-
-real	0m0.782s
-user	0m1.820s
-sys	0m0.420s
-ok 0 number(s): ""
-OK
-======= generated_067 ============
-
-real	0m0.614s
-user	0m1.064s
-sys	0m0.316s
-ok 0 number(s): ""
-OK
-======= generated_068 ============
-
-real	0m0.571s
-user	0m1.036s
-sys	0m0.260s
-ok 0 number(s): ""
-OK
-======= generated_069 ============
-
-real	0m0.585s
-user	0m1.000s
-sys	0m0.320s
-ok 0 number(s): ""
-OK
-======= generated_070 ============
-
-real	0m0.614s
-user	0m1.028s
-sys	0m0.316s
-ok 0 number(s): ""
-OK
-======= generated_071 ============
-
-real	0m0.788s
-user	0m1.748s
-sys	0m0.524s
-wrong answer Answer contains longer sequence [length = 47188], but output contains 0 elements
-Resposta Errada
-======= generated_072 ============
-
-real	0m0.553s
-user	0m0.944s
-sys	0m0.188s
-ok 0 number(s): ""
-OK
-======= generated_073 ============
-
-real	0m0.551s
-user	0m0.928s
-sys	0m0.196s
-ok 0 number(s): ""
-OK
-======= generated_074 ============
-
-real	0m0.609s
-user	0m1.040s
-sys	0m0.300s
-ok 0 number(s): ""
-OK
-======= generated_075 ============
-
-real	0m0.592s
-user	0m1.060s
-sys	0m0.320s
-ok 0 number(s): ""
-OK
-======= generated_076 ============
-
-real	0m0.592s
-user	0m1.060s
-sys	0m0.308s
-ok 0 number(s): ""
-OK
-======= generated_077 ============
-
-real	0m0.550s
-user	0m0.988s
-sys	0m0.328s
-ok 0 number(s): ""
-OK
-======= generated_078 ============
-
-real	0m0.603s
-user	0m1.096s
-sys	0m0.308s
-ok 0 number(s): ""
-OK
-======= generated_079 ============
-
-real	0m0.613s
-user	0m1.036s
-sys	0m0.372s
-ok 0 number(s): ""
-OK
-======= generated_080 ============
-
-real	0m15.062s
-user	0m33.096s
-sys	0m0.720s
-Tempo Excedido
-======= generated_081 ============
-
-real	0m15.042s
-user	0m29.424s
+real	0m15.039s
+user	0m32.904s
 sys	0m0.644s
 Tempo Excedido
-======= generated_082 ============
-/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/judge/judge.sh: line 78:   927 Morto                   timeout --kill-after=20s 15s java -Xss512m -Xmx512m -Xms512m -XX:+HeapDumpOnOutOfMemoryError $RAGRS $ARGS $toexec $2 < ${testpath} > ${OUT}${testcase}.out 2>> $LOG
+======= generated_016 ============
 
-real	0m35.310s
-user	0m0.000s
-sys	0m0.000s
-Erro de Execução
-======= generated_083 ============
-/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/judge/judge.sh: line 78:  1014 Morto                   timeout --kill-after=20s 15s java -Xss512m -Xmx512m -Xms512m -XX:+HeapDumpOnOutOfMemoryError $RAGRS $ARGS $toexec $2 < ${testpath} > ${OUT}${testcase}.out 2>> $LOG
-
-real	0m35.401s
-user	0m0.000s
-sys	0m0.000s
-Erro de Execução
-======= generated_084 ============
-/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/judge/judge.sh: line 78:  1302 Morto                   timeout --kill-after=20s 15s java -Xss512m -Xmx512m -Xms512m -XX:+HeapDumpOnOutOfMemoryError $RAGRS $ARGS $toexec $2 < ${testpath} > ${OUT}${testcase}.out 2>> $LOG
-
-real	0m35.581s
-user	0m0.000s
-sys	0m0.000s
-Erro de Execução
-======= generated_085 ============
-
-real	0m15.071s
-user	0m35.052s
-sys	0m0.760s
+real	0m15.154s
+user	0m30.144s
+sys	0m0.624s
 Tempo Excedido
-======= generated_086 ============
+======= generated_017 ============
 
-real	0m15.046s
-user	0m31.276s
-sys	0m0.708s
+real	0m15.250s
+user	0m36.456s
+sys	0m0.668s
 Tempo Excedido
-======= generated_087 ============
-/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/judge/judge.sh: line 78:  1842 Morto                   timeout --kill-after=20s 15s java -Xss512m -Xmx512m -Xms512m -XX:+HeapDumpOnOutOfMemoryError $RAGRS $ARGS $toexec $2 < ${testpath} > ${OUT}${testcase}.out 2>> $LOG
+======= generated_018 ============
 
-real	0m35.197s
-user	0m0.000s
-sys	0m0.000s
-Erro de Execução
-======= generated_088 ============
-/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/judge/judge.sh: line 78:  1896 Morto                   timeout --kill-after=20s 15s java -Xss512m -Xmx512m -Xms512m -XX:+HeapDumpOnOutOfMemoryError $RAGRS $ARGS $toexec $2 < ${testpath} > ${OUT}${testcase}.out 2>> $LOG
-
-real	0m35.635s
-user	0m0.000s
-sys	0m0.000s
-Erro de Execução
-======= generated_089 ============
-
-real	0m15.077s
-user	0m54.404s
-sys	0m0.788s
+real	0m15.052s
+user	0m32.400s
+sys	0m0.656s
 Tempo Excedido
-======= generated_090 ============
-/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/judge/judge.sh: line 78:  2000 Morto                   timeout --kill-after=20s 15s java -Xss512m -Xmx512m -Xms512m -XX:+HeapDumpOnOutOfMemoryError $RAGRS $ARGS $toexec $2 < ${testpath} > ${OUT}${testcase}.out 2>> $LOG
+======= generated_019 ============
+Exception in thread "main" java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.util.Arrays.copyOfRange(Arrays.java:3664)
+	at java.lang.String.<init>(String.java:207)
+	at java.nio.HeapCharBuffer.toString(HeapCharBuffer.java:567)
+	at java.nio.CharBuffer.toString(CharBuffer.java:1241)
+	at java.util.regex.Matcher.group(Matcher.java:541)
+	at java.util.regex.Matcher.group(Matcher.java:496)
+	at java.util.Scanner.getCompleteTokenInBuffer(Scanner.java:964)
+	at java.util.Scanner.next(Scanner.java:1476)
+	at java.util.Scanner.nextInt(Scanner.java:2117)
+	at java.util.Scanner.nextInt(Scanner.java:2076)
+	at StdIn.readInt(StdIn.java:329)
+	at CoreVertices.main(CoreVertices.java:36)
 
-real	0m35.434s
-user	0m0.000s
-sys	0m0.000s
+real	0m2.655s
+user	0m9.776s
+sys	0m0.544s
 Erro de Execução
-======= generated_091 ============
-/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/judge/judge.sh: line 78:  2045 Morto                   timeout --kill-after=20s 15s java -Xss512m -Xmx512m -Xms512m -XX:+HeapDumpOnOutOfMemoryError $RAGRS $ARGS $toexec $2 < ${testpath} > ${OUT}${testcase}.out 2>> $LOG
-
-real	0m35.892s
-user	0m0.000s
-sys	0m0.000s
-Erro de Execução
-======= generated_092 ============
-/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/judge/judge.sh: line 78:  2097 Morto                   timeout --kill-after=20s 15s java -Xss512m -Xmx512m -Xms512m -XX:+HeapDumpOnOutOfMemoryError $RAGRS $ARGS $toexec $2 < ${testpath} > ${OUT}${testcase}.out 2>> $LOG
-
-real	0m35.347s
-user	0m0.000s
-sys	0m0.000s
-Erro de Execução
-======= generated_093 ============
-/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/judge/judge.sh: line 78:  2201 Morto                   timeout --kill-after=20s 15s java -Xss512m -Xmx512m -Xms512m -XX:+HeapDumpOnOutOfMemoryError $RAGRS $ARGS $toexec $2 < ${testpath} > ${OUT}${testcase}.out 2>> $LOG
-
-real	0m35.497s
-user	0m0.000s
-sys	0m0.000s
-Erro de Execução
-======= generated_094 ============
-
-real	0m15.043s
-user	0m28.928s
-sys	0m0.616s
-Tempo Excedido
-======= generated_095 ============
-/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/judge/judge.sh: line 78:  2278 Morto                   timeout --kill-after=20s 15s java -Xss512m -Xmx512m -Xms512m -XX:+HeapDumpOnOutOfMemoryError $RAGRS $ARGS $toexec $2 < ${testpath} > ${OUT}${testcase}.out 2>> $LOG
-
-real	0m35.446s
-user	0m0.000s
-sys	0m0.000s
-Erro de Execução
-======= generated_096 ============
-/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/judge/judge.sh: line 78:  2339 Morto                   timeout --kill-after=20s 15s java -Xss512m -Xmx512m -Xms512m -XX:+HeapDumpOnOutOfMemoryError $RAGRS $ARGS $toexec $2 < ${testpath} > ${OUT}${testcase}.out 2>> $LOG
-
-real	0m35.410s
-user	0m0.000s
-sys	0m0.000s
-Erro de Execução
-======= generated_097 ============
-/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/judge/judge.sh: line 78:  2387 Morto                   timeout --kill-after=20s 15s java -Xss512m -Xmx512m -Xms512m -XX:+HeapDumpOnOutOfMemoryError $RAGRS $ARGS $toexec $2 < ${testpath} > ${OUT}${testcase}.out 2>> $LOG
-
-real	0m35.459s
-user	0m0.000s
-sys	0m0.000s
-Erro de Execução
-======= generated_098 ============
-
-real	0m15.045s
-user	0m35.784s
-sys	0m0.816s
-Tempo Excedido
-======= generated_099 ============
-
-real	0m15.151s
-user	0m31.432s
-sys	0m0.720s
-Tempo Excedido
