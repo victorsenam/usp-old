@@ -1,0 +1,176 @@
+
+WRWRWWRWWRWRWRRRRRRR
+CORREÇÃO AUTOMÁTICA
+Quantidade de Testes | Veredito
+0 | OK
+0 | Tempo de Execução Excedido
+8 | Resposta Errada
+12 | Erro de Execução
+0 | Falha no corretor (avise o monitor)
+[-10] Nome de arquivo errado
+
+make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-26/tester/checker/checker' is up to date.
+======= generated_000 ============
+
+real	0m0.170s
+user	0m0.164s
+sys	0m0.032s
+wrong answer resposta inválida NãO SATISFAZ
+Resposta Errada
+======= generated_001 ============
+Exception in thread "main" java.lang.IndexOutOfBoundsException: vertex 30 is not between 0 and 29
+	at Digraph.validateVertex(Digraph.java:153)
+	at Digraph.addEdge(Digraph.java:165)
+	at SAT.main(SAT.java:22)
+
+real	0m0.166s
+user	0m0.152s
+sys	0m0.016s
+Erro de Execução
+======= generated_002 ============
+
+real	0m0.165s
+user	0m0.156s
+sys	0m0.040s
+wrong answer resposta inválida NãO SATISFAZ
+Resposta Errada
+======= generated_003 ============
+Exception in thread "main" java.lang.IndexOutOfBoundsException: vertex 105 is not between 0 and 31
+	at Digraph.validateVertex(Digraph.java:153)
+	at Digraph.addEdge(Digraph.java:164)
+	at SAT.main(SAT.java:22)
+
+real	0m0.152s
+user	0m0.136s
+sys	0m0.028s
+Erro de Execução
+======= generated_004 ============
+
+real	0m0.215s
+user	0m0.280s
+sys	0m0.028s
+wrong answer resposta inválida NãO SATISFAZ
+Resposta Errada
+======= generated_005 ============
+
+real	0m0.277s
+user	0m0.400s
+sys	0m0.028s
+wrong answer resposta inválida NãO SATISFAZ
+Resposta Errada
+======= generated_006 ============
+Exception in thread "main" java.lang.IndexOutOfBoundsException: vertex 3811 is not between 0 and 221
+	at Digraph.validateVertex(Digraph.java:153)
+	at Digraph.addEdge(Digraph.java:164)
+	at SAT.main(SAT.java:22)
+
+real	0m0.128s
+user	0m0.144s
+sys	0m0.020s
+Erro de Execução
+======= generated_007 ============
+
+real	0m0.309s
+user	0m0.452s
+sys	0m0.028s
+wrong answer resposta inválida NãO SATISFAZ
+Resposta Errada
+======= generated_008 ============
+
+real	0m8.133s
+user	0m31.160s
+sys	0m0.664s
+wrong answer resposta inválida NãO SATISFAZ
+Resposta Errada
+======= generated_009 ============
+Exception in thread "main" java.lang.IndexOutOfBoundsException: vertex 9456 is not between 0 and 2373
+	at Digraph.validateVertex(Digraph.java:153)
+	at Digraph.addEdge(Digraph.java:164)
+	at SAT.main(SAT.java:22)
+
+real	0m0.141s
+user	0m0.152s
+sys	0m0.020s
+Erro de Execução
+======= generated_010 ============
+
+real	0m0.519s
+user	0m0.900s
+sys	0m0.116s
+wrong answer resposta inválida NãO SATISFAZ
+Resposta Errada
+======= generated_011 ============
+../../tester/judge/judge.sh: line 62: 26841 Morto                   timeout --kill-after=30s 20s java -Xss1024m -Xmx1024m -Xms1024m -cp .:algs4.jar:stdlib.jar $toexec $2 < ${testpath} > ${OUT}${testcase}.out 2>> $LOG
+
+real	0m50.069s
+user	0m0.000s
+sys	0m0.000s
+Erro de Execução
+======= generated_012 ============
+
+real	0m6.015s
+user	0m25.152s
+sys	0m0.520s
+wrong answer resposta inválida NãO SATISFAZ
+Resposta Errada
+======= generated_013 ============
+Exception in thread "main" java.lang.IndexOutOfBoundsException: vertex 70386 is not between 0 and 69623
+	at Digraph.validateVertex(Digraph.java:153)
+	at Digraph.addEdge(Digraph.java:165)
+	at SAT.main(SAT.java:22)
+
+real	0m0.139s
+user	0m0.132s
+sys	0m0.048s
+Erro de Execução
+======= generated_014 ============
+../../tester/judge/judge.sh: line 62: 27171 Morto                   timeout --kill-after=30s 20s java -Xss1024m -Xmx1024m -Xms1024m -cp .:algs4.jar:stdlib.jar $toexec $2 < ${testpath} > ${OUT}${testcase}.out 2>> $LOG
+
+real	0m50.012s
+user	0m0.000s
+sys	0m0.000s
+Erro de Execução
+======= generated_015 ============
+../../tester/judge/judge.sh: line 62: 27365 Morto                   timeout --kill-after=30s 20s java -Xss1024m -Xmx1024m -Xms1024m -cp .:algs4.jar:stdlib.jar $toexec $2 < ${testpath} > ${OUT}${testcase}.out 2>> $LOG
+
+real	0m50.021s
+user	0m0.000s
+sys	0m0.000s
+Erro de Execução
+======= generated_016 ============
+Exception in thread "main" java.lang.IndexOutOfBoundsException: vertex 270687 is not between 0 and 215
+	at Digraph.validateVertex(Digraph.java:153)
+	at Digraph.addEdge(Digraph.java:164)
+	at SAT.main(SAT.java:22)
+
+real	0m0.197s
+user	0m0.136s
+sys	0m0.024s
+Erro de Execução
+======= generated_017 ============
+../../tester/judge/judge.sh: line 62: 27460 Morto                   timeout --kill-after=30s 20s java -Xss1024m -Xmx1024m -Xms1024m -cp .:algs4.jar:stdlib.jar $toexec $2 < ${testpath} > ${OUT}${testcase}.out 2>> $LOG
+
+real	0m50.006s
+user	0m0.000s
+sys	0m0.000s
+Erro de Execução
+======= generated_018 ============
+Exception in thread "main" java.lang.IndexOutOfBoundsException: vertex 524064 is not between 0 and 217
+	at Digraph.validateVertex(Digraph.java:153)
+	at Digraph.addEdge(Digraph.java:164)
+	at SAT.main(SAT.java:22)
+
+real	0m0.164s
+user	0m0.164s
+sys	0m0.016s
+Erro de Execução
+======= generated_019 ============
+Exception in thread "main" java.lang.IndexOutOfBoundsException: vertex 370140 is not between 0 and 77049
+	at Digraph.validateVertex(Digraph.java:153)
+	at Digraph.addEdge(Digraph.java:164)
+	at SAT.main(SAT.java:22)
+
+real	0m0.145s
+user	0m0.144s
+sys	0m0.028s
+Erro de Execução

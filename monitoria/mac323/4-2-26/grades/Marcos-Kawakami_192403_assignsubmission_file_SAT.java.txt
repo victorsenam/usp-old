@@ -1,0 +1,152 @@
+
+.W.W..W..W...W..W.WW
+CORREÇÃO AUTOMÁTICA
+Quantidade de Testes | Veredito
+12 | OK
+0 | Tempo de Execução Excedido
+8 | Resposta Errada
+0 | Erro de Execução
+0 | Falha no corretor (avise o monitor)
+
+rm: não foi possível remover “judge_out/”: Arquivo ou diretório não encontrado
+make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-26/tester/checker/checker' is up to date.
+======= generated_000 ============
+
+real	0m0.103s
+user	0m0.080s
+sys	0m0.024s
+ok não há como satisfazer a expressão
+OK
+======= generated_001 ============
+
+real	0m0.124s
+user	0m0.104s
+sys	0m0.040s
+wrong answer valoração dada não satisfaz a expressão
+Resposta Errada
+======= generated_002 ============
+
+real	0m0.100s
+user	0m0.100s
+sys	0m0.008s
+ok não há como satisfazer a expressão
+OK
+======= generated_003 ============
+
+real	0m0.130s
+user	0m0.148s
+sys	0m0.012s
+wrong answer valoração dada não satisfaz a expressão
+Resposta Errada
+======= generated_004 ============
+
+real	0m0.125s
+user	0m0.148s
+sys	0m0.016s
+ok não há como satisfazer a expressão
+OK
+======= generated_005 ============
+
+real	0m0.196s
+user	0m0.348s
+sys	0m0.044s
+ok não há como satisfazer a expressão
+OK
+======= generated_006 ============
+
+real	0m0.202s
+user	0m0.344s
+sys	0m0.028s
+wrong answer valoração dada não satisfaz a expressão
+Resposta Errada
+======= generated_007 ============
+
+real	0m0.183s
+user	0m0.328s
+sys	0m0.040s
+ok não há como satisfazer a expressão
+OK
+======= generated_008 ============
+
+real	0m2.390s
+user	0m4.780s
+sys	0m0.472s
+ok não há como satisfazer a expressão
+OK
+======= generated_009 ============
+
+real	0m0.326s
+user	0m0.712s
+sys	0m0.092s
+wrong answer valoração dada não satisfaz a expressão
+Resposta Errada
+======= generated_010 ============
+
+real	0m0.550s
+user	0m0.928s
+sys	0m0.116s
+ok não há como satisfazer a expressão
+OK
+======= generated_011 ============
+
+real	0m3.696s
+user	0m8.140s
+sys	0m0.552s
+ok não há como satisfazer a expressão
+OK
+======= generated_012 ============
+
+real	0m1.822s
+user	0m2.548s
+sys	0m0.360s
+ok não há como satisfazer a expressão
+OK
+======= generated_013 ============
+
+real	0m0.616s
+user	0m1.608s
+sys	0m0.124s
+wrong answer Integer -1 violates the range [0, 1]
+Resposta Errada
+======= generated_014 ============
+
+real	0m3.683s
+user	0m7.400s
+sys	0m0.572s
+ok não há como satisfazer a expressão
+OK
+======= generated_015 ============
+
+real	0m4.022s
+user	0m7.728s
+sys	0m0.640s
+ok não há como satisfazer a expressão
+OK
+======= generated_016 ============
+
+real	0m0.961s
+user	0m2.620s
+sys	0m0.216s
+wrong answer valoração dada não satisfaz a expressão
+Resposta Errada
+======= generated_017 ============
+
+real	0m5.999s
+user	0m10.436s
+sys	0m0.676s
+ok não há como satisfazer a expressão
+OK
+======= generated_018 ============
+
+real	0m1.241s
+user	0m2.676s
+sys	0m0.320s
+wrong answer valoração dada não satisfaz a expressão
+Resposta Errada
+======= generated_019 ============
+
+real	0m1.436s
+user	0m3.088s
+sys	0m0.372s
+wrong answer valoração dada não satisfaz a expressão
+Resposta Errada

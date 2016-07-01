@@ -5,6 +5,8 @@
 
 using namespace std;
 
+char buff[1000];
+
 bool compareWords(string a, string b)
 {
     vector<string> va, vb;
@@ -30,10 +32,20 @@ int main(int argc, char * argv[])
 
     std::string strAnswer;
 
+    std::string first = "";
+
     inf.readString();
     int n = 0;
-    while (!ans.eof()) 
+    int t = 0;
+    int c = 0;
+    while (!ans.eof() && !ouf.eof()) 
     {
+        std::string opr = inf.readString();
+        if (opr[0] == 'a') {
+            n++;
+            continue;
+        }
+
         std::string j = ans.readString();
 
         if (j == "" && ans.eof())
@@ -43,15 +55,25 @@ int main(int argc, char * argv[])
         strAnswer = p;
 
         n++;
+        t++;
 
-        std::string opr = inf.readString();
-
-        if (!compareWords(j, p))
-            quitf(_wa, "%d%s lines differ on operation %s - expected: '%s', found: '%s'", n, englishEnding(n).c_str(), compress(opr).c_str(), compress(j).c_str(), compress(p).c_str());
+        if (!compareWords(j, p)) {
+            if (first == "") {
+                sprintf(buff, "linha %d difere - operação: '%s', esperado: '%s', encontrado: '%s'", n, compress(opr).c_str(), compress(j).c_str(), compress(p).c_str());
+                first = buff;
+            }
+        } else {
+            c++;
+        }
     }
+
+    while (!ans.eof())
+        ans.readString();
+    while (!ouf.eof())
+        ouf.readString();
     
-    if (n == 1)
-        quitf(_ok, "single line: '%s'", compress(strAnswer).c_str());
-    
-    quitf(_ok, "%d lines", n);
+    if (c < t)
+        quitf(_pc(200*c/t), "%d linhas certas de %d. primeiro erro: %s", c, t, first.c_str());
+    else
+        quitf(_pc(200), "perfeito");
 }

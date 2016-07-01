@@ -22,9 +22,9 @@ int main(int argc, char * argv[])
     int n = inf.readInt();
     int m = inf.readInt();
 
-    string res = ouf.readString();
+    string res = upperCase(ouf.readString());
     if (res == "MENTIRA") {
-        res = ans.readString();
+        res = upperCase(ans.readString());
         
         if (res == "MENTIRA")
             quitf(_ok, "não há como satisfazer a expressão\n");
@@ -44,7 +44,7 @@ int main(int argc, char * argv[])
 
         quitf(_wa, "solução existente e não encontrada\n");
     } else if (res == "VERDADE") {
-        res = ans.readString();
+        res = upperCase(ans.readString());
         for (int i = 0; i < n; i++)
             val[i] = ouf.readInt(0, 1);
 

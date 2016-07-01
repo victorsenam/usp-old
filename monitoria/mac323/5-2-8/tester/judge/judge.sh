@@ -33,7 +33,6 @@ rm -r $OUT &>> $LOG
 mkdir $OUT &>> $LOG
 r_ac=0
 r_tl=0
-r_wa=0
 r_re=0
 r_tm=0
 r_fa=0
@@ -70,35 +69,18 @@ then
         (time timeout --kill-after=30s 20s java -Xss1024m -Xmx1024m -Xms1024m -cp .:algs4.jar:stdlib.jar CorretorDoVictor $2 < ${testpath} > ${OUT}${testcase}.out 2>> $LOG) &>> $LOG
         run_status=$?
 
-
-        if [ $run_status -eq 124 ]
+        checker_output=$( ${DIR}tester/checker/checker ${testpath} ${OUT}${testcase}.out ${DIR}tester/solution/answer/${testcase}.out 2>&1)
+        echo $checker_output >> $LOG
+        if [[ ${checker_output:0:4} == "FAIL" ]]
         then
-            ((r_tl++))
-            echo "Tempo Excedido" >> $LOG
-            veredict="T"
-        elif [ $run_status -eq 0 ]
-        then
-            checker_output=$( ${DIR}tester/checker/checker ${testpath} ${OUT}${testcase}.out ${DIR}tester/solution/answer/${testcase}.out 2>&1)
-            echo $checker_output >> $LOG
-            if [[ ${checker_output:0:4} == "FAIL" ]]
-            then
-                ((r_fa++))
-                echo "FAIL" >> $LOG
-                veredict="F"
-            elif [[ ${checker_output:0:1} == "o" ]]
-            then
-                ((r_ac++))
-                echo "OK" >> $LOG
-                veredict="."
-            else
-                ((r_wa++))
-                echo "Resposta Errada" >> $LOG
-                veredict="W"
-            fi
+            ((r_fa++))
+            echo "FAIL" >> $LOG
+            veredict="F"
         else
-            ((r_re++))
-            echo "Erro de Execução" >> $LOG
-            veredict="R"
+            points=${checker_output:19:3}     # remove leading "partially correct ("
+            points=${points%%[^[:digit:]]*}     # remove trailing non-digits
+            r_ac=$(echo "$points + $r_ac" | bc)
+            veredict="."
         fi
 
         printf $veredict
@@ -111,10 +93,8 @@ fi
 printf "\n"
 printf "\n" >> $RES
 
+echo "EP: $(basename $(pwd))" >> $RES
+echo "NOTA: $(echo "100*$r_ac/4000" | bc)" >> $RES
 echo "CORREÇÃO AUTOMÁTICA" >> $RES
-echo "Quantidade de Testes | Veredito" >> $RES
-echo "$r_ac | OK" >> $RES
-echo "$r_tl | Tempo de Execução Excedido" >> $RES
-echo "$r_wa | Resposta Errada" >> $RES
-echo "$r_re | Erro de Execução" >> $RES
-echo "$r_fa | Falha no corretor (avise o monitor)" >> $RES
+echo "$r_ac Pontos (máximo: 4000)" >> $RES
+echo "$r_fa Testes com Falha no corretor (avise o monitor)" >> $RES

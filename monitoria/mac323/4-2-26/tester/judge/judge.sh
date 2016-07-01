@@ -11,7 +11,6 @@ LOG="judge.log"
 RES="judge.out"
 OUT="judge_out/"
 TMPOUT="judge_output.txt"
-ARGS="-cp .:algs4.jar:stdlib.jar"
 NAME="SAT"
 
 # parameters
@@ -39,12 +38,17 @@ r_re=0
 r_tm=0
 r_fa=0
 
+# stadartizing
+cp -n ${DIR}tester/judge/.gitignore . &>> $LOG
+cp -n ${DIR}tester/standart/* . &>> $LOG
+rm *.class
+for i in *.java; do
+    sed -i "s/import edu\.princeton\.cs\.algs4\..*;//g" $i
+done
+
 # compiling
 make ${DIR}tester/checker/checker &>> $LOG
-cp -n ${DIR}tester/standart/* . &>> $LOG
-cp -n ${DIR}tester/judge/.gitignore . &>> $LOG
-rm *.class
-javac $ARGS *.java &>> $LOG
+javac -cp .:algs4.jar:stdlib.jar *.java &>> $LOG
 
 toexec=failed
 if [ -a $NAME.class ];
@@ -52,22 +56,7 @@ then
     toexec=$NAME
 fi
 
-
-# second compile method
-if [ $toexec == failed ];
-then
-    echo "=========== TENTANDO COMPILAR DE NOVO (imports no começo do código) ==============" &>> $LOG
-
-    rm *.class
-    echo -e "import edu.princeton.cs.algs4.*;\nimport java.util.*;\n$(cat CoreVertices.java)" > $NAME.java
-    javac $ARGS *.java &>> $LOG
-    
-    if [ -a $NAME.class ];
-    then
-        toexec=$NAME
-    fi
-fi
-
+# judge
 if [ $toexec != failed ];
 then
     for testpath in $(find $cases/*);
@@ -77,7 +66,7 @@ then
         
         echo "======= $testcase ============" >> $LOG
 
-        (time timeout --kill-after=30s 20s java -Xss1024m -Xmx1024m -Xms1024m $RAGRS $ARGS $toexec $2 < ${testpath} > ${OUT}${testcase}.out 2>> $LOG) &>> $LOG
+        (time timeout --kill-after=30s 20s java -Xss1024m -Xmx1024m -Xms1024m -cp .:algs4.jar:stdlib.jar $toexec $2 < ${testpath} > ${OUT}${testcase}.out 2>> $LOG) &>> $LOG
         run_status=$?
 
 

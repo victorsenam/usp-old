@@ -1,0 +1,152 @@
+
+....................
+CORREÇÃO AUTOMÁTICA
+Quantidade de Testes | Veredito
+20 | OK
+0 | Tempo de Execução Excedido
+0 | Resposta Errada
+0 | Erro de Execução
+0 | Falha no corretor (avise o monitor)
+
+rm: não foi possível remover “judge_out/”: Arquivo ou diretório não encontrado
+make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-26/tester/checker/checker' is up to date.
+======= generated_000 ============
+
+real	0m0.349s
+user	0m0.140s
+sys	0m0.036s
+ok não há como satisfazer a expressão
+OK
+======= generated_001 ============
+
+real	0m0.167s
+user	0m0.136s
+sys	0m0.028s
+ok solução correta
+OK
+======= generated_002 ============
+
+real	0m0.172s
+user	0m0.144s
+sys	0m0.028s
+ok não há como satisfazer a expressão
+OK
+======= generated_003 ============
+
+real	0m0.149s
+user	0m0.140s
+sys	0m0.036s
+ok solução correta
+OK
+======= generated_004 ============
+
+real	0m0.201s
+user	0m0.324s
+sys	0m0.064s
+ok não há como satisfazer a expressão
+OK
+======= generated_005 ============
+
+real	0m0.417s
+user	0m0.780s
+sys	0m0.096s
+ok não há como satisfazer a expressão
+OK
+======= generated_006 ============
+
+real	0m0.195s
+user	0m0.272s
+sys	0m0.032s
+ok solução correta
+OK
+======= generated_007 ============
+
+real	0m0.385s
+user	0m0.760s
+sys	0m0.080s
+ok não há como satisfazer a expressão
+OK
+======= generated_008 ============
+
+real	0m7.980s
+user	0m13.380s
+sys	0m0.672s
+ok não há como satisfazer a expressão
+OK
+======= generated_009 ============
+
+real	0m0.317s
+user	0m0.636s
+sys	0m0.064s
+ok solução correta
+OK
+======= generated_010 ============
+
+real	0m1.526s
+user	0m2.120s
+sys	0m0.340s
+ok não há como satisfazer a expressão
+OK
+======= generated_011 ============
+
+real	0m12.885s
+user	0m23.148s
+sys	0m0.904s
+ok não há como satisfazer a expressão
+OK
+======= generated_012 ============
+
+real	0m5.974s
+user	0m11.432s
+sys	0m0.708s
+ok não há como satisfazer a expressão
+OK
+======= generated_013 ============
+
+real	0m0.656s
+user	0m1.272s
+sys	0m0.148s
+ok solução correta
+OK
+======= generated_014 ============
+
+real	0m12.521s
+user	0m23.092s
+sys	0m0.908s
+ok não há como satisfazer a expressão
+OK
+======= generated_015 ============
+
+real	0m13.139s
+user	0m23.048s
+sys	0m0.964s
+ok não há como satisfazer a expressão
+OK
+======= generated_016 ============
+
+real	0m0.800s
+user	0m0.920s
+sys	0m0.280s
+ok solução correta
+OK
+======= generated_017 ============
+
+real	0m17.341s
+user	0m31.104s
+sys	0m0.960s
+ok não há como satisfazer a expressão
+OK
+======= generated_018 ============
+
+real	0m1.866s
+user	0m4.344s
+sys	0m0.568s
+ok solução correta
+OK
+======= generated_019 ============
+
+real	0m1.709s
+user	0m2.340s
+sys	0m0.624s
+ok solução correta
+OK

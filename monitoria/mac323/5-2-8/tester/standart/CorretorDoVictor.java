@@ -12,17 +12,42 @@ public class CorretorDoVictor {
             char c = StdIn.readChar();
             StdIn.readChar();
 
+            String res = null;
+
             if (c == 'a') {
                 ex.put(StdIn.readString(), i);
             } else if (c == 'r') {
-                StdOut.println(ex.rank(StdIn.readString()) - indexed);
+                try {
+                    res = (ex.rank(StdIn.readString()) - indexed) + "";
+                } catch (Throwable e) {
+                    res = "No answer";
+                }
             } else if (c == 'f') {
-                StdOut.println(ex.floor(StdIn.readString()));
+                try {
+                    res = ex.floor(StdIn.readString());
+                    if (!ex.contains(res))
+                        res = "No answer";
+                } catch (Throwable e) {
+                    res = "No answer";
+                }
             } else if (c == 'c') {
-                StdOut.println(ex.ceil(StdIn.readString()));
+                try {
+                    res = ex.ceil(StdIn.readString());
+                    if (!ex.contains(res))
+                        res = "No answer";
+                } catch (Throwable e) {
+                    res = "No answer";
+                }
             } else if (c == 's') {
-                StdOut.println(ex.select(StdIn.readInt() + indexed));
+                try {
+                    res = ex.select(StdIn.readInt() + indexed);
+                } catch (Throwable e) {
+                    res = "No answer";
+                }
             }
+
+            if (res != null)
+                StdOut.println(res);
         }
     }
 }
