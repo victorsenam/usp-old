@@ -1,0 +1,155 @@
+
+LOG DE COMPILAÇÃO E TESTE
+Existem dois métodos de compilação, eles estão indicados, se um falha eu parto pro outro. Então se quiser entender o porque não compilou, verifique todos.
+Segue também o log do corretor, pode ser interessante para descobrir a natureza de seus erros. A saída está trucada (não mostra todas as linha), se quiser ver todo o log, fale comigo
+
+....................
+CORREÇÃO AUTOMÁTICA
+Quantidade de Testes | Veredito
+20 | OK
+0 | Tempo de Execução Excedido
+0 | Resposta Errada
+0 | Erro de Execução
+
+rm: não foi possível remover “judge_out/”: Arquivo ou diretório não encontrado
+make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/checker/checker' is up to date.
+======= generated_000 ============
+
+real	0m0.156s
+user	0m0.172s
+sys	0m0.020s
+ok 3 numbers (in increasing order): 0 1 2
+OK
+======= generated_001 ============
+
+real	0m0.137s
+user	0m0.144s
+sys	0m0.032s
+ok 5 numbers (in increasing order): 0 1 2 4 5
+OK
+======= generated_002 ============
+
+real	0m0.179s
+user	0m0.232s
+sys	0m0.036s
+ok 21 numbers (in increasing order): 7 8 ... 116 118
+OK
+======= generated_003 ============
+
+real	0m0.193s
+user	0m0.292s
+sys	0m0.036s
+ok 10 numbers (in increasing order): 11 21 ... 80 112
+OK
+======= generated_004 ============
+
+real	0m0.281s
+user	0m0.408s
+sys	0m0.040s
+ok 436 numbers (in increasing order): 0 5 ... 718 719
+OK
+======= generated_005 ============
+
+real	0m0.489s
+user	0m0.832s
+sys	0m0.104s
+ok 422 numbers (in increasing order): 1 2 ... 581 582
+OK
+======= generated_006 ============
+
+real	0m0.841s
+user	0m1.304s
+sys	0m0.080s
+ok 8 numbers (in increasing order): 3 33 ... 456 504
+OK
+======= generated_007 ============
+
+real	0m0.264s
+user	0m0.492s
+sys	0m0.036s
+ok empty sequence
+OK
+======= generated_008 ============
+
+real	0m0.241s
+user	0m0.436s
+sys	0m0.064s
+ok empty sequence
+OK
+======= generated_009 ============
+
+real	0m0.711s
+user	0m1.200s
+sys	0m0.148s
+ok 32425 numbers (in increasing order): 0 1 ... 37950 37951
+OK
+======= generated_010 ============
+
+real	0m0.626s
+user	0m1.012s
+sys	0m0.092s
+ok empty sequence
+OK
+======= generated_011 ============
+
+real	0m0.585s
+user	0m1.004s
+sys	0m0.080s
+ok empty sequence
+OK
+======= generated_012 ============
+
+real	0m0.461s
+user	0m0.784s
+sys	0m0.092s
+ok empty sequence
+OK
+======= generated_013 ============
+
+real	0m0.455s
+user	0m0.792s
+sys	0m0.092s
+ok empty sequence
+OK
+======= generated_014 ============
+
+real	0m0.491s
+user	0m0.788s
+sys	0m0.104s
+ok empty sequence
+OK
+======= generated_015 ============
+
+real	0m9.889s
+user	0m13.864s
+sys	0m0.328s
+ok 7086 numbers (in increasing order): 2 24 ... 60811 60812
+OK
+======= generated_016 ============
+
+real	0m9.667s
+user	0m13.620s
+sys	0m0.352s
+ok 56184 numbers (in increasing order): 0 1 ... 60195 60196
+OK
+======= generated_017 ============
+
+real	0m8.607s
+user	0m12.068s
+sys	0m0.288s
+ok 52553 numbers (in increasing order): 0 1 ... 61238 61239
+OK
+======= generated_018 ============
+
+real	0m8.402s
+user	0m11.752s
+sys	0m0.308s
+ok 50189 numbers (in increasing order): 0 1 ... 60617 60618
+OK
+======= generated_019 ============
+
+real	0m9.816s
+user	0m13.656s
+sys	0m0.356s
+ok 38982 numbers (in increasing order): 1 2 ... 69098 69099
+OK

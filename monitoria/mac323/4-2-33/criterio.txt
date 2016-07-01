@@ -1,2 +1,0 @@
-[-5] : Nome de função errada, não faz isso, por favor.
-[-15] : Imprimiu na saída errada. Leia as instruções com mais cuidado.

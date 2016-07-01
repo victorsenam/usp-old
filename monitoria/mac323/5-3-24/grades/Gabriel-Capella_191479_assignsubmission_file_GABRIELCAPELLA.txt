@@ -1,0 +1,152 @@
+
+LOG DE COMPILAÇÃO E TESTE
+Existem dois métodos de compilação, eles estão indicados, se um falha eu parto pro outro. Então se quiser entender o porque não compilou, verifique todos.
+Segue também o log do corretor, pode ser interessante para descobrir a natureza de seus erros. A saída está trucada (não mostra todas as linha), se quiser ver todo o log, fale comigo
+
+WWWWWWT..W.....TTTRT
+CORREÇÃO AUTOMÁTICA
+Quantidade de Testes | Veredito
+7 | OK
+5 | Tempo de Execução Excedido
+7 | Resposta Errada
+1 | Erro de Execução
+
+rm: não foi possível remover “judge_out/”: Arquivo ou diretório não encontrado
+make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/checker/checker' is up to date.
+Note: CoreVertices.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+======= generated_000 ============
+
+real	0m0.185s
+user	0m0.160s
+sys	0m0.036s
+wrong answer Expected 3 elements, but 0 found
+Resposta Errada
+======= generated_001 ============
+
+real	0m0.174s
+user	0m0.164s
+sys	0m0.016s
+wrong answer Expected 5 elements, but 0 found
+Resposta Errada
+======= generated_002 ============
+
+real	0m0.146s
+user	0m0.176s
+sys	0m0.040s
+wrong answer Expected 21 elements, but 0 found
+Resposta Errada
+======= generated_003 ============
+
+real	0m0.164s
+user	0m0.204s
+sys	0m0.040s
+wrong answer Expected 10 elements, but 0 found
+Resposta Errada
+======= generated_004 ============
+
+real	0m0.232s
+user	0m0.324s
+sys	0m0.052s
+wrong answer Expected 436 elements, but 0 found
+Resposta Errada
+======= generated_005 ============
+
+real	0m2.628s
+user	0m3.120s
+sys	0m0.152s
+wrong answer Expected 422 elements, but 0 found
+Resposta Errada
+======= generated_006 ============
+
+real	0m15.034s
+user	0m16.316s
+sys	0m0.292s
+Tempo Excedido
+======= generated_007 ============
+
+real	0m0.420s
+user	0m0.636s
+sys	0m0.060s
+ok empty sequence
+OK
+======= generated_008 ============
+
+real	0m0.346s
+user	0m0.628s
+sys	0m0.084s
+ok empty sequence
+OK
+======= generated_009 ============
+
+real	0m5.456s
+user	0m6.572s
+sys	0m0.228s
+wrong answer Expected 32425 elements, but 0 found
+Resposta Errada
+======= generated_010 ============
+
+real	0m4.895s
+user	0m5.920s
+sys	0m0.196s
+ok empty sequence
+OK
+======= generated_011 ============
+
+real	0m4.959s
+user	0m6.072s
+sys	0m0.180s
+ok empty sequence
+OK
+======= generated_012 ============
+
+real	0m1.889s
+user	0m2.780s
+sys	0m0.128s
+ok empty sequence
+OK
+======= generated_013 ============
+
+real	0m2.006s
+user	0m2.872s
+sys	0m0.160s
+ok empty sequence
+OK
+======= generated_014 ============
+
+real	0m1.897s
+user	0m2.808s
+sys	0m0.132s
+ok empty sequence
+OK
+======= generated_015 ============
+
+real	0m34.995s
+user	3m15.240s
+sys	0m0.436s
+Tempo Excedido
+======= generated_016 ============
+
+real	0m34.222s
+user	3m11.296s
+sys	0m0.484s
+Tempo Excedido
+======= generated_017 ============
+
+real	0m28.799s
+user	2m39.488s
+sys	0m0.384s
+Tempo Excedido
+======= generated_018 ============
+/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/judge/judge.sh: line 78: 27013 Morto                   timeout --kill-after=20s 15s java -Xss512m -Xmx512m -Xms512m $RAGRS $ARGS $toexec $2 < ${testpath} > ${OUT}${testcase}.out 2>> $LOG
+
+real	0m35.025s
+user	0m0.000s
+sys	0m0.000s
+Erro de Execução
+======= generated_019 ============
+
+real	0m32.149s
+user	2m49.976s
+sys	0m0.572s
+Tempo Excedido

@@ -1,0 +1,156 @@
+
+LOG DE COMPILAÇÃO E TESTE
+Existem dois métodos de compilação, eles estão indicados, se um falha eu parto pro outro. Então se quiser entender o porque não compilou, verifique todos.
+Segue também o log do corretor, pode ser interessante para descobrir a natureza de seus erros. A saída está trucada (não mostra todas as linha), se quiser ver todo o log, fale comigo
+
+.......WW.WWWWW.....
+CORREÇÃO AUTOMÁTICA
+Quantidade de Testes | Veredito
+13 | OK
+0 | Tempo de Execução Excedido
+7 | Resposta Errada
+0 | Erro de Execução
+
+make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/checker/checker' is up to date.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+======= generated_000 ============
+
+real	0m0.155s
+user	0m0.144s
+sys	0m0.028s
+ok 3 numbers (in increasing order): 0 1 2
+OK
+======= generated_001 ============
+
+real	0m0.162s
+user	0m0.168s
+sys	0m0.020s
+ok 5 numbers (in increasing order): 0 1 2 4 5
+OK
+======= generated_002 ============
+
+real	0m0.191s
+user	0m0.268s
+sys	0m0.028s
+ok 21 numbers (in increasing order): 7 8 ... 116 118
+OK
+======= generated_003 ============
+
+real	0m0.210s
+user	0m0.340s
+sys	0m0.024s
+ok 10 numbers (in increasing order): 11 21 ... 80 112
+OK
+======= generated_004 ============
+
+real	0m0.270s
+user	0m0.460s
+sys	0m0.020s
+ok 436 numbers (in increasing order): 0 5 ... 718 719
+OK
+======= generated_005 ============
+
+real	0m0.555s
+user	0m0.892s
+sys	0m0.100s
+ok 422 numbers (in increasing order): 1 2 ... 581 582
+OK
+======= generated_006 ============
+
+real	0m1.273s
+user	0m1.380s
+sys	0m0.100s
+ok 8 numbers (in increasing order): 3 33 ... 456 504
+OK
+======= generated_007 ============
+
+real	0m0.295s
+user	0m0.560s
+sys	0m0.060s
+wrong answer Expected 0 elements, but 1 found
+Resposta Errada
+======= generated_008 ============
+
+real	0m0.308s
+user	0m0.652s
+sys	0m0.044s
+wrong answer Expected 0 elements, but 6401 found
+Resposta Errada
+======= generated_009 ============
+
+real	0m0.790s
+user	0m1.300s
+sys	0m0.100s
+ok 32425 numbers (in increasing order): 0 1 ... 37950 37951
+OK
+======= generated_010 ============
+
+real	0m0.710s
+user	0m1.224s
+sys	0m0.084s
+wrong answer Expected 0 elements, but 16319 found
+Resposta Errada
+======= generated_011 ============
+
+real	0m0.670s
+user	0m1.128s
+sys	0m0.096s
+wrong answer Expected 0 elements, but 9484 found
+Resposta Errada
+======= generated_012 ============
+
+real	0m0.598s
+user	0m1.088s
+sys	0m0.068s
+wrong answer Expected 0 elements, but 19245 found
+Resposta Errada
+======= generated_013 ============
+
+real	0m0.651s
+user	0m1.172s
+sys	0m0.096s
+wrong answer Expected 0 elements, but 38032 found
+Resposta Errada
+======= generated_014 ============
+
+real	0m0.557s
+user	0m0.980s
+sys	0m0.080s
+wrong answer Expected 0 elements, but 1 found
+Resposta Errada
+======= generated_015 ============
+
+real	0m13.755s
+user	0m33.212s
+sys	0m0.488s
+ok 7086 numbers (in increasing order): 2 24 ... 60811 60812
+OK
+======= generated_016 ============
+
+real	0m12.641s
+user	0m22.260s
+sys	0m3.308s
+ok 56184 numbers (in increasing order): 0 1 ... 60195 60196
+OK
+======= generated_017 ============
+
+real	0m9.154s
+user	0m13.860s
+sys	0m0.340s
+ok 52553 numbers (in increasing order): 0 1 ... 61238 61239
+OK
+======= generated_018 ============
+
+real	0m11.328s
+user	0m27.128s
+sys	0m0.336s
+ok 50189 numbers (in increasing order): 0 1 ... 60617 60618
+OK
+======= generated_019 ============
+
+real	0m13.258s
+user	0m29.972s
+sys	0m0.424s
+ok 38982 numbers (in increasing order): 1 2 ... 69098 69099
+OK

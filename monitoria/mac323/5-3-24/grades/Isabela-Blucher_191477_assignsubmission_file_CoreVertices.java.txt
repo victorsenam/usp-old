@@ -1,0 +1,145 @@
+
+LOG DE COMPILAÇÃO E TESTE
+Existem dois métodos de compilação, eles estão indicados, se um falha eu parto pro outro. Então se quiser entender o porque não compilou, verifique todos.
+Segue também o log do corretor, pode ser interessante para descobrir a natureza de seus erros. A saída está trucada (não mostra todas as linha), se quiser ver todo o log, fale comigo
+
+.......WWTTTTTTTTTTT
+CORREÇÃO AUTOMÁTICA
+Quantidade de Testes | Veredito
+7 | OK
+11 | Tempo de Execução Excedido
+2 | Resposta Errada
+0 | Erro de Execução
+
+make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/checker/checker' is up to date.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+======= generated_000 ============
+
+real	0m0.176s
+user	0m0.160s
+sys	0m0.032s
+ok 3 numbers (in increasing order): 0 1 2
+OK
+======= generated_001 ============
+
+real	0m0.150s
+user	0m0.152s
+sys	0m0.024s
+ok 5 numbers (in increasing order): 0 1 2 4 5
+OK
+======= generated_002 ============
+
+real	0m0.199s
+user	0m0.280s
+sys	0m0.040s
+ok 21 numbers (in increasing order): 7 8 ... 116 118
+OK
+======= generated_003 ============
+
+real	0m0.285s
+user	0m0.396s
+sys	0m0.048s
+ok 10 numbers (in increasing order): 11 21 ... 80 112
+OK
+======= generated_004 ============
+
+real	0m0.590s
+user	0m0.740s
+sys	0m0.064s
+ok 436 numbers (in increasing order): 0 5 ... 718 719
+OK
+======= generated_005 ============
+
+real	0m0.827s
+user	0m1.248s
+sys	0m0.104s
+ok 422 numbers (in increasing order): 1 2 ... 581 582
+OK
+======= generated_006 ============
+
+real	0m6.873s
+user	0m7.436s
+sys	0m0.088s
+ok 8 numbers (in increasing order): 3 33 ... 456 504
+OK
+======= generated_007 ============
+
+real	0m6.005s
+user	0m6.932s
+sys	0m1.464s
+wrong output format Expected integer, but "Não" found
+Resposta Errada
+======= generated_008 ============
+
+real	0m7.774s
+user	0m8.472s
+sys	0m1.420s
+wrong output format Expected integer, but "Não" found
+Resposta Errada
+======= generated_009 ============
+
+real	0m15.037s
+user	0m15.684s
+sys	0m0.144s
+Tempo Excedido
+======= generated_010 ============
+
+real	0m15.040s
+user	0m15.644s
+sys	0m0.196s
+Tempo Excedido
+======= generated_011 ============
+
+real	0m15.052s
+user	0m15.644s
+sys	0m0.160s
+Tempo Excedido
+======= generated_012 ============
+
+real	0m15.053s
+user	0m16.532s
+sys	0m0.436s
+Tempo Excedido
+======= generated_013 ============
+
+real	0m15.045s
+user	0m15.756s
+sys	0m0.232s
+Tempo Excedido
+======= generated_014 ============
+
+real	0m15.064s
+user	0m16.364s
+sys	0m0.484s
+Tempo Excedido
+======= generated_015 ============
+
+real	0m15.122s
+user	0m34.904s
+sys	0m0.464s
+Tempo Excedido
+======= generated_016 ============
+
+real	0m17.146s
+user	0m26.208s
+sys	0m3.956s
+Tempo Excedido
+======= generated_017 ============
+
+real	0m15.064s
+user	0m19.904s
+sys	0m0.400s
+Tempo Excedido
+======= generated_018 ============
+
+real	0m15.067s
+user	0m30.844s
+sys	0m0.384s
+Tempo Excedido
+======= generated_019 ============
+
+real	0m15.055s
+user	0m31.892s
+sys	0m0.528s
+Tempo Excedido

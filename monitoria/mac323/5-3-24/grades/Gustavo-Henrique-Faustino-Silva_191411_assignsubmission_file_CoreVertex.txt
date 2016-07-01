@@ -1,0 +1,156 @@
+[-10] Nome da classe errado
+
+LOG DE COMPILAÇÃO E TESTE
+Existem dois métodos de compilação, eles estão indicados, se um falha eu parto pro outro. Então se quiser entender o porque não compilou, verifique todos.
+Segue também o log do corretor, pode ser interessante para descobrir a natureza de seus erros. A saída está trucada (não mostra todas as linha), se quiser ver todo o log, fale comigo
+
+...............T....
+CORREÇÃO AUTOMÁTICA
+Quantidade de Testes | Veredito
+19 | OK
+1 | Tempo de Execução Excedido
+0 | Resposta Errada
+0 | Erro de Execução
+
+make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/checker/checker' is up to date.
+Note: CoreVertices.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+======= generated_000 ============
+
+real	0m0.155s
+user	0m0.156s
+sys	0m0.024s
+ok 3 numbers (in increasing order): 0 1 2
+OK
+======= generated_001 ============
+
+real	0m0.154s
+user	0m0.164s
+sys	0m0.020s
+ok 5 numbers (in increasing order): 0 1 2 4 5
+OK
+======= generated_002 ============
+
+real	0m0.175s
+user	0m0.240s
+sys	0m0.032s
+ok 21 numbers (in increasing order): 7 8 ... 116 118
+OK
+======= generated_003 ============
+
+real	0m0.187s
+user	0m0.324s
+sys	0m0.020s
+ok 10 numbers (in increasing order): 11 21 ... 80 112
+OK
+======= generated_004 ============
+
+real	0m0.261s
+user	0m0.460s
+sys	0m0.036s
+ok 436 numbers (in increasing order): 0 5 ... 718 719
+OK
+======= generated_005 ============
+
+real	0m0.510s
+user	0m0.928s
+sys	0m0.072s
+ok 422 numbers (in increasing order): 1 2 ... 581 582
+OK
+======= generated_006 ============
+
+real	0m0.882s
+user	0m1.380s
+sys	0m0.104s
+ok 8 numbers (in increasing order): 3 33 ... 456 504
+OK
+======= generated_007 ============
+
+real	0m0.294s
+user	0m0.560s
+sys	0m0.040s
+ok empty sequence
+OK
+======= generated_008 ============
+
+real	0m0.272s
+user	0m0.572s
+sys	0m0.036s
+ok empty sequence
+OK
+======= generated_009 ============
+
+real	0m0.890s
+user	0m1.380s
+sys	0m0.156s
+ok 32425 numbers (in increasing order): 0 1 ... 37950 37951
+OK
+======= generated_010 ============
+
+real	0m0.716s
+user	0m1.224s
+sys	0m0.084s
+ok empty sequence
+OK
+======= generated_011 ============
+
+real	0m0.680s
+user	0m1.160s
+sys	0m0.100s
+ok empty sequence
+OK
+======= generated_012 ============
+
+real	0m0.567s
+user	0m1.016s
+sys	0m0.084s
+ok empty sequence
+OK
+======= generated_013 ============
+
+real	0m0.548s
+user	0m1.040s
+sys	0m0.080s
+ok empty sequence
+OK
+======= generated_014 ============
+
+real	0m0.582s
+user	0m0.992s
+sys	0m0.096s
+ok empty sequence
+OK
+======= generated_015 ============
+
+real	0m15.048s
+user	0m36.396s
+sys	0m0.424s
+Tempo Excedido
+======= generated_016 ============
+
+real	0m13.630s
+user	0m20.456s
+sys	0m3.160s
+ok 56184 numbers (in increasing order): 0 1 ... 60195 60196
+OK
+======= generated_017 ============
+
+real	0m9.809s
+user	0m15.128s
+sys	0m0.344s
+ok 52553 numbers (in increasing order): 0 1 ... 61238 61239
+OK
+======= generated_018 ============
+
+real	0m13.077s
+user	0m29.036s
+sys	0m0.480s
+ok 50189 numbers (in increasing order): 0 1 ... 60617 60618
+OK
+======= generated_019 ============
+
+real	0m13.207s
+user	0m29.548s
+sys	0m0.416s
+ok 38982 numbers (in increasing order): 1 2 ... 69098 69099
+OK

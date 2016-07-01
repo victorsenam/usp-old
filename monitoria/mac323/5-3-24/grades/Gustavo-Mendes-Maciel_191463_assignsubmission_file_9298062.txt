@@ -1,0 +1,176 @@
+
+LOG DE COMPILAÇÃO E TESTE
+Existem dois métodos de compilação, eles estão indicados, se um falha eu parto pro outro. Então se quiser entender o porque não compilou, verifique todos.
+Segue também o log do corretor, pode ser interessante para descobrir a natureza de seus erros. A saída está trucada (não mostra todas as linha), se quiser ver todo o log, fale comigo
+
+RRRRRRRRRRRRRRRRRRRR
+CORREÇÃO AUTOMÁTICA
+Quantidade de Testes | Veredito
+0 | OK
+0 | Tempo de Execução Excedido
+0 | Resposta Errada
+20 | Erro de Execução
+
+make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/checker/checker' is up to date.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+======= generated_000 ============
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
+	at CoreVertices.main(CoreVertices.java:56)
+
+real	0m0.131s
+user	0m0.112s
+sys	0m0.000s
+Erro de Execução
+======= generated_001 ============
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
+	at CoreVertices.main(CoreVertices.java:56)
+
+real	0m0.092s
+user	0m0.084s
+sys	0m0.020s
+Erro de Execução
+======= generated_002 ============
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
+	at CoreVertices.main(CoreVertices.java:56)
+
+real	0m0.092s
+user	0m0.084s
+sys	0m0.020s
+Erro de Execução
+======= generated_003 ============
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
+	at CoreVertices.main(CoreVertices.java:56)
+
+real	0m0.095s
+user	0m0.100s
+sys	0m0.008s
+Erro de Execução
+======= generated_004 ============
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
+	at CoreVertices.main(CoreVertices.java:56)
+
+real	0m0.095s
+user	0m0.084s
+sys	0m0.024s
+Erro de Execução
+======= generated_005 ============
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
+	at CoreVertices.main(CoreVertices.java:56)
+
+real	0m0.132s
+user	0m0.092s
+sys	0m0.016s
+Erro de Execução
+======= generated_006 ============
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
+	at CoreVertices.main(CoreVertices.java:56)
+
+real	0m0.103s
+user	0m0.104s
+sys	0m0.016s
+Erro de Execução
+======= generated_007 ============
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
+	at CoreVertices.main(CoreVertices.java:56)
+
+real	0m0.105s
+user	0m0.092s
+sys	0m0.012s
+Erro de Execução
+======= generated_008 ============
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
+	at CoreVertices.main(CoreVertices.java:56)
+
+real	0m0.101s
+user	0m0.092s
+sys	0m0.020s
+Erro de Execução
+======= generated_009 ============
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
+	at CoreVertices.main(CoreVertices.java:56)
+
+real	0m0.083s
+user	0m0.084s
+sys	0m0.012s
+Erro de Execução
+======= generated_010 ============
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
+	at CoreVertices.main(CoreVertices.java:56)
+
+real	0m0.127s
+user	0m0.080s
+sys	0m0.020s
+Erro de Execução
+======= generated_011 ============
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
+	at CoreVertices.main(CoreVertices.java:56)
+
+real	0m0.102s
+user	0m0.096s
+sys	0m0.020s
+Erro de Execução
+======= generated_012 ============
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
+	at CoreVertices.main(CoreVertices.java:56)
+
+real	0m0.101s
+user	0m0.096s
+sys	0m0.020s
+Erro de Execução
+======= generated_013 ============
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
+	at CoreVertices.main(CoreVertices.java:56)
+
+real	0m0.149s
+user	0m0.092s
+sys	0m0.020s
+Erro de Execução
+======= generated_014 ============
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
+	at CoreVertices.main(CoreVertices.java:56)
+
+real	0m0.105s
+user	0m0.088s
+sys	0m0.032s
+Erro de Execução
+======= generated_015 ============
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
+	at CoreVertices.main(CoreVertices.java:56)
+
+real	0m0.103s
+user	0m0.080s
+sys	0m0.028s
+Erro de Execução
+======= generated_016 ============
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
+	at CoreVertices.main(CoreVertices.java:56)
+
+real	0m0.124s
+user	0m0.108s
+sys	0m0.008s
+Erro de Execução
+======= generated_017 ============
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
+	at CoreVertices.main(CoreVertices.java:56)
+
+real	0m0.136s
+user	0m0.096s
+sys	0m0.016s
+Erro de Execução
+======= generated_018 ============
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
+	at CoreVertices.main(CoreVertices.java:56)
+
+real	0m0.101s
+user	0m0.084s
+sys	0m0.024s
+Erro de Execução
+======= generated_019 ============
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
+	at CoreVertices.main(CoreVertices.java:56)
+
+real	0m0.114s
+user	0m0.100s
+sys	0m0.020s
+Erro de Execução

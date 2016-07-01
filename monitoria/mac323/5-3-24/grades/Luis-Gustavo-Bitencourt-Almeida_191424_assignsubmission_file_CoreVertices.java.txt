@@ -1,0 +1,157 @@
+
+LOG DE COMPILAÇÃO E TESTE
+Existem dois métodos de compilação, eles estão indicados, se um falha eu parto pro outro. Então se quiser entender o porque não compilou, verifique todos.
+Segue também o log do corretor, pode ser interessante para descobrir a natureza de seus erros. A saída está trucada (não mostra todas as linha), se quiser ver todo o log, fale comigo
+
+..WW.WW........W...W
+CORREÇÃO AUTOMÁTICA
+Quantidade de Testes | Veredito
+14 | OK
+0 | Tempo de Execução Excedido
+6 | Resposta Errada
+0 | Erro de Execução
+
+rm: não foi possível remover “judge_out/”: Arquivo ou diretório não encontrado
+make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/checker/checker' is up to date.
+Note: CoreVertices.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+======= generated_000 ============
+
+real	0m0.149s
+user	0m0.164s
+sys	0m0.004s
+ok 3 numbers (in increasing order): 0 1 2
+OK
+======= generated_001 ============
+
+real	0m0.316s
+user	0m0.156s
+sys	0m0.024s
+ok 5 numbers (in increasing order): 0 1 2 4 5
+OK
+======= generated_002 ============
+
+real	0m0.167s
+user	0m0.208s
+sys	0m0.020s
+wrong answer Expected 21 elements, but 0 found
+Resposta Errada
+======= generated_003 ============
+
+real	0m0.194s
+user	0m0.300s
+sys	0m0.012s
+wrong answer Expected 10 elements, but 0 found
+Resposta Errada
+======= generated_004 ============
+
+real	0m0.233s
+user	0m0.420s
+sys	0m0.048s
+ok 436 numbers (in increasing order): 0 5 ... 718 719
+OK
+======= generated_005 ============
+
+real	0m0.464s
+user	0m0.796s
+sys	0m0.080s
+wrong answer Expected 422 elements, but 0 found
+Resposta Errada
+======= generated_006 ============
+
+real	0m0.770s
+user	0m1.196s
+sys	0m0.104s
+wrong answer Expected 8 elements, but 0 found
+Resposta Errada
+======= generated_007 ============
+
+real	0m0.239s
+user	0m0.456s
+sys	0m0.036s
+ok empty sequence
+OK
+======= generated_008 ============
+
+real	0m0.249s
+user	0m0.468s
+sys	0m0.036s
+ok empty sequence
+OK
+======= generated_009 ============
+
+real	0m0.746s
+user	0m1.244s
+sys	0m0.104s
+ok 32425 numbers (in increasing order): 0 1 ... 37950 37951
+OK
+======= generated_010 ============
+
+real	0m0.563s
+user	0m0.960s
+sys	0m0.072s
+ok empty sequence
+OK
+======= generated_011 ============
+
+real	0m0.576s
+user	0m1.000s
+sys	0m0.072s
+ok empty sequence
+OK
+======= generated_012 ============
+
+real	0m0.441s
+user	0m0.792s
+sys	0m0.088s
+ok empty sequence
+OK
+======= generated_013 ============
+
+real	0m0.456s
+user	0m0.776s
+sys	0m0.096s
+ok empty sequence
+OK
+======= generated_014 ============
+
+real	0m0.437s
+user	0m0.732s
+sys	0m0.100s
+ok empty sequence
+OK
+======= generated_015 ============
+
+real	0m10.475s
+user	0m14.264s
+sys	0m0.296s
+wrong answer Expected 7086 elements, but 0 found
+Resposta Errada
+======= generated_016 ============
+
+real	0m10.097s
+user	0m14.092s
+sys	0m0.320s
+ok 56184 numbers (in increasing order): 0 1 ... 60195 60196
+OK
+======= generated_017 ============
+
+real	0m8.529s
+user	0m11.876s
+sys	0m0.300s
+ok 52553 numbers (in increasing order): 0 1 ... 61238 61239
+OK
+======= generated_018 ============
+
+real	0m8.700s
+user	0m11.944s
+sys	0m0.320s
+ok 50189 numbers (in increasing order): 0 1 ... 60617 60618
+OK
+======= generated_019 ============
+
+real	0m9.499s
+user	0m13.360s
+sys	0m0.276s
+wrong answer Expected 38982 elements, but 0 found
+Resposta Errada
