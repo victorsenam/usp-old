@@ -1,25 +1,23 @@
 #include "../testlib.h"
 #include <cstdio>
-#include <map>
 #include <algorithm>
+#include <vector>
 #include <cassert>
 #include <random>
+#include <string>
 
-typedef long long int ll;
-
-const int N = 10000000;
+const int N = 1000007;
+const int Q = 200;
 
 // params
-ll n, m, r;
-int p[N];
-int cn;
-int isconn;
-int ed[N][2];
+int n; // pattern size
+int m; // mean for strings size - 1
+int k; // inverse of pattern escape probability
+int a; // alphabet size
 
-// edges
-std::set<std::pair<int, int> > s;
-std::pair<int, int> edge;
-
+// vars
+char pat[N];
+int fail[N];
 
 int get_int (char ** argv) {
     int res;
@@ -27,83 +25,50 @@ int get_int (char ** argv) {
     return res;
 }
 
-bool add_edge (int i, int j) {
-    edge.first = i;
-    edge.second = j;
-    if (s.find(edge) != s.end()) {
-        return 0;
-    }
-    s.insert(edge);
-    return 1;
-}
+void genString () {
+    int p = 0;
+    char c;
+    do {
+        if (p == n) p = fail[p-1];
 
-void make_ssc (int n) {
-    if (n <= 1) return;
-
-    int k = 0;
-    while (k <= 1)
-        k = rnd.next(n)+1;
-
-    for (int i = 0; i < k; i++) {
-        assert(add_edge(i, (i+1)%k));
-    }
-
-    while (k < n) {
-        int a = rnd.next(k);
-        int b = a;
-        while (b == a) {
-            b = rnd.next(k);
+        if (rnd.next(k)) {
+            c = pat[p++];
+        } else {
+            c = rnd.next(a)+'a';
+            while (p && pat[p] != c)
+                p = fail[p-1];
+            if (pat[p] == c)
+                p++;
         }
-        
-        int q = rnd.next(k, n);
-
-        if (k < q || !add_edge(a, b)) {
-            q = rnd.next(k+1, n);
-
-            add_edge(a, k);
-            add_edge(q-1, b);
-            k++;
-            while (k < q) {
-                add_edge(k-1, k);
-                k++;
-            }
-        }
-    }
+        putchar(c);
+    } while (rnd.next(m));
+    putchar('\n');
 }
 
 int main (int argc, char ** argv) {
     registerGen(argc, argv, 1);
     
-    n = rnd.next(get_int(argv+1), get_int(argv+2));
-    m = rnd.next(get_int(argv+3), get_int(argv+4));
-    isconn = get_int(argv+5);
+    n = get_int(argv+2);
+    m = get_int(argv+3);
+    k = get_int(argv+4);
+    a = get_int(argv+5);
 
-    r = rnd.next(n);
-    make_ssc(r);
-
-    for (int i = r; isconn && i < n; i++)
-        add_edge(rnd.next(r), rnd.next(r, n-1));
-
-    m -= s.size();
-    while (m-- > 0)
-        add_edge(rnd.next(n), rnd.next(r, n-1));
-
-    m = 0;
-    for (std::pair<int, int> v : s) {
-        ed[m][0] = v.first;
-        ed[m][1] = v.second;
-        m++;
+    for (int i = 0; i < n; i++) {
+        pat[i] = rnd.next(a) + 'a';
+        if (i) {
+            int & p = fail[i];
+            p = fail[i-1];
+            while (p && pat[p] != pat[i])
+                p = fail[p-1];
+            if (pat[p] == pat[i])
+                p++;
+        }
     }
+    pat[n] = 0;
+    printf("%s\n", pat);
+    printf("%d\n", Q);
+    for (int q = 0; q < Q; q++)
+        genString();
 
-    for (int i = 0; i < n; i++)
-        p[i] = i;
-
-    for (int i = 1; i < n; i++)
-        std::swap(p[rnd.next(0, i)], p[i]);
-    for (int i = 1; i < m; i++)
-        std::swap(ed[rnd.next(0, i)], ed[i]);
-
-    printf("%d %d\n", n, m);
-    for (int i = 0; i < m; i++)
-        printf("%d %d\n", p[ed[i][0]], p[ed[i][1]]);
+    return 0;
 }

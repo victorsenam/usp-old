@@ -3,7 +3,6 @@
 # important vars
 DIR="$( cd "$( dirname "$0" )" && pwd )"
 LOG="generator/generator.log"
-PREFIX="generated" # generated prefix is on .gitignore
 
 # setting starting directory
 cd $DIR
@@ -27,8 +26,9 @@ case_num_unformatted=0
 while read line
 do
     case_num=$(printf "%03d" $case_num_unformatted)
-    echo "Generating Case ${PREFIX}_${case_num}" &>> $LOG
-    ./generator/generator $line > "cases/${PREFIX}_${case_num}.in" 2>> $LOG
+    case_type=${line%% *}
+    echo "Generating Case ${case_type}_${case_num}" &>> $LOG
+    ./generator/generator $line > "cases/${case_type}_${case_num}.in" 2>> $LOG
     generator_status=$?
     
     if [ $generator_status -ne 0 ]

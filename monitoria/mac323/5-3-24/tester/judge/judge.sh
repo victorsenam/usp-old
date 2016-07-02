@@ -31,35 +31,35 @@ echo "" > $RES
 rm -r $OUT &>> $LOG
 mkdir $OUT &>> $LOG
 r_ac=0
-r_tl=0
-r_re=0
-r_tm=0
 r_fa=0
+r_ce=0
 
 # stadartizing
-rm CorretorDoVictor.java
+rm *DoVictor.java
+rm *.class
 cp -n ${DIR}tester/judge/.gitignore . &>> $LOG
 cp -n ${DIR}tester/standart/* . &>> $LOG
-rm *.class
 for i in *.java; do
-    sed -i "s/import edu\.princeton\.cs\.algs4\..*;//g" $i
+    sed -i "s/(import|package) edu\.princeton\.cs\.algs4\..*;//g" $i
 done
 
 # compiling
 make ${DIR}tester/checker/checker &>> $LOG
-javac -cp .:algs4.jar:stdlib.jar *.java &>> $LOG
 
 # judge
-if [ $toexec != failed ];
-then
-    for testpath in $(find $cases/*);
-    do
-        testcase=$(basename $testpath)
-        testcase=${testcase%.*}
-        
-        echo "======= $testcase ============" >> $LOG
+for testpath in $(find $cases/*);
+do
+    testcase=$(basename $testpath)
+    testcase=${testcase%.*}
+    testtype=${testcase%_*}
+    
+    echo "======= $testcase ============" >> $LOG
+    javac -cp .:algs4.jar:stdlib.jar ${testtype}DoVictor.java &>> $LOG
 
-        (time timeout --kill-after=30s 20s java -Xss1024m -Xmx1024m -Xms1024m -cp .:algs4.jar:stdlib.jar ${testcase}DoVictor $2 < ${testpath} > ${OUT}${testcase}.out 2>> $LOG) &>> $LOG
+    if [ -a ${testtype}DoVictor.class ];
+    then
+        (time timeout --kill-after=30s 20s java -Xss1024m -Xmx1024m -Xms1024m -cp .:algs4.jar:stdlib.jar ${testtype}DoVictor $2 < ${testpath} > ${OUT}${testcase}.out 2>> $LOG) &>> $LOG
+
         run_status=$?
 
         checker_output=$( ${DIR}tester/checker/checker ${testpath} ${OUT}${testcase}.out ${DIR}tester/solution/answer/${testcase}.out 2>&1)
@@ -72,22 +72,25 @@ then
         else
             points=${checker_output:19:3}     # remove leading "partially correct ("
             points=${points%%[^[:digit:]]*}     # remove trailing non-digits
-            r_ac=$(echo "$points + $r_ac" | bc)
+            r_ac=$(echo "0$points + $r_ac" | bc)
             veredict="."
         fi
+    else
+        echo "Compilation Error on $testtype" >> $LOG
+        veredict="C"
+        ((r_ce++))
+    fi
 
-        printf $veredict
-        printf $veredict >> $RES
-    done;
-else
-    echo "COMPILATION ERROR" >> $RES
-fi
+    printf $veredict
+    printf $veredict >> $RES
+done;
 
 printf "\n"
 printf "\n" >> $RES
 
 echo "EP: $(basename $(pwd))" >> $RES
-echo "NOTA: $(echo "100*$r_ac/800" | bc)" >> $RES
+echo "NOTA: $(echo "100*$r_ac/1200" | bc)" >> $RES
 echo "CORREÇÃO AUTOMÁTICA" >> $RES
-echo "$r_ac Pontos (máximo: 1000, dos quais 200 são bônus)" >> $RES
+echo "$r_ac Pontos (máximo: 1600, dos quais 400 são bônus)" >> $RES
 echo "$r_fa Testes com Falha no corretor (avise o monitor)" >> $RES
+echo "$r_ce Testes com Erro de Compilação (incui o bônus)" >> $RES

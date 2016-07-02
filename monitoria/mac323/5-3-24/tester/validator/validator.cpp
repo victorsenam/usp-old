@@ -9,19 +9,14 @@ std::pair<int, int> aux;
 int main () {
     registerValidation();
 
+    inf.readToken("[a-z]*");
+    inf.readEoln();
     ll n = inf.readInt();
-    inf.readSpace();
-    ll m = inf.readInt();
-    ensuref(m >= 0, "Graph can't contain negative quantity of edges");
     inf.readEoln();
 
-    for (int i = 0; i < m; i++) {
-        aux.first = inf.readInt(0, n-1);
-        inf.readSpace();
-        aux.second = inf.readInt(0, n-1);
-        ensuref(s.find(aux) == s.end(), "Repeated edge %d %d", aux.first, aux.second);
+    for (int i = 0; i < n; i++) {
+        inf.readToken("[a-z]*");
         inf.readEoln();
-        s.insert(aux);
     }
     inf.readEof();
 
