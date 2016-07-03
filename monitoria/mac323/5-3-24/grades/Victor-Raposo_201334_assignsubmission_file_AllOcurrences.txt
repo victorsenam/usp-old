@@ -32,37 +32,37 @@ BooyerDoVictor.java:10: error: method findAll in class BoyerMoore cannot be appl
 Compilation Error on Booyer
 ======= Brute_003 ============
 
-real	0m0.169s
-user	0m0.168s
-sys	0m0.040s
+real	0m0.163s
+user	0m0.160s
+sys	0m0.052s
 partially correct (24) 24 linhas certas de 200. primeiro erro: linha 7 difere - operação: 'bbbbabaabbababbaaabbbbababbaabb', esperado: '19 ', encontrado: ''
 ======= Brute_004 ============
 
-real	0m0.155s
+real	0m0.144s
 user	0m0.164s
-sys	0m0.024s
+sys	0m0.028s
 partially correct (29) 29 linhas certas de 200. primeiro erro: linha 6 difere - operação: 'bahbcajfjcdahbcajfjcdahbcajfjc...bahbcajfjcdahbccahbcajfjcdahbba', esperado: '14 27 37 47 66 ', encontrado: ''
 ======= Brute_005 ============
 
 real	0m0.145s
-user	0m0.160s
-sys	0m0.036s
+user	0m0.176s
+sys	0m0.020s
 partially correct (25) 25 linhas certas de 200. primeiro erro: linha 1 difere - operação: '200', esperado: '27 ', encontrado: ''
 ======= KMP_000 ============
 
-real	0m0.164s
-user	0m0.176s
-sys	0m0.036s
+real	0m0.151s
+user	0m0.164s
+sys	0m0.048s
 partially correct (200) perfeito
 ======= KMP_001 ============
 
-real	0m0.161s
+real	0m0.163s
 user	0m0.196s
-sys	0m0.016s
+sys	0m0.020s
 partially correct (200) perfeito
 ======= KMP_002 ============
 
-real	0m0.162s
-user	0m0.172s
-sys	0m0.044s
+real	0m0.159s
+user	0m0.184s
+sys	0m0.032s
 partially correct (200) perfeito

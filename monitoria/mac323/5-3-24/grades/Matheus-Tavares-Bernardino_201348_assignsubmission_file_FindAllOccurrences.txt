@@ -13,68 +13,58 @@ CORREÇÃO AUTOMÁTICA
 
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/5-3-24/tester/checker/checker' is up to date.
 ======= Booyer_006 ============
-BooyerDoVictor.java:4: error: cannot find symbol
-        BoyerMoore ex = new BoyerMoore(StdIn.readString());
-        ^
-  symbol:   class BoyerMoore
-  location: class BooyerDoVictor
-BooyerDoVictor.java:4: error: cannot find symbol
-        BoyerMoore ex = new BoyerMoore(StdIn.readString());
-                            ^
-  symbol:   class BoyerMoore
-  location: class BooyerDoVictor
-2 errors
+BooyerDoVictor.java:10: error: cannot find symbol
+            for (int i : ex.findAll(StdIn.readString()))
+                           ^
+  symbol:   method findAll(String)
+  location: variable ex of type BoyerMoore
+1 error
 Compilation Error on Booyer
 ======= Booyer_007 ============
-BooyerDoVictor.java:4: error: cannot find symbol
-        BoyerMoore ex = new BoyerMoore(StdIn.readString());
-        ^
-  symbol:   class BoyerMoore
-  location: class BooyerDoVictor
-BooyerDoVictor.java:4: error: cannot find symbol
-        BoyerMoore ex = new BoyerMoore(StdIn.readString());
-                            ^
-  symbol:   class BoyerMoore
-  location: class BooyerDoVictor
-2 errors
+BooyerDoVictor.java:10: error: cannot find symbol
+            for (int i : ex.findAll(StdIn.readString()))
+                           ^
+  symbol:   method findAll(String)
+  location: variable ex of type BoyerMoore
+1 error
 Compilation Error on Booyer
 ======= Brute_003 ============
 Note: ./Brute.java uses unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
 
-real	0m0.187s
-user	0m0.220s
-sys	0m0.048s
+real	0m0.184s
+user	0m0.232s
+sys	0m0.024s
 partially correct (200) perfeito
 ======= Brute_004 ============
 
-real	0m0.167s
-user	0m0.172s
-sys	0m0.044s
+real	0m0.176s
+user	0m0.176s
+sys	0m0.060s
 partially correct (200) perfeito
 ======= Brute_005 ============
 
-real	0m0.167s
-user	0m0.196s
-sys	0m0.036s
+real	0m0.166s
+user	0m0.192s
+sys	0m0.032s
 partially correct (200) perfeito
 ======= KMP_000 ============
 Note: ./KMP.java uses unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
 
-real	0m0.157s
-user	0m0.188s
+real	0m0.167s
+user	0m0.196s
 sys	0m0.016s
 partially correct (200) perfeito
 ======= KMP_001 ============
 
-real	0m0.168s
-user	0m0.188s
-sys	0m0.032s
+real	0m0.166s
+user	0m0.192s
+sys	0m0.028s
 partially correct (200) perfeito
 ======= KMP_002 ============
 
-real	0m0.167s
-user	0m0.192s
+real	0m0.164s
+user	0m0.188s
 sys	0m0.028s
 partially correct (200) perfeito

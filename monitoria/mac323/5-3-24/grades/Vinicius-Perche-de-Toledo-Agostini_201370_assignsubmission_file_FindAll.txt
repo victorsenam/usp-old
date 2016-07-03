@@ -5,38 +5,28 @@ Segue também o log do corretor, pode ser interessante para descobrir a natureza
 
 CCCCC...
 EP: Vinicius-Perche-de-Toledo-Agostini_201370_assignsubmission_file_FindAll
-NOTA: 50
+NOTA: 0
 CORREÇÃO AUTOMÁTICA
-600 Pontos (máximo: 1600, dos quais 400 são bônus)
+0 Pontos (máximo: 1600, dos quais 400 são bônus)
 0 Testes com Falha no corretor (avise o monitor)
 5 Testes com Erro de Compilação (incui o bônus)
 
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/5-3-24/tester/checker/checker' is up to date.
 ======= Booyer_006 ============
-BooyerDoVictor.java:4: error: cannot find symbol
-        BoyerMoore ex = new BoyerMoore(StdIn.readString());
-        ^
-  symbol:   class BoyerMoore
-  location: class BooyerDoVictor
-BooyerDoVictor.java:4: error: cannot find symbol
-        BoyerMoore ex = new BoyerMoore(StdIn.readString());
-                            ^
-  symbol:   class BoyerMoore
-  location: class BooyerDoVictor
-2 errors
+BooyerDoVictor.java:10: error: cannot find symbol
+            for (int i : ex.findAll(StdIn.readString()))
+                           ^
+  symbol:   method findAll(String)
+  location: variable ex of type BoyerMoore
+1 error
 Compilation Error on Booyer
 ======= Booyer_007 ============
-BooyerDoVictor.java:4: error: cannot find symbol
-        BoyerMoore ex = new BoyerMoore(StdIn.readString());
-        ^
-  symbol:   class BoyerMoore
-  location: class BooyerDoVictor
-BooyerDoVictor.java:4: error: cannot find symbol
-        BoyerMoore ex = new BoyerMoore(StdIn.readString());
-                            ^
-  symbol:   class BoyerMoore
-  location: class BooyerDoVictor
-2 errors
+BooyerDoVictor.java:10: error: cannot find symbol
+            for (int i : ex.findAll(StdIn.readString()))
+                           ^
+  symbol:   method findAll(String)
+  location: variable ex of type BoyerMoore
+1 error
 Compilation Error on Booyer
 ======= Brute_003 ============
 ./Brute.java:3: error: class KMP is public, should be declared in a file named KMP.java
@@ -80,27 +70,27 @@ Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String ind
 	at KMP.findAll(KMP.java:110)
 	at KMPDoVictor.main(KMPDoVictor.java:10)
 
-real	0m0.204s
-user	0m0.144s
-sys	0m0.016s
-partially correct (200) perfeito
+real	0m0.135s
+user	0m0.124s
+sys	0m0.024s
+partially correct (0) 0 linhas certas de 200. primeiro erro:
 ======= KMP_001 ============
 Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String index out of range: 78
 	at java.lang.String.charAt(String.java:658)
 	at KMP.findAll(KMP.java:110)
 	at KMPDoVictor.main(KMPDoVictor.java:10)
 
-real	0m0.134s
-user	0m0.132s
-sys	0m0.024s
-partially correct (200) perfeito
+real	0m0.132s
+user	0m0.124s
+sys	0m0.028s
+partially correct (0) 0 linhas certas de 200. primeiro erro:
 ======= KMP_002 ============
 Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String index out of range: 3
 	at java.lang.String.charAt(String.java:658)
 	at KMP.findAll(KMP.java:110)
 	at KMPDoVictor.main(KMPDoVictor.java:10)
 
-real	0m0.134s
-user	0m0.124s
-sys	0m0.028s
-partially correct (200) perfeito
+real	0m0.130s
+user	0m0.132s
+sys	0m0.020s
+partially correct (0) 0 linhas certas de 200. primeiro erro:

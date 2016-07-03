@@ -6,56 +6,46 @@ Segue também o log do corretor, pode ser interessante para descobrir a natureza
 
 CC......
 EP: Felipe-Caetano-Silva_201305_assignsubmission_file_FindAll
-NOTA: 100
+NOTA: 50
 CORREÇÃO AUTOMÁTICA
-1200 Pontos (máximo: 1600, dos quais 400 são bônus)
+600 Pontos (máximo: 1600, dos quais 400 são bônus)
 0 Testes com Falha no corretor (avise o monitor)
 2 Testes com Erro de Compilação (incui o bônus)
 
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/5-3-24/tester/checker/checker' is up to date.
 ======= Booyer_006 ============
-BooyerDoVictor.java:4: error: cannot find symbol
-        BoyerMoore ex = new BoyerMoore(StdIn.readString());
-        ^
-  symbol:   class BoyerMoore
-  location: class BooyerDoVictor
-BooyerDoVictor.java:4: error: cannot find symbol
-        BoyerMoore ex = new BoyerMoore(StdIn.readString());
-                            ^
-  symbol:   class BoyerMoore
-  location: class BooyerDoVictor
-2 errors
+BooyerDoVictor.java:10: error: cannot find symbol
+            for (int i : ex.findAll(StdIn.readString()))
+                           ^
+  symbol:   method findAll(String)
+  location: variable ex of type BoyerMoore
+1 error
 Compilation Error on Booyer
 ======= Booyer_007 ============
-BooyerDoVictor.java:4: error: cannot find symbol
-        BoyerMoore ex = new BoyerMoore(StdIn.readString());
-        ^
-  symbol:   class BoyerMoore
-  location: class BooyerDoVictor
-BooyerDoVictor.java:4: error: cannot find symbol
-        BoyerMoore ex = new BoyerMoore(StdIn.readString());
-                            ^
-  symbol:   class BoyerMoore
-  location: class BooyerDoVictor
-2 errors
+BooyerDoVictor.java:10: error: cannot find symbol
+            for (int i : ex.findAll(StdIn.readString()))
+                           ^
+  symbol:   method findAll(String)
+  location: variable ex of type BoyerMoore
+1 error
 Compilation Error on Booyer
 ======= Brute_003 ============
 
-real	0m0.178s
-user	0m0.224s
-sys	0m0.028s
+real	0m0.183s
+user	0m0.232s
+sys	0m0.024s
 partially correct (200) perfeito
 ======= Brute_004 ============
 
-real	0m0.164s
-user	0m0.192s
-sys	0m0.024s
+real	0m0.162s
+user	0m0.180s
+sys	0m0.032s
 partially correct (200) perfeito
 ======= Brute_005 ============
 
-real	0m0.174s
-user	0m0.200s
-sys	0m0.028s
+real	0m0.169s
+user	0m0.220s
+sys	0m0.016s
 partially correct (200) perfeito
 ======= KMP_000 ============
 ./KMP.java:135: error: cannot find symbol
@@ -70,19 +60,13 @@ partially correct (200) perfeito
   found: String,String
   reason: actual and formal argument lists differ in length
 2 errors
-Exception in thread "main" java.lang.NoClassDefFoundError: KMP
-	at KMPDoVictor.main(KMPDoVictor.java:4)
-Caused by: java.lang.ClassNotFoundException: KMP
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
-	... 1 more
+Exception in thread "main" java.lang.NoSuchMethodError: KMP.findAll(Ljava/lang/String;)Ljava/lang/Iterable;
+	at KMPDoVictor.main(KMPDoVictor.java:10)
 
-real	0m0.106s
-user	0m0.084s
+real	0m0.135s
+user	0m0.140s
 sys	0m0.016s
-partially correct (200) perfeito
+partially correct (0) 0 linhas certas de 200. primeiro erro:
 ======= KMP_001 ============
 ./KMP.java:135: error: cannot find symbol
         int M = pattern.length();
@@ -96,19 +80,13 @@ partially correct (200) perfeito
   found: String,String
   reason: actual and formal argument lists differ in length
 2 errors
-Exception in thread "main" java.lang.NoClassDefFoundError: KMP
-	at KMPDoVictor.main(KMPDoVictor.java:4)
-Caused by: java.lang.ClassNotFoundException: KMP
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
-	... 1 more
+Exception in thread "main" java.lang.NoSuchMethodError: KMP.findAll(Ljava/lang/String;)Ljava/lang/Iterable;
+	at KMPDoVictor.main(KMPDoVictor.java:10)
 
-real	0m0.363s
-user	0m0.084s
-sys	0m0.016s
-partially correct (200) perfeito
+real	0m0.129s
+user	0m0.124s
+sys	0m0.024s
+partially correct (0) 0 linhas certas de 200. primeiro erro:
 ======= KMP_002 ============
 ./KMP.java:135: error: cannot find symbol
         int M = pattern.length();
@@ -122,16 +100,10 @@ partially correct (200) perfeito
   found: String,String
   reason: actual and formal argument lists differ in length
 2 errors
-Exception in thread "main" java.lang.NoClassDefFoundError: KMP
-	at KMPDoVictor.main(KMPDoVictor.java:4)
-Caused by: java.lang.ClassNotFoundException: KMP
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
-	... 1 more
+Exception in thread "main" java.lang.NoSuchMethodError: KMP.findAll(Ljava/lang/String;)Ljava/lang/Iterable;
+	at KMPDoVictor.main(KMPDoVictor.java:10)
 
-real	0m0.131s
-user	0m0.068s
-sys	0m0.032s
-partially correct (200) perfeito
+real	0m0.134s
+user	0m0.104s
+sys	0m0.048s
+partially correct (0) 0 linhas certas de 200. primeiro erro:

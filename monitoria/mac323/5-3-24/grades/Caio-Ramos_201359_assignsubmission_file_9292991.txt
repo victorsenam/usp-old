@@ -13,64 +13,54 @@ CORREÇÃO AUTOMÁTICA
 
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/5-3-24/tester/checker/checker' is up to date.
 ======= Booyer_006 ============
-BooyerDoVictor.java:4: error: cannot find symbol
-        BoyerMoore ex = new BoyerMoore(StdIn.readString());
-        ^
-  symbol:   class BoyerMoore
-  location: class BooyerDoVictor
-BooyerDoVictor.java:4: error: cannot find symbol
-        BoyerMoore ex = new BoyerMoore(StdIn.readString());
-                            ^
-  symbol:   class BoyerMoore
-  location: class BooyerDoVictor
-2 errors
+BooyerDoVictor.java:10: error: cannot find symbol
+            for (int i : ex.findAll(StdIn.readString()))
+                           ^
+  symbol:   method findAll(String)
+  location: variable ex of type BoyerMoore
+1 error
 Compilation Error on Booyer
 ======= Booyer_007 ============
-BooyerDoVictor.java:4: error: cannot find symbol
-        BoyerMoore ex = new BoyerMoore(StdIn.readString());
-        ^
-  symbol:   class BoyerMoore
-  location: class BooyerDoVictor
-BooyerDoVictor.java:4: error: cannot find symbol
-        BoyerMoore ex = new BoyerMoore(StdIn.readString());
-                            ^
-  symbol:   class BoyerMoore
-  location: class BooyerDoVictor
-2 errors
+BooyerDoVictor.java:10: error: cannot find symbol
+            for (int i : ex.findAll(StdIn.readString()))
+                           ^
+  symbol:   method findAll(String)
+  location: variable ex of type BoyerMoore
+1 error
 Compilation Error on Booyer
 ======= Brute_003 ============
 
-real	0m0.177s
-user	0m0.220s
-sys	0m0.028s
+real	0m0.183s
+user	0m0.232s
+sys	0m0.024s
 partially correct (200) perfeito
 ======= Brute_004 ============
 
-real	0m0.175s
-user	0m0.188s
-sys	0m0.032s
+real	0m0.165s
+user	0m0.168s
+sys	0m0.052s
 partially correct (200) perfeito
 ======= Brute_005 ============
 
-real	0m0.173s
-user	0m0.184s
-sys	0m0.048s
+real	0m0.165s
+user	0m0.196s
+sys	0m0.028s
 partially correct (200) perfeito
 ======= KMP_000 ============
 
 real	0m0.157s
-user	0m0.192s
-sys	0m0.020s
+user	0m0.180s
+sys	0m0.028s
 partially correct (200) perfeito
 ======= KMP_001 ============
 
-real	0m0.174s
-user	0m0.184s
-sys	0m0.028s
+real	0m0.161s
+user	0m0.192s
+sys	0m0.024s
 partially correct (200) perfeito
 ======= KMP_002 ============
 
 real	0m0.161s
-user	0m0.176s
-sys	0m0.040s
+user	0m0.180s
+sys	0m0.036s
 partially correct (200) perfeito

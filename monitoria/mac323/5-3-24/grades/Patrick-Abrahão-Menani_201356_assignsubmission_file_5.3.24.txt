@@ -5,9 +5,9 @@ Segue também o log do corretor, pode ser interessante para descobrir a natureza
 
 ..CCC...
 EP: Patrick-Abrahão-Menani_201356_assignsubmission_file_5.3.24
-NOTA: 76
+NOTA: 43
 CORREÇÃO AUTOMÁTICA
-920 Pontos (máximo: 1600, dos quais 400 são bônus)
+520 Pontos (máximo: 1600, dos quais 400 são bônus)
 0 Testes com Falha no corretor (avise o monitor)
 3 Testes com Erro de Compilação (incui o bônus)
 
@@ -16,16 +16,16 @@ make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/5-3-24/tester/checker/
 Note: ./BoyerMoore.java uses unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
 
-real	0m20.018s
-user	0m20.008s
-sys	0m0.036s
-partially correct (200) perfeito
+real	0m20.021s
+user	0m20.024s
+sys	0m0.028s
+partially correct (0) 0 linhas certas de 200. primeiro erro:
 ======= Booyer_007 ============
 
-real	0m20.010s
-user	0m20.016s
-sys	0m0.028s
-partially correct (200) perfeito
+real	0m20.012s
+user	0m20.040s
+sys	0m0.024s
+partially correct (0) 0 linhas certas de 200. primeiro erro:
 ======= Brute_003 ============
 BruteDoVictor.java:9: error: 'void' type not allowed here
             for (int i : Brute.findAll(StdIn.readString(), pat))
@@ -63,19 +63,19 @@ Compilation Error on Brute
 Note: ./KMP.java uses unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
 
-real	0m0.157s
+real	0m0.166s
 user	0m0.180s
-sys	0m0.028s
+sys	0m0.020s
 partially correct (120) 120 linhas certas de 200. primeiro erro: linha 1 difere - operação: '200', esperado: '0 8 25 ', encontrado: '0 25 '
 ======= KMP_001 ============
 
-real	0m0.166s
+real	0m0.159s
 user	0m0.180s
-sys	0m0.036s
+sys	0m0.028s
 partially correct (200) perfeito
 ======= KMP_002 ============
 
-real	0m0.164s
-user	0m0.188s
-sys	0m0.028s
+real	0m0.173s
+user	0m0.192s
+sys	0m0.024s
 partially correct (200) perfeito

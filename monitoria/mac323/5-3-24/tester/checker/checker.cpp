@@ -70,8 +70,10 @@ int main(int argc, char * argv[])
         }
     }
 
-    while (!ans.eof())
+    while (!ans.eof()) {
         ans.readString();
+        t++;
+    }
     while (!ouf.eof())
         ouf.readString();
     

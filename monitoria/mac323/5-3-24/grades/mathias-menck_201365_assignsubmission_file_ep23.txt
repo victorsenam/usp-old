@@ -13,178 +13,54 @@ CORREÇÃO AUTOMÁTICA
 
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/5-3-24/tester/checker/checker' is up to date.
 ======= Booyer_006 ============
-BooyerDoVictor.java:4: error: cannot find symbol
-        BoyerMoore ex = new BoyerMoore(StdIn.readString());
-        ^
-  symbol:   class BoyerMoore
-  location: class BooyerDoVictor
-BooyerDoVictor.java:4: error: cannot find symbol
-        BoyerMoore ex = new BoyerMoore(StdIn.readString());
-                            ^
-  symbol:   class BoyerMoore
-  location: class BooyerDoVictor
-2 errors
+BooyerDoVictor.java:10: error: cannot find symbol
+            for (int i : ex.findAll(StdIn.readString()))
+                           ^
+  symbol:   method findAll(String)
+  location: variable ex of type BoyerMoore
+1 error
 Compilation Error on Booyer
 ======= Booyer_007 ============
-BooyerDoVictor.java:4: error: cannot find symbol
-        BoyerMoore ex = new BoyerMoore(StdIn.readString());
-        ^
-  symbol:   class BoyerMoore
-  location: class BooyerDoVictor
-BooyerDoVictor.java:4: error: cannot find symbol
-        BoyerMoore ex = new BoyerMoore(StdIn.readString());
-                            ^
-  symbol:   class BoyerMoore
-  location: class BooyerDoVictor
-2 errors
+BooyerDoVictor.java:10: error: cannot find symbol
+            for (int i : ex.findAll(StdIn.readString()))
+                           ^
+  symbol:   method findAll(String)
+  location: variable ex of type BoyerMoore
+1 error
 Compilation Error on Booyer
 ======= Brute_003 ============
-./Brute.java:124: error: cannot find symbol
-    Queue<Integer> q = new Queue<Integer>();
-    ^
-  symbol:   class Queue
-  location: class Brute
-./Brute.java:124: error: cannot find symbol
-    Queue<Integer> q = new Queue<Integer>();
-                           ^
-  symbol:   class Queue
-  location: class Brute
-2 errors
-Exception in thread "main" java.lang.NoClassDefFoundError: Brute
-	at BruteDoVictor.main(BruteDoVictor.java:9)
-Caused by: java.lang.ClassNotFoundException: Brute
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
-	... 1 more
 
-real	0m0.135s
-user	0m0.124s
-sys	0m0.024s
+real	0m0.185s
+user	0m0.216s
+sys	0m0.036s
 partially correct (200) perfeito
 ======= Brute_004 ============
-./Brute.java:124: error: cannot find symbol
-    Queue<Integer> q = new Queue<Integer>();
-    ^
-  symbol:   class Queue
-  location: class Brute
-./Brute.java:124: error: cannot find symbol
-    Queue<Integer> q = new Queue<Integer>();
-                           ^
-  symbol:   class Queue
-  location: class Brute
-2 errors
-Exception in thread "main" java.lang.NoClassDefFoundError: Brute
-	at BruteDoVictor.main(BruteDoVictor.java:9)
-Caused by: java.lang.ClassNotFoundException: Brute
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
-	... 1 more
 
-real	0m0.130s
-user	0m0.136s
-sys	0m0.012s
+real	0m0.169s
+user	0m0.196s
+sys	0m0.024s
 partially correct (200) perfeito
 ======= Brute_005 ============
-./Brute.java:124: error: cannot find symbol
-    Queue<Integer> q = new Queue<Integer>();
-    ^
-  symbol:   class Queue
-  location: class Brute
-./Brute.java:124: error: cannot find symbol
-    Queue<Integer> q = new Queue<Integer>();
-                           ^
-  symbol:   class Queue
-  location: class Brute
-2 errors
-Exception in thread "main" java.lang.NoClassDefFoundError: Brute
-	at BruteDoVictor.main(BruteDoVictor.java:9)
-Caused by: java.lang.ClassNotFoundException: Brute
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
-	... 1 more
 
-real	0m0.127s
-user	0m0.132s
-sys	0m0.012s
+real	0m0.163s
+user	0m0.204s
+sys	0m0.020s
 partially correct (200) perfeito
 ======= KMP_000 ============
-./KMP.java:152: error: cannot find symbol
-    Queue<Integer> q = new Queue<Integer>();
-    ^
-  symbol:   class Queue
-  location: class KMP
-./KMP.java:152: error: cannot find symbol
-    Queue<Integer> q = new Queue<Integer>();
-                           ^
-  symbol:   class Queue
-  location: class KMP
-2 errors
-Exception in thread "main" java.lang.NoClassDefFoundError: KMP
-	at KMPDoVictor.main(KMPDoVictor.java:4)
-Caused by: java.lang.ClassNotFoundException: KMP
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
-	... 1 more
 
-real	0m0.100s
-user	0m0.092s
-sys	0m0.008s
+real	0m0.164s
+user	0m0.180s
+sys	0m0.028s
 partially correct (200) perfeito
 ======= KMP_001 ============
-./KMP.java:152: error: cannot find symbol
-    Queue<Integer> q = new Queue<Integer>();
-    ^
-  symbol:   class Queue
-  location: class KMP
-./KMP.java:152: error: cannot find symbol
-    Queue<Integer> q = new Queue<Integer>();
-                           ^
-  symbol:   class Queue
-  location: class KMP
-2 errors
-Exception in thread "main" java.lang.NoClassDefFoundError: KMP
-	at KMPDoVictor.main(KMPDoVictor.java:4)
-Caused by: java.lang.ClassNotFoundException: KMP
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
-	... 1 more
 
-real	0m0.099s
-user	0m0.060s
-sys	0m0.040s
+real	0m0.160s
+user	0m0.156s
+sys	0m0.056s
 partially correct (200) perfeito
 ======= KMP_002 ============
-./KMP.java:152: error: cannot find symbol
-    Queue<Integer> q = new Queue<Integer>();
-    ^
-  symbol:   class Queue
-  location: class KMP
-./KMP.java:152: error: cannot find symbol
-    Queue<Integer> q = new Queue<Integer>();
-                           ^
-  symbol:   class Queue
-  location: class KMP
-2 errors
-Exception in thread "main" java.lang.NoClassDefFoundError: KMP
-	at KMPDoVictor.main(KMPDoVictor.java:4)
-Caused by: java.lang.ClassNotFoundException: KMP
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
-	... 1 more
 
-real	0m0.097s
-user	0m0.092s
-sys	0m0.008s
+real	0m0.164s
+user	0m0.192s
+sys	0m0.024s
 partially correct (200) perfeito

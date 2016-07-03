@@ -14,30 +14,20 @@ CORREÇÃO AUTOMÁTICA
 
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/5-3-24/tester/checker/checker' is up to date.
 ======= Booyer_006 ============
-BooyerDoVictor.java:4: error: cannot find symbol
-        BoyerMoore ex = new BoyerMoore(StdIn.readString());
-        ^
-  symbol:   class BoyerMoore
-  location: class BooyerDoVictor
-BooyerDoVictor.java:4: error: cannot find symbol
-        BoyerMoore ex = new BoyerMoore(StdIn.readString());
-                            ^
-  symbol:   class BoyerMoore
-  location: class BooyerDoVictor
-2 errors
+BooyerDoVictor.java:10: error: cannot find symbol
+            for (int i : ex.findAll(StdIn.readString()))
+                           ^
+  symbol:   method findAll(String)
+  location: variable ex of type BoyerMoore
+1 error
 Compilation Error on Booyer
 ======= Booyer_007 ============
-BooyerDoVictor.java:4: error: cannot find symbol
-        BoyerMoore ex = new BoyerMoore(StdIn.readString());
-        ^
-  symbol:   class BoyerMoore
-  location: class BooyerDoVictor
-BooyerDoVictor.java:4: error: cannot find symbol
-        BoyerMoore ex = new BoyerMoore(StdIn.readString());
-                            ^
-  symbol:   class BoyerMoore
-  location: class BooyerDoVictor
-2 errors
+BooyerDoVictor.java:10: error: cannot find symbol
+            for (int i : ex.findAll(StdIn.readString()))
+                           ^
+  symbol:   method findAll(String)
+  location: variable ex of type BoyerMoore
+1 error
 Compilation Error on Booyer
 ======= Brute_003 ============
 BruteDoVictor.java:9: error: cannot find symbol
@@ -64,41 +54,26 @@ BruteDoVictor.java:9: error: cannot find symbol
 1 error
 Compilation Error on Brute
 ======= KMP_000 ============
-KMPDoVictor.java:4: error: cannot find symbol
-        KMP ex = new KMP(StdIn.readString());
-        ^
-  symbol:   class KMP
-  location: class KMPDoVictor
-KMPDoVictor.java:4: error: cannot find symbol
-        KMP ex = new KMP(StdIn.readString());
-                     ^
-  symbol:   class KMP
-  location: class KMPDoVictor
-2 errors
+KMPDoVictor.java:10: error: cannot find symbol
+            for (int i : ex.findAll(StdIn.readString()))
+                           ^
+  symbol:   method findAll(String)
+  location: variable ex of type KMP
+1 error
 Compilation Error on KMP
 ======= KMP_001 ============
-KMPDoVictor.java:4: error: cannot find symbol
-        KMP ex = new KMP(StdIn.readString());
-        ^
-  symbol:   class KMP
-  location: class KMPDoVictor
-KMPDoVictor.java:4: error: cannot find symbol
-        KMP ex = new KMP(StdIn.readString());
-                     ^
-  symbol:   class KMP
-  location: class KMPDoVictor
-2 errors
+KMPDoVictor.java:10: error: cannot find symbol
+            for (int i : ex.findAll(StdIn.readString()))
+                           ^
+  symbol:   method findAll(String)
+  location: variable ex of type KMP
+1 error
 Compilation Error on KMP
 ======= KMP_002 ============
-KMPDoVictor.java:4: error: cannot find symbol
-        KMP ex = new KMP(StdIn.readString());
-        ^
-  symbol:   class KMP
-  location: class KMPDoVictor
-KMPDoVictor.java:4: error: cannot find symbol
-        KMP ex = new KMP(StdIn.readString());
-                     ^
-  symbol:   class KMP
-  location: class KMPDoVictor
-2 errors
+KMPDoVictor.java:10: error: cannot find symbol
+            for (int i : ex.findAll(StdIn.readString()))
+                           ^
+  symbol:   method findAll(String)
+  location: variable ex of type KMP
+1 error
 Compilation Error on KMP

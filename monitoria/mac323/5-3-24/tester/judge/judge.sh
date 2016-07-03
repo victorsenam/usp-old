@@ -37,10 +37,12 @@ r_ce=0
 # stadartizing
 rm *DoVictor.java
 rm *.class
+rm algs4.jar
 cp -n ${DIR}tester/judge/.gitignore . &>> $LOG
 cp -n ${DIR}tester/standart/* . &>> $LOG
 for i in *.java; do
-    sed -i "s/(import|package) edu\.princeton\.cs\.algs4\..*;//g" $i
+    sed -i "s/import edu\.princeton\.cs\.algs4\..*;//g" $i
+    sed -i "s/package edu\.princeton\.cs\.algs4\..*;//g" $i
 done
 
 # compiling

@@ -13,64 +13,54 @@ CORREÇÃO AUTOMÁTICA
 
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/5-3-24/tester/checker/checker' is up to date.
 ======= Booyer_006 ============
-BooyerDoVictor.java:4: error: cannot find symbol
-        BoyerMoore ex = new BoyerMoore(StdIn.readString());
-        ^
-  symbol:   class BoyerMoore
-  location: class BooyerDoVictor
-BooyerDoVictor.java:4: error: cannot find symbol
-        BoyerMoore ex = new BoyerMoore(StdIn.readString());
-                            ^
-  symbol:   class BoyerMoore
-  location: class BooyerDoVictor
-2 errors
+BooyerDoVictor.java:10: error: cannot find symbol
+            for (int i : ex.findAll(StdIn.readString()))
+                           ^
+  symbol:   method findAll(String)
+  location: variable ex of type BoyerMoore
+1 error
 Compilation Error on Booyer
 ======= Booyer_007 ============
-BooyerDoVictor.java:4: error: cannot find symbol
-        BoyerMoore ex = new BoyerMoore(StdIn.readString());
-        ^
-  symbol:   class BoyerMoore
-  location: class BooyerDoVictor
-BooyerDoVictor.java:4: error: cannot find symbol
-        BoyerMoore ex = new BoyerMoore(StdIn.readString());
-                            ^
-  symbol:   class BoyerMoore
-  location: class BooyerDoVictor
-2 errors
+BooyerDoVictor.java:10: error: cannot find symbol
+            for (int i : ex.findAll(StdIn.readString()))
+                           ^
+  symbol:   method findAll(String)
+  location: variable ex of type BoyerMoore
+1 error
 Compilation Error on Booyer
 ======= Brute_003 ============
 
-real	0m0.185s
-user	0m0.224s
-sys	0m0.032s
+real	0m0.187s
+user	0m0.188s
+sys	0m0.060s
 partially correct (190) 190 linhas certas de 200. primeiro erro: linha 109 difere - operação: 'bbabbbaaababbbbbabbaaaabaaaaab...baababbbbbaabbbababaabababaabaa', esperado: '11 19 24 56 65 91 ', encontrado: '11 19 24 56 65 '
 ======= Brute_004 ============
 
-real	0m0.169s
-user	0m0.184s
-sys	0m0.036s
+real	0m0.180s
+user	0m0.192s
+sys	0m0.044s
 partially correct (191) 191 linhas certas de 200. primeiro erro: linha 204 difere - operação: '', esperado: '0 10 20 ', encontrado: '0 10 '
 ======= Brute_005 ============
 
-real	0m0.174s
-user	0m0.204s
+real	0m0.180s
+user	0m0.200s
 sys	0m0.028s
 partially correct (192) 192 linhas certas de 200. primeiro erro: linha 14 difere - operação: 'lnaxokoyyxlnaxokoyyxh', esperado: '22 32 50 ', encontrado: '22 32 '
 ======= KMP_000 ============
 
-real	0m0.154s
-user	0m0.172s
-sys	0m0.036s
+real	0m0.162s
+user	0m0.168s
+sys	0m0.032s
 partially correct (200) perfeito
 ======= KMP_001 ============
 
-real	0m0.162s
-user	0m0.200s
-sys	0m0.012s
+real	0m0.172s
+user	0m0.180s
+sys	0m0.028s
 partially correct (200) perfeito
 ======= KMP_002 ============
 
-real	0m0.161s
-user	0m0.188s
-sys	0m0.024s
+real	0m0.186s
+user	0m0.200s
+sys	0m0.012s
 partially correct (200) perfeito
