@@ -11,53 +11,52 @@ CORREÇÃO AUTOMÁTICA
 0 Testes com Falha no corretor (avise o monitor)
 0 Testes com Erro de Compilação (incui o bônus)
 
-rm: não foi possível remover “judge_out/”: Arquivo ou diretório não encontrado
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/5-3-24/tester/checker/checker' is up to date.
 ======= Booyer_006 ============
 
-real	0m0.176s
-user	0m0.204s
-sys	0m0.012s
+real	0m0.168s
+user	0m0.188s
+sys	0m0.028s
 partially correct (200) perfeito
 ======= Booyer_007 ============
 
-real	0m0.445s
-user	0m0.628s
-sys	0m0.168s
+real	0m0.453s
+user	0m0.708s
+sys	0m0.124s
 partially correct (200) perfeito
 ======= Brute_003 ============
 
-real	0m0.176s
-user	0m0.216s
+real	0m0.172s
+user	0m0.224s
 sys	0m0.032s
 partially correct (200) perfeito
 ======= Brute_004 ============
 
-real	0m0.166s
-user	0m0.172s
-sys	0m0.044s
+real	0m0.168s
+user	0m0.188s
+sys	0m0.028s
 partially correct (200) perfeito
 ======= Brute_005 ============
 
-real	0m0.173s
-user	0m0.204s
-sys	0m0.024s
+real	0m0.171s
+user	0m0.188s
+sys	0m0.036s
 partially correct (200) perfeito
 ======= KMP_000 ============
 
-real	0m0.156s
-user	0m0.176s
-sys	0m0.036s
+real	0m0.164s
+user	0m0.192s
+sys	0m0.032s
 partially correct (200) perfeito
 ======= KMP_001 ============
 
 real	0m0.166s
-user	0m0.180s
-sys	0m0.036s
+user	0m0.188s
+sys	0m0.028s
 partially correct (200) perfeito
 ======= KMP_002 ============
 
-real	0m0.164s
-user	0m0.168s
-sys	0m0.044s
+real	0m0.170s
+user	0m0.188s
+sys	0m0.040s
 partially correct (200) perfeito

@@ -14,49 +14,49 @@ CORREÇÃO AUTOMÁTICA
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/5-3-24/tester/checker/checker' is up to date.
 ======= Booyer_006 ============
 
-real	0m0.174s
-user	0m0.188s
+real	0m0.168s
+user	0m0.180s
 sys	0m0.032s
 partially correct (200) perfeito
 ======= Booyer_007 ============
 
-real	0m0.413s
-user	0m0.668s
-sys	0m0.092s
+real	0m0.349s
+user	0m0.640s
+sys	0m0.108s
 partially correct (200) perfeito
 ======= Brute_003 ============
 
-real	0m0.161s
-user	0m0.180s
-sys	0m0.028s
+real	0m0.165s
+user	0m0.192s
+sys	0m0.020s
 partially correct (24) 24 linhas certas de 200. primeiro erro: linha 7 difere - operação: 'bbbbabaabbababbaaabbbbababbaabb', esperado: '19 ', encontrado: ''
 ======= Brute_004 ============
 
-real	0m0.147s
-user	0m0.176s
-sys	0m0.020s
+real	0m0.144s
+user	0m0.164s
+sys	0m0.028s
 partially correct (29) 29 linhas certas de 200. primeiro erro: linha 6 difere - operação: 'bahbcajfjcdahbcajfjcdahbcajfjc...bahbcajfjcdahbccahbcajfjcdahbba', esperado: '14 27 37 47 66 ', encontrado: ''
 ======= Brute_005 ============
 
-real	0m0.149s
-user	0m0.180s
-sys	0m0.024s
+real	0m0.144s
+user	0m0.160s
+sys	0m0.036s
 partially correct (25) 25 linhas certas de 200. primeiro erro: linha 1 difere - operação: '200', esperado: '27 ', encontrado: ''
 ======= KMP_000 ============
 
-real	0m0.173s
-user	0m0.176s
-sys	0m0.040s
+real	0m0.154s
+user	0m0.184s
+sys	0m0.028s
 partially correct (200) perfeito
 ======= KMP_001 ============
 
-real	0m0.168s
-user	0m0.188s
-sys	0m0.036s
+real	0m0.166s
+user	0m0.192s
+sys	0m0.028s
 partially correct (200) perfeito
 ======= KMP_002 ============
 
-real	0m0.166s
-user	0m0.192s
-sys	0m0.024s
+real	0m0.171s
+user	0m0.176s
+sys	0m0.048s
 partially correct (200) perfeito

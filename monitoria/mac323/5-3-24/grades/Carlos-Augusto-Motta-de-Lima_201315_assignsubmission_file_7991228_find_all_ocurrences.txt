@@ -5,13 +5,12 @@ Segue também o log do corretor, pode ser interessante para descobrir a natureza
 
 CC......
 EP: Carlos-Augusto-Motta-de-Lima_201315_assignsubmission_file_7991228_find_all_ocurrences
-NOTA: 60
+NOTA: 100
 CORREÇÃO AUTOMÁTICA
-726 Pontos (máximo: 1600, dos quais 400 são bônus)
+1200 Pontos (máximo: 1600, dos quais 400 são bônus)
 0 Testes com Falha no corretor (avise o monitor)
 2 Testes com Erro de Compilação (incui o bônus)
 
-rm: não foi possível remover “judge_out/”: Arquivo ou diretório não encontrado
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/5-3-24/tester/checker/checker' is up to date.
 ======= Booyer_006 ============
 BooyerDoVictor.java:4: error: cannot find symbol
@@ -41,37 +40,37 @@ BooyerDoVictor.java:4: error: cannot find symbol
 Compilation Error on Booyer
 ======= Brute_003 ============
 
-real	0m0.190s
-user	0m0.224s
-sys	0m0.036s
-partially correct (48) 48 linhas certas de 200. primeiro erro: linha 8 difere - operação: 'bababbbaabb', esperado: '6 10 28 35 63 73 96 108 121 126 ', encontrado: '126 121 108 96 73 63 35 28 10 6 '
+real	0m0.189s
+user	0m0.248s
+sys	0m0.012s
+partially correct (200) perfeito
 ======= Brute_004 ============
 
-real	0m0.174s
-user	0m0.200s
-sys	0m0.020s
-partially correct (93) 93 linhas certas de 200. primeiro erro: linha 6 difere - operação: 'bahbcajfjcdahbcajfjcdahbcajfjc...bahbcajfjcdahbccahbcajfjcdahbba', esperado: '14 27 37 47 66 ', encontrado: '66 47 37 27 14 '
+real	0m0.177s
+user	0m0.192s
+sys	0m0.028s
+partially correct (200) perfeito
 ======= Brute_005 ============
 
-real	0m0.172s
+real	0m0.171s
 user	0m0.200s
 sys	0m0.028s
-partially correct (84) 84 linhas certas de 200. primeiro erro: linha 4 difere - operação: 'lnaxokoqlnaxwln', esperado: '15 25 41 56 ', encontrado: '56 41 25 15 '
+partially correct (200) perfeito
 ======= KMP_000 ============
 
-real	0m0.157s
-user	0m0.164s
-sys	0m0.048s
-partially correct (101) 101 linhas certas de 200. primeiro erro: linha 1 difere - operação: '200', esperado: '0 8 25 ', encontrado: '25 8 0 '
+real	0m0.162s
+user	0m0.188s
+sys	0m0.028s
+partially correct (200) perfeito
 ======= KMP_001 ============
 
-real	0m0.156s
-user	0m0.184s
+real	0m0.163s
+user	0m0.188s
 sys	0m0.028s
 partially correct (200) perfeito
 ======= KMP_002 ============
 
 real	0m0.164s
-user	0m0.180s
-sys	0m0.040s
+user	0m0.184s
+sys	0m0.032s
 partially correct (200) perfeito

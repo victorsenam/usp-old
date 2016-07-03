@@ -11,7 +11,6 @@ CORREÇÃO AUTOMÁTICA
 0 Testes com Falha no corretor (avise o monitor)
 0 Testes com Erro de Compilação (incui o bônus)
 
-rm: não foi possível remover “judge_out/”: Arquivo ou diretório não encontrado
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/5-3-24/tester/checker/checker' is up to date.
 ======= Booyer_006 ============
 Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String index out of range: -1
@@ -19,8 +18,8 @@ Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String ind
 	at BoyerMoore.findAll(BoyerMoore.java:102)
 	at BooyerDoVictor.main(BooyerDoVictor.java:10)
 
-real	0m0.136s
-user	0m0.124s
+real	0m0.138s
+user	0m0.128s
 sys	0m0.028s
 partially correct (200) perfeito
 ======= Booyer_007 ============
@@ -29,9 +28,9 @@ Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String ind
 	at BoyerMoore.findAll(BoyerMoore.java:102)
 	at BooyerDoVictor.main(BooyerDoVictor.java:10)
 
-real	0m0.134s
-user	0m0.132s
-sys	0m0.024s
+real	0m0.139s
+user	0m0.116s
+sys	0m0.048s
 partially correct (200) perfeito
 ======= Brute_003 ============
 Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String index out of range: -1
@@ -39,9 +38,9 @@ Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String ind
 	at Brute.findAll(Brute.java:47)
 	at BruteDoVictor.main(BruteDoVictor.java:9)
 
-real	0m0.133s
-user	0m0.132s
-sys	0m0.020s
+real	0m0.141s
+user	0m0.140s
+sys	0m0.016s
 partially correct (200) perfeito
 ======= Brute_004 ============
 Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String index out of range: -1
@@ -49,9 +48,9 @@ Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String ind
 	at Brute.findAll(Brute.java:47)
 	at BruteDoVictor.main(BruteDoVictor.java:9)
 
-real	0m0.131s
-user	0m0.124s
-sys	0m0.028s
+real	0m0.140s
+user	0m0.132s
+sys	0m0.032s
 partially correct (200) perfeito
 ======= Brute_005 ============
 Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String index out of range: -1
@@ -59,9 +58,9 @@ Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String ind
 	at Brute.findAll(Brute.java:47)
 	at BruteDoVictor.main(BruteDoVictor.java:9)
 
-real	0m0.135s
-user	0m0.132s
-sys	0m0.020s
+real	0m0.143s
+user	0m0.120s
+sys	0m0.036s
 partially correct (200) perfeito
 ======= KMP_000 ============
 Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String index out of range: -1
@@ -69,9 +68,9 @@ Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String ind
 	at KMP.findAll(KMP.java:67)
 	at KMPDoVictor.main(KMPDoVictor.java:10)
 
-real	0m0.132s
-user	0m0.120s
-sys	0m0.036s
+real	0m0.137s
+user	0m0.136s
+sys	0m0.016s
 partially correct (200) perfeito
 ======= KMP_001 ============
 Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String index out of range: -1
@@ -79,9 +78,9 @@ Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String ind
 	at KMP.findAll(KMP.java:67)
 	at KMPDoVictor.main(KMPDoVictor.java:10)
 
-real	0m0.135s
-user	0m0.124s
-sys	0m0.032s
+real	0m0.134s
+user	0m0.140s
+sys	0m0.012s
 partially correct (200) perfeito
 ======= KMP_002 ============
 Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String index out of range: -1
@@ -89,7 +88,7 @@ Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String ind
 	at KMP.findAll(KMP.java:67)
 	at KMPDoVictor.main(KMPDoVictor.java:10)
 
-real	0m0.137s
-user	0m0.112s
-sys	0m0.052s
+real	0m0.131s
+user	0m0.132s
+sys	0m0.020s
 partially correct (200) perfeito

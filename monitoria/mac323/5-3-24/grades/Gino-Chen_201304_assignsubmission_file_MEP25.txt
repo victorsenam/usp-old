@@ -12,7 +12,6 @@ CORREÇÃO AUTOMÁTICA
 0 Testes com Falha no corretor (avise o monitor)
 8 Testes com Erro de Compilação (incui o bônus)
 
-rm: não foi possível remover “judge_out/”: Arquivo ou diretório não encontrado
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/5-3-24/tester/checker/checker' is up to date.
 ======= Booyer_006 ============
 BooyerDoVictor.java:4: error: cannot find symbol

@@ -30,37 +30,37 @@ BooyerDoVictor.java:10: error: cannot find symbol
 Compilation Error on Booyer
 ======= Brute_003 ============
 
-real	0m0.191s
-user	0m0.228s
-sys	0m0.028s
+real	0m0.170s
+user	0m0.216s
+sys	0m0.036s
 partially correct (200) perfeito
 ======= Brute_004 ============
 
-real	0m0.197s
-user	0m0.180s
-sys	0m0.036s
+real	0m0.165s
+user	0m0.196s
+sys	0m0.020s
 partially correct (200) perfeito
 ======= Brute_005 ============
 
-real	0m0.200s
-user	0m0.208s
+real	0m0.166s
+user	0m0.200s
 sys	0m0.028s
 partially correct (200) perfeito
 ======= KMP_000 ============
 
-real	0m0.171s
-user	0m0.180s
-sys	0m0.028s
+real	0m0.153s
+user	0m0.172s
+sys	0m0.040s
 partially correct (200) perfeito
 ======= KMP_001 ============
 
-real	0m0.180s
-user	0m0.188s
-sys	0m0.032s
+real	0m0.171s
+user	0m0.184s
+sys	0m0.040s
 partially correct (200) perfeito
 ======= KMP_002 ============
 
 real	0m0.162s
-user	0m0.200s
-sys	0m0.016s
+user	0m0.172s
+sys	0m0.048s
 partially correct (200) perfeito

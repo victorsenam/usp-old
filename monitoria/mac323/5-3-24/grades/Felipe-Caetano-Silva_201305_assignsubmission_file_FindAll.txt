@@ -41,21 +41,21 @@ BooyerDoVictor.java:4: error: cannot find symbol
 Compilation Error on Booyer
 ======= Brute_003 ============
 
-real	0m0.198s
+real	0m0.178s
 user	0m0.224s
-sys	0m0.032s
+sys	0m0.028s
 partially correct (200) perfeito
 ======= Brute_004 ============
 
-real	0m0.172s
-user	0m0.200s
-sys	0m0.016s
+real	0m0.164s
+user	0m0.192s
+sys	0m0.024s
 partially correct (200) perfeito
 ======= Brute_005 ============
 
-real	0m0.214s
-user	0m0.192s
-sys	0m0.024s
+real	0m0.174s
+user	0m0.200s
+sys	0m0.028s
 partially correct (200) perfeito
 ======= KMP_000 ============
 ./KMP.java:135: error: cannot find symbol
@@ -79,9 +79,9 @@ Caused by: java.lang.ClassNotFoundException: KMP
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
 	... 1 more
 
-real	0m0.103s
+real	0m0.106s
 user	0m0.084s
-sys	0m0.020s
+sys	0m0.016s
 partially correct (200) perfeito
 ======= KMP_001 ============
 ./KMP.java:135: error: cannot find symbol
@@ -105,9 +105,9 @@ Caused by: java.lang.ClassNotFoundException: KMP
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
 	... 1 more
 
-real	0m0.109s
-user	0m0.092s
-sys	0m0.008s
+real	0m0.363s
+user	0m0.084s
+sys	0m0.016s
 partially correct (200) perfeito
 ======= KMP_002 ============
 ./KMP.java:135: error: cannot find symbol
@@ -131,7 +131,7 @@ Caused by: java.lang.ClassNotFoundException: KMP
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
 	... 1 more
 
-real	0m0.116s
-user	0m0.076s
-sys	0m0.024s
+real	0m0.131s
+user	0m0.068s
+sys	0m0.032s
 partially correct (200) perfeito

@@ -14,49 +14,49 @@ CORREÇÃO AUTOMÁTICA
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/5-3-24/tester/checker/checker' is up to date.
 ======= Booyer_006 ============
 
-real	0m0.192s
-user	0m0.232s
-sys	0m0.052s
+real	0m0.205s
+user	0m0.264s
+sys	0m0.048s
 partially correct (200) perfeito
 ======= Booyer_007 ============
 
-real	0m0.752s
-user	0m0.880s
-sys	0m0.320s
+real	0m0.745s
+user	0m0.976s
+sys	0m0.272s
 partially correct (200) perfeito
 ======= Brute_003 ============
 
-real	0m0.192s
-user	0m0.252s
+real	0m0.190s
+user	0m0.248s
 sys	0m0.040s
 partially correct (200) perfeito
 ======= Brute_004 ============
 
-real	0m0.189s
-user	0m0.208s
-sys	0m0.036s
+real	0m0.177s
+user	0m0.196s
+sys	0m0.048s
 partially correct (200) perfeito
 ======= Brute_005 ============
 
-real	0m0.251s
+real	0m0.179s
 user	0m0.212s
 sys	0m0.048s
 partially correct (200) perfeito
 ======= KMP_000 ============
 
-real	0m0.170s
+real	0m0.175s
 user	0m0.184s
 sys	0m0.052s
 partially correct (200) perfeito
 ======= KMP_001 ============
 
-real	0m0.362s
-user	0m0.280s
-sys	0m0.048s
+real	0m0.206s
+user	0m0.264s
+sys	0m0.036s
 partially correct (200) perfeito
 ======= KMP_002 ============
 
-real	0m0.219s
-user	0m0.272s
-sys	0m0.048s
+real	0m0.217s
+user	0m0.280s
+sys	0m0.036s
 partially correct (200) perfeito

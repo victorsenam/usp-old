@@ -11,7 +11,6 @@ CORREÇÃO AUTOMÁTICA
 0 Testes com Falha no corretor (avise o monitor)
 2 Testes com Erro de Compilação (incui o bônus)
 
-rm: não foi possível remover “judge_out/”: Arquivo ou diretório não encontrado
 make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/5-3-24/tester/checker/checker' is up to date.
 ======= Booyer_006 ============
 BooyerDoVictor.java:4: error: cannot find symbol
@@ -60,9 +59,9 @@ Caused by: java.lang.ClassNotFoundException: Brute
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
 	... 1 more
 
-real	0m0.131s
-user	0m0.124s
-sys	0m0.024s
+real	0m0.130s
+user	0m0.112s
+sys	0m0.032s
 partially correct (200) perfeito
 ======= Brute_004 ============
 ./Brute.java:109: error: cannot find symbol
@@ -85,9 +84,9 @@ Caused by: java.lang.ClassNotFoundException: Brute
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
 	... 1 more
 
-real	0m0.137s
-user	0m0.128s
-sys	0m0.032s
+real	0m0.136s
+user	0m0.124s
+sys	0m0.028s
 partially correct (200) perfeito
 ======= Brute_005 ============
 ./Brute.java:109: error: cannot find symbol
@@ -111,8 +110,8 @@ Caused by: java.lang.ClassNotFoundException: Brute
 	... 1 more
 
 real	0m0.132s
-user	0m0.116s
-sys	0m0.032s
+user	0m0.128s
+sys	0m0.020s
 partially correct (200) perfeito
 ======= KMP_000 ============
 ./KMP.java:143: error: cannot find symbol
@@ -135,8 +134,8 @@ Caused by: java.lang.ClassNotFoundException: KMP
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
 	... 1 more
 
-real	0m0.093s
-user	0m0.072s
+real	0m0.098s
+user	0m0.076s
 sys	0m0.024s
 partially correct (200) perfeito
 ======= KMP_001 ============
@@ -160,9 +159,9 @@ Caused by: java.lang.ClassNotFoundException: KMP
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
 	... 1 more
 
-real	0m0.098s
-user	0m0.060s
-sys	0m0.048s
+real	0m0.097s
+user	0m0.084s
+sys	0m0.016s
 partially correct (200) perfeito
 ======= KMP_002 ============
 ./KMP.java:143: error: cannot find symbol
@@ -185,7 +184,7 @@ Caused by: java.lang.ClassNotFoundException: KMP
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
 	... 1 more
 
-real	0m0.098s
-user	0m0.084s
-sys	0m0.016s
+real	0m0.103s
+user	0m0.076s
+sys	0m0.040s
 partially correct (200) perfeito
