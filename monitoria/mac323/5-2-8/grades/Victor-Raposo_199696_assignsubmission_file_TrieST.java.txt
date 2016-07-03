@@ -1,0 +1,135 @@
+
+LOG DE COMPILAÇÃO E TESTE
+Existem dois métodos de compilação, eles estão indicados, se um falha eu parto pro outro. Então se quiser entender o porque não compilou, verifique todos.
+Segue também o log do corretor, pode ser interessante para descobrir a natureza de seus erros. A saída está trucada (não mostra todas as linha), se quiser ver todo o log, fale comigo
+
+....................
+EP: Victor-Raposo_199696_assignsubmission_file_TrieST.java
+NOTA: 98
+CORREÇÃO AUTOMÁTICA
+3955 Pontos (máximo: 4000)
+0 Testes com Falha no corretor (avise o monitor)
+
+make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/5-2-8/tester/checker/checker' is up to date.
+Note: TrieST.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+======= generated_000 ============
+
+real	0m0.130s
+user	0m0.128s
+sys	0m0.024s
+partially correct (200) perfeito
+======= generated_001 ============
+
+real	0m0.149s
+user	0m0.116s
+sys	0m0.048s
+partially correct (200) perfeito
+======= generated_002 ============
+
+real	0m0.143s
+user	0m0.132s
+sys	0m0.024s
+partially correct (200) perfeito
+======= generated_003 ============
+
+real	0m0.181s
+user	0m0.212s
+sys	0m0.028s
+partially correct (196) 56 linhas certas de 57. primeiro erro: linha 96 difere - operação: 'f e', esperado: 'e', encontrado: 'dndnn'
+======= generated_004 ============
+
+real	0m0.178s
+user	0m0.224s
+sys	0m0.020s
+partially correct (197) 76 linhas certas de 77. primeiro erro: linha 166 difere - operação: 'f a', esperado: 'a', encontrado: 'null'
+======= generated_005 ============
+
+real	0m0.185s
+user	0m0.220s
+sys	0m0.032s
+partially correct (200) perfeito
+======= generated_006 ============
+
+real	0m2.281s
+user	0m2.728s
+sys	0m0.140s
+partially correct (199) 871 linhas certas de 875. primeiro erro: linha 267 difere - operação: 'f r', esperado: 'r', encontrado: 'qztehldwsfqbzwy'
+======= generated_007 ============
+
+real	0m0.684s
+user	0m0.960s
+sys	0m0.060s
+partially correct (198) 629 linhas certas de 635. primeiro erro: linha 795 difere - operação: 'f w', esperado: 'w', encontrado: 'vxw'
+======= generated_008 ============
+
+real	0m0.795s
+user	0m1.088s
+sys	0m0.080s
+partially correct (200) perfeito
+======= generated_009 ============
+
+real	0m20.052s
+user	0m20.640s
+sys	0m0.256s
+partially correct (196) 3874 linhas certas de 3949. primeiro erro: linha 396 difere - operação: 'f y', esperado: 'y', encontrado: 'xy'
+======= generated_010 ============
+
+real	0m20.042s
+user	0m20.508s
+sys	0m0.336s
+partially correct (195) 4032 linhas certas de 4122. primeiro erro: linha 56 difere - operação: 'f o', esperado: 'o', encontrado: 'n'
+======= generated_011 ============
+
+real	0m20.051s
+user	0m20.580s
+sys	0m0.332s
+partially correct (196) 4016 linhas certas de 4094. primeiro erro: linha 31 difere - operação: 'f h', esperado: 'h', encontrado: 'gulefvvurtofwxf'
+======= generated_012 ============
+
+real	0m20.055s
+user	0m20.636s
+sys	0m0.324s
+partially correct (198) 2619 linhas certas de 2640. primeiro erro: linha 377 difere - operação: 'f v', esperado: 'v', encontrado: 'uwhfjd'
+======= generated_013 ============
+
+real	0m20.055s
+user	0m20.560s
+sys	0m0.416s
+partially correct (199) 2590 linhas certas de 2600. primeiro erro: linha 1013 difere - operação: 'f k', esperado: 'k', encontrado: 'jz'
+======= generated_014 ============
+
+real	0m20.054s
+user	0m20.584s
+sys	0m0.388s
+partially correct (199) 2380 linhas certas de 2389. primeiro erro: linha 1448 difere - operação: 'f c', esperado: 'c', encontrado: 'bzzzvtchxj'
+======= generated_015 ============
+
+real	0m20.053s
+user	0m20.556s
+sys	0m0.324s
+partially correct (195) 3960 linhas certas de 4050. primeiro erro: linha 312 difere - operação: 'f r', esperado: 'r', encontrado: 'qwcs'
+======= generated_016 ============
+
+real	0m20.038s
+user	0m20.548s
+sys	0m0.340s
+partially correct (195) 3949 linhas certas de 4039. primeiro erro: linha 341 difere - operação: 'f r', esperado: 'r', encontrado: 'qtrogjwrs'
+======= generated_017 ============
+
+real	0m20.052s
+user	0m20.508s
+sys	0m0.312s
+partially correct (192) 5306 linhas certas de 5518. primeiro erro: linha 291 difere - operação: 'f i', esperado: 'i', encontrado: 'hudf'
+======= generated_018 ============
+
+real	0m20.071s
+user	0m20.888s
+sys	0m0.592s
+partially correct (200) perfeito
+======= generated_019 ============
+
+real	0m18.426s
+user	0m19.048s
+sys	0m0.576s
+partially correct (200) perfeito

@@ -1,0 +1,177 @@
+
+LOG DE COMPILAÇÃO E TESTE
+Existem dois métodos de compilação, eles estão indicados, se um falha eu parto pro outro. Então se quiser entender o porque não compilou, verifique todos.
+Segue também o log do corretor, pode ser interessante para descobrir a natureza de seus erros. A saída está trucada (não mostra todas as linha), se quiser ver todo o log, fale comigo
+
+....................
+EP: Vítor-Kei-Taira-Tamada_199619_assignsubmission_file_TrieST.java
+NOTA: 97
+CORREÇÃO AUTOMÁTICA
+3911 Pontos (máximo: 4000)
+0 Testes com Falha no corretor (avise o monitor)
+
+make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/5-2-8/tester/checker/checker' is up to date.
+Note: TrieST.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+======= generated_000 ============
+
+real	0m0.153s
+user	0m0.140s
+sys	0m0.036s
+partially correct (200) perfeito
+======= generated_001 ============
+
+real	0m0.169s
+user	0m0.152s
+sys	0m0.028s
+partially correct (200) perfeito
+======= generated_002 ============
+
+real	0m0.157s
+user	0m0.156s
+sys	0m0.024s
+partially correct (200) perfeito
+======= generated_003 ============
+
+real	0m0.225s
+user	0m0.276s
+sys	0m0.028s
+partially correct (192) 55 linhas certas de 57. primeiro erro: linha 32 difere - operação: 'c jepfjybazabfp', esperado: 'm', encontrado: 'mszhrwqgbhlx'
+======= generated_004 ============
+
+real	0m0.219s
+user	0m0.280s
+sys	0m0.020s
+partially correct (189) 73 linhas certas de 77. primeiro erro: linha 32 difere - operação: 'f l', esperado: 'ihfgm', encontrado: 'null'
+======= generated_005 ============
+
+real	0m0.245s
+user	0m0.320s
+sys	0m0.036s
+partially correct (197) 76 linhas certas de 77. primeiro erro: linha 64 difere - operação: 'f d', esperado: 'cp', encontrado: 'null'
+======= generated_006 ============
+Exception in thread "main" java.lang.UnsupportedClassVersionError: CorretorDoVictor : Unsupported major.minor version 52.0
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:803)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:449)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:71)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:361)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at sun.launcher.LauncherHelper.checkAndLoadMain(LauncherHelper.java:482)
+
+real	0m0.167s
+user	0m0.080s
+sys	0m0.020s
+partially correct (200) perfeito
+======= generated_007 ============
+Exception in thread "main" java.lang.UnsupportedClassVersionError: CorretorDoVictor : Unsupported major.minor version 52.0
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:803)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:449)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:71)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:361)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at sun.launcher.LauncherHelper.checkAndLoadMain(LauncherHelper.java:482)
+
+real	0m0.112s
+user	0m0.084s
+sys	0m0.024s
+partially correct (200) perfeito
+======= generated_008 ============
+Exception in thread "main" java.lang.UnsupportedClassVersionError: CorretorDoVictor : Unsupported major.minor version 52.0
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:803)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:449)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:71)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:361)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at sun.launcher.LauncherHelper.checkAndLoadMain(LauncherHelper.java:482)
+
+real	0m0.125s
+user	0m0.072s
+sys	0m0.028s
+partially correct (200) perfeito
+======= generated_009 ============
+
+real	0m20.032s
+user	0m20.452s
+sys	0m0.152s
+partially correct (190) 1559 linhas certas de 1636. primeiro erro: linha 137 difere - operação: 'c sib', esperado: 't', encontrado: 'tqwpbyqkgqlnq'
+======= generated_010 ============
+
+real	0m20.033s
+user	0m20.516s
+sys	0m0.144s
+partially correct (191) 1585 linhas certas de 1653. primeiro erro: linha 84 difere - operação: 'c rnory', esperado: 't', encontrado: 'tkiiclpidy'
+======= generated_011 ============
+
+real	0m20.034s
+user	0m20.504s
+sys	0m0.108s
+partially correct (192) 1615 linhas certas de 1682. primeiro erro: linha 130 difere - operação: 's 58', esperado: 'null', encontrado: 'erro de execucao'
+======= generated_012 ============
+
+real	0m20.031s
+user	0m20.468s
+sys	0m0.120s
+partially correct (197) 1051 linhas certas de 1064. primeiro erro: linha 112 difere - operação: 'c hkosrlowcosjecxkhdmoson', esperado: 'i', encontrado: 'ijkhcersncgncd'
+======= generated_013 ============
+
+real	0m20.032s
+user	0m20.532s
+sys	0m0.116s
+partially correct (195) 1055 linhas certas de 1079. primeiro erro: linha 41 difere - operação: 'f c', esperado: 'bkblgiiogawgpfaxbslxg', encontrado: 'null'
+======= generated_014 ============
+
+real	0m20.034s
+user	0m20.512s
+sys	0m0.068s
+partially correct (197) 977 linhas certas de 990. primeiro erro: linha 188 difere - operação: 'f v', esperado: 'ukonzsclipnknbomaiabvwqjivkiewjdxkdzqrltzif', encontrado: 'null'
+======= generated_015 ============
+
+real	0m20.020s
+user	0m20.476s
+sys	0m0.100s
+partially correct (192) 1569 linhas certas de 1627. primeiro erro: linha 53 difere - operação: 'f s', esperado: 'rxbscinjkjekuyqxtutr', encontrado: 'null'
+======= generated_016 ============
+
+real	0m20.032s
+user	0m20.480s
+sys	0m0.124s
+partially correct (192) 1578 linhas certas de 1638. primeiro erro: linha 42 difere - operação: 'f f', esperado: 'eb', encontrado: 'null'
+======= generated_017 ============
+
+real	0m20.037s
+user	0m20.512s
+sys	0m0.132s
+partially correct (187) 2154 linhas certas de 2300. primeiro erro: linha 11 difere - operação: 'f h', esperado: 'a', encontrado: 'null'
+======= generated_018 ============
+
+real	0m20.034s
+user	0m20.312s
+sys	0m0.120s
+partially correct (200) perfeito
+======= generated_019 ============
+
+real	0m20.033s
+user	0m20.280s
+sys	0m0.124s
+partially correct (200) perfeito

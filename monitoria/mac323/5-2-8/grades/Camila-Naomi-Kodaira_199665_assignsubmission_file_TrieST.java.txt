@@ -1,0 +1,135 @@
+
+LOG DE COMPILAÇÃO E TESTE
+Existem dois métodos de compilação, eles estão indicados, se um falha eu parto pro outro. Então se quiser entender o porque não compilou, verifique todos.
+Segue também o log do corretor, pode ser interessante para descobrir a natureza de seus erros. A saída está trucada (não mostra todas as linha), se quiser ver todo o log, fale comigo
+
+....................
+EP: Camila-Naomi-Kodaira_199665_assignsubmission_file_TrieST.java
+NOTA: 100
+CORREÇÃO AUTOMÁTICA
+4000 Pontos (máximo: 4000)
+0 Testes com Falha no corretor (avise o monitor)
+
+make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/5-2-8/tester/checker/checker' is up to date.
+Note: TrieST.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+======= generated_000 ============
+
+real	0m0.138s
+user	0m0.140s
+sys	0m0.020s
+partially correct (200) perfeito
+======= generated_001 ============
+
+real	0m0.146s
+user	0m0.136s
+sys	0m0.028s
+partially correct (200) perfeito
+======= generated_002 ============
+
+real	0m0.144s
+user	0m0.136s
+sys	0m0.024s
+partially correct (200) perfeito
+======= generated_003 ============
+
+real	0m0.165s
+user	0m0.164s
+sys	0m0.036s
+partially correct (200) perfeito
+======= generated_004 ============
+
+real	0m0.167s
+user	0m0.200s
+sys	0m0.020s
+partially correct (200) perfeito
+======= generated_005 ============
+
+real	0m0.164s
+user	0m0.172s
+sys	0m0.044s
+partially correct (200) perfeito
+======= generated_006 ============
+
+real	0m0.243s
+user	0m0.448s
+sys	0m0.056s
+partially correct (200) perfeito
+======= generated_007 ============
+
+real	0m0.209s
+user	0m0.352s
+sys	0m0.032s
+partially correct (200) perfeito
+======= generated_008 ============
+
+real	0m0.221s
+user	0m0.340s
+sys	0m0.072s
+partially correct (200) perfeito
+======= generated_009 ============
+
+real	0m0.495s
+user	0m1.048s
+sys	0m0.168s
+partially correct (200) perfeito
+======= generated_010 ============
+
+real	0m0.516s
+user	0m0.984s
+sys	0m0.144s
+partially correct (200) perfeito
+======= generated_011 ============
+
+real	0m0.486s
+user	0m1.064s
+sys	0m0.124s
+partially correct (200) perfeito
+======= generated_012 ============
+
+real	0m0.559s
+user	0m1.052s
+sys	0m0.192s
+partially correct (200) perfeito
+======= generated_013 ============
+
+real	0m0.557s
+user	0m1.044s
+sys	0m0.212s
+partially correct (200) perfeito
+======= generated_014 ============
+
+real	0m0.534s
+user	0m0.916s
+sys	0m0.196s
+partially correct (200) perfeito
+======= generated_015 ============
+
+real	0m3.772s
+user	0m12.724s
+sys	0m1.880s
+partially correct (200) perfeito
+======= generated_016 ============
+
+real	0m1.840s
+user	0m3.228s
+sys	0m1.112s
+partially correct (200) perfeito
+======= generated_017 ============
+
+real	0m1.689s
+user	0m2.888s
+sys	0m0.996s
+partially correct (200) perfeito
+======= generated_018 ============
+
+real	0m0.583s
+user	0m0.840s
+sys	0m0.236s
+partially correct (200) perfeito
+======= generated_019 ============
+
+real	0m0.521s
+user	0m0.756s
+sys	0m0.168s
+partially correct (200) perfeito

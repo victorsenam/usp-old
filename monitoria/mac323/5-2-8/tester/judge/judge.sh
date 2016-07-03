@@ -59,6 +59,7 @@ fi
 # judge
 if [ $toexec != failed ];
 then
+    idx=$(java -cp .:algs4.jar:stdlib.jar CorretorDoVictor < idxsetter.in)
     for testpath in $(find $cases/*);
     do
         testcase=$(basename $testpath)
@@ -66,9 +67,11 @@ then
         
         echo "======= $testcase ============" >> $LOG
 
-        (time timeout --kill-after=30s 20s java -Xss1024m -Xmx1024m -Xms1024m -cp .:algs4.jar:stdlib.jar CorretorDoVictor $2 < ${testpath} > ${OUT}${testcase}.out 2>> $LOG) &>> $LOG
+        (time timeout --kill-after=30s 20s java -Xss1024m -Xmx1024m -Xms1024m -cp .:algs4.jar:stdlib.jar CorretorDoVictor $idx < ${testpath} > ${OUT}${testcase}.out 2>> $LOG) &>> $LOG
         run_status=$?
 
+        sed 's/\x0//g' ${OUT}${testcase}.out > TEMPFILE
+        mv -f TEMPFILE ${OUT}${testcase}.out
         checker_output=$( ${DIR}tester/checker/checker ${testpath} ${OUT}${testcase}.out ${DIR}tester/solution/answer/${testcase}.out 2>&1)
         echo $checker_output >> $LOG
         if [[ ${checker_output:0:4} == "FAIL" ]]

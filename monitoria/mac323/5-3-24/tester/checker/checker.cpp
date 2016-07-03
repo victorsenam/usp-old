@@ -9,11 +9,11 @@ char buff[1000];
 
 bool compareWords(string a, string b)
 {
-    vector<string> va, vb;
+    vector<int> va, vb;
     stringstream sa;
     
     sa << a;
-    string cur;
+    int cur;
     while (sa >> cur)
         va.push_back(cur);
 
@@ -22,12 +22,15 @@ bool compareWords(string a, string b)
     while (sb >> cur)
         vb.push_back(cur);
 
+    sort(va.begin(), va.end());
+    sort(vb.begin(), vb.end());
+
     return (va == vb);
 }
 
 int main(int argc, char * argv[])
 {
-    setName("compare files as sequence of tokens in lines and gives proportional points");
+    setName("compare files as sequence of unordered ints in lines and gives proportional points");
     registerTestlibCmd(argc, argv);
 
     std::string strAnswer;

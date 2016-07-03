@@ -3,7 +3,7 @@ public class CorretorDoVictor {
     public static void main (String[] args) {
         TrieST<Integer> ex = new TrieST<Integer>();
         int indexed = 0;
-        if (args.length > 0 && args[0].charAt(0) == 'i')
+        if (args.length > 0 && args[0].charAt(0) == '1')
             indexed++;
         int n = StdIn.readInt();
 
@@ -12,7 +12,7 @@ public class CorretorDoVictor {
             char c = StdIn.readChar();
             StdIn.readChar();
 
-            String res = null;
+            String res = "nao imprimir esta linha";
 
             if (c == 'a') {
                 ex.put(StdIn.readString(), i);
@@ -20,33 +20,29 @@ public class CorretorDoVictor {
                 try {
                     res = (ex.rank(StdIn.readString()) - indexed) + "";
                 } catch (Throwable e) {
-                    res = "No answer";
+                    res = "erro de execucao";
                 }
             } else if (c == 'f') {
                 try {
                     res = ex.floor(StdIn.readString());
-                    if (!ex.contains(res))
-                        res = "No answer";
                 } catch (Throwable e) {
-                    res = "No answer";
+                    res = "erro de execucao";
                 }
             } else if (c == 'c') {
                 try {
                     res = ex.ceil(StdIn.readString());
-                    if (!ex.contains(res))
-                        res = "No answer";
                 } catch (Throwable e) {
-                    res = "No answer";
+                    res = "erro de execucao";
                 }
             } else if (c == 's') {
                 try {
                     res = ex.select(StdIn.readInt() + indexed);
                 } catch (Throwable e) {
-                    res = "No answer";
+                    res = "erro de execucao";
                 }
             }
 
-            if (res != null)
+            if (res != "nao imprimir esta linha")
                 StdOut.println(res);
         }
     }

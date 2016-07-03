@@ -1,0 +1,135 @@
+
+LOG DE COMPILAÇÃO E TESTE
+Existem dois métodos de compilação, eles estão indicados, se um falha eu parto pro outro. Então se quiser entender o porque não compilou, verifique todos.
+Segue também o log do corretor, pode ser interessante para descobrir a natureza de seus erros. A saída está trucada (não mostra todas as linha), se quiser ver todo o log, fale comigo
+
+....................
+EP: Lucas-Seiki-Oshiro_199643_assignsubmission_file_TrieST.java
+NOTA: 99
+CORREÇÃO AUTOMÁTICA
+3990 Pontos (máximo: 4000)
+0 Testes com Falha no corretor (avise o monitor)
+
+make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/5-2-8/tester/checker/checker' is up to date.
+Note: TrieST.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+======= generated_000 ============
+
+real	0m0.154s
+user	0m0.140s
+sys	0m0.036s
+partially correct (200) perfeito
+======= generated_001 ============
+
+real	0m0.156s
+user	0m0.148s
+sys	0m0.028s
+partially correct (200) perfeito
+======= generated_002 ============
+
+real	0m0.161s
+user	0m0.156s
+sys	0m0.020s
+partially correct (200) perfeito
+======= generated_003 ============
+
+real	0m0.228s
+user	0m0.280s
+sys	0m0.028s
+partially correct (200) perfeito
+======= generated_004 ============
+
+real	0m0.228s
+user	0m0.272s
+sys	0m0.036s
+partially correct (200) perfeito
+======= generated_005 ============
+
+real	0m0.241s
+user	0m0.288s
+sys	0m0.040s
+partially correct (200) perfeito
+======= generated_006 ============
+
+real	0m12.069s
+user	0m12.596s
+sys	0m0.108s
+partially correct (199) 872 linhas certas de 875. primeiro erro: linha 1460 difere - operação: 'c qzzroeqcrzeygikkzufokjwbefrzdbzetsmbprcgus', esperado: 'r', encontrado: 'q'
+======= generated_007 ============
+
+real	0m3.423s
+user	0m3.688s
+sys	0m0.056s
+partially correct (199) 634 linhas certas de 635. primeiro erro: linha 652 difere - operação: 'c bxah', esperado: 'c', encontrado: 'b'
+======= generated_008 ============
+
+real	0m4.203s
+user	0m4.464s
+sys	0m0.072s
+partially correct (199) 506 linhas certas de 507. primeiro erro: linha 870 difere - operação: 'c byjjwylwwkqekicshwtine', esperado: 'c', encontrado: 'b'
+======= generated_009 ============
+
+real	0m20.019s
+user	0m20.500s
+sys	0m0.124s
+partially correct (199) 1631 linhas certas de 1636. primeiro erro: linha 1583 difere - operação: 'c uzo', esperado: 'v', encontrado: 'u'
+======= generated_010 ============
+
+real	0m20.031s
+user	0m20.508s
+sys	0m0.144s
+partially correct (199) 1671 linhas certas de 1676. primeiro erro: linha 687 difere - operação: 'c kzytf', esperado: 'lbzyd', encontrado: 'k'
+======= generated_011 ============
+
+real	0m20.030s
+user	0m20.520s
+sys	0m0.124s
+partially correct (200) perfeito
+======= generated_012 ============
+
+real	0m20.020s
+user	0m20.476s
+sys	0m0.112s
+partially correct (200) perfeito
+======= generated_013 ============
+
+real	0m20.041s
+user	0m20.472s
+sys	0m0.124s
+partially correct (199) 1079 linhas certas de 1080. primeiro erro: linha 1660 difere - operação: 'c czyuqvobmybneqeyocoxmxprsirsfojtvjvhczx', esperado: 'dakgcpnbnanyowxi', encontrado: 'c'
+======= generated_014 ============
+
+real	0m20.029s
+user	0m20.548s
+sys	0m0.100s
+partially correct (200) perfeito
+======= generated_015 ============
+
+real	0m20.031s
+user	0m20.452s
+sys	0m0.112s
+partially correct (198) 1618 linhas certas de 1627. primeiro erro: linha 927 difere - operação: 'c jyiytqr', esperado: 'kdpgpmvjrecrzwlekjnxkmrz', encontrado: 'j'
+======= generated_016 ============
+
+real	0m20.023s
+user	0m20.412s
+sys	0m0.208s
+partially correct (199) 1652 linhas certas de 1656. primeiro erro: linha 1106 difere - operação: 'c ewlqapqe', esperado: 'f', encontrado: 'e'
+======= generated_017 ============
+
+real	0m20.033s
+user	0m20.428s
+sys	0m0.144s
+partially correct (199) 2298 linhas certas de 2300. primeiro erro: linha 3330 difere - operação: 'c gkxdfyfsymkmmjtesgips', esperado: 'glfsxbvtsnxscr', encontrado: 'gk'
+======= generated_018 ============
+
+real	0m20.041s
+user	0m20.352s
+sys	0m0.152s
+partially correct (200) perfeito
+======= generated_019 ============
+
+real	0m20.025s
+user	0m20.232s
+sys	0m0.180s
+partially correct (200) perfeito

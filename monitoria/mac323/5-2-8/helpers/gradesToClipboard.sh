@@ -7,6 +7,7 @@ cd grades
 
 for aluno in $(ls);
 do
-    xsel -b < $aluno
+
+    cat $aluno | head -n 80 | xsel -b
     read -p "clipboard: $aluno"
 done

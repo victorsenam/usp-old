@@ -1,0 +1,135 @@
+
+LOG DE COMPILAÇÃO E TESTE
+Existem dois métodos de compilação, eles estão indicados, se um falha eu parto pro outro. Então se quiser entender o porque não compilou, verifique todos.
+Segue também o log do corretor, pode ser interessante para descobrir a natureza de seus erros. A saída está trucada (não mostra todas as linha), se quiser ver todo o log, fale comigo
+
+....................
+EP: Marcos-Vinicius-do-Carmo-Sousa_199672_assignsubmission_file_TrieST
+NOTA: 89
+CORREÇÃO AUTOMÁTICA
+3585 Pontos (máximo: 4000)
+0 Testes com Falha no corretor (avise o monitor)
+
+make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/5-2-8/tester/checker/checker' is up to date.
+Note: TrieST.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+======= generated_000 ============
+
+real	0m0.155s
+user	0m0.148s
+sys	0m0.028s
+partially correct (200) perfeito
+======= generated_001 ============
+
+real	0m0.169s
+user	0m0.160s
+sys	0m0.016s
+partially correct (200) perfeito
+======= generated_002 ============
+
+real	0m0.167s
+user	0m0.148s
+sys	0m0.024s
+partially correct (200) perfeito
+======= generated_003 ============
+
+real	0m0.229s
+user	0m0.288s
+sys	0m0.020s
+partially correct (200) perfeito
+======= generated_004 ============
+
+real	0m0.224s
+user	0m0.288s
+sys	0m0.040s
+partially correct (187) 72 linhas certas de 77. primeiro erro: linha 33 difere - operação: 'c lrascsklffhu', esperado: 'qk', encontrado: 'nnq'
+======= generated_005 ============
+
+real	0m0.237s
+user	0m0.304s
+sys	0m0.016s
+partially correct (184) 71 linhas certas de 77. primeiro erro: linha 56 difere - operação: 'f ujqj', esperado: 'tlnxrwhu', encontrado: 'nospprzzj'
+======= generated_006 ============
+
+real	0m12.071s
+user	0m12.572s
+sys	0m0.072s
+partially correct (170) 744 linhas certas de 875. primeiro erro: linha 102 difere - operação: 'c jj', esperado: 'jmwwfuxitknqsixnrnfqncqurgohkwuljf', encontrado: 'jj'
+======= generated_007 ============
+
+real	0m3.483s
+user	0m3.708s
+sys	0m0.044s
+partially correct (174) 553 linhas certas de 635. primeiro erro: linha 26 difere - operação: 'c nqkwrcgovknibfxc', esperado: 'ohqzcfsyzqtvuhoai', encontrado: 'pwqbx'
+======= generated_008 ============
+
+real	0m4.229s
+user	0m4.476s
+sys	0m0.032s
+partially correct (178) 453 linhas certas de 507. primeiro erro: linha 49 difere - operação: 'f xjvweupplgoeadkqlzweqwjubrde...nseenugwrgkxtdeqbvjgfechocxrupn', esperado: 'unsgvlmtjaabyuafywqfvsturumrqsoirnghphmneknjblzlygxlpv', encontrado: 'tb'
+======= generated_009 ============
+
+real	0m20.022s
+user	0m20.532s
+sys	0m0.108s
+partially correct (169) 1376 linhas certas de 1621. primeiro erro: linha 71 difere - operação: 'f ffszqzsg', esperado: 'f', encontrado: 'ff'
+======= generated_010 ============
+
+real	0m20.027s
+user	0m20.544s
+sys	0m0.072s
+partially correct (172) 1431 linhas certas de 1663. primeiro erro: linha 58 difere - operação: 'f otclmbeffsnikltwmivpxaoro', esperado: 'oltgbtsqwuwaqpuxxccmb', encontrado: 'o'
+======= generated_011 ============
+
+real	0m20.029s
+user	0m20.496s
+sys	0m0.128s
+partially correct (169) 1422 linhas certas de 1678. primeiro erro: linha 44 difere - operação: 'f ojdrubbwvculykgewqaqtop', esperado: 'oexftzvlusjqmsiddrbz', encontrado: 'o'
+======= generated_012 ============
+
+real	0m20.021s
+user	0m20.532s
+sys	0m0.084s
+partially correct (169) 890 linhas certas de 1048. primeiro erro: linha 27 difere - operação: 'c pssgvmslphqcbgsmdhzxxbbdtvkyunoqypicgdstxxgaivwwhkxkuwj', esperado: 'toseomgny', encontrado: 'qc'
+======= generated_013 ============
+
+real	0m20.032s
+user	0m20.528s
+sys	0m0.108s
+partially correct (175) 947 linhas certas de 1079. primeiro erro: linha 97 difere - operação: 'c aaajmnfnze', esperado: 'agvtxwmxwiwhgusnhzlvqyivqpzvxk...stpdqyqmzznpgdcyccvsfwowxmltchu', encontrado: 'aa'
+======= generated_014 ============
+
+real	0m20.032s
+user	0m20.476s
+sys	0m0.116s
+partially correct (170) 843 linhas certas de 990. primeiro erro: linha 20 difere - operação: 'c huoluktqqmyyxsjiy', esperado: 'lcvllxwcdjdjemzsfinjxoqeb', encontrado: 'jhbefkhdbwsfhqoebdwomekwhpgqpazljthoonndzgf'
+======= generated_015 ============
+
+real	0m20.026s
+user	0m20.452s
+sys	0m0.140s
+partially correct (168) 1361 linhas certas de 1615. primeiro erro: linha 53 difere - operação: 'f s', esperado: 'rxbscinjkjekuyqxtutr', encontrado: 'srj'
+======= generated_016 ============
+
+real	0m20.028s
+user	0m20.436s
+sys	0m0.132s
+partially correct (169) 1390 linhas certas de 1636. primeiro erro: linha 89 difere - operação: 'f uqbhpdutwa', esperado: 'uhaurlc', encontrado: 'u'
+======= generated_017 ============
+
+real	0m20.032s
+user	0m20.460s
+sys	0m0.168s
+partially correct (170) 1915 linhas certas de 2250. primeiro erro: linha 11 difere - operação: 'f h', esperado: 'a', encontrado: 'hcxva'
+======= generated_018 ============
+
+real	0m20.034s
+user	0m20.312s
+sys	0m0.136s
+partially correct (179) 357 linhas certas de 398. primeiro erro: linha 27 difere - operação: 'c epmwywhqthomphxmlzfyiligouxi...pbwpaptgajbbartobczukqpaejeccby', esperado: 'febbluyylmdeljofzxmobfyxsxticc...taqlfjceynatgxgmsjxkhwuebobkdku', encontrado: 'ftignkdfyojnvbvvuqnjkddwgeqbbc...ibqjogezroqfzyhfzioigkajeakymqr'
+======= generated_019 ============
+
+real	0m20.033s
+user	0m20.368s
+sys	0m0.084s
+partially correct (182) 372 linhas certas de 408. primeiro erro: linha 97 difere - operação: 'f xgaegywsczjymtugubbwduadfnls...aidrpgzkmcqnoipizgqeqfvymutewdg', esperado: 'xeyaxsrwvhhhbsofapwtjlvxdifrdb...bjnqpdkhsggmbgdocfyeldnsrixzbcb', encontrado: 'x'
