@@ -1,8 +1,8 @@
 
-rm: não foi possível remover 'cases/generated*': Arquivo ou diretório não encontrado
+rm: não foi possível remover “cases/generated*”: Arquivo ou diretório não encontrado
 mkdir: é impossível criar o diretório “cases”: Arquivo existe
-make: 'generator/generator' is up to date.
-g++     validator/validator.cpp   -o validator/validator
+g++ -std=c++11    generator/generator.cpp   -o generator/generator
+make: 'validator/validator' is up to date.
 Generating Case KMP_000
 Generating Case KMP_001
 Generating Case KMP_002

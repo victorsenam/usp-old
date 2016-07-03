@@ -1,0 +1,77 @@
+
+LOG DE COMPILAÇÃO E TESTE
+Existem dois métodos de compilação, eles estão indicados, se um falha eu parto pro outro. Então se quiser entender o porque não compilou, verifique todos.
+Segue também o log do corretor, pode ser interessante para descobrir a natureza de seus erros. A saída está trucada (não mostra todas as linha), se quiser ver todo o log, fale comigo
+
+CC......
+EP: Victor-Andreas-Sprengel_201368_assignsubmission_file_5.3.24
+NOTA: 97
+CORREÇÃO AUTOMÁTICA
+1173 Pontos (máximo: 1600, dos quais 400 são bônus)
+0 Testes com Falha no corretor (avise o monitor)
+2 Testes com Erro de Compilação (incui o bônus)
+
+rm: não foi possível remover “judge_out/”: Arquivo ou diretório não encontrado
+make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/5-3-24/tester/checker/checker' is up to date.
+======= Booyer_006 ============
+BooyerDoVictor.java:4: error: cannot find symbol
+        BoyerMoore ex = new BoyerMoore(StdIn.readString());
+        ^
+  symbol:   class BoyerMoore
+  location: class BooyerDoVictor
+BooyerDoVictor.java:4: error: cannot find symbol
+        BoyerMoore ex = new BoyerMoore(StdIn.readString());
+                            ^
+  symbol:   class BoyerMoore
+  location: class BooyerDoVictor
+2 errors
+Compilation Error on Booyer
+======= Booyer_007 ============
+BooyerDoVictor.java:4: error: cannot find symbol
+        BoyerMoore ex = new BoyerMoore(StdIn.readString());
+        ^
+  symbol:   class BoyerMoore
+  location: class BooyerDoVictor
+BooyerDoVictor.java:4: error: cannot find symbol
+        BoyerMoore ex = new BoyerMoore(StdIn.readString());
+                            ^
+  symbol:   class BoyerMoore
+  location: class BooyerDoVictor
+2 errors
+Compilation Error on Booyer
+======= Brute_003 ============
+
+real	0m0.185s
+user	0m0.224s
+sys	0m0.036s
+partially correct (190) 190 linhas certas de 200. primeiro erro: linha 109 difere - operação: 'bbabbbaaababbbbbabbaaaabaaaaab...baababbbbbaabbbababaabababaabaa', esperado: '11 19 24 56 65 91 ', encontrado: '11 19 24 56 65 91 92 93 94 '
+======= Brute_004 ============
+
+real	0m0.168s
+user	0m0.192s
+sys	0m0.028s
+partially correct (191) 191 linhas certas de 200. primeiro erro: linha 204 difere - operação: '', esperado: '0 10 20 ', encontrado: '0 10 20 21 22 23 24 25 26 27 28 29 '
+======= Brute_005 ============
+
+real	0m0.164s
+user	0m0.192s
+sys	0m0.028s
+partially correct (192) 192 linhas certas de 200. primeiro erro: linha 14 difere - operação: 'lnaxokoyyxlnaxokoyyxh', esperado: '22 32 50 ', encontrado: '22 32 50 51 52 53 54 55 56 57 58 59 '
+======= KMP_000 ============
+
+real	0m0.152s
+user	0m0.176s
+sys	0m0.028s
+partially correct (200) perfeito
+======= KMP_001 ============
+
+real	0m0.161s
+user	0m0.176s
+sys	0m0.036s
+partially correct (200) perfeito
+======= KMP_002 ============
+
+real	0m0.163s
+user	0m0.188s
+sys	0m0.028s
+partially correct (200) perfeito

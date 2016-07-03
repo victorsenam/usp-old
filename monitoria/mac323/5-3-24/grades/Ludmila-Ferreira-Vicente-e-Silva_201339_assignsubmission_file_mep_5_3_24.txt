@@ -1,0 +1,62 @@
+
+LOG DE COMPILAÇÃO E TESTE
+Existem dois métodos de compilação, eles estão indicados, se um falha eu parto pro outro. Então se quiser entender o porque não compilou, verifique todos.
+Segue também o log do corretor, pode ser interessante para descobrir a natureza de seus erros. A saída está trucada (não mostra todas as linha), se quiser ver todo o log, fale comigo
+
+........
+EP: Ludmila-Ferreira-Vicente-e-Silva_201339_assignsubmission_file_mep_5_3_24
+NOTA: 133
+CORREÇÃO AUTOMÁTICA
+1600 Pontos (máximo: 1600, dos quais 400 são bônus)
+0 Testes com Falha no corretor (avise o monitor)
+0 Testes com Erro de Compilação (incui o bônus)
+
+make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/5-3-24/tester/checker/checker' is up to date.
+======= Booyer_006 ============
+
+real	0m0.192s
+user	0m0.232s
+sys	0m0.052s
+partially correct (200) perfeito
+======= Booyer_007 ============
+
+real	0m0.752s
+user	0m0.880s
+sys	0m0.320s
+partially correct (200) perfeito
+======= Brute_003 ============
+
+real	0m0.192s
+user	0m0.252s
+sys	0m0.040s
+partially correct (200) perfeito
+======= Brute_004 ============
+
+real	0m0.189s
+user	0m0.208s
+sys	0m0.036s
+partially correct (200) perfeito
+======= Brute_005 ============
+
+real	0m0.251s
+user	0m0.212s
+sys	0m0.048s
+partially correct (200) perfeito
+======= KMP_000 ============
+
+real	0m0.170s
+user	0m0.184s
+sys	0m0.052s
+partially correct (200) perfeito
+======= KMP_001 ============
+
+real	0m0.362s
+user	0m0.280s
+sys	0m0.048s
+partially correct (200) perfeito
+======= KMP_002 ============
+
+real	0m0.219s
+user	0m0.272s
+sys	0m0.048s
+partially correct (200) perfeito

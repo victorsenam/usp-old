@@ -1,0 +1,107 @@
+
+LOG DE COMPILAÇÃO E TESTE
+Existem dois métodos de compilação, eles estão indicados, se um falha eu parto pro outro. Então se quiser entender o porque não compilou, verifique todos.
+Segue também o log do corretor, pode ser interessante para descobrir a natureza de seus erros. A saída está trucada (não mostra todas as linha), se quiser ver todo o log, fale comigo
+
+........
+EP: Rodrigo-Ribeiro-Santos-de-Carvalho_201335_assignsubmission_file_FindAll
+NOTA: 133
+CORREÇÃO AUTOMÁTICA
+1600 Pontos (máximo: 1600, dos quais 400 são bônus)
+0 Testes com Falha no corretor (avise o monitor)
+0 Testes com Erro de Compilação (incui o bônus)
+
+make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/5-3-24/tester/checker/checker' is up to date.
+======= Booyer_006 ============
+
+real	0m0.168s
+user	0m0.176s
+sys	0m0.036s
+partially correct (200) perfeito
+======= Booyer_007 ============
+
+real	0m0.340s
+user	0m0.584s
+sys	0m0.108s
+partially correct (200) perfeito
+======= Brute_003 ============
+./Brute.java:14: error: non-static method search(String,String,int) cannot be referenced from a static context
+        int r = search (pattern, s, 0);
+                ^
+./Brute.java:18: error: non-static method search(String,String,int) cannot be referenced from a static context
+            r = search (pattern, s, r + 1);
+                ^
+2 errors
+Exception in thread "main" java.lang.NoClassDefFoundError: Brute
+	at BruteDoVictor.main(BruteDoVictor.java:9)
+Caused by: java.lang.ClassNotFoundException: Brute
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 1 more
+
+real	0m0.140s
+user	0m0.128s
+sys	0m0.028s
+partially correct (200) perfeito
+======= Brute_004 ============
+./Brute.java:14: error: non-static method search(String,String,int) cannot be referenced from a static context
+        int r = search (pattern, s, 0);
+                ^
+./Brute.java:18: error: non-static method search(String,String,int) cannot be referenced from a static context
+            r = search (pattern, s, r + 1);
+                ^
+2 errors
+Exception in thread "main" java.lang.NoClassDefFoundError: Brute
+	at BruteDoVictor.main(BruteDoVictor.java:9)
+Caused by: java.lang.ClassNotFoundException: Brute
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 1 more
+
+real	0m0.130s
+user	0m0.132s
+sys	0m0.016s
+partially correct (200) perfeito
+======= Brute_005 ============
+./Brute.java:14: error: non-static method search(String,String,int) cannot be referenced from a static context
+        int r = search (pattern, s, 0);
+                ^
+./Brute.java:18: error: non-static method search(String,String,int) cannot be referenced from a static context
+            r = search (pattern, s, r + 1);
+                ^
+2 errors
+Exception in thread "main" java.lang.NoClassDefFoundError: Brute
+	at BruteDoVictor.main(BruteDoVictor.java:9)
+Caused by: java.lang.ClassNotFoundException: Brute
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 1 more
+
+real	0m0.140s
+user	0m0.124s
+sys	0m0.040s
+partially correct (200) perfeito
+======= KMP_000 ============
+
+real	0m0.153s
+user	0m0.192s
+sys	0m0.020s
+partially correct (200) perfeito
+======= KMP_001 ============
+
+real	0m0.167s
+user	0m0.184s
+sys	0m0.032s
+partially correct (200) perfeito
+======= KMP_002 ============
+
+real	0m0.166s
+user	0m0.184s
+sys	0m0.036s
+partially correct (200) perfeito

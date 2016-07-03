@@ -1,0 +1,66 @@
+
+LOG DE COMPILAÇÃO E TESTE
+Existem dois métodos de compilação, eles estão indicados, se um falha eu parto pro outro. Então se quiser entender o porque não compilou, verifique todos.
+Segue também o log do corretor, pode ser interessante para descobrir a natureza de seus erros. A saída está trucada (não mostra todas as linha), se quiser ver todo o log, fale comigo
+
+CC......
+EP: Mauricio-Tavares-Ozaki_201363_assignsubmission_file_findAll_7577427
+NOTA: 47
+CORREÇÃO AUTOMÁTICA
+566 Pontos (máximo: 1600, dos quais 400 são bônus)
+0 Testes com Falha no corretor (avise o monitor)
+2 Testes com Erro de Compilação (incui o bônus)
+
+make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/5-3-24/tester/checker/checker' is up to date.
+======= Booyer_006 ============
+BooyerDoVictor.java:10: error: cannot find symbol
+            for (int i : ex.findAll(StdIn.readString()))
+                           ^
+  symbol:   method findAll(String)
+  location: variable ex of type BoyerMoore
+1 error
+Compilation Error on Booyer
+======= Booyer_007 ============
+BooyerDoVictor.java:10: error: cannot find symbol
+            for (int i : ex.findAll(StdIn.readString()))
+                           ^
+  symbol:   method findAll(String)
+  location: variable ex of type BoyerMoore
+1 error
+Compilation Error on Booyer
+======= Brute_003 ============
+
+real	0m0.170s
+user	0m0.164s
+sys	0m0.052s
+partially correct (26) 26 linhas certas de 200. primeiro erro: linha 7 difere - operação: 'bbbbabaabbababbaaabbbbababbaabb', esperado: '19 ', encontrado: ''
+======= Brute_004 ============
+
+real	0m0.144s
+user	0m0.164s
+sys	0m0.028s
+partially correct (54) 54 linhas certas de 200. primeiro erro: linha 6 difere - operação: 'bahbcajfjcdahbcajfjcdahbcajfjc...bahbcajfjcdahbccahbcajfjcdahbba', esperado: '14 27 37 47 66 ', encontrado: ''
+======= Brute_005 ============
+
+real	0m0.154s
+user	0m0.168s
+sys	0m0.028s
+partially correct (39) 39 linhas certas de 200. primeiro erro: linha 1 difere - operação: '200', esperado: '27 ', encontrado: ''
+======= KMP_000 ============
+
+real	0m0.152s
+user	0m0.160s
+sys	0m0.044s
+partially correct (63) 63 linhas certas de 200. primeiro erro: linha 1 difere - operação: '200', esperado: '0 8 25 ', encontrado: ''
+======= KMP_001 ============
+
+real	0m0.168s
+user	0m0.180s
+sys	0m0.044s
+partially correct (187) 187 linhas certas de 199. primeiro erro: linha 16 difere - operação: 'chonfyuapowrdvrjwugldwvztchonf...onfrchonfyuapowrdvrjwugldwvzofc', esperado: '25 ', encontrado: ''
+======= KMP_002 ============
+
+real	0m0.165s
+user	0m0.180s
+sys	0m0.040s
+partially correct (197) 197 linhas certas de 199. primeiro erro: linha 136 difere - operação: 'bacbbacdcabdddbdadaa', esperado: '51 ', encontrado: ''

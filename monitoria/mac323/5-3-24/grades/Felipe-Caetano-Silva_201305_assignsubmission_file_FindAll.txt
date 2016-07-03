@@ -1,0 +1,137 @@
+[-10] Errou a assinatura de findAll em KMP
+
+LOG DE COMPILAÇÃO E TESTE
+Existem dois métodos de compilação, eles estão indicados, se um falha eu parto pro outro. Então se quiser entender o porque não compilou, verifique todos.
+Segue também o log do corretor, pode ser interessante para descobrir a natureza de seus erros. A saída está trucada (não mostra todas as linha), se quiser ver todo o log, fale comigo
+
+CC......
+EP: Felipe-Caetano-Silva_201305_assignsubmission_file_FindAll
+NOTA: 100
+CORREÇÃO AUTOMÁTICA
+1200 Pontos (máximo: 1600, dos quais 400 são bônus)
+0 Testes com Falha no corretor (avise o monitor)
+2 Testes com Erro de Compilação (incui o bônus)
+
+make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/5-3-24/tester/checker/checker' is up to date.
+======= Booyer_006 ============
+BooyerDoVictor.java:4: error: cannot find symbol
+        BoyerMoore ex = new BoyerMoore(StdIn.readString());
+        ^
+  symbol:   class BoyerMoore
+  location: class BooyerDoVictor
+BooyerDoVictor.java:4: error: cannot find symbol
+        BoyerMoore ex = new BoyerMoore(StdIn.readString());
+                            ^
+  symbol:   class BoyerMoore
+  location: class BooyerDoVictor
+2 errors
+Compilation Error on Booyer
+======= Booyer_007 ============
+BooyerDoVictor.java:4: error: cannot find symbol
+        BoyerMoore ex = new BoyerMoore(StdIn.readString());
+        ^
+  symbol:   class BoyerMoore
+  location: class BooyerDoVictor
+BooyerDoVictor.java:4: error: cannot find symbol
+        BoyerMoore ex = new BoyerMoore(StdIn.readString());
+                            ^
+  symbol:   class BoyerMoore
+  location: class BooyerDoVictor
+2 errors
+Compilation Error on Booyer
+======= Brute_003 ============
+
+real	0m0.198s
+user	0m0.224s
+sys	0m0.032s
+partially correct (200) perfeito
+======= Brute_004 ============
+
+real	0m0.172s
+user	0m0.200s
+sys	0m0.016s
+partially correct (200) perfeito
+======= Brute_005 ============
+
+real	0m0.214s
+user	0m0.192s
+sys	0m0.024s
+partially correct (200) perfeito
+======= KMP_000 ============
+./KMP.java:135: error: cannot find symbol
+        int M = pattern.length();
+                       ^
+  symbol:   method length()
+  location: variable pattern of type char[]
+./KMP.java:159: error: method findAll in class KMP cannot be applied to given types;
+        Iterable<Integer> iterate = kmp1.findAll(txt, pat);
+                                        ^
+  required: String
+  found: String,String
+  reason: actual and formal argument lists differ in length
+2 errors
+Exception in thread "main" java.lang.NoClassDefFoundError: KMP
+	at KMPDoVictor.main(KMPDoVictor.java:4)
+Caused by: java.lang.ClassNotFoundException: KMP
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 1 more
+
+real	0m0.103s
+user	0m0.084s
+sys	0m0.020s
+partially correct (200) perfeito
+======= KMP_001 ============
+./KMP.java:135: error: cannot find symbol
+        int M = pattern.length();
+                       ^
+  symbol:   method length()
+  location: variable pattern of type char[]
+./KMP.java:159: error: method findAll in class KMP cannot be applied to given types;
+        Iterable<Integer> iterate = kmp1.findAll(txt, pat);
+                                        ^
+  required: String
+  found: String,String
+  reason: actual and formal argument lists differ in length
+2 errors
+Exception in thread "main" java.lang.NoClassDefFoundError: KMP
+	at KMPDoVictor.main(KMPDoVictor.java:4)
+Caused by: java.lang.ClassNotFoundException: KMP
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 1 more
+
+real	0m0.109s
+user	0m0.092s
+sys	0m0.008s
+partially correct (200) perfeito
+======= KMP_002 ============
+./KMP.java:135: error: cannot find symbol
+        int M = pattern.length();
+                       ^
+  symbol:   method length()
+  location: variable pattern of type char[]
+./KMP.java:159: error: method findAll in class KMP cannot be applied to given types;
+        Iterable<Integer> iterate = kmp1.findAll(txt, pat);
+                                        ^
+  required: String
+  found: String,String
+  reason: actual and formal argument lists differ in length
+2 errors
+Exception in thread "main" java.lang.NoClassDefFoundError: KMP
+	at KMPDoVictor.main(KMPDoVictor.java:4)
+Caused by: java.lang.ClassNotFoundException: KMP
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 1 more
+
+real	0m0.116s
+user	0m0.076s
+sys	0m0.024s
+partially correct (200) perfeito

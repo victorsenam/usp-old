@@ -1,0 +1,295 @@
+
+LOG DE COMPILAÇÃO E TESTE
+Existem dois métodos de compilação, eles estão indicados, se um falha eu parto pro outro. Então se quiser entender o porque não compilou, verifique todos.
+Segue também o log do corretor, pode ser interessante para descobrir a natureza de seus erros. A saída está trucada (não mostra todas as linha), se quiser ver todo o log, fale comigo
+
+........
+EP: Carybé-Gonçalves-Silva_201336_assignsubmission_file_Creative-Problem-5.3.24-Find-all-occurrences-
+NOTA: 133
+CORREÇÃO AUTOMÁTICA
+1600 Pontos (máximo: 1600, dos quais 400 são bônus)
+0 Testes com Falha no corretor (avise o monitor)
+0 Testes com Erro de Compilação (incui o bônus)
+
+rm: não foi possível remover “judge_out/”: Arquivo ou diretório não encontrado
+make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/5-3-24/tester/checker/checker' is up to date.
+======= Booyer_006 ============
+./BoyerMoore.java:90: error: cannot find symbol
+		Bag<Integer>offsets = new Bag<Integer>();
+		^
+  symbol:   class Bag
+  location: class BoyerMoore
+./BoyerMoore.java:90: error: cannot find symbol
+		Bag<Integer>offsets = new Bag<Integer>();
+		                          ^
+  symbol:   class Bag
+  location: class BoyerMoore
+./BoyerMoore.java:126: error: cannot find symbol
+		Bag<Integer>offsets = new Bag<Integer>();
+		^
+  symbol:   class Bag
+  location: class BoyerMoore
+./BoyerMoore.java:126: error: cannot find symbol
+		Bag<Integer>offsets = new Bag<Integer>();
+		                          ^
+  symbol:   class Bag
+  location: class BoyerMoore
+4 errors
+Exception in thread "main" java.lang.NoClassDefFoundError: BoyerMoore
+	at BooyerDoVictor.main(BooyerDoVictor.java:4)
+Caused by: java.lang.ClassNotFoundException: BoyerMoore
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 1 more
+
+real	0m0.101s
+user	0m0.072s
+sys	0m0.032s
+partially correct (200) perfeito
+======= Booyer_007 ============
+./BoyerMoore.java:90: error: cannot find symbol
+		Bag<Integer>offsets = new Bag<Integer>();
+		^
+  symbol:   class Bag
+  location: class BoyerMoore
+./BoyerMoore.java:90: error: cannot find symbol
+		Bag<Integer>offsets = new Bag<Integer>();
+		                          ^
+  symbol:   class Bag
+  location: class BoyerMoore
+./BoyerMoore.java:126: error: cannot find symbol
+		Bag<Integer>offsets = new Bag<Integer>();
+		^
+  symbol:   class Bag
+  location: class BoyerMoore
+./BoyerMoore.java:126: error: cannot find symbol
+		Bag<Integer>offsets = new Bag<Integer>();
+		                          ^
+  symbol:   class Bag
+  location: class BoyerMoore
+4 errors
+Exception in thread "main" java.lang.NoClassDefFoundError: BoyerMoore
+	at BooyerDoVictor.main(BooyerDoVictor.java:4)
+Caused by: java.lang.ClassNotFoundException: BoyerMoore
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 1 more
+
+real	0m0.100s
+user	0m0.084s
+sys	0m0.020s
+partially correct (200) perfeito
+======= Brute_003 ============
+./Brute.java:73: error: cannot find symbol
+		Bag<Integer>offsets = new Bag<Integer>();
+		^
+  symbol:   class Bag
+  location: class Brute
+./Brute.java:73: error: cannot find symbol
+		Bag<Integer>offsets = new Bag<Integer>();
+		                          ^
+  symbol:   class Bag
+  location: class Brute
+./Brute.java:123: error: cannot find symbol
+		Bag<Integer>offsets = new Bag<Integer>();
+		^
+  symbol:   class Bag
+  location: class Brute
+./Brute.java:123: error: cannot find symbol
+		Bag<Integer>offsets = new Bag<Integer>();
+		                          ^
+  symbol:   class Bag
+  location: class Brute
+4 errors
+Exception in thread "main" java.lang.NoClassDefFoundError: Brute
+	at BruteDoVictor.main(BruteDoVictor.java:9)
+Caused by: java.lang.ClassNotFoundException: Brute
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 1 more
+
+real	0m0.133s
+user	0m0.124s
+sys	0m0.028s
+partially correct (200) perfeito
+======= Brute_004 ============
+./Brute.java:73: error: cannot find symbol
+		Bag<Integer>offsets = new Bag<Integer>();
+		^
+  symbol:   class Bag
+  location: class Brute
+./Brute.java:73: error: cannot find symbol
+		Bag<Integer>offsets = new Bag<Integer>();
+		                          ^
+  symbol:   class Bag
+  location: class Brute
+./Brute.java:123: error: cannot find symbol
+		Bag<Integer>offsets = new Bag<Integer>();
+		^
+  symbol:   class Bag
+  location: class Brute
+./Brute.java:123: error: cannot find symbol
+		Bag<Integer>offsets = new Bag<Integer>();
+		                          ^
+  symbol:   class Bag
+  location: class Brute
+4 errors
+Exception in thread "main" java.lang.NoClassDefFoundError: Brute
+	at BruteDoVictor.main(BruteDoVictor.java:9)
+Caused by: java.lang.ClassNotFoundException: Brute
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 1 more
+
+real	0m0.134s
+user	0m0.136s
+sys	0m0.020s
+partially correct (200) perfeito
+======= Brute_005 ============
+./Brute.java:73: error: cannot find symbol
+		Bag<Integer>offsets = new Bag<Integer>();
+		^
+  symbol:   class Bag
+  location: class Brute
+./Brute.java:73: error: cannot find symbol
+		Bag<Integer>offsets = new Bag<Integer>();
+		                          ^
+  symbol:   class Bag
+  location: class Brute
+./Brute.java:123: error: cannot find symbol
+		Bag<Integer>offsets = new Bag<Integer>();
+		^
+  symbol:   class Bag
+  location: class Brute
+./Brute.java:123: error: cannot find symbol
+		Bag<Integer>offsets = new Bag<Integer>();
+		                          ^
+  symbol:   class Bag
+  location: class Brute
+4 errors
+Exception in thread "main" java.lang.NoClassDefFoundError: Brute
+	at BruteDoVictor.main(BruteDoVictor.java:9)
+Caused by: java.lang.ClassNotFoundException: Brute
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 1 more
+
+real	0m0.131s
+user	0m0.140s
+sys	0m0.012s
+partially correct (200) perfeito
+======= KMP_000 ============
+./KMP.java:94: error: cannot find symbol
+		Bag<Integer>offsets = new Bag<Integer>();
+		^
+  symbol:   class Bag
+  location: class KMP
+./KMP.java:94: error: cannot find symbol
+		Bag<Integer>offsets = new Bag<Integer>();
+		                          ^
+  symbol:   class Bag
+  location: class KMP
+./KMP.java:125: error: cannot find symbol
+		Bag<Integer>offsets = new Bag<Integer>();
+		^
+  symbol:   class Bag
+  location: class KMP
+./KMP.java:125: error: cannot find symbol
+		Bag<Integer>offsets = new Bag<Integer>();
+		                          ^
+  symbol:   class Bag
+  location: class KMP
+4 errors
+Exception in thread "main" java.lang.NoClassDefFoundError: KMP
+	at KMPDoVictor.main(KMPDoVictor.java:4)
+Caused by: java.lang.ClassNotFoundException: KMP
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 1 more
+
+real	0m0.101s
+user	0m0.096s
+sys	0m0.008s
+partially correct (200) perfeito
+======= KMP_001 ============
+./KMP.java:94: error: cannot find symbol
+		Bag<Integer>offsets = new Bag<Integer>();
+		^
+  symbol:   class Bag
+  location: class KMP
+./KMP.java:94: error: cannot find symbol
+		Bag<Integer>offsets = new Bag<Integer>();
+		                          ^
+  symbol:   class Bag
+  location: class KMP
+./KMP.java:125: error: cannot find symbol
+		Bag<Integer>offsets = new Bag<Integer>();
+		^
+  symbol:   class Bag
+  location: class KMP
+./KMP.java:125: error: cannot find symbol
+		Bag<Integer>offsets = new Bag<Integer>();
+		                          ^
+  symbol:   class Bag
+  location: class KMP
+4 errors
+Exception in thread "main" java.lang.NoClassDefFoundError: KMP
+	at KMPDoVictor.main(KMPDoVictor.java:4)
+Caused by: java.lang.ClassNotFoundException: KMP
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 1 more
+
+real	0m0.099s
+user	0m0.088s
+sys	0m0.016s
+partially correct (200) perfeito
+======= KMP_002 ============
+./KMP.java:94: error: cannot find symbol
+		Bag<Integer>offsets = new Bag<Integer>();
+		^
+  symbol:   class Bag
+  location: class KMP
+./KMP.java:94: error: cannot find symbol
+		Bag<Integer>offsets = new Bag<Integer>();
+		                          ^
+  symbol:   class Bag
+  location: class KMP
+./KMP.java:125: error: cannot find symbol
+		Bag<Integer>offsets = new Bag<Integer>();
+		^
+  symbol:   class Bag
+  location: class KMP
+./KMP.java:125: error: cannot find symbol
+		Bag<Integer>offsets = new Bag<Integer>();
+		                          ^
+  symbol:   class Bag
+  location: class KMP
+4 errors
+Exception in thread "main" java.lang.NoClassDefFoundError: KMP
+	at KMPDoVictor.main(KMPDoVictor.java:4)
+Caused by: java.lang.ClassNotFoundException: KMP
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 1 more
+
+real	0m0.095s
+user	0m0.068s
+sys	0m0.032s
+partially correct (200) perfeito

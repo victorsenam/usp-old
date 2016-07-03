@@ -1,0 +1,95 @@
+
+LOG DE COMPILAÇÃO E TESTE
+Existem dois métodos de compilação, eles estão indicados, se um falha eu parto pro outro. Então se quiser entender o porque não compilou, verifique todos.
+Segue também o log do corretor, pode ser interessante para descobrir a natureza de seus erros. A saída está trucada (não mostra todas as linha), se quiser ver todo o log, fale comigo
+
+........
+EP: Luís-Felipe-Melo-Costa-Silva_201297_assignsubmission_file_5-3-24
+NOTA: 133
+CORREÇÃO AUTOMÁTICA
+1600 Pontos (máximo: 1600, dos quais 400 são bônus)
+0 Testes com Falha no corretor (avise o monitor)
+0 Testes com Erro de Compilação (incui o bônus)
+
+rm: não foi possível remover “judge_out/”: Arquivo ou diretório não encontrado
+make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/5-3-24/tester/checker/checker' is up to date.
+======= Booyer_006 ============
+Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(String.java:1967)
+	at BoyerMoore.findAll(BoyerMoore.java:102)
+	at BooyerDoVictor.main(BooyerDoVictor.java:10)
+
+real	0m0.136s
+user	0m0.124s
+sys	0m0.028s
+partially correct (200) perfeito
+======= Booyer_007 ============
+Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(String.java:1967)
+	at BoyerMoore.findAll(BoyerMoore.java:102)
+	at BooyerDoVictor.main(BooyerDoVictor.java:10)
+
+real	0m0.134s
+user	0m0.132s
+sys	0m0.024s
+partially correct (200) perfeito
+======= Brute_003 ============
+Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(String.java:1967)
+	at Brute.findAll(Brute.java:47)
+	at BruteDoVictor.main(BruteDoVictor.java:9)
+
+real	0m0.133s
+user	0m0.132s
+sys	0m0.020s
+partially correct (200) perfeito
+======= Brute_004 ============
+Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(String.java:1967)
+	at Brute.findAll(Brute.java:47)
+	at BruteDoVictor.main(BruteDoVictor.java:9)
+
+real	0m0.131s
+user	0m0.124s
+sys	0m0.028s
+partially correct (200) perfeito
+======= Brute_005 ============
+Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(String.java:1967)
+	at Brute.findAll(Brute.java:47)
+	at BruteDoVictor.main(BruteDoVictor.java:9)
+
+real	0m0.135s
+user	0m0.132s
+sys	0m0.020s
+partially correct (200) perfeito
+======= KMP_000 ============
+Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(String.java:1967)
+	at KMP.findAll(KMP.java:67)
+	at KMPDoVictor.main(KMPDoVictor.java:10)
+
+real	0m0.132s
+user	0m0.120s
+sys	0m0.036s
+partially correct (200) perfeito
+======= KMP_001 ============
+Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(String.java:1967)
+	at KMP.findAll(KMP.java:67)
+	at KMPDoVictor.main(KMPDoVictor.java:10)
+
+real	0m0.135s
+user	0m0.124s
+sys	0m0.032s
+partially correct (200) perfeito
+======= KMP_002 ============
+Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(String.java:1967)
+	at KMP.findAll(KMP.java:67)
+	at KMPDoVictor.main(KMPDoVictor.java:10)
+
+real	0m0.137s
+user	0m0.112s
+sys	0m0.052s
+partially correct (200) perfeito

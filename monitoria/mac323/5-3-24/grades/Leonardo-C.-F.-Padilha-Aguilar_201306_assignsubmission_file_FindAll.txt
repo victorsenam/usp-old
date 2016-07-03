@@ -1,0 +1,63 @@
+
+LOG DE COMPILAÇÃO E TESTE
+Existem dois métodos de compilação, eles estão indicados, se um falha eu parto pro outro. Então se quiser entender o porque não compilou, verifique todos.
+Segue também o log do corretor, pode ser interessante para descobrir a natureza de seus erros. A saída está trucada (não mostra todas as linha), se quiser ver todo o log, fale comigo
+
+........
+EP: Leonardo-C.-F.-Padilha-Aguilar_201306_assignsubmission_file_FindAll
+NOTA: 89
+CORREÇÃO AUTOMÁTICA
+1078 Pontos (máximo: 1600, dos quais 400 são bônus)
+0 Testes com Falha no corretor (avise o monitor)
+0 Testes com Erro de Compilação (incui o bônus)
+
+rm: não foi possível remover “judge_out/”: Arquivo ou diretório não encontrado
+make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/5-3-24/tester/checker/checker' is up to date.
+======= Booyer_006 ============
+
+real	0m0.156s
+user	0m0.176s
+sys	0m0.032s
+partially correct (200) perfeito
+======= Booyer_007 ============
+
+real	0m0.346s
+user	0m0.616s
+sys	0m0.112s
+partially correct (200) perfeito
+======= Brute_003 ============
+
+real	0m0.162s
+user	0m0.168s
+sys	0m0.036s
+partially correct (24) 24 linhas certas de 200. primeiro erro: linha 7 difere - operação: 'bbbbabaabbababbaaabbbbababbaabb', esperado: '19 ', encontrado: ''
+======= Brute_004 ============
+
+real	0m0.150s
+user	0m0.160s
+sys	0m0.032s
+partially correct (29) 29 linhas certas de 200. primeiro erro: linha 6 difere - operação: 'bahbcajfjcdahbcajfjcdahbcajfjc...bahbcajfjcdahbccahbcajfjcdahbba', esperado: '14 27 37 47 66 ', encontrado: ''
+======= Brute_005 ============
+
+real	0m0.148s
+user	0m0.176s
+sys	0m0.016s
+partially correct (25) 25 linhas certas de 200. primeiro erro: linha 1 difere - operação: '200', esperado: '27 ', encontrado: ''
+======= KMP_000 ============
+
+real	0m0.151s
+user	0m0.184s
+sys	0m0.024s
+partially correct (200) perfeito
+======= KMP_001 ============
+
+real	0m0.162s
+user	0m0.188s
+sys	0m0.024s
+partially correct (200) perfeito
+======= KMP_002 ============
+
+real	0m0.166s
+user	0m0.196s
+sys	0m0.024s
+partially correct (200) perfeito

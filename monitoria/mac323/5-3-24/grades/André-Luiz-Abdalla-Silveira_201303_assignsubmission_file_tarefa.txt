@@ -1,0 +1,63 @@
+
+LOG DE COMPILAÇÃO E TESTE
+Existem dois métodos de compilação, eles estão indicados, se um falha eu parto pro outro. Então se quiser entender o porque não compilou, verifique todos.
+Segue também o log do corretor, pode ser interessante para descobrir a natureza de seus erros. A saída está trucada (não mostra todas as linha), se quiser ver todo o log, fale comigo
+
+........
+EP: André-Luiz-Abdalla-Silveira_201303_assignsubmission_file_tarefa
+NOTA: 133
+CORREÇÃO AUTOMÁTICA
+1600 Pontos (máximo: 1600, dos quais 400 são bônus)
+0 Testes com Falha no corretor (avise o monitor)
+0 Testes com Erro de Compilação (incui o bônus)
+
+rm: não foi possível remover “judge_out/”: Arquivo ou diretório não encontrado
+make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/5-3-24/tester/checker/checker' is up to date.
+======= Booyer_006 ============
+
+real	0m0.169s
+user	0m0.192s
+sys	0m0.024s
+partially correct (200) perfeito
+======= Booyer_007 ============
+
+real	0m0.340s
+user	0m0.580s
+sys	0m0.116s
+partially correct (200) perfeito
+======= Brute_003 ============
+
+real	0m0.180s
+user	0m0.216s
+sys	0m0.040s
+partially correct (200) perfeito
+======= Brute_004 ============
+
+real	0m0.170s
+user	0m0.188s
+sys	0m0.032s
+partially correct (200) perfeito
+======= Brute_005 ============
+
+real	0m0.176s
+user	0m0.188s
+sys	0m0.040s
+partially correct (200) perfeito
+======= KMP_000 ============
+
+real	0m0.167s
+user	0m0.196s
+sys	0m0.024s
+partially correct (200) perfeito
+======= KMP_001 ============
+
+real	0m0.165s
+user	0m0.180s
+sys	0m0.032s
+partially correct (200) perfeito
+======= KMP_002 ============
+
+real	0m0.172s
+user	0m0.184s
+sys	0m0.040s
+partially correct (200) perfeito
