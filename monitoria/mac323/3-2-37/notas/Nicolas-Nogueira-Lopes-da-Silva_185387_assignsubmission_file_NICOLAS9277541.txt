@@ -1,6 +1,0 @@
-CORREÇÃO AUTOMÁTICA
-Quantidade de Testes | Veredito
-10 | OK
-15 | Tempo de Execução Excedido
-75 | Resposta Errada
-0 | Erro de Execução

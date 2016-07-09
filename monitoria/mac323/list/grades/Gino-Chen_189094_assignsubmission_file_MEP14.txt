@@ -1,7 +1,0 @@
-Erros (checar https://gist.github.com/victorsenam/87bc44496148fcc477ae126ec4b6c5a3 para explicações)
-[-10] Item(): 1
-[-10] iterator(): 4
-
-[-10] Ok, você parece ter alterado bastante a BST para usá-la no exercício. Isso causou alguns erros que eu não consegui debugar. O programa falhou em vários dos meus testes, desculpa por não conseguir debugar, se quiser aparece numa monitoria e a gente vê isso direito.
-
-Nota: 70

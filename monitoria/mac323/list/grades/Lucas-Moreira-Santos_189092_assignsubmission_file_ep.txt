@@ -1,7 +1,0 @@
-Erros (checar https://gist.github.com/victorsenam/87bc44496148fcc477ae126ec4b6c5a3 para explicações)
-[-10] Item(): 1
-[-10] iterator(): 4
-
-Você tinha feito alguma alteração estranha no RedBlackBST? Se sim, ela bugou o delete de um jeito que eu não entendi, demorei muito pra conseguir descobrir que estava lá o erro. Simplesmente apaguei a RedBlackBST que você mandou e usei a do livro, se você fez alguma alteração lá, me avisa a gente conversa e eu recorrijo.
-
-Nota: 80

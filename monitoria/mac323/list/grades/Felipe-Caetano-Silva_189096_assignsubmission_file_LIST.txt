@@ -1,7 +1,0 @@
-Erros (checar https://gist.github.com/victorsenam/87bc44496148fcc477ae126ec4b6c5a3 para explicações)
-[-10] Item(): 1
-[-10] add(int, Item): 3 (dois erros que se encaixam nesse, busque investigar como fazer isso de um jeito melhor)
-
-Não coloque os nomes da classe diferente do pedido, por favor
-
-Nota: 80

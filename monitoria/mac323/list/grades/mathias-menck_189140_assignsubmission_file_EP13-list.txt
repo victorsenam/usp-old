@@ -1,4 +1,0 @@
-Erros (checar https://gist.github.com/victorsenam/87bc44496148fcc477ae126ec4b6c5a3 para explicações)
-[-10] Item(): 1
-
-Nota: 90
