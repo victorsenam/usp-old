@@ -1,0 +1,26 @@
+
+http://www.ime.usp.br/~yoshi/2015i/mac323/html/exx/EPRec.html
+
+Além dos grafos mencionados naquele enunciado, você deve permitir ao
+usuário especificar subgrafos da WWW, como segue.
+
+Lembre-se do exercício "Busca de links em páginas WWW":
+
+http://paca.ime.usp.br/mod/assign/view.php?id=31874
+
+WebCrawlerNEW.java daquele exercício (bônus) lista apenas as URLs
+encontradas.  Em sua nova versão de WebCrawlerNEW.java, você deve
+montar o grafo dirigido definido por essas URLs (cada link deve ser
+representado por um arco em seu grafo dirigido).
+
+Seu programa deve ser capaz de executar o PageRank nos grafos que seu
+WebCrawlerNEW gera.
+
+Prepare uma boa documentação para seu EPRec, para que os monitores não
+tenham nenhuma dificuldade de entender como executar seus programas.
+Não deixe de entregar execuções que ilustram bem a correção de sua
+implementação do algoritmo de PageRank.
+
+Em algum momento crio o local de entrega no Paca.  Vocês devem
+entregar seu sistema até o dia 26/7 (a data de entrega das notas é
+29/7).

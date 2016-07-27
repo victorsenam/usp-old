@@ -1,0 +1,62 @@
+/* **************************************************************** */
+/* MAC0323 - Algoritmos e Estruturas de Dados II                    */
+/* Aluna: Ludmila Ferreira Vicente e Silva                          */
+/* NUSP: 7557136                                                    */
+/*                                                                  */
+/* Exercício-Programa de Recuperação                                */
+/* Passeios aleatórios, PageRank e matrizes esparsas                */
+/* Data: 26/07/2016                                                 */
+/* **************************************************************** */
+
+
+Esse EP tem muitas classes, algumas delas não foram utilizadas explicitamente por que não tive tempo, mas não podia tirá-las por conta de dependências sutis em outras classes. Fiz uma breve documentação para as classes criadas para o PageRank então definidas no fim desse relatório. As classes do site do livro-text, não tem uma documentação minha pois elas já tem uma documentação própria; 
+
+
+
+Para compilar:
+	$ javac-algs4 EP.java
+Para executar:
+	$ java-algs4 EP <arquivo_de_entrada> [argumentos]
+
+Possíveis argumentos:
+	-a <VAL>: Determina valor de alpha igual a VAL. Default: 0.95;
+	-o: Determina que o tipo do arquivo de entrada é OSM, usando <xml_file>;
+		 como arquivo .xml de suporte para esse tipo de entrada.
+	-g <xml_file>: Roda o PageRank somente na maior SCC;
+	-v <VAL>: Determina o tipo de saida do programa:
+		 <VAL> == 1: Impressão da distribuição limite toda (Default);
+		 <VAL> == 2: Impressão da distribuição limite ordenada;
+		 <VAL> == 3: Apresentação do resultado na interface gráfica
+	-h: Imprime essa mensagem.
+
+
+Para calcular a distribuição, criamos a matriz de transição já a partir do grafo. Na classe BuildFullSparseMatrix, lemos o arquivo de entrada no modelo encontrado do no link https://snap.stanford.edu/data/index.html, como por exemplo o web.Google.txt, ou o arquivo da lista de adjacencia do formato osm, e a partir das arestas representadas nos arquivos já crio a matriz esparsa de transição. A ideia por trás da matriz é: inserir cada aresta na matriz esparsa e tomar o cuidado de contar quantas vezes cada aresta se repete e inserir esse valor na matriz. Feito isso normaliza-se as linhas da matriz e assim obtemos a matriz de transição. Para encontrar a maior componente fortemente conexa, na classe BuildSCCSparseMatrix foi necessário criar um digrafo, a partir dos arquivos que representam a adjacência, no qual apliquei o algortimo de Tarjan e depois contei qual era a maior componente. Copiei essa componente para outro grafo de onde retirei a matriz esparsa do maior componente fortemente conexo.
+
+Calculadas as matrizes de transição, podemos aplicar o de algoritmo PageRank.
+A ideia principal é que se M é a matriz de transição, G é a matriz de links e A a matriz de probabilidades de saltar de um vértice para o outro, temos que M = G + A. Podemos escrever vM = vG + vA. vG é uma matriz esparsa, logo seu cálculo e uso são rápidos. Para a matriz A, temos que A = ((1-alpha)/n)*e, onde e é um vetor transposto que todos seus elementos são 1s. Então vA = ve = 1, por que A é uma distribuição de probabilidade e o produto interno dela com um vetor de 1s é equivalente a uma soma de A, que dá 1. Assim, o cálculo da distribuição é rápido.
+
+Para a parte gráfica do osm, o enunciado falar de do exercício Creative Exercise 19 na página http://introcs.cs.princeton.edu/java/16pagerank/, porém esse exercício não existe lá e eu vi isso no último dia. A página parece ter sido atualizada no último dia 17 e não consegui saber qual era o exercício por que não encontrei o livro e a biblioteca do ime está fechada :(. Então assumi que poderia plotar o grafo com vértices nas posições do mapa, mas que seus tamanho variassem de acordo com seu rank, porém não houve tempo hábil para que eu fizesse isso.
+
+
+Obs.: Testei este EP em arquivos como o web-Google.txt, o tiny2.txt, o tiny3.txt e o USP.adjlist e map.osm-USP.xml
+
+
+Breve documentação das classes
+
+As classes criadas para esse EP foram: 
+
+	- BuildFullSparseMatrix
+		Nessa classe é criada a matriz esparsa de transição do grafo inteiro. Nela os arquivos de entrada são parseados e cria-se uma matriz de transição a partir das arestas definidas.
+
+	- BuildSCCSparseMatrix
+		Nessa classe é criada a matriz esparsa de transição da componente fortemente conexa do grafo. Nela um grafo é montado a partir dos arquivos de entrada, aplica-se o algoritmo de Tarjan nesse grafo e se encontra a maior componente fortemente conexa, que é copiada para outro grafo. A partir desse último grafo construímos a matriz esparsa de transição.
+
+	- PageRanker
+		Aqui finalmente executamos o algoritmo de multiplicar os ranks pela matrix de transição, inumeras vezes até que a distância entre o rank anterior e o atual esteja dentro de uma margem de tolerância, pois considero que a distribuição está convergindo para esse valor, ou que o número de iterações não ultrasse um valor fixado.
+
+
+As classes como SymbolGeoEWDigraph, GeoInto, Location são classes que foram criadas para o meu EP04, de quando cursei a matéria em 2015, os coloquei aqui pois tinha os arquivos osm parseados e eu poderia tentar aproveitar minhas funções para plotar, porém, como foi dito, não tive tempo de plotar, mas não quis tirá-las daí por receio de bagunçar alguma outra classe.
+As outras classes pertencem ao livro-texto e, como já foi dito, têm documentação própria.
+
+
+
