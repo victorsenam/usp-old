@@ -34,6 +34,11 @@ Considere o problema $\textsc{Escalonamento}$. Faça uma análise mais rigorosa 
 \end{ex}
 
 \begin{proof}[Resposta]
+Considere uma instância de $\textsc{Escalonamento}$ com $m \geq 1$ máquinas e $n \geq 1$ tarefas tempos $t_i \forall 1 \leq i \leq n$. Seja $t^*$ a resposta ótima da instância e $\bar{t}$ a resposta para a instância obtida pelo algoritmo $\textsc{Escalonamento-Graham}$. Seja também $k$ o índice da ultima tarefa realizada pelo algoritmo ($t_k$ é, então, seu tempo).  
+Temos, então, que no momento $\bar{t} - t_k$, todas as máquinas estão ocupadas, assim, podemos concluir que $\sum\limits_{i=1}^{n}t_i \leq (\bar{t} - t_k)*m$, logo
+$$(\sum\limits_{i=1}^{n}t_i)/m + t_k = \bar{t}$$.
+Sabemos, também que $\sum\limits_{i=1}^{n}t_i/m \leq t^*$ e $t_k \leq t^*$, logo
+$$\bar{t} \leq t^* + 
 \end{proof}
 
 \begin{ex}
@@ -58,5 +63,6 @@ Seja $G$ um grafo $k$-conexo. Vamos provar, por indução em $k$, que qualquer c
 Se $k = 2$, então o grafo é $2$-conexo e, segundo o teorema 9.6, todo par de vertice pertence a um conjunto em comum.
 
 Se $k > 2$, assuma que a tese vale para todo grafo $(k-1)$-conexo. Escolha um vértice qualquer $v$ de $G$. Queremos que este vértice pertenca ao mesmo circuito que qualquer conjunto de tamanho $k-1$. Seja $G' = G-v$. Se $v$ pertence a um conjunto separador de tamanho $k$ em $G$, então $G'$ é $(k-1)$-conexo. Se não, $G'$ é $k$-conexo e, portanto, $(k-1)$-conexo (já que $k > 2$). Assim, $G'$ é sempre $(k-1)$-conexo e vale a hipótese de indução. Qualquer conjunto de $k-1$ vértices de $G'$ pertence a um circuito em comum.
+\end{proof}
 
 \end{document}
