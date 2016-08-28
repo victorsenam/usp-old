@@ -34,16 +34,17 @@ Construa instâncias do \textsc{MinCC} com custos unitários, ou seja, instânci
 \end{ex}
 
 \begin{proof}[Resposta]
-Seja $k$ um inteiro positivo. Vamos construir uma instância $I = (E,\mathcal{S},c)$ com $m := |E| = 2^{2k}$ que alcança a aproximação pedida no algoritmo $\textsc{MinCC-Chvátal}$. Definimos também $n := 2^k$ e então podemos indexar os elementos de $E$ em uma matriz $n \times n$, ou seja, identificar cada um dos elementos de $E$ por um par $(i,j)$ e denotar o elemento em questão por $E_{i,j}$.  
+Vamos construir uma instância $I = (E,\mathcal{S},c)$ que alcança a aproximação pedida no algoritmo $\textsc{MinCC-Chvátal}$. Seja $n$ um inteiro positivo, construiremos $E$ tal que $|E| = n*n$ e então podemos indexar os elementos de $E$ em uma matriz $n \times n$, ou seja, identificar cada um dos elementos de $E$ por um par $(i,j)$ e denotar o elemento em questão por $E_{i,j}$.  
 
 Precisamos agora descrever os conjuntos contidos em $\mathcal{S}$. Teremos $n$ conjuntos que contém, cada um, uma coluna distinta da matriz, ou seja, para todo $i \in [1, n]$ existe exatamente um $S^*_i \in \mathcal{S}$ tal que $S_i = \{E_{j,i} \mid j \in [1, n]\}$. Denotaremos o conjunto de todos os $S^*_i$ por $\mathcal{S}^*$.
 
-Além disso, teremos vários outros conjuntos em $\mathcal{S}$ que particionam cada uma das linhas da matriz $E$ separadamente. Cada linha será particionada em 1 ou mais conjuntos de mesmo tamanho. Mais especificamente, a $i$-ésima linha será dividida em $\lceil \frac{n}{i} \rceil$ conjuntos de tamanho $n/\lceil \frac{n}{i} \rceil$ cada. O conjunto destes conjuntos vai ser chamado $\bar{\mathcal{S}}$.
+Além disso, teremos vários outros conjuntos em $\mathcal{S}$ que particionam cada uma das linhas da matriz $E$ separadamente. Cada linha será particionada em 1 ou mais conjuntos de mesmo tamanho. Mais especificamente, a $i$-ésima linha será dividida em $\lfloor \frac{n}{i} \rfloor$ conjuntos de tamanho $n/\lfloor \frac{n}{i} \rfloor$ cada. O conjunto destes conjuntos vai ser chamado $\bar{\mathcal{S}}$.
 
-Se o algoritmo $\textsc{MinCC-Chvátal}$ sempre der prioridade para os elementos de $\bar{\mathcal{S}}$ quando os custos deles empatarem com os de $\mathcal{S}^*$, vai selecionar todos os elementos de $\bar{\mathcal{S}}$ e nenhum do outro conjunto, enquanto a solução ótima era exatamente oposta (selecionar todo $\mathcal{S}^*$ e nada mais). Portanto, a razão entre a solução encontrada pelo algoritmo é $|\mathcal{S}^*|/|\bar{\mathcal{S}}|$. Sabemos que $|\mathcal{S}^*| = n$, basta calcular $|\bar{\mathcal{S}}|$.
+Se o algoritmo $\textsc{MinCC-Chvátal}$ sempre der prioridade para os elementos de $\bar{\mathcal{S}}$ quando os custos deles empatarem com os de $\mathcal{S}^*$, vai selecionar todos os elementos de $\bar{\mathcal{S}}$ e nenhum do outro conjunto, enquanto a solução ótima era exatamente oposta (selecionar todo $\mathcal{S}^*$ e nada mais). Portanto, a razão da aproximação encontrada pelo algoritmo é $|\bar{\mathcal{S}}|/|\mathcal{S}^*|$. Sabemos que $|\mathcal{S}^*| = n$, basta calcular $|\bar{\mathcal{S}}|$.
 
-Pela descrição de $|\bar{\mathcal{S}}|$ sabemos quantos elementos existem em cada linha, então, podemos escrever $t = |\bar{\mathcal{S}}|$ como
-$$ t = \sum \limits_{i=1}^{n} \lceil \frac{n}{i} \rceil $$.
+Pela descrição de $|\bar{\mathcal{S}}|$ sabemos quantos elementos existem em cada linha, então, podemos escrever
+$$ |\bar{\mathcal{S}}| = \sum \limits_{i=1}^{n} \lfloor \frac{n}{i} \rfloor $$.
 \end{proof}
+
 
 \end{document}
