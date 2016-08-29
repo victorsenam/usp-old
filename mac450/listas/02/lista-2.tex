@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry} 
+\usepackage[brazil]{babel}
+\usepackage{amsmath,amsthm,amssymb,amsfonts,enumitem,tikz}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+ 
+\newcounter{exCounter}
+\setcounter{exCounter}{4}
+\newtheorem{lema}{Lema}
+\newtheorem{ex}[exCounter]{Ex}
+\newenvironment{problem}[2][Ex]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\linespread{2}
+%If you want to title your bold things something different just make another thing exactly like this but replace "problem" with the name of the thing you want, like theorem or lemma or whatever
+ 
+\begin{document}
+ 
+%\renewcommand{\qedsymbol}{\filledbox}
+%Good resources for looking up how to do stuff:
+%Binary operators: http://www.access2science.com/latex/Binary.html
+%General help: http://en.wikibooks.org/wiki/LaTeX/Mathematics
+%Or just google stuff
+ 
+\title{Lista 2}
+\author{Victor Sena Molero - 8941317}
+\maketitle
+
+\section{Exercícios}
+\begin{ex}
+Construa uma família de instâncias $(G,c)$ do $\textsc{TSPM}$ para as quais o custo do circuito hamltoniano obtido pelo algoritmo $\textsc{TSPM-RSL}$ pode ser arbitrariamente próximo de $2\textrm{opt}(G,c)$. Construa uma família de instâncias $(G,c)$ do $\textsc{TSPM}$ para as quais o custo do circuito hamiltoniano obtido pelo algoritmo $\textsc{TSPM-Christofides}$ pode ser arbitrariamente próximo de $\frac{3}{2}\textrm{opt}(G,c)$.  
+\end{ex}
+
+\begin{proof}[Resposta]
+Queremos construir uma família de instâncias $(G,c)$ para o qual $\textsc{TSPM-RSL}$ encontra uma solução arbitrariamente próxima de $2\textrm{opt}(G,c)$. Para isso, devemos definir o grafo e os custos. Vamos construir uma família de grafos $G$ de tamanho (quantidade de vértices) $n$ par com os vértices indexados a partir de 1, denomindados $v_1, v_2, \dots, v_n$ e vamos denotar o custo entre dois vértices distintos $v_i$ e $v_j$ por $c_{i,j}$.   
+
+Para que o custo da solução seja próxima do dobro da solução ótima vamos definir os custos de algumas arestas. Para todo $i \leq n/2$, $c_{i,2i} = 1$, para todo $i \leq n-2$, $c_{i,i+2} = 1$, para todo $1 < i \leq n/2$, $c_{i,2i-2}$ e, além disso, $c_1,n = n/2$. Note que estes custos respeitam a desigualdade triangular. Agora, basta completar as arestas de $G$ adicionando entre todo par de vértices não adjacentes uma aresta de custo igual ao caminho mínimo entre os dois vértices, preservando a desigualdade triangular.  
+
+Uma possível árvore geradora $T$ criada pelo algoritmo vai escolher todas as arestas $(v_i, v_{2i})$ com $i \leq n/2$ e $(v_i, v_{i+2})$ com $i < n/2$. E próximo passo é então encontrar atalhos no caminho euleriano formado pela duplicação das arestas de $T$ e adicionar uma aresta entre $v_1$ e $v_n$ para fechar um ciclo hamiltoniano. Os atalhos tomados sempre serão entre $v_{2i-2}$ e $v_i$ para todo $i$ tal que $1 < i \leq n/2$. Como descrito acima, o custo de cada uma dessas arestas é 2. Concluímos que o custo da solução encontrada pelo algoritmo é $n/2 * 1$ por todas as arestas que vão de $v_i$ para $v_{2i}$ somado a $(n-1)/2 * 2$ pelos atalhos tomados e $n/2$ pelo retorno de $v_n$ a $v_1$. Ao todo, obtemos um custo de $2n-2$ que chamaremos $\bar{t}$.  
+
+Finalmente, temos que a solução ótima do algoritmo é $n$. Ela é pelo menos $n$ pois toda aresta custa pelo menos 1 e não é possível obter uma solução com menos do que $n$ arestas e ela é no máximo $n$ pois existe uma solução de custo $n$ formada por toda aresta da forma $(v_i,v_{i+2})$ com $i /leq n-2$ além das arestas $(v_1,v_2)$ e $(v_{n-1},v_n)$, todas de custo 1 formando um circuito de custo $n$ que chamaremos $t^*$. Assim, podemos ver que $\bar{t}/t^*$ se aproxima de 2 com o crescimento de $n$, logo, esta família de instâncias gera faz com que a solução encontrada chegue arbitrariamente próxima de $2\textrm{opt}(G,c)$.  
+
+Para adaptar esta família para o algoritmo $\textsc{TSPM-Christofides}$ basta exigir que $n$ seja multiplo de 4. Assim, podemos considerar a mesma árvore $T$ que seria encontrada no caso anterior. O emparelhamento $M$ encontrado pelo algoritmo envolveria as arestas da forma $(v_{i-2}, v_{i})$ para todo $i$ multiplo de 4 e todas elas, juntamente com a aresta $(v_1,v_n)$ formariam a solução encontrada pelo algoritmo. Esta solução tem custo $n-1+n/2$, $n-1$ por todas as arestas que originalmente estavam em $T$ ($n/2+n/4-1$ delas) mais as arestas de $M$ ($n/4$ delas) somado ao $n/2$ referente ao custo da aresta $(v_1,v_n)$.  
+
+Temos então que, neste caso, $\frac{\bar{t}}{t^*} = \frac{n-1+n/2}{n} = 1 + 1/2 - 1/n = 3/2 - 1/n$ que se aproxima de $3/2$ com o crescimento de $n$, ou seja, é arbitrariamente próximo de $3/2$.
+\end{proof}
+
+\begin{ex}
+Mostre que os algoritmos $\textsc{TSPM-RSL}$ e $\textsc{TSPM-Christofides}$ podem produzir péssimos resultados se aplicados a instâncias do $\textsc{TSP}$ que não satisfazem a desigualdade triangular.
+\end{ex}
+
+\begin{proof}[Resposta]
+Basta montar uma instância onde $G \simeq K_4$, $c_{1,4}$ é arbitrariamente grande e o custo das outras arestas é único e arbitrariamente pequeno. Ambos os algoritmos podem encontrar como árvore geradora um caminho entre $v_1$ e $v_4$ que só vai poder ser completado com a adição da aresta $(v_1,v_4)$, tornando a solução gigante, enquanto uma solução de custo pequeno era possível com o ciclo $v_1, v_2, v_4, v_3, v_1$.
+\end{proof}
+
+\begin{ex}
+Considere a seguinte variante do $\textsc{TPSM}$: queremos encontrar um caminho hamiltoniano de custo mínimo no grafo dado que começa em um dado vértice $s$. Modifique o algoritmo $\textsc{TPSM-Christofides}$ e obtenha um algoritmo de aproximação com razão menor que 2 para essa variante.
+\end{ex}
+
+\begin{proof}[Resposta]
+Seja $(G,c)$ uma instância de $\textsc{TPSM}$. Seja $\bar{t}$ a solução encontrada por $\textsc{TPSM-Christofides}$, sabemos que $\bar{t} \leq \frac{3}{2}\textrm{opt}(G,c)$. Para obter uma solução para o novo problema, basta remover uma das arestas de $s$ da solução obtida.
+\end{proof}
+
+\end{document}

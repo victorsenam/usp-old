@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry} 
+\usepackage[brazil]{babel}
+\usepackage{amsmath,amsthm,amssymb,amsfonts,enumitem,tikz}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+ 
+\newcounter{exCounter}
+\setcounter{exCounter}{2}
+\newtheorem{lema}{Lema}
+\newtheorem{ex}[exCounter]{Ex}
+\newenvironment{problem}[2][Ex]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\linespread{2}
+%If you want to title your bold things something different just make another thing exactly like this but replace "problem" with the name of the thing you want, like theorem or lemma or whatever
+ 
+\begin{document}
+ 
+%\renewcommand{\qedsymbol}{\filledbox}
+%Good resources for looking up how to do stuff:
+%Binary operators: http://www.access2science.com/latex/Binary.html
+%General help: http://en.wikibooks.org/wiki/LaTeX/Mathematics
+%Or just google stuff
+ 
+\title{Lista 2}
+\author{Victor Sena Molero - 8941317}
+\maketitle
+
+\section{Exercícios}
+\begin{ex}
+Construa instâncias do \textsc{MinCC} com custos unitários, ou seja, instâncias $(E,\mathcal{S},c)$ com $c_S = 1$ para todo $S$ em $\mathcal{S}$, para as quais o custo da cobertura produzida pelo algoritmo $\textsc{MinCC-Chvátal}$ pode chegar arbitrariamente perto de $H_n\mathrm{opt}(E,\mathcal{S},c)$, onde $n := |E|$.
+\end{ex}
+
+\begin{proof}[Resposta]
+Não sei :(
+\end{proof}
+
+\begin{ex}
+Lembre-se que $\ln x$ é a primitiva da função $\frac{1}{x}$. Usando esse fato, deduza que $H_n \leq 1 + \ln n$. Conclua que o algoritmo $\textsc{MinCC-Chvátal}$ é uma $O(\log n)$-aproximação polinomial para o $\textsc{MinCC}$.
+\end{ex}
+
+\begin{proof}[Resposta]
+Se $\ln n$ é primitiva de $\frac{1}{n}$, pela Soma de Riemann, para qualquer $m$ inteiro positivo e partição $x_0 < x_1 < \dots < x_m$ do intervalo $[1, n]$ temos que existe uma sequência $c$ onde $c_i \in [x_{i-1}, x_i]$ para todo $i \leq n$ inteiro positivo tal que $\ln n = \sum \limits_{i=1}^m \frac{1}{c_i} (x_i - x_{i-1})$.  
+
+Podemos escolher $m = n-1$ e tal partição como sendo $x_0 = 1 < x_1 = 2 < \dots < x_{n-1} = n$ e escrever $\ln n = \sum \limits_{i=1}^{n-1} \frac{1}{\bar{c_i}} (i + 1 - i)$ para alguma sequência $\bar{c}$. E, com isso, temos  
+$$\ln n \geq \sum \limits_{i=1}^{n-1} \frac{i}{i+1} = H_n - 1$$, já que $\bar{c_i} \leq i+1$ para todo $i$, portanto
+$$H_n \leq \ln n + 1$$.  
+
+Com isso, concluimos que $H_n = O(\lg n)$, portanto, $\textsc{MinCC-Chvátal}$ é uma $O(\log n)$-aproximação polinomial para o $\textsc{MinCC}$.
+\end{proof}
+\end{document}
