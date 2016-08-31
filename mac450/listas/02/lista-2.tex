@@ -8,7 +8,7 @@
 \newcommand{\Z}{\mathbb{Z}}
  
 \newcounter{exCounter}
-\setcounter{exCounter}{4}
+\setcounter{exCounter}{2}
 \newtheorem{lema}{Lema}
 \newtheorem{ex}[exCounter]{Ex}
 \newenvironment{problem}[2][Ex]{\begin{trivlist}
@@ -27,6 +27,41 @@
 \title{Lista 2}
 \author{Victor Sena Molero - 8941317}
 \maketitle
+
+\section{Exercícios}
+\begin{ex}
+Construa instâncias do \textsc{MinCC} com custos unitários, ou seja, instâncias $(E,\mathcal{S},c)$ com $c_S = 1$ para todo $S$ em $\mathcal{S}$, para as quais o custo da cobertura produzida pelo algoritmo $\textsc{MinCC-Chvátal}$ pode chegar arbitrariamente perto de $H_n\mathrm{opt}(E,\mathcal{S},c)$, onde $n := |E|$.
+\end{ex}
+
+\begin{proof}[Resposta]
+Seja $n$ um inteiro positivo e $m = n^2$. Vamos construir uma instância $I = (E,\mathcal{S},c)$ com $|E| = m$ para a qual a resposta do algoritmo $\textsc{MinCC-Chvátal}$ se aproxima de $H_m \textrm{opt}(I)$. Podemos indexar os elementos de $E$ em uma matriz $n \times n$, ou seja, identificar cada um dos elementos de $E$ por um par $(i,j)$ e denotar o elemento em questão por $E_{i,j}$.  
+
+Precisamos agora descrever os conjuntos contidos em $\mathcal{S}$. Teremos $n$ conjuntos que contém, cada um, uma coluna distinta da matriz, ou seja, para todo $i \in [1, n]$ existe exatamente um $S^*_i \in \mathcal{S}$ tal que $S_i = \{E_{j,i} \mid j \in [1, n]\}$. Denotaremos o conjunto de todos os $S^*_i$ por $\mathcal{S}^*$.
+
+Além disso, teremos vários outros conjuntos em $\mathcal{S}$ que particionam cada uma das linhas da matriz $E$ separadamente. Cada linha será particionada em 1 ou mais conjuntos de mesmo tamanho. Mais especificamente, a $i$-ésima linha será dividida em $\lceil \frac{n}{i} \rceil$ conjuntos de tamanho $n/\lceil \frac{n}{i} \rceil$ cada. O conjunto destes conjuntos vai ser chamado $\bar{\mathcal{S}}$.
+
+Se o algoritmo $\textsc{MinCC-Chvátal}$ sempre der prioridade para os elementos de $\bar{\mathcal{S}}$ quando os custos deles empatarem com os de $\mathcal{S}^*$, vai selecionar todos os elementos de $\bar{\mathcal{S}}$ e nenhum do outro conjunto, enquanto a solução ótima era exatamente oposta (selecionar todo $\mathcal{S}^*$ e nada mais). Portanto, a razão entre a solução encontrada pelo algoritmo é $|\bar{\mathcal{S}}|/|\mathcal{S}^*|$. Sabemos que $|\mathcal{S}^*| = n$, basta calcular $|\bar{\mathcal{S}}|$.
+
+Pela descrição de $|\bar{\mathcal{S}}|$ sabemos quantos elementos existem em cada linha, então, podemos escrever 
+$$|\bar{\mathcal{S}}| = \sum \limits_{i=1}^{n} \lceil \frac{n}{i} \rceil \geq \sum \limits_{i=1}^{n} \frac{n}{i} = n*H_n$$
+, portanto,
+$$|\bar{\mathcal{S}}|/|\mathcal{S}^*| \geq H_n$$
+, ou seja, para instâncias geradas pela maneira descrita, a solução gerada pelo algoritmo é pelo menos $H_n \textrm{opt}(I)$, com o crescimento de $n$, $H_n$ se aproxima de $H_{n^2} = H_m$. Não ficou claro aqui se $H_n$ chega arbitrariamente próximo de $H_m$, como pedido no enunciado.
+\end{proof}
+
+\begin{ex}
+Lembre-se que $\ln x$ é a primitiva da função $\frac{1}{x}$. Usando esse fato, deduza que $H_n \leq 1 + \ln n$. Conclua que o algoritmo $\textsc{MinCC-Chvátal}$ é uma $O(\log n)$-aproximação polinomial para o $\textsc{MinCC}$.
+\end{ex}
+
+\begin{proof}[Resposta]
+Se $\ln n$ é primitiva de $\frac{1}{n}$, pela Soma de Riemann, para qualquer $m$ inteiro positivo e partição $x_0 < x_1 < \dots < x_m$ do intervalo $[1, n]$ temos que existe uma sequência $c$ onde $c_i \in [x_{i-1}, x_i]$ para todo $i \leq n$ inteiro positivo tal que $\ln n = \sum \limits_{i=1}^m \frac{1}{c_i} (x_i - x_{i-1})$.  
+
+Podemos escolher $m = n-1$ e tal partição como sendo $x_0 = 1 < x_1 = 2 < \dots < x_{n-1} = n$ e escrever $\ln n = \sum \limits_{i=1}^{n-1} \frac{1}{\bar{c_i}} (i + 1 - i)$ para alguma sequência $\bar{c}$. E, com isso, temos  
+$$\ln n \geq \sum \limits_{i=1}^{n-1} \frac{i}{i+1} = H_n - 1$$, já que $\bar{c_i} \leq i+1$ para todo $i$, portanto
+$$H_n \leq \ln n + 1$$.  
+
+Com isso, concluimos que $H_n = O(\lg n)$, portanto, $\textsc{MinCC-Chvátal}$ é uma $O(\log n)$-aproximação polinomial para o $\textsc{MinCC}$.
+\end{proof}
 
 \section{Exercícios}
 \begin{ex}
@@ -60,7 +95,9 @@ Considere a seguinte variante do $\textsc{TPSM}$: queremos encontrar um caminho 
 \end{ex}
 
 \begin{proof}[Resposta]
-Seja $(G,c)$ uma instância de $\textsc{TPSM}$. Seja $\bar{t}$ a solução encontrada por $\textsc{TPSM-Christofides}$, sabemos que $\bar{t} \leq \frac{3}{2}\textrm{opt}(G,c)$. Para obter uma solução para o novo problema, basta remover uma das arestas de $s$ da solução obtida.
+Não consegui algo menor do que 2. Consigo dizer que é fácil achar um algoritmo com razão 2. Basta usar o $\textsc{TSPM-RSL}$, porém, ao duplicar as arestas da árvore $T$ encontrada, não duplicamos uma das arestas que chegam a $s$ e uma das arestsas que chegam a um vértice $t$ qualquer diferente de $s$ e, depois de fazer isso, encontramos uma trilha euleriana entre $s$ e $t$ e encontramos atalhos como fazem ambos os algoritmos normalmente.  
+
+É fácil ver que esta é uma 2-aproximação para o problema, pois o custo da árvore $T$ gerada é menor do que a resposta ótima e o custo da resposta dada pelo algoritmo é menor do que duas vezes o custo da árvore.
 \end{proof}
 
 \end{document}
