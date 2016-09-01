@@ -1,0 +1,87 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry} 
+\usepackage[brazil]{babel}
+\usepackage{amsmath,amsthm,amssymb,amsfonts,enumitem,tikz}
+
+\begin{document}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+ 
+\newcounter{exCounter}
+\setcounter{exCounter}{0}
+\newtheorem{ex}[exCounter]{Hw}
+
+\newcounter{lemaCounter}
+\setcounter{lemaCounter}{0}
+\newtheorem{lema}[lemaCounter]{Lemma}
+
+\newenvironment{problem}[2][Hw]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\linespread{2}
+%If you want to title your bold things something different just make another thing exactly like this but replace "problem" with the name of the thing you want, like theorem or lemma or whatever
+ 
+ 
+%\renewcommand{\qedsymbol}{\filledbox}
+%Good resources for looking up how to do stuff:
+%Binary operators: http://www.access2science.com/latex/Binary.html
+%General help: http://en.wikibooks.org/wiki/LaTeX/Mathematics
+%Or just google stuff
+ 
+\title{HW1 - Computational Geometry}
+\author{Victor Sena Molero - 8941317}
+\maketitle
+
+%\section{Lemmas}
+%I'll prove some lemmas upfront so that the proofs on the exercices are clearer.
+
+%\begin{lema}
+%Given a pentagon $P$ and a function $f$ on the vertices of the pentagon. If no every pair of non-adjacent vertices take the different outcomes on $f$ then, there are at least 3 different outcomes of $f$ on these vertices ($|Im(f) \geq 3$).
+%\end{lema}
+
+\section{Exercices}
+\begin{ex}
+Prove the following Cayley-Menger determinant formula for the volume $Vol(P)$ for any 3-dimensional simplex $P$ $\dots$
+\end{ex}
+
+\begin{proof}[Answer]
+I didn't do it...
+\end{proof}
+
+\begin{ex}
+Is it possible to construct a convex polytope all of whose facets are hexagons?
+\end{ex}
+
+\begin{proof}[Answer]
+Let $P$ be a polytope, $V$ be the number of vertices of $P$, $E$ be the number of edges and $F$ the number of faces. Since every polytope is a planar graph, $V - E + F = 2$ and $2E \geq 3V$. Now, we will assume that every face is a hexagon and try to derive a contradiction.  
+
+Since every face is a hexagon, we get $6F = 2E$. Therefore $V - E + F = V - \frac{2}{3}E = 2$ and from this and $2E \geq 3V$ we get $6 = 3V - 2E \leq 0$, which is $6 \leq 0$, a contradiction.
+\end{proof}
+
+\begin{ex}
+(a) Show that any integer 4-gon must have area at least 1.
+\end{ex}
+
+\begin{proof}[Answer]
+An integer 4-gon has at least 4 integer points in it's border (it's vertices) and 0 interior points. By pick's formula, if $A$ is the area of the 4-gon, $I$ the quantity of interior points and $B$ the quantity of border points, $A = I + \frac{1}{2}B - 1 \geq 2 - 1 = 1$ therefore the area of the 4-gon is at least 1.
+\end{proof}
+
+\addtocounter{exCounter}{-1}
+\begin{ex}
+(b) Show that any convex integer pentagon must always have an integer point in its interior.
+\end{ex}
+
+\begin{proof}[Answer]
+I've learned the outline of this solution by talking to some classmates of mine and I think they read it on the internet but I don't really know where.  
+
+Given an integer pentagon $P$, our thesis is that $P$ has at least one integer point in its interior. $P$ has 5 vertices, we name them $v_0, v_1, \dots, v_4$ and we order them clockwise on the pentagon starting from an arbitrary vertex, this means that $v_0$ is adjacent to $v_1$ and $v_4$, $v_1$ is adjacent to $v_0$ and $v_2$, so on. Given a vertex, we can define the function $f$ that takes an integer and returns it's parity (1 if it's odd and 0 if it's even), we can also define that $f$ takes a pair of integers $(n, m)$ to the pair $(f(n), f(m))$. With that, for each one of the vertices, there are only 4 possible outcomes of the $f$ function over the pair ($(0,0), (0,1), (1,0), (1,1)$). If we get any two integer points $x$ and $y$ such that $f(x) = f(y)$, $f(x + y) = (0, 0)$, which means $x+y$ has two even coordinates, this means that $\frac{x+y}{2}$ is an integer point. With that in mind, we can analyse some cases.  
+
+For any two non-adjacent vertices $x$ and $y$, by the convexity of $P$, $\frac{x+y}{2}$ is in the interior of $P$. We consider the case on which there are two non-adjacent vertices $x$ and $y$ of $P$ such that $f(x) = f(y)$, in this case $\frac{x+y}{2}$ is an integer interior point of $P$ and our thesis is valid. Otherwise, if every two non-adjacent vertices get different outcomes on $f$, there are at least 3 different outcomes of $f$ on the pentagon. Note that it is impossible to have 5 different outcomes, so there are only two cases, 3 or 4.  
+
+Let's think about the case where there are 4 different outcomes, in this case, we can get two adjacent vertices $x$ and $y$ such that $f(x) = f(y)$ and show that the point $\frac{x+y}{2}$ is an integer point $z$ on the border of the pentagon. If $f(z) = f(x)$ we repeat the process until that is not true anymore, it must happen at some point, otherwise there would be an infinite set of integer points on the border of the pentagon, which is impossible. We may now assume that $f(z) \neq f(x)$, since there are 4 different outcomes of $f$ on the pentagon, there is another vertex $w$ on the pentagon such that $f(z) = f(w)$ and $z$ and $w$ are not adjacent, so we can get the midpoint $\frac{z+w}{2}$ and it's going to be an integer point in the interior of $P$.  
+
+Now we can solve the case where there are only 3 different outcomes of $f$ on $P$. Once again, we take two adjacent vertices $x$ and $y$ such that $f(x) = f(y)$ and this gives us a third point $z = \frac{x+y}{2}$ on the edge of the pentagon. If $f(z) = f(x)$ we repeat the process until $f(z) \neq f(x)$, once again, the infinity argument is valid. Now $f(z) \neq f(x)$, if there is a vertex $w$ such that $f(z) = f(w)$, then $\frac{z+w}{2}$ is an integer point on the interior of $P$, otherwise, we can now choose other two non adjacent vertices $x'$ and $y'$ such that $(x,y) \neq (x',y') \neq (y,x)$ and $f(x') = f(y')$ and repeat the argument used on the last case (where there were 4 different outcomes), because there will now be 4 different outcomes on the border of the polygon, 3 of which are not on the edge from $x'$ to $y'$, which means that if there is a point $z'$ such that $f(z') \neq f(x')$ on the edge between $x'$ and $y'$ there will be an integer point on the interior of $P$.
+\end{proof}
+
+\end{document}
