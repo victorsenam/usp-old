@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry} 
+\usepackage[brazil]{babel}
+\usepackage{amsmath,amsthm,amssymb,amsfonts,enumitem,tikz}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+ 
+\newcounter{exCounter}
+\setcounter{exCounter}{7}
+\newtheorem{lema}{Lema}
+\newtheorem{ex}[exCounter]{Ex}
+\newenvironment{problem}[2][Ex]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\linespread{2}
+%If you want to title your bold things something different just make another thing exactly like this but replace "problem" with the name of the thing you want, like theorem or lemma or whatever
+ 
+\begin{document}
+ 
+%\renewcommand{\qedsymbol}{\filledbox}
+%Good resources for looking up how to do stuff:
+%Binary operators: http://www.access2science.com/latex/Binary.html
+%General help: http://en.wikibooks.org/wiki/LaTeX/Mathematics
+%Or just google stuff
+ 
+\title{Lista 3}
+\author{Victor Sena Molero - 8941317}
+\maketitle
+
+\section{Exercícios}
+\begin{ex}
+Considere o problema $\textsc{MinPart}$, notas de aula $\textsc{EXTRA-6} \dots$   
+Prove que esse algoritmo guloso tem razão de aproximação 6/5 e que essa razão é justa. Se não conseguir obter 6/5, prove a melhor razão menor que 2 que você conseguir.  
+\end{ex}
+
+\begin{proof}[Resposta]
+Dada uma instância $I$ de $\textsc{Min-Part(X,w)}$, seja $n := |X|$. Sabemos que se $n \leq 3$, o algoritmo proposto consegue uma solução ótima. Basta agora mostrar que para $n > 3$ ele consegue uma 6/5 aproximação. Definimos ainda $M = w(X)/2$. Suponha que $n \geq 5$.  
+Seja $X_1, X_2$ o particionamento formado pelo algoritmo, assumimos, s.p.g., que $w(X_1) \geq w(X_2)$ e que $x_u$ é o último item colocado em $X_1$. Temos,
+$$ w(X_1)-w_u \leq w(X_2) $$
+$$ w(X_1) \leq w(X_2) + w_u $$
+$$ w(X_1) \leq w(X) - x(X_1) + w_u $$
+$$ w(X_1) \leq w(X)/2 + w_u/2 $$, 
+portanto,
+$$ w(X_1) \leq M + w_u/2 $$
+exatamente como indicado em notas de aula, agora, temos que,  
+$$ 2M = w(X) = \sum \limits_{i=1}^n w_i \geq \sum \limits_{i=1}^n w_u \geq n*w_u $$,
+ou seja,
+$$ w_u/2 \leq M/n \leq M/5 $$,
+e, mais uma vez, seguindo o raciocínio das notas de aula, temos que 
+$$ w(X_1) \leq M + w_u/2 \leq M + M/5 = 6M/5 \leq \frac{6}{5}opt(X,w) $$, 
+assim, se $n \geq 5$, o algoritmo proposto é uma $\frac{6}{5}$-aproximação para $\textsc{Min-Part(X,w)}$ com $n \neq 4$. Falta provar que a razão se mantém quando $n = 4$.
+\end{proof}
+
+\end{document}
