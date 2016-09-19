@@ -153,8 +153,17 @@ Seja $A \in R^{m \times n}$ uma matriz. Prove que vale precisamente uma das segu
 \end{enumerate}
 
 \begin{proof}[Resposta]
-Queremos provar que vale tanto $(i)$ quanto $(ii)$. Vamos provar, primeiro que vale pelo menos um dos dois.  
-Suponha que não vale $(i)$, assim, $
+Queremos provar que vale tanto $(i)$ quanto $(ii)$. Para provar isso, vamos considerar um PL e seu dual.  
+
+\begin{equation}
+\begin{split}
+&\text{minimize} \displaystyle\sum\limits_{j=1}^{m} w_{j}*&x_{j} & \\
+&\text{subject to} \displaystyle\sum\limits_{j:e_{i} \in S_{j}} &x_{j} \geq 1, &i=1 ,..., n\\
+&                                             &x_{j} \in \{0,1\}, &j=1 ,..., m
+\end{split}
+\end{equation}
+
+Vamos provar, primeiro que vale pelo menos um dos dois.  
 \end{proof}
 
 \end{homeworkProblem}
