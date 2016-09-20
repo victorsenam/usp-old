@@ -149,7 +149,7 @@
 %\tableofcontents
 \newpage
 
-\begin{homeworkProblem}
+\begin{homeworkProblem}[(Completo)]
 Seja $A \in R^{m \times n}$ uma matriz. Prove que vale precisamente uma das seguintes alternativas:
 \begin{enumerate}[label={\roman*}]
 \item existe $x \in \mathbb{R}_+^n$ tal que $Ax = 0$ e $x \neq 0$;
@@ -186,7 +186,7 @@ Pelo teorema 7 (Dualidade Fraca de PL), $c^tx \geq b^Ty = 0^Ty = 0$, porém, já
 Sejam $X,S \in \S^n$. Prove que $0 \prec S \preceq X \Rightarrow 0 \prec X^{-1} \preceq S^{-1}$.
 \end{homeworkProblem}
 
-\begin{homeworkProblem}
+\begin{homeworkProblem}[(Itens i e ii)]
 Sejam $X,S \in \S^n$. Prove que
 \begin{enumerate}[label={\roman*}]
 \item $X,S \in \S_+^n \Longrightarrow X \circ S \succeq 0$;
@@ -245,12 +245,12 @@ Seja $n$ um inteiro positivo. Determine o valor ótimo do seguinte programa semi
 
 \end{homeworkProblem}
 
-\begin{homeworkProblem}
+\begin{homeworkProblem}[(Parcial)]
 Seja $\gamma \in \mathbb{R}_{++}$. Considere o programa semidefinido
 
 \begin{align} \label{ex5}
 \max \quad        &\langle C, X \rangle & \nonumber \\
-\text{s.a.} \quad &\langle A_i, X \rangle \text{, } & \forall i \in [m] \text{, } \\
+\text{s.a.} \quad &\langle A_i, X \rangle = b_i \text{, } & \forall i \in [m] \text{, } \\
                   &x \in \S_+^n \text{, } \nonumber
 \end{align}
 onde $n := m := 3$,  
@@ -260,13 +260,30 @@ $$  C := e_1e_2^T + e_2e_1^T \text{, }
     A_3 := -C + 2e_3e_3^T \text{ e }
     b := 2 \gamma e_3 $$
 
+\begin{proof}[Resposta]
+Podemos escrever $\langle A_i, X \rangle = b_i$, $\forall i \in [m]$ como $\mathcal{A}(X) = b$, onde
+$\mathcal{A}(X) \in \R^m$  e $\mathcal{A}(X)_i = \langle A_i, X \rangle$ para todo $i \in [m]$. Precisamos montar o dual de $\ref{ex5}$, para isso, adicionamos a variável dual $y \in R^m$. E temos que calcular a transformação $\mathcal(A)^*$, dual de $\mathcal(A)$. Esta deve ser tal que 
+$$ \langle X, \mathcal{A}^*(X) \rangle = \langle \mathcal{A}(X), y \rangle \text{, }$$
+temos que
+$$ \langle \mathcal{A}(X), y \rangle = \mathcal{A}(X)^Ty = \sum \limits_{i=1}^m y_i\mathcal{A}(X)_i = \sum \limits_{i=1}^m y_i \langle A_i, X \rangle = \langle \sum \limits_{i=1}^m y_iA_i, X \rangle \text{, }$$
+portanto, podemos usar $\mathcal{A}^*(X) = \sum \limits_{i=1}^m y_iA_i$ (vale lembrar que a ideia desta prova foi vista em aula).
+
+\begin{align} \label{ex5_dual}
+\max \quad        &\langle b, y \rangle & \nonumber \\
+\text{s.a.} \quad &y \in \R^m \text{, } & \\
+                  &\sum \limits_{i=1}^m y_iA_i \in \S_+^n \text{.} & \nonumber
+\end{align}
+
+Eu não consegui nada mais do que isso.
+\end{proof}
+
 \end{homeworkProblem}
 
 \begin{homeworkProblem}
 Seja $\emptyset \neq K \subseteq \mathbb{E}$ um cone convexo e fechado num espaço euclidiano. Prove que $K^{**} = K$.
 \end{homeworkProblem}
 
-\begin{homeworkProblem}
+\begin{homeworkProblem}[(Completo)]
 Seja $X \in \S^n$. Prove que $X \succ 0 \Longleftrightarrow det(X[\{1,\dots,k\}]) > 0$ para todo $k \in [n]$.
 
 \begin{proof}[Resposta]
@@ -290,7 +307,7 @@ Agora precisamos assumir que $det(X[\{1,\dots,k\}]) > 0$ e provar que $X \succ 0
 \end{proof}
 \end{homeworkProblem}
 
-\begin{homeworkProblem}
+\begin{homeworkProblem}[(Completo)]
 Prove que $\mathrm{int}(\S_+^n) = \S_{++}^n$.
 
 \begin{proof}[Resposta]
