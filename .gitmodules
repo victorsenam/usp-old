@@ -1,6 +1,19 @@
 [submodule "mac442"]
 	path = mac442
 	url = https://github.com/victorsenam/mac442
+
+[submodule "mac214/blog"]
+    path = mac214/blog
+    url = https://github.com/victorsenam/blog-mac0214
+
+[submodule "mac239"]
+	path = mac239
+	url = https://github.com/victorsenam/mac239
+
+[submodule "mac242/claudia"]
+	path = mac242/claudia
+	url = https://github.com/victorsenam/claudia
+    
 [submodule "mac210"]
 	path = mac210
 	url = git@github.com:victorsenam/mac210.git
