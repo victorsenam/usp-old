@@ -190,7 +190,33 @@ Sejam $X,S \in \S^n$. Prove que $0 \prec S \preceq X \Rightarrow 0 \prec X^{-1} 
 Sejam $X,S \in \S^n$. Prove que
 \begin{enumerate}[label={\roman*}]
 \item $X,S \in \S_+^n \Longrightarrow X \circ S \succeq 0$;
+
+\begin{proof}[Resposta]
+    Se $S \succeq 0$, pelo Teorema 20 (item $(iii)$), existe uma matriz $H \in R^{m \times n}$ para algum $m$ e um vetor $s \in \R_+^m$ tal que $S = \sum \limits_{i=1}^{m} s_i(He_i)(He_i)^T$. Escolhemos tais $H$ e $s$, assim, para todo $q \in \R^n$, temos que
+    $$q^T(X \circ S)q = \sum \limits_{i=1}^n \sum \limits_{j=1}^n q_iq_jX_{i,j}S_{i,j} =
+    \sum \limits_{i=1}^n \sum \limits_{j=1}^n (q_iq_jX_{i,j} \sum \limits_{k=1}^m s_kH_{k,i}H_{k,j}) \text{, que pode ser escrito como }$$
+    $$\sum \limits_{k=1}^m s_k \sum \limits_{i=1}^n \sum \limits_{j=1}^n (q \circ (He_k))_{i} (q \circ (He_k)_{j} X_{i,j} \text{, }$$
+    Se definirmos a matriz $Q = q \mathds{1}^T$, temos,
+    $$q^T(X \circ S)q = \sum \limits_{k=1}^m s_k((Q \circ H)e_k)^T X (Q \circ H)e_k \text{, }$$
+    já que para todo $k \in [m]$, vale que $(Q \circ H)e_k \in \R^n$ e $s_k \geq 0$, e, além disso, $X \succeq 0$,
+    $$q^T(X \circ S)q \geq \sum \limits_{k=1}^m s_k 0 \geq 0 \text{.}$$
+    Portanto, $(X \circ S) \succeq 0$.
+\end{proof}
+
 \item $X,S \in \S_{++}^n \Longrightarrow X \circ S \succ 0$;
+
+\begin{proof}[Resposta]
+    Se $S \succ 0$, pelo Exercício 21 (item $(iii)$), existe uma matriz $H \in R^{m \times n}$ para algum $m$ e um vetor $s \in \R_{++}^m$ tal que $S = \sum \limits_{i=1}^m s_i(He_i)(He_i)^T$ e o $\mathrm{span}(\{He_k \mid k \in [m]\}) = \R^n$. Escolhemos tais $H$ e $s$, assim, para todo $q \in \R^n$, temos que
+    $$q^T(X \circ S)q = \sum \limits_{i=1}^n \sum \limits_{j=1}^n q_iq_jX_{i,j}S_{i,j} =
+    \sum \limits_{i=1}^n \sum \limits_{j=1}^n (q_iq_jX_{i,j} \sum \limits_{k=1}^m s_kH_{k,i}H_{k,j}) \text{, que pode ser escrito como }$$
+    $$\sum \limits_{k=1}^m s_k \sum \limits_{i=1}^n \sum \limits_{j=1}^n (q \circ (He_k))_{i} (q \circ (He_k)_{j} X_{i,j} \text{, }$$
+    Se definirmos a matriz $Q = q \mathds{1}^T$, temos,
+    $$q^T(X \circ S)q = \sum \limits_{k=1}^m s_k((Q \circ H)e_k)^T X (Q \circ H)e_k \text{, }$$
+    já que para todo $k \in [m]$, vale que $(Q \circ H)e_k \in \R^n$ e $s_k > 0$, e, além disso, $X \succ 0$,
+    $$q^T(X \circ S)q > \sum \limits_{k=1}^m s_k 0 > 0 \text{.}$$
+    Portanto, $(X \circ S) \succ 0$.
+\end{proof}
+
 \item $X,S \in \S_{++}^n \Longrightarrow X \circ S \succeq (X^{-1} \circ S^{-1})^{-1}$;
 \item $X,S \in \S_{++}^n \Longrightarrow X \circ S \succeq (X \circ S)^{-1}$.
 \end{enumerate}
@@ -212,10 +238,10 @@ Seja $n$ um inteiro positivo. Determine o valor ótimo do seguinte programa semi
                   &z_{n+1} = \frac{1}{2} & \nonumber
 \end{align}
 
-\begin{proof}[Resposta]
-Para todo $j \in [n]$, $A_j \succeq 0$ se e somente se para todo $h \in \R^2$, $h^TA_jh \geq 0$, então,
-$$ h^TA_jh = -y_jh_1^2 - 2z_jh_1h_2 + 2z_{j+1}h_2^2 \geq 0 \text{.}$$
-\end{proof}
+%\begin{proof}[Resposta]
+%Para todo $j \in [n]$, $A_j \succeq 0$ se e somente se para todo $h \in \R^2$, $h^TA_jh \geq 0$, então,
+%$$ h^TA_jh = -y_jh_1^2 - 2z_jh_1h_2 + 2z_{j+1}h_2^2 \geq 0 \text{.}$$
+%\end{proof}
 
 \end{homeworkProblem}
 
