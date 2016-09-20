@@ -1,0 +1,296 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Programming/Coding Assignment
+% LaTeX Template
+%
+% This template has been downloaded from:
+% http://www.latextemplates.com
+%
+% Original author:
+% Ted Pavlic (http://www.tedpavlic.com)
+%
+% Note:
+% The \lipsum[#] commands throughout this template generate dummy text
+% to fill the template out. These commands should all be removed when 
+% writing assignment content.
+%
+% This template uses a Perl script as an example snippet of code, most other
+% languages are also usable. Configure them in the "CODE INCLUSION 
+% CONFIGURATION" section.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+
+\usepackage{amsmath,amsthm,amssymb,amsfonts} % Math stuff
+%\usepackage{enumitem,tikz}
+\usepackage{enumitem} % Better enumerates
+\usepackage{dsfont}
+
+\usepackage{fancyhdr} % Required for custom headers
+\usepackage{lastpage} % Required to determine the last page for the footer
+\usepackage{extramarks} % Required for headers and footers
+\usepackage[usenames,dvipsnames]{color} % Required for custom colors
+\usepackage{graphicx} % Required to insert images
+\usepackage{listings} % Required for insertion of code
+\usepackage{courier} % Required for the courier font
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+% Margins
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\linespread{1.1} % Line spacing
+
+% Set up the header and footer
+\pagestyle{fancy}
+\lhead{\hmwkAuthorName} % Top left header
+\chead{\hmwkClass: \hmwkTitle} % Top center head
+\rhead{\firstxmark} % Top right header
+\lfoot{\lastxmark} % Bottom left footer
+\cfoot{} % Bottom center footer
+\rfoot{Page\ \thepage\ of\ \protect\pageref{LastPage}} % Bottom right footer
+\renewcommand\headrulewidth{0.4pt} % Size of the header rule
+\renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT STRUCTURE COMMANDS
+%	Skip this unless you know what you're doing
+%----------------------------------------------------------------------------------------
+
+% Header and footer for when a page split occurs within a problem environment
+\newcommand{\enterProblemHeader}[1]{
+\nobreak\extramarks{#1}{#1 continued on next page\ldots}\nobreak
+\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak
+}
+
+% Header and footer for when a page split occurs between problem environments
+\newcommand{\exitProblemHeader}[1]{
+\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak
+\nobreak\extramarks{#1}{}\nobreak
+}
+
+\setcounter{secnumdepth}{0} % Removes default section numbers
+\newcounter{homeworkProblemCounter} % Creates a counter to keep track of the number of problems
+
+\newcommand{\homeworkProblemName}{}
+\newenvironment{homeworkProblem}[1][\unskip]{ % Sets homework environment with adittional argument for extra naming
+    \stepcounter{homeworkProblemCounter} % Increase counter for number of problems
+    \renewcommand{\homeworkProblemName}{Problema \arabic{homeworkProblemCounter} #1} % Assign \homeworkProblemName the name of the problem
+    \section{\homeworkProblemName} % Make a section in the document with the custom problem count
+    \enterProblemHeader{\homeworkProblemName} % Header and footer within the environment
+}{
+\exitProblemHeader{\homeworkProblemName} % Header and footer after the environment
+}
+
+\newcommand{\problemAnswer}[1]{ % Defines the problem answer command with the content as the only argument
+\noindent\framebox[\columnwidth][c]{\begin{minipage}{0.98\columnwidth}#1\end{minipage}} % Makes the box around the problem answer and puts the content inside
+}
+
+\newcommand{\homeworkSectionName}{}
+\newenvironment{homeworkSection}[1]{ % New environment for sections within homework problems, takes 1 argument - the name of the section
+\renewcommand{\homeworkSectionName}{#1} % Assign \homeworkSectionName to the name of the section from the environment argument
+\subsection{\homeworkSectionName} % Make a subsection with the custom name of the subsection
+\enterProblemHeader{\homeworkProblemName\ [\homeworkSectionName]} % Header and footer within the environment
+}{
+\enterProblemHeader{\homeworkProblemName} % Header and footer after the environment
+}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CLASS SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\hmwkTitle}{Prova 1} % Assignment title
+\newcommand{\hmwkDueDate}{20 de Setembro de 2016} % Due date
+\newcommand{\hmwkClass}{MAC0343} % Course/class
+\newcommand{\hmwkAuthorName}{Victor Sena Molero - 8941317} % Assignment author
+
+\newcommand{\R}{\mathbb{R}}
+\renewcommand{\S}{\mathbb{S}}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title{
+\vspace{2in}
+\textmd{\textbf{\hmwkClass:\ \hmwkTitle}}\\
+\normalsize\vspace{0.1in}\small{\hmwkDueDate}\\
+\vspace{3in}
+}
+
+\author{\textbf{\hmwkAuthorName}}
+\date{} % Insert date here if you want it to appear below your name
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+%\setcounter{tocdepth}{1} % Uncomment this line if you don't want subsections listed in the ToC
+
+%\newpage
+%\tableofcontents
+\newpage
+
+\begin{homeworkProblem}
+Seja $A \in R^{m \times n}$ uma matriz. Prove que vale precisamente uma das seguintes alternativas:
+\begin{enumerate}[label={\roman*}]
+\item existe $x \in \mathbb{R}_+^n$ tal que $Ax = 0$ e $x \neq 0$;
+\item existe $y \in \mathbb{R}^m$ tal que $A^Ty < 0$.
+\end{enumerate}
+
+\begin{proof}[Resposta]
+Queremos provar que vale exatamente um entre $(i)$ e $(ii)$. Para provar isso, vamos considerar um PL e seu dual.  
+
+\begin{align} \label{primal}
+\min \quad        &c^Tx \nonumber \\
+\text{s.a.} \quad &Ax=b \\
+                  &x \in \mathbb{R}_+^n \nonumber
+\end{align}
+
+\begin{align} \label{dual}
+\max \quad        &b^Ty \nonumber \\
+\text{s.a.} \quad &y\in \mathbb{R}^m \\
+                  &A^Ty \leq c \nonumber
+\end{align}
+
+Vamos provar, primeiro que vale pelo menos um entre $(i)$ e $(ii)$. Assuma, para a matriz $A$ de $\ref{primal}$ e $\ref{dual}$ que não vale $(i)$, então, no programa $\ref{primal}$, $x = 0$ é o único ponto viável. Temos, então, que para todo $c \in \mathbb{R}^n$, $\ref{primal}$ é viável e tem solução ótima $\min{c^Tx} = 0$.  
+
+Pelo teorema 12 (Dualidade Forte de PL), segue que $\ref{dual}$ é viável, portanto, existe $A^Ty \leq c$. Basta escolher $c < 0$ e temos que $A^Ty < 0$, ou seja, vale $(ii)$.  
+
+Agora, vamos provar que vale no máximo 1 entre $(i)$ e $(ii)$. Assuma que vale $(i)$ e $(ii)$, então, existe $y \in \mathbb{R}^m$ tal que $A^Ty < 0$, escolhemos, nos programas $\ref{primal}$ e $\ref{dual}$, $b = 0$ e $c = A^Ty$, assim, temos que $\ref{dual}$ é viável. Além disso, já que vale $(i)$, existe $0 \neq x \in \mathbb{R}_+^n$.  
+
+Pelo teorema 7 (Dualidade Fraca de PL), $c^tx \geq b^Ty = 0^Ty = 0$, porém, já que $c < 0$ e $0 \neq x \geq 0$, $c^Tx < 0$, uma contradição. Com isso, concluímos que vale exatamente 1 dentre $(i)$ e $(ii)$.
+\end{proof}
+
+\end{homeworkProblem}
+
+\begin{homeworkProblem}
+Sejam $X,S \in \S^n$. Prove que $0 \prec S \preceq X \Rightarrow 0 \prec X^{-1} \preceq S^{-1}$.
+\end{homeworkProblem}
+
+\begin{homeworkProblem}
+Sejam $X,S \in \S^n$. Prove que
+\begin{enumerate}[label={\roman*}]
+\item $X,S \in \S_+^n \Longrightarrow X \circ S \succeq 0$;
+\item $X,S \in \S_{++}^n \Longrightarrow X \circ S \succ 0$;
+\item $X,S \in \S_{++}^n \Longrightarrow X \circ S \succeq (X^{-1} \circ S^{-1})^{-1}$;
+\item $X,S \in \S_{++}^n \Longrightarrow X \circ S \succeq (X \circ S)^{-1}$.
+\end{enumerate}
+\end{homeworkProblem}
+
+\begin{homeworkProblem}
+Seja $n$ um inteiro positivo. Determine o valor ótimo do seguinte programa semidefinido:
+
+\begin{align} \label{ex4}
+\max \quad        &\mathds{1}^T + 4z_1 & \nonumber \\
+\text{s.a.} \quad &y \in \mathbb{R}^n \text{, } & \nonumber \\
+                  &z \in \mathbb{R}^{n+1} \text{, } & \\
+                  &
+                  \begin{bmatrix}
+                    -y_j & -z_j \\
+                    -z_j & 2z_{j+1}
+                  \end{bmatrix}
+                  \succeq a\text{, } & \forall j \in [n] \text{, } \nonumber \\
+                  &z_{n+1} = \frac{1}{2} & \nonumber
+\end{align}
+
+\begin{proof}[Resposta]
+Para todo $j \in [n]$, $A_j \succeq 0$ se e somente se para todo $h \in \R^2$, $h^TA_jh \geq 0$, então,
+$$ h^TA_jh = -y_jh_1^2 - 2z_jh_1h_2 + 2z_{j+1}h_2^2 \geq 0 \text{.}$$
+\end{proof}
+
+\end{homeworkProblem}
+
+\begin{homeworkProblem}
+Seja $\gamma \in \mathbb{R}_{++}$. Considere o programa semidefinido
+
+\begin{align} \label{ex5}
+\max \quad        &\langle C, X \rangle & \nonumber \\
+\text{s.a.} \quad &\langle A_i, X \rangle \text{, } & \forall i \in [m] \text{, } \\
+                  &x \in \S_+^n \text{, } \nonumber
+\end{align}
+onde $n := m := 3$,  
+$$  C := e_1e_2^T + e_2e_1^T \text{, } 
+    A_1 := e_2e_2^T \text{, }
+    A_2 := e_1e_3^T + e_3e_1^T \text{, }
+    A_3 := -C + 2e_3e_3^T \text{ e }
+    b := 2 \gamma e_3 $$
+
+\end{homeworkProblem}
+
+\begin{homeworkProblem}
+Seja $\emptyset \neq K \subseteq \mathbb{E}$ um cone convexo e fechado num espaço euclidiano. Prove que $K^{**} = K$.
+\end{homeworkProblem}
+
+\begin{homeworkProblem}
+Seja $X \in \S^n$. Prove que $X \succ 0 \Longleftrightarrow det(X[\{1,\dots,k\}]) > 0$ para todo $k \in [n]$.
+
+\begin{proof}[Resposta]
+Seja $X \in \S^n$, vamos provar a tese sugerida pelo enunciado por indução em $n$. Se $n=1$, temos que $X \succ 0 \Leftrightarrow X > 0 \Leftrightarrow det(X) > 0$. Agora tome por hipótese de indução que a tese vale para $n - 1$.  
+
+Seja, então, $X \in \S^n$. $X$ pode ser decomposto da seguinte maneira:
+$$X = \begin{bmatrix}
+    \bar{X} y\\
+    y^T \alpha
+\end{bmatrix}
+\text{.}$$  
+
+Vamos provar a ida, ou seja, assuma que $X \succ 0$, para todo $h \in \R^n$, $h^TXh > 0$, podemos definir 
+$$h = \begin{bmatrix}
+    \bar{h}\\
+    0
+\end{bmatrix} \text{,}$$
+temos que $h^TXh = \bar{h}^T\bar{X}\bar{h} > 0$ para todo $\bar{h} \in \R^{n-1}$, logo, $\bar{X} \succ 0$. Assim, $det(X[\{1,\dots,k\}]) > 0$ para todo $k \in [n-1]$. Além disso, $det(X) = det(\bar{X})det(\alpha - y^T\bar{X}y)$. Pelo Ex. 18 (Complemento de Schur), $\alpha - y^T\bar{X}y > 0$, já que $X \succ 0$. Assim, $det(X) > 0$. Logo, provamos que $X \succ 0 \Longrightarrow det(X[\{1,\dots,k\}]) > 0$ para todo $k \in [n]$.  
+
+Agora precisamos assumir que $det(X[\{1,\dots,k\}]) > 0$ e provar que $X \succ 0$. Mais uma vez, usaremos a mesma decomposição que utilizamos na prova da ida. E chegamos, novamente, à fórmula $det(X) = det(\bar{X})det(\alpha - y^T\bar{X}y)$. Sabemos que $det(X) > 0$ e $det(\bar{X}) > 0$, logo $det(\alpha - y^T\bar{X}y) > 0$, porém, $\alpha - y^T\bar{X}y \in \R$, logo, só tem determinante positivo se for positivo, portanto, novamente pelo Ex. 18, $X \succ 0$.
+\end{proof}
+\end{homeworkProblem}
+
+\begin{homeworkProblem}
+Prove que $\mathrm{int}(\S_+^n) = \S_{++}^n$.
+
+\begin{proof}[Resposta]
+Primeiro, vamos provar $\S_{++}^n \subseteq \mathrm{int}(\S_+^n)$. Seja $x \in \S_{++}^n$ e $\epsilon = \max \limits_{\substack{u \in \mathbb{B} \\ {h^Tuh \neq 0}}} |\frac{h^Txh}{h^Tuh}|$.  
+
+Temos que para todo $u \in \mathbb{B}$
+$$ h^T(x+\epsilon u)h = h^Txh + \epsilon h^Tuh \text{, }$$
+o que nos dá dois casos:
+
+\begin{enumerate}
+\item se $h^Tuh \geq 0$, $h^T(x + \epsilon u)h \geq h^Txh > 0$;
+\item se $h^Tuh < 0$, $h^T(x + \epsilon u)h = h^Tuh + \epsilon h^Tuh \geq h^Txh - h^Txh = 0$.
+\end{enumerate}
+
+Desta forma, em todos os casos possíveis, $h^Txh \geq 0$, logo, $x \in \S_+^n$.  
+
+Agora, vamos provar que $\mathrm{int}\S_+^n \subseteq \S_{++}^n$. Seja $x \in \mathrm{int}(\S_+^n)$. Então existe $\epsilon > 0$ tal que para todo $h \in \R^n$ e $u \in \mathbb{B}$, 
+$$ h^T(x + \epsilon u)h \geq 0 \text{, portanto} $$
+$$ h^Txh + \epsilon h^Tuh \geq 0 \text{.}$$
+Escolha $u = -I/\sqrt(n)$ e qualquer $h \neq 0$.
+$$ h^Txh - \frac{\epsilon}{\sqrt{n}} \geq 0 \text{, }$$
+$$ h^Txh \geq \frac{\epsilon}{\sqrt{n}} \geq 0 \text{, ou seja}$$
+$$ x \in \S_{++}^n \text{.}$$
+
+Com isso, concluímos que $\mathrm{int}(\S_+^n) = \S_{++}^n$.
+\end{proof}
+\end{homeworkProblem}
+
+\end{document}

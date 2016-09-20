@@ -13,4 +13,7 @@
 [submodule "mac242/claudia"]
 	path = mac242/claudia
 	url = https://github.com/victorsenam/claudia
-
+    
+[submodule "mac210"]
+	path = mac210
+	url = git@github.com:victorsenam/mac210.git
