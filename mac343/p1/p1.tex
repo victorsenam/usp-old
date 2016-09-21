@@ -149,7 +149,7 @@
 %\tableofcontents
 \newpage
 
-\begin{homeworkProblem}
+\begin{homeworkProblem}[(Completo)]
 Seja $A \in R^{m \times n}$ uma matriz. Prove que vale precisamente uma das seguintes alternativas:
 \begin{enumerate}[label={\roman*}]
 \item existe $x \in \mathbb{R}_+^n$ tal que $Ax = 0$ e $x \neq 0$;
@@ -186,11 +186,37 @@ Pelo teorema 7 (Dualidade Fraca de PL), $c^tx \geq b^Ty = 0^Ty = 0$, porém, já
 Sejam $X,S \in \S^n$. Prove que $0 \prec S \preceq X \Rightarrow 0 \prec X^{-1} \preceq S^{-1}$.
 \end{homeworkProblem}
 
-\begin{homeworkProblem}
+\begin{homeworkProblem}[(Itens i e ii)]
 Sejam $X,S \in \S^n$. Prove que
 \begin{enumerate}[label={\roman*}]
 \item $X,S \in \S_+^n \Longrightarrow X \circ S \succeq 0$;
+
+\begin{proof}[Resposta]
+    Se $S \succeq 0$, pelo Teorema 20 (item $(iii)$), existe uma matriz $H \in R^{m \times n}$ para algum $m$ e um vetor $s \in \R_+^m$ tal que $S = \sum \limits_{i=1}^{m} s_i(He_i)(He_i)^T$. Escolhemos tais $H$ e $s$, assim, para todo $q \in \R^n$, temos que
+    $$q^T(X \circ S)q = \sum \limits_{i=1}^n \sum \limits_{j=1}^n q_iq_jX_{i,j}S_{i,j} =
+    \sum \limits_{i=1}^n \sum \limits_{j=1}^n (q_iq_jX_{i,j} \sum \limits_{k=1}^m s_kH_{k,i}H_{k,j}) \text{, que pode ser escrito como }$$
+    $$\sum \limits_{k=1}^m s_k \sum \limits_{i=1}^n \sum \limits_{j=1}^n (q \circ (He_k))_{i} (q \circ (He_k)_{j} X_{i,j} \text{, }$$
+    Se definirmos a matriz $Q = q \mathds{1}^T$, temos,
+    $$q^T(X \circ S)q = \sum \limits_{k=1}^m s_k((Q \circ H)e_k)^T X (Q \circ H)e_k \text{, }$$
+    já que para todo $k \in [m]$, vale que $(Q \circ H)e_k \in \R^n$ e $s_k \geq 0$, e, além disso, $X \succeq 0$,
+    $$q^T(X \circ S)q \geq \sum \limits_{k=1}^m s_k 0 \geq 0 \text{.}$$
+    Portanto, $(X \circ S) \succeq 0$.
+\end{proof}
+
 \item $X,S \in \S_{++}^n \Longrightarrow X \circ S \succ 0$;
+
+\begin{proof}[Resposta]
+    Se $S \succ 0$, pelo Exercício 21 (item $(iii)$), existe uma matriz $H \in R^{m \times n}$ para algum $m$ e um vetor $s \in \R_{++}^m$ tal que $S = \sum \limits_{i=1}^m s_i(He_i)(He_i)^T$ e o $\mathrm{span}(\{He_k \mid k \in [m]\}) = \R^n$. Escolhemos tais $H$ e $s$, assim, para todo $q \in \R^n$, temos que
+    $$q^T(X \circ S)q = \sum \limits_{i=1}^n \sum \limits_{j=1}^n q_iq_jX_{i,j}S_{i,j} =
+    \sum \limits_{i=1}^n \sum \limits_{j=1}^n (q_iq_jX_{i,j} \sum \limits_{k=1}^m s_kH_{k,i}H_{k,j}) \text{, que pode ser escrito como }$$
+    $$\sum \limits_{k=1}^m s_k \sum \limits_{i=1}^n \sum \limits_{j=1}^n (q \circ (He_k))_{i} (q \circ (He_k)_{j} X_{i,j} \text{, }$$
+    Se definirmos a matriz $Q = q \mathds{1}^T$, temos,
+    $$q^T(X \circ S)q = \sum \limits_{k=1}^m s_k((Q \circ H)e_k)^T X (Q \circ H)e_k \text{, }$$
+    já que para todo $k \in [m]$, vale que $(Q \circ H)e_k \in \R^n$ e $s_k > 0$, e, além disso, $X \succ 0$,
+    $$q^T(X \circ S)q > \sum \limits_{k=1}^m s_k 0 > 0 \text{.}$$
+    Portanto, $(X \circ S) \succ 0$.
+\end{proof}
+
 \item $X,S \in \S_{++}^n \Longrightarrow X \circ S \succeq (X^{-1} \circ S^{-1})^{-1}$;
 \item $X,S \in \S_{++}^n \Longrightarrow X \circ S \succeq (X \circ S)^{-1}$.
 \end{enumerate}
@@ -212,19 +238,19 @@ Seja $n$ um inteiro positivo. Determine o valor ótimo do seguinte programa semi
                   &z_{n+1} = \frac{1}{2} & \nonumber
 \end{align}
 
-\begin{proof}[Resposta]
-Para todo $j \in [n]$, $A_j \succeq 0$ se e somente se para todo $h \in \R^2$, $h^TA_jh \geq 0$, então,
-$$ h^TA_jh = -y_jh_1^2 - 2z_jh_1h_2 + 2z_{j+1}h_2^2 \geq 0 \text{.}$$
-\end{proof}
+%\begin{proof}[Resposta]
+%Para todo $j \in [n]$, $A_j \succeq 0$ se e somente se para todo $h \in \R^2$, $h^TA_jh \geq 0$, então,
+%$$ h^TA_jh = -y_jh_1^2 - 2z_jh_1h_2 + 2z_{j+1}h_2^2 \geq 0 \text{.}$$
+%\end{proof}
 
 \end{homeworkProblem}
 
-\begin{homeworkProblem}
+\begin{homeworkProblem}[(Parcial)]
 Seja $\gamma \in \mathbb{R}_{++}$. Considere o programa semidefinido
 
 \begin{align} \label{ex5}
 \max \quad        &\langle C, X \rangle & \nonumber \\
-\text{s.a.} \quad &\langle A_i, X \rangle \text{, } & \forall i \in [m] \text{, } \\
+\text{s.a.} \quad &\langle A_i, X \rangle = b_i \text{, } & \forall i \in [m] \text{, } \\
                   &x \in \S_+^n \text{, } \nonumber
 \end{align}
 onde $n := m := 3$,  
@@ -234,13 +260,30 @@ $$  C := e_1e_2^T + e_2e_1^T \text{, }
     A_3 := -C + 2e_3e_3^T \text{ e }
     b := 2 \gamma e_3 $$
 
+\begin{proof}[Resposta]
+Podemos escrever $\langle A_i, X \rangle = b_i$, $\forall i \in [m]$ como $\mathcal{A}(X) = b$, onde
+$\mathcal{A}(X) \in \R^m$  e $\mathcal{A}(X)_i = \langle A_i, X \rangle$ para todo $i \in [m]$. Precisamos montar o dual de $\ref{ex5}$, para isso, adicionamos a variável dual $y \in R^m$. E temos que calcular a transformação $\mathcal(A)^*$, dual de $\mathcal(A)$. Esta deve ser tal que 
+$$ \langle X, \mathcal{A}^*(X) \rangle = \langle \mathcal{A}(X), y \rangle \text{, }$$
+temos que
+$$ \langle \mathcal{A}(X), y \rangle = \mathcal{A}(X)^Ty = \sum \limits_{i=1}^m y_i\mathcal{A}(X)_i = \sum \limits_{i=1}^m y_i \langle A_i, X \rangle = \langle \sum \limits_{i=1}^m y_iA_i, X \rangle \text{, }$$
+portanto, podemos usar $\mathcal{A}^*(X) = \sum \limits_{i=1}^m y_iA_i$ (vale lembrar que a ideia desta prova foi vista em aula).
+
+\begin{align} \label{ex5_dual}
+\max \quad        &\langle b, y \rangle & \nonumber \\
+\text{s.a.} \quad &y \in \R^m \text{, } & \\
+                  &\sum \limits_{i=1}^m y_iA_i \in \S_+^n \text{.} & \nonumber
+\end{align}
+
+Eu não consegui nada mais do que isso.
+\end{proof}
+
 \end{homeworkProblem}
 
 \begin{homeworkProblem}
 Seja $\emptyset \neq K \subseteq \mathbb{E}$ um cone convexo e fechado num espaço euclidiano. Prove que $K^{**} = K$.
 \end{homeworkProblem}
 
-\begin{homeworkProblem}
+\begin{homeworkProblem}[(Completo)]
 Seja $X \in \S^n$. Prove que $X \succ 0 \Longleftrightarrow det(X[\{1,\dots,k\}]) > 0$ para todo $k \in [n]$.
 
 \begin{proof}[Resposta]
@@ -264,7 +307,7 @@ Agora precisamos assumir que $det(X[\{1,\dots,k\}]) > 0$ e provar que $X \succ 0
 \end{proof}
 \end{homeworkProblem}
 
-\begin{homeworkProblem}
+\begin{homeworkProblem}[(Completo)]
 Prove que $\mathrm{int}(\S_+^n) = \S_{++}^n$.
 
 \begin{proof}[Resposta]
