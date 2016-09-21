@@ -157,19 +157,38 @@ Aplique o método dual ao problema da cobertura mínima por conjuntos \textsc{(M
 Primeiro, precisamos formular o primal e o dual do problema \textsc{(MinCC)}. Seja $E$ o conjunto de elementos do problema e $\mathcal{S}$ o conjunto de conjuntos. Seja, também $c \in \mathbb{Q}_{\geq}^{|\mathcal{S}|}$ o vetor de custos dos conjuntos em $\mathcal{S}$. Precisamos formular o primal e o dual usados na técnica dual nesta análise.  
 \begin{align} \label{primal}
 \min \quad        &c^Tx & \nonumber \\
-\text{s.a.} \quad &Ax \geq 1 & \foral s \in \mathcal{S} \\
-                  &x \in \mathbb{R}_+^n \nonumber
+\text{s.a.} \quad &x(\delta(e)) \geq 1 & \forall e \in E \\
+                  &x_s \geq 0 & \forall s \in \mathcal{S} \nonumber
 \end{align}
 
 \begin{align} \label{dual}
-\max \quad        &b^Ty \nonumber \\
-\text{s.a.} \quad &y\in \mathbb{R}^m \\
-                  &A^Ty \leq c \nonumber
+\max \quad        &\mathds{1}^Ty & \nonumber \\
+\text{s.a.} \quad &y(s) \leq c_s & \forall s \in \mathcal{S} \\
+                  &y_e \geq 0 & \forall e \in E \nonumber
 \end{align}
+Com $y(s) = \sum \limits_{e \in s} y_e$ para todo $s \in \mathcal{S}$ e $x(\delta(e)) = \sum \limits_{s \in \delta(e)} x_s$ para todo $e \in E$.  
+O vetor $\tilde(x)$ tal que $\tilde{x}_s = 1 \forall s \in \mathcal{S}$ é uma solução viável do primal enquanto o vetor nulo é viável no dual. Assim, vale o teorema da dualidade forte e soluções ótimas deste programa devem respeitar folgas complementares e, também, se $\bar{x}$ é ótimo no primal e $\bar{y}$ é ótimo no dual,
 
+$$\mathrm{opt}(E, \mathcal{S}, c) \geq c^Tx = \mathds{1}^T \text{.}$$
 
+Escolhemos, então, o conjunto $C$ de todos os conjuntos de $\mathcal{S}$ que respeitam $\bar{y}(s) = c_s$. Já que valem folgas complementares, se $\bar{x}_s > 0$, então o conjunto $s$ foi escolhido, logo, para todo $e \in E$, pelo menos um $s$ foi escolhido tal que $e \in s$, assim, $C$ é uma cobertura por conjuntos do conjunto $E$.  
+
+Agora, temos que  
+$$c(C) = \sum \limits_{s \in \mathcal{S}} c_s = \sum \limits_{s \in \mathcal{S}} \bar{y}(s) \text{, }$$
+agora, se cada elemento aparece no máximo $\beta$ vezes em cada conjunto, temos que
+$$ \sum \limits_{s \in \mathcal{S}} \bar{y}(s) \leq \beta \bar{y}{E} = \beta \mathrm{opt}(E, \mathcal, c) \text{.}$$
+
+Assim, a estratégia apresentada é uma $\beta$-aproximação para o problema \textsc{MinCC}.
 \end{proof}
 
+\end{homeworkProblem}
+
+\begin{homeworkProblem}
+O \textsc{MinCA} é um caso particular "fácil" do \textsc{MinCC}: existe um algoritmo polinomial que o resolve. Mostre que o método dual dá uma $\Delta$-aproximação polinomial para o \textsc{MinCA}, onde $\Delta$ é o grau máximo em $G$.
+
+\begin{proof}[Resposta]
+É possível modelar uma instância de $\textsc{MinCA}(G, c)$ com uma instância de $\textsc{MinCC}(E, \mathcal{S}, c)$. Basta escolher $E = V(G)$, $\mathcal{S} = E(G)$ e usar o mesmo vetor de custos. Assim, temos que cada elemento de $E$ pertence a no máximo $\Delta$ conjuntos de $\mathcal{S}$. Assim, o método dual dá uma $\Delta$-aproximação para o problema. 
+\end{proof}
 \end{homeworkProblem}
 
 \end{document}
