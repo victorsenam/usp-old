@@ -138,7 +138,7 @@
 
 \begin{document}
 
-\maketitle
+%\maketitle
 
 %----------------------------------------------------------------------------------------
 %	TABLE OF CONTENTS
@@ -167,7 +167,7 @@ Primeiro, precisamos formular o primal e o dual do problema \textsc{(MinCC)}. Se
                   &y_e \geq 0 & \forall e \in E \nonumber
 \end{align}
 Com $y(s) = \sum \limits_{e \in s} y_e$ para todo $s \in \mathcal{S}$ e $x(\delta(e)) = \sum \limits_{s \in \delta(e)} x_s$ para todo $e \in E$.  
-O vetor $\tilde(x)$ tal que $\tilde{x}_s = 1 \forall s \in \mathcal{S}$ é uma solução viável do primal enquanto o vetor nulo é viável no dual. Assim, vale o teorema da dualidade forte e soluções ótimas deste programa devem respeitar folgas complementares e, também, se $\bar{x}$ é ótimo no primal e $\bar{y}$ é ótimo no dual,
+O vetor $\tilde{x}$ tal que $\tilde{x}_s = 1 \forall s \in \mathcal{S}$ é uma solução viável do primal enquanto o vetor nulo é viável no dual. Assim, vale o teorema da dualidade forte e soluções ótimas deste programa devem respeitar folgas complementares e, também, se $\bar{x}$ é ótimo no primal e $\bar{y}$ é ótimo no dual,
 
 $$\mathrm{opt}(E, \mathcal{S}, c) \geq c^Tx = \mathds{1}^T \text{.}$$
 
