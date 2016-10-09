@@ -16,4 +16,4 @@
     
 [submodule "mac210"]
 	path = mac210
-	url = git@github.com:victorsenam/mac210.git
+	url = https://github.com/victorsenam/mac210
