@@ -5,10 +5,13 @@
 %----------------------------------------------------------------------------------------
 
 \renewcommand{\|}[1]{\mathbb{#1}}
+\renewcommand{\"}[1]{\ensuremath{\mathcal{#1}}}
 
-\newcommand{\sse}{\Longleftrightarrow}
-\newcommand{\se}{\Longrightarrow}
-\newcommand{\so}{\Longleftarrow}
+\newcommand{\sse}{\Leftrightarrow}
+\newcommand{\se}{\Rightarrow}
+\newcommand{\so}{\Leftarrow}
+
+\newcommand{\eigen}{\lambda^{\downarrow}}
 
 %----------------------------------------------------------------------------------------
 
@@ -70,7 +73,7 @@ $$ h^T(X+\theta T)h = h^TXh + \theta h^TTh = 0 + h^TTh < 0 \text{, } $$
 $X + \theta T \notin \|{S}_{++}^n$, logo, $X + \theta T \notin A$. Assim, mostramos que $A$ é limitado. Já que $B \subseteq A$, $B$ também é limitado.
 \end{proof}
 
-\begin{prop}\label{prop_abfechados}
+\begin{prop}
 $A$ e $B$ são fechados.
 \end{prop}
 \begin{proof}
@@ -81,9 +84,84 @@ Sabemos que $\|{S}_{++}^n$ é fechado. $C = \{X \in \|{S} \mid \langle X, \bar{S
 $A$ tem interior não vazio.
 \end{prop}
 \begin{proof}
+Seja $\displaystyle X = \frac{\alpha \bar{S}}{2 \langle \bar{S}, \bar{S} \rangle} \in A$. Já que $\|{S}_{++}^n$ é aberto, existe um $\bar{\theta} \in \|{R}_+$ tal que $X + \theta T \in \|{S}_{++}^n$ para todo $T \in \|{B}$ e $\theta$ que respeite $\bar{\theta} \geq \theta \in \|{R}_+$. Escolhemos agora $\theta = \min(\bar{\theta}, \dfrac{\alpha}{4\langle \bar{S}, \bar{S} \rangle})$. Temos que, para todo $T \in \|{B}$,
+$$ \langle X + \theta T, \bar{S} \rangle = \langle X + \bar{S} \rangle + \theta \langle T, \bar{S} \rangle = \alpha/2 + \theta \langle T, \bar{S} \rangle \text{,} $$
+por Cachy-Schwartz (\textbf{Teo. 37}) e pela definição de $\theta$, respectivamente, temos
+$$ \alpha/2 + \theta \langle T, \bar{s} \rangle \leq \alpha/2 + \theta \langle \bar{S}, \bar{S} \rangle \leq \alpha/2 + \alpha/4 \leq \alpha \text{.}$$
+Portanto, para todo $T \in \|{B}$, $X + \theta T \in A$, logo, $X$ pertence ao interior de $A$ e o interior de $A$ é não-vazio.
 \end{proof}
 
-Com isso, temos que $A$ e $B$ são não-vazios, convexos e compactos e $A$ tem interior não-vazio. 
+Com isso, temos que $A$ e $B$ são não-vazios, convexos e compactos e $A$ tem interior não-vazio, como pedido pelo execício.
+\end{homeworkProblemAnswer}
+
+\begin{homeworkProblem}
+Seja $\"{A}: \|{S}^n \rightarrow \|{R}^m$ uma função linear e $b \in \|{R}^m$. Seja $w \in \|{R}^m$ tal que $w_1 \geq \dots \geq w_n$. Formule o seguinte problema de otimização como um programa semidefinido:
+\begin{equation*}
+    \begin{array}[!h]{lll}
+        \text{Minimizar} & w^T \eigen(X)                                    & \\[2pt]
+        \text{sujeito a} & \"{A}(X) = b,                                    & \\[2pt]
+                         & X \in \|{S}^n.                                   & \\
+    \end{array}
+\end{equation*}
+\end{homeworkProblem}
+
+\begin{homeworkProblemAnswer}
+\begin{equation}\label{eq:prob_ex2}
+    \begin{array}[!h]{lll}
+        \text{Minimizar} & w^T \eigen(X)                                    & \\[2pt]
+        \text{sujeito a} & \"{A}(X) = b,                                    & \\[2pt]
+                         & X \in \|{S}^n.                                   & \\
+    \end{array}
+    =
+    \begin{array}[!h]{lll}
+        \text{Minimizar} & \mu                                              & \\[2pt]
+        \text{sujeito a} & \"{A}(X) = b,                                    & \\[2pt]
+                         & X \in \|{S}^n,                                   & \\[2pt]
+                         & \mu \in \|{R},                                   & \\[2pt]
+                         & w^T \eigen(X) \leq \mu.                          & \\
+    \end{array}
+\end{equation}
+
+Vamos definir $\gamma \in \|{R}^{0 \oplus [n]}$ e $\hat{w} \in \|{R}^n$ da seguinte maneira:
+\begin{equation*}
+    \begin{array}[!h]{ll}
+        \gamma_k = \sum \limits_{i=1}^k \eigen_i(X), & \forall k \in [n], \\[2pt]
+        \gamma_0 = 0,                                & \\[2pt]
+        \hat{w}_k = w_k - w_{k+1},                   & \forall k \in [n-1], \\[2pt]
+        \hat{w} = w_n.                               & \\
+    \end{array}
+\end{equation*}
+
+Temos
+\begin{multline*}  
+    w^T \eigen(X) = 
+    \sum \limits_{i=1}^n w_i \eigen_i(X) = 
+    \sum \limits_{i=1}^n w_i (\gamma_i(X) - \gamma_{i-1}(X)) = 
+    \sum \limits_{i=1}^n w_i \gamma_i(X) - \sum \limits_{i=1}^{n-1} w_i \gamma_{i-1}(X) = \\
+    \sum \limits_{i=1}^{n-1} \gamma_i(X)(w_i - w_{i+1}) + \gamma_n(X)w_n =
+    \sum \limits_{i=1}^n \gamma_i(X) \hat{w}_i =
+    \hat{w}^T \gamma[n].
+\end{multline*}
+
+Além disso, já que $\hat{w} \geq 0$, para qualquer $\mu \in \|{R}$,
+$$
+    \hat{w}^T \gamma[n] \leq \mu \sse 
+    \text{existe } \hat{\gamma} \in \|{R}^n \text{ tal que } \gamma[n] \leq \hat{\gamma} \text{ e } \hat{w}^T\hat{\gamma} \leq \mu.
+$$
+
+Assim, podemos escrever ~\eqref{eq:prob_ex2} como 
+\begin{equation*}
+    \begin{array}[!h]{lll}
+        \text{Minimizar} & \mu                                              & \\[2pt]
+        \text{sujeito a} & \"{A}(X) = b,                                    & \\[2pt]
+                         & X \in \|{S}^n,                                   & \\[2pt]
+                         & \mu \in \|{R},                                   & \\[2pt]
+                         & \hat{\gamma} \in \|{R}^n,                        & \\[2pt]
+                         & \gamma[n] \leq \hat{\gamma},                     & \\[2pt]
+                         & w^T \eigen(X) \leq \mu.                          & \\
+    \end{array}
+\end{equation*}
+
 \end{homeworkProblemAnswer}
 
 \end{document}
