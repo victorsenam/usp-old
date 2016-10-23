@@ -12,6 +12,7 @@
 \newcommand{\so}{\Leftarrow}
 
 \newcommand{\eigen}{\lambda^{\downarrow}}
+\newcommand{\Tr}{\textrm{Tr}}
 
 %----------------------------------------------------------------------------------------
 
@@ -149,7 +150,7 @@ $$
     \text{existe } \hat{\gamma} \in \|{R}^n \text{ tal que } \gamma[n] \leq \hat{\gamma} \text{ e } \hat{w}^T\hat{\gamma} \leq \mu.
 $$
 
-Assim, podemos escrever ~\eqref{eq:prob_ex2} como 
+Assim, podemos escrever \eqref{eq:prob_ex2} como 
 \begin{equation*}
     \begin{array}[!h]{lll}
         \text{Minimizar} & \mu                                              & \\[2pt]
@@ -162,6 +163,192 @@ Assim, podemos escrever ~\eqref{eq:prob_ex2} como
     \end{array}
 \end{equation*}
 
+A restrição $\gamma[n] \leq \hat{\gamma}$ equivale a
+$$ \gamma_k = \sum \limits_{i=1}^k \eigen_i(X) \leq \hat{\gamma}_k, \forall k \in [n], $$
+pelo $\textbf{Teo. 54}$, para todo $k \in [n]$, 
+$$  
+    \sum \limits_{i=1}^k \eigen_i(X) \leq \hat{\gamma}_k \sse 
+    \exists Y \in \|{S}^n \text{ e } \eta \in \|{R} \text{ e } [\nu - k\eta - \Tr(Y)] \oplus Y \oplus [Y - X + \eta I] \in \|{R}_+ \oplus \|{S}_+^n \oplus \|{S}_+^n,
+$$
+que contém apenas restrições lineares. Desta maneira, conseguimos formular $\eqref{eq:prob_ex2}$ como um programa semidefinido.
+
 \end{homeworkProblemAnswer}
+
+\begin{homeworkProblem}
+Seja $\"{A} : \|{R}^n \oplus \|{R} \rightarrow \|{R}^m$ uma função linear. Sejam $b \in \|{R}^m$ e $c \oplus R^m \in \|{R}^n \oplus \|{R}$. Formule o seguinte problema de otimização como um progama cônico e 2a. ordem:
+\begin{equation} \label{eq:prob_ex3}
+    \begin{array}[!h]{lll}
+        \text{Minimizar} & \langle c \oplus \delta, x \oplus \mu \rangle    & \\[2pt]
+        \text{sujeito a} & \"{A}(x \oplus \mu) = b,                          & \\[2pt]
+                         & ||x||^2 \leq \mu,                                & \\[2pt]
+                         & x \oplus \mu \in \|{R}^n \oplus \|{R}.           & \\
+    \end{array}
+\end{equation}
+\end{homeworkProblem}
+
+\begin{homeworkProblemAnswer}
+Sabemos que, dados $x \in \|{R}^n$ e $\mu \in \|{R}$,
+\begin{multline*}
+    ||x||^2 \leq \mu \sse 
+    ||x||^2 \leq 1\mu \sse 
+    ||x||^2 \leq \left(\dfrac{\mu+1}{2}\right)^2 - \left(\dfrac{\mu-1}{2}\right)^2 \sse 
+    ||x||^2  + \left(\dfrac{\mu-1}{2}\right)^2 \leq \left(\dfrac{\mu+1}{2}\right)^2 \sse \\
+    ||x \oplus \dfrac{\mu-1}{2}||^2 \leq \left(\dfrac{\mu+1}{2}\right)^2 \sse 
+    ||x \oplus \dfrac{\mu-1}{2}|| \leq \dfrac{\mu+1}{2} \sse
+    x \oplus \dfrac{\mu-1}{2} \oplus \dfrac{\mu+1}{2} \in \hat{\|{L}}^{n+1}.
+\end{multline*}
+
+Com isso, podemos escrever $\eqref{eq:prob_ex3}$ como
+\begin{equation*} 
+    \begin{array}[!h]{lll}
+        \text{Minimizar} & \langle c \oplus \delta, x \oplus \mu \rangle    & \\[2pt]
+        \text{sujeito a} & \"{A}(x \oplus \mu) = b,                          & \\[2pt]
+                         & x \oplus \left( \frac{\mu-1}{2} \right) \oplus \left( \frac{\mu+1}{2} \right) \in \hat{\|{L}}^{n+1}, & \\[2pt]
+                         & x \oplus \mu \in \|{R}^n \oplus \|{R},           & \\
+    \end{array}
+\end{equation*}
+que é um programa cônico de 2a. ordem.
+\end{homeworkProblemAnswer}
+
+\begin{homeworkProblem}
+Considere o programa semidefinido $\max\{ \langle C, X \rangle : \"{A}(X) = b, X \in \|{S}_+^n \}$, onde $\"{A} : \|{S}^n \rightarrow \|{R}^m$ é uma função linear, $b \in \|{R}^m$ e $C \in \|{S}^n$. Sponha que tanto esse programa como o seu dual possuem pontos de Slater. Prove que, se a região viável do primal é limitada, então a região viável do dual é ilimitada.
+\end{homeworkProblem}
+
+\begin{homeworkProblemAnswer}
+Sem resposta.
+\end{homeworkProblemAnswer}
+
+\begin{homeworkProblem}
+Sejam $\bar{a}_1, \dots, \bar{a}_m \in \|{R}^n$ e $\epsilon \in \|{R}_{++}^n$. Sejam $b \in \|{R}^m$ e $c \in \|{R}^n$. Formule o seguinte problema de otimização como um programa cônico de 2a. ordem:
+\begin{equation} \label{eq:prob_ex5}
+    \begin{array}[!h]{lll}
+        \text{Maximizar} & c^Tx                     & \\[2pt]
+        \text{sujeito a} & a_i^Tx \leq b_i,         & \forall i \in [m], \forall a_i \in \bar{a}_i + \varepsilon_i \|{B}, \\[2pt]
+                         & x \in \|{R}^n.           & \\
+    \end{array}
+\end{equation}
+\end{homeworkProblem}
+
+\begin{homeworkProblemAnswer}
+Temos, para todo $i \in [n]$, 
+\begin{multline} \label{eq:leq_ex5}
+    a_i^Tx \leq b_i \forall a_i \in \bar{a}_i + \varepsilon_i \|{B} \sse 
+    \max \limits_{a_i \in \bar{a}_i + \varepsilon_i\|{B}}(a_i^Tx) \leq b_i \sse
+    \max \limits_{u \in \|{B}}(\bar{a}_i + \varepsilon_iu)^Tx) \leq b_i \sse \\
+    \bar{a}_i + \varepsilon_i \max \limits_{u \in \|{B}}(u^Tx) \leq b_i \sse
+    \bar{a}_i + \varepsilon_i \max \limits_{u \in ||x||\|{B}}(u^Tx)/||x|| \leq b_i.
+\end{multline}
+Por Cauchy-Schwartz, sabemos
+$$ \max \limits_{u \in \|{R}^n}(u^Tx) = x^Tx, $$
+logo,
+$$ \max \limits_{u \in ||x||\|{B}}(u^Tx) = x^Tx,$$
+portanto, \eqref{eq:leq_ex5} vale se e somente se
+$$ 
+    \bar{a}_i^Tx + \varepsilon_i \dfrac{x^Tx}{||x||} = \bar{a}_i^Tx + \varepsilon_i||x|| \leq b_i \sse
+    ||x|| \leq (b_i - \bar{a}_i^Tx)/\varepsilon_i \sse
+    x \oplus \dfrac{b_i - \bar{a}_i^Tx}{\varepsilon_i} \in \hat{\|{L}}^n.
+$$
+Ou seja, podemos escrever \eqref{eq:prob_ex5} como 
+\begin{equation*}
+    \begin{array}[!h]{lll}
+        \text{Maximizar} & c^Tx                                                                      & \\[2pt]
+        \text{sujeito a} & x \oplus \dfrac{b_i - \bar{a}_i^Tx}{\varepsilon_i} \in \hat{\|{L}}^n,     & \forall i \in [m], \\[2pt]
+                         & x \in \|{R}^n.                                                              & \\
+    \end{array}
+\end{equation*}
+\end{homeworkProblemAnswer}
+
+\begin{homeworkProblem}
+Considere o programa semidefinido
+\begin{equation} \tag{P} \label{eq:prob_ex6}
+    \begin{array}[!h]{lll}
+        \text{Minimizar} & \langle C, X \rangle                                                      & \\[2pt]
+        \text{sujeito a} & \langle e_1e_1^T, X \rangle = 1,                                          & \\[2pt]
+                         & X \in \|{S}_+^2,                                                          & \\
+    \end{array}
+\end{equation}
+onde $C := e_1e_2^T + e_2e_1^T$. Mostre que
+
+\begin{enumerate}[(i)]
+
+\item \eqref{eq:prob_ex6} é ilimitado,
+\begin{homeworkProblemAnswer}
+Seja $\alpha \in \|{R}^n$ e $\bar{X} := e_1e_1^T + \alpha C + \alpha e_2e_2^T$. Temos
+$$\langle \bar{X}, e_1e_1^T \rangle = 1$$
+e, pela \textbf{Prop. 23}, 
+$$\bar{X} \succeq 0 \sse \alpha \alpha \leq \alpha^2,$$
+ou seja, $\bar{S} \succeq 0$. Logo, $\bar{X}$ é viável em \eqref{eq:prob_ex6} e o seu valor objetivo é
+$$ \langle C, X \rangle = 2 \alpha, $$
+que varia livremente com $\alpha$, ou seja, \eqref{eq:prob_ex6} é ilimitado.
+\end{homeworkProblemAnswer}
+
+\item o dual de \eqref{eq:prob_ex6} é inviável e
+\begin{homeworkProblemAnswer}
+O dual de \eqref{eq:prob_ex6} é
+\begin{equation} \tag{D} \label{eq:dual_ex6}
+    \begin{array}[!h]{lll}
+        \text{Maximizar} & y                                                                         & \\[2pt]
+        \text{sujeito a} & y \in \|{R},                                                              & \\[2pt]
+                         & yC \in \|{S}_+^2,                                                              & \\
+    \end{array}
+\end{equation}
+pois se chamarmos $\"{A}(X) := \langle C, X \rangle$, temos $\"{A} : \|{S}^n \rightarrow \|{R}$, portanto, a variável dual $y$ deve pertencer a $\|{R}$ e teremos também que a tranformação dual de $\"{A}$ é $\"{A}^*(y) = yC$.  
+
+Porém, para todo $y \in \|{R}$, $\det(yC[0]) = 0$, já que $yC[0] = 0$, portanto, pelo \textbf{Teo. 24}, $yC[0] \notin \|{S}_+^2$, assim, não existe $y$ que respeite às restricões de \eqref{eq:dual_ex6} e este é inviável.
+\end{homeworkProblemAnswer}
+
+\item para qualquer solução viável $\bar{X}$ de \eqref{eq:prob_ex6}, não existe $D \in \|{S}^2$ tal que $\bar{X} + \alpha D$ é viável para todo $\alpha \in \|{R}_+$ e $\langle C, D \rangle < 0$.
+
+\begin{homeworkProblemAnswer}
+Se $\langle C, D \rangle < 0$, já que $C \succeq 0$, $D \notin \|{S}_+^2$, pelo \textbf{Teo. 20}. Logo, existe $h \in \|{R}^2$ tal que $h^TDh < 0$, portanto, se $\alpha = -\dfrac{h^T\bar{X}h}{h^TDh} + 1$, teremos $\alpha \in \|{R}_+$ e também teremos
+$$ h^T(\bar{X} + \alpha D)h = h^T\bar{x}h + \alpha h^TDh = h^T\bar{X}h - h^T\bar{X}h + h^TDh < 0. $$
+Portanto, $\bar{X} + \alpha D \notin \|{S}_+^2$, logo, $\bar{X} + \alpha D$ é inviável. Ou seja, para todo $D$ conseguimos um $\alpha$ que torna $\bar{X} + \alpha D$ inviável em \eqref{eq:prob_ex6}.
+\end{homeworkProblemAnswer}
+
+\end{enumerate}
+\end{homeworkProblem}
+
+\begin{homeworkProblem}
+Sejam $Q_0, \dots, Q_m \in \|{S}_+^n$, $c_0, \dots, c_m \in \|{R}^n$ e $b \in \|{R}^m$. Formule o seguinte problema de otimização como um programa semidefinido:
+\begin{equation} \label{eq:prob_ex7}
+    \begin{array}[!h]{lll}
+        \text{Minimizar} & \frac{1}{2}x^TQ_0x + c_0^Tx                                               & \\[2pt]
+        \text{sujeito a} & \frac{1}{2}x^TQ_ix + c_i^Tx + b_i \leq 0,                                 & \forall i \in [m] \\[2pt]
+                         & x \in \|{R}^n.                                                            & \\
+    \end{array}
+\end{equation}
+
+\begin{homeworkProblemAnswer}
+Para todo $i \in [m]$ e $x \in \|{R}^n$,
+$$ 
+    \frac{1}{2}x^TQ_ix + c_i^Tx + b_i \leq 0 \sse 
+    \text{existe } \alpha \in \|{R} \text{ tal que } x^TQ_ix \leq 2\alpha \text{ e } \alpha + c_i^Tx + b_i \leq 0,
+$$
+pelo \textbf{Ex. 18}, isso vale se e somente se
+\begin{equation*}
+    \text{existe } \alpha \in \|{R} \text{ tal que }
+    \begin{bmatrix}
+    I                     & Q_i^{\sfrac{1}{2}}x \\
+    (Q_i^{\sfrac{1}{2}}x)^T & 2\alpha
+    \end{bmatrix}
+    \succeq 0 \text{ e } \alpha + c_i^Tx + b_i \leq 0.
+\end{equation*}
+Logo, o programa \eqref{eq:prob_ex7} pode ser formulado como
+\begin{equation*}
+    \begin{array}[!h]{lll}
+        \text{Minimizar} & \alpha_0 + c_0^Tx                                                         & \\[2pt]
+        \text{sujeito a} & \begin{bmatrix}
+                           I                     & Q_i^{\sfrac{1}{2}}x \\
+                           (Q_i^{\sfrac{1}{2}}x)^T & 2\alpha_i
+                           \end{bmatrix} \succeq 0,                                                  & \forall i \in 0 \oplus [m], \\[2pt]
+                         & \alpha_i + c_i^Tx + b_i \leq 0                                            & \forall i \in [m], \\[2pt]
+                         & \alpha \in \|{R} \oplus \|{R}^m,                                          & \\[2pt]
+                         & x \in \|{R}^n.                                                            & \\
+    \end{array}
+\end{equation*}
+
+\end{homeworkProblemAnswer}
+
+\end{homeworkProblem}
 
 \end{document}

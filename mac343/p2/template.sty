@@ -27,9 +27,9 @@
 \usepackage[utf8]{inputenc}
 \usepackage[brazil]{babel}
 
-\usepackage{amsmath,amsthm,amssymb,amsfonts} % Math stuff
+\usepackage{amsmath,amsthm,amssymb,amsfonts,xfrac} % Math stuff
 %\usepackage{enumitem,tikz}
-\usepackage{enumitem} % Better enumerates
+\usepackage{enumerate} % Better enumerates
 \usepackage{dsfont}
 
 \usepackage{fancyhdr} % Required for custom headers
@@ -104,8 +104,9 @@
 }
 
 \newenvironment{homeworkProblemAnswer}[0]{ % Defines the problem answer environment
-    \subsection*{Resposta}
+    \begin{proof}[\textbf{Resposta}]
     }{
+    \end{proof}
 }
 
 %----------------------------------------------------------------------------------------
