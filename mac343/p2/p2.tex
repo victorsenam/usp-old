@@ -1,0 +1,89 @@
+\input{template.sty}
+
+%----------------------------------------------------------------------------------------
+%>-- SHORTCUTS
+%----------------------------------------------------------------------------------------
+
+\renewcommand{\|}[1]{\mathbb{#1}}
+
+\newcommand{\sse}{\Longleftrightarrow}
+\newcommand{\se}{\Longrightarrow}
+\newcommand{\so}{\Longleftarrow}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%\maketitle
+%\newpage
+
+%\tableofcontents
+%\newpage
+
+\begin{homeworkProblem}[]
+Sejam $\bar{S} \in \|{S}_{++}^n$ e $\alpha \in \|{R}_{++}$. Prove que os conjuntos
+$$\{X \in \|{S}_{++}^{n} \mid \langle \bar{S}, X \rangle \leq \alpha \} \text{ e } 
+  \{X \in \|{S}_{++}^{n} \mid \langle \bar{S}, X \rangle = \alpha \}$$
+são não-vazios, convexos e compactos. Mostre ainda que o interior do primeiro conjunto não é vazio.
+\end{homeworkProblem}
+
+
+\begin{homeworkProblemAnswer}
+Vamos chamar o primeiro conjunto de $A$ e o segundo de $B$, isto é
+$$A = \{X \in \|{S}_{++}^{n} \mid \langle \bar{S}, X \rangle \leq \alpha \} \text{ e } $$
+$$B = \{X \in \|{S}_{++}^{n} \mid \langle \bar{S}, X \rangle = \alpha \} \text{.} $$
+Agora, devemos provar algumas propriedades sobre $A$ e $B$.
+\begin{prop}
+$A$ e $B$ são não-vazios.
+\end{prop}
+\begin{proof}
+Já que $\bar{S} \in \|{S}_{++}^n$, $\bar{S} \neq 0$, logo $\langle \bar{S}, \bar{S} \rangle \neq 0$. Escolhermos $\beta = \dfrac{\alpha}{\langle \bar{S}, \bar{S} \rangle}$. Já que $\alpha > 0$ e $\langle \bar{S}, \bar{S} \rangle > 0$, $\beta > 0$. Agora, escolhemos $\bar{X} = \beta\bar{S}$. Temos que para todo $h \in \|{R}^n$,  
+$$ h^T\bar{X}h = h^T\beta\bar{S}h = \beta h^T\bar{S}h > 0 \text{, } $$
+portanto, $\bar{X} \in \|{S}_{++}^n \subseteq \|{S}_{+}^n$. Além disso, $\langle \bar{S}, X \rangle = \alpha$. Logo, $\bar{X} \in A$ e $\bar{X} \in B$. Portanto, $A \neq \emptyset$ e $B \neq \emptyset$.
+\end{proof}
+
+\begin{prop}
+$A$ e $B$ são convexos.
+\end{prop}
+\begin{proof}
+Agora, queremos mostrar que $A$ e $B$ são convexos. Sejam $X,Y \in \|{S}_{+}^n$ quaisquer escolhemos $Z = (X+Y)/2$. Temos que, para todo $h \in \|{R}^n$,
+
+$$h^TZh = h^T(X+Y)h/2 = (h^TXh + h^TYh)/2 > 0 \text{, }$$
+então $Z \in \|{S}_{++}^n$, além disso,
+$$\langle Z, \bar{S} \rangle = (\langle X, \bar{S} \rangle + \langle Y, \bar{S} \rangle)/2 \text{.}$$
+
+Assim, se existe $\beta \in \|{R}$ tal que $\langle X, \bar{S} \rangle = \langle Y, \bar{S} \rangle = \beta$, então $\langle Z, \bar{S} = \beta$, ou seja, $B$ é convexo. Além disso, se existe $\beta \in \|{R}$ tal que $\langle X, \bar{S} \rangle \leq \beta$ e $\langle Y, \bar{S} \rangle \leq \beta$, então, $\langle Z, \bar{S} \rangle \leq \beta$, ou seja, $A$ é convexo.
+\end{proof}
+
+\begin{prop}
+$A$ e $B$ são limitados.
+\end{prop}
+\begin{proof}
+Sejam $T \in \|{S}^n \setminus \{0\}$ e $X \in A$. Sabemos que $A$ é limitado se e somente se existe $\theta \in \|{R}_+$ tal que $X + \theta T \notin A$.  
+
+Se $\langle T, \bar{S} > 0 \rangle$, basta escolher $\theta = \dfrac{\alpha - \langle X, \bar{S} \rangle}{\langle T, \bar{S} \rangle} + 1$. Já que $\alpha \geq \langle X, \bar{S} \rangle$, $\theta \geq 1 > 0$, logo, $\theta \in \|{R}_+$ e $\langle X + \theta T, \bar{S} \rangle = \alpha + \langle T, \bar{S} \rangle > \alpha$, logo, $X + \theta T \notin A$.  
+
+Caso contrário, pelo \textbf{Ex. 21}, já que $X \in \|{S}_{++}^n$, $T \notin \|{S}_+^n \setminus {0}$. Logo, existe $h \in \|{R}^n$ tal que
+$$ h^TTh < 0 \text{, portanto,} $$
+se $\theta = -\dfrac{h^TXh}{h^TTh} + 1$, $\theta \geq 1 > 0$. Logo, $\theta \in \|{R}_+$ e já que
+$$ h^T(X+\theta T)h = h^TXh + \theta h^TTh = 0 + h^TTh < 0 \text{, } $$
+$X + \theta T \notin \|{S}_{++}^n$, logo, $X + \theta T \notin A$. Assim, mostramos que $A$ é limitado. Já que $B \subseteq A$, $B$ também é limitado.
+\end{proof}
+
+\begin{prop}\label{prop_abfechados}
+$A$ e $B$ são fechados.
+\end{prop}
+\begin{proof}
+Sabemos que $\|{S}_{++}^n$ é fechado. $C = \{X \in \|{S} \mid \langle X, \bar{S} \rangle \leq \alpha\}$ é um semiespaço, logo, é fechado. $D = \{X \in \|{S} \mid \langle X, \bar{S} \rangle = \alpha\}$ é um hiperplano, logo, é fechado. $A = \|{S}_{++}^n \cap C$ e $B = \|{S}_{++}^n \cap D$, ou seja, tanto $A$ quanto $B$ são fechados.
+\end{proof}
+
+\begin{prop}
+$A$ tem interior não vazio.
+\end{prop}
+\begin{proof}
+\end{proof}
+
+Com isso, temos que $A$ e $B$ são não-vazios, convexos e compactos e $A$ tem interior não-vazio. 
+\end{homeworkProblemAnswer}
+
+\end{document}
