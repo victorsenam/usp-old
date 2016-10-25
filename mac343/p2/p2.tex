@@ -26,24 +26,24 @@
 
 \begin{homeworkProblem}[]
 Sejam $\bar{S} \in \|{S}_{++}^n$ e $\alpha \in \|{R}_{++}$. Prove que os conjuntos
-$$\{X \in \|{S}_{++}^{n} \mid \langle \bar{S}, X \rangle \leq \alpha \} \text{ e } 
-  \{X \in \|{S}_{++}^{n} \mid \langle \bar{S}, X \rangle = \alpha \}$$
+$$\{X \in \|{S}_{+}^{n} \mid \langle \bar{S}, X \rangle \leq \alpha \} \text{ e } 
+  \{X \in \|{S}_{+}^{n} \mid \langle \bar{S}, X \rangle = \alpha \}$$
 são não-vazios, convexos e compactos. Mostre ainda que o interior do primeiro conjunto não é vazio.
 \end{homeworkProblem}
 
 
 \begin{homeworkProblemAnswer}
 Vamos chamar o primeiro conjunto de $A$ e o segundo de $B$, isto é
-$$A = \{X \in \|{S}_{++}^{n} \mid \langle \bar{S}, X \rangle \leq \alpha \} \text{ e } $$
-$$B = \{X \in \|{S}_{++}^{n} \mid \langle \bar{S}, X \rangle = \alpha \} \text{.} $$
+$$A = \{X \in \|{S}_{+}^{n} \mid \langle \bar{S}, X \rangle \leq \alpha \} \text{ e } $$
+$$B = \{X \in \|{S}_{+}^{n} \mid \langle \bar{S}, X \rangle = \alpha \} \text{.} $$
 Agora, devemos provar algumas propriedades sobre $A$ e $B$.
 \begin{prop}
 $A$ e $B$ são não-vazios.
 \end{prop}
 \begin{proof}
-Já que $\bar{S} \in \|{S}_{++}^n$, $\bar{S} \neq 0$, logo $\langle \bar{S}, \bar{S} \rangle \neq 0$. Escolhermos $\beta = \dfrac{\alpha}{\langle \bar{S}, \bar{S} \rangle}$. Já que $\alpha > 0$ e $\langle \bar{S}, \bar{S} \rangle > 0$, $\beta > 0$. Agora, escolhemos $\bar{X} = \beta\bar{S}$. Temos que para todo $h \in \|{R}^n$,  
+Já que $\bar{S} \in \|{S}_{++}^n$, $\bar{S} > 0$, logo $\langle \bar{S}, \bar{S} \rangle \neq 0$. Escolhemos $\beta = \dfrac{\alpha}{\langle \bar{S}, \bar{S} \rangle}$. Já que $\alpha > 0$ e $\langle \bar{S}, \bar{S} \rangle > 0$, $\beta > 0$. Agora, escolhemos $\bar{X} = \beta\bar{S}$. Temos que para todo $h \in \|{R}^n$,  
 $$ h^T\bar{X}h = h^T\beta\bar{S}h = \beta h^T\bar{S}h > 0 \text{, } $$
-portanto, $\bar{X} \in \|{S}_{++}^n \subseteq \|{S}_{+}^n$. Além disso, $\langle \bar{S}, X \rangle = \alpha$. Logo, $\bar{X} \in A$ e $\bar{X} \in B$. Portanto, $A \neq \emptyset$ e $B \neq \emptyset$.
+portanto, $\bar{X} \in \|{S}_{++}^n \subseteq \|{S}_{+}^n$. Além disso, $\langle \bar{S}, \bar{X} \rangle = \beta \langle \bar{S}, \bar{S} \rangle = \alpha$. Logo, $\bar{X} \in A$ e $\bar{X} \in B$. Portanto, $A \neq \emptyset$ e $B \neq \emptyset$.
 \end{proof}
 
 \begin{prop}
@@ -53,42 +53,49 @@ $A$ e $B$ são convexos.
 Agora, queremos mostrar que $A$ e $B$ são convexos. Sejam $X,Y \in \|{S}_{+}^n$ quaisquer escolhemos $Z = (X+Y)/2$. Temos que, para todo $h \in \|{R}^n$,
 
 $$h^TZh = h^T(X+Y)h/2 = (h^TXh + h^TYh)/2 > 0 \text{, }$$
-então $Z \in \|{S}_{++}^n$, além disso,
+então $Z \in \|{S}_{+}^n$, além disso,
 $$\langle Z, \bar{S} \rangle = (\langle X, \bar{S} \rangle + \langle Y, \bar{S} \rangle)/2 \text{.}$$
 
-Assim, se existe $\beta \in \|{R}$ tal que $\langle X, \bar{S} \rangle = \langle Y, \bar{S} \rangle = \beta$, então $\langle Z, \bar{S} = \beta$, ou seja, $B$ é convexo. Além disso, se existe $\beta \in \|{R}$ tal que $\langle X, \bar{S} \rangle \leq \beta$ e $\langle Y, \bar{S} \rangle \leq \beta$, então, $\langle Z, \bar{S} \rangle \leq \beta$, ou seja, $A$ é convexo.
+Assim, se existe $\beta \in \|{R}$ tal que $\langle X, \bar{S} \rangle = \langle Y, \bar{S} \rangle = \beta$, então $\langle Z, \bar{S} \rangle = \beta$, ou seja, $B$ é convexo. Além disso, se existe $\beta \in \|{R}$ tal que $\langle X, \bar{S} \rangle \leq \beta$ e $\langle Y, \bar{S} \rangle \leq \beta$, então, $\langle Z, \bar{S} \rangle \leq \beta$, ou seja, $A$ é convexo.
 \end{proof}
 
 \begin{prop}
 $A$ e $B$ são limitados.
 \end{prop}
 \begin{proof}
-Sejam $T \in \|{S}^n \setminus \{0\}$ e $X \in A$. Sabemos que $A$ é limitado se e somente se existe $\theta \in \|{R}_+$ tal que $X + \theta T \notin A$.  
+Seja $\bar{X} \in A$. Sabemos que $A$ é limitado se e somente se existe $\hat{\theta} \in \|{R}_+$ tal que $\bar{X} + \theta \|{B} \not\subseteq A$ para todo $\theta \geq \hat{\theta}$. Seja $T \in \|{B}$, temos dois casos:  
 
-Se $\langle T, \bar{S} > 0 \rangle$, basta escolher $\theta = \dfrac{\alpha - \langle X, \bar{S} \rangle}{\langle T, \bar{S} \rangle} + 1$. Já que $\alpha \geq \langle X, \bar{S} \rangle$, $\theta \geq 1 > 0$, logo, $\theta \in \|{R}_+$ e $\langle X + \theta T, \bar{S} \rangle = \alpha + \langle T, \bar{S} \rangle > \alpha$, logo, $X + \theta T \notin A$.  
+Se $\langle T, \bar{S} \rangle > 0$, basta escolher $\bar{\theta} = \dfrac{\alpha - \langle \bar{X}, \bar{S} \rangle}{\langle T, \bar{S} \rangle} + 1$. Já que $\alpha \geq \langle \bar{X}, \bar{S} \rangle$, $\theta \hat{\geq} 1$, logo, $\hat{\theta} \in \|{R}_+$ e, para todo $\theta \geq \hat{\theta}$, 
+$$
+    \langle \bar{X} + \theta T, \bar{S} \rangle = 
+    \langle \bar{X}, \bar{S} \rangle + \theta \langle T, \bar{S} \rangle \geq 
+    \langle \bar{X}, \bar{S} \rangle + \alpha - \langle \bar{X}, \bar{S} \rangle + \langle T, \bar{S} \rangle =
+    \alpha + \langle T, \bar{S} \rangle >
+    \alpha
+$$
 
-Caso contrário, pelo \textbf{Ex. 21}, já que $X \in \|{S}_{++}^n$, $T \notin \|{S}_+^n \setminus {0}$. Logo, existe $h \in \|{R}^n$ tal que
+Caso contrário, pelo \textbf{Teo. 20}, já que $\bar{X} \in \|{S}_{+}^n$, $T \notin \|{S}_+^n \setminus {0}$. Logo, existe $h \in \|{R}^n$ tal que
 $$ h^TTh < 0 \text{, portanto,} $$
-se $\theta = -\dfrac{h^TXh}{h^TTh} + 1$, $\theta \geq 1 > 0$. Logo, $\theta \in \|{R}_+$ e já que
-$$ h^T(X+\theta T)h = h^TXh + \theta h^TTh = 0 + h^TTh < 0 \text{, } $$
-$X + \theta T \notin \|{S}_{++}^n$, logo, $X + \theta T \notin A$. Assim, mostramos que $A$ é limitado. Já que $B \subseteq A$, $B$ também é limitado.
+se $\hat{\theta} = -\dfrac{h^T\bar{X}h}{h^TTh} + 1$, $\hat{\theta} \in \|{R}_+$ e, para todo $\theta \geq \hat{\theta}$,
+$$ h^T(\bar{X}+\theta T)h = h^T\bar{X}h + \theta h^TTh \leq 0 + h^TTh < 0 \text{, } $$
+então $\bar{X} + \theta T \notin \|{S}_{+}^n$, logo, $\bar{X} + \theta T \notin A$. Basta, então, escolher $\hat{\theta} = \max \limits_{T \in \|{B}}\left(\max\left(\dfrac{\alpha - \langle \bar{X}, \bar{S} \rangle}{\langle T, \bar{S} \rangle}, -\dfrac{h^T\bar{X}h}{h^TTh}\right)\right)$ e, assim, mostramos que $A$ é limitado. Já que $B \subseteq A$, $B$ também é limitado.
 \end{proof}
 
 \begin{prop}
 $A$ e $B$ são fechados.
 \end{prop}
 \begin{proof}
-Sabemos que $\|{S}_{++}^n$ é fechado. $C = \{X \in \|{S} \mid \langle X, \bar{S} \rangle \leq \alpha\}$ é um semiespaço, logo, é fechado. $D = \{X \in \|{S} \mid \langle X, \bar{S} \rangle = \alpha\}$ é um hiperplano, logo, é fechado. $A = \|{S}_{++}^n \cap C$ e $B = \|{S}_{++}^n \cap D$, ou seja, tanto $A$ quanto $B$ são fechados.
+Sabemos que $\|{S}_{+}^n$ é fechado. $C = \{X \in \|{S} \mid \langle X, \bar{S} \rangle \leq \alpha\}$ é um semiespaço, logo, é fechado. $D = \{X \in \|{S} \mid \langle X, \bar{S} \rangle = \alpha\}$ é um hiperplano, logo, é fechado. $A = \|{S}_{+}^n \cap C$ e $B = \|{S}_{+}^n \cap D$, ou seja, tanto $A$ quanto $B$ são fechados.
 \end{proof}
 
 \begin{prop}
 $A$ tem interior não vazio.
 \end{prop}
 \begin{proof}
-Seja $\displaystyle X = \frac{\alpha \bar{S}}{2 \langle \bar{S}, \bar{S} \rangle} \in A$. Já que $\|{S}_{++}^n$ é aberto, existe um $\bar{\theta} \in \|{R}_+$ tal que $X + \theta T \in \|{S}_{++}^n$ para todo $T \in \|{B}$ e $\theta$ que respeite $\bar{\theta} \geq \theta \in \|{R}_+$. Escolhemos agora $\theta = \min(\bar{\theta}, \dfrac{\alpha}{4\langle \bar{S}, \bar{S} \rangle})$. Temos que, para todo $T \in \|{B}$,
+Seja $\displaystyle X = \frac{\alpha \bar{S}}{2 \langle \bar{S}, \bar{S} \rangle} \in A$, $X \in \|{S}_{++}$, pois $\bar{S} \in \|{S}_{++}^n$ e $\dfrac{\alpha}{2 \langle \bar{S}, \bar{S} \rangle}$.Já que $\|{S}_{++}^n$ é aberto, existe um $\bar{\theta} \in \|{R}_+$ tal que $X + \theta T \in \|{S}_{++}^n$ para todo $T \in \|{B}$ e $\theta$ que respeite $\bar{\theta} \geq \theta \in \|{R}_+$. Escolhemos agora $\hat{\theta} = \min(\bar{\theta}, \dfrac{\alpha}{4\langle \bar{S}, \bar{S} \rangle})$. Temos que, para todo $T \in \|{B}$ e $\theta \leq \hat{\theta}$,
 $$ \langle X + \theta T, \bar{S} \rangle = \langle X + \bar{S} \rangle + \theta \langle T, \bar{S} \rangle = \alpha/2 + \theta \langle T, \bar{S} \rangle \text{,} $$
 por Cachy-Schwartz (\textbf{Teo. 37}) e pela definição de $\theta$, respectivamente, temos
-$$ \alpha/2 + \theta \langle T, \bar{s} \rangle \leq \alpha/2 + \theta \langle \bar{S}, \bar{S} \rangle \leq \alpha/2 + \alpha/4 \leq \alpha \text{.}$$
+$$ \alpha/2 + \theta \langle T, \bar{s} \rangle \leq \alpha/2 + \theta \langle \bar{S}, \bar{S} \rangle \leq \alpha/2 + \alpha/4 < \alpha \text{.}$$
 Portanto, para todo $T \in \|{B}$, $X + \theta T \in A$, logo, $X$ pertence ao interior de $A$ e o interior de $A$ é não-vazio.
 \end{proof}
 
@@ -96,7 +103,7 @@ Com isso, temos que $A$ e $B$ são não-vazios, convexos e compactos e $A$ tem i
 \end{homeworkProblemAnswer}
 
 \begin{homeworkProblem}
-Seja $\"{A}: \|{S}^n \rightarrow \|{R}^m$ uma função linear e $b \in \|{R}^m$. Seja $w \in \|{R}^m$ tal que $w_1 \geq \dots \geq w_n$. Formule o seguinte problema de otimização como um programa semidefinido:
+Seja $\"{A}: \|{S}^n \rightarrow \|{R}^m$ uma função linear e $b \in \|{R}^m$. Seja $w \in \|{R}_+^n$ tal que $w_1 \geq \dots \geq w_n$. Formule o seguinte problema de otimização como um programa semidefinido:
 \begin{equation*}
     \begin{array}[!h]{lll}
         \text{Minimizar} & w^T \eigen(X)                                    & \\[2pt]
@@ -123,13 +130,13 @@ Seja $\"{A}: \|{S}^n \rightarrow \|{R}^m$ uma função linear e $b \in \|{R}^m$.
     \end{array}
 \end{equation}
 
-Vamos definir $\gamma \in \|{R}^{0 \oplus [n]}$ e $\hat{w} \in \|{R}^n$ da seguinte maneira:
+Vamos definir $\gamma_0 \oplus \gamma \in \|{R} \oplus \|{R}^n$ e $\hat{w} \in \|{R}^n$ da seguinte maneira:
 \begin{equation*}
     \begin{array}[!h]{ll}
         \gamma_k = \sum \limits_{i=1}^k \eigen_i(X), & \forall k \in [n], \\[2pt]
         \gamma_0 = 0,                                & \\[2pt]
         \hat{w}_k = w_k - w_{k+1},                   & \forall k \in [n-1], \\[2pt]
-        \hat{w} = w_n.                               & \\
+        \hat{w}_n = w_n.                             & \\
     \end{array}
 \end{equation*}
 
@@ -138,16 +145,17 @@ Temos
     w^T \eigen(X) = 
     \sum \limits_{i=1}^n w_i \eigen_i(X) = 
     \sum \limits_{i=1}^n w_i (\gamma_i(X) - \gamma_{i-1}(X)) = 
-    \sum \limits_{i=1}^n w_i \gamma_i(X) - \sum \limits_{i=1}^{n-1} w_i \gamma_{i-1}(X) = \\
+    \sum \limits_{i=1}^n w_i \gamma_i(X) - \sum \limits_{i=1}^{n} w_i \gamma_{i-1}(X) = \\
+    \sum \limits_{i=1}^n w_i \gamma_i(X) - \sum \limits_{i=1}^{n-1} w_{i+1} \gamma_{i}(X) =
     \sum \limits_{i=1}^{n-1} \gamma_i(X)(w_i - w_{i+1}) + \gamma_n(X)w_n =
     \sum \limits_{i=1}^n \gamma_i(X) \hat{w}_i =
-    \hat{w}^T \gamma[n].
+    \hat{w}^T \gamma.
 \end{multline*}
 
 Além disso, já que $\hat{w} \geq 0$, para qualquer $\mu \in \|{R}$,
 $$
-    \hat{w}^T \gamma[n] \leq \mu \sse 
-    \text{existe } \hat{\gamma} \in \|{R}^n \text{ tal que } \gamma[n] \leq \hat{\gamma} \text{ e } \hat{w}^T\hat{\gamma} \leq \mu.
+    \hat{w}^T \gamma \leq \mu \sse 
+    \text{existe } \hat{\gamma} \in \|{R}^n \text{ tal que } \gamma \leq \hat{\gamma} \text{ e } \hat{w}^T\hat{\gamma} \leq \mu.
 $$
 
 Assim, podemos escrever \eqref{eq:prob_ex2} como 
@@ -158,24 +166,38 @@ Assim, podemos escrever \eqref{eq:prob_ex2} como
                          & X \in \|{S}^n,                                   & \\[2pt]
                          & \mu \in \|{R},                                   & \\[2pt]
                          & \hat{\gamma} \in \|{R}^n,                        & \\[2pt]
-                         & \gamma[n] \leq \hat{\gamma},                     & \\[2pt]
+                         & \gamma \leq \hat{\gamma},                        & \\[2pt]
                          & w^T \eigen(X) \leq \mu.                          & \\
     \end{array}
 \end{equation*}
 
-A restrição $\gamma[n] \leq \hat{\gamma}$ equivale a
+A restrição $\gamma \leq \hat{\gamma}$ equivale a
 $$ \gamma_k = \sum \limits_{i=1}^k \eigen_i(X) \leq \hat{\gamma}_k, \forall k \in [n], $$
 pelo $\textbf{Teo. 54}$, para todo $k \in [n]$, 
 $$  
     \sum \limits_{i=1}^k \eigen_i(X) \leq \hat{\gamma}_k \sse 
-    \exists Y \in \|{S}^n \text{ e } \eta \in \|{R} \text{ e } [\nu - k\eta - \Tr(Y)] \oplus Y \oplus [Y - X + \eta I] \in \|{R}_+ \oplus \|{S}_+^n \oplus \|{S}_+^n,
+    \exists Y \in \|{S}^n \text{ e } \eta \in \|{R} \text{ e } [\hat{\gamma}_k - k\eta - \Tr(Y)] \oplus Y \oplus [Y - X + \eta I] \in \|{R}_+ \oplus \|{S}_+^n \oplus \|{S}_+^n,
 $$
-que contém apenas restrições lineares. Desta maneira, conseguimos formular $\eqref{eq:prob_ex2}$ como um programa semidefinido.
+que contém apenas restrições lineares. Desta maneira, conseguimos formular $\eqref{eq:prob_ex2}$ como um programa semidefinido da seguinte maneira:
+\begin{equation*}
+    \begin{array}[!h]{lll}
+        \text{Minimizar} & \mu                                              & \\[2pt]
+        \text{sujeito a} & \"{A}(X) = b,                                    & \\[2pt]
+                         & X \in \|{S}^n,                                   & \\[2pt]
+                         & \mu \in \|{R},                                   & \\[2pt]
+                         & Y_i \in \|{S}^n,                                 & \forall i \in [n], \\[2pt]
+                         & \eta \in \|{R}^n,                                & \\[2pt]
+                         & \hat{\gamma} \in \|{R}^n,                        & \\[2pt]
+                         & \gamma \leq \hat{\gamma},                        & \\[2pt]
+    & [\hat{\gamma}_i - i\eta_i - \Tr(Y_i)] \oplus Y_i \oplus [Y_i - X - \eta_iI] \in \|{R}_+ \oplus \|{S}_+^n \oplus \|{S}_+^n,&  \forall i \in [n].\\
+    \end{array}
+\end{equation*}
+
 
 \end{homeworkProblemAnswer}
 
 \begin{homeworkProblem}
-Seja $\"{A} : \|{R}^n \oplus \|{R} \rightarrow \|{R}^m$ uma função linear. Sejam $b \in \|{R}^m$ e $c \oplus R^m \in \|{R}^n \oplus \|{R}$. Formule o seguinte problema de otimização como um progama cônico e 2a. ordem:
+Seja $\"{A} : \|{R}^n \oplus \|{R} \rightarrow \|{R}^m$ uma função linear. Sejam $b \in \|{R}^m$ e $c \oplus \delta \in \|{R}^n \oplus \|{R}$. Formule o seguinte problema de otimização como um progama cônico e 2a. ordem:
 \begin{equation} \label{eq:prob_ex3}
     \begin{array}[!h]{lll}
         \text{Minimizar} & \langle c \oplus \delta, x \oplus \mu \rangle    & \\[2pt]
@@ -219,7 +241,7 @@ Sem resposta.
 \end{homeworkProblemAnswer}
 
 \begin{homeworkProblem}
-Sejam $\bar{a}_1, \dots, \bar{a}_m \in \|{R}^n$ e $\epsilon \in \|{R}_{++}^n$. Sejam $b \in \|{R}^m$ e $c \in \|{R}^n$. Formule o seguinte problema de otimização como um programa cônico de 2a. ordem:
+Sejam $\bar{a}_1, \dots, \bar{a}_m \in \|{R}^n$ e $\varepsilon \in \|{R}_{++}^n$. Sejam $b \in \|{R}^m$ e $c \in \|{R}^n$. Formule o seguinte problema de otimização como um programa cônico de 2a. ordem:
 \begin{equation} \label{eq:prob_ex5}
     \begin{array}[!h]{lll}
         \text{Maximizar} & c^Tx                     & \\[2pt]
@@ -234,9 +256,9 @@ Temos, para todo $i \in [n]$,
 \begin{multline} \label{eq:leq_ex5}
     a_i^Tx \leq b_i \forall a_i \in \bar{a}_i + \varepsilon_i \|{B} \sse 
     \max \limits_{a_i \in \bar{a}_i + \varepsilon_i\|{B}}(a_i^Tx) \leq b_i \sse
-    \max \limits_{u \in \|{B}}(\bar{a}_i + \varepsilon_iu)^Tx) \leq b_i \sse \\
-    \bar{a}_i + \varepsilon_i \max \limits_{u \in \|{B}}(u^Tx) \leq b_i \sse
-    \bar{a}_i + \varepsilon_i \max \limits_{u \in ||x||\|{B}}(u^Tx)/||x|| \leq b_i.
+    \max \limits_{u \in \|{B}}((\bar{a}_i + \varepsilon_iu)^Tx) \leq b_i \sse \\
+    \bar{a}_i^Tx + \varepsilon_i \max \limits_{u \in \|{B}}(u^Tx) \leq b_i \sse
+    \bar{a}_i^Tx + \varepsilon_i \max \limits_{u \in ||x||\|{B}}(u^Tx)/||x|| \leq b_i.
 \end{multline}
 Por Cauchy-Schwartz, sabemos
 $$ \max \limits_{u \in \|{R}^n}(u^Tx) = x^Tx, $$
@@ -289,19 +311,32 @@ O dual de \eqref{eq:prob_ex6} é
     \begin{array}[!h]{lll}
         \text{Maximizar} & y                                                                         & \\[2pt]
         \text{sujeito a} & y \in \|{R},                                                              & \\[2pt]
-                         & yC \in \|{S}_+^2,                                                              & \\
+                         & ye_1e_1^T \succeq C,                                                  & \\
     \end{array}
 \end{equation}
 pois se chamarmos $\"{A}(X) := \langle C, X \rangle$, temos $\"{A} : \|{S}^n \rightarrow \|{R}$, portanto, a variável dual $y$ deve pertencer a $\|{R}$ e teremos também que a tranformação dual de $\"{A}$ é $\"{A}^*(y) = yC$.  
 
-Porém, para todo $y \in \|{R}$, $\det(yC[0]) = 0$, já que $yC[0] = 0$, portanto, pelo \textbf{Teo. 24}, $yC[0] \notin \|{S}_+^2$, assim, não existe $y$ que respeite às restricões de \eqref{eq:dual_ex6} e este é inviável.
+Porém, par todo $y \in \|{R}$,
+$$
+    ye_1e_1^T \succeq C \sse 
+    ye_1e_1^T - C \succeq 0 \text{, }
+$$
+mas, se definirmos $h := 1 \oplus (|y| + 1)$, teremos $h \in \|{R}^2$ tal que
+$$
+    h^T(ye_1e_1^T - C)h = 
+    y - 2(|y|+1) = 
+    y - 2|y| - 2 \leq
+    -2 <
+    0 \text{, }
+$$
+portanto, $ye_1e_1^T - C \not\succeq 0$, pela definição de $\|{S}_+^n$. Assim, não existe $y$ que respeite as restrições de \eqref{eq:dual_ex6} e este é inviável.
 \end{homeworkProblemAnswer}
 
 \item para qualquer solução viável $\bar{X}$ de \eqref{eq:prob_ex6}, não existe $D \in \|{S}^2$ tal que $\bar{X} + \alpha D$ é viável para todo $\alpha \in \|{R}_+$ e $\langle C, D \rangle < 0$.
 
 \begin{homeworkProblemAnswer}
-Se $\langle C, D \rangle < 0$, já que $C \succeq 0$, $D \notin \|{S}_+^2$, pelo \textbf{Teo. 20}. Logo, existe $h \in \|{R}^2$ tal que $h^TDh < 0$, portanto, se $\alpha = -\dfrac{h^T\bar{X}h}{h^TDh} + 1$, teremos $\alpha \in \|{R}_+$ e também teremos
-$$ h^T(\bar{X} + \alpha D)h = h^T\bar{x}h + \alpha h^TDh = h^T\bar{X}h - h^T\bar{X}h + h^TDh < 0. $$
+Seja $D \in \|{S}^2$, se $\langle C, D \rangle < 0$, já que $C \succeq 0$, $D \notin \|{S}_+^2$, pelo \textbf{Teo. 20}. Logo, existe $h \in \|{R}^2$ tal que $h^TDh < 0$, portanto, se $\alpha = -\dfrac{h^T\bar{X}h}{h^TDh} + 1$, teremos $\alpha \in \|{R}_+$ e também teremos
+$$ h^T(\bar{X} + \alpha D)h = h^T\bar{X}h + \alpha h^TDh = h^T\bar{X}h - h^T\bar{X}h + h^TDh < 0. $$
 Portanto, $\bar{X} + \alpha D \notin \|{S}_+^2$, logo, $\bar{X} + \alpha D$ é inviável. Ou seja, para todo $D$ conseguimos um $\alpha$ que torna $\bar{X} + \alpha D$ inviável em \eqref{eq:prob_ex6}.
 \end{homeworkProblemAnswer}
 
