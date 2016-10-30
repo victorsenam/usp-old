@@ -1,0 +1,105 @@
+\input{template.sty}
+
+\setcounter{homeworkProblemCounter}{2}
+
+%----------------------------------------------------------------------------------------
+%>-- SHORTCUTS
+%----------------------------------------------------------------------------------------
+
+\renewcommand{\|}[1]{\mathbb{#1}}
+\renewcommand{\"}[1]{\ensuremath{\mathcal{#1}}}
+
+\newcommand{\sse}{\Leftrightarrow}
+\newcommand{\se}{\Rightarrow}
+\newcommand{\so}{\Leftarrow}
+
+\newcommand{\eigen}{\lambda^{\downarrow}}
+\newcommand{\Tr}{\textrm{Tr}}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%\maketitle
+%\newpage
+
+%\tableofcontents
+%\newpage
+
+\begin{homeworkProblem}[]
+Apresente uma versão desaleatorizada da $0.5$-aproximação probabilística apresentada para o problema do $\textsc{MaxCut}(V, E, w)$.
+
+\begin{homeworkProblemAnswer}
+Primeiro, vamos definir o custo de um corte $\emptyset \neq S \subset V$ por
+$$ c(S) = \sum \limits_{\substack{uv \in E\\ u \in S \\ v \notin S}} w_{uv}. $$
+
+Agora, definimos a variável aleatória $X_S$ como o valor do corte de um conjunto $S$ escolhido pelo algoritmo criado no item anterior. Temos que a esperança de $X_S$ é dada por:
+$$ E[X_S] = \sum \limits_{\emptyset \neq S \subset V} c(S). $$
+
+Nosso algoritmo vai gerar um conjunto $S$ que define o corte final. Para isso, vamos manter dois conjuntos $\hat{W}$ e $\hat{S}$, que representam, respectivamente, os elementos já processados pelo algoritmo e os elementos para os quais se escolheu pertencer a $S$. Isto é, ao último passo do algoritmo, teremos $\hat{W} = V$ e $S$ será definido pelo $\hat{S}$ e retornado pelo algoritmo.  
+
+Vamos considerar um passo qualquer do algoritmo, ou seja, temos dois conjuntos $\hat{S}$ e $\hat{W}$ como definidos acima e queremos escolher um $v \in V \setminus \hat{W}$. Temos
+$$ E[X_S \mid \hat{W} \cap S = \hat{S}] = 0.5 * E[X_S \mid (\hat{W} \cup v) \cap S = \hat{S}] + 0.5 * E[X_S \mid (\hat{W} \cup v) \cap S = \hat{S} \cup v].$$
+
+Portanto, 
+\begin{equation} \label{eq:desigualdade_esperancas}
+    \max(E[X_S \mid (\hat{W} \cup v) \cap S = \hat{S}], E[X_S \mid (\hat{W} \cup v) \cap S = \hat{S} \cup v]) \geq E[X_S \mid \hat{W} \cap S = \hat{S}].
+\end{equation}
+
+Se pensarmos em esperanças condicionadas, podemos simplesmente escolher se $v \in S$ ou $v \notin S$ de acordo com a escolha que maximize $E[X_S | \hat{W} \cap S = \hat{S}]$. Pela desigualdade \eqref{eq:desigualdade_esperancas}, a cada passo, esta esperança só aumenta. Portanto, se $\bar{W}$ e $\bar{S}$ são os $\hat{W}$ e $\hat{S}$ criados após o último passo do algorimto, temos
+
+$$ E[X_S \mid (\bar{W} \cap S) = \bar{S}] = E[X_S \mid (V \cap S) = \hat{S}] = E[X_S \mid S = \hat{S}] = c(\hat{S}),$$
+porém, já que sempre escolhemos a opção que maximiza a esperança para formar $\hat{S}$ e $\hat{W}$, temos, por \eqref{eq:desigualdade_esperancas},
+$$ E[X_S \mid (\bar{W} \cap S) = \bar{S}] \geq E[X_S \mid (\hat{W} \cap S) = \hat{S}] $$
+para quaisquer $\hat{W}$ e $\hat{S}$ gerados em qualquer passo do algoritmo. Já que, antes do primeiro passo, $\hat{W} = \hat{S} = \emptyset$, temos, para qualquer solução ótima $S^*$, 
+$$ 
+    E[X_S \mid (\bar{S} \cap S) = 
+    \bar{S}] \geq E[X_S \mid (\emptyset \cap S) = \emptyset] = 
+    E[X_S] = 
+    \sum \limits_{uv \in E} 0.5w_{uv} =
+    \sum \limits_{\substack{uv \in E \\ u \in S^* \\ v \notin S^*}} 0.5w_{uv} = 
+    0.5opt(V,E,w).
+$$
+Portanto, sempre escolher a opção que maximize a esperança, ou seja, seguir o método das esperanças condicionadas, gera uma $0.5$-aproximação para o problema $\textsc{MaxCut}(V,E,w)$. Podemos escrever o pseudo-código deste algoritmo agora. Primeiro, vamos escrever uma função auxiliar $\textsc{CalcEsp}(\hat{W},\hat{S}, V, E, w)$ que calcula o valor $E[X_S \mid \hat{W} \cap S = \hat{S}]$.
+
+\pagebreak
+
+\begin{algorithmic}[1]
+\Function{CalcEsp}{\hat{W}, \hat{S}, V, E, w}
+\State $r \leftarrow 0$
+    \For{$uv \in E$}
+        \If{$u \in \bar{W}$ e $v \in \bar{W}$}
+            \If{$u \in \bar{S}$ xor $v \in \bar{S}$}
+                \State $r \leftarrow r + w_{uv}$
+            \EndIf
+        \ElsIf{$u \in \bar{W}$ ou $v \in \bar{W}$}
+            \State $r \leftarrow r + \frac{1}{2}w_{uv}$
+        \EndIf
+    \EndFor
+\State \Return r
+\EndFunction
+\end{algorithmic}
+
+E, agora, podemos escrever o algoritmo $\textsc{MaxCut-Dealeatorizado}(V, E, w)$ que utiliza $\textsc{CalcEsp}$ como função auxiliar.
+
+\begin{algorithmic}[1]
+\Function{MaxCut-Dealeatorizado}{V, E, w}
+\State $\hat{W} \leftarrow \emptyset$
+\State $\hat{S} \leftarrow \emptyset$
+    \For{$v \in V$}
+        \State $\hat{W} \leftarrow \hat{W} \cup v$
+        \State $a \leftarrow \textsc{CalcEsp}(\hat{W}, \hat{S} \cup v, V, E, w)$
+        \State $b \leftarrow \textsc{CalcEsp}(\hat{W}, \hat{S}, V, E, w)$
+        \If{$a \geq b$}
+            \State $\hat{S} \leftarrow \hat{S} \cup v$
+        \EndIf
+    \EndFor
+\State \Return $\hat{S}$
+\EndFunction
+\end{algorithmic}
+
+\end{homeworkProblemAnswer}
+
+\end{homeworkProblem}
+
+\end{document}
