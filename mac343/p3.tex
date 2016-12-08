@@ -1,0 +1,91 @@
+\input{template.sty}
+
+%----------------------------------------------------------------------------------------
+%>-- SHORTCUTS
+%----------------------------------------------------------------------------------------
+
+\renewcommand{\|}[1]{\mathbb{#1}}
+\renewcommand{\"}[1]{\ensuremath{\mathcal{#1}}}
+
+\newcommand{\sse}{\Leftrightarrow}
+\newcommand{\se}{\Rightarrow}
+\newcommand{\so}{\Leftarrow}
+
+\newcommand{\conv}{\textrm{conv}}
+\newcommand{\T}{\textrm{TH}}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%\maketitle
+%\newpagea
+
+%\tableofcontents
+%\newpage
+
+\begin{homeworkProblem}
+Sejam $J \subseteq{[n]}$ e $i \in [n] \setminus J$. Prove que $F_i \circ F_J = F_{J\cup\{i\}}$.
+\end{homeworkProblem}
+
+\begin{homeworkProblemAnswer}
+Para facilitar a prova, vou criar uma proposição.
+\begin{prop} \label{prop_1}
+Se $a,b \in [0,1], \lambda \in (0,1)$ e $x \in \{0,1\}$, então, $a = b = x$.
+\end{prop}
+
+\begin{proof}
+Se $a \neq b$, suponha $a < b$. Se $x = 0$, temos, $a < b \se (1-\lambda)a < (1-\lambda)b \se a < \lambda a + (1 - \lambda)b = x = 0$, logo, $a < 0$, uma contradição. Se $x = 1$, temos, $a < b \se \lambda a < \lambda b \se 1 = x = \lambda a + (1-\lambda) b < b$, logo, $1 < b$, uma contradição. Portanto, $a = b$, mas $x = \lambda a + (1 - \lambda)b = a = b$.
+\end{proof}
+
+Seja $P \cup [0,1]^V$ um conjunto convexo. Para todo $J \subseteq [n]$, definimos $B_J := \{x \in \|{R}^n \mid x_j \in \{0,1\} \forall j \in J\}$.
+
+Se $x \in F_i \circ F_J(P)$, $x \in \conv(F_J(P) \cap B_i)$, logo, existem $a,b \in F_J(P) \cap B_i$ e $\lambda \in (0,1)$ tais que $x = \lambda a + (1 - \lambda) b$. Já que $a,b \in F_J(P) \cap B_i$, existem $\check{a}, \hat{a}, \check{b}, \hat{b} \in P \cap B_J$ e $\alpha, \beta \in (0,1)$ tais que $a = \lambda \check{a} + (1 - \lambda) \hat{a}$ e $b = \lambda \check{b} + (1 - \lambda) \hat{b}$.  
+
+Temos $a_i, b_i \in \{0,1\}$, logo, por \ref{prop_1}, $\check{a}_i = \hat{a}_i \in \{0,1\}$ e $\check{b}_i = \hat{b}_i \in \{0,1\}$. Assim, $\check{a}, \hat{a}, \check{b}, \hat{b} \in B_i$, logo, $\check{a}, \hat{a}, \check{b}, \hat{b} \in B_J \cup \{i\}$. Sabemos que $x = \lambda \alpha \check{a} + \lambda (1-\alpha) \hat{a} + (1-\lambda) \beta \check{b} + (1-\lambda) (1-\beta) \hat{b}$, portanto, $x$ é combinação convexa de elementos de $P \cap B_{J\cup\{i\}}$, logo, $x \in \conv(P\cap B_{J\cup\{i\}}) = F_{J\cup\{i\}}.$ Ou seja, $F_i \circ F_J(P) \subseteq F_{J\cup\{i\}}(P)$.  
+
+Por outro lado, $F_{J\cup\{i\}}(P) = \conv(P\cap B_{J\cup\{i\}})$. Porém, $P \cap B_{J\cup\{i\}} = P \cap B_J \cap B_i \subseteq \conv(P\cap B_J)\cap B_i = F_J(P)\cap B_i$, logo, $F_{J \cup \{i\}}(P) \subseteq \conv(F_J(P)\cap B_i) = F_i \circ F_J(P)$.
+\end{homeworkProblemAnswer}
+
+\begin{homeworkProblem}
+Seja $G$ um grafo. Prove que $\T(G)$ é um canto convexo.
+\end{homeworkProblem}
+
+\begin{homeworkProblemAnswer}
+Seja $G$ um grafo.
+\begin{prop}
+$\T(G)$ é compacto.
+\end{prop}
+\begin{proof}
+$2I \in \|{S}_{++}^V$, portanto, existe $\delta > 0$ tal que $2I + \delta \|{B} \in \|{S}_{++}^V$ é aberto. Defina $B := \|{1}\|{1}^T$ e escolha $\varepsilon = ||B||/\delta$. Agora, defina $\tilde{T} := \begin{bmatrix}
+\varepsilon & -\|{1}^T \\
+-\|{1} & 2I 
+\end{bmatrix}$.  
+
+Já que $\varepsilon > 0$, $2I \in \|{S}^V$ e $2I - B/\varepsilon = 2I - \delta B/||B||$, porém, $B/||B|| \in \|{B}$, logo, $I + \delta B \in \|{S}_{++}^V$ e $2I \succ B/\varepsilon$, portanto, pelo Ex. 18, $\tilde{T} \in \|{S}_{++}^V.$  
+
+Definimos $T := \{X \in \|{S}_+^{\{0\}\cup B}\}$. Pelo Ex. 1 da P2, $T$ é compacto. Além disso, seja $\hat{X} := \begin{bmatrix}
+1 & x^T \\
+x & X
+\end{bmatrix} \in \hat{\T}(G)$ com $x \in \|{R}^V$ e $X \in \|{S}^V$. $\langle \tilde{T}, \hat{X} \rangle = 1\varepsilon - 2 \langle \|{1}, x \rangle + \langle 2I, X \rangle = \varepsilon$, portanto, $\hat{\T}(G) \subseteq{T}$ é limitado.  
+
+Sabemos que $\|{S}_+^V$ é fechado. Além disso, podemos re-escrever $\hat{\T}(G) = \{X \in \|{S}^{\{0\}\cup V} \mid X_{i,i} = X_{0,i} \forall i \in V e X_{i,j} = 0 \forall ij \in E\}$. Assim, fica claro que $\hat{\T}(G)$ é intersecção de hiperplanos de $\|{S}^{\{0\}\cup V}$ com $\|{S}_V^{\{0\}\cup V}$ e, portanto, é fechado.  
+
+Agora, basta definir a função, para todo $i \in V$ a função $f_i:X \in \|{S}^{\{0\}\cup V} \mapsto X_{i,i} \|{R}$. Chamamos de $f$ a função definida pela concatenação de $f_i$ para todo $i$. $f$ é contínua e $\textrm{Im}_f(\hat{\T}(G)) = \T(G)$, portanto, $\T(G)$ é compacto.
+\end{proof}
+
+\begin{prop}
+$\T(G)$ é convexo.
+\end{prop}
+
+\begin{prop}
+$\T(G)$ é antibloqueador.
+\end{prop}
+
+\begin{prop}
+$\T(G)$ tem interior não vazio.
+\end{prop}
+
+\end{homeworkProblemAnswer}
+
+\end{document}
